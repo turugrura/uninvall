@@ -16,9 +16,10 @@ import { TimeoutInterceptor } from './common/interceptors/timeout.interceptor'
 import { TranformInterceptor } from './common/interceptors/transform.interceptor'
 import { LoggerMiddleware } from './common/middleware/logger.middleware'
 import { ValidationPipe } from './common/pipes/validation.pipe'
+import { UsersModule } from './users/users.module'
 
 @Module({
-	imports: [CatsModule],
+	imports: [CatsModule, UsersModule],
 	controllers: [AppController],
 	providers: [
 		AppService,

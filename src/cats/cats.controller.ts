@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-import { Auth } from 'src/common/decorators/Auth.decorator'
-import { Roles } from 'src/common/decorators/roles.decorator'
+import { Auth } from '../common/decorators/auth.decorator'
+import { Roles } from '../common/decorators/roles.decorator'
 import { ParseIntPipe } from '../common/pipes/parse-int.pipe'
 import { CatsService } from './cats.service'
 import { CreateCatDto, UpdateCatDto } from './dto/cat.dto'
