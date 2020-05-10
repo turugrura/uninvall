@@ -4,9 +4,12 @@ import {
 	NestModule,
 	RequestMethod,
 } from '@nestjs/common'
+import { ConfigModule } from '@nestjs/config'
 import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core'
+import { TypeOrmModule } from '@nestjs/typeorm'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
+import { AuthModule } from './auth/auth.module'
 import { CatsController } from './cats/cats.controller'
 import { CatsModule } from './cats/cats.module'
 import { AuthGuard } from './common/guards/auth.guard'
@@ -16,10 +19,30 @@ import { TimeoutInterceptor } from './common/interceptors/timeout.interceptor'
 import { TranformInterceptor } from './common/interceptors/transform.interceptor'
 import { LoggerMiddleware } from './common/middleware/logger.middleware'
 import { ValidationPipe } from './common/pipes/validation.pipe'
+import configuration from './config/configuration'
+import { PhotosService } from './photos/photos.service'
 import { UsersModule } from './users/users.module'
 
 @Module({
-	imports: [CatsModule, UsersModule],
+	imports: [
+		CatsModule,
+		UsersModule,
+		AuthModule,
+		TypeOrmModule.forRoot({
+			type: 'mysql',
+			host: 'localhost',
+			port: 3306,
+			username: 'test',
+			database: 'new_schema',
+			synchronize: true,
+			autoLoadEntities: true,
+		}),
+		ConfigModule.forRoot({
+			isGlobal: true,
+			envFilePath: ['.development.env'],
+			load: [configuration],
+		}),
+	],
 	controllers: [AppController],
 	providers: [
 		AppService,
@@ -47,6 +70,7 @@ import { UsersModule } from './users/users.module'
 			provide: APP_INTERCEPTOR,
 			useClass: TimeoutInterceptor,
 		},
+		PhotosService,
 	],
 })
 export class AppModule implements NestModule {

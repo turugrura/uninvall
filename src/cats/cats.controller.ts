@@ -3,7 +3,8 @@ import { Auth } from '../common/decorators/auth.decorator'
 import { Roles } from '../common/decorators/roles.decorator'
 import { ParseIntPipe } from '../common/pipes/parse-int.pipe'
 import { CatsService } from './cats.service'
-import { CreateCatDto, UpdateCatDto } from './dto/cat.dto'
+import { CreateCatDto } from './dto/create-cat.dto'
+import { UpdateCatDto } from './dto/update-cat.dto'
 import { Cat } from './interfaces/cat.interface'
 
 @Controller('cats')
