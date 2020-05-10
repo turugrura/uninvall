@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-import { Auth as AAA } from '../common/decorators/auth.decorator'
+// import { Auth as AAA } from '../common/decorators/auth.decorator'
 import { Roles } from '../common/decorators/roles.decorator'
 import { ParseIntPipe } from '../common/pipes/parse-int.pipe'
 import { CatsService } from './cats.service'
@@ -41,7 +41,7 @@ export class CatsController {
 	}
 
 	@Post(':id')
-	@AAA('admin')
+	// @AAA('admin')
 	async update(
 		@Param('id', new ParseIntPipe()) id: number,
 		@Body() updateCatDto: UpdateCatDto,
