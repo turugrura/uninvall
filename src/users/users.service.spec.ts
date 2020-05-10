@@ -27,8 +27,6 @@ describe('UsersService', () => {
 	})
 
 	it('should be defined', () => {
-		console.log(service, 'hi')
-
 		expect(service).toBeDefined()
 	})
 })
