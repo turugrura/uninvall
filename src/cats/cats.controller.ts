@@ -1,6 +1,5 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-// import { Auth as AAA } from '../common/decorators/auth.decorator'
-import { Roles } from '../common/decorators/roles.decorator'
+import { Auth } from '../common/decorators/auth.decorator'
 import { ParseIntPipe } from '../common/pipes/parse-int.pipe'
 import { CatsService } from './cats.service'
 import { CreateCatDto } from './dto/create-cat.dto'
@@ -33,7 +32,7 @@ export class CatsController {
 
 	@Post()
 	// @UsePipes(new JoiValidationPipe(CreateCatDto))
-	@Roles('admin')
+	@Auth('admin')
 	async create(@Body() createCatDto: CreateCatDto): Promise<Cat> {
 		this.catsService.create(createCatDto)
 
@@ -41,7 +40,7 @@ export class CatsController {
 	}
 
 	@Post(':id')
-	// @AAA('admin')
+	@Auth('admin')
 	async update(
 		@Param('id', new ParseIntPipe()) id: number,
 		@Body() updateCatDto: UpdateCatDto,
