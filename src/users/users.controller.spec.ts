@@ -34,12 +34,14 @@ describe('Users Controller', () => {
 				firstName: 'firstName',
 				lastName: 'lastName',
 				isActive: true,
+				password: 'password',
 			}
 			jest.spyOn(mockUsersService, 'create').mockResolvedValue(user)
 
 			const res = await userController.create({
 				firstName: user.firstName,
 				lastName: user.lastName,
+				password: user.password,
 			})
 
 			expect(res).toEqual<User>(user)

@@ -1,3 +1,4 @@
+import { Exclude, Expose } from 'class-transformer'
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity()
@@ -13,6 +14,18 @@ export class User {
 
 	@Column({ default: true })
 	isActive: boolean
+
+	@Column()
+	@Exclude()
+	password: string
+
+	@Expose()
+	get fullName(): string {
+		return `${this.firstName} ${this.lastName}`
+	}
+	// constructor(partial: Partial<User>) {
+	// 	Object.assign(this, partial)
+	// }
 
 	// @OneToMany(
 	// 	type => Photo,
