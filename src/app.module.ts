@@ -6,6 +6,7 @@ import {
 } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core'
+import { ScheduleModule } from '@nestjs/schedule'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
@@ -21,6 +22,7 @@ import { LoggerMiddleware } from './common/middleware/logger.middleware'
 import { ValidationPipe } from './common/pipes/validation.pipe'
 import configuration from './config/configuration'
 import { PhotosService } from './photos/photos.service'
+import { TasksModule } from './tasks/tasks.module'
 import { UsersModule } from './users/users.module'
 
 @Module({
@@ -28,6 +30,7 @@ import { UsersModule } from './users/users.module'
 		CatsModule,
 		UsersModule,
 		AuthModule,
+		TasksModule,
 		TypeOrmModule.forRoot({
 			type: 'mysql',
 			host: 'localhost',
@@ -42,6 +45,7 @@ import { UsersModule } from './users/users.module'
 			envFilePath: ['.development.env'],
 			load: [configuration],
 		}),
+		ScheduleModule.forRoot(),
 	],
 	controllers: [AppController],
 	providers: [
