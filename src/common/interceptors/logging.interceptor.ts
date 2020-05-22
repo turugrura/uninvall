@@ -1,27 +1,32 @@
 import {
-  NestInterceptor,
-  Injectable,
-  ExecutionContext,
-  CallHandler,
+	CallHandler,
+	ExecutionContext,
+	Injectable,
+	NestInterceptor,
 } from '@nestjs/common'
 import { Observable } from 'rxjs'
 import { tap } from 'rxjs/operators'
+import { MyLogger } from '../../logger/my-logger.service'
 
 @Injectable()
 export class LoggingInterceptor implements NestInterceptor {
-  intercept(
-    context: ExecutionContext,
-    next: CallHandler<any>,
-  ): Observable<any> | Promise<Observable<any>> {
-    const now = Date.now()
-    console.log(`LoggingInterceptor before...`)
+	constructor(private myLogger: MyLogger) {}
 
-    return next
-      .handle()
-      .pipe(
-        tap(() =>
-          console.log(`LoggingInterceptor after...${Date.now() - now}`),
-        ),
-      )
-  }
+	intercept(
+		context: ExecutionContext,
+		next: CallHandler<any>,
+	): Observable<any> | Promise<Observable<any>> {
+		const now = Date.now()
+		this.myLogger.log('LoggingInterceptor before...')
+
+		return next
+			.handle()
+			.pipe(
+				tap(() =>
+					this.myLogger.log(
+						`LoggingInterceptor after... take time ${Date.now() - now} ms`,
+					),
+				),
+			)
+	}
 }

@@ -21,6 +21,7 @@ import { TranformInterceptor } from './common/interceptors/transform.interceptor
 import { LoggerMiddleware } from './common/middleware/logger.middleware'
 import { ValidationPipe } from './common/pipes/validation.pipe'
 import configuration from './config/configuration'
+import { Logger } from './logger/logger.module'
 import { PhotosService } from './photos/photos.service'
 import { TasksModule } from './tasks/tasks.module'
 import { UsersModule } from './users/users.module'
@@ -31,6 +32,7 @@ import { UsersModule } from './users/users.module'
 		UsersModule,
 		AuthModule,
 		TasksModule,
+		Logger,
 		TypeOrmModule.forRoot({
 			type: 'mysql',
 			host: 'localhost',
