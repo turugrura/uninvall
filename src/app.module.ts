@@ -25,6 +25,7 @@ import { Logger } from './logger/logger.module'
 import { PhotosService } from './photos/photos.service'
 import { TasksModule } from './tasks/tasks.module'
 import { UsersModule } from './users/users.module'
+import Joi = require('@hapi/joi')
 
 @Module({
 	imports: [
@@ -33,19 +34,39 @@ import { UsersModule } from './users/users.module'
 		AuthModule,
 		TasksModule,
 		Logger,
-		TypeOrmModule.forRoot({
-			type: 'mysql',
-			host: 'localhost',
-			port: 3306,
-			username: 'test',
-			database: 'new_schema',
-			synchronize: true,
-			autoLoadEntities: true,
+		// TypeOrmModule.forRoot({
+		// 	type: 'mysql',
+		// 	host: 'localhost',
+		// 	port: 3306,
+		// 	username: 'test',
+		// 	database: 'new_schema',
+		// 	synchronize: true,
+		// 	autoLoadEntities: true,
+		// }),
+		TypeOrmModule.forRootAsync({
+			useFactory: () => {
+				return {
+					type: 'mysql',
+					host: process.env.MYSQL_HOST,
+					port: parseInt(process.env.MYSQL_PORT, 10),
+					username: process.env.MYSQL_USERNAME,
+					database: process.env.MYSQL_DATABASE,
+					synchronize: false,
+					autoLoadEntities: true,
+				}
+			},
 		}),
 		ConfigModule.forRoot({
 			isGlobal: true,
-			envFilePath: ['.development.env'],
+			envFilePath: ['.env.production', '.env.development'],
 			load: [configuration],
+			validationSchema: Joi.object({
+				APPLICATION_PORT: Joi.number().required(),
+				MYSQL_HOST: Joi.string().required(),
+				MYSQL_PORT: Joi.number().required(),
+				MYSQL_USERNAME: Joi.string().required(),
+				MYSQL_DATABASE: Joi.string().required(),
+			}),
 		}),
 		ScheduleModule.forRoot(),
 	],

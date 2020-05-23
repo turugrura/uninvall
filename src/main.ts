@@ -27,6 +27,6 @@ async function bootstrap() {
 	)
 	app.useLogger(app.get(MyLogger))
 
-	await app.listen(3000)
+	await app.listen(process.env.APPLICATION_PORT)
 }
 bootstrap()

@@ -7,6 +7,9 @@ export class TasksController {
 
 	@Get()
 	getAll(): any {
+		console.log(process.env.TONG)
+		console.log(process.env.TONG2)
+
 		return {
 			cronjobs: this.tasksService.getAllCronjobs(),
 			intervals: this.tasksService.getAllIntervals(),
