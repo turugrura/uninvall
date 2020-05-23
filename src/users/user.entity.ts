@@ -1,5 +1,6 @@
 import { Exclude, Expose } from 'class-transformer'
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import { PhotoEntity } from '../photos/photo.entity'
 
 @Entity()
 export class User {
@@ -23,6 +24,13 @@ export class User {
 	get fullName(): string {
 		return `${this.firstName} ${this.lastName}`
 	}
+
+	@OneToMany(
+		() => PhotoEntity,
+		photo => photo.id,
+	)
+	photos: PhotoEntity[]
+
 	// constructor(partial: Partial<User>) {
 	// 	Object.assign(this, partial)
 	// }

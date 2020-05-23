@@ -22,7 +22,7 @@ import { LoggerMiddleware } from './common/middleware/logger.middleware'
 import { ValidationPipe } from './common/pipes/validation.pipe'
 import configuration from './config/configuration'
 import { Logger } from './logger/logger.module'
-import { PhotosService } from './photos/photos.service'
+import { PhotosModule } from './photos/photos.module'
 import { TasksModule } from './tasks/tasks.module'
 import { UsersModule } from './users/users.module'
 import Joi = require('@hapi/joi')
@@ -34,6 +34,7 @@ import Joi = require('@hapi/joi')
 		AuthModule,
 		TasksModule,
 		Logger,
+		PhotosModule,
 		// TypeOrmModule.forRoot({
 		// 	type: 'mysql',
 		// 	host: 'localhost',
@@ -53,6 +54,7 @@ import Joi = require('@hapi/joi')
 					database: process.env.MYSQL_DATABASE,
 					synchronize: false,
 					autoLoadEntities: true,
+					retryAttempts: 3,
 				}
 			},
 		}),
@@ -97,7 +99,6 @@ import Joi = require('@hapi/joi')
 			provide: APP_INTERCEPTOR,
 			useClass: TimeoutInterceptor,
 		},
-		PhotosService,
 	],
 })
 export class AppModule implements NestModule {
