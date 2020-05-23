@@ -3,12 +3,11 @@ import { NestFactory } from '@nestjs/core'
 import * as rateLimit from 'express-rate-limit'
 import * as helmet from 'helmet'
 import { AppModule } from './app.module'
-import { MyLogger } from './logger/my-logger.service'
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule, {
 		cors: true,
-		logger: false,
+		// logger: false,
 	})
 
 	app.useGlobalPipes(
@@ -25,7 +24,7 @@ async function bootstrap() {
 			max: 100, // limit each IP to 100 requests per windowMs
 		}),
 	)
-	app.useLogger(app.get(MyLogger))
+	// app.useLogger(app.get(MyLogger))
 
 	await app.listen(process.env.APPLICATION_PORT)
 }

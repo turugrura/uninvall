@@ -4,7 +4,7 @@ import { UsersController } from './users.controller'
 import { UsersService } from './users.service'
 
 describe('Users Controller', () => {
-	let mockUsersService = {
+	const mockUsersService = {
 		create: (): any => {},
 	}
 	let userController: UsersController

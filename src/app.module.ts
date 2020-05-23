@@ -6,6 +6,7 @@ import {
 } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core'
+import { MongooseModule } from '@nestjs/mongoose'
 import { ScheduleModule } from '@nestjs/schedule'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { AppController } from './app.controller'
@@ -71,6 +72,10 @@ import Joi = require('@hapi/joi')
 			}),
 		}),
 		ScheduleModule.forRoot(),
+		MongooseModule.forRoot('mongodb://localhost/nest', {
+			connectionName: 'cats',
+			useFindAndModify: false,
+		}),
 	],
 	controllers: [AppController],
 	providers: [
