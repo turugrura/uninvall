@@ -45,6 +45,12 @@ export class UsersService {
 		await this.usersRepository.delete(id)
 	}
 
+	async findByUsername(username: string): Promise<User | undefined> {
+		return await this.usersRepository.findOne(undefined, {
+			where: { firstName: username },
+		})
+	}
+
 	async createMany(users: CreateUserDto[]): Promise<void> {
 		const queryRunner = this.connection.createQueryRunner()
 		await queryRunner.connect()
