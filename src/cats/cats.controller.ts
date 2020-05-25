@@ -1,9 +1,28 @@
-import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-import { Auth } from '../common/decorators/auth.decorator'
+import {
+	applyDecorators,
+	Body,
+	Controller,
+	Get,
+	Param,
+	Post,
+	Query,
+	SetMetadata,
+	UseGuards,
+} from '@nestjs/common'
+import { AuthGuard } from '../common/guards/auth.guard'
+import { RolesGuard } from '../common/guards/roles.guard'
+// import { Auth } from '../common/decorators/auth.decorator'
 import { CatsService } from './cats.service'
 import { CreateCatDto } from './dto/create-cat.dto'
 import { UpdateCatDto } from './dto/update-cat.dto'
 import { Cat } from './interfaces/cat.interface'
+
+export function Auth(...roles: string[]): any {
+	return applyDecorators(
+		SetMetadata('roles', roles),
+		UseGuards(AuthGuard, RolesGuard),
+	)
+}
 
 @Controller('cats')
 export class CatsController {
