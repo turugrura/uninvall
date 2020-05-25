@@ -35,6 +35,8 @@ describe('Users Controller', () => {
 				lastName: 'lastName',
 				isActive: true,
 				password: 'password',
+				fullName: 'firstName lastName',
+				photos: [],
 			}
 			jest.spyOn(mockUsersService, 'create').mockResolvedValue(user)
 
@@ -49,6 +51,7 @@ describe('Users Controller', () => {
 			expect(mockUsersService.create).toHaveBeenCalledWith({
 				firstName: user.firstName,
 				lastName: user.lastName,
+				password: user.password,
 			})
 		})
 	})
