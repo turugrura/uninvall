@@ -1,45 +1,21 @@
 import {
 	applyDecorators,
 	Body,
-	CanActivate,
 	Controller,
-	ExecutionContext,
 	Get,
-	Injectable,
 	Param,
 	Post,
 	Query,
 	SetMetadata,
 	UseGuards,
 } from '@nestjs/common'
-import { Reflector } from '@nestjs/core'
-import { Observable } from 'rxjs'
 import { AuthGuard } from '../common/guards/auth.guard'
+import { RolesGuard } from '../common/guards/roles.guard'
 // import { RolesAuth } from '../common/decorators/auth.decorator'
 import { CatsService } from './cats.service'
 import { CreateCatDto } from './dto/create-cat.dto'
 import { UpdateCatDto } from './dto/update-cat.dto'
 import { Cat } from './interfaces/cat.interface'
-
-@Injectable()
-export class RolesGuard implements CanActivate {
-	constructor(private reflector: Reflector) {}
-
-	canActivate(
-		context: ExecutionContext,
-	): boolean | Promise<boolean> | Observable<boolean> {
-		const roles = this.reflector.get<string[]>('roles', context.getHandler())
-		if (!roles) {
-			return true
-		}
-
-		const request = context.switchToHttp().getRequest()
-		const user = request.user
-		console.log(user)
-
-		return true
-	}
-}
 
 export const RolesAuth = (...roles: string[]): any => {
 	return applyDecorators(
