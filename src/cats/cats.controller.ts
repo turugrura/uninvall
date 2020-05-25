@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-import { Auth } from '../common/decorators/auth.decorator'
+import { RolesAuth } from '../common/decorators/auth.decorator'
 import { CatsService } from './cats.service'
 import { CreateCatDto } from './dto/create-cat.dto'
 import { UpdateCatDto } from './dto/update-cat.dto'
@@ -28,13 +28,13 @@ export class CatsController {
 
 	@Post()
 	// @UsePipes(new JoiValidationPipe(CreateCatDto))
-	@Auth('admin')
+	@RolesAuth('admin')
 	async create(@Body() createCatDto: CreateCatDto): Promise<Cat> {
 		return await this.catsService.create(createCatDto)
 	}
 
 	@Post(':id')
-	@Auth('admin')
+	@RolesAuth('admin')
 	async update(
 		@Param('id') id: string,
 		@Body() updateCatDto: UpdateCatDto,
