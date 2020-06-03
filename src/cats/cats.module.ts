@@ -1,29 +1,12 @@
 import { Module } from '@nestjs/common'
-import { MongooseModule } from '@nestjs/mongoose'
+import { DatabaseModule } from '../database/database.module'
 import { CatsController } from './cats.controller'
+import { catsProviders } from './cats.providers'
 import { CatsService } from './cats.service'
-import { CatSchema } from './schemas/cat.schema'
 
 @Module({
-	imports: [
-		// MongooseModule.forFeature([{ name: 'Cat', schema: CatSchema }], 'cats'),
-		MongooseModule.forFeatureAsync(
-			[
-				{
-					name: 'Cat',
-					useFactory: () => {
-						const schema = CatSchema
-						schema.pre('save', () => console.log('Pre save cat'))
-						schema.pre('findOne', () => console.log('Pre findOne cat'))
-
-						return schema
-					},
-				},
-			],
-			'cats',
-		),
-	],
+	imports: [DatabaseModule],
 	controllers: [CatsController],
-	providers: [CatsService],
+	providers: [...catsProviders, CatsService],
 })
 export class CatsModule {}

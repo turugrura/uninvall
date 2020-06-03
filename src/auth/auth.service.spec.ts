@@ -1,14 +1,16 @@
 import { JwtService } from '@nestjs/jwt'
 import { Test, TestingModule } from '@nestjs/testing'
-import { User } from '../users/user.entity'
+import { Role, UserEntity } from '../users/entities/user.entity'
 import { UsersService } from '../users/users.service'
 import { AuthService } from './auth.service'
 
 describe('AuthService', () => {
 	const mockUsersService = ({
-		findByUsername: () => {},
-	} as undefined) as UsersService
-	const mockJwtService = {} as JwtService
+		findByUsername: () => '',
+	} as unknown) as UsersService
+	const mockJwtService = ({
+		sign: () => '',
+	} as unknown) as JwtService
 	let service: AuthService
 
 	beforeEach(async () => {
@@ -21,6 +23,7 @@ describe('AuthService', () => {
 		}).compile()
 
 		service = module.get<AuthService>(AuthService)
+		jest.clearAllMocks()
 	})
 
 	it('should be defined', () => {
@@ -28,13 +31,39 @@ describe('AuthService', () => {
 	})
 
 	it('should validate user', async () => {
-		const user = new User()
-		user.firstName = 'f1'
-		user.password = 'p1'
-		jest.spyOn(mockUsersService, 'findByUsername').mockResolvedValue(user)
+		const user: UserEntity = {
+			_id: 'id_1',
+			username: 'u1',
+			password: 'p1',
+			firstName: 'f1',
+			lastName: 'p1',
+			isActive: true,
+			role: Role.admin,
+		}
+		jest
+			.spyOn(mockUsersService, 'findByUsername')
+			.mockResolvedValue({ ...user })
 
 		const validateUser = await service.validateUser('f1', 'p1')
 
-		expect(validateUser).toEqual({ firstName: 'f1', password: 'p1' })
+		expect(validateUser).toEqual({ ...user })
+	})
+
+	it('should log in', async () => {
+		const user: UserEntity = {
+			_id: 'id_1',
+			username: 'u1',
+			password: 'p1',
+			firstName: 'f1',
+			lastName: 'p1',
+			isActive: true,
+			role: Role.admin,
+		}
+		const signOutput = 'sign_output'
+		jest.spyOn(mockJwtService, 'sign').mockReturnValue(signOutput)
+
+		const login = await service.login({ ...user })
+
+		expect(login.access_token).toBe(signOutput)
 	})
 })

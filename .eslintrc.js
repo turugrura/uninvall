@@ -20,5 +20,13 @@ module.exports = {
 		'@typescript-eslint/interface-name-prefix': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/no-unused-vars': 'error',
+		'@typescript-eslint/camelcase': ['error', { properties: 'never' }],
+		semi: ['error', 'never'],
+		quotes: ['error', 'single'],
+		'padding-line-between-statements': [
+			'error',
+			{ blankLine: 'always', prev: '*', next: 'return' },
+		],
 	},
 }
