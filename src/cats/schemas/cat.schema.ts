@@ -1,14 +1,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
-import * as mongoose from 'mongoose'
-
-// export const CatSchema = new mongoose.Schema({
-// 	name: String,
-// 	age: Number,
-// 	breed: String,
-// })
+import { Document } from 'mongoose'
+import { CatEntity } from '../entities/cat.entity'
 
 @Schema()
-export class Cat extends mongoose.Document {
+export class CatModel extends Document implements CatEntity {
 	@Prop({ required: true })
 	name: string
 
@@ -19,4 +14,6 @@ export class Cat extends mongoose.Document {
 	breed: string
 }
 
-export const CatSchema = SchemaFactory.createForClass(Cat)
+export const CatSchema = SchemaFactory.createForClass(CatModel)
+	.pre('find', () => console.log('find cat'))
+	.pre('findOne', () => console.log('findOne cat'))

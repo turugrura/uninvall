@@ -1,11 +1,24 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import { User } from './user.entity'
+import { Role, UserEntity } from './entities/user.entity'
 import { UsersController } from './users.controller'
 import { UsersService } from './users.service'
 
 describe('Users Controller', () => {
-	const mockUsersService = {
-		create: (): any => {},
+	const mockUsersService = ({
+		findAll: () => '',
+		findOne: () => '',
+		create: () => '',
+		update: () => '',
+		delete: () => '',
+	} as any) as UsersService
+	const user: UserEntity = {
+		_id: '1',
+		username: 'u1',
+		password: 'p1',
+		firstName: 'f1',
+		lastName: 'l1',
+		isActive: true,
+		role: Role.admin,
 	}
 	let userController: UsersController
 
@@ -27,32 +40,43 @@ describe('Users Controller', () => {
 		expect(userController).toBeDefined()
 	})
 
-	describe('create', () => {
-		it('should return an user', async () => {
-			const user: User = {
-				id: 1,
-				firstName: 'firstName',
-				lastName: 'lastName',
-				isActive: true,
-				password: 'password',
-				fullName: 'firstName lastName',
-				photos: [],
-			}
-			jest.spyOn(mockUsersService, 'create').mockResolvedValue(user)
+	it('should find all then return all users', async () => {
+		jest.spyOn(mockUsersService, 'findAll').mockResolvedValue([{ ...user }])
 
-			const res = await userController.create({
-				firstName: user.firstName,
-				lastName: user.lastName,
-				password: user.password,
-			})
+		const findAllOutput = await userController.findAll()
 
-			expect(res).toEqual<User>(user)
-			expect(mockUsersService.create).toHaveBeenCalledTimes(1)
-			expect(mockUsersService.create).toHaveBeenCalledWith({
-				firstName: user.firstName,
-				lastName: user.lastName,
-				password: user.password,
-			})
-		})
+		expect(findAllOutput).toEqual([{ ...user }])
+	})
+
+	it('should find one then return an user', async () => {
+		jest.spyOn(mockUsersService, 'findOne').mockResolvedValue({ ...user })
+
+		const findOneOutput = await userController.findOne('id')
+
+		expect(findOneOutput).toEqual({ ...user })
+	})
+
+	it('should create then return an user', async () => {
+		jest.spyOn(mockUsersService, 'create').mockResolvedValue({ ...user })
+
+		const createOutput = await userController.create({ ...user })
+
+		expect(createOutput).toEqual({ ...user })
+	})
+
+	it('should update then return an user', async () => {
+		jest.spyOn(mockUsersService, 'update').mockResolvedValue({ ...user })
+
+		const updateOutput = await userController.update('id', { ...user })
+
+		expect(updateOutput).toEqual({ ...user })
+	})
+
+	it('should delete then return an user', async () => {
+		jest.spyOn(mockUsersService, 'delete').mockResolvedValue({ ...user })
+
+		const deleteOutput = await userController.delete('id')
+
+		expect(deleteOutput).toEqual({ ...user })
 	})
 })

@@ -1,74 +1,71 @@
 import { Injectable } from '@nestjs/common'
-import { InjectRepository } from '@nestjs/typeorm'
-import { Connection, Repository } from 'typeorm'
+import { InjectModel } from '@nestjs/mongoose'
+import { Model } from 'mongoose'
+import { USER_MODEL } from './constants'
 import { CreateUserDto } from './dto/create-user.dto'
 import { UpdateUserDto } from './dto/update-user.dto'
-import { User } from './user.entity'
+import { UserEntity } from './entities/user.entity'
+import { UserModel } from './schemas/user.schema'
 
 @Injectable()
 export class UsersService {
-	constructor(
-		@InjectRepository(User) private usersRepository: Repository<User>,
-		private connection: Connection,
-	) {}
+	constructor(@InjectModel(USER_MODEL) private userModel: Model<UserModel>) {}
 
-	async create(createUserDto: CreateUserDto): Promise<User> {
-		const user = new User()
-		user.firstName = createUserDto.firstName
-		user.lastName = createUserDto.lastName
-		user.password = createUserDto.password
-
-		return await this.usersRepository.save(user)
-	}
-
-	async update(id: number, updateUserDto: UpdateUserDto): Promise<User> {
-		const user = await this.usersRepository.findOne(id)
-		user.firstName = updateUserDto.firstName
-		user.lastName = updateUserDto.lastName
-
-		return await this.usersRepository.save(user)
-	}
-
-	async findAll(): Promise<User[]> {
-		return await this.usersRepository.find()
-	}
-
-	async findOne(id: string): Promise<User | undefined> {
-		return await this.usersRepository.findOne(id)
-	}
-
-	async findByIds(ids: string[]): Promise<User[]> {
-		return await this.usersRepository.findByIds(ids)
-	}
-
-	async remove(id: string): Promise<void> {
-		await this.usersRepository.delete(id)
-	}
-
-	async findByUsername(username: string): Promise<User | undefined> {
-		return await this.usersRepository.findOne(undefined, {
-			where: { firstName: username },
+	async create(createUserDto: CreateUserDto): Promise<UserEntity> {
+		const { firstName, lastName, password, username, role } = createUserDto
+		const user = new this.userModel({
+			firstName,
+			lastName,
+			password,
+			username,
+			role,
 		})
+
+		return (await user.save()).toObject()
 	}
 
-	async createMany(users: CreateUserDto[]): Promise<void> {
-		const queryRunner = this.connection.createQueryRunner()
-		await queryRunner.connect()
-		await queryRunner.startTransaction()
-		try {
-			for (const newUser of users) {
-				const user = new User()
-				user.firstName = newUser.firstName
-				user.lastName = newUser.lastName
-				await queryRunner.manager.save(user)
-			}
-			await queryRunner.commitTransaction()
-		} catch (err) {
-			// since we have errors lets rollback the changes we made
-			await queryRunner.rollbackTransaction()
-		} finally {
-			// you need to release a queryRunner which was manually instantiated
-			queryRunner.isReleased ? await queryRunner.release() : null
-		}
+	async update(id: string, updateUserDto: UpdateUserDto): Promise<UserEntity> {
+		const { firstName, lastName } = updateUserDto
+		const user = await this.userModel
+			.findByIdAndUpdate(
+				id,
+				{
+					firstName,
+					lastName,
+				},
+				{ new: true },
+			)
+			.lean()
+
+		return user
+	}
+
+	async findAll(): Promise<UserEntity[]> {
+		const user = await this.userModel.find().lean()
+
+		return user
+	}
+
+	async findOne(id: string): Promise<UserEntity | undefined> {
+		const user = await this.userModel.findById(id).lean()
+
+		return user
+	}
+
+	async delete(id: string): Promise<UserEntity> {
+		const user = await this.userModel.findByIdAndRemove(id).lean()
+
+		return user
+	}
+
+	async findByUsername(username: string): Promise<UserEntity | undefined> {
+		const user = await this.userModel
+			.find({ username })
+			.limit(1)
+			.lean()
+
+		if (!user.length) return undefined
+
+		return user[0]
 	}
 }
