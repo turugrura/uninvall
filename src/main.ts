@@ -1,7 +1,6 @@
 import { ValidationPipe } from '@nestjs/common'
 import { NestFactory } from '@nestjs/core'
-import * as rateLimit from 'express-rate-limit'
-import * as helmet from 'helmet'
+import { rateLimit } from 'express-rate-limit'
 import { AppModule } from './app.module'
 
 async function bootstrap() {
@@ -16,7 +15,7 @@ async function bootstrap() {
 			whitelist: true,
 		}),
 	)
-	app.use(helmet())
+	// app.use(helmet())
 	// app.use(csurf())
 	app.use(
 		rateLimit({

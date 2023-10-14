@@ -53,14 +53,14 @@ export class TasksService {
 		jobs.forEach((value, key, map) => {
 			let next
 			try {
-				next = value.nextDates().toDate()
+				next = value.nextDates().toJSDate()
 			} catch (e) {
 				next = 'error: next fire date is in the past!'
 			}
 			allJobs.push({
 				key,
-				source: value.cronTime.source,
-				lastExecution: value.lastExecution,
+				// source: value.cronTime.source,
+				// lastExecution: value.lastExecution,
 				next,
 				isRunning: value.running,
 			})

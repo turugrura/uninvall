@@ -3,7 +3,7 @@ import { PatchSentenceRequest } from './dtos/patch-sentence.request';
 import { UpdateTitleRequest } from './dtos/update-title.request';
 import { FriendTranslatorService } from './friend-translator.service';
 
-@Controller('friendTranslators')
+@Controller('friend_translators')
 export class FriendTranslatorController {
 	constructor(private friendService: FriendTranslatorService) {}
 

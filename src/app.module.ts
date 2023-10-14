@@ -6,6 +6,7 @@ import {
 } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
+import * as Joi from 'joi';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
@@ -21,20 +22,18 @@ import configuration from './config/configuration';
 import { DatabaseModule } from './database/database.module';
 import { FriendTranslatorModule } from './friend-translator/friend-translator.module';
 import { LoggerModule } from './logger/logger.module';
-import { TasksModule } from './tasks/tasks.module';
 import { UsersModule } from './users/users.module';
-import Joi = require('@hapi/joi');
 
 @Module({
 	imports: [
 		CatsModule,
 		UsersModule,
 		AuthModule,
-		TasksModule,
+		// TasksModule,
 		LoggerModule,
 		ConfigModule.forRoot({
 			isGlobal: true,
-			envFilePath: ['.env.production', '.env.development'],
+			envFilePath: ['.env.production', '.env.development', '.env'],
 			load: [configuration],
 			validationSchema: Joi.object({
 				APPLICATION_PORT: Joi.number().required(),
