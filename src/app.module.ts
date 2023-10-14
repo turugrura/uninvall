@@ -9,9 +9,7 @@ import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import * as Joi from 'joi';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { AuthModule } from './auth/auth.module';
 import { CatsController } from './cats/cats.controller';
-import { CatsModule } from './cats/cats.module';
 import { HasKeyGuard } from './common/guards/has-key.guard';
 import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
 import { TimeoutInterceptor } from './common/interceptors/timeout.interceptor';
@@ -22,13 +20,12 @@ import configuration from './config/configuration';
 import { DatabaseModule } from './database/database.module';
 import { FriendTranslatorModule } from './friend-translator/friend-translator.module';
 import { LoggerModule } from './logger/logger.module';
-import { UsersModule } from './users/users.module';
 
 @Module({
 	imports: [
-		CatsModule,
-		UsersModule,
-		AuthModule,
+		// CatsModule,
+		// UsersModule,
+		// AuthModule,
 		// TasksModule,
 		LoggerModule,
 		ConfigModule.forRoot({
