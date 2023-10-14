@@ -25,6 +25,7 @@ async function bootstrap() {
 	)
 	// app.useLogger(app.get(MyLogger))
 
-	await app.listen(process.env.APPLICATION_PORT)
+	await app.listen(process.env.PORT)
+	console.log(`App running on ${await app.getUrl()}`);
 }
 bootstrap()

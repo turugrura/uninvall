@@ -36,7 +36,7 @@ import { UsersModule } from './users/users.module';
 			envFilePath: ['.env.production', '.env.development', '.env'],
 			load: [configuration],
 			validationSchema: Joi.object({
-				APPLICATION_PORT: Joi.number().required(),
+				PORT: Joi.number().optional(),
 				MYSQL_HOST: Joi.string().required(),
 				MYSQL_PORT: Joi.number().required(),
 				MYSQL_USERNAME: Joi.string().required(),
