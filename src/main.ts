@@ -1,6 +1,7 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import * as compression from 'compression';
+import * as express from 'express';
 import { rateLimit } from 'express-rate-limit';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
@@ -14,9 +15,12 @@ async function bootstrap() {
 	app.useGlobalPipes(
 		new ValidationPipe({
 			transform: true,
-			whitelist: true,
+			// whitelist: true,
 		}),
 	)
+	app.enableCors();
+	app.use(express.urlencoded({ limit: '2mb', extended: true }));
+	app.use(express.json({ limit: '2mb' }));
 	app.use(helmet())
 	// app.use(csurf())
 	app.use(compression());
