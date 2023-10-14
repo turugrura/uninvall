@@ -3,27 +3,27 @@ import {
 	Module,
 	NestModule,
 	RequestMethod,
-} from '@nestjs/common'
-import { ConfigModule } from '@nestjs/config'
-import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core'
-import { ScheduleModule } from '@nestjs/schedule'
-import { AppController } from './app.controller'
-import { AppService } from './app.service'
-import { AuthModule } from './auth/auth.module'
-import { CatsController } from './cats/cats.controller'
-import { CatsModule } from './cats/cats.module'
-import { HasKeyGuard } from './common/guards/has-key.guard'
-import { LoggingInterceptor } from './common/interceptors/logging.interceptor'
-import { TimeoutInterceptor } from './common/interceptors/timeout.interceptor'
-import { TranformInterceptor } from './common/interceptors/transform.interceptor'
-import { LoggerMiddleware } from './common/middleware/logger.middleware'
-import { ValidationPipe } from './common/pipes/validation.pipe'
-import configuration from './config/configuration'
-import { DatabaseModule } from './database/database.module'
-import { LoggerModule } from './logger/logger.module'
-import { TasksModule } from './tasks/tasks.module'
-import { UsersModule } from './users/users.module'
-import Joi = require('@hapi/joi')
+} from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { AuthModule } from './auth/auth.module';
+import { CatsController } from './cats/cats.controller';
+import { CatsModule } from './cats/cats.module';
+import { HasKeyGuard } from './common/guards/has-key.guard';
+import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
+import { TimeoutInterceptor } from './common/interceptors/timeout.interceptor';
+import { TransformInterceptor } from './common/interceptors/transform.interceptor';
+import { LoggerMiddleware } from './common/middleware/logger.middleware';
+import { ValidationPipe } from './common/pipes/validation.pipe';
+import configuration from './config/configuration';
+import { DatabaseModule } from './database/database.module';
+import { FriendTranslatorModule } from './friend-translator/friend-translator.module';
+import { LoggerModule } from './logger/logger.module';
+import { TasksModule } from './tasks/tasks.module';
+import { UsersModule } from './users/users.module';
+import Joi = require('@hapi/joi');
 
 @Module({
 	imports: [
@@ -44,8 +44,9 @@ import Joi = require('@hapi/joi')
 				MYSQL_DATABASE: Joi.string().required(),
 			}),
 		}),
-		ScheduleModule.forRoot(),
+		// ScheduleModule.forRoot(),
 		DatabaseModule,
+		FriendTranslatorModule,
 	],
 	controllers: [AppController],
 	providers: [
@@ -64,7 +65,7 @@ import Joi = require('@hapi/joi')
 		},
 		{
 			provide: APP_INTERCEPTOR,
-			useClass: TranformInterceptor,
+			useClass: TransformInterceptor,
 		},
 		{
 			provide: APP_INTERCEPTOR,
@@ -80,6 +81,6 @@ export class AppModule implements NestModule {
 				path: 'cats',
 				method: RequestMethod.GET,
 			})
-			.forRoutes(CatsController)
+			.forRoutes(CatsController);
 	}
 }

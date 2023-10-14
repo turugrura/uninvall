@@ -22,7 +22,6 @@ module.exports = {
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-unused-vars': 'error',
 		'@typescript-eslint/camelcase': ['error', { properties: 'never' }],
-		semi: ['error', 'never'],
 		quotes: ['error', 'single'],
 		'padding-line-between-statements': [
 			'error',
