@@ -20,6 +20,7 @@ import configuration from './config/configuration';
 import { DatabaseModule } from './database/database.module';
 import { FriendTranslatorModule } from './friend-translator/friend-translator.module';
 import { LoggerModule } from './logger/logger.module';
+import { RoScriptTranslatorModule } from './ro-script-translator/ro-script-translator.module';
 
 @Module({
 	imports: [
@@ -44,6 +45,9 @@ import { LoggerModule } from './logger/logger.module';
 		// ScheduleModule.forRoot(),
 		DatabaseModule,
 		FriendTranslatorModule,
+		...[
+			process.env.ENVIRONMENT === 'dev' ? RoScriptTranslatorModule : undefined,
+		].filter(Boolean),
 	],
 	controllers: [AppController],
 	providers: [
