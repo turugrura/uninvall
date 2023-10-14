@@ -7,7 +7,6 @@ export const databaseProviders: Provider[] = [
 	{
 		provide: getConnectionToken(MONGO_DB_CONNECTION),
 		useFactory: (): Promise<typeof mongoose> =>
-			mongoose.connect('mongodb://localhost/nest', {
-			}),
+			mongoose.connect(process.env.MONGO_CONNECTION_STRING),
 	},
 ]

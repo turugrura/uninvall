@@ -37,6 +37,7 @@ import { UsersModule } from './users/users.module';
 			load: [configuration],
 			validationSchema: Joi.object({
 				PORT: Joi.number().optional(),
+				MONGO_CONNECTION_STRING: Joi.string().required(),
 				MYSQL_HOST: Joi.string().required(),
 				MYSQL_PORT: Joi.number().required(),
 				MYSQL_USERNAME: Joi.string().required(),

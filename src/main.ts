@@ -1,7 +1,9 @@
-import { ValidationPipe } from '@nestjs/common'
-import { NestFactory } from '@nestjs/core'
-import { rateLimit } from 'express-rate-limit'
-import { AppModule } from './app.module'
+import { ValidationPipe } from '@nestjs/common';
+import { NestFactory } from '@nestjs/core';
+import * as compression from 'compression';
+import { rateLimit } from 'express-rate-limit';
+import helmet from 'helmet';
+import { AppModule } from './app.module';
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule, {
@@ -15,8 +17,9 @@ async function bootstrap() {
 			whitelist: true,
 		}),
 	)
-	// app.use(helmet())
+	app.use(helmet())
 	// app.use(csurf())
+	app.use(compression());
 	app.use(
 		rateLimit({
 			windowMs: 15 * 60 * 1000, // 15 minutes
