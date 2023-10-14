@@ -6,22 +6,22 @@ export class MyLogger extends Logger {
 
 	log(message: any, context?: string) {
 		super.log(`Count: ${++this.count}`)
-		super.log(message, context)
+		console.log('log', {message}, )
 	}
 	error(message: any, trace?: string, context?: string) {
 		super.error(`Count: ${++this.count}`)
-		super.error(message, context)
+		console.error('error', {message}, )
 	}
 	warn(message: any, context?: string) {
 		super.warn(`Count: ${++this.count}`)
-		super.warn(message, context)
+		console.warn('warn', {message}, )
 	}
 	debug(message: any, context?: string) {
 		super.debug(`Count: ${++this.count}`)
-		super.debug(message, context)
+		console.debug('debug', {message}, )
 	}
 	verbose(message: any, context?: string) {
 		super.verbose(`Count: ${++this.count}`)
-		super.verbose(message, context)
+		console.info('info', {message}, )
 	}
 }

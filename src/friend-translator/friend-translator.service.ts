@@ -19,7 +19,7 @@ export class FriendTranslatorService {
 	async getEpisode(season: number, episode: number) {
 		const ep = await this.friendRepo.findEpisodeLean(season, episode);
 		if (!ep) {
-			throw new NotFoundException();
+			throw new NotFoundException({ season, episode });
 		}
 
 		return ep;
@@ -46,7 +46,7 @@ export class FriendTranslatorService {
 
 		const data = await this.friendRepo.findEpisode(season, episode);
 		if (!data) {
-			throw new BadRequestException();
+			throw new BadRequestException({ request });
 		}
 
 		data.sentences[index].speaker = speaker;

@@ -4,8 +4,8 @@ import {
 	Injectable,
 	NestInterceptor,
 } from '@nestjs/common'
-import { Observable } from 'rxjs'
-import { tap } from 'rxjs/operators'
+import { Observable, throwError } from 'rxjs'
+import { catchError, tap } from 'rxjs/operators'
 import { MyLogger } from '../../logger/my-logger.service'
 
 @Injectable()
@@ -27,6 +27,10 @@ export class LoggingInterceptor implements NestInterceptor {
 						`LoggingInterceptor after... take time ${Date.now() - now} ms`,
 					),
 				),
+				catchError(error => {
+					this.myLogger.error(error)
+					return throwError(() => error)
+				})
 			)
 	}
 }
