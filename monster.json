@@ -1748,53 +1748,6 @@
       "raceName": "Brute"
     }
   },
-  "15147": {
-    "id": 15147,
-    "aegisName": "Robe_Of_Vituperation",
-    "name": "Robe Of Vituperation [1]",
-    "unidName": "Armor",
-    "resName": "아첨의로브",
-    "description": "เสื้อผ้าของผู้คนที่สนทนาแล้วทำให้เกิดผลกระทบร้ายแรงถึงจิตวิญญาณ\nสามารถใช้งาน Improve Concentration Level 1\nไม่คิด Physical DEF ของศัตรูประเภท Demi-Human, Demon, Undead ทีละ 4% เพิ่มเติมต่อระดับ Refine Armor 1 ระดับ\nเมื่อติดตั้งร่วมกับ Morrigane's Manteau\nไม่คิด Physical DEF ของศัตรูประเภท Demi-Human, Demon, Undead 15%\nLUK + 3, เพิ่ม LUK ทีละ + 1 ต่อระดับ Refine Armor 1 ระดับ \nCRI + 10, เพิ่ม CRI ทีละ + 1 ต่อระดับ Refine Armor 1 ระดับ \nเมื่อติดตั้งร่วมกับ Valkyrian Manteau\nไม่คิด Physical DEF ของศัตรูประเภท Demi-Human, Demon, Undead 15%\nMHP + 10%, เพิ่ม MHP ทีละ + 1% ต่อระดับ Refine Armor 1 ระดับ \nATK + 2%, เพิ่ม ATK ทีละ + 1% ต่อระดับ Refine Armor 1 ระดับ \nประเภท : ^777777Armor^000000 ป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nติดตั้ง : ^777777ทุกอาชีพ^000000",
-    "slots": 1,
-    "itemTypeId": 2,
-    "itemSubTypeId": 513,
-    "itemLevel": null,
-    "attack": null,
-    "defense": 0,
-    "weight": 10,
-    "requiredLevel": 100,
-    "location": null,
-    "compositionPos": null,
-    "usableClass": [
-      "all"
-    ],
-    "script": {
-      "ต่อระดับ Refine Armor": [
-        "1"
-      ],
-      "เพิ่ม LUK ทีละ": [
-        "1"
-      ],
-      "cri": [
-        "10"
-      ],
-      "เพิ่ม CRI ทีละ": [
-        "1"
-      ],
-      "hpPercent": [
-        "10"
-      ],
-      "เพิ่ม MHP ทีละ": [
-        "1"
-      ],
-      "atkPercent": [
-        "2"
-      ],
-      "เพิ่ม ATK ทีละ": [
-        "1"
-      ]
-    }
-  },
   "20260": {
     "id": 20260,
     "dbname": "ILL_TEDDY_BEAR_S",
