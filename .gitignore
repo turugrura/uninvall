@@ -36,6 +36,3 @@ lerna-debug.log*
 # env
 *.env
 .env*
-
-data.json
-monster.json

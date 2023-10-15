@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Post, Put } from '@nestjs/common';
 import { RoScriptTranslatorService } from './ro-script-translator.service';
 
 @Controller('ro-script-translator')
-export class AppController {
+export class RoScriptTranslatorController {
   constructor(private roService: RoScriptTranslatorService) {}
 
   @Put('syncAll')
