@@ -3,30 +3,34 @@ import { RoScriptTranslatorService } from './ro-script-translator.service';
 
 @Controller('ro-script-translator')
 export class RoScriptTranslatorController {
-  constructor(private roService: RoScriptTranslatorService) {}
+	constructor(private roService: RoScriptTranslatorService) {}
 
-  @Put('syncAll')
-  syncAll() {
-    return this.roService.syncAll();
-  }
+	@Put('syncAll')
+	syncAll() {
+		return this.roService.syncAll();
+	}
 
-  @Post('test-post')
-  postTest(@Body() a: any) {
-    return this.roService.loadItems(a.itemIds);
-  }
+	@Post('test-post')
+	postTest(@Body() a: any) {
+		if (a?.length === 0) {
+			return this.roService.syncAll();
+		}
 
-  @Post('monster')
-  loadMonster(@Body() a: any) {
-    return this.roService.loadMonster(a.itemIds);
-  }
+		return this.roService.loadItems(a.itemIds);
+	}
 
-  @Post('loadImage')
-  loadImage(@Body() a: any) {
-    return this.roService.loadImage(a.itemIds);
-  }
+	@Post('monster')
+	loadMonster(@Body() a: any) {
+		return this.roService.loadMonster(a.itemIds);
+	}
 
-  @Delete('test-delete')
-  deleteTest() {
-    return { del: 'OK' };
-  }
+	@Post('loadImage')
+	loadImage(@Body() a: any) {
+		return this.roService.loadImage(a.itemIds);
+	}
+
+	@Delete('test-delete')
+	deleteTest() {
+		return { del: 'OK' };
+	}
 }

@@ -5,8 +5,9 @@ import { RoScriptTranslatorService } from "./ro-script-translator.service";
 
 @Module({
   imports: [HttpModule.register({
-    signal: AbortSignal.timeout(60_000),
-    timeout: 60_000
+    // signal: AbortSignal.timeout(60_000 * 60),
+    // timeout: 60_000,
+    // timeoutErrorMessage: 'XXX'
   })],
   controllers: [RoScriptTranslatorController],
   providers: [RoScriptTranslatorService],
