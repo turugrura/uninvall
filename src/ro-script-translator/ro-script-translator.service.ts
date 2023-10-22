@@ -428,6 +428,9 @@ export class RoScriptTranslatorService {
 				Number(this.getTextBetween(description, 'Lv ของอาวุธ : ^777777'));
 			if (Number.isInteger(itemLv)) {
 				item.itemLevel = itemLv;
+			} else {
+				const [, wLevel] = description.match(/\^777777(\d)\^000000/) ?? [];
+				item.itemLevel = Number(wLevel);
 			}
 		}
 		if (itemTypeId === 1 && item.itemLevel == null) {

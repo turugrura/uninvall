@@ -1,3 +1,182 @@
+const mapAll = {
+	เพิ่มพลังโจมตีทางกายภาพและเวทย์ต่อศัตรูธาตุ: [
+		'p_element_{a}',
+		'm_element_{a}',
+	],
+	'เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ': [
+		'p_element_{a}',
+		'm_element_{a}',
+	],
+	'เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ': [
+		'p_element_all',
+		'm_element_all',
+	],
+	'เพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูทุกธาตุ': [
+		'p_element_all',
+		'm_element_all',
+	],
+	'เพิ่ม Damage ทางกายภาพระยะใกล้และระยะไกล': ['range', 'melee'],
+	'เพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูทุกประเภท': [
+		'p_class_all',
+		'm_class_all',
+	],
+	'เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท': [
+		'p_class_all',
+		'm_class_all',
+	],
+	'เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด': [
+		'p_size_all',
+		'm_size_all',
+	],
+};
+const mapPrefix = {
+	'เพิ่ม Damage ทางเวทมนตร์ธาตุ': 'm_my_element',
+	'เพิ่ม Damage เวทมนตร์ธาตุ': 'm_my_element',
+	'เพิ่ม Damage ทางเวทย์ธาตุ': 'm_my_element',
+	เพิ่มดาเมจทางเวทย์ธาตุ: 'm_my_element',
+	เพิ่มความเสียหายทางเวทธาตุ: 'm_my_element',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ': 'm_element',
+	'เพิ่ม Damage ทางเวทมนต์ธาตุ': 'm_element',
+	'เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อมอนสเตอร์ธาตุ': 'm_element',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท': 'm_race',
+	'เพิ่ม Damage ทางเวทย์ที่ทำต่อศัตรูขนาด': 'm_size',
+
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ': 'p_element',
+	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ธาตุ': 'p_element',
+	'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูธาตุ': 'p_element',
+	'เพิ่ม Damage ทางกายภาพเมื่อโจมตีมอนสเตอร์ธาตุ': 'p_element',
+	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท': 'p_class',
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูประเภท': 'p_race',
+	'เพิ่ม Damage ทางกายภาพเมื่อโจมตีมอนสเตอร์เผ่า': 'p_race',
+	'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูขนาด': 'p_size',
+	'เพิ่ม Damage ทางกายภาพที่สร้างต่อศัตรูขนาด': 'p_size',
+	เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อมอนสเตอร์ขนาด: 'p_size',
+	'เพิ่มพลังโจมตีทางกายภาพ/ทางเวทมนตร์ต่อศัตรูขนาด': 'p_size',
+	'เพิ่ม Damage ทางกายภาพแก่ศัตรูขนาด': 'p_size',
+};
+const map = {
+	เพิ่มพลังโจมตีธนู: 'bowRange',
+	เพิ่มพลังโจมตีของธนู: 'bowRange',
+	เพิ่มพลังโจมตีธนูครั้งละ: 'bowRange',
+	'เพิ่มพลังโจมตีอาวุธประเภท Bow': 'bowRange',
+	'เพิ่มพลังโจมตีของอาวุธประเภท Bow': 'bowRange',
+
+	'เพิ่ม Damage ทางกายภาพระยะไกล': 'range',
+	'เพิ่ม Damage การโจมตีระยะไกล': 'range',
+	เพิ่มดาเมจทางกายภาพระยะไกล: 'range',
+	เพิ่มพลังโจมตีทางกายภาพระยะไกล: 'range',
+	'เพิ่ม Damage ระยะไกล': 'range',
+	'Damage ทางกายภาพระยะไกล': 'range',
+	'เพิ่ม Damage ทางกายภาพระยะไกลต่อศัตรูทั้งหมด': 'range',
+	เพิ่มการโจมตีทางกายภาพระยะไกล: 'range',
+	'เพิ่ม Damage จากการโจมตีระยะไกลทีละ': 'range',
+	เพิ่มพลังโจมตีระยะไกล: 'range',
+	กายภาพระยะไกล: 'range',
+
+	'เพิ่ม Damage ทางกายภาพระยะใกล้': 'melee',
+
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ': 'p_element_all',
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด': 'p_size_all',
+	'เพิ่ม Damage ทางกายภาพแก่ศัตรูทุกขนาด': 'p_size_all',
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูขนาดเล็ก': 'p_size_s',
+	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกเผ่า': 'p_race_all',
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า': 'p_race_all',
+	ทางกายภาพที่สร้างต่อศัตรูทุกเผ่า: 'p_race_all',
+	'เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อศัตรูธาตุ Neutral': 'p_element_neutral',
+	'เพิ่ม Damage เมื่อโจมตีมอนสเตอร์ทุกประเภท (ทั่วไป, Boss, Guardian)':
+		'p_class_all',
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูประเภทบอส': 'p_class_boss',
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท': 'p_class_all',
+	'เพิ่ม Damage ทางกายภาพแก่ศัตรูทุกประเภท': 'p_class_all',
+	'เพิ่มค่า เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท': 'p_class_all',
+	เพิ่มพลังโจมตีทางกายภาพต่อมอนสเตอร์ทุกประเภท: 'p_class_all',
+
+	'เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ': 'm_my_element_all',
+	'เพิ่ม Damage ทางเวททุกธาตุ': 'm_my_element_all',
+	'เพิ่ม Damage การโจมตีทางเวทมนตร์ทุกธาตุ': 'm_my_element_all',
+	'เพิ่มพลังโจมตีทางเวทย์ธาตุ Fire': 'm_my_element_fire',
+	'เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost': 'm_my_element_ghost',
+	'เพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูธาตุ Neutral ขึ้น':
+		'm_element_neutral',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ': 'm_element_all',
+	'เพิ่ม Damage เวทมนตร์ทุกธาตุ': 'm_my_element_all',
+	'เพิ่ม Damage ทางเวทต่อศัตรูทุกประเภท': 'm_class_all',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท': 'm_class_all',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด': 'm_size_all',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกขนาด': 'm_size_all',
+	'เพิ่ม Damage การโจมตีทางเวทมนตร์ต่อศัตรูทุกขนาด': 'm_size_all',
+	'เพิ่ม Damage ทางเวทย์ต่อศัตรูทุกขนาด': 'm_size_all',
+	'เพิ่ม Damage ทางเวทย์ที่ทำต่อศัตรูขนาดใหญ่': 'm_size_l',
+	'เพิ่ม Damage ทางเวทย์ต่อศัตรูขนาดกลาง': 'm_size_m',
+	ทางเวทย์แก่มอนสเตอร์ประเภทบอส: 'm_class_boss',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า': 'm_race_all',
+
+	'ลด Delay หลังใช้สกิล': 'acd',
+	'ลด Delay หลังใช้สกิลลง': 'acd',
+	'ลด Delay ในการร่าย': 'acd',
+	ลดดีเลย์หลังใช้สกิล: 'acd',
+	ลดดีเลย์หลังใช้สกิลลง: 'acd',
+	'ลด Delayหลังการใช้สกิล': 'acd',
+	ลดดีเลย์หลังจากใช้สกิล: 'acd',
+
+	ลดระยะเวลาร่ายแบบคงที่: 'fct',
+	'Fixed Cast Time': 'fct',
+	ลดระยะเวลาร่ายแบบคงตัว: 'fct',
+	ลดระยะเวลาร่ายแบบคงที่ลง: 'fct',
+
+	ลดเวลาในการร่ายแบบผันแปร: 'vct',
+	ลดระยะเวลาร่ายแบบแปรผัน: 'vct',
+	ลดระยะเวลาการร่ายแบบแปรผัน: 'vct',
+	'ลด Variable Cast Time': 'vct',
+	'Variable Cast Time ลดลง': 'vct',
+	ลดระยะเวลาร่าย: 'vct',
+	ลดระยะเวลาการร่ายเวทย์ลง: 'vct',
+	ลดระยะเวลาร่ายแบบแปรผันลง: 'vct',
+
+	'เพิ่มความทนทานจากการโจมตีของ Player': 'resist_player',
+	'เพิ่มความทนทานจากการโจมตีจาก Player': 'resist_player',
+	HIT: 'hit',
+	'Perfect Hit': 'perfectHit',
+	'PERFECT HIT': 'perfectHit',
+	flee: 'flee',
+	FLEE: 'flee',
+	'เพิ่ม Critical Damage': 'criDmg',
+	'เพิ่ม Crirical Damage': 'criDmg',
+	'เพิ่ม Critical Damage ทีละ': 'criDmg',
+	'Critical Damage': 'criDmg',
+	เพิ่มความแรงคริติคอล: 'criDmg',
+	CRI: 'cri',
+	เพิ่มโอกาสคริติคอล: 'cri',
+	โอกาสคริติคอล: 'cri',
+	ASPD: 'aspd',
+	'เพิ่ม ASPD': 'aspd',
+	ความเร็วในการโจมตีเพิ่มขึ้น: 'aspd',
+	'เพิ่มความเร็วการโจมตี  (ลดดีเลย์หลังการโจมตี': 'aspd',
+	'เพิ่ม MATK': 'atk',
+	MATK: 'matk',
+	ATK: 'atk',
+	'เพิ่ม ATK': 'atk',
+	MaxHP: 'hp',
+	MHP: 'hp',
+	HP: 'hp',
+	MaxSP: 'sp',
+	MSP: 'sp',
+	SP: 'sp',
+	DEF: 'def',
+	MDEF: 'mdef',
+	'All Status': 'allStatus',
+	'All State': 'allStatus',
+	STR: 'str',
+	DEX: 'dex',
+	AGI: 'agi',
+	LUK: 'luk',
+	INT: 'int',
+	VIT: 'vit',
+	'EXP ที่ได้รับจากมอนสเตอร์': 'exp',
+	เพิ่มค่าประสบการณ์ที่ได้รับ: 'exp',
+	'Item Drop Rate': 'itemDrop',
+};
+
 export class BuildScript {
 	private _scripts = {};
 	private _extractedScript!: {
@@ -55,118 +234,7 @@ export class BuildScript {
 		...this.patterns.itemSet,
 		...this.patterns.mainState,
 	];
-	private map = {
-		เพิ่มพลังโจมตีธนู: 'bowRange',
-		เพิ่มพลังโจมตีของธนู: 'bowRange',
-		เพิ่มพลังโจมตีธนูครั้งละ: 'bowRange',
-		'เพิ่มพลังโจมตีอาวุธประเภท Bow': 'bowRange',
-		'เพิ่มพลังโจมตีของอาวุธประเภท Bow': 'bowRange',
 
-		'เพิ่ม Damage ทางกายภาพระยะไกล': 'range',
-		'เพิ่ม Damage การโจมตีระยะไกล': 'range',
-		เพิ่มดาเมจทางกายภาพระยะไกล: 'range',
-		เพิ่มพลังโจมตีทางกายภาพระยะไกล: 'range',
-		'เพิ่ม Damage ระยะไกล': 'range',
-		'Damage ทางกายภาพระยะไกล': 'range',
-		'เพิ่ม Damage ทางกายภาพระยะไกลต่อศัตรูทั้งหมด': 'range',
-		เพิ่มการโจมตีทางกายภาพระยะไกล: 'range',
-		'เพิ่ม Damage จากการโจมตีระยะไกลทีละ': 'range',
-
-		'เพิ่ม Damage ทางกายภาพระยะใกล้': 'melee',
-
-		'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ': 'p_element_all',
-		'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด': 'p_size_all',
-		'เพิ่ม Damage ทางกายภาพแก่ศัตรูทุกขนาด': 'p_size_all',
-		'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกเผ่า': 'p_race_all',
-		'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า': 'p_race_all',
-		ทางกายภาพที่สร้างต่อศัตรูทุกเผ่า: 'p_race_all',
-		'เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อศัตรูธาตุ Neutral': 'p_element_neutral',
-		'เพิ่ม Damage เมื่อโจมตีมอนสเตอร์ทุกประเภท (ทั่วไป, Boss, Guardian)':
-			'p_class_all',
-		'เพิ่ม Damage ทางกายภาพต่อศัตรูประเภทบอส': 'p_class_boss',
-		'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท': 'p_class_all',
-		'เพิ่ม Damage ทางกายภาพแก่ศัตรูทุกประเภท': 'p_class_all',
-		'เพิ่มค่า เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท': 'p_class_all',
-
-		'เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ': 'm_my_element_all',
-		'เพิ่ม Damage ทางเวททุกธาตุ': 'm_my_element_all',
-		'เพิ่ม Damage การโจมตีทางเวทมนตร์ทุกธาตุ': 'm_my_element_all',
-		'เพิ่มพลังโจมตีทางเวทย์ธาตุ Fire': 'm_my_element_fire',
-		'เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost': 'm_my_element_ghost',
-		'เพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูธาตุ Neutral ขึ้น':
-			'm_element_neutral',
-		'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ': 'm_element_all',
-		'เพิ่ม Damage เวทมนตร์ทุกธาตุ': 'm_my_element_all',
-		'เพิ่ม Damage ทางเวทต่อศัตรูทุกประเภท': 'm_class_all',
-		'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท': 'm_class_all',
-		'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด': 'm_size_all',
-		'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกขนาด': 'm_size_all',
-		'เพิ่ม Damage การโจมตีทางเวทมนตร์ต่อศัตรูทุกขนาด': 'm_size_all',
-		'เพิ่ม Damage ทางเวทย์ต่อศัตรูขนาดกลาง': 'm_size_m',
-		ทางเวทย์แก่มอนสเตอร์ประเภทบอส: 'm_class_boss',
-		'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า': 'm_race_all',
-
-		'ลด Delay หลังใช้สกิล': 'acd',
-		'ลด Delay หลังใช้สกิลลง': 'acd',
-		'ลด Delay ในการร่าย': 'acd',
-		ลดดีเลย์หลังใช้สกิล: 'acd',
-		ลดดีเลย์หลังใช้สกิลลง: 'acd',
-
-		ลดระยะเวลาร่ายแบบคงที่: 'fct',
-		'Fixed Cast Time': 'fct',
-		ลดระยะเวลาร่ายแบบคงตัว: 'fct',
-		ลดระยะเวลาร่ายแบบคงที่ลง: 'fct',
-
-		ลดระยะเวลาร่ายแบบแปรผัน: 'vct',
-		ลดระยะเวลาการร่ายแบบแปรผัน: 'vct',
-		'ลด Variable Cast Time': 'vct',
-		'Variable Cast Time ลดลง': 'vct',
-		ลดระยะเวลาร่าย: 'vct',
-		ลดระยะเวลาการร่ายเวทย์ลง: 'vct',
-
-		'เพิ่มความทนทานจากการโจมตีของ Player': 'resist_player',
-		'เพิ่มความทนทานจากการโจมตีจาก Player': 'resist_player',
-		HIT: 'hit',
-		'Perfect Hit': 'perfectHit',
-		'PERFECT HIT': 'perfectHit',
-		flee: 'flee',
-		FLEE: 'flee',
-		'เพิ่ม Critical Damage': 'criDmg',
-		'เพิ่ม Crirical Damage': 'criDmg',
-		'เพิ่ม Critical Damage ทีละ': 'criDmg',
-		'Critical Damage': 'criDmg',
-		เพิ่มความแรงคริติคอล: 'criDmg',
-		CRI: 'cri',
-		เพิ่มโอกาสคริติคอล: 'cri',
-		โอกาสคริติคอล: 'cri',
-		ASPD: 'aspd',
-		'เพิ่ม ASPD': 'aspd',
-		ความเร็วในการโจมตีเพิ่มขึ้น: 'aspd',
-		'เพิ่มความเร็วการโจมตี  (ลดดีเลย์หลังการโจมตี': 'aspd',
-		'เพิ่ม MATK': 'atk',
-		MATK: 'matk',
-		ATK: 'atk',
-		'เพิ่ม ATK': 'atk',
-		MaxHP: 'hp',
-		MHP: 'hp',
-		HP: 'hp',
-		MaxSP: 'sp',
-		MSP: 'sp',
-		SP: 'sp',
-		DEF: 'def',
-		MDEF: 'mdef',
-		'All Status': 'allStatus',
-		'All State': 'allStatus',
-		STR: 'str',
-		DEX: 'dex',
-		AGI: 'agi',
-		LUK: 'luk',
-		INT: 'int',
-		VIT: 'vit',
-		'EXP ที่ได้รับจากมอนสเตอร์': 'exp',
-		เพิ่มค่าประสบการณ์ที่ได้รับ: 'exp',
-		'Item Drop Rate': 'itemDrop',
-	} as any;
 	private mapSize = {
 		small: 's',
 		เล็ก: 's',
@@ -301,7 +369,7 @@ export class BuildScript {
 						scripts.push({
 							actualAttr: actualAttr,
 							bonus:
-								`SKILL[${skillName}]==${bonus}` + (time ? `(${time})` : ''),
+								`SKILL[${skillName}]===${bonus}` + (time ? `(${time})` : ''),
 						});
 					}
 				} else {
@@ -399,7 +467,7 @@ export class BuildScript {
 
 		const scripts = [] as any[];
 		if (attr && bonus) {
-			const actualAttr = (this.map[attr] ?? attr).trim() as string;
+			const actualAttr = (map[attr] ?? attr).trim() as string;
 			const goodBonus = Number.isNaN(Number(bonus))
 				? bonus.replace(/\D/g, '')
 				: bonus;
@@ -981,6 +1049,9 @@ export class BuildScript {
 			.replace('ลด Cooldown ของ ', 'cd__')
 			.replace('ลดคูลดาวน์สกิล ', 'cd__')
 			.replace('ลดคูลดาวน์สกิล', 'cd__')
+			.replace('ลดเวลาคูลดาวน์ ', 'cd__')
+			.replace('ลด Cooldown ของสกิล ', 'cd__')
+			.replace('ลด Cool down สกิล ', 'cd__')
 			.replace('ลดการใช้ SP ของสกิล', 'sp__')
 			.replace('ลดการใช้ SP ของสกิล ', 'sp__')
 			.replace('ลดปริมาณการใช้ SP ในการใช้สกิล ', 'sp__')
@@ -993,34 +1064,13 @@ export class BuildScript {
 			.trim();
 		// console.log({rawAttr, goodAttr})
 
-		const found = this.map[goodAttr];
+		const found = map[goodAttr];
 		if (found) return [found];
 
 		if (!goodAttr.startsWith('เพิ่ม')) {
 			return goodAttr.split(',').map((a) => a.trim());
 		}
 
-		const mapPrefix = {
-			'เพิ่ม Damage ทางเวทมนตร์ธาตุ': 'm_my_element',
-			'เพิ่ม Damage เวทมนตร์ธาตุ': 'm_my_element',
-			'เพิ่ม Damage ทางเวทย์ธาตุ': 'm_my_element',
-			เพิ่มดาเมจทางเวทย์ธาตุ: 'm_my_element',
-			'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ': 'm_element',
-			'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท': 'm_race',
-
-			'เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ': 'p_element',
-			'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ธาตุ': 'p_element',
-			'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูธาตุ': 'p_element',
-			'เพิ่ม Damage ทางกายภาพเมื่อโจมตีมอนสเตอร์ธาตุ': 'p_element',
-			'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท': 'p_class',
-			'เพิ่ม Damage ทางกายภาพต่อศัตรูประเภท': 'p_race',
-			'เพิ่ม Damage ทางกายภาพเมื่อโจมตีมอนสเตอร์เผ่า': 'p_race',
-			'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูขนาด': 'p_size',
-			'เพิ่ม Damage ทางกายภาพที่สร้างต่อศัตรูขนาด': 'p_size',
-			เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อมอนสเตอร์ขนาด: 'p_size',
-			'เพิ่มพลังโจมตีทางกายภาพ/ทางเวทมนตร์ต่อศัตรูขนาด': 'p_size',
-			'เพิ่ม Damage ทางกายภาพแก่ศัตรูขนาด': 'p_size',
-		};
 		for (const [check, pre] of Object.entries(mapPrefix)) {
 			if (goodAttr.startsWith(check)) {
 				let pureAttrs = goodAttr
@@ -1038,33 +1088,6 @@ export class BuildScript {
 			}
 		}
 
-		const mapAll = {
-			เพิ่มพลังโจมตีทางกายภาพและเวทย์ต่อศัตรูธาตุ: [
-				'p_element_{a}',
-				'm_element_{a}',
-			],
-			'เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ': [
-				'p_element_all',
-				'm_element_all',
-			],
-			'เพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูทุกธาตุ': [
-				'p_element_all',
-				'm_element_all',
-			],
-			'เพิ่ม Damage ทางกายภาพระยะใกล้และระยะไกล': ['range', 'melee'],
-			'เพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูทุกประเภท': [
-				'p_class_all',
-				'm_class_all',
-			],
-			'เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท': [
-				'p_class_all',
-				'm_class_all',
-			],
-			'เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด': [
-				'p_size_all',
-				'm_size_all',
-			],
-		};
 		for (const [attrAll, template] of Object.entries(mapAll)) {
 			if (goodAttr.startsWith(attrAll)) {
 				const doubleAttrs = goodAttr
