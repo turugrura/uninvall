@@ -8,6 +8,7 @@ import { ItemAPIModel } from './item-api.model';
 enum CardPosition {
 	Weapon = 0,
 	Head = 769,
+	Shield = 32,
 	Armor = 16,
 	Garment = 4,
 	Boot = 64,
@@ -267,6 +268,10 @@ export class RoScriptTranslatorService {
 				currentData[updatedItem.id].script = new BuildScript(
 					currentData[updatedItem.id].description,
 				).scripts;
+			} else if (currentData[updatedItem.id]?.script) {
+				const bk = currentData[updatedItem.id].script;
+				delete currentData[updatedItem.id].script;
+				currentData[updatedItem.id].script = bk;
 			}
 		}
 		const s = JSON.stringify(currentData, undefined, 2);
@@ -281,60 +286,6 @@ export class RoScriptTranslatorService {
 			),
 		];
 		const updatedItems: any[] = [];
-		// for (const itemId of itemIds) {
-		// 	const url = `${this.baseDbAPI}/Item/${itemId}?apiKey=${this.baseDbAPIKey}&server=thROG`;
-		// 	try {
-		// 		const { data } = await this.http
-		// 			.get<ItemAPIModel>(url, { timeout: 1000 * 5 })
-		// 			.pipe(retry({ count: 3, delay: 3000 }))
-		// 			.toPromise();
-		// 		const {
-		// 			id,
-		// 			aegisName,
-		// 			name,
-		// 			unidName,
-		// 			resName,
-		// 			description,
-		// 			slots,
-		// 			itemTypeId,
-		// 			itemSubTypeId,
-		// 			itemLevel,
-		// 			attack,
-		// 			defense,
-		// 			weight,
-		// 			requiredLevel,
-		// 			location,
-		// 			compositionPos,
-		// 			attribute,
-		// 		} = data;
-		// 		updatedItems.push({
-		// 			id,
-		// 			aegisName,
-		// 			name,
-		// 			unidName,
-		// 			resName,
-		// 			description,
-		// 			slots,
-		// 			itemTypeId,
-		// 			itemSubTypeId,
-		// 			itemLevel,
-		// 			attack,
-		// 			propertyAtk: attribute ? mapElement[attribute] : undefined,
-		// 			defense,
-		// 			weight,
-		// 			requiredLevel,
-		// 			location,
-		// 			compositionPos,
-		// 		});
-
-		// 		this.loadImage([itemId]);
-		// 	} catch (error) {
-		// 		console.error({
-		// 			itemId,
-		// 			msg: error?.response?.statusText || error?.response || error?.message,
-		// 		});
-		// 	}
-		// }
 
 		await Promise.all(
 			itemIds.map(async (itemId) => {
@@ -342,7 +293,7 @@ export class RoScriptTranslatorService {
 				try {
 					const { data } = await this.http
 						.get<ItemAPIModel>(url, { timeout: 1000 * 5 })
-						.pipe(retry({ count: 3, delay: 3000 }))
+						.pipe(retry({ count: 10, delay: 3000 }))
 						.toPromise();
 					const {
 						id,
@@ -362,6 +313,7 @@ export class RoScriptTranslatorService {
 						location,
 						compositionPos,
 						attribute,
+						cardPrefix,
 					} = data;
 					updatedItems.push({
 						id,
@@ -381,6 +333,7 @@ export class RoScriptTranslatorService {
 						requiredLevel,
 						location,
 						compositionPos,
+						cardPrefix: cardPrefix || undefined,
 					});
 
 					this.loadImage([itemId]);
@@ -559,5 +512,24 @@ export class RoScriptTranslatorService {
 						.once('close', () => console.log({ [itemId]: 'OK' }));
 				});
 		}
+	}
+
+	private isCard(itemTypeId: number, compositionPos: number) {
+		if (itemTypeId === ItemTypeId.CARD) {
+			switch (compositionPos) {
+				case CardPosition.Weapon:
+				case CardPosition.Head:
+				case CardPosition.Shield:
+				case CardPosition.Armor:
+				case CardPosition.Garment:
+				case CardPosition.Boot:
+				case CardPosition.AccL:
+				case CardPosition.AccR:
+				case CardPosition.Acc:
+					return true;
+			}
+		}
+
+		false;
 	}
 }

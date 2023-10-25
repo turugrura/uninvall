@@ -28,6 +28,7 @@ const mapAll = {
 		'p_size_all',
 		'm_size_all',
 	],
+	'เพิ่ม Damage ต่อศัตรูทุกเผ่า': ['p_race_all', 'm_race_all'],
 };
 const mapPrefix = {
 	'เพิ่ม Damage ทางเวทมนตร์ธาตุ': 'm_my_element',
@@ -39,6 +40,7 @@ const mapPrefix = {
 	'เพิ่ม Damage ทางเวทมนต์ธาตุ': 'm_element',
 	'เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อมอนสเตอร์ธาตุ': 'm_element',
 	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท': 'm_race',
+	เพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูเผ่า: 'm_race',
 	'เพิ่ม Damage ทางเวทย์ที่ทำต่อศัตรูขนาด': 'm_size',
 
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ': 'p_element',
@@ -1050,13 +1052,17 @@ export class BuildScript {
 			.replace('ลดคูลดาวน์สกิล ', 'cd__')
 			.replace('ลดคูลดาวน์สกิล', 'cd__')
 			.replace('ลดเวลาคูลดาวน์ ', 'cd__')
+			.replace('ลด Cooltime Skill ', 'cd__')
 			.replace('ลด Cooldown ของสกิล ', 'cd__')
 			.replace('ลด Cool down สกิล ', 'cd__')
 			.replace('ลดการใช้ SP ของสกิล', 'sp__')
 			.replace('ลดการใช้ SP ของสกิล ', 'sp__')
 			.replace('ลดปริมาณการใช้ SP ในการใช้สกิล ', 'sp__')
 			.replace('ลดปริมาณการใช้ SP สกิล ', 'sp__')
+			.replace('ลดการใช้ SP ของ ', 'sp__')
 			.replace('ลดระยะเวลาร่ายแบบแปรผันสกิล ', 'vct__')
+			.replace('ลดระยะเวลาร่ายแบบแปรผันของสกิล ', 'vct__')
+			.replace('เพิ่มพลังโจมตีของ ', '')
 			.replace(/เพิ่มเติม/, '')
 			.replace(/เพิ่ม Damage สกิล/, '')
 			.replace(/เพิ่ม Damage ของ/, '')
