@@ -1042,6 +1042,8 @@ export class BuildScript {
 
 	toAttr(rawAttr: string): string[] {
 		const goodAttr = rawAttr
+			.replace('Shadow', 'dark')
+			.replace('shadow', 'dark')
 			.replace('+', '')
 			.replace('ขึ้น', '')
 			.replace('ครั้งละ', '')
