@@ -1830,6 +1830,39 @@
       "all"
     ]
   },
+  "2367": {
+    "id": 2367,
+    "aegisName": "Sniping_Suit",
+    "name": "Sniping Suit [1]",
+    "unidName": "Armor",
+    "resName": "스나이핑슈츠",
+    "description": "ชุดที่สั่งตัดพิเศษเพื่อช่วยเพิ่มประสิทธิภาพของกล้ามเนื้อในการยิงธนู\nทำให้ยิงได้รวดเร็วและแม่นยำมากยิ่งขึ้น\nCRI + 6, ค่า CRI จะเพิ่มขึ้นได้อีกโดยขึ้นอยู่กับค่า LUK ของตัวละคร\nMdef + 5 ลด Delay ในการใช้สกิล 23%\nประเภท : ^777777Armor^000000 พลังป้องกัน : ^77777742^000000\nน้ำหนัก : ^77777775^000000\nเลเวลที่ต้องการ : ^77777750^000000\nอาชีพ : ^777777Sniper เท่านั้น^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 42,
+    "weight": 75,
+    "requiredLevel": 50,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "cri": [
+        "6",
+        "SUM[luk==10]---1"
+      ],
+      "mdef": [
+        "5"
+      ],
+      "acd": [
+        "23"
+      ]
+    }
+  },
   "2374": {
     "id": 2374,
     "aegisName": "Diabolus_Robe",
@@ -2158,6 +2191,35 @@
       ],
       "p_class_boss": [
         "str:120===10"
+      ]
+    }
+  },
+  "2703": {
+    "id": 2703,
+    "aegisName": "Expert_Ring",
+    "name": "Expert Ring [1]",
+    "unidName": "Accessory",
+    "resName": "익스퍼트링",
+    "description": "เครื่องประดับที่มีพลังยิ่งใหญ่ซ้อนเร้นอยู่ ผู้ที่เข้าใจในตัวมันเท่านั้นที่จะดึงพลังนี้ออกมาได้\nแต่จงระวัง มันมีทั้งด้านดีและด้านร้าย\nDelay ในการใช้สกิลลดลง 5% เพิ่มการใช้ SP จากปกติ 5%\nประเภท : ^777777Accessory^000000\nพลังป้องกัน : ^7777770^000000 น้ำหนัก : ^77777715^000000\nเลเวลที่ต้องการ : ^77777750^000000\nอาชีพ : ^777777Hi-Class ทุกอาชีพ ยกเว้น Novice Cls^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 15,
+    "requiredLevel": 50,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Hi-Class"
+    ],
+    "script": {
+      "acd": [
+        "5"
+      ],
+      "spPercentCost": [
+        "5"
       ]
     }
   },
@@ -2528,6 +2590,30 @@
       ]
     }
   },
+  "4034": {
+    "id": 4034,
+    "aegisName": "Worm_Tail_Card",
+    "name": "Wormtail Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "DEX + 2\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Clever",
+    "script": {
+      "dex": [
+        "2"
+      ]
+    }
+  },
   "4047": {
     "id": 4047,
     "aegisName": "Ghostring_Card",
@@ -2750,6 +2836,30 @@
       ]
     }
   },
+  "4111": {
+    "id": 4111,
+    "aegisName": "Strouf_Card",
+    "name": "Strouf Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "โจมตี Monster Race Demon แรงขึ้น 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Decussate",
+    "script": {
+      "p_race_demon": [
+        "20"
+      ]
+    }
+  },
   "4129": {
     "id": 4129,
     "aegisName": "Baphomet__Card",
@@ -2893,6 +3003,36 @@
       ],
       "resist_Stun": [
         "100"
+      ]
+    }
+  },
+  "4160": {
+    "id": 4160,
+    "aegisName": "Antique_Firelock_Card",
+    "name": "Firelock Soldier Card",
+    "unidName": "Firelock Soldier Card",
+    "resName": "이름없는카드",
+    "description": "STR +2\nMax HP, Max SP +10% ถ้า Foot Gear ถูกตีบวกตั้งแต่ +9 ขึ้นไป\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Foot Gear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "High Level",
+    "script": {
+      "str": [
+        "2"
+      ],
+      "hpPercent": [
+        "9===10"
+      ],
+      "spPercent": [
+        "9===10"
       ]
     }
   },
@@ -3669,6 +3809,31 @@
       ]
     }
   },
+  "4506": {
+    "id": 4506,
+    "aegisName": "Dolomedes_Card",
+    "name": "Dolomedes Card",
+    "unidName": "Dolomedes Card",
+    "resName": "이름없는카드",
+    "description": "DEX + 2, เมื่อสวมใส่โดย Archer Class ทุกๆ 3 ขั้นอัพเกรด เพิ่ม DEX 1\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Archer",
+    "script": {
+      "dex": [
+        "2",
+        "USED[Archer]3---1"
+      ]
+    }
+  },
   "4508": {
     "id": 4508,
     "aegisName": "Gold_Scaraba_Card",
@@ -3857,6 +4022,33 @@
       ],
       "damageTaken_element_all": [
         "30"
+      ]
+    }
+  },
+  "4577": {
+    "id": 4577,
+    "aegisName": "Elvira_Card",
+    "name": "Elvira Card",
+    "unidName": "Elvira Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความเสียหายทางเวทมนตร์ธาตุ Wind และ ธาตุ Ghost เพิ่มขึ้น 20%\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Psychic",
+    "script": {
+      "m_my_element_wind": [
+        "20"
+      ],
+      "m_my_element_ghost": [
+        "20"
       ]
     }
   },
@@ -4640,6 +4832,32 @@
     "cardPrefix": "Rainstorm",
     "script": {
       "Severe Rainstorm": [
+        "20",
+        "WEAPON_LEVEL[4]===20",
+        "10===20"
+      ]
+    }
+  },
+  "4696": {
+    "id": 4696,
+    "aegisName": "Real_Alphoccio_Card",
+    "name": "True Alphoccio Basil Card",
+    "unidName": "True Alphoccio Basil Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความแรงสกิล Reverberation 20% \nเพิ่มความแรงสกิล Reverberation อีก 20% เมื่ออาวุธเลเวล 4 \nเพิ่มความแรงสกิล Reverberation อีก 20% เมื่ออัพเกรดถึงขั้น 10 ขึ้นไป\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Sound Shock",
+    "script": {
+      "Reverberation": [
         "20",
         "WEAPON_LEVEL[4]===20",
         "10===20"
@@ -7727,6 +7945,88 @@
       ]
     }
   },
+  "4997": {
+    "id": 4997,
+    "aegisName": "Neev_AGI_1",
+    "name": "Rune of Agility Lv 1",
+    "unidName": "Rune of Agility Lv 1",
+    "resName": "민첩의니브",
+    "description": "AGI + 5 เมื่อ Refine ระดับ 7\nPerfect Dodge +5 เมื่อ Refine ระดับ 10",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "agi": [
+        "7===5"
+      ],
+      "perfectDodge": [
+        "10===5"
+      ]
+    }
+  },
+  "4998": {
+    "id": 4998,
+    "aegisName": "Neev_AGI_2",
+    "name": "Rune of Agility Lv 2",
+    "unidName": "Rune of Agility Lv 2",
+    "resName": "민첩의니브",
+    "description": "AGI + 6 เมื่อ Refine ระดับ 7\nเพิ่ม Perfect Dodge +7, AGI + 1 เมื่อ Refine ระดับ 11",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "agi": [
+        "7===6",
+        "11===1"
+      ],
+      "perfectDodge": [
+        "11===7"
+      ]
+    }
+  },
+  "4999": {
+    "id": 4999,
+    "aegisName": "Neev_AGI_3",
+    "name": "Rune of Agility Lv 3",
+    "unidName": "Rune of Agility Lv 3",
+    "resName": "민첩의니브",
+    "description": "AGI + 7 เมื่อ Refine ระดับ 7 \nเพิ่ม Perfect Dodge +5, AGI + 1 เมื่อ Refine ระดับ 12 \nเพิ่ม Perfect Dodge +5, AGI + 1 เมื่อ Refine ระดับ 13",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "agi": [
+        "7===7",
+        "12===1",
+        "13===1"
+      ],
+      "perfectDodge": [
+        "12===5",
+        "13===5"
+      ]
+    }
+  },
   "5389": {
     "id": 5389,
     "aegisName": "Angel_Spirit",
@@ -8072,6 +8372,38 @@
       ],
       "hit": [
         "3"
+      ]
+    }
+  },
+  "9105": {
+    "id": 9105,
+    "aegisName": "Hodremlin_Egg",
+    "name": "Hodremlin Egg",
+    "unidName": "Hodremlin Egg",
+    "resName": "암속성알",
+    "description": "ไข่ที่มี Q-Pet Hodremlin อยู่ภายใน สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย DEX +1, HIT +1\nหากความสัมพันธ์อยู่ในระดับปกติ DEX +2, HIT +1\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร DEX +2, HIT +2, เพิ่ม Critical Damage 7%\nหากความสัมพันธ์อยู่ในระดับสนิทสนม DEX +2, HIT +2, เพิ่ม Critical Damage 9%\n\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "dex": [
+        "2"
+      ],
+      "hit": [
+        "2"
+      ],
+      "criDmg": [
+        "9"
       ]
     }
   },
@@ -9347,6 +9679,33 @@
     ],
     "script": {}
   },
+  "13314": {
+    "id": 13314,
+    "aegisName": "Huuma_Fluttering_Snow",
+    "name": "Huuma Fluttering Snow",
+    "unidName": "Huuma Shuriken",
+    "resName": "풍마_난설",
+    "description": "Shuriken คุณสมบัติเป็นธาตุน้ำ เมื่อใช้งานจะทำให้มีพายุหิมะเกิดขึ้นได้\nMATK + 50.\nมีโอกาสเล็กน้อยที่จะใช้ Skill Snow Flake Draft Lv 1 อัตโนมัติ เมื่อทำการโจมตีระยะประชิด Lv ของ Skill ที่ออกอัตโนมัติจะเพิ่มขึ้นตามระดับการ Up Lv skill.\nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777150^000000 ธาตุ : ^777777Water^000000\nอาวุธ Lv : ^7777774^000000\nLv ที่ต้องการ : ^777777110^000000\nอาชีพ : ^777777Ninja Cls^000000",
+    "slots": 0,
+    "itemTypeId": 1,
+    "itemSubTypeId": 1026,
+    "itemLevel": 4,
+    "attack": 200,
+    "propertyAtk": "Water",
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 110,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja Cls"
+    ],
+    "script": {
+      "matk": [
+        "50"
+      ]
+    }
+  },
   "13322": {
     "id": 13322,
     "aegisName": "Metal_Huuma_Shuriken",
@@ -9389,6 +9748,49 @@
       ]
     }
   },
+  "13337": {
+    "id": 13337,
+    "aegisName": "Huuma_Flutter_Snow_IL",
+    "name": "Illusion Huuma Fluttering Snow [2]",
+    "unidName": "Shuriken",
+    "resName": "Huuma_Fluttering_Snow_IL",
+    "description": "Shuriken ที่มีคุณสมบัติเป็นธาตุน้ำ เกิดพายุหิมะปลิวสไวเมื่อสะบัดมัน\nMATK +50\nทุก ๆ การอัพเกรด 3 ขั้น, ATK +30\nทุก ๆ การอัพเกรด 1 ขั้น, เพิ่ม Damage ทางกายภาพระยะไกล 3%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Apple of Archer,\nลด Variable Cast Time 15%\nเมื่อค่าอัพเกรดของ Illusion Huuma Fluttering Snow และ Illusion Apple of Archer ตั้งแต่ 7 ขึ้นไป, เพิ่ม Damage ของสกิล Swirling Petal 25%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป,\nเพิ่ม Damage ของสกิล Swirling Petal 25%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป,\nลด Cooldown ของสกิล Swirling Petal 1 วินาที\n^ffffff_^000000\nประเภท : ^777777Shuriken^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Ninja Cls^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 278,
+    "itemLevel": 4,
+    "attack": 250,
+    "propertyAtk": "Water",
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja Cls"
+    ],
+    "script": {
+      "matk": [
+        "50"
+      ],
+      "atk": [
+        "3---30"
+      ],
+      "range": [
+        "1---3"
+      ],
+      "vct": [
+        "EQUIP[Illusion Apple of Archer]15"
+      ],
+      "Swirling Petal": [
+        "EQUIP[Illusion Apple of Archer]REFINE[headUpper==7]7===25",
+        "EQUIP[Illusion Apple of Archer]REFINE[headUpper,weapon==18]25"
+      ],
+      "cd__Swirling Petal": [
+        "EQUIP[Illusion Apple of Archer]REFINE[headUpper,weapon==22]1"
+      ]
+    }
+  },
   "13338": {
     "id": 13338,
     "aegisName": "Huuma_Bird_Wing_IL",
@@ -9423,6 +9825,59 @@
       ],
       "range": [
         "EQUIP[Illusion Apple of Archer]REFINE[weapon,headUpper==18]10"
+      ]
+    }
+  },
+  "13345": {
+    "id": 13345,
+    "aegisName": "Humma_Clear",
+    "name": "Huuma Shuriken Clearness [2]",
+    "unidName": "Huuma Shuriken",
+    "resName": "미라쥬풍마수리검",
+    "description": "Shuriken ที่นินจาผู้โด่งดังในตำนานใช้งาน\nดูกลมกลืนเข้ากับ Ancient Hero Boots\nไม่สามารถทำลายได้\n\nทุก ๆ การอัพเกรด 2 ขั้น ATK +10\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Swirling Petal 30%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Swirling Petal 1 วินาที\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Fire, Shadow 15%, เพิ่ม Damage ทางกายภาพต่อศัตรูประเภท Undead, Demon 20%\nเมื่อสวมใส่ร่วมกับ Ancient Hero Boots เมื่อโจมตีทางกายภาพ มีโอกาสที่ STR +20, เพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 7 วินาที\nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777230^000000\nน้ำหนัก : ^777777130^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Ninja^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 278,
+    "itemLevel": 4,
+    "attack": 230,
+    "defense": null,
+    "weight": 130,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "range": [
+        "3---2"
+      ],
+      "Swirling Petal": [
+        "7===30"
+      ],
+      "cd__Swirling Petal": [
+        "9===1"
+      ],
+      "p_element_fire": [
+        "11===15"
+      ],
+      "p_element_dark": [
+        "11===15"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_demon": [
+        "11===20"
+      ],
+      "chance__str": [
+        "EQUIP[Ancient Hero Boots]===20"
+      ],
+      "chance__range": [
+        "EQUIP[Ancient Hero Boots]===10"
       ]
     }
   },
@@ -9631,7 +10086,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Swordsman",
+      "Swordman",
       "Novice",
       "Thief",
       "Merchant"
@@ -10166,9 +10621,9 @@
     "script": {
       "atk": [
         "10",
-        "EQUIP[Fallen Warrior Manteau]1---3",
-        "EQUIP[Fallen Warrior Manteau]REFINE[9]str:10---5",
-        "EQUIP[Fallen Warrior Manteau]REFINE[11]str:10---7"
+        "EQUIP[Fallen Warrior Manteau_||Fallen Warrior Manteau]REFINE[garment==1]---3",
+        "EQUIP[Fallen Warrior Manteau_||Fallen Warrior Manteau]REFINE[garment==9]str:10---5",
+        "EQUIP[Fallen Warrior Manteau_||Fallen Warrior Manteau]REFINE[garment==11]str:10---7"
       ],
       "ลด Damage ที่ได้รับจากมอนสเตอร์ประเภท Demi-Human": [
         "1",
@@ -12197,6 +12652,39 @@
       ]
     }
   },
+  "16093": {
+    "id": 16093,
+    "aegisName": "Coolant_Injection",
+    "name": "Coolant Injection [2]",
+    "unidName": "Club",
+    "resName": "Coolant_Injection",
+    "description": "เข็มฉีดที่ถูกประดิษฐ์ให้สามารถใส่สารทำความเย็นในปลอกที่ร้อนระอุได้\n^ffffff_^000000 \nไม่สามารถทำลายได้, เพิ่ม Damage ทางกายภาพระยะไกล 10%\nทุก ๆ การอัพเกรด 1 ขั้น ATK + 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Cart Cannon 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพระยะไกล ขึ้นอีก 15%\nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777140^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 210,
+    "defense": null,
+    "weight": 140,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "range": [
+        "10",
+        "11===15"
+      ],
+      "atkPercent": [
+        "1---1"
+      ],
+      "Cart Cannon": [
+        "9===25"
+      ]
+    }
+  },
   "16095": {
     "id": 16095,
     "aegisName": "Lucis_Flail",
@@ -12642,7 +13130,6 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "High Archer",
       "Ranger"
     ],
     "script": {
@@ -12695,6 +13182,66 @@
       ],
       "range": [
         "11===5"
+      ]
+    }
+  },
+  "18174": {
+    "id": 18174,
+    "aegisName": "Hunter_Bow_IL",
+    "name": "Illusion Hunter Bow [2]",
+    "unidName": "활",
+    "resName": "Hunter_Bow_IL",
+    "description": "คันธนูที่กล่าวกันว่านักล่ามักจะใช้กัน ถึงแม้ว่าวิธีใช้จะยุ่งยาก แต่เมื่อได้ใช้แล้ว การยิงที่เฉียบคมและพลังทำลายล้างของมันก็จะทำให้ผู้ใช้ตกหลุมรักได้ไม่ยาก\nเมื่อสวมใส่ร่วมกับ Hunting Arrow, เพิ่ม Damage ทางกายภาพระยะไกล 50%\nทุก ๆ การอัพเกรด 1 ขั้น CRI + 1\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม ASPD 10% \nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Critical Damage 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพที่ทำต่อมอนสเตอร์ประเภท Insect, Animal 30%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Boots, ATK + 10%\nเมื่อ Illusion Hunter Bow และ Illusion Boots อัพเกรดถึงขั้น 7 ขึ้นไป ASPD + 2\nหากขั้นอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Critical Damage 10%\nหากขั้นอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เมื่อทำการโจมตีทางกายภาพระยะไกลแบบธรรมดา มีโอกาสใช้งาน Hunter's Sight เป็นเวลา 10 วินาที\n^32CD32[Hunter's Sight]^000000\nATK + 100, เพิ่ม Critical Damage 15%,\nเพิ่ม Damage ทางกายภาพที่ทำต่อมอนสเตอร์ประเภท Insect, Animal 50%\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777165^000000\nน้ำหนัก : ^777777150^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Ranger^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 4,
+    "attack": 165,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "range": [
+        "EQUIP[Hunting Arrow]===50"
+      ],
+      "atkPercent": [
+        "EQUIP[Illusion Boots]===10"
+      ],
+      "cri": [
+        "1---1"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "criDmg": [
+        "9===15",
+        "EQUIP[Illusion Hunter Bow&&Illusion Boots]REFINE[weapon,boot==18]10"
+      ],
+      "p_race_insect": [
+        "11===30"
+      ],
+      "p_race_brute": [
+        "11===30"
+      ],
+      "aspd": [
+        "EQUIP[Illusion Hunter Bow&&Illusion Boots]REFINE[boot==7]7===2"
+      ],
+      "chance__atk": [
+        "EQUIP[Illusion Hunter Bow&&Illusion Boots]REFINE[weapon,boot==22]100"
+      ],
+      "chance__criDmg": [
+        "EQUIP[Illusion Hunter Bow&&Illusion Boots]REFINE[weapon,boot==22]15"
+      ],
+      "chance__p_race_insect": [
+        "EQUIP[Illusion Hunter Bow&&Illusion Boots]REFINE[weapon,boot==22]50"
+      ],
+      "chance__p_race_brute": [
+        "EQUIP[Illusion Hunter Bow&&Illusion Boots]REFINE[weapon,boot==22]50"
       ]
     }
   },
@@ -13175,9 +13722,10 @@
     ],
     "script": {
       "acd": [
-        "5"
+        "5",
+        "3---3"
       ],
-      "sp": [
+      "spPercentCost": [
         "10",
         "3---3"
       ]
@@ -13388,7 +13936,7 @@
     "location": "Middle",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "all"
     ],
     "script": {
       "aspdPercent": [
@@ -15637,6 +16185,50 @@
       ]
     }
   },
+  "19439": {
+    "id": 19439,
+    "aegisName": "Subject_Aura",
+    "name": "Vicious Mind Aura",
+    "unidName": "Ribbon",
+    "resName": "사념의오오라",
+    "description": "พลังงานบางอย่างที่โอบล้อมร่างกายไว้ \n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ Fallen Warrior Manteau [1],\nทุก ๆ Base STR 30, ATK + 5\nทุก ๆ Base AGI 30, ASPD + 3%\nทุก ๆ Base VIT 30 ลด Delay หลังใช้สกิล 4%\nทุก ๆ Base INT 30, MATK + 5, ลดระยะเวลาร่ายแบบแปรผัน 8%\nทุก ๆ Base DEX 30 เพิ่ม Damage ทางกายภาพระยะไกล 1%\nทุก ๆ Base LUK 30, Critical Damage + 3%\nประเภท : ^777777Headgear^000000พลังป้องกัน : ^7777775^000000\nตำแหน่ง : ^777777Lower^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 5,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "EQUIP[Fallen Warrior Manteau]str:30---5"
+      ],
+      "aspdPercent": [
+        "EQUIP[Fallen Warrior Manteau]agi:30---3"
+      ],
+      "acd": [
+        "EQUIP[Fallen Warrior Manteau]vit:30---4"
+      ],
+      "matk": [
+        "EQUIP[Fallen Warrior Manteau]int:30---5"
+      ],
+      "vct": [
+        "EQUIP[Fallen Warrior Manteau]int:30---8"
+      ],
+      "range": [
+        "EQUIP[Fallen Warrior Manteau]dex:30---1"
+      ],
+      "criDmg": [
+        "EQUIP[Fallen Warrior Manteau]luk:30---3"
+      ]
+    }
+  },
   "19452": {
     "id": 19452,
     "aegisName": "Heavenly_Order_",
@@ -16652,7 +17244,7 @@
   "20748": {
     "id": 20748,
     "aegisName": "Manteau_Of_Fallen",
-    "name": "Fallen Warrior Manteau",
+    "name": "Fallen Warrior Manteau_",
     "unidName": "Garment",
     "resName": "전사자의망토",
     "description": "เสื้อคลุมในตำนานที่ว่ากันว่าถูกสวมใส่โดยเหล่านักรบผู้กล้าที่ออกไปต่อสู้ และสละชีวิตในสนามรบ\nเมื่อ STR พื้นฐานตั้งแต่ 90 ขึ้นไป, ATK + 10 (ทุกๆ การอัพเกรด 1 ขั้น ATK +2)\nเมื่อ INT พื้นฐานตั้งแต่ 90 ขึ้นไป, MATK + 20 (ทุกๆ การอัพเกรด 1 ขั้น MATK + 3)\nเมื่อ VIT พื้นฐานตั้งแต่ 90 ขึ้นไป, เพิ่มความต้านทานจากการโจมตีธาตุ Neutral 3% (เมื่ออัพเกรดถึงขั้น 8 ขึ้นไป เพิ่มอีก 3% และเมื่ออัพเกรดถึงขั้น 10 ขึ้นไป เพิ่มอีก 4%)\nเมื่อ AGI พื้นฐานตั้งแต่ 90 ขึ้นไป, ASPD + 3% (ทุกๆ การอัพเกรด 2 ขั้น ASPD + 1%)\n(เมื่ออัพเกรดถึงขั้น 10 ขึ้นไป ASPD + 1)\nเมื่อ DEX พื้นฐานตั้งแต่ 90 ขึ้นไป, เพิ่มค่าโจมตีระยะไกล 3% (ทุกๆ การอัพเกรด 2 ขั้น เพิ่มอีก 1%)\nเมื่อ LUK พื้นฐานตั้งแต่ 90 ขึ้นไป เพิ่ม Critical Damage 5% (ทุกๆ การอัพเกรด 1 ขั้น เพิ่มอีก 1%)\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
@@ -17492,6 +18084,61 @@
         "9===20",
         "11===10",
         "EQUIP[Temporal Luk Boots|||Modified Luk Boots]REFINE[boot==10]30"
+      ]
+    }
+  },
+  "21050": {
+    "id": 21050,
+    "aegisName": "Taegoolyeon_IL",
+    "name": "Illusion Tae Goo Lyeon [2]",
+    "unidName": "Two-Handed Sword",
+    "resName": "Taegoolyeon_IL",
+    "description": "ดาบนี้เป็นที่รู้จักในชื่อดาบแห่งผู้กล้าตะวันออก\nPerfect Dodge +10\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 7 ลดปริมาณการใช้ SP 20%\nเมื่ออัพเกรดถึงขั้น 9 ลด Delay หลังใช้สกิล 20%\nเมื่ออัพเกรดถึงขั้น 11, MHP +10%, MSP +10%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Boots เพิ่ม Damage ทางกายภาพระยะไกล 3%\nเมื่อ Illusion Tae Goo Lyeon และ Illusion Boots อัพเกรดตั้งแต่ 7 ขึ้นไป ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - WATER 20%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777200^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^7777773rd Class Swordman^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 250,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight",
+      "Royal Guard"
+    ],
+    "script": {
+      "perfectDodge": [
+        "10"
+      ],
+      "range": [
+        "1---2",
+        "EQUIP[Illusion Boots]===3"
+      ],
+      "spPercentCost": [
+        "7===20"
+      ],
+      "acd": [
+        "9===20"
+      ],
+      "hpPercent": [
+        "11===10"
+      ],
+      "spPercent": [
+        "11===10"
+      ],
+      "vct": [
+        "EQUIP[Illusion Boots]REFINE[boot==7]7===10"
+      ],
+      "fct": [
+        "EQUIP[Illusion Boots]REFINE[weapon,boot==18]===0.5"
+      ],
+      "Dragon Breath": [
+        "EQUIP[Illusion Boots]REFINE[weapon,boot==22]===20"
+      ],
+      "Dragon Breath - WATER": [
+        "EQUIP[Illusion Boots]REFINE[weapon,boot==22]===20"
       ]
     }
   },
@@ -18612,6 +19259,40 @@
       ],
       "acd": [
         "14===5"
+      ]
+    }
+  },
+  "22190": {
+    "id": 22190,
+    "aegisName": "Boots_IL",
+    "name": "Illusion Boots [1]",
+    "unidName": "Shoes",
+    "resName": "Boots_IL",
+    "description": "รองเท้าทำจากผ้าที่ทนทาน ช่วยให้เคลื่อนที่สะดวก และมีพลังป้องกันอีกด้วย\nทุก ๆ การอัพเกรด 1 ขั้น, ASPD +1%\nทุก ๆ การอัพเกรด 3 ขั้น, CRI +5\n^ffffff_^000000\nประเภท : ^777777Shoes^000000 พลังป้องกัน : ^77777716^000000\nน้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Cls, Merchant Cls, Thief Cls, Archer Cls, Gunslinger Cls, Star Gladiator Cls^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 16,
+    "weight": 60,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Merchant",
+      "Thief",
+      "Archer",
+      "Gunslinger",
+      "Star Gladiator"
+    ],
+    "script": {
+      "aspdPercent": [
+        "1---1"
+      ],
+      "cri": [
+        "3---5"
       ]
     }
   },
@@ -25458,6 +26139,95 @@
       ]
     }
   },
+  "24551": {
+    "id": 24551,
+    "aegisName": "S_Grave_Weapon",
+    "name": "Grave Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Earth 3%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์ธาตุ Earth ขึ้นอีก 3%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ธาตุ Earth ขึ้นอีก 4%\nเมื่อสวมใส่ Grave Shadow Weapon/Pendant/Earring ร่วมกัน,\nเพิ่ม Damage สกิล Earth Grave % เท่ากับค่าอัพเกรดรวมกัน\nเมื่อสวมใส่ร่วมกับ Sorcerer Shadow Shield,\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่ายกเว้น Player 40% และเพิกเฉยต่อพลังป้องกันทางเวทมนตร์เพิ่มอีกตามค่าอัพเกรดรวมกันของ Grave Shadow Weapon และ Sorcerer Shadow Shield\nประเภท : ^777777Shadow^000000 \nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000 \nเลเวลที่ต้องการ : ^77777799^000000 \nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Sorcerer"
+    ],
+    "script": {
+      "m_my_element_earth": [
+        "3",
+        "7===3",
+        "9===4"
+      ],
+      "Earth Grave": [
+        "EQUIP[Grave Shadow Pendant&&Grave Shadow Earring]REFINE[shadowWeapon,shadowPendant,shadowEarring==1]---1"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Sorcerer Shadow Shield]40",
+        "EQUIP[Sorcerer Shadow Shield]REFINE[shadowWeapon,shadowShield==1]---1"
+      ]
+    }
+  },
+  "24552": {
+    "id": 24552,
+    "aegisName": "S_Grave_Pendant",
+    "name": "Grave Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage สกิล Earth Grave 5%\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage สกิล Earth Grave ขึ้นอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Sorcerer"
+    ],
+    "script": {
+      "Earth Grave": [
+        "5",
+        "1---2"
+      ]
+    }
+  },
+  "24553": {
+    "id": 24553,
+    "aegisName": "S_Grave_Earing",
+    "name": "Grave Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우",
+    "description": "ต่างหูมงคลที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา \nลด Cooldown สกิล Earth Grave 0.2 วินาที\nทุก ๆ การอัพเกรด 3 ขั้น ลด Cooldown สกิล Earth Grave ลงอีก 0.1 วินาที\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Sorcerer"
+    ],
+    "script": {
+      "cd__Earth Grave": [
+        "0.2",
+        "3---0.1"
+      ]
+    }
+  },
   "24554": {
     "id": 24554,
     "aegisName": "S_Psychic_Armor",
@@ -26995,6 +27765,95 @@
       "Cross Slash": [
         "5",
         "2---2"
+      ]
+    }
+  },
+  "24634": {
+    "id": 24634,
+    "aegisName": "S_Pickyrush_Weapon",
+    "name": "Picky Rush Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage ทางกายภาพระยะไกล 3%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 3%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 4%\nเมื่อสวมใส่ Picky Rush Shadow Weapon/Shield/Armor ร่วมกัน,\nเพิ่ม Damage สกิล Picky Peck % เท่ากับครึ่งหนึ่งของค่าอัพเกรดรวมกัน\nเมื่อสวมใส่ร่วมกับ Doram Physical Shadow Shoes,\nเพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่ายกเว้น Player 40% และเพิกเฉยต่อพลังป้องกันทางกายภาพเพิ่มอีกตามค่าอัพเกรดรวมกันของ Picky Rush Shadow Weapon และ Doram Physical Shadow Shoes\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Summoner (Doram)^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Summoner (Doram)"
+    ],
+    "script": {
+      "range": [
+        "3",
+        "7===3",
+        "9===4"
+      ],
+      "Picky Peck": [
+        "EQUIP[Picky Rush Shadow Shield&&Picky Rush Shadow Armor]REFINE[shadowWeapon,shadowShield,shadowArmor==2]---1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Doram Physical Shadow Shoes]40",
+        "EQUIP[Doram Physical Shadow Shoes]REFINE[shadowWeapon,shadowBoot==1]---1"
+      ]
+    }
+  },
+  "24635": {
+    "id": 24635,
+    "aegisName": "S_Pickyrush_Shield",
+    "name": "Picky Rush Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우",
+    "description": "โล่เล็กที่สามารถสวมใส่ที่แขนได้ สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์การป้องกันของมันจะลดน้อยลง\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 1%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Summoner (Doram)^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "Summoner (Doram)"
+    ],
+    "script": {
+      "p_size_all": [
+        "5",
+        "2---1"
+      ]
+    }
+  },
+  "24636": {
+    "id": 24636,
+    "aegisName": "S_Pickyrush_Armor",
+    "name": "Picky Rush Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเพิ่ม Damage สกิล Picky Peck 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Picky Peck ขึ้นอีก 1%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Summoner (Doram)^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Summoner (Doram)"
+    ],
+    "script": {
+      "Picky Peck": [
+        "5",
+        "2---1"
       ]
     }
   },
@@ -28882,6 +29741,38 @@
       "m_my_element_water": [
         "20",
         "1---3"
+      ]
+    }
+  },
+  "27114": {
+    "id": 27114,
+    "aegisName": "OminousSolider_Card",
+    "name": "Ominous Solider Card",
+    "unidName": "Ominous Solider Card",
+    "resName": "이름없는카드",
+    "description": "MHP + 10% DEF + 50 \nทุก ๆ การอัพเกรด 3 ขั้นของ Armor MHP+ 1% \nเมื่อเลเวลของผู้สวมใส่ตั้งแต่ 160 ขึ้นไป DEF+50, VIT+3\n\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Firm",
+    "script": {
+      "hpPercent": [
+        "10",
+        "3---1"
+      ],
+      "def": [
+        "50",
+        "SUM[level==160]50"
+      ],
+      "vit": [
+        "SUM[level==160]3"
       ]
     }
   },
@@ -33490,6 +34381,53 @@
       ]
     }
   },
+  "28948": {
+    "id": 28948,
+    "aegisName": "Doram_Shield",
+    "name": "Doram Shield [1]",
+    "unidName": "Shield",
+    "resName": "Doram_Shield",
+    "description": "ATK +50, MATK +50\nเพิ่มระยะเวลาร่ายสกิล [Picky Peck], [Silvervine Stem Spear] 15%\n―――――――――――――\nทุก ๆ 5 วินาที HP +200\n―――――――――――――\nทุก ๆ ค่าอัพเกรดที่มากกว่า 5 ขึ้นไป\nATK +10, MATK +10 เพิ่มเติม\nประเภท : ^777777Shield^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "atk": [
+        "50",
+        "1===-10",
+        "2===-10",
+        "3===-10",
+        "4===-10",
+        "5===-10",
+        "1---10"
+      ],
+      "matk": [
+        "50",
+        "1===-10",
+        "2===-10",
+        "3===-10",
+        "4===-10",
+        "5===-10",
+        "1---10"
+      ],
+      "vct__Picky Peck": [
+        "-15"
+      ],
+      "vct__Silvervine Stem Spear": [
+        "-15"
+      ]
+    }
+  },
   "28973": {
     "id": 28973,
     "aegisName": "",
@@ -33841,6 +34779,88 @@
       "range": [
         "12===8",
         "13===2"
+      ]
+    }
+  },
+  "29006": {
+    "id": 29006,
+    "aegisName": "Neev_LUK_1",
+    "name": "Rune of Luck Lv 1",
+    "unidName": "Rune of Luck Lv 1",
+    "resName": "운의니브",
+    "description": "LUK + 5 เมื่อ Refine ระดับ 7\nดาเมจคริติคอล + 5% เมื่อ Refine ระดับ 10",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "luk": [
+        "7===5"
+      ],
+      "criDmg": [
+        "10===5"
+      ]
+    }
+  },
+  "29007": {
+    "id": 29007,
+    "aegisName": "Neev_LUK_2",
+    "name": "Rune of Luck Lv 2",
+    "unidName": "Rune of Luck Lv 2",
+    "resName": "운의니브",
+    "description": "LUK + 6 เมื่อ Refine ระดับ 7 \nเพิ่ม LUK + 1, ดาเมจคริติคอล +7% เมื่อ Refine ระดับ 11",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "luk": [
+        "7===6",
+        "11===1"
+      ],
+      "criDmg": [
+        "11===7"
+      ]
+    }
+  },
+  "29008": {
+    "id": 29008,
+    "aegisName": "Neev_LUK_3",
+    "name": "Rune of Luck Lv 3",
+    "unidName": "Rune of Luck Lv 3",
+    "resName": "운의니브",
+    "description": "LUK + 7 เมื่อ Refine ระดับ 7 \nเพิ่ม LUK + 1, ดาเมจคริติคอล +8% เมื่อ Refine ระดับ 12 \nเพิ่ม LUK + 1, ดาเมจคริติคอล +6% เมื่อ Refine ระดับ 13",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "luk": [
+        "7===7",
+        "12===1",
+        "13===1"
+      ],
+      "criDmg": [
+        "12===8",
+        "13===6"
       ]
     }
   },
@@ -43429,6 +44449,35 @@
       ]
     }
   },
+  "420003": {
+    "id": 420003,
+    "aegisName": "CD_In_MouthK",
+    "name": "CD in Mouth K",
+    "unidName": "Ribbon",
+    "resName": "입에무는콤팩트디스크",
+    "description": "คอมแพ็กดิสก์ที่ให้ความรู้สึกเหมือนกับข้อมูลมากมายในแผ่นซีดีถูกป้อนเข้าสู่สมองผ่านทางปาก \n\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาสที่สกิล Soul Strike Lv. 10 จะทำงาน\nเมื่อสวมใส่ร่วมกับ Old Parasol, MATK +50, เมื่อโจมตีทางกายภาพทั่วไป มีโอกาสที่สกิล Gravitational Field Lv. 3 จะทำงาน\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^77777710^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 20,
+    "requiredLevel": 10,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "m_my_element_all": [
+        "5"
+      ],
+      "matk": [
+        "EQUIP[Old Parasol]50"
+      ]
+    }
+  },
   "420017": {
     "id": 420017,
     "aegisName": "Tree_Of_Sprout_STR",
@@ -44876,10 +45925,7 @@
         "LEARN_SKILL[Lava Flow==1]---8"
       ],
       "p_class_all": [
-        "30"
-      ],
-      "ลด Damage ทางกายภาพที่ได้รับจากมอนสเตอร์ระดับ Boss": [
-        "10"
+        "LEARN_SKILL[Power Swing==1]---3"
       ],
       "hp": [
         "REFINE[12]level:2---150"
@@ -45424,7 +46470,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Sword Class",
+      "Swordman",
       "Thief Class",
       "Acolyte Class",
       "Merchant Class"
@@ -47101,9 +48147,6 @@
       "Merchant"
     ],
     "script": {
-      "hpPercent__atk": [
-        "1"
-      ],
       "Axe Tornado": [
         "level:9---1"
       ],
@@ -47111,20 +48154,17 @@
         "level:9---2"
       ],
       "acd": [
-        "EQUIP[Avenger||Patent Avenger]11===15",
+        "EQUIP[Avenger||Patent Avenger]REFINE[weapon==11]===15",
         "EQUIP[Slate Sword||Patent Slate Sword]11===5"
       ],
-      "ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์ทุกขนาด": [
-        "EQUIP[Avenger||Patent Avenger]11===10"
-      ],
       "cd__Axe Tornado": [
-        "EQUIP[Avenger||Patent Avenger]11===0.65"
+        "EQUIP[Avenger||Patent Avenger]REFINE[weapon==11]===0.65"
       ],
       "cd__Cart Tornado": [
-        "EQUIP[Slate Sword||Patent Slate Sword]11===1.8"
+        "EQUIP[Slate Sword||Patent Slate Sword]REFINE[weapon==11]===1.8"
       ],
       "p_pene_race_all": [
-        "EQUIP[Slate Sword||Patent Slate Sword]11===60"
+        "EQUIP[Slate Sword||Patent Slate Sword]REFINE[weapon==11]===60"
       ]
     }
   },
@@ -49672,6 +50712,66 @@
       ],
       "matkPercent": [
         "EQUIP[Great Hero Boots]===7"
+      ]
+    }
+  },
+  "650004": {
+    "id": 650004,
+    "aegisName": "Up_Humma_Clear",
+    "name": "Patent Huuma Shuriken Clearness [2]",
+    "unidName": "Huuma Shuriken",
+    "resName": "Up_Humma_Clear",
+    "description": "Shuriken ที่นินจาผู้โด่งดังในตำนานใช้งาน\nด้วยพลังงานสีน้ำเงินที่ซ่อนอยู่ มันได้เริ่มเผยพลังอันแท้จริงออกมา\nดูกลมกลืนเข้ากับ Great Hero Boots\n\nไม่สามารถทำลายได้\nทุก ๆ การอัพเกรด 2 ขั้น ATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Swirling Petal 30%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Swirling Petal 1 วินาที\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Fire, Shadow, Holy 20%, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Undead, Demon, Angel 20%\nเมื่อสวมใส่ร่วมกับ Great Hero Boots, STR +10, เพิ่ม Damage ทางกายภาพระยะไกล 5%\n\nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777290^000000\nน้ำหนัก : ^777777230^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777Ninja^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 278,
+    "itemLevel": 4,
+    "attack": 290,
+    "defense": null,
+    "weight": 230,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "atk": [
+        "2---15"
+      ],
+      "range": [
+        "3---2",
+        "EQUIP[Great Hero Boots]===5"
+      ],
+      "Swirling Petal": [
+        "7===30"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "cd__Swirling Petal": [
+        "9===1"
+      ],
+      "p_element_fire": [
+        "11===20"
+      ],
+      "p_element_dark": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "11===20"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_demon": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "str": [
+        "EQUIP[Great Hero Boots]===10"
       ]
     }
   },
