@@ -279,7 +279,7 @@ export class RoScriptTranslatorService {
 		fs.writeFileSync(this.usingItemFilePath, s);
 	}
 
-	async loadItems(rawItemIds: number[]) {
+	async loadItems(rawItemIds: number[], isThServer = true) {
 		const itemIds: number[] = [
 			...new Set(
 				(rawItemIds as any[]).map(Number).filter((x) => !Number.isNaN(x)),
@@ -289,11 +289,12 @@ export class RoScriptTranslatorService {
 
 		await Promise.all(
 			itemIds.map(async (itemId) => {
-				const url = `${this.baseDbAPI}/Item/${itemId}?apiKey=${this.baseDbAPIKey}&server=thROG`;
+				let url = `${this.baseDbAPI}/Item/${itemId}?apiKey=${this.baseDbAPIKey}`;
+				if (isThServer) url += '&server=thROG';
 				try {
 					const { data } = await this.http
 						.get<ItemAPIModel>(url, { timeout: 1000 * 5 })
-						.pipe(retry({ count: 10, delay: 3000 }))
+						.pipe(retry({ count: 7, delay: 3000 }))
 						.toPromise();
 					const {
 						id,

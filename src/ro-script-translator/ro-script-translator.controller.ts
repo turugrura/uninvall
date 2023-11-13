@@ -16,7 +16,7 @@ export class RoScriptTranslatorController {
 			return this.roService.syncAll();
 		}
 
-		return this.roService.loadItems(a.itemIds);
+		return this.roService.loadItems(a.itemIds, a.isThServer);
 	}
 
 	@Post('monster')
