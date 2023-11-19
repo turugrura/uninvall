@@ -115,6 +115,7 @@ const map = {
 	'เพิ่ม Damage ทางเวทย์ต่อศัตรูขนาดกลาง': 'm_size_m',
 	ทางเวทย์แก่มอนสเตอร์ประเภทบอส: 'm_class_boss',
 	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า': 'm_race_all',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า': 'm_race_all',
 
 	'ลด Delay หลังใช้สกิล': 'acd',
 	'ลด Delay หลังใช้สกิลลง': 'acd',
@@ -1028,7 +1029,7 @@ export class BuildScript {
 
 						return a.replace(
 							`${status}${statusCond}`,
-							`${status}:${statusCond}`,
+							`SUM[${status}==${statusCond}]`,
 						);
 					});
 				if (script[goodAttr]) {
