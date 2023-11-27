@@ -75,6 +75,7 @@ const map = {
 	เพิ่มพลังโจมตีระยะไกล: 'range',
 	กายภาพระยะไกล: 'range',
 	เพิ่มพลังโจมตีกายภาพระยะไกล: 'range',
+	'เพิ่ม Damage ทางกายภาพระยะไกลต่อศัตรูทุกประเภท': 'range',
 
 	'เพิ่ม Damage ทางกายภาพระยะใกล้': 'melee',
 
@@ -95,9 +96,11 @@ const map = {
 	'เพิ่มค่า เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท': 'p_class_all',
 	เพิ่มพลังโจมตีทางกายภาพต่อมอนสเตอร์ทุกประเภท: 'p_class_all',
 	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกประเภท': 'p_class_all',
+	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ขนาดใหญ่': 'p_class_l',
 
 	'เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ': 'm_my_element_all',
 	'เพิ่ม Damage ทางเวททุกธาตุ': 'm_my_element_all',
+	เพิ่มพลังโจมตีเวทมนตร์ทุกธาตุ: 'm_my_element_all',
 	'เพิ่ม Damage การโจมตีทางเวทมนตร์ทุกธาตุ': 'm_my_element_all',
 	'เพิ่มพลังโจมตีทางเวทย์ธาตุ Fire': 'm_my_element_fire',
 	'เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost': 'm_my_element_ghost',
@@ -111,6 +114,8 @@ const map = {
 	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage การโจมตีทางเวทมนตร์ต่อศัตรูทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage ทางเวทย์ต่อศัตรูทุกขนาด': 'm_size_all',
+	ทางเวทย์ที่สร้างต่อศัตรูทุกขนาด: 'm_size_all',
+	'เพิ่ม Damage เวทมนตร์ที่ทำต่อศัตรูทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage ทางเวทย์ที่ทำต่อศัตรูขนาดใหญ่': 'm_size_l',
 	'เพิ่ม Damage ทางเวทย์ต่อศัตรูขนาดกลาง': 'm_size_m',
 	ทางเวทย์แก่มอนสเตอร์ประเภทบอส: 'm_class_boss',
@@ -124,6 +129,8 @@ const map = {
 	ลดดีเลย์หลังใช้สกิลลง: 'acd',
 	'ลด Delayหลังการใช้สกิล': 'acd',
 	ลดดีเลย์หลังจากใช้สกิล: 'acd',
+	ลดการดีเลย์หลังร่ายสกิล: 'acd',
+	ลดดีเลย์หลังโจมตีลง: 'acd',
 
 	ลดระยะเวลาร่ายแบบคงที่: 'fct',
 	'Fixed Cast Time': 'fct',
@@ -139,6 +146,9 @@ const map = {
 	ลดระยะเวลาการร่ายเวทย์ลง: 'vct',
 	ลดระยะเวลาร่ายแบบแปรผันลง: 'vct',
 	ลดระยะร่ายแบบแปรผัน: 'vct',
+	ลดการร่ายแบบแปรผัน: 'vct',
+
+	'ลด Delay หลังการโจมตี': 'aspdPercent',
 
 	'เพิ่มความทนทานจากการโจมตีของ Player': 'resist_player',
 	'เพิ่มความทนทานจากการโจมตีจาก Player': 'resist_player',
@@ -294,8 +304,7 @@ export class BuildScript {
 				for (const a of this.getMiniScript(expression)) {
 					scripts.push({
 						actualAttr: `chance__${a.actualAttr}`,
-						bonus:
-							`EQUIP[${comboItem}]===${a.bonus}` + (time ? `(${time})` : ''),
+						bonus: `EQUIP[${comboItem}]===${a.bonus}`,
 					});
 				}
 			}
@@ -342,13 +351,13 @@ export class BuildScript {
 					for (const { actualAttr, bonus } of buffs) {
 						scripts.push({
 							actualAttr: `chance__${actualAttr}`,
-							bonus: `ACTION[${action}]===${bonus}` + (time ? `(${time})` : ''),
+							bonus: `${bonus}`,
 						});
 					}
 				} else {
 					scripts.push({
-						actualAttr: 'AUTO_SKILL',
-						bonus: `ACTION[${action}]===${expression}`,
+						actualAttr: 'chance__',
+						bonus: `${expression}`,
 					});
 				}
 			}
@@ -374,15 +383,14 @@ export class BuildScript {
 				if (Array.isArray(buffs) && buffs.length > 0) {
 					for (const { actualAttr, bonus } of buffs) {
 						scripts.push({
-							actualAttr: actualAttr,
-							bonus:
-								`SKILL[${skillName}]===${bonus}` + (time ? `(${time})` : ''),
+							actualAttr: `chance__${actualAttr}`,
+							bonus: `${bonus}`,
 						});
 					}
 				} else {
 					scripts.push({
-						actualAttr: 'AUTO_SKILL',
-						bonus: `SKILL[${skillName}]::${expression}`,
+						actualAttr: 'chance__',
+						bonus: expression,
 					});
 				}
 			}
@@ -996,7 +1004,7 @@ export class BuildScript {
 						for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
 							addScript(
 								actualAttr as string,
-								`EQUIP[${xComboCondition}]${bonus}`,
+								`EQUIP[${xComboCondition}]===${bonus}`,
 							);
 						}
 					}
