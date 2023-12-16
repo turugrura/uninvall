@@ -39,7 +39,7 @@ const mapPrefix = {
 	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ': 'm_element',
 	'เพิ่ม Damage ทางเวทมนต์ธาตุ': 'm_element',
 	'เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อมอนสเตอร์ธาตุ': 'm_element',
-	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท': 'm_race',
+	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท': 'm_class',
 	เพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูเผ่า: 'm_race',
 	'เพิ่ม Damage ทางเวทย์ที่ทำต่อศัตรูขนาด': 'm_size',
 
@@ -48,7 +48,7 @@ const mapPrefix = {
 	'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูธาตุ': 'p_element',
 	'เพิ่ม Damage ทางกายภาพเมื่อโจมตีมอนสเตอร์ธาตุ': 'p_element',
 	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท': 'p_class',
-	'เพิ่ม Damage ทางกายภาพต่อศัตรูประเภท': 'p_race',
+	'เพิ่ม Damage ทางกายภาพต่อศัตรูประเภท': 'p_class',
 	'เพิ่ม Damage ทางกายภาพเมื่อโจมตีมอนสเตอร์เผ่า': 'p_race',
 	'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูขนาด': 'p_size',
 	'เพิ่ม Damage ทางกายภาพที่สร้างต่อศัตรูขนาด': 'p_size',
@@ -81,6 +81,7 @@ const map = {
 
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ': 'p_element_all',
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด': 'p_size_all',
+	เพิ่มโจมตีกายภาพต่อมอนสเตอร์ทุกขนาด: 'p_size_all',
 	'เพิ่ม Damage ทางกายภาพแก่ศัตรูทุกขนาด': 'p_size_all',
 	'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูทุกขนาด': 'p_size_all',
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูขนาดเล็ก': 'p_size_s',
@@ -162,6 +163,7 @@ const map = {
 	'เพิ่ม Critical Damage ทีละ': 'criDmg',
 	'Critical Damage': 'criDmg',
 	เพิ่มความแรงคริติคอล: 'criDmg',
+	เพิ่มคริติคอลดาเมจ: 'criDmg',
 	CRI: 'cri',
 	เพิ่มโอกาสคริติคอล: 'cri',
 	โอกาสคริติคอล: 'cri',
@@ -407,7 +409,7 @@ export class BuildScript {
 		const fixCast1 = /ลด\s*(Fixed\D+)\s*(\d+\.*\d*)/;
 		const fixCast2 = /(ลดระยะเวลาร่ายแบบคง\D+)\s*(\d+\.*\d*)/;
 		const constantRegex =
-			/(All State|All Status|Perfect Hit|MATK|FLEE|ATK|DEX|MDEF|DEF|INT|VIT|AGI|STR|CRI|Critical Damage|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/;
+			/(All State|All Status|Perfect Hit|MATK|FLEE|ATK|DEX|MDEF|DEF|INT|VIT|AGI|STR|CRI|LUK|Critical Damage|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/;
 		const constantRegex2 =
 			/(Damage ทางกายภาพระยะไกล|ความเร็วในการโจมตี|Item Drop Rate|EXP ที่ได้รับจากมอนสเตอร์|โอกาสคริติคอล)\D*(\d+%*)/;
 		// console.log({usableStr, m: usableStr.match(fixCast2)})

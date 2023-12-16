@@ -259,6 +259,7 @@ export class RoScriptTranslatorService {
 		const fileContent = fs.readFileSync(path, { encoding: 'utf8' });
 		const currentData = JSON.parse(fileContent);
 		for (const updatedItem of updatedItems) {
+			const bkItemTypeId = currentData[updatedItem.id]?.itemTypeId;
 			currentData[updatedItem.id] = {
 				...(currentData[updatedItem.id] ?? {}),
 				...this.addExtra(updatedItem as any),
@@ -272,6 +273,10 @@ export class RoScriptTranslatorService {
 				const bk = currentData[updatedItem.id].script;
 				delete currentData[updatedItem.id].script;
 				currentData[updatedItem.id].script = bk;
+			}
+
+			if (bkItemTypeId) {
+				currentData[updatedItem.id].itemTypeId = bkItemTypeId;
 			}
 		}
 		const s = JSON.stringify(currentData, undefined, 2);
@@ -290,7 +295,7 @@ export class RoScriptTranslatorService {
 		await Promise.all(
 			itemIds.map(async (itemId) => {
 				let url = `${this.baseDbAPI}/Item/${itemId}?apiKey=${this.baseDbAPIKey}`;
-				if (isThServer) url += '&server=thROG';
+				isThServer ? (url += '&server=thROG') : (url += '&server=dpRO');
 				try {
 					const { data } = await this.http
 						.get<ItemAPIModel>(url, { timeout: 1000 * 5 })
