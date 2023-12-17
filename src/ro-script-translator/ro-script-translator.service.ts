@@ -383,6 +383,7 @@ export class RoScriptTranslatorService {
 		if (itemTypeId === 1 && item.itemLevel == null) {
 			const itemLv =
 				Number(description.split('เลเวลอาวุธ : ^777777')[1]?.charAt(0)) ||
+				Number(description.split('Weapon Level: ^777777')[1]?.charAt(0)) ||
 				Number(this.getTextBetween(description, 'เลเวลของอาวุธ : ^777777')) ||
 				Number(this.getTextBetween(description, 'Lv ของอาวุธ : ^777777'));
 			if (Number.isInteger(itemLv)) {

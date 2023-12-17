@@ -132,6 +132,7 @@ const map = {
 	ลดดีเลย์หลังจากใช้สกิล: 'acd',
 	ลดการดีเลย์หลังร่ายสกิล: 'acd',
 	ลดดีเลย์หลังโจมตีลง: 'acd',
+	'reduces global cooldown': 'acd',
 
 	ลดระยะเวลาร่ายแบบคงที่: 'fct',
 	'Fixed Cast Time': 'fct',
@@ -148,8 +149,10 @@ const map = {
 	ลดระยะเวลาร่ายแบบแปรผันลง: 'vct',
 	ลดระยะร่ายแบบแปรผัน: 'vct',
 	ลดการร่ายแบบแปรผัน: 'vct',
+	'reduces variable casting time': 'vct',
 
 	'ลด Delay หลังการโจมตี': 'aspdPercent',
+	'increases attack speed': 'aspdPercent',
 
 	'เพิ่มความทนทานจากการโจมตีของ Player': 'resist_player',
 	'เพิ่มความทนทานจากการโจมตีจาก Player': 'resist_player',
@@ -173,7 +176,9 @@ const map = {
 	'เพิ่มความเร็วการโจมตี  (ลดดีเลย์หลังการโจมตี': 'aspd',
 	'เพิ่ม MATK': 'atk',
 	MATK: 'matk',
+	Matk: 'matk',
 	ATK: 'atk',
+	Atk: 'atk',
 	'เพิ่ม ATK': 'atk',
 	MaxHP: 'hp',
 	MHP: 'hp',
@@ -238,11 +243,13 @@ export class BuildScript {
 		toSteps: [
 			/ทุก.*การอัพเกรด (.+) ขั้น (.+)/,
 			/ทุก.*การอัปเกรด (.+) ขั้น (.+)/,
+			/(.+) per (\d+) refine rate.+/i,
 		],
 		toConstants: [
 			/เมื่ออัพเกรด.*ขั้น (\d+)\s*,*\s*(\D+\d+.+)/,
 			/เมื่ออัปเกรดถึงขั้น (\d+)\s*,*\s*(\D+\d+.+)/,
 			/เมื่ออัพเกรดตั้งแต่\s*(\d+)(.+)/,
+			/If refine rate is (\d+) or higher, (.+)/,
 		],
 		toConstants2: [/เพิ่ม\s*(.+)\s*เมื่ออัพเกรด\D+(\d+)/],
 	};
@@ -284,6 +291,14 @@ export class BuildScript {
 			this._extractedScript.expressions,
 			this._extractedScript.comboes,
 		);
+	}
+
+	private pushFinalScript(scripts: any[], attr: string, txtScript: string) {
+		for (const actualAttr of attr?.split(' and ')) {
+			if (actualAttr) {
+				scripts.push({ [actualAttr]: txtScript });
+			}
+		}
 	}
 
 	getComboScript(
@@ -412,6 +427,12 @@ export class BuildScript {
 			/(All State|All Status|Perfect Hit|MATK|FLEE|ATK|DEX|MDEF|DEF|INT|VIT|AGI|STR|CRI|LUK|Critical Damage|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/;
 		const constantRegex2 =
 			/(Damage ทางกายภาพระยะไกล|ความเร็วในการโจมตี|Item Drop Rate|EXP ที่ได้รับจากมอนสเตอร์|โอกาสคริติคอล)\D*(\d+%*)/;
+		const engConstantRex1 = /(reduces variable casting time) by (\d+)/i;
+		const engConstantRex2 = /increases(\D+)damage\D+(\d+%*)/i;
+		const engConstantRex5 = /reduces skill (cooldown of \D+)by\D+(\d+%*)/i;
+		const engConstantRex3 =
+			/(increases attack speed|reduces global cooldown)\D+(\d+%*)/i;
+		const engConstantRex4 = /(Matk|Atk)\D*(\d+%*)/;
 		// console.log({usableStr, m: usableStr.match(fixCast2)})
 		return (
 			usableStr.match(fixCast1) ||
@@ -421,7 +442,12 @@ export class BuildScript {
 			usableStr.match(multiRegex) ||
 			usableStr.match(multiRegex2) ||
 			usableStr.match(constantRegex) ||
-			usableStr.match(constantRegex2)
+			usableStr.match(constantRegex2) ||
+			usableStr.match(engConstantRex1) ||
+			usableStr.match(engConstantRex2) ||
+			usableStr.match(engConstantRex4) ||
+			usableStr.match(engConstantRex5) ||
+			usableStr.match(engConstantRex3)
 		);
 	}
 
@@ -452,10 +478,18 @@ export class BuildScript {
 		rawExpression: string,
 	): { every: string; bonusScript: string } | undefined {
 		const usable = rawExpression.trim();
-		for (const regex of this.regex.toSteps) {
+		for (let i = 0; i < this.regex.toSteps.length; i++) {
+			const regex = this.regex.toSteps[i];
 			const [_, every, bonusScript] = usable.match(regex) ?? [];
-			if (every && bonusScript) {
-				return { every, bonusScript };
+
+			if (i >= 2) {
+				if (every && bonusScript) {
+					return { every: bonusScript, bonusScript: every };
+				}
+			} else {
+				if (every && bonusScript) {
+					return { every, bonusScript };
+				}
 			}
 		}
 
@@ -488,7 +522,7 @@ export class BuildScript {
 			const goodBonus = Number.isNaN(Number(bonus))
 				? bonus.replace(/\D/g, '')
 				: bonus;
-			// console.log({actualAttr, bonus, goodBonus})
+			// console.log({ attr, actualAttr, bonus, goodBonus });
 			if (
 				[
 					'atk',
@@ -538,9 +572,10 @@ export class BuildScript {
 		if (this.isBuffWhenSkill(scriptStr)) {
 			// console.log({scriptStr})
 			for (const { actualAttr, bonus } of this.getMiniScript(scriptStr)) {
-				if (actualAttr) {
-					all.push({ [actualAttr]: `${condition}===${bonus}` });
-				}
+				// if (actualAttr) {
+				// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
+				// }
+				this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
 			}
 
 			return all;
@@ -548,14 +583,15 @@ export class BuildScript {
 
 		if (scriptStr.includes('และเมื่อ')) {
 			const scripts = scriptStr
-				.split('และ')
+				.split(/และ|and/)
 				.map((a) => a.trim())
 				.filter((a) => !!a);
 			for (const ss of scripts) {
 				for (const { actualAttr, bonus } of this.getMiniScript(ss)) {
-					if (actualAttr) {
-						all.push({ [actualAttr]: `${condition}===${bonus}` });
-					}
+					// if (actualAttr) {
+					// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
+					// }
+					this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
 				}
 			}
 			if (all.length > 0) return all;
@@ -569,9 +605,10 @@ export class BuildScript {
 			// console.log({ss})
 			for (const { actualAttr, bonus } of this.getMiniScript(ss)) {
 				// console.log({scriptStr, actualAttr, bonus})
-				if (actualAttr) {
-					all.push({ [actualAttr]: `${condition}===${bonus}` });
-				}
+				// if (actualAttr) {
+				// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
+				// }
+				this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
 			}
 		}
 		if (all.length > 0) return all;
@@ -580,9 +617,10 @@ export class BuildScript {
 		// console.log({checkes})
 		if (Array.isArray(checkes) && checkes.length > 0) {
 			for (const { actualAttr, bonus } of checkes) {
-				if (actualAttr) {
-					all.push({ [actualAttr]: `${condition}===${bonus}` });
-				}
+				// if (actualAttr) {
+				// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
+				// }
+				this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
 			}
 
 			return all;
@@ -598,11 +636,11 @@ export class BuildScript {
 		if (!params) return [];
 
 		const { bonusScript, every } = params;
-		// console.log({bonusScript})
+		// console.log({ every, bonusScript });
 
 		const moreOneScipt = bonusScript
 			.split(',')
-			.flatMap((a) => a.split('และ'))
+			.flatMap((a) => a.split(/และ|and/))
 			.map((a) => a.trim())
 			.filter((a) => a !== '');
 		if (moreOneScipt.every((a) => this.matchBonusScript(a))) {
@@ -610,9 +648,8 @@ export class BuildScript {
 			for (const subScript of moreOneScipt) {
 				// console.log({subScript})
 				for (const { actualAttr, bonus } of this.getMiniScript(subScript)) {
-					if (actualAttr) {
-						all.push({ [actualAttr]: `${every}---${bonus}` });
-					}
+					// console.log({ actualAttr, bonus });
+					this.pushFinalScript(all, actualAttr, `${every}---${bonus}`);
 				}
 			}
 
@@ -622,9 +659,8 @@ export class BuildScript {
 		// console.log({bonusScript})
 		const all: Record<string, string>[] = [];
 		for (const { actualAttr, bonus } of this.getMiniScript(bonusScript)) {
-			if (actualAttr) {
-				all.push({ [actualAttr]: `${every}---${bonus}` });
-			}
+			// console.log({ actualAttr, bonus });
+			this.pushFinalScript(all, actualAttr, `${every}---${bonus}`);
 		}
 
 		return all;
@@ -639,9 +675,7 @@ export class BuildScript {
 		for (const subScript of script.split(',')) {
 			for (const { actualAttr, bonus } of this.getMiniScript(subScript)) {
 				// console.log({xCondition, actualAttr, bonus})
-				if (actualAttr) {
-					all.push({ [actualAttr]: `${xCondition}---${bonus}` });
-				}
+				this.pushFinalScript(all, actualAttr, `${xCondition}---${bonus}`);
 			}
 		}
 
@@ -842,6 +876,8 @@ export class BuildScript {
 					ss2.match(/(ทุก.+Base.+\d+).+/) ??
 					ss2.match(/(เมื่อ.+Base.+\d+).+/) ??
 					ss2.match(/(เมื่อทุกๆ\s*\d+.*หน่วย.+)/) ??
+					ss2.match(/(If refine rate is\s*\d+\s*or higher)/) ??
+					ss2.match(/(If refine rate is.+)/) ??
 					[];
 				// console.log({curComboCondition})
 				if (curComboCondition) {
@@ -895,11 +931,13 @@ export class BuildScript {
 	toScripts(expressions: string[], comboes: Record<string, string[]>) {
 		const all: Record<string, string[]> = {};
 		const addScript = (prop: string, newScript: string) => {
-			// console.log({prop, newScript})
-			if (all[prop]) {
-				all[prop].push(newScript);
-			} else {
-				all[prop] = [newScript];
+			// console.log({ prop, newScript });
+			for (const oneProp of prop.split(' and ')) {
+				if (all[oneProp]) {
+					all[oneProp].push(newScript);
+				} else {
+					all[oneProp] = [newScript];
+				}
 			}
 		};
 
@@ -910,7 +948,7 @@ export class BuildScript {
 					addScript(actualAttr as string, bonus as string);
 				}
 			} else if (this.matchRefineStepBonus(expression)) {
-				// console.log({expression})
+				// console.log({ expression });
 				for (const obj of this.toRefineStepBonus(
 					this.matchRefineStepBonus(expression)!,
 				)) {
@@ -1099,7 +1137,7 @@ export class BuildScript {
 			if (goodAttr.startsWith(check)) {
 				let pureAttrs = goodAttr
 					.replace(check, '')
-					.replaceAll('และ', ',')
+					.replaceAll(/และ|and/, ',')
 					.split(',')
 					.map((a) => a.trim().toLowerCase());
 				if (pre === 'p_size') {
