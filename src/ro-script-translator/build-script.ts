@@ -1137,7 +1137,8 @@ export class BuildScript {
 			if (goodAttr.startsWith(check)) {
 				let pureAttrs = goodAttr
 					.replace(check, '')
-					.replaceAll(/และ|and/, ',')
+					.replaceAll('และ', ',')
+					.replaceAll('and', ',')
 					.split(',')
 					.map((a) => a.trim().toLowerCase());
 				if (pre === 'p_size') {
