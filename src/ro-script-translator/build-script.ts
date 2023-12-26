@@ -433,6 +433,7 @@ export class BuildScript {
 		const engConstantRex3 =
 			/(increases attack speed|reduces global cooldown)\D+(\d+%*)/i;
 		const engConstantRex4 = /(Matk|Atk)\D*(\d+%*)/;
+		const engConstantRex6 = /(Dex|Int|Vit|Agi|Str|Luk)\D*(\d+%*)/;
 		// console.log({usableStr, m: usableStr.match(fixCast2)})
 		return (
 			usableStr.match(fixCast1) ||
@@ -447,6 +448,7 @@ export class BuildScript {
 			usableStr.match(engConstantRex2) ||
 			usableStr.match(engConstantRex4) ||
 			usableStr.match(engConstantRex5) ||
+			usableStr.match(engConstantRex6) ||
 			usableStr.match(engConstantRex3)
 		);
 	}
