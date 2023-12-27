@@ -76,19 +76,31 @@ const map = {
 	กายภาพระยะไกล: 'range',
 	เพิ่มพลังโจมตีกายภาพระยะไกล: 'range',
 	'เพิ่ม Damage ทางกายภาพระยะไกลต่อศัตรูทุกประเภท': 'range',
+	'long ranged physical': 'range',
+	'long ranged physical damage': 'range',
+	'long range physical': 'range',
+	'longed ranged physical': 'range',
 
 	'เพิ่ม Damage ทางกายภาพระยะใกล้': 'melee',
+	'melee physical': 'melee',
+	'Melee physical': 'melee',
 
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ': 'p_element_all',
+	'physical damage against all property enemies': 'p_element_all',
+	'เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อศัตรูธาตุ Neutral': 'p_element_neutral',
+
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด': 'p_size_all',
 	เพิ่มโจมตีกายภาพต่อมอนสเตอร์ทุกขนาด: 'p_size_all',
 	'เพิ่ม Damage ทางกายภาพแก่ศัตรูทุกขนาด': 'p_size_all',
 	'เพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูทุกขนาด': 'p_size_all',
+	'physical damage against all size': 'p_size_all',
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูขนาดเล็ก': 'p_size_s',
+
 	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกเผ่า': 'p_race_all',
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า': 'p_race_all',
 	ทางกายภาพที่สร้างต่อศัตรูทุกเผ่า: 'p_race_all',
-	'เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อศัตรูธาตุ Neutral': 'p_element_neutral',
+	'physical damage against all race': 'p_race_all',
+
 	'เพิ่ม Damage เมื่อโจมตีมอนสเตอร์ทุกประเภท (ทั่วไป, Boss, Guardian)':
 		'p_class_all',
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูประเภทบอส': 'p_class_boss',
@@ -103,6 +115,9 @@ const map = {
 	'เพิ่ม Damage ทางเวททุกธาตุ': 'm_my_element_all',
 	เพิ่มพลังโจมตีเวทมนตร์ทุกธาตุ: 'm_my_element_all',
 	'เพิ่ม Damage การโจมตีทางเวทมนตร์ทุกธาตุ': 'm_my_element_all',
+	'all property magical damage': 'm_my_element_all',
+	'all property magical': 'm_my_element_all',
+
 	'เพิ่มพลังโจมตีทางเวทย์ธาตุ Fire': 'm_my_element_fire',
 	'เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost': 'm_my_element_ghost',
 	'เพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูธาตุ Neutral ขึ้น':
@@ -111,17 +126,21 @@ const map = {
 	'เพิ่ม Damage เวทมนตร์ทุกธาตุ': 'm_my_element_all',
 	'เพิ่ม Damage ทางเวทต่อศัตรูทุกประเภท': 'm_class_all',
 	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท': 'm_class_all',
+
 	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage การโจมตีทางเวทมนตร์ต่อศัตรูทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage ทางเวทย์ต่อศัตรูทุกขนาด': 'm_size_all',
 	ทางเวทย์ที่สร้างต่อศัตรูทุกขนาด: 'm_size_all',
+	'magical damage against all size enemies': 'm_size_all',
 	'เพิ่ม Damage เวทมนตร์ที่ทำต่อศัตรูทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage ทางเวทย์ที่ทำต่อศัตรูขนาดใหญ่': 'm_size_l',
 	'เพิ่ม Damage ทางเวทย์ต่อศัตรูขนาดกลาง': 'm_size_m',
+
 	ทางเวทย์แก่มอนสเตอร์ประเภทบอส: 'm_class_boss',
 	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า': 'm_race_all',
 	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า': 'm_race_all',
+	'magical damage against all race': 'm_race_all',
 
 	'ลด Delay หลังใช้สกิล': 'acd',
 	'ลด Delay หลังใช้สกิลลง': 'acd',
@@ -133,9 +152,11 @@ const map = {
 	ลดการดีเลย์หลังร่ายสกิล: 'acd',
 	ลดดีเลย์หลังโจมตีลง: 'acd',
 	'reduces global cooldown': 'acd',
+	'Reduces global cooldown': 'acd',
 
 	ลดระยะเวลาร่ายแบบคงที่: 'fct',
 	'Fixed Cast Time': 'fct',
+	'fixed casting time': 'fct',
 	ลดระยะเวลาร่ายแบบคงตัว: 'fct',
 	ลดระยะเวลาร่ายแบบคงที่ลง: 'fct',
 
@@ -150,13 +171,16 @@ const map = {
 	ลดระยะร่ายแบบแปรผัน: 'vct',
 	ลดการร่ายแบบแปรผัน: 'vct',
 	'reduces variable casting time': 'vct',
+	'Reduces variable casting time': 'vct',
 
 	'ลด Delay หลังการโจมตี': 'aspdPercent',
 	'increases attack speed': 'aspdPercent',
+	'Increases attack speed': 'aspdPercent',
 
 	'เพิ่มความทนทานจากการโจมตีของ Player': 'resist_player',
 	'เพิ่มความทนทานจากการโจมตีจาก Player': 'resist_player',
 	HIT: 'hit',
+	Hit: 'hit',
 	'Perfect Hit': 'perfectHit',
 	'PERFECT HIT': 'perfectHit',
 	flee: 'flee',
@@ -165,9 +189,14 @@ const map = {
 	'เพิ่ม Crirical Damage': 'criDmg',
 	'เพิ่ม Critical Damage ทีละ': 'criDmg',
 	'Critical Damage': 'criDmg',
+	'critical Damage': 'criDmg',
+	'critical damage': 'criDmg',
+	critical: 'criDmg',
+	Critical: 'criDmg',
 	เพิ่มความแรงคริติคอล: 'criDmg',
 	เพิ่มคริติคอลดาเมจ: 'criDmg',
 	CRI: 'cri',
+	Cri: 'cri',
 	เพิ่มโอกาสคริติคอล: 'cri',
 	โอกาสคริติคอล: 'cri',
 	ASPD: 'aspd',
@@ -222,7 +251,7 @@ export class BuildScript {
 			'ATK',
 			'MSP',
 		],
-		itemSet: ['เมื่อสวมใส่ร่วมกับ', 'เมื่อใส่ร่วมกับ'],
+		itemSet: ['เมื่อสวมใส่ร่วมกับ', 'เมื่อใส่ร่วมกับ', 'When equipped with'],
 		mainState: [
 			'All Status',
 			'ลดระยะเวลาร่ายแบบคงที่',
@@ -250,6 +279,7 @@ export class BuildScript {
 			/เมื่ออัปเกรดถึงขั้น (\d+)\s*,*\s*(\D+\d+.+)/,
 			/เมื่ออัพเกรดตั้งแต่\s*(\d+)(.+)/,
 			/If refine rate is (\d+) or higher, (.+)/,
+			/if the sum of refine rate of set is\s*\d+\s*or higher, (.+)/,
 		],
 		toConstants2: [/เพิ่ม\s*(.+)\s*เมื่ออัพเกรด\D+(\d+)/],
 	};
@@ -335,9 +365,13 @@ export class BuildScript {
 			.trim()
 			.split(',')
 			.map((a) => a.trim());
-		const [_, combo] = rawExpression.match(/\s(.*?),\s/) ?? [];
+		// console.log({ rawExpression, expressions });
+		const [_, combo] =
+			rawExpression.match(/When equipped with\s*(.+?),/) ??
+			rawExpression.match(/\s(.*?),\s/) ??
+			[];
 		for (const expression of expressions.filter((a) => a.match(/\d/))) {
-			// console.log({expression})
+			// console.log({ expression });
 			for (const a of this.getMiniScript(expression)) {
 				scripts.push({
 					actualAttr: a.actualAttr,
@@ -431,9 +465,13 @@ export class BuildScript {
 		const engConstantRex2 = /increases(\D+)damage\D+(\d+%*)/i;
 		const engConstantRex5 = /reduces skill (cooldown of \D+)by\D+(\d+%*)/i;
 		const engConstantRex3 =
-			/(increases attack speed|reduces global cooldown)\D+(\d+%*)/i;
+			/(increases attack speed|reduces global cooldown|Reduces global cooldown by|Hit|Cri)\D+(\d+%*)/i;
 		const engConstantRex4 = /(Matk|Atk)\D*(\d+%*)/;
 		const engConstantRex6 = /(Dex|Int|Vit|Agi|Str|Luk)\D*(\d+%*)/;
+		const engConstantRex7 = /(melee|long ranged physical damage)\D*(\d+%*)/;
+		const engConstantRex8 =
+			/(physical damage against all property enemies|physical damage against all race|all property magical damage|magical damage against all race|critical damage|magical damage against all size enemies|physical damage against all size)\D*(\d+%*)/;
+		const engConstantRex9 = /(fixed casting time)\D*(\d\.*\d*)/;
 		// console.log({usableStr, m: usableStr.match(fixCast2)})
 		return (
 			usableStr.match(fixCast1) ||
@@ -445,7 +483,10 @@ export class BuildScript {
 			usableStr.match(constantRegex) ||
 			usableStr.match(constantRegex2) ||
 			usableStr.match(engConstantRex1) ||
+			usableStr.match(engConstantRex8) ||
+			usableStr.match(engConstantRex9) ||
 			usableStr.match(engConstantRex2) ||
+			usableStr.match(engConstantRex7) ||
 			usableStr.match(engConstantRex4) ||
 			usableStr.match(engConstantRex5) ||
 			usableStr.match(engConstantRex6) ||
@@ -492,6 +533,30 @@ export class BuildScript {
 				if (every && bonusScript) {
 					return { every, bonusScript };
 				}
+			}
+		}
+
+		return;
+	}
+
+	getLearnedSkillStepCondition(rawExpression: string): {
+		skillName: string;
+		skillLv: number;
+	} {
+		const regexs = [
+			/(\d+) level(s*) of (.+) user learned/i,
+			/(each) level(s*) of (.+) user learned/i,
+		];
+
+		for (const regex of regexs) {
+			const [_, _rawSkillLv, _1, skillName] = rawExpression.match(regex) ?? [];
+			if (skillName) {
+				console.log({ _rawSkillLv, skillName });
+				const skillLv =
+					_rawSkillLv?.toLowerCase()?.trim() === 'each'
+						? 1
+						: Number(_rawSkillLv);
+				return { skillName, skillLv };
 			}
 		}
 
@@ -702,7 +767,10 @@ export class BuildScript {
 	}
 
 	isCombo(script: string) {
-		return script.startsWith('เมื่อสวมใส่');
+		return (
+			script.startsWith('เมื่อสวมใส่') ||
+			script.startsWith('When equipped with')
+		);
 	}
 
 	isAutoByAtk(script: string) {
@@ -865,6 +933,7 @@ export class BuildScript {
 					ss2.match(/เมื่อติดตั้งร่วมกับ\s*\[(.+)\]/) ??
 					ss2.match(/เมื่อใช้.*กับ\s*(.+),*\s*(ลด.+|เพิ่ม.+|ATK.+|ASPD+.)/) ??
 					ss2.match(/เมื่อใช้.*กับ\s*(.+)/) ??
+					ss2.match(/When equipped with\s*(.+?),/) ??
 					[];
 				// console.log({ss2, curComboCondition})
 				const [_a, curCondition] =
@@ -881,11 +950,12 @@ export class BuildScript {
 					ss2.match(/(If refine rate is\s*\d+\s*or higher)/) ??
 					ss2.match(/(If refine rate is.+)/) ??
 					[];
-				// console.log({curComboCondition})
+				// console.log({ ss2, curComboCondition, prevComboCondition });
 				if (curComboCondition) {
 					if (
 						!ss2.match(/เมื่อค่าอัพเกรดรวมกัน/) &&
-						!ss2.match(/ค่าอัพเกรดของ.+รวมกัน.+/)
+						!ss2.match(/ค่าอัพเกรดของ.+รวมกัน.+/) &&
+						!ss2.match(/if the sum of refine rate of set is/)
 					) {
 						prevComboCondition = curComboCondition;
 					}
@@ -943,6 +1013,8 @@ export class BuildScript {
 			}
 		};
 
+		// console.log({ expressions, comboes });
+
 		for (const expression of expressions) {
 			// console.log({expression})
 			if (this.isCombo(expression)) {
@@ -988,65 +1060,107 @@ export class BuildScript {
 					addScript(prop, newScript as any);
 				}
 			} else {
-				// console.log({expression})
+				// console.log({ expression });
 				for (const s of expression.split(',')) {
 					for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
-						addScript(actualAttr as string, bonus as string);
+						const { skillName, skillLv } = this.getLearnedSkillStepCondition(
+							s.trim(),
+						);
+						let newBonus = bonus;
+						if (skillName) {
+							newBonus = `LEARN_SKILL[${skillName}==${skillLv}]---${newBonus}`;
+						}
+
+						addScript(actualAttr as string, newBonus);
 					}
 				}
 			}
 		}
 
+		const refineComboRegexs = [
+			/if the sum of refine rate of set is\s*(\d+)\s*or higher, (.+)/,
+		];
 		for (const [comboCondition, _expressions] of Object.entries(comboes)) {
 			const xComboCondition = comboCondition.replace(/,*\s*$/, '');
+			// console.log({ xComboCondition });
 
 			for (const expression of _expressions) {
+				let refineCombo = 0;
+				for (const regex of refineComboRegexs) {
+					const [_, refine] = expression.match(regex) ?? [];
+					if (refine) {
+						refineCombo = Number(refine);
+						break;
+					}
+				}
+				const refineScript =
+					refineCombo > 0 ? `REFINE[xxx==${refineCombo}]` : '';
+
+				// console.log({ expression });
 				if (expression.match(/ทุก.*การอัพเกรด/)) {
 					for (const obj of this.toRefineStepBonus(
 						this.matchRefineStepBonus(expression)!,
 					)) {
 						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(prop, `EQUIP[${xComboCondition}]${newScript}`);
+						addScript(
+							prop,
+							`EQUIP[${xComboCondition}]${refineScript}{newScript}`,
+						);
 					}
 				} else if (this.matchRefineConstantBonus(expression)) {
 					for (const obj of this.toRefineConstantBonus(
 						this.matchRefineConstantBonus(expression)!,
 					)) {
 						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(prop, `EQUIP[${xComboCondition}]${newScript}`);
+						addScript(
+							prop,
+							`EQUIP[${xComboCondition}]${refineScript}${newScript}`,
+						);
 					}
 				} else if (this.isLevelStep(expression)) {
 					for (const obj of this.toLevelStepBonus(expression)) {
 						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(prop, `EQUIP[${xComboCondition}]${newScript}`);
+						addScript(
+							prop,
+							`EQUIP[${xComboCondition}]${refineScript}${newScript}`,
+						);
 					}
 				} else if (this.matchStepBonusStat(expression)) {
 					for (const obj of this.toRefineStepBonus(
 						this.matchStepBonusStat(expression)!,
 					)) {
 						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(prop, `EQUIP[${xComboCondition}]${newScript}`);
+						addScript(
+							prop,
+							`EQUIP[${xComboCondition}]${refineScript}${newScript}`,
+						);
 					}
 				} else if (this.matchBaseBonusStat(expression)) {
 					for (const obj of this.toRefineConstantBonus(
 						this.matchBaseBonusStat(expression)!,
 					)) {
 						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(prop, `EQUIP[${xComboCondition}]${newScript}`);
+						addScript(
+							prop,
+							`EQUIP[${xComboCondition}]${refineScript}${newScript}`,
+						);
 					}
 				} else if (this.matchTotalRefine(expression)) {
 					for (const obj of this.toTotalRefineBonus(
 						this.matchTotalRefine(expression)!,
 					)) {
 						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(prop, `EQUIP[${xComboCondition}]${newScript}`);
+						addScript(
+							prop,
+							`EQUIP[${xComboCondition}]${refineScript}${newScript}`,
+						);
 					}
 				} else {
 					for (const s of expression.split(',')) {
 						for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
 							addScript(
 								actualAttr as string,
-								`EQUIP[${xComboCondition}]===${bonus}`,
+								`EQUIP[${xComboCondition}]${refineScript}===${bonus}`,
 							);
 						}
 					}
@@ -1112,6 +1226,7 @@ export class BuildScript {
 			.replace('ลด Cooltime Skill ', 'cd__')
 			.replace('ลด Cooldown ของสกิล ', 'cd__')
 			.replace('ลด Cool down สกิล ', 'cd__')
+			.replace('cooldown of  ', 'cd__')
 			.replace('ลดการใช้ SP ของสกิล', 'sp__')
 			.replace('ลดการใช้ SP ของสกิล ', 'sp__')
 			.replace('ลดปริมาณการใช้ SP ในการใช้สกิล ', 'sp__')
