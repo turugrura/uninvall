@@ -1063,9 +1063,8 @@ export class BuildScript {
 				// console.log({ expression });
 				for (const s of expression.split(',')) {
 					for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
-						const { skillName, skillLv } = this.getLearnedSkillStepCondition(
-							s.trim(),
-						);
+						const { skillName, skillLv } =
+							this.getLearnedSkillStepCondition(s.trim()) ?? {};
 						let newBonus = bonus;
 						if (skillName) {
 							newBonus = `LEARN_SKILL[${skillName}==${skillLv}]---${newBonus}`;
@@ -1104,7 +1103,7 @@ export class BuildScript {
 						const [prop, newScript] = Object.entries(obj)[0];
 						addScript(
 							prop,
-							`EQUIP[${xComboCondition}]${refineScript}{newScript}`,
+							`EQUIP[${xComboCondition}]${refineScript}${newScript}`,
 						);
 					}
 				} else if (this.matchRefineConstantBonus(expression)) {
