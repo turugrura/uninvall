@@ -506,6 +506,41 @@
       ]
     }
   },
+  "1438": {
+    "id": 1438,
+    "aegisName": "Thanos_Spear",
+    "name": "Thanos Spear [1]",
+    "unidName": "One-Handed Spear",
+    "resName": "타노스의창",
+    "description": "ทวนที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nเมื่อโจมตีกายภาพ จะมีโอกาสในระดับต่ำ ที่จะดูดซับดาเมจ 5% มาเป็น HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 100\n\nประเภท : ^777777One Hand Spear^000000\nโจมตี : ^777777150^000000\nน้ำหนัก : ^777777300^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Swordsman Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 259,
+    "itemLevel": 4,
+    "attack": 150,
+    "defense": null,
+    "weight": 300,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "100"
+      ]
+    }
+  },
   "1443": {
     "id": 1443,
     "aegisName": "Scarlet_Spear",
@@ -572,6 +607,41 @@
     "script": {
       "cri": [
         "10"
+      ]
+    }
+  },
+  "1496": {
+    "id": 1496,
+    "aegisName": "Thanos_Long_Spear",
+    "name": "Thanos Long Spear [1]",
+    "unidName": "Two-Handed Spear",
+    "resName": "타노스의양손창",
+    "description": "Two Hand Spearที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nเมื่อโจมตีกายภาพ จะมีโอกาสในระดับต่ำ ที่จะดูดซับดาเมจ 5% มาเป็น HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 50\n\nประเภท : ^777777Two Hand Spear^000000\nโจมตี : ^777777250^000000\nน้ำหนัก : ^777777375^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Swordsman Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 260,
+    "itemLevel": 4,
+    "attack": 250,
+    "defense": null,
+    "weight": 375,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "50"
       ]
     }
   },
@@ -824,10 +894,31 @@
         "12===2",
         "13===2",
         "14===2",
-        "15===2"
+        "15===2",
+        "16===2",
+        "17===2",
+        "18===2",
+        "19===2",
+        "20===2"
       ],
       "matk": [
         "170"
+      ],
+      "hpPercent": [
+        "7===-2",
+        "8===-2",
+        "9===-2",
+        "10===-2",
+        "11===-2",
+        "12===-2",
+        "13===-2",
+        "14===-2",
+        "15===-2",
+        "16===-2",
+        "17===-2",
+        "18===-2",
+        "19===-2",
+        "20===-2"
       ]
     }
   },
@@ -868,6 +959,42 @@
       ],
       "acd": [
         "2---3"
+      ]
+    }
+  },
+  "1669": {
+    "id": 1669,
+    "aegisName": "Thanos_Staff",
+    "name": "Thanos Staff [1]",
+    "unidName": "Rod",
+    "resName": "타노스의지팡이",
+    "description": "ไม้เท้าที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nผลการรักษาเพิ่มขึ้น 15 %\nเมื่อโจมตีเวทย์ มีโอกาสที่จะฟื้นฟู HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 200\n\nประเภท : ^777777Staff^000000\nโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Mage and Acolyte 3rd Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 4,
+    "attack": 100,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mage",
+      "Acolyte"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "200"
       ]
     }
   },
@@ -1624,6 +1751,41 @@
       "all"
     ]
   },
+  "1836": {
+    "id": 1836,
+    "aegisName": "Thanos_Knuckle",
+    "name": "Thanos Knuckle [1]",
+    "unidName": "Knuckle",
+    "resName": "타노스의너클",
+    "description": "สนับมือที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK - 6\nเมื่อโจมตีกายภาพ จะมีโอกาสในระดับต่ำ ที่จะดูดซับดาเมจ 5% มาเป็น HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 100\n\nประเภท : ^777777Knuckle^000000\nโจมตี : ^777777160^000000\nน้ำหนัก : ^77777760^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Sura^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 4,
+    "attack": 160,
+    "defense": null,
+    "weight": 60,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "100"
+      ]
+    }
+  },
   "1839": {
     "id": 1839,
     "aegisName": "Scarlet_Knuckle",
@@ -2252,6 +2414,42 @@
       ]
     }
   },
+  "2023": {
+    "id": 2023,
+    "aegisName": "Thanos_Rod",
+    "name": "Thanos Rod [1]",
+    "unidName": "Two-Handed Staff",
+    "resName": "타노스의양손지팡이",
+    "description": "ไม้เท้าที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nผลการรักษาเพิ่มขึ้น 18 %\nเมื่อโจมตีเวทย์ มีโอกาสที่จะฟื้นฟู HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 250\n\nประเภท : ^777777Two Hand Staff^000000\nโจมตี : ^777777120^000000\nน้ำหนัก : ^777777140^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Mage Classes & Acolyte Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 266,
+    "itemLevel": 4,
+    "attack": 120,
+    "defense": null,
+    "weight": 140,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mage",
+      "Acolyte"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "250"
+      ]
+    }
+  },
   "2025": {
     "id": 2025,
     "aegisName": "Scarlet_Staff",
@@ -2782,7 +2980,12 @@
         "12===2",
         "13===2",
         "14===2",
-        "15===2"
+        "15===2",
+        "16===2",
+        "17===2",
+        "18===2",
+        "19===2",
+        "20===2"
       ]
     }
   },
@@ -4093,6 +4296,30 @@
       ]
     }
   },
+  "4080": {
+    "id": 4080,
+    "aegisName": "Flora_Card",
+    "name": "Flora Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "โจมตี Monster Race Fish แรงขึ้น 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fisher",
+    "script": {
+      "p_race_fish": [
+        "20"
+      ]
+    }
+  },
   "4082": {
     "id": 4082,
     "aegisName": "Desert_Wolf_Card",
@@ -4144,6 +4371,30 @@
       ]
     }
   },
+  "4086": {
+    "id": 4086,
+    "aegisName": "Soldier_Skeleton_Card",
+    "name": "Soldier Skeleton Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "Critical + 9%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Critical",
+    "script": {
+      "criDmg": [
+        "9"
+      ]
+    }
+  },
   "4092": {
     "id": 4092,
     "aegisName": "Skel_Worker_Card",
@@ -4192,6 +4443,33 @@
     "script": {
       "range": [
         "10"
+      ]
+    }
+  },
+  "4107": {
+    "id": 4107,
+    "aegisName": "Verit_Card",
+    "name": "Verit Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "Maximum HP/SP + 8%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Foot Gear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Fledged",
+    "script": {
+      "hpPercent": [
+        "8"
+      ],
+      "spPercent": [
+        "8"
       ]
     }
   },
@@ -4318,6 +4596,30 @@
       ],
       "cri": [
         "1"
+      ]
+    }
+  },
+  "4130": {
+    "id": 4130,
+    "aegisName": "Scorpion_King_Card",
+    "name": "Scorpion King Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "โจมตี Monster Race Undead แรงขึ้น 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Divine",
+    "script": {
+      "p_race_undead": [
+        "20"
       ]
     }
   },
@@ -5352,6 +5654,33 @@
       ]
     }
   },
+  "4456": {
+    "id": 4456,
+    "aegisName": "Nidhogg_Shadow_Card",
+    "name": "Nidhogg Shadow Card",
+    "unidName": "Nidhogg Shadow Card",
+    "resName": "이름없는카드",
+    "description": "INT + 5\nเมื่อถูกสวมใส่โดย High wizard หรือ War lock , ลดระยะเวลาการร่าย แบบ Fixed casting time ลง 50%\nประเภท : ^777777Card^000000\nLocation : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Spell Master",
+    "script": {
+      "int": [
+        "5"
+      ],
+      "fctPercent": [
+        "USED[Warlock]===50"
+      ]
+    }
+  },
   "4464": {
     "id": 4464,
     "aegisName": "Aunoe_Card",
@@ -5484,6 +5813,30 @@
       "p_race_demon": [
         "20",
         "15===10"
+      ]
+    }
+  },
+  "4486": {
+    "id": 4486,
+    "aegisName": "Sealed_Berz_Card",
+    "name": "Sealed Berzebub Card",
+    "unidName": "Sealed Berzebub Card",
+    "resName": "이름없는카드",
+    "description": "ลดระยะเวลาในการร่ายเวทมนตร์ลง 15%\nประเภท : ^777777Card ^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Half Bigmouth",
+    "script": {
+      "vct": [
+        "15"
       ]
     }
   },
@@ -6620,6 +6973,34 @@
       ]
     }
   },
+  "4634": {
+    "id": 4634,
+    "aegisName": "P_Soldier_Skeleton_Card",
+    "name": "Enchanted Soldier Skeleton Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "CRI + 9\nเพิ่มดาเมจคริติคอล 5%, CRI + 1 เพิ่มขึ้น เมื่อ Base Level 100 ขึ้นไป \nประเภท : ^777777Card^000000\nติดตั้ง : ^777777อาวุธ^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fatal",
+    "script": {
+      "cri": [
+        "9",
+        "SUM[level==100]===1"
+      ],
+      "criDmg": [
+        "SUM[level==100]===5"
+      ]
+    }
+  },
   "4636": {
     "id": 4636,
     "aegisName": "Bijou_Card",
@@ -6647,6 +7028,32 @@
       ]
     }
   },
+  "4642": {
+    "id": 4642,
+    "aegisName": "IFN_Toad_Card",
+    "name": "Infinite Toad Card",
+    "unidName": "Infinite Toad Card",
+    "resName": "이름없는카드",
+    "description": "Perfect Dodge + 2\nPerfect Dodge + 2 เพิ่มเติมเมื่ออัพเกรดขั้น 7\nPerfect Dodge + 3 เพิ่มเติมเมื่ออัพเกรดขั้น 9\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Side Step",
+    "script": {
+      "perfectDodge": [
+        "2",
+        "7===2",
+        "9===3"
+      ]
+    }
+  },
   "4643": {
     "id": 4643,
     "aegisName": "IFN_V_Wolf_Card",
@@ -6670,6 +7077,58 @@
         "10",
         "7===10",
         "9===15"
+      ]
+    }
+  },
+  "4644": {
+    "id": 4644,
+    "aegisName": "IFN_Vocal_Card",
+    "name": "Infinite Vocal Card",
+    "unidName": "Infinite Vocal Card",
+    "resName": "이름없는카드",
+    "description": "MDEF + 5\nเพิ่ม MDEF + 10 เมื่ออัพเกรดขั้น 7 \nเพิ่ม MDEF + 15 เมื่ออัพเกรดขั้น 9 \nประเภท : ^777777Card^000000\nใส่กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Magic Shield",
+    "script": {
+      "mdef": [
+        "5",
+        "7===10",
+        "9===15"
+      ]
+    }
+  },
+  "4645": {
+    "id": 4645,
+    "aegisName": "IFN_Eclipse_Card",
+    "name": "Infinite Eclipse Card",
+    "unidName": "Infinite Eclipse Card",
+    "resName": "이름없는카드",
+    "description": "MHP + 300\nเพิ่ม MHP + 300 เมื่ออัพเกรดขั้น 7 \nเพิ่ม MHP + 400 เมื่ออัพเกรดขั้น 9 \nประเภท : ^777777Card^000000\nใส่กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Physical",
+    "script": {
+      "hp": [
+        "300",
+        "7===300",
+        "9===400"
       ]
     }
   },
@@ -6987,6 +7446,173 @@
       ]
     }
   },
+  "4672": {
+    "id": 4672,
+    "aegisName": "Sura_Card",
+    "name": "Sura Chen Card",
+    "unidName": "Sura Chen Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อใช้งานด้วยอาชีพ Sura, MaxHP +10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\nเมื่อเลเวลตัวละครตั้งแต่ Lv. 175 ขึ้นไป All State +10\nเมื่ออัพเกรด Garment ตั้งแต่ 10 ขึ้นไป All State +10\nเมื่อใช้ร่วมกับ True Chen Lio Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะเปลี่ยนร่างเป็น Chen Lio เป็นเวลา 6 วินาที\nตลอดเวลาที่เปลี่ยนร่าง ATK +100\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Sura",
+    "script": {
+      "hpPercent": [
+        "USED[Sura]10"
+      ],
+      "p_race_all": [
+        "USED[Sura]10"
+      ],
+      "allStatus": [
+        "SUM[level==175]===10",
+        "10===10"
+      ],
+      "chance__atk": [
+        "EQUIP[True Chen Lio Card]===100"
+      ]
+    }
+  },
+  "4673": {
+    "id": 4673,
+    "aegisName": "Minstrel_Card",
+    "name": "Minstrel Alphoccio Card",
+    "unidName": "Minstrel Alphoccio Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP +15% และ MaxSP +10% ถ้าผู้สวมใส่เป็น Minstrel\nเมื่อ BaseLv 175 ขึ้นไป All State +10\nเมื่ออัพเกรดถึงขั้น 10 ขึ้นไป All State +10\nเมื่อใช้คู่กับ True Alphoccio Basil Card\nเมื่อโจมตีทางกายภาพ เพิ่มโอกาส 3% ที่จะเปลี่ยนร่างเป็น Alphoccio เป็นเวลา 6 วินาที\nATK + 100 ตลอดระยะเวลาที่เปลี่ยนร่าง\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Minstrel",
+    "script": {
+      "hpPercent": [
+        "USED[Minstrel]15"
+      ],
+      "spPercent": [
+        "USED[Minstrel]10"
+      ],
+      "allStatus": [
+        "SUM[level==175]===10",
+        "10===10"
+      ],
+      "chance__atk": [
+        "EQUIP[True Alphoccio Basil Card]===100"
+      ]
+    }
+  },
+  "4674": {
+    "id": 4674,
+    "aegisName": "GuillotineCross_Card",
+    "name": "Guillotine Cross Eremes Card",
+    "unidName": "Guillotine Cross Eremes Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อใช้งานด้วยอาชีพ Guillotine Cross, Perfect Dodge +10, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nเมื่อเลเวลตัวละครตั้งแต่ Lv. 175 ขึ้นไป All State +10\nเมื่ออัพเกรด Garment ตั้งแต่ 10 ขึ้นไป All State +10\nเมื่อใช้ร่วมกับ True Eremes Guile Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะเปลี่ยนร่างเป็น Eremes Guile เป็นเวลา 6 วินาที\nตลอดเวลาที่เปลี่ยนร่าง ATK +100\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Guillotine Cross",
+    "script": {
+      "perfectDodge": [
+        "USED[GuillotineCross]10"
+      ],
+      "p_race_all": [
+        "USED[GuillotineCross]15"
+      ],
+      "allStatus": [
+        "SUM[level==175]===10",
+        "10===10"
+      ],
+      "chance__atk": [
+        "EQUIP[True Eremes Guile Card]===100"
+      ]
+    }
+  },
+  "4675": {
+    "id": 4675,
+    "aegisName": "Archbishop_Card",
+    "name": "Arch Bishop Margaretha Card",
+    "unidName": "Arch Bishop Margaretha Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP +10% และเพิ่มผลของสกิลฟื้นฟู +15%. ถ้าผู้สวมใส่เป็น Arch Bishop\nเมื่อ BaseLv 175 ขึ้นไป All State +10\nเมื่ออัพเกรดถึงขั้น 10 ขึ้นไป All State +10\nเมื่อใช้คู่กับ True Margaretha Sorin Card\nเมื่อโจมตีทางเวทย์ เพิ่มโอกาส 3% ที่จะเปลี่ยนร่างเป็น Margaretha Sorin เป็นเวลา 6 นาที\nMATK + 100 ตลอดระยะเวลาที่เปลี่ยนร่าง\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Archbishop",
+    "script": {
+      "hpPercent": [
+        "USED[ArchBishop]10"
+      ],
+      "allStatus": [
+        "SUM[level==175]===10",
+        "10===10"
+      ],
+      "chance__matk": [
+        "EQUIP[True Margaretha Sorin Card]===100"
+      ]
+    }
+  },
+  "4676": {
+    "id": 4676,
+    "aegisName": "Ranger_Card",
+    "name": "Ranger Cecil Card",
+    "unidName": "Ranger Cecil Card",
+    "resName": "이름없는카드",
+    "description": "CRI +20 และเพิ่มพลังโจมตีจากการใช้อาวุธประเภท Bow +15% ถ้าผู้สวมใส่เป็น Ranger\nเมื่อ BaseLv 175 ขึ้นไป All State +10\nเมื่ออัพเกรดถึงขั้น 10 ขึ้นไป All State +10\nเมื่อใช้คู่กับ True Cecil Damon Card\nเมื่อโจมตีทางกายภาพ เพิ่มโอกาส 3% ที่จะเปลี่ยนร่างเป็น Cecil Damon เป็นเวลา 6 วินาที \nATK + 100 ตลอดระยะเวลาที่เปลี่ยนร่าง\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Ranger",
+    "script": {
+      "cri": [
+        "USED[Ranger]20"
+      ],
+      "bowRange": [
+        "USED[Ranger]15"
+      ],
+      "allStatus": [
+        "SUM[level==175]===10",
+        "10===10"
+      ],
+      "chance__atk": [
+        "EQUIP[True Cecil Damon Card]===100"
+      ]
+    }
+  },
   "4677": {
     "id": 4677,
     "aegisName": "Mechanic_Card",
@@ -7120,6 +7746,40 @@
       ],
       "chance__atk": [
         "EQUIP[True Randel Lawrence Card]100"
+      ]
+    }
+  },
+  "4681": {
+    "id": 4681,
+    "aegisName": "Genetic_Card",
+    "name": "Genetic Flamel Card",
+    "unidName": "Genetic Flamel Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อใช้งานด้วยอาชีพ Genetic, FLEE +20, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nเมื่อเลเวลตัวละครตั้งแต่ Lv. 175 ขึ้นไป All State +10\nเมื่ออัพเกรด Garment ตั้งแต่ 10 ขึ้นไป All State +10\nเมื่อใช้ร่วมกับ True Flamel Emure Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะเปลี่ยนร่างเป็น Flamel Emure เป็นเวลา 6 วินาที\nตลอดเวลาที่เปลี่ยนร่าง ATK +100\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Genetic",
+    "script": {
+      "flee": [
+        "USED[Genetic]20"
+      ],
+      "p_race_all": [
+        "USED[Genetic]15"
+      ],
+      "allStatus": [
+        "SUM[level==175]===10",
+        "10===10"
+      ],
+      "chance__atk": [
+        "EQUIP[True Flamel Emure Card]===100"
       ]
     }
   },
@@ -7263,6 +7923,32 @@
     "cardPrefix": "Crimson",
     "script": {
       "Crimson Rock": [
+        "20",
+        "WEAPON_LEVEL[4]===20",
+        "10===20"
+      ]
+    }
+  },
+  "4687": {
+    "id": 4687,
+    "aegisName": "Real_Shecil_Card",
+    "name": "True Cecil Damon Card",
+    "unidName": "True Cecil Damon Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความแรงสกิล Bomb Cluster 20% \nเพิ่มความแรงสกิล Bomb Cluster อีก 20% เมื่ออาวุธเลเวล 4 \nเพิ่มความแรงสกิล Bomb Cluster อีก 20% เมื่ออัพเกรดถึงขั้น 10 ขึ้นไป\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Cluster",
+    "script": {
+      "Bomb Cluster": [
         "20",
         "WEAPON_LEVEL[4]===20",
         "10===20"
@@ -13708,6 +14394,41 @@
     ],
     "script": {}
   },
+  "13441": {
+    "id": 13441,
+    "aegisName": "Thanos_Sword",
+    "name": "Thanos Sword [1]",
+    "unidName": "Sword",
+    "resName": "타노스의검",
+    "description": "ดาบที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nเมื่อโจมตีกายภาพ จะมีโอกาสในระดับต่ำ ที่จะดูดซับดาเมจ 5% มาเป็น HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 100\n\nประเภท : ^777777Sword^000000\nโจมตี : ^777777150^000000\nน้ำหนัก : ^77777770^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Swordsman Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 257,
+    "itemLevel": 4,
+    "attack": 150,
+    "defense": null,
+    "weight": 70,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "100"
+      ]
+    }
+  },
   "13461": {
     "id": 13461,
     "aegisName": "Sealed_Evil_Sword",
@@ -16961,6 +17682,43 @@
       ]
     }
   },
+  "16028": {
+    "id": 16028,
+    "aegisName": "Thanos_Hammer",
+    "name": "Thanos Hammer [1]",
+    "unidName": "Blunt Weapon",
+    "resName": "타노스의망치",
+    "description": "ค้อนที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nเมื่อโจมตีกายภาพ จะมีโอกาสในระดับต่ำ ที่จะดูดซับดาเมจ 5% มาเป็น HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 120\n\nประเภท : ^777777Mace^000000\nโจมตี : ^777777180^000000\nน้ำหนัก : ^777777300^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Swordsman, Merchant, and Acolyte 3rd Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 180,
+    "defense": null,
+    "weight": 300,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Merchant",
+      "Acolyte"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "120"
+      ]
+    }
+  },
   "16040": {
     "id": 16040,
     "aegisName": "Scarlet_Mace",
@@ -17535,6 +18293,41 @@
       "all"
     ],
     "script": {}
+  },
+  "18119": {
+    "id": 18119,
+    "aegisName": "Thanos_Bow",
+    "name": "Thanos Bow [1]",
+    "unidName": "Bow",
+    "resName": "타노스의활",
+    "description": "ธนูที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nเมื่อโจมตีกายภาพ จะมีโอกาสในระดับต่ำ ที่จะดูดซับดาเมจ 5% มาเป็น HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 110\n\nประเภท : ^777777Bow^000000\nโจมตี : ^777777180^000000\nน้ำหนัก : ^777777130^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^7777773rd Archer Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 4,
+    "attack": 180,
+    "defense": null,
+    "weight": 130,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Archer"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "110"
+      ]
+    }
   },
   "18122": {
     "id": 18122,
@@ -18573,47 +19366,47 @@
       ],
       "m_element_fire": [
         "5",
-        "1---2",
-        "11===-2",
-        "12===-2",
-        "13===-2",
-        "14===-2",
-        "15===-2"
+        "6===2",
+        "7===2",
+        "8===2",
+        "9===2",
+        "10===2"
       ],
       "m_element_water": [
         "5",
-        "1---2",
-        "11===-2",
-        "12===-2",
-        "13===-2",
-        "14===-2",
-        "15===-2"
+        "6===2",
+        "7===2",
+        "8===2",
+        "9===2",
+        "10===2"
       ],
       "m_element_wind": [
         "5",
-        "1---2",
-        "11===-2",
-        "12===-2",
-        "13===-2",
-        "14===-2",
-        "15===-2"
+        "6===2",
+        "7===2",
+        "8===2",
+        "9===2",
+        "10===2"
       ],
       "m_element_earth": [
         "5",
-        "1---2",
-        "11===-2",
-        "12===-2",
-        "13===-2",
-        "14===-2",
-        "15===-2"
+        "6===2",
+        "7===2",
+        "8===2",
+        "9===2",
+        "10===2"
       ],
       "matk": [
-        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==1]---10",
-        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==11]===-10",
-        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==12]===-10",
-        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==13]===-10",
-        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==14]===-10",
-        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==15]===-10"
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==1]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==2]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==3]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==4]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==5]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==6]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==7]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==8]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==9]===10",
+        "EQUIP[Thorn Staff of Darkness]REFINE[weapon==10]===10"
       ]
     }
   },
@@ -20916,6 +21709,47 @@
       ]
     }
   },
+  "19295": {
+    "id": 19295,
+    "aegisName": "Red_Baby_Dragon_TW",
+    "name": "Red Baby Dragon [1]",
+    "unidName": "Hat",
+    "resName": "레드베이비드래곤",
+    "description": "MaxHP+5%.\nMaxSP+5%.\nเมื่อขั้นอัพเกรดมากกว่า 7, ASPD เพิ่มขึ้นอีก +1,\nเพิ่ม Damage ของสกิล [Dragon Breath] ขึ้นอีก 3%\nเมื่อขั้นอัพเกรดมากกว่า 10, ASPD เพิ่มขึ้นอีก +1,\nเพิ่ม Damage ของสกิล [Dragon Breath] ขึ้นอีก 7%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777770^000000\nเลเวลที่ต้องการ : ^77777790^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 70,
+    "requiredLevel": 90,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hpPercent": [
+        "5"
+      ],
+      "spPercent": [
+        "5"
+      ],
+      "aspd": [
+        "7===1",
+        "10===1"
+      ],
+      "Dragon Breath": [
+        "7===3",
+        "10===7"
+      ],
+      "Dragon Breath - WATER": [
+        "7===3",
+        "10===7"
+      ]
+    }
+  },
   "19296": {
     "id": 19296,
     "aegisName": "Classical_Fhat",
@@ -22864,12 +23698,16 @@
       ],
       "matk": [
         "EQUIP[Survivor's Rod]===-50",
-        "EQUIP[Survivor's Rod]1---20",
-        "EQUIP[Survivor's Rod]11===-20",
-        "EQUIP[Survivor's Rod]12===-20",
-        "EQUIP[Survivor's Rod]13===-20",
-        "EQUIP[Survivor's Rod]14===-20",
-        "EQUIP[Survivor's Rod]15===-20"
+        "EQUIP[Survivor's Rod]REFINE[weapon==1]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==2]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==3]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==4]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==5]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==6]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==7]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==8]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==9]===20",
+        "EQUIP[Survivor's Rod]REFINE[weapon==10]===20"
       ],
       "acd": [
         "EQUIP[Survivor's Rod]3---3"
@@ -23601,6 +24439,41 @@
         "9===20",
         "11===10",
         "EQUIP[Temporal Luk Boots||Modified Luk Boots]REFINE[boot==10]30"
+      ]
+    }
+  },
+  "21009": {
+    "id": 21009,
+    "aegisName": "Thanos_Great_Sword",
+    "name": "Thanos Great Sword [1]",
+    "unidName": "Two-Handed Sword",
+    "resName": "타노스의대검",
+    "description": "Sword ที่มีพลังเวทย์ ซึ่งทำขึ้นมาจาก Gray Shard เพื่อใช้เผชิญหน้ากับ Magical Sword Tarthanos\nแม้จะเป็น Sword ที่มีพลังเวทย์และพละกำลังที่แข็งแกร่ง\n\nINT + 6 / VIT + 6 / LUK -6\nเมื่อโจมตีทางกายภาพ จะมีโอกาสในระดับต่ำที่จะดูดซับDamage 5% มาเป็นHP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 120\n\nประเภท : ^777777Two-Handed Sword^000000\nพลังโจมตี : ^777777280^000000\nน้ำหนัก : ^777777130^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 280,
+    "defense": null,
+    "weight": 130,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "120"
       ]
     }
   },
@@ -30796,12 +31669,12 @@
       "all"
     ],
     "script": {
-      "m_pene_race_demihuman": [
+      "m_pene_race_fish": [
         "5",
         "2---1",
         "EQUIP[Tempest Shadow Shoes&&Tempest Shadow Shield]REFINE[shadowArmor,shadowShield,shadowBoot==25]===100"
       ],
-      "m_pene_race_undead": [
+      "m_pene_race_insect": [
         "5",
         "2---1",
         "EQUIP[Tempest Shadow Shoes&&Tempest Shadow Shield]REFINE[shadowArmor,shadowShield,shadowBoot==25]===100"
@@ -37666,6 +38539,120 @@
       ]
     }
   },
+  "24619": {
+    "id": 24619,
+    "aegisName": "S_Super_Power_Weapon",
+    "name": "Super Power Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางกายภาพระยะใกล้และระยะไกลขึ้นอีก 5%\nเมื่ออัพเกรดถึงขั้น 9 สามารถใช้สกิล Shattering Strike ที่เลเวลเดียวกับสกิล Weaponry Research ที่เรียนรู้\nเมื่อสวมใส่ Super Power Shadow Weapon/Earring/Pendant ร่วมกัน,\nสามารถใช้สกิล Shield Chain Lv. 5,\nเพิ่ม Damage สกิล Back Stab, Raid, Shield Boomerang, Shield Chain % เท่ากับ 2 เท่าของค่าอัพเกรดรวมกัน\nเมื่อสวมใส่ร่วมกับ Super Novice Shadow Shield,\nเพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่ายกเว้น Player 40% และเพิกเฉยต่อพลังป้องกันทางกายภาพเพิ่มอีกตามค่าอัพเกรดรวมกันของ Super Power Shadow Weapon และ Super Novice Shadow Shield\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "atk": [
+        "1---1"
+      ],
+      "matk": [
+        "1---1"
+      ],
+      "range": [
+        "5",
+        "7===5"
+      ],
+      "melee": [
+        "7===5"
+      ],
+      "Back Stab": [
+        "EQUIP[Super Power Shadow Earring&&Super Power Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==1]---2"
+      ],
+      "Raid": [
+        "EQUIP[Super Power Shadow Earring&&Super Power Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==1]---2"
+      ],
+      "Shield Boomerang": [
+        "EQUIP[Super Power Shadow Earring&&Super Power Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==1]---2"
+      ],
+      "Shield Chain": [
+        "EQUIP[Super Power Shadow Earring&&Super Power Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==1]---2"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Super Novice Shadow Shield]===40",
+        "EQUIP[Super Novice Shadow Shield]REFINE[shadowWeapon,shadowShield==1]---1"
+      ]
+    }
+  },
+  "24620": {
+    "id": 24620,
+    "aegisName": "S_Super_Power_Pendant",
+    "name": "Super Power Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage สกิล Back Stab, Raid 10%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Back Stab, Raid ขึ้นอีก 4%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "Back Stab": [
+        "10",
+        "2---4"
+      ],
+      "Raid": [
+        "10",
+        "2---4"
+      ]
+    }
+  },
+  "24621": {
+    "id": 24621,
+    "aegisName": "S_Super_Power_Earing",
+    "name": "Super Power Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우",
+    "description": "ต่างหูมงคลที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage สกิล Shield Boomerang, Shield Chain 10%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Shield Boomerang, Shield Chain ขึ้นอีก 4%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "Shield Boomerang": [
+        "10",
+        "2---4"
+      ],
+      "Shield Chain": [
+        "10",
+        "2---4"
+      ]
+    }
+  },
   "24622": {
     "id": 24622,
     "aegisName": "S_Kunai_Weapon",
@@ -39750,6 +40737,96 @@
       ]
     }
   },
+  "24723": {
+    "id": 24723,
+    "aegisName": "S_AutoSpell_Armor",
+    "name": "Auto Spell Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nHIT +10\nทุก ๆ การอัพเกรด 2 ขั้น HIT +1\nเมื่ออัพเกรดถึงขั้น 9, Perfect Hit +5%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hit": [
+        "10",
+        "2---1"
+      ],
+      "perfectHit": [
+        "9===5"
+      ]
+    }
+  },
+  "24726": {
+    "id": 24726,
+    "aegisName": "S_AutoSpell_Pendant",
+    "name": "Auto Spell Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nHIT +10\nทุก ๆ การอัพเกรด 2 ขั้น HIT +1\nเมื่ออัพเกรดถึงขั้น 9, Perfect Hit +5%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hit": [
+        "10",
+        "2---1"
+      ],
+      "perfectHit": [
+        "9===5"
+      ]
+    }
+  },
+  "24727": {
+    "id": 24727,
+    "aegisName": "S_AutoSpell_Earring",
+    "name": "Auto Spell Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우",
+    "description": "ต่างหูมงคลที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nFLEE +10\nทุก ๆ การอัพเกรด 2 ขั้น FLEE +1\nเมื่ออัพเกรดถึงขั้น 9, ASPD +1\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "flee": [
+        "10",
+        "2---1"
+      ],
+      "aspd": [
+        "9===1"
+      ]
+    }
+  },
   "24733": {
     "id": 24733,
     "aegisName": "S_Infinity_Shield",
@@ -40569,7 +41646,7 @@
       "vct": [
         "9===10"
       ],
-      "aspd": [
+      "aspdPercent": [
         "9===10"
       ],
       "Picky Peck": [
@@ -43025,6 +44102,36 @@
       ]
     }
   },
+  "27292": {
+    "id": 27292,
+    "aegisName": "Ancient_Sta_Golem_Card",
+    "name": "Ancient Stalactic Golem Card",
+    "unidName": "Ancient Stalactic Golem Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ Base VIT 10 MHP + 150, เพิ่ม ASPD 1%\nBase VIT ตั้งแต่ 120 ขึ้นไป ลด Delay หลังใช้สกิล 3%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Stalactic",
+    "script": {
+      "hp": [
+        "SUM[vit==10]---150"
+      ],
+      "aspdPercent": [
+        "SUM[vit==10]---1"
+      ],
+      "acd": [
+        "SUM[vit==120]===3"
+      ]
+    }
+  },
   "27295": {
     "id": 27295,
     "aegisName": "Ancient_S_Shooter_Card",
@@ -43080,6 +44187,33 @@
       ],
       "atk": [
         "dex:120===40"
+      ]
+    }
+  },
+  "27297": {
+    "id": 27297,
+    "aegisName": "Ancient_W_Fighter_Card",
+    "name": "Ancient Wootan Fighter Card",
+    "unidName": "Ancient Wootan Fighter Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Critical Damage 10%\nCRI + 5\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Wootan Fist",
+    "script": {
+      "criDmg": [
+        "10"
+      ],
+      "cri": [
+        "5"
       ]
     }
   },
@@ -43249,6 +44383,30 @@
       "p_size_l": [
         "WEAPON_TYPE[fist]1---1",
         "WEAPON_TYPE[fist]10===15"
+      ]
+    }
+  },
+  "27312": {
+    "id": 27312,
+    "aegisName": "Dolor_Card",
+    "name": "Dolor Card",
+    "unidName": "Dolor Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Demon 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Evil Piercing",
+    "script": {
+      "p_race_demon": [
+        "5"
       ]
     }
   },
@@ -43981,6 +45139,30 @@
       "range": [
         "10",
         "EQUIP[Enchanted Archer Skeleton Card]5"
+      ]
+    }
+  },
+  "27356": {
+    "id": 27356,
+    "aegisName": "Frozen_Gargoyle_Card",
+    "name": "Frozen Gargoyle Card",
+    "unidName": "Frozen Gargoyle Card",
+    "resName": "이름없는카드",
+    "description": "DEF + 20\nลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูขนาดกลาง และมอนสเตอร์ขนาดใหญ่ 25% \nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูขนาดเล็ก 5%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shield^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "of Frozen Guard",
+    "script": {
+      "def": [
+        "20"
       ]
     }
   },
@@ -45216,6 +46398,42 @@
       ]
     }
   },
+  "28100": {
+    "id": 28100,
+    "aegisName": "Thanos_Axe",
+    "name": "Thanos Axe [1]",
+    "unidName": "Two-Handed Axe",
+    "resName": "타노스의도끼",
+    "description": "ขวานสองมือที่มีพลังเวทย์ ทำขึ้นมาจาก Shard of Gray เพื่อใช้เผชิญหน้ากับ Devil Sword Tarthanos\nมีพลังเวทย์และพละกำลังที่แข็งแกร่ง แต่ก็ต้องจ่ายค่าตอบแทนที่สมน้ำสมเนื้อ\n\nINT + 6 / VIT + 6 / LUK -6\nเมื่อโจมตีกายภาพ จะมีโอกาสในระดับต่ำ ที่จะดูดซับดาเมจ 5% มาเป็น HP และ SP\nHP ลดลง 100 ทุก 10 วินาที\nHP ลดลง 1000 เมื่อถอดอุปกรณ์\nMATK + 80\nไม่สามารถทำลายได้\nประเภท : ^777777Two Hand Axe^000000\nโจมตี : ^777777300^000000\nน้ำหนัก : ^777777400^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพ: ^777777Swordsman/Merchant Classes^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 262,
+    "itemLevel": 4,
+    "attack": 300,
+    "defense": null,
+    "weight": 400,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Merchant"
+    ],
+    "script": {
+      "int": [
+        "6"
+      ],
+      "vit": [
+        "6"
+      ],
+      "luk": [
+        "-6"
+      ],
+      "matk": [
+        "80"
+      ]
+    }
+  },
   "28101": {
     "id": 28101,
     "aegisName": "Tornado_Axe",
@@ -45928,6 +47146,50 @@
         "EQUIP[Ancient Hero Boots]10"
       ]
     }
+  },
+  "28310": {
+    "id": 28310,
+    "aegisName": "Earring_Of_Sarah_L",
+    "name": "Sarah's Left Earring",
+    "unidName": "Accessory",
+    "resName": "사라귀걸이",
+    "description": "Sarah's Left Earring ราวกับสามารถใช้พลังของ Sarah ได้เมื่อสวมใส่\nสามารถใช้ Heal Lv.1 ได้\n^ff0000ไอเทมนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nประเภท : ^777777Accessory^000000 ป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777145^000000\nติดตั้ง : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 145,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
+  },
+  "28311": {
+    "id": 28311,
+    "aegisName": "Earring_Of_Sarah_R",
+    "name": "Sarah's Right Earring",
+    "unidName": "Accessory",
+    "resName": "사라귀걸이",
+    "description": "Sarah's Right Earring ราวกับสามารถใช้พลังของ Sarah ได้เมื่อสวมใส่ \nสามารถใช้ Teleport Lv.1 ได้\n^ff0000ไอเทมนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nประเภท : ^777777Accessory^000000 ป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777145^000000\nติดตั้ง : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 145,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
   },
   "28326": {
     "id": 28326,
@@ -47830,7 +49092,11 @@
         "POS[leftWeapon]13===2",
         "POS[leftWeapon]14===2",
         "POS[leftWeapon]15===2",
-        "POS[leftWeapon]16===2"
+        "POS[leftWeapon]16===2",
+        "POS[leftWeapon]17===2",
+        "POS[leftWeapon]18===2",
+        "POS[leftWeapon]19===2",
+        "POS[leftWeapon]20===2"
       ]
     }
   },
@@ -56102,32 +57368,78 @@
       ]
     }
   },
-  "31390": {
-    "id": 31390,
-    "aegisName": "C_Let_It_Snow",
-    "name": "Costume Let It Snow",
-    "unidName": "Cap",
-    "resName": "Let_It_Snow",
-    "description": "หมวกที่ถูกสร้างขึ้นมาด้วยแรงอธิษฐานของชาวบ้านในพื้นที่ที่หิมะไม่ตกแม้ในฤดูหนาว รูปร่างที่มีลักษณะเป็นหิมะโปรยปรายนั้นทำให้นึกถึง Stormgast\n^ffffff_^000000\nในช่วงเวลากิจกรรม ทุก ๆ 20 Base Lv. HP + 250\nเพิ่มพลังฟื้นฟูของ Ice Cream 50%\nทุก ๆ 30 Base Lv. เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท 2%\n(ความสามารถของไอเท็มนี้จะถูกลบหลังสิ้นสุดระยะเวลากิจกรรม)\n^ffffff_^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper ^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+  "31024": {
+    "id": 31024,
+    "aegisName": "As_Bdy_Knight_Card",
+    "name": "Immortal Bloody Knight Card",
+    "unidName": "Immortal Bloody Knight Card",
+    "resName": "이름없는카드",
+    "description": "ATK +10%\nมีโอกาสเปิดใช้งาน Auto Spell Ignition Break Lv5 เมื่อโจมตีทางกายภาพ\nประเภท : ^777777Card^000000\nติดตั้ง : ^777777อาวุธ^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
-    "itemTypeId": 9,
-    "itemSubTypeId": 519,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
     "itemLevel": null,
     "attack": null,
-    "defense": 0,
-    "weight": 0,
-    "requiredLevel": 1,
-    "location": "Upper",
-    "compositionPos": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Volcanic",
     "script": {
-      "hp": [
-        "SUM[level==20]---250"
+      "atkPercent": [
+        "10"
+      ]
+    }
+  },
+  "31025": {
+    "id": 31025,
+    "aegisName": "As_Wind_Ghost_Card",
+    "name": "Immortal Wind Ghost Card",
+    "unidName": "Immortal Wind Ghost Card",
+    "resName": "이름없는카드",
+    "description": "MATK +10%\nมีโอกาสเปิดใช้งาน Auto Spell Killing Cloud Lv5 เมื่อโจมตีเวทมนตร์\nประเภท : ^777777Card^000000\nติดตั้ง : ^777777อาวุธ^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Deadly",
+    "script": {
+      "matkPercent": [
+        "10"
+      ]
+    }
+  },
+  "31026": {
+    "id": 31026,
+    "aegisName": "As_Ragged_Golem_Card",
+    "name": "Stefan.J.E.Wolf Card",
+    "unidName": "Stefan.J.E.Wolf Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อโจมตีกายภาพ จะมีโอกาส FLEE +200 เป็นเวลา 10 วินาที \nเมื่อโจมตีเวทมนตร์ จะมีโอกาสเพิ่มความเร็วเคลื่อนที่เป็นเวลา 10 วินาที \nมีโอกาสเปิดใช้งาน Auto Spell Fire Walk Lv.5 เมื่อได้รับการโจมตีทางกายภาพ\nมีโอกาสเปิดใช้งาน Auto Spell Electric Walk Lv.5 เมื่อได้รับการโจมตีเวทมนตร์\nASPD +1 เมื่อติดตั้งร่วมกับ Immortal Bloody Knight Card\nการร่ายแบบผันแปร -10% เมื่อติดตั้งร่วมกับ Immortal Wind Ghost Card\nประเภท : ^777777Card^000000\nติดตั้ง : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Auto magic",
+    "script": {
+      "aspd": [
+        "EQUIP[Immortal Bloody Knight Card]1"
       ],
-      "p_class_all": [
-        "SUM[level==30]---2"
-      ],
-      "m_class_all": [
-        "SUM[level==30]---2"
+      "vct": [
+        "EQUIP[Immortal Wind Ghost Card]10"
       ]
     }
   },
@@ -58006,16 +59318,16 @@
     "compositionPos": 16,
     "cardPrefix": "Solid Break",
     "script": {
-      "m_element_water": [
+      "p_element_water": [
         "40"
       ],
-      "m_element_fire": [
+      "p_element_fire": [
         "40"
       ],
-      "m_race_plant": [
+      "p_race_plant": [
         "40"
       ],
-      "m_race_formless": [
+      "p_race_formless": [
         "40"
       ]
     }
@@ -66701,9 +68013,9 @@
     "id": 400116,
     "aegisName": "BioWeapon_Helm_RA",
     "name": "Celestial Jewel Crown [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "쌍녀궁보관",
-    "description": "Atk + 20 per 2 refine rate.\r\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 9 or higher, increases long ranged physical damage by 15%.\r\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\r\n\r\nWhen equipped with ^32cd32Sharp Star^000000, increases critical damage by 20%,\r\nincreases Focused Arrow Strike damage by 10% per refine rate of weapon.\r\n\r\nWhen equipped with ^32cd32Aiming Bow^000000, increases long ranged physical damage by 10%,\r\nincreases Aimed Bolt damage by 10% per refine rate of weapon.\r\n\r\nWhen equipped with ^32cd32Falken Shooter^000000, reduces skill cooldown of Arrow Storm by 1.8 seconds,\r\nincreases Arrow Storm damage by 10% per refine rate of weapon.\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nRequired Level: ^777777170^000000\r\nJobs: ^777777Ranger^000000",
+    "description": "มงกุฎที่ทำขึ้นเพื่อร่างทดลองเฉพาะ ถูกประดับตกแต่งด้วยอัญมณีสีน้ำเงิน\nรูปร่างที่คล้ายนัยน์ตาของมันส่องแสงราวกับมองจิตใจของศัตรูได้อย่างทะลุปรุโปร่ง\nทุก ๆ การอัพเกรด 2 ขั้น ATK +20\nเมื่ออัพเกรดถึงขั้น 7, ASPD +10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Sharp Star,\nเพิ่ม Critical Damage 20% \nทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Focused Arrow Strike 10%\n\nเมื่อสวมใส่ร่วมกับ Aiming Bow,\nเพิ่ม Damage ทางกายภาพระยะไกล 10% \nทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Aimed Bolt 10%\n\nเมื่อสวมใส่ร่วมกับ Falken Shooter,\nลด Cooldown สกิล Arrow Storm 1.8 วินาที \nทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Arrow Storm 10%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Ranger^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -66752,9 +68064,9 @@
     "id": 400117,
     "aegisName": "BioWeapon_Helm_WM",
     "name": "Libra Crown [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "천칭궁왕관",
-    "description": "Atk + 20 and Matk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%), reduces variable casting time by 10%.\nIf refine rate is 9 or higher, increases long ranged physical damage by 15%, increases neutral property magical damage by 10%.\nIf refine rate is 11 or higher, increases all property magical damage by 10%, increases physical damage against all size enemies by 10%.\n\nWhen equipped with ^32cd32Black Circle or Heart Whip^000000, increase neutral property magical damage by 10%,\nincreases Metallic Sound damage by 5% per refine rate of weapon.\n\nWhen equipped with ^32cd32Antique Cello or Scarlet Ribbon^000000, increases long ranged physical damage by 10%,\nincreases Severe Rainstorm damage by 10% per refine rate of weapon.\n\nWhen equipped with ^32cd32Wind Gale^000000, increases long ranged physical damage by 10%,\nincreases Severe Rainstorm damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Minstrel, Wanderer^000000",
+    "description": "มงกุฎที่ทำขึ้นเพื่อร่างทดลองเฉพาะ\nตัวมงกุฎตกแต่งด้วยสีทองอร่ามทำให้ผู้สวมใส่โดดเด่น รวมเข้ากับอัญมณีสีฟ้ารูปร่างคล้ายดาวศุกร์\nทุก ๆ การอัพเกรด 2 ขั้น ATK +20, MATK +20\nเมื่ออัพเกรดถึงขั้น 7, ASPD +10%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกล 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 10%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Black Circle หรือ Heart Whip,\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 10%\nทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Metalic Sound 5%\n\nเมื่อสวมใส่ร่วมกับ Antique Cello หรือ Scarlet Ribbon,\nเพิ่ม Damage ทางกายภาพระยะไกล 10%\nทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Severe Rainstorm 10%\n\nเมื่อสวมใส่ร่วมกับ Wind Gale,\nเพิ่ม Damage ทางกายภาพระยะไกล 10%\nทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Severe Rainstorm 10%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel, Wanderer^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -69353,6 +70665,82 @@
       ]
     }
   },
+  "470263": {
+    "id": 470263,
+    "aegisName": null,
+    "name": "Zodiac Boots (Archer) [1]",
+    "unidName": "Zodiac Boots (Archer)",
+    "resName": "HalfBloodPrincess_Shoes",
+    "description": "รองเท้าคุณภาพดีที่ได้รับพลังจากกลุ่มดาว Libra และเทห์ฟากฟ้า\n\nATK/MATK +50\nทุก ๆ การอัพเกรด 2 ขั้น ATK/MATK +10, ATK/MATK +1%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage สกิล Aimed Bolt, Metalic Sound 15%\nเมื่ออัพเกรดตั้งแต่ 9 ขึ้นไป ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเมื่ออัพเกรดตั้งแต่ 11 ขึ้นไป ลด Delay หลังใช้สกิล 10%\n\nเมื่อสวมใส่ร่วมกับ Cecil's Memory,\nลด Cooldown สกิล Arrow Storm 0.7 วินาที\nทุก ๆ การอัพเกรด Weapon 4 ขั้น ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, ลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบแปรผันสกิล Arrow Storm และ Aimed Bolt 35% \n\nเมื่อสวมใส่ร่วมกับ Alphoccio's Memory หรือ Trentini's Memory,\nลด Cooldown สกิล Metalic Sound 0.5 วินาที\nทุก ๆ การอัพเกรด Weapon 4 ขั้น เพิ่ม Damage ทางเวททมนตร์ธาตุ Neutral 15%\n\nเมื่อสวมใส่ร่วมกับ Cecil's Memory และ Celestial Jewel Crown,\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 33 ขึ้นไป เมื่อใช้สกิล No Limits เพิ่ม Damage สกิล Aimed Bolt 250% เป็นเวลา 30 วินาที\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 35 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 40% (ยกเว้น Player)\n\nเมื่อสวมใส่ร่วมกับ Alphoccio's Memory/Trentini's Memory และ Libra Crown,\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 33 ขึ้นไป เมื่อใช้สกิล Metalic Sound มีโอกาส 35% ที่จะใช้สกิล Metalic Sound Lv. 10 ใส่เป้าหมาย\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 35 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 40% (ยกเว้น Player)\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^77777790^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Archer Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 90,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger",
+      "Wanderer",
+      "Minstrel"
+    ],
+    "script": {
+      "atk": [
+        "50",
+        "2---10"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "matk": [
+        "50",
+        "2---10"
+      ],
+      "matkPercent": [
+        "2---1"
+      ],
+      "Aimed Bolt": [
+        "4---15",
+        "EQUIP[Cecil's Memory&&Celestial Jewel Crown]REFINE[headUpper,weapon,boot==33]ACTIVE_SKILL[No Limits]===250"
+      ],
+      "Metalic Sound": [
+        "4---15"
+      ],
+      "fct": [
+        "9===0.5",
+        "EQUIP[Cecil's Memory]REFINE[weapon==4]---0.2"
+      ],
+      "acd": [
+        "11===10",
+        "EQUIP[Cecil's Memory]REFINE[weapon==4]---5"
+      ],
+      "cd__Arrow Storm": [
+        "EQUIP[Cecil's Memory]===0.7"
+      ],
+      "vct__Arrow Storm": [
+        "EQUIP[Cecil's Memory]REFINE[weapon==4]---35"
+      ],
+      "vct__Aimed Bolt": [
+        "EQUIP[Cecil's Memory]REFINE[weapon==4]---35"
+      ],
+      "cd__Metalic Sound": [
+        "EQUIP[Alphoccio's Memory||Trentini's Memory]===0.5"
+      ],
+      "m_my_element_neutral": [
+        "EQUIP[Alphoccio's Memory||Trentini's Memory]REFINE[weapon==4]---15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Cecil's Memory&&Celestial Jewel Crown]REFINE[headUpper,weapon,boot==35]===40"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Alphoccio's Memory&&Libra Crown]REFINE[headUpper,weapon,boot==35]===40",
+        "EQUIP[Trentini's Memory&&Libra Crown]REFINE[headUpper,weapon,boot==35]===40"
+      ]
+    }
+  },
   "480000": {
     "id": 480000,
     "aegisName": "Atker_Manteau",
@@ -71467,6 +72855,66 @@
       ],
       "aspd": [
         "EQUIP[Lindy Hop]REFINE[weapon==12]===2"
+      ]
+    }
+  },
+  "490208": {
+    "id": 490208,
+    "aegisName": "Palace_Ring",
+    "name": "Palace Ring [1]",
+    "unidName": "Ring",
+    "resName": "Shield_Ring",
+    "description": "MaxHP +10%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 10%\n\nเมื่อสวมใส่ร่วมกับ Lindy Hop,\nลด Cooldown สกิล Ignition Break 1.5 วินาที\nทุก ๆ การอัพเกรด Weapon 2 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 3%\n\nเมื่อสวมใส่ร่วมกับ Juliette D Rachel,\nลด Cooldown สกิล Dark Claw 8 วินาที\nทุก ๆ การอัพเกรด Weapon 2 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 3%\n\nเมื่อสวมใส่ร่วมกับ Sunflower Kid,\nเพิ่ม Damage สกิล Tetra Vortex 30%\nทุก ๆ การอัพเกรด Weapon 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 4%\n\nเมื่อใช้ร่วมกับ Stefan.J.E.Wolf Card,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท 10%\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะ ATK +200 เป็นเวลา 10 วินาที\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 3% ที่จะ MATK +200 เป็นเวลา 10 วินาที\nประเภท : ^777777Accessory (Right)^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "p_race_all": [
+        "10"
+      ],
+      "m_race_all": [
+        "10"
+      ],
+      "cd__Ignition Break": [
+        "EQUIP[Lindy Hop]===1.5"
+      ],
+      "melee": [
+        "EQUIP[Lindy Hop]REFINE[weapon==2]---3",
+        "EQUIP[Juliette D Rachel]REFINE[weapon==2]---3"
+      ],
+      "cd__Dark Claw": [
+        "EQUIP[Juliette D Rachel]===8"
+      ],
+      "Tetra Vortex": [
+        "EQUIP[Sunflower Kid]===30"
+      ],
+      "m_element_all": [
+        "EQUIP[Sunflower Kid]REFINE[weapon==2]---4"
+      ],
+      "p_class_all": [
+        "EQUIP[Stefan.J.E.Wolf Card]===10"
+      ],
+      "m_class_all": [
+        "EQUIP[Stefan.J.E.Wolf Card]===10"
+      ],
+      "chance__atk": [
+        "EQUIP[Stefan.J.E.Wolf Card]===200"
+      ],
+      "chance__matk": [
+        "EQUIP[Stefan.J.E.Wolf Card]===200"
       ]
     }
   },
@@ -73627,6 +75075,50 @@
       ],
       "Psychic Wave": [
         "EQUIP[Patent Freedom Stick]REFINE[weapon==11]SUM[int,dex==12]---1"
+      ]
+    }
+  },
+  "490515": {
+    "id": 490515,
+    "aegisName": null,
+    "name": "Ring of Unknown Hero(Genetic) [1]",
+    "unidName": "Ring of Unknown Hero(Genetic)",
+    "resName": "Ullr_Bracelet",
+    "description": "แหวนของฮีโร่นิรนาม\n\nลด Delay หลังใช้สกิล 3%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท 6%\n\nเมื่อสวมใส่ร่วมกับ Patent Red Lotus Sword,\nเพิ่ม Damage ทางกายภาพระยะไกล 8%\nเมื่ออัพเกรด Patent Red Lotus Sword ตั้งแต่ 11 ขึ้นไป,\nเมื่อ Base STR และ DEX รวมกันได้ทุก ๆ 12 หน่วย เพิ่ม Damage สกิล Cart Cannon 1%\n\nเมื่อสวมใส่ร่วมกับ Patent Slate Sword,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 8%\nเมื่ออัพเกรด Patent Slate Sword ตั้งแต่ 11 ขึ้นไป,\nเมื่อ Base STR และ DEX รวมกันได้ทุก ๆ 12 หน่วย เพิ่ม Damage สกิล Cart Tornado 1%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "acd": [
+        "3"
+      ],
+      "p_class_all": [
+        "6"
+      ],
+      "m_class_all": [
+        "6"
+      ],
+      "range": [
+        "EQUIP[Patent Red Lotus Sword]===8"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Patent Red Lotus Sword]REFINE[weapon==11]SUM[str,dex==12]---1"
+      ],
+      "p_race_all": [
+        "EQUIP[Patent Slate Sword]===8"
+      ],
+      "Cart Tornado": [
+        "EQUIP[Patent Slate Sword]REFINE[weapon==11]SUM[str,dex==12]---1"
       ]
     }
   },

@@ -835,7 +835,7 @@ export class BuildScript {
 			const [_raw, every, combo, bonusScript] = expression.match(regex) ?? [];
 			if (every && bonusScript) {
 				// console.log({expression, combo, every, bonusScript})
-				const c = combo.trim().split(',').join('&&').toLowerCase();
+				const c = combo.trim().split(',').join(',').toLowerCase();
 				return { every: c + every, bonusScript };
 			}
 		}
