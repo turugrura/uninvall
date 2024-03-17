@@ -466,6 +466,28 @@
       ]
     }
   },
+  "1408": {
+    "id": 1408,
+    "aegisName": "Pike_",
+    "name": "Pike [4]",
+    "unidName": "Spear",
+    "resName": "파이크",
+    "description": "หอกธรรมดา สำหรับทหารราบ\nประเภท : ^777777One-Handed Spear^000000 พลังโจมตี : ^77777760^000000\nน้ำหนัก : ^777777100^000000\nLv ของอาวุธ : ^7777771^000000\nLv ที่ต้องการ : ^7777774^000000\nอาชีพ : ^777777Swordman Cls^000000",
+    "slots": 4,
+    "itemTypeId": 1,
+    "itemSubTypeId": 259,
+    "itemLevel": 1,
+    "attack": 60,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 4,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {}
+  },
   "1433": {
     "id": 1433,
     "aegisName": "Imperial_Spear",
@@ -1641,6 +1663,29 @@
     "itemSubTypeId": 1024,
     "itemLevel": null,
     "attack": 30,
+    "propertyAtk": "Poison",
+    "defense": null,
+    "weight": 0.1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
+  },
+  "1763": {
+    "id": 1763,
+    "aegisName": "Poison_Arrow",
+    "name": "Poison Arrow",
+    "unidName": "Poison Arrow",
+    "resName": "독화살",
+    "description": "ลูกธนูที่มีหัวลูกศรอาบยาพิษ มีโอกาสทำให้ศัตรูถูก Poison\nประเภท : ^777777Arrow^000000 พลังโจมตี : ^7777771^000000\nน้ำหนัก : ^7777770.1^000000 ธาตุ : ^777777Poison^000000",
+    "slots": 0,
+    "itemTypeId": 4,
+    "itemSubTypeId": 1024,
+    "itemLevel": null,
+    "attack": 1,
     "propertyAtk": "Poison",
     "defense": null,
     "weight": 0.1,
@@ -5431,6 +5476,60 @@
       ]
     }
   },
+  "4388": {
+    "id": 4388,
+    "aegisName": "Deathword_Card",
+    "name": "Death Word Card",
+    "unidName": "Death Word Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความรุนแรงของสกิล\nNapalm Beat,\nSoul Strike และ\nNapalm Vulcan 5%\nเสีย SP 50\nถ้าอาวุธถูกถอดออก\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Soul",
+    "script": {
+      "Napalm Beat": [
+        "5"
+      ],
+      "Soul Strike": [
+        "5"
+      ],
+      "Napalm Vulcan": [
+        "5"
+      ]
+    }
+  },
+  "4392": {
+    "id": 4392,
+    "aegisName": "Observation_Card",
+    "name": "Dame of Sentinel Card",
+    "unidName": "Dame of Sentinel Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มค่า DEX 1 หน่วย\nทุกๆ ค่า VIT 18 หน่วย\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "of Dexterity Switching",
+    "script": {
+      "dex": [
+        "SUM[vit==18]---1"
+      ]
+    }
+  },
   "4393": {
     "id": 4393,
     "aegisName": "Shelter_Card",
@@ -5454,6 +5553,26 @@
         "SUM[str==18]---1"
       ]
     }
+  },
+  "4394": {
+    "id": 4394,
+    "aegisName": "Solace_Card",
+    "name": "Lady Solace Card",
+    "unidName": "Lady Solace Card",
+    "resName": "이름없는카드",
+    "description": "มีโอกาสร่ายสกิล\nGrand Cross Lv.5\nโดยอัตโนมัติ เมื่อโจมตีทางกายภาพ\n(เฉพาะ Priest / High Priest และ Arch Bishop เท่านั้น)\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Devine Cross",
+    "script": {}
   },
   "4398": {
     "id": 4398,
@@ -5667,6 +5786,30 @@
     "cardPrefix": "Resistant",
     "script": {}
   },
+  "4419": {
+    "id": 4419,
+    "aegisName": "Ktullanux_Card",
+    "name": "Ktullanux Card",
+    "unidName": "Ktullanux Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความรุนแรงในการโจมตีทางกายภาพแก่มอนสเตอร์ธาตุไฟ 50%\nเมื่อได้รับการโจมตีทางกายภาพและทางเวทมนตร์ มีโอกาสร่าย Frost Nova Lv.10 โดยอัตโนมัติ\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Jack Frost's",
+    "script": {
+      "p_element_fire": [
+        "50"
+      ]
+    }
+  },
   "4426": {
     "id": 4426,
     "aegisName": "Byorgue_Card",
@@ -5721,6 +5864,33 @@
       ],
       "hit": [
         "SUM[jobLevel==10]---1"
+      ]
+    }
+  },
+  "4433": {
+    "id": 4433,
+    "aegisName": "Imp_Card",
+    "name": "Imp Card",
+    "unidName": "Imp Card",
+    "resName": "이름없는카드",
+    "description": "ลดเวลาร่ายเวทย์และเพิ่มความรุนแรงให้กับสกิล Fire Bolt 25%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Ignis",
+    "script": {
+      "vct__Fire Bolt": [
+        "25"
+      ],
+      "Fire Bolt": [
+        "25"
       ]
     }
   },
@@ -5876,6 +6046,30 @@
     "cardPrefix": "Cannibal",
     "script": {
       "m_race_brute": [
+        "10"
+      ]
+    }
+  },
+  "4474": {
+    "id": 4474,
+    "aegisName": "Jakudam_Card",
+    "name": "Zakudam Card",
+    "unidName": "Zakudam Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความเสียหายทางด้านเวทย์มนตร์ให้กับ DemiHuman type monsters ขึ้น 10%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Mortal",
+    "script": {
+      "m_race_demihuman": [
         "10"
       ]
     }
@@ -6398,6 +6592,31 @@
       "matkPercent": [
         "7",
         "SUM[dex==110]7"
+      ]
+    }
+  },
+  "4563": {
+    "id": 4563,
+    "aegisName": "Creator_Card",
+    "name": "Creator Flamel Card",
+    "unidName": "Creator Flamel Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อโดนโจมตีทางกายภาพ มีโอกาสสูงที่จะร่าย Acid Terror Lv.5 (จำเป็นต้องมี Acid Bottle)\nCRI + 20, เมื่อ STR 110 ขึ้นไป เพิ่ม CRI + 20\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "of Acid",
+    "script": {
+      "cri": [
+        "20",
+        "SUM[str==110]===20"
       ]
     }
   },
@@ -12732,6 +12951,35 @@
       ]
     }
   },
+  "9112": {
+    "id": 9112,
+    "aegisName": "Moonlight_Egg",
+    "name": "Moonlight Egg",
+    "unidName": "Moonlight Egg",
+    "resName": "Moonlight_Egg",
+    "description": "tไข่ที่มี Q-Pet Moonlight อยู่ภายใน สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nในกรณีที่ความสัมพันธ์อยู่ระดับไม่คุ้นเคย หรือเขินอาย CRI + 3, HIT + 3\nหากความสัมพันธ์อยู่ระดับปกติ CRI + 4, HIT + 4, เมื่อโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะฟื้นฟู 300HP 4 ครั้ง ทุกๆ 1 วินาที\nหากความสัมพันธ์อยู่ระดับเป็นมิตร CRI + 5, HIT + 5, เมื่อโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะฟื้นฟู 400HP และ 10SP 4 ครั้ง ทุกๆ 1 วินาที\nหากความสัมพันธ์อยู่ระดับสนิทสนม CRI + 6, HIT + 6, เมื่อโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะฟื้นฟู 500HP และ 20SP 4 ครั้ง ทุกๆ 1 วินาที\n\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "cri": [
+        "6"
+      ],
+      "hit": [
+        "6"
+      ]
+    }
+  },
   "9115": {
     "id": 9115,
     "aegisName": "Bacsojin_Egg2",
@@ -13876,6 +14124,28 @@
         "9===25"
       ]
     }
+  },
+  "13154": {
+    "id": 13154,
+    "aegisName": "Rolling_Stone",
+    "name": "Rolling Stone [1]",
+    "unidName": "Shotgun",
+    "resName": "싱글샷건",
+    "description": "ปืนลูกซองที่เสียงยิงเหมือนหินกระทบเหล็ก\nโจมตีแบบหมู่\nประเภท : ^777777Shotgun^000000\nพลังโจมตี : ^777777135^000000\nน้ำหนัก : ^77777790^000000\nอาวุธ Lv : ^7777771^000000\nเลเวลที่ต้องการ : ^77777714^000000\nอาชีพ : ^777777Gunslinger^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 276,
+    "itemLevel": 1,
+    "attack": 135,
+    "defense": null,
+    "weight": 90,
+    "requiredLevel": 14,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Gunslinger"
+    ],
+    "script": {}
   },
   "13189": {
     "id": 13189,
@@ -16097,6 +16367,45 @@
       ]
     }
   },
+  "15383": {
+    "id": 15383,
+    "aegisName": "Time_Overload_Robe",
+    "name": "Temporal Transcendent Robe [1]",
+    "unidName": "Armor",
+    "resName": "미라쥬로브",
+    "description": "^ff0000ไอเท็มชิ้นนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นอื่นได้^000000\nเสื้อคลุมที่ถูกสร้างมาเพื่อท่านเท่านั้น มันรอคอยให้ท่านมาสวมใส่\n\nMHP + 500, MSP + 100\nATK + 50, MATK + 50\nลด Delay หลังใช้สกิล 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Transcendent Manteau,\nลด Delay หลังใช้สกิล 10%\nประเภท : ^777777Armor^000000 พลังป้องกัน : ^77777762^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 62,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "500"
+      ],
+      "sp": [
+        "100"
+      ],
+      "atk": [
+        "50"
+      ],
+      "matk": [
+        "50"
+      ],
+      "acd": [
+        "10",
+        "EQUIP[Temporal Transcendent Manteau]===10"
+      ]
+    }
+  },
   "15388": {
     "id": 15388,
     "aegisName": "Schmidt_Suits",
@@ -18086,6 +18395,63 @@
       ],
       "matk": [
         "120"
+      ]
+    }
+  },
+  "16033": {
+    "id": 16033,
+    "aegisName": "Robot's_Arm",
+    "name": "Robot's Mechanical Arm [2]",
+    "unidName": "Blunt Weapon",
+    "resName": "로봇의기계팔",
+    "description": "ก็แค่ดึงแขนจักรกลของ Kick And Kick มาใช้เป็นอาวุธ แต่มีประสิทธิภาพมากกว่าที่คิด\nไม่สามารถทำลายได้\nCRI +20\nประเภท : ^777777Mace^000000 โจมตี : ^777777195^000000\nน้ำหนัก : ^777777300^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777130^000000\nสวมใส่ : Swordman, Merchant, Acolyte ^777777Class 3 ^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 195,
+    "defense": null,
+    "weight": 300,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Merchant",
+      "Acolyte"
+    ],
+    "script": {
+      "cri": [
+        "20"
+      ]
+    }
+  },
+  "16039": {
+    "id": 16039,
+    "aegisName": "Spoon",
+    "name": "Spoon [1]",
+    "unidName": "Mace",
+    "resName": "숟가락",
+    "description": "ASPD + 10\nเพิ่มโอกาส (10%) ที่จะทำให้เป้าหมายติด Curse\n\nประเภท : ^777777Mace^000000 โจมตี : ^77777780^000000\nน้ำหนัก : ^777777100^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^77777740^000000\nติดตั้ง : ^777777อาชีพ Swordman / อาชีพ Novice / อาชีพ Acolyte / อาชีพ Merchant^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 3,
+    "attack": 80,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 40,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Novice",
+      "Acolyte",
+      "Merchant"
+    ],
+    "script": {
+      "aspd": [
+        "10"
       ]
     }
   },
@@ -20827,6 +21193,33 @@
       ],
       "range": [
         "10"
+      ],
+      "chance__acd": [
+        "100"
+      ],
+      "chance__flatDmg": [
+        "20"
+      ],
+      "chance__cri": [
+        "10"
+      ],
+      "chance__str": [
+        "5"
+      ],
+      "chance__int": [
+        "5"
+      ],
+      "chance__dex": [
+        "5"
+      ],
+      "chance__agi": [
+        "5"
+      ],
+      "chance__luk": [
+        "5"
+      ],
+      "chance__vit": [
+        "5"
       ]
     }
   },
@@ -21051,9 +21444,6 @@
       ],
       "aspdPercent": [
         "EQUIP[Surfer Swinsuit]===10"
-      ],
-      "cri__fish": [
-        "EQUIP[Surfer Swinsuit]===50"
       ]
     }
   },
@@ -24366,6 +24756,45 @@
       ]
     }
   },
+  "20939": {
+    "id": 20939,
+    "aegisName": "Time_Overload_Hood",
+    "name": "Temporal Transcendent Manteau [1]",
+    "unidName": "Garment",
+    "resName": "미라쥬망토",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nผ้าคลุมผืนเดียวในโลกที่ทำขึ้นมาเพื่อท่านผู้เดียวเท่านั้น\n\nเพิ่มการต้านทานต่อการโจมตีธาตุ Water, Wind, Earth และ Fire 10%\nFLEE + 30, HIT + 10\nเพิ่ม ASPD 10%, ลดระยะเวลาร่ายแบบแปรผัน 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Transcendent Boots,\nลดระยะเวลาแบบแปรผัน 10%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^77777730^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 30,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "flee": [
+        "30"
+      ],
+      "hit": [
+        "10"
+      ],
+      "aspdPercent": [
+        "10"
+      ],
+      "vct": [
+        "10",
+        "EQUIP[Temporal Transcendent Boots]===10"
+      ],
+      "fct": [
+        "EQUIP[Temporal Transcendent Boots]===0.5"
+      ]
+    }
+  },
   "20944": {
     "id": 20944,
     "aegisName": "Anti_Magic_Manteau",
@@ -24876,6 +25305,40 @@
       ],
       "matk": [
         "120"
+      ]
+    }
+  },
+  "21011": {
+    "id": 21011,
+    "aegisName": "Giant_Blade",
+    "name": "Giant Blade [1]",
+    "unidName": "Two-Handed Sword",
+    "resName": "기간트블레이드",
+    "description": "ติดด้ามจับที่คมดาบใหญ่ซึ่งทำขึ้นเพื่อตัดอะไรบางอย่าง\nไม่สามารถทำลายได้\nลด ASPD (เพิ่มดีเลย์หลังจากโจมตี 5%)\nเมื่อ STR พื้นฐานต่ำกว่า 110 จะลด ATK 250\nเพิ่ม Critical DMG 1% ต่อระดับการอัปเกรด\nประเภท : ^777777Two-Handed Sword^000000   โจมตี : ^777777300^000000\nน้ำหนัก : ^777777500^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777130^000000\nสวมใส่ : Swordman ขั้น ^7777773 ^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 300,
+    "defense": null,
+    "weight": 500,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight",
+      "Royal Guard"
+    ],
+    "script": {
+      "aspdPercent": [
+        "-5"
+      ],
+      "atk": [
+        "-250",
+        "SUM[str==110]===250"
+      ],
+      "criDmg": [
+        "1---1"
       ]
     }
   },
@@ -26624,6 +27087,44 @@
       ],
       "allStatus": [
         "REFINE[10]===2"
+      ]
+    }
+  },
+  "22204": {
+    "id": 22204,
+    "aegisName": "Time_Overload_Boots",
+    "name": "Temporal Transcendent Boots [1]",
+    "unidName": "Shoes",
+    "resName": "미라쥬슈즈",
+    "description": "^ff0000ไอเท็มชิ้นนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นอื่นได้^000000\nรองเท้าบูทที่ถูกเตรียมไว้เพื่อท่าน\nCRI + 10\nเพิ่มพลังโจมตีเวทมนตร์ทุกธาตุ 10%, เพิ่ม Critical Damage 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Transcendent Robe, \nATK + 5%, MATK + 5%\nประเภท : ^777777Shoes^000000 พลังป้องกัน : ^77777715^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 15,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "cri": [
+        "10"
+      ],
+      "m_my_element_all": [
+        "10"
+      ],
+      "criDmg": [
+        "10"
+      ],
+      "atkPercent": [
+        "EQUIP[Temporal Transcendent Robe]===5"
+      ],
+      "matkPercent": [
+        "EQUIP[Temporal Transcendent Robe]===5"
       ]
     }
   },
@@ -34879,7 +35380,7 @@
         "EQUIP[Arm Shadow Pendant&&Arm Shadow Earring]REFINE[shadowWeapon,shadowEarring,shadowPendant==2]---1"
       ],
       "vct": [
-        "EQUIP[Mechanic Shield Shadow]REFINE[shadowWeapon,shadowShield==1]---1"
+        "EQUIP[Mechanic Shield Shadow]REFINE[shadowWeapon,shadowShield==2]---1"
       ],
       "atk": [
         "1---1"
@@ -47865,6 +48366,35 @@
       ]
     }
   },
+  "28422": {
+    "id": 28422,
+    "aegisName": "ShiningTwigCharm",
+    "name": "Shining Twig Charm [1]",
+    "unidName": "Accessory",
+    "resName": "엘더의가지",
+    "description": "Variable Cast Time ของ Silvervine Stem Spear ลดลง 50%\nDMG ของ Silvervine Stem Spear จะเพิ่มขึ้นตาม( Level ของสกิลที่เรียนรู้ * ทุกๆ 6 Base INT) \nประเภท : ^777777Accessory^000000 ป้องกัน : ^7777771^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 1,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "vct__Silvervine Stem Spear": [
+        "50"
+      ],
+      "Silvervine Stem Spear": [
+        "SUM[int==6]---5"
+      ]
+    }
+  },
   "28424": {
     "id": 28424,
     "aegisName": "PlumpyWormCharm",
@@ -57983,11 +58513,11 @@
         "EQUIP[Illusion Shoes]40"
       ],
       "Hundred Spears": [
-        "EQUIP[ขั้นอัพเกรดของ Illusion Pole Axe&&Illusion Shoes]REFINE[boot==7]7===20",
-        "EQUIP[ขั้นอัพเกรดของ Illusion Pole Axe&&Illusion Shoes]REFINE[weapon,boot==22]20"
+        "EQUIP[Illusion Shoes]REFINE[boot==7]7===20",
+        "EQUIP[Illusion Shoes]REFINE[weapon,boot==22]20"
       ],
       "atkPercent": [
-        "EQUIP[ขั้นอัพเกรดของ Illusion Pole Axe&&Illusion Shoes]REFINE[weapon,boot==18]10"
+        "EQUIP[Illusion Shoes]REFINE[weapon,boot==18]10"
       ]
     }
   },
@@ -58609,6 +59139,39 @@
     "script": {
       "matkPercent": [
         "5"
+      ]
+    }
+  },
+  "32221": {
+    "id": 32221,
+    "aegisName": "Time_Overload_Ring",
+    "name": "Temporal Transcendent Ring [1]",
+    "unidName": "Ring",
+    "resName": "Blue_Swear_Ring_Z",
+    "description": "^ff0000ไอเท็มชิ้นนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นอื่นได้^000000\nแหวนที่เตรียมไว้ต้อนรับท่านด้วยความยินดี\nเพิ่ม ASPD 10%\nลด Variable Cast Time 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Transcendent Robe, Temporal Transcendent Manteau, Temporal Transcendent Boots,\nASPD + 2, ลด Variable Cast Time 10%\nประเภท : ^777777Accessory^000000 พลังป้องกัน : ^77777715^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 15,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspdPercent": [
+        "10"
+      ],
+      "aspd": [
+        "EQUIP[Temporal Transcendent Robe&&Temporal Transcendent Manteau&&Temporal Transcendent Boots]===2"
+      ],
+      "vct": [
+        "10",
+        "EQUIP[Temporal Transcendent Robe&&Temporal Transcendent Manteau&&Temporal Transcendent Boots]===10"
       ]
     }
   },
@@ -62040,6 +62603,276 @@
       ]
     }
   },
+  "300269": {
+    "id": 300269,
+    "aegisName": "Eldest_Card",
+    "name": "Eldest Card",
+    "unidName": "Eldest Card",
+    "resName": "이름없는카드",
+    "description": "Increases ghost property magical damage by 10%, MaxSP - 25%.\nWhen equipped with Dame of Sentinel Card and the user's base level is 200 or higher, increases ghost property magical damage by additional 15% per 40 base Int.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Eldest",
+    "script": {
+      "m_my_element_ghost": [
+        "10",
+        "SUM[level==200]EQUIP[Dame of Sentinel Card]SUM[int==40]---15"
+      ],
+      "spPercent": [
+        "-25"
+      ]
+    }
+  },
+  "300270": {
+    "id": 300270,
+    "aegisName": "Empathizer_Card",
+    "name": "Empathizer Card",
+    "unidName": "Empathizer Card",
+    "resName": "이름없는카드",
+    "description": "Increases long ranged physical damage by 10%, MaxSP - 25%.\nWhen equipped with Dame of Sentinel Card and the user's base level is 200 or higher, increases long ranged physical damage by additional 15% per 40 base Dex.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Empathic",
+    "script": {
+      "range": [
+        "10",
+        "SUM[level==200]EQUIP[Dame of Sentinel Card]SUM[dex==40]---15"
+      ],
+      "spPercent": [
+        "-25"
+      ]
+    }
+  },
+  "300271": {
+    "id": 300271,
+    "aegisName": "Happy_Giver_Card",
+    "name": "Happiness Giver Card",
+    "unidName": "Happiness Giver Card",
+    "resName": "이름없는카드",
+    "description": "Increases melee physical damage by 10%, MaxSP - 25%.\nWhen equipped with Mistress of Shelter Card and the user's base level is 200 or higher, increases melee physical damage by additional 15% per 40 base Str.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Happy",
+    "script": {
+      "melee": [
+        "10",
+        "SUM[level==200]EQUIP[Mistress of Shelter Card]SUM[str==40]---15"
+      ],
+      "spPercent": [
+        "-25"
+      ]
+    }
+  },
+  "300272": {
+    "id": 300272,
+    "aegisName": "Pray_Giver_Card",
+    "name": "Pray Giver Card",
+    "unidName": "Pray Giver Card",
+    "resName": "이름없는카드",
+    "description": "Increases holy property magical damage by 10%, MaxSP - 25%.\nWhen equipped with Lady Solace Card and the user's base level is 200 or higher, increases holy property magical damage by additional 15% per 40 base Int.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Pray",
+    "script": {
+      "m_my_element_holy": [
+        "10",
+        "SUM[level==200]EQUIP[Lady Solace Card]SUM[int==40]---15"
+      ],
+      "spPercent": [
+        "-25"
+      ]
+    }
+  },
+  "300273": {
+    "id": 300273,
+    "aegisName": "Smile_Giver_Card",
+    "name": "Smile Giver Card",
+    "unidName": "Smile Giver Card",
+    "resName": "이름없는카드",
+    "description": "Increases neutral property magical damage by 10%, MaxSP - 25%.\nWhen equipped with Lady Solace Card and the user's base level is 200 or higher, increases neutral property magical damage by additional 15% per 40 base Int.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Smile",
+    "script": {
+      "m_my_element_neutral": [
+        "10",
+        "SUM[level==200]EQUIP[Lady Solace Card]SUM[int==40]---15"
+      ],
+      "spPercent": [
+        "-25"
+      ]
+    }
+  },
+  "300274": {
+    "id": 300274,
+    "aegisName": "Tha_Anger_Card",
+    "name": "Anger of Thanatos Card",
+    "unidName": "Anger of Thanatos Card",
+    "resName": "이름없는카드",
+    "description": "Atk - 10%.\nAtk + 3% per 3 refine rate of shield.\nIf refine rate of shield is 11 or higher, Atk + 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "of Real Rage",
+    "script": {
+      "atkPercent": [
+        "-10",
+        "3---3",
+        "11===5"
+      ]
+    }
+  },
+  "300275": {
+    "id": 300275,
+    "aegisName": "Tha_Horror_Card",
+    "name": "Horror of Thanatos Card",
+    "unidName": "Horror of Thanatos Card",
+    "resName": "이름없는카드",
+    "description": "Matk - 10%.\nMatk + 3% per 3 refine rate of shield.\nIf refine rate of shield is 11 or higher, Matk + 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "of Real Horror",
+    "script": {
+      "matkPercent": [
+        "-10",
+        "3---3",
+        "11===5"
+      ]
+    }
+  },
+  "300276": {
+    "id": 300276,
+    "aegisName": "Tha_Regret_Card",
+    "name": "Regret of Thanatos Card",
+    "unidName": "Regret of Thanatos Card",
+    "resName": "이름없는카드",
+    "description": "Increases magical damage against angel race monsters by 10%.\nIf the user's base level is 200 or higher, increases magical damage against angel race monsters by additional 20%.\nWhen equipped with Dolor of Thanatos Card, increases magical damage against angel race monsters by additional 20%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Wing Breaker",
+    "script": {
+      "m_race_angel": [
+        "10",
+        "SUM[level==200]===20",
+        "EQUIP[Dolor of Thanatos Card]===20"
+      ]
+    }
+  },
+  "300278": {
+    "id": 300278,
+    "aegisName": "Void_Mimic_Card",
+    "name": "Void Mimic Card",
+    "unidName": "Void Mimic Card",
+    "resName": "이름없는카드",
+    "description": "Increases critical damage by 15%.\nWhen equipped with Treasure Mimic Card and the user's base level is 200 or higher, increases critical damage by additional 15%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Void",
+    "script": {
+      "criDmg": [
+        "15",
+        "EQUIP[Treasure Mimic Card]SUM[level==200]===15"
+      ]
+    }
+  },
+  "300279": {
+    "id": 300279,
+    "aegisName": "Book_Of_Death_Card",
+    "name": "Book of Death Card",
+    "unidName": "Book of Death Card",
+    "resName": "이름없는카드",
+    "description": "Increases Soul Expansion damage by 30%.\nWhen equipped with Death Word Card and the user's base level is 200 or higher, increases ghost property magical damage by 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Dead-pansion",
+    "script": {
+      "Soul Expansion": [
+        "30"
+      ],
+      "m_my_element_ghost": [
+        "EQUIP[Death Word Card]SUM[level==200]===30"
+      ]
+    }
+  },
   "300291": {
     "id": 300291,
     "aegisName": "1st_Anniver_Card",
@@ -62130,6 +62963,58 @@
       ],
       "atkPercent": [
         "EQUIP[Skia Nerious Card]3"
+      ]
+    }
+  },
+  "300422": {
+    "id": 300422,
+    "aegisName": "S_Catherine_Card",
+    "name": "Catherine Gaebolg Card",
+    "unidName": "Catherine Gaebolg Card",
+    "resName": "이름없는카드",
+    "description": "Increases damage taken from neutral property by 10%, increases melee physical damage by 5%.\r\nIncreases melee physical damage by additional 4% per 2 refine rate.\r\nWhen equipped with Helmut Lugenburg Card, increases melee physical damage by 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Gaebolg",
+    "script": {
+      "melee": [
+        "5",
+        "2---4",
+        "EQUIP[Helmut Lugenburg Card]===5"
+      ]
+    }
+  },
+  "300424": {
+    "id": 300424,
+    "aegisName": "S_Friedrich_Card",
+    "name": "Friedrich S. Heine Card",
+    "unidName": "Friedrich S. Heine Card",
+    "resName": "이름없는카드",
+    "description": "Increases damage taken from neutral property by 10%, increases all property magical damage by 5%.\r\nIncreases all property magical damage by additional 4% per 2 refine rate.\r\nWhen equipped with Meyer Lugenburg Card, increases all property magical damage by 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Stolz Heine",
+    "script": {
+      "m_my_element_all": [
+        "5",
+        "2---4",
+        "EQUIP[Meyer Lugenburg Card]===5"
       ]
     }
   },
@@ -64524,7 +65409,7 @@
     "compositionPos": 65535,
     "cardPrefix": "<L-Heal1>",
     "script": {
-      "Acid Demonstration": [
+      "Acid Bomb": [
         "15",
         "9===3",
         "11===7"
@@ -66000,6 +66885,1476 @@
       ]
     }
   },
+  "310197": {
+    "id": 310197,
+    "aegisName": "Tha_Anger_1",
+    "name": "Anger Lv1",
+    "unidName": "Anger Lv1",
+    "resName": "에너지파편",
+    "description": "ATK + 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "1"
+      ]
+    }
+  },
+  "310198": {
+    "id": 310198,
+    "aegisName": "Tha_Anger_2",
+    "name": "Anger Lv2",
+    "unidName": "Anger Lv2",
+    "resName": "에너지파편",
+    "description": "ATK + 3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "3"
+      ]
+    }
+  },
+  "310199": {
+    "id": 310199,
+    "aegisName": "Tha_Anger_3",
+    "name": "Anger Lv3",
+    "unidName": "Anger Lv3",
+    "resName": "에너지파편",
+    "description": "ATK + 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "5"
+      ]
+    }
+  },
+  "310200": {
+    "id": 310200,
+    "aegisName": "Tha_Anger_4",
+    "name": "Anger Lv4",
+    "unidName": "Anger Lv4",
+    "resName": "에너지파편",
+    "description": "ATK + 7%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "7"
+      ]
+    }
+  },
+  "310201": {
+    "id": 310201,
+    "aegisName": "Tha_Anger_5",
+    "name": "Anger Lv5",
+    "unidName": "Anger Lv5",
+    "resName": "에너지파편",
+    "description": "ATK + 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "10"
+      ]
+    }
+  },
+  "310202": {
+    "id": 310202,
+    "aegisName": "Tha_Horror_1",
+    "name": "Horror Lv1",
+    "unidName": "Horror Lv1",
+    "resName": "에너지파편",
+    "description": "MATK + 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "1"
+      ]
+    }
+  },
+  "310203": {
+    "id": 310203,
+    "aegisName": "Tha_Horror_2",
+    "name": "Horror Lv2",
+    "unidName": "Horror Lv2",
+    "resName": "에너지파편",
+    "description": "MATK + 3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "3"
+      ]
+    }
+  },
+  "310204": {
+    "id": 310204,
+    "aegisName": "Tha_Horror_3",
+    "name": "Horror Lv3",
+    "unidName": "Horror Lv3",
+    "resName": "에너지파편",
+    "description": "MATK + 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "5"
+      ]
+    }
+  },
+  "310205": {
+    "id": 310205,
+    "aegisName": "Tha_Horror_4",
+    "name": "Horror Lv4",
+    "unidName": "Horror Lv4",
+    "resName": "에너지파편",
+    "description": "MATK + 7%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "7"
+      ]
+    }
+  },
+  "310206": {
+    "id": 310206,
+    "aegisName": "Tha_Horror_5",
+    "name": "Horror Lv5",
+    "unidName": "Horror Lv5",
+    "resName": "에너지파편",
+    "description": "MATK + 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "10"
+      ]
+    }
+  },
+  "310207": {
+    "id": 310207,
+    "aegisName": "Tha_Resent_1",
+    "name": "Resentment Lv1",
+    "unidName": "Resentment Lv1",
+    "resName": "에너지파편",
+    "description": "Increases critical damage by 1%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "1"
+      ]
+    }
+  },
+  "310208": {
+    "id": 310208,
+    "aegisName": "Tha_Resent_2",
+    "name": "Resentment Lv2",
+    "unidName": "Resentment Lv2",
+    "resName": "에너지파편",
+    "description": "Increases critical damage by 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "3"
+      ]
+    }
+  },
+  "310209": {
+    "id": 310209,
+    "aegisName": "Tha_Resent_3",
+    "name": "Resentment Lv3",
+    "unidName": "Resentment Lv3",
+    "resName": "에너지파편",
+    "description": "Increases critical damage by 5%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "5"
+      ]
+    }
+  },
+  "310210": {
+    "id": 310210,
+    "aegisName": "Tha_Resent_4",
+    "name": "Resentment Lv4",
+    "unidName": "Resentment Lv4",
+    "resName": "에너지파편",
+    "description": "Increases critical damage by 7%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "7"
+      ]
+    }
+  },
+  "310211": {
+    "id": 310211,
+    "aegisName": "Tha_Resent_5",
+    "name": "Resentment Lv5",
+    "unidName": "Resentment Lv5",
+    "resName": "에너지파편",
+    "description": "Increases critical damage by 10%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "10"
+      ]
+    }
+  },
+  "310212": {
+    "id": 310212,
+    "aegisName": "Tha_Regret_1",
+    "name": "Regret Lv1",
+    "unidName": "Regret Lv1",
+    "resName": "에너지파편",
+    "description": "MHP, MSP + 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "1"
+      ],
+      "spPercent": [
+        "1"
+      ]
+    }
+  },
+  "310213": {
+    "id": 310213,
+    "aegisName": "Tha_Regret_2",
+    "name": "Regret Lv2",
+    "unidName": "Regret Lv2",
+    "resName": "에너지파편",
+    "description": "MHP, MSP + 3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "3"
+      ],
+      "spPercent": [
+        "3"
+      ]
+    }
+  },
+  "310214": {
+    "id": 310214,
+    "aegisName": "Tha_Regret_3",
+    "name": "Regret Lv3",
+    "unidName": "Regret Lv3",
+    "resName": "에너지파편",
+    "description": "MHP, MSP + 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "5"
+      ],
+      "spPercent": [
+        "5"
+      ]
+    }
+  },
+  "310215": {
+    "id": 310215,
+    "aegisName": "Tha_Regret_4",
+    "name": "Regret Lv4",
+    "unidName": "Regret Lv4",
+    "resName": "에너지파편",
+    "description": "MHP, MSP + 7%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "7"
+      ],
+      "spPercent": [
+        "7"
+      ]
+    }
+  },
+  "310216": {
+    "id": 310216,
+    "aegisName": "Tha_Regret_5",
+    "name": "Regret Lv5",
+    "unidName": "Regret Lv5",
+    "resName": "에너지파편",
+    "description": "MHP, MSP + 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ]
+    }
+  },
+  "310217": {
+    "id": 310217,
+    "aegisName": "Tha_Empatize_1",
+    "name": "Empathy Lv1",
+    "unidName": "Empathy Lv1",
+    "resName": "원념의파편",
+    "description": "ATK + 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "1"
+      ]
+    }
+  },
+  "310218": {
+    "id": 310218,
+    "aegisName": "Tha_Empatize_2",
+    "name": "Empathy Lv2",
+    "unidName": "Empathy Lv2",
+    "resName": "원념의파편",
+    "description": "ATK + 3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "3"
+      ]
+    }
+  },
+  "310219": {
+    "id": 310219,
+    "aegisName": "Tha_Empatize_3",
+    "name": "Empathy Lv3",
+    "unidName": "Empathy Lv3",
+    "resName": "원념의파편",
+    "description": "ATK + 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "5"
+      ]
+    }
+  },
+  "310220": {
+    "id": 310220,
+    "aegisName": "Tha_Empatize_4",
+    "name": "Empathy Lv4",
+    "unidName": "Empathy Lv4",
+    "resName": "원념의파편",
+    "description": "ATK + 7%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "7"
+      ]
+    }
+  },
+  "310221": {
+    "id": 310221,
+    "aegisName": "Tha_Empatize_5",
+    "name": "Empathy Lv5",
+    "unidName": "Empathy Lv5",
+    "resName": "원념의파편",
+    "description": "ATK + 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atkPercent": [
+        "10"
+      ]
+    }
+  },
+  "310222": {
+    "id": 310222,
+    "aegisName": "Tha_Happy_1",
+    "name": "Happiness Lv1",
+    "unidName": "Happiness Lv1",
+    "resName": "원념의파편",
+    "description": "MATK + 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "1"
+      ]
+    }
+  },
+  "310223": {
+    "id": 310223,
+    "aegisName": "Tha_Happy_2",
+    "name": "Happiness Lv2",
+    "unidName": "Happiness Lv2",
+    "resName": "원념의파편",
+    "description": "MATK + 3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "3"
+      ]
+    }
+  },
+  "310224": {
+    "id": 310224,
+    "aegisName": "Tha_Happy_3",
+    "name": "Happiness Lv3",
+    "unidName": "Happiness Lv3",
+    "resName": "원념의파편",
+    "description": "MATK + 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "5"
+      ]
+    }
+  },
+  "310225": {
+    "id": 310225,
+    "aegisName": "Tha_Happy_4",
+    "name": "Happiness Lv4",
+    "unidName": "Happiness Lv4",
+    "resName": "원념의파편",
+    "description": "MATK + 7%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "7"
+      ]
+    }
+  },
+  "310226": {
+    "id": 310226,
+    "aegisName": "Tha_Happy_5",
+    "name": "Happiness Lv5",
+    "unidName": "Happiness Lv5",
+    "resName": "원념의파편",
+    "description": "MATK + 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "matkPercent": [
+        "10"
+      ]
+    }
+  },
+  "310227": {
+    "id": 310227,
+    "aegisName": "Tha_Comfort_1",
+    "name": "Shelter Lv1",
+    "unidName": "Shelter Lv1",
+    "resName": "원념의파편",
+    "description": "Increases critical damage by 1%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "1"
+      ]
+    }
+  },
+  "310228": {
+    "id": 310228,
+    "aegisName": "Tha_Comfort_2",
+    "name": "Shelter Lv2",
+    "unidName": "Shelter Lv2",
+    "resName": "원념의파편",
+    "description": "Increases critical damage by 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "3"
+      ]
+    }
+  },
+  "310229": {
+    "id": 310229,
+    "aegisName": "Tha_Comfort_3",
+    "name": "Shelter Lv3",
+    "unidName": "Shelter Lv3",
+    "resName": "원념의파편",
+    "description": "Increases critical damage by 5%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "5"
+      ]
+    }
+  },
+  "310230": {
+    "id": 310230,
+    "aegisName": "Tha_Comfort_4",
+    "name": "Shelter Lv4",
+    "unidName": "Shelter Lv4",
+    "resName": "원념의파편",
+    "description": "Increases critical damage by 7%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "7"
+      ]
+    }
+  },
+  "310231": {
+    "id": 310231,
+    "aegisName": "Tha_Comfort_5",
+    "name": "Shelter Lv5",
+    "unidName": "Shelter Lv5",
+    "resName": "원념의파편",
+    "description": "Increases critical damage by 10%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "criDmg": [
+        "10"
+      ]
+    }
+  },
+  "310232": {
+    "id": 310232,
+    "aegisName": "Tha_Console_1",
+    "name": "Solace Lv1",
+    "unidName": "Solace Lv1",
+    "resName": "원념의파편",
+    "description": "MHP, MSP + 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "1"
+      ],
+      "spPercent": [
+        "1"
+      ]
+    }
+  },
+  "310233": {
+    "id": 310233,
+    "aegisName": "Tha_Console_2",
+    "name": "Solace Lv2",
+    "unidName": "Solace Lv2",
+    "resName": "원념의파편",
+    "description": "MHP, MSP + 3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "3"
+      ],
+      "spPercent": [
+        "3"
+      ]
+    }
+  },
+  "310234": {
+    "id": 310234,
+    "aegisName": "Tha_Console_3",
+    "name": "Solace Lv3",
+    "unidName": "Solace Lv3",
+    "resName": "원념의파편",
+    "description": "MHP, MSP + 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "5"
+      ],
+      "spPercent": [
+        "5"
+      ]
+    }
+  },
+  "310235": {
+    "id": 310235,
+    "aegisName": "Tha_Console_4",
+    "name": "Solace Lv4",
+    "unidName": "Solace Lv4",
+    "resName": "원념의파편",
+    "description": "MHP, MSP + 7%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "7"
+      ],
+      "spPercent": [
+        "7"
+      ]
+    }
+  },
+  "310236": {
+    "id": 310236,
+    "aegisName": "Tha_Console_5",
+    "name": "Solace Lv5",
+    "unidName": "Solace Lv5",
+    "resName": "원념의파편",
+    "description": "MHP, MSP + 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ]
+    }
+  },
+  "310237": {
+    "id": 310237,
+    "aegisName": "Tha_Wrath_1",
+    "name": "Inverse Scale Lv1",
+    "unidName": "Inverse Scale Lv1",
+    "resName": "유리구슬",
+    "description": "Increases physical damage against angel and dragon race monsters by 10%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "10"
+      ],
+      "p_race_dragon": [
+        "10"
+      ]
+    }
+  },
+  "310238": {
+    "id": 310238,
+    "aegisName": "Tha_Wrath_2",
+    "name": "Inverse Scale Lv2",
+    "unidName": "Inverse Scale Lv2",
+    "resName": "유리구슬",
+    "description": "Increases physical damage against angel and dragon race monsters by 15%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "15"
+      ],
+      "p_race_dragon": [
+        "15"
+      ]
+    }
+  },
+  "310239": {
+    "id": 310239,
+    "aegisName": "Tha_Wrath_3",
+    "name": "Inverse Scale Lv3",
+    "unidName": "Inverse Scale Lv3",
+    "resName": "유리구슬",
+    "description": "Increases physical damage against angel and dragon race monsters by 20%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "20"
+      ],
+      "p_race_dragon": [
+        "20"
+      ]
+    }
+  },
+  "310240": {
+    "id": 310240,
+    "aegisName": "Tha_Wrath_4",
+    "name": "Inverse Scale Lv4",
+    "unidName": "Inverse Scale Lv4",
+    "resName": "유리구슬",
+    "description": "Increases physical damage against angel and dragon race monsters by 25%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "25"
+      ],
+      "p_race_dragon": [
+        "25"
+      ]
+    }
+  },
+  "310241": {
+    "id": 310241,
+    "aegisName": "Tha_Wrath_5",
+    "name": "Inverse Scale Lv5",
+    "unidName": "Inverse Scale Lv5",
+    "resName": "유리구슬",
+    "description": "Increases physical damage against angel and dragon race monsters by 35%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "35"
+      ],
+      "p_race_dragon": [
+        "35"
+      ]
+    }
+  },
+  "310242": {
+    "id": 310242,
+    "aegisName": "Tha_Majesty_1",
+    "name": "Dragon Scale Lv1",
+    "unidName": "Dragon Scale Lv1",
+    "resName": "유리구슬",
+    "description": "Increases magical damage against angel and dragon race monsters by 10%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "10"
+      ],
+      "m_race_dragon": [
+        "10"
+      ]
+    }
+  },
+  "310243": {
+    "id": 310243,
+    "aegisName": "Tha_Majesty_2",
+    "name": "Dragon Scale Lv2",
+    "unidName": "Dragon Scale Lv2",
+    "resName": "유리구슬",
+    "description": "Increases magical damage against angel and dragon race monsters by 15%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "15"
+      ],
+      "m_race_dragon": [
+        "15"
+      ]
+    }
+  },
+  "310244": {
+    "id": 310244,
+    "aegisName": "Tha_Majesty_3",
+    "name": "Dragon Scale Lv3",
+    "unidName": "Dragon Scale Lv3",
+    "resName": "유리구슬",
+    "description": "Increases magical damage against angel and dragon race monsters by 20%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "20"
+      ],
+      "m_race_dragon": [
+        "20"
+      ]
+    }
+  },
+  "310245": {
+    "id": 310245,
+    "aegisName": "Tha_Majesty_4",
+    "name": "Dragon Scale Lv4",
+    "unidName": "Dragon Scale Lv4",
+    "resName": "유리구슬",
+    "description": "Increases magical damage against angel and dragon race monsters by 25%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "25"
+      ],
+      "m_race_dragon": [
+        "25"
+      ]
+    }
+  },
+  "310246": {
+    "id": 310246,
+    "aegisName": "Tha_Majesty_5",
+    "name": "Dragon Scale Lv5",
+    "unidName": "Dragon Scale Lv5",
+    "resName": "유리구슬",
+    "description": "Increases magical damage against angel and dragon race monsters by 35%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "35"
+      ],
+      "m_race_dragon": [
+        "35"
+      ]
+    }
+  },
+  "310247": {
+    "id": 310247,
+    "aegisName": "Tha_demigod_1",
+    "name": "Divine Evil Lv1",
+    "unidName": "Divine Evil Lv1",
+    "resName": "발키리의분노",
+    "description": "Increases physical damage against angel and demon race monsters by 10%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "10"
+      ],
+      "p_race_demon": [
+        "10"
+      ]
+    }
+  },
+  "310248": {
+    "id": 310248,
+    "aegisName": "Tha_demigod_2",
+    "name": "Divine Evil Lv2",
+    "unidName": "Divine Evil Lv2",
+    "resName": "발키리의분노",
+    "description": "Increases physical damage against angel and demon race monsters by 15%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "15"
+      ],
+      "p_race_demon": [
+        "15"
+      ]
+    }
+  },
+  "310249": {
+    "id": 310249,
+    "aegisName": "Tha_demigod_3",
+    "name": "Divine Evil Lv3",
+    "unidName": "Divine Evil Lv3",
+    "resName": "발키리의분노",
+    "description": "Increases physical damage against angel and demon race monsters by 20%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "20"
+      ],
+      "p_race_demon": [
+        "20"
+      ]
+    }
+  },
+  "310250": {
+    "id": 310250,
+    "aegisName": "Tha_demigod_4",
+    "name": "Divine Evil Lv4",
+    "unidName": "Divine Evil Lv4",
+    "resName": "발키리의분노",
+    "description": "Increases physical damage against angel and demon race monsters by 25%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "25"
+      ],
+      "p_race_demon": [
+        "25"
+      ]
+    }
+  },
+  "310251": {
+    "id": 310251,
+    "aegisName": "Tha_demigod_5",
+    "name": "Divine Evil Lv5",
+    "unidName": "Divine Evil Lv5",
+    "resName": "발키리의분노",
+    "description": "Increases physical damage against angel and demon race monsters by 35%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "p_race_angel": [
+        "35"
+      ],
+      "p_race_demon": [
+        "35"
+      ]
+    }
+  },
+  "310252": {
+    "id": 310252,
+    "aegisName": "Tha_Antigod_1",
+    "name": "Destructive Evil Lv1",
+    "unidName": "Destructive Evil Lv1",
+    "resName": "발키리의분노",
+    "description": "Increases magical damage against angel and demon race monsters by 10%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "10"
+      ],
+      "m_race_demon": [
+        "10"
+      ]
+    }
+  },
+  "310253": {
+    "id": 310253,
+    "aegisName": "Tha_Antigod_2",
+    "name": "Destructive Evil Lv2",
+    "unidName": "Destructive Evil Lv2",
+    "resName": "발키리의분노",
+    "description": "Increases magical damage against angel and demon race monsters by 15%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "15"
+      ],
+      "m_race_demon": [
+        "15"
+      ]
+    }
+  },
+  "310254": {
+    "id": 310254,
+    "aegisName": "Tha_Antigod_3",
+    "name": "Destructive Evil Lv3",
+    "unidName": "Destructive Evil Lv3",
+    "resName": "발키리의분노",
+    "description": "Increases magical damage against angel and demon race monsters by 20%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "20"
+      ],
+      "m_race_demon": [
+        "20"
+      ]
+    }
+  },
+  "310255": {
+    "id": 310255,
+    "aegisName": "Tha_Antigod_4",
+    "name": "Destructive Evil Lv4",
+    "unidName": "Destructive Evil Lv4",
+    "resName": "발키리의분노",
+    "description": "Increases magical damage against angel and demon race monsters by 25%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "25"
+      ],
+      "m_race_demon": [
+        "25"
+      ]
+    }
+  },
+  "310256": {
+    "id": 310256,
+    "aegisName": "Tha_Antigod_5",
+    "name": "Destructive Evil Lv5",
+    "unidName": "Destructive Evil Lv5",
+    "resName": "발키리의분노",
+    "description": "Increases magical damage against angel and demon race monsters by 35%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "m_race_angel": [
+        "35"
+      ],
+      "m_race_demon": [
+        "35"
+      ]
+    }
+  },
   "310257": {
     "id": 310257,
     "aegisName": "Runeknight_Robe2",
@@ -66172,7 +68527,7 @@
     "location": null,
     "compositionPos": null,
     "script": {
-      "Acid Demonstration": [
+      "Acid Bomb": [
         "25"
       ]
     }
@@ -66443,6 +68798,32 @@
     "script": {
       "range": [
         "3"
+      ]
+    }
+  },
+  "310659": {
+    "id": 310659,
+    "aegisName": "Cast_Robe_D",
+    "name": "Reduce Variable Casting (Dual)",
+    "unidName": "Reduce Variable Casting (Dual)",
+    "resName": "하늘색보석",
+    "description": "Decrease variable casting by 5%.\r\n------------------------\r\n^FF0000Set Bonus^000000\r\n^4D4DFFReduce Variable Casting (Dual)^000000\r\n^4D4DFFReduce Variable Casting (Garment)^000000\r\n\r\nReduces fixed casting by 0.5 seconds",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 75,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "5"
+      ],
+      "fct": [
+        "EQUIP[Variable Casting (Garment]===0.5"
       ]
     }
   },
@@ -68779,7 +71160,7 @@
       "cd__Rampage Blast": [
         "EQUIP[Burning Knuckle-OS]===1"
       ],
-      "Acid Demonstration": [
+      "Acid Bomb": [
         "EQUIP[Saphir Mace-OS]REFINE[weapon==2]---3"
       ],
       "God's Hammer": [
@@ -73776,6 +76157,1053 @@
       ]
     }
   },
+  "490044": {
+    "id": 490044,
+    "aegisName": "Sin_Ring_R",
+    "name": "Sinful Ruby Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Ring_R",
+    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Red Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Red Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===5"
+      ],
+      "fct": [
+        "EQUIP[Red Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Red Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Red Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ]
+    }
+  },
+  "490045": {
+    "id": 490045,
+    "aegisName": "Sin_Necklace_R",
+    "name": "Sinful Ruby Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Necklace_R",
+    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Ruby Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Sinful Ruby Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Sinful Ruby Ring]===0.3"
+      ],
+      "p_race_angel": [
+        "EQUIP[Sinful Ruby Ring]===15"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Sinful Ruby Ring]===15"
+      ]
+    }
+  },
+  "490046": {
+    "id": 490046,
+    "aegisName": "Sin_Ring_E",
+    "name": "Sinful Emerald Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Ring_E",
+    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Green Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Green Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===5"
+      ],
+      "fct": [
+        "EQUIP[Green Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Green Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Green Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ]
+    }
+  },
+  "490047": {
+    "id": 490047,
+    "aegisName": "Sin_Necklace_E",
+    "name": "Sinful Emerald Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Necklace_E",
+    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Emerald Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Sinful Emerald Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Sinful Emerald Ring]===0.3"
+      ],
+      "p_race_angel": [
+        "EQUIP[Sinful Emerald Ring]===15"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Sinful Emerald Ring]===15"
+      ]
+    }
+  },
+  "490048": {
+    "id": 490048,
+    "aegisName": "Sin_Ring_T",
+    "name": "Sinful Topaz Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Ring_T",
+    "description": "Atk + 7%, Matk + 7%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Gold Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "7"
+      ],
+      "matkPercent": [
+        "7"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Gold Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===5"
+      ],
+      "fct": [
+        "EQUIP[Gold Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===0.2"
+      ],
+      "m_race_angel": [
+        "EQUIP[Gold Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "p_race_angel": [
+        "EQUIP[Gold Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Gold Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Gold Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ]
+    }
+  },
+  "490049": {
+    "id": 490049,
+    "aegisName": "Sin_Necklace_T",
+    "name": "Sinful Topaz Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Necklace_T",
+    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Sinful Topaz Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical and magical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "7"
+      ],
+      "matkPercent": [
+        "7"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Sinful Topaz Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Sinful Topaz Ring]===0.3"
+      ],
+      "p_race_angel": [
+        "EQUIP[Sinful Topaz Ring]===15"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Sinful Topaz Ring]===15"
+      ],
+      "m_race_angel": [
+        "EQUIP[Sinful Topaz Ring]===15"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Sinful Topaz Ring]===15"
+      ]
+    }
+  },
+  "490050": {
+    "id": 490050,
+    "aegisName": "Sin_Ring_A",
+    "name": "Sinful Amethyst Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Ring_A",
+    "description": "When equipped with Purple Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "EQUIP[Purple Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===5"
+      ],
+      "fct": [
+        "EQUIP[Purple Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Purple Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Purple Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "m_race_angel": [
+        "EQUIP[Purple Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Purple Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ]
+    }
+  },
+  "490051": {
+    "id": 490051,
+    "aegisName": "Sin_Necklace_A",
+    "name": "Sinful Amethyst Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Necklace_A",
+    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Sinful Amethyst Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical and magical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "7"
+      ],
+      "matkPercent": [
+        "7"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Sinful Amethyst Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Sinful Amethyst Ring]===0.3"
+      ],
+      "p_race_angel": [
+        "EQUIP[Sinful Amethyst Ring]===15"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Sinful Amethyst Ring]===15"
+      ],
+      "m_race_angel": [
+        "EQUIP[Sinful Amethyst Ring]===15"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Sinful Amethyst Ring]===15"
+      ]
+    }
+  },
+  "490052": {
+    "id": 490052,
+    "aegisName": "Sin_Ring_S",
+    "name": "Sinful Sapphire Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Ring_S",
+    "description": "Matk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Blue Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases magical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Blue Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===5"
+      ],
+      "fct": [
+        "EQUIP[Blue Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===0.2"
+      ],
+      "m_race_angel": [
+        "EQUIP[Blue Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Blue Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ]
+    }
+  },
+  "490053": {
+    "id": 490053,
+    "aegisName": "Sin_Necklace_S",
+    "name": "Sinful Sapphire Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Necklace_S",
+    "description": "Matk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Sapphire Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases magical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Sinful Sapphire Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Sinful Sapphire Ring]===0.3"
+      ],
+      "m_race_angel": [
+        "EQUIP[Sinful Sapphire Ring]===15"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Sinful Sapphire Ring]===15"
+      ]
+    }
+  },
+  "490054": {
+    "id": 490054,
+    "aegisName": "Sin_Ring_O",
+    "name": "Sinful Opal Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Ring_O",
+    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Silver Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Silver Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===5"
+      ],
+      "fct": [
+        "EQUIP[Silver Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Silver Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Silver Dragon Plate&&Dragon Scale Hood&&Dragon Scale Boots]===20"
+      ]
+    }
+  },
+  "490055": {
+    "id": 490055,
+    "aegisName": "Sin_Necklace_O",
+    "name": "Sinful Opal Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Sin_Necklace_O",
+    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Opal Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Sinful Opal Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Sinful Opal Ring]===0.3"
+      ],
+      "p_race_angel": [
+        "EQUIP[Sinful Opal Ring]===15"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Sinful Opal Ring]===15"
+      ]
+    }
+  },
+  "490056": {
+    "id": 490056,
+    "aegisName": "Shine_Ring_R",
+    "name": "Brilliant Light Ruby Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Ring_R",
+    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Str Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Str Soutane&&Clergy's Boots&&Clergy's Manteau]===5"
+      ],
+      "fct": [
+        "EQUIP[Str Soutane&&Clergy's Boots&&Clergy's Manteau]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Str Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "p_race_demon": [
+        "EQUIP[Str Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ]
+    }
+  },
+  "490057": {
+    "id": 490057,
+    "aegisName": "Shine_Necklace_R",
+    "name": "Brilliant Light Ruby Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Necklace_R",
+    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Ruby Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Brilliant Light Ruby Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Brilliant Light Ruby Ring]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Brilliant Light Ruby Ring]===15"
+      ],
+      "p_race_demon": [
+        "EQUIP[Brilliant Light Ruby Ring]===15"
+      ]
+    }
+  },
+  "490058": {
+    "id": 490058,
+    "aegisName": "Shine_Ring_A",
+    "name": "Brilliant Light Amethyst Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Ring_A",
+    "description": "Atk + 7%, Matk + 7%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Dex Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "7"
+      ],
+      "matkPercent": [
+        "7"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Dex Soutane&&Clergy's Boots&&Clergy's Manteau]===5"
+      ],
+      "fct": [
+        "EQUIP[Dex Soutane&&Clergy's Boots&&Clergy's Manteau]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Dex Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "p_race_demon": [
+        "EQUIP[Dex Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "m_race_angel": [
+        "EQUIP[Dex Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "m_race_demon": [
+        "EQUIP[Dex Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ]
+    }
+  },
+  "490059": {
+    "id": 490059,
+    "aegisName": "Shine_Necklace_A",
+    "name": "Brilliant Light Amethyst Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Necklace_A",
+    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Amethyst Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "7"
+      ],
+      "matkPercent": [
+        "7"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Brilliant Light Amethyst Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Brilliant Light Amethyst Ring]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Brilliant Light Amethyst Ring]===15"
+      ],
+      "p_race_demon": [
+        "EQUIP[Brilliant Light Amethyst Ring]===15"
+      ],
+      "m_race_angel": [
+        "EQUIP[Brilliant Light Amethyst Ring]===15"
+      ],
+      "m_race_demon": [
+        "EQUIP[Brilliant Light Amethyst Ring]===15"
+      ]
+    }
+  },
+  "490060": {
+    "id": 490060,
+    "aegisName": "Shine_Ring_E",
+    "name": "Brilliant Light Emerald Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Ring_E",
+    "description": "Atk + 7%, Matk + 7%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Vit Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "7"
+      ],
+      "matkPercent": [
+        "7"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Vit Soutane&&Clergy's Boots&&Clergy's Manteau]===5"
+      ],
+      "fct": [
+        "EQUIP[Vit Soutane&&Clergy's Boots&&Clergy's Manteau]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Vit Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "p_race_demon": [
+        "EQUIP[Vit Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "m_race_angel": [
+        "EQUIP[Vit Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "m_race_demon": [
+        "EQUIP[Vit Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ]
+    }
+  },
+  "490061": {
+    "id": 490061,
+    "aegisName": "Shine_Necklace_E",
+    "name": "Brilliant Light Emerald Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Necklace_E",
+    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Emerald Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "7"
+      ],
+      "matkPercent": [
+        "7"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Brilliant Light Emerald Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Brilliant Light Emerald Ring]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Brilliant Light Emerald Ring]===15"
+      ],
+      "p_race_demon": [
+        "EQUIP[Brilliant Light Emerald Ring]===15"
+      ],
+      "m_race_angel": [
+        "EQUIP[Brilliant Light Emerald Ring]===15"
+      ],
+      "m_race_demon": [
+        "EQUIP[Brilliant Light Emerald Ring]===15"
+      ]
+    }
+  },
+  "490062": {
+    "id": 490062,
+    "aegisName": "Shine_Ring_Z",
+    "name": "Brilliant Light Zircon Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Ring_Z",
+    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Agi Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Agi Soutane&&Clergy's Boots&&Clergy's Manteau]===5"
+      ],
+      "fct": [
+        "EQUIP[Agi Soutane&&Clergy's Boots&&Clergy's Manteau]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Agi Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "p_race_demon": [
+        "EQUIP[Agi Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ]
+    }
+  },
+  "490063": {
+    "id": 490063,
+    "aegisName": "Shine_Necklace_Z",
+    "name": "Brilliant Light Zircon Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Necklace_Z",
+    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Zircon Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Brilliant Light Zircon Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Brilliant Light Zircon Ring]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Brilliant Light Zircon Ring]===15"
+      ],
+      "p_race_demon": [
+        "EQUIP[Brilliant Light Zircon Ring]===15"
+      ]
+    }
+  },
+  "490064": {
+    "id": 490064,
+    "aegisName": "Shine_Ring_S",
+    "name": "Brilliant Light Sapphire Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Ring_S",
+    "description": "Matk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Int Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases magical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Int Soutane&&Clergy's Boots&&Clergy's Manteau]===5"
+      ],
+      "fct": [
+        "EQUIP[Int Soutane&&Clergy's Boots&&Clergy's Manteau]===0.2"
+      ],
+      "m_race_angel": [
+        "EQUIP[Int Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "m_race_demon": [
+        "EQUIP[Int Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ]
+    }
+  },
+  "490065": {
+    "id": 490065,
+    "aegisName": "Shine_Necklace_S",
+    "name": "Brilliant Light Sapphire Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Necklace_S",
+    "description": "Matk + 10%, reduces variable casting time by 7%.\n\nWhen equipped with Brilliant Light Sapphire Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases magical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Brilliant Light Sapphire Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Brilliant Light Sapphire Ring]===0.2"
+      ],
+      "m_race_angel": [
+        "EQUIP[Brilliant Light Sapphire Ring]===15"
+      ],
+      "m_race_demon": [
+        "EQUIP[Brilliant Light Sapphire Ring]===15"
+      ]
+    }
+  },
+  "490066": {
+    "id": 490066,
+    "aegisName": "Shine_Ring_AQ",
+    "name": "Brilliant Light Aquamarine Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Ring_AQ",
+    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%).\n\nWhen equipped with Luk Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "aspdPercent": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Luk Soutane&&Clergy's Boots&&Clergy's Manteau]===5"
+      ],
+      "fct": [
+        "EQUIP[Luk Soutane&&Clergy's Boots&&Clergy's Manteau]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Luk Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ],
+      "p_race_demon": [
+        "EQUIP[Luk Soutane&&Clergy's Boots&&Clergy's Manteau]===20"
+      ]
+    }
+  },
+  "490067": {
+    "id": 490067,
+    "aegisName": "Shine_Necklace_AQ",
+    "name": "Brilliant Light Aquamarine Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Shine_Necklace_AQ",
+    "description": "Atk + 10%, reduces variable casting time by 7%.\n\nWhen equipped with Brilliant Light Aquamarine Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "EQUIP[Brilliant Light Aquamarine Ring]===5"
+      ],
+      "fct": [
+        "EQUIP[Brilliant Light Aquamarine Ring]===0.2"
+      ],
+      "p_race_angel": [
+        "EQUIP[Brilliant Light Aquamarine Ring]===15"
+      ],
+      "p_race_demon": [
+        "EQUIP[Brilliant Light Aquamarine Ring]===15"
+      ]
+    }
+  },
   "490089": {
     "id": 490089,
     "aegisName": "Alice_Hug_Pillow_TW",
@@ -76987,7 +80415,7 @@
       "Cart Cannon": [
         "9===20"
       ],
-      "Acid Demonstration": [
+      "Acid Bomb": [
         "11===10"
       ],
       "dex": [
@@ -77089,6 +80517,61 @@
       ],
       "matkPercent": [
         "EQUIP[Great Hero Boots]===7"
+      ]
+    }
+  },
+  "500030": {
+    "id": 500030,
+    "aegisName": "Excalibur_IL",
+    "name": "Illusion Excalibur [2]",
+    "unidName": "Sword",
+    "resName": "Excalibur_IL",
+    "description": "Matk + 180.\nMatk + 5%, reduces global cooldown by 5%.\nIf refine rate is 7 or higher, increases Genesis Ray damage by 15%.\nIf refine rate is 9 or higher, increases neutral and holy property magical damage by 15%, reduces variable casting time by 10%.\nIf refine rate is 11 or higher, increases Genesis Ray damage by additional 25%.\n\nWhen equipped with Illusion Sacred Mission, Matk + 50, reduces variable casting time by 10%.\nIf refine rate of each is 7 or higher, increases Genesis Ray damage by 10%.\nIf the sum of refine rate is 18 or higher, increases magical damage against all race monsters by 20%.\nIf the sum of refine rate is 22 or higher, reduces skill cooldown of Genesis Ray by 1 second, reduces global cooldown by 5%.\nClass: ^777777Sword^000000 Attack: ^777777120^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Royal Guard^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 257,
+    "itemLevel": 4,
+    "attack": 120,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "matk": [
+        "180",
+        "EQUIP[Illusion Sacred Mission]===50"
+      ],
+      "matkPercent": [
+        "5"
+      ],
+      "acd": [
+        "5",
+        "EQUIP[Illusion Sacred Mission]REFINE[shield,weapon==22]===5"
+      ],
+      "Genesis Ray": [
+        "7===15",
+        "11===25",
+        "EQUIP[Illusion Sacred Mission]REFINE[shield==7]7===10"
+      ],
+      "m_my_element_neutral": [
+        "9===15"
+      ],
+      "m_my_element_holy": [
+        "9===15"
+      ],
+      "vct": [
+        "9===10",
+        "EQUIP[Illusion Sacred Mission]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Illusion Sacred Mission]REFINE[shield,weapon==18]===20"
+      ],
+      "cd__Genesis Ray": [
+        "EQUIP[Illusion Sacred Mission]REFINE[shield,weapon==22]===1"
       ]
     }
   },

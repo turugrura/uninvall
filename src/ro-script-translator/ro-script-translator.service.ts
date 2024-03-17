@@ -266,9 +266,14 @@ export class RoScriptTranslatorService {
 			};
 
 			if (!currentData[updatedItem.id]?.script && !updatedItem.script) {
-				currentData[updatedItem.id].script = new BuildScript(
-					currentData[updatedItem.id].description,
-				).scripts;
+				try {
+					currentData[updatedItem.id].script = new BuildScript(
+						currentData[updatedItem.id].description,
+					).scripts;
+				} catch (error) {
+					console.error(error)				
+					currentData[updatedItem.id].script = {}	
+				}
 			} else if (currentData[updatedItem.id]?.script) {
 				const bk = currentData[updatedItem.id].script;
 				delete currentData[updatedItem.id].script;
