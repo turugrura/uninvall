@@ -258,6 +258,32 @@
       ]
     }
   },
+  "1284": {
+    "id": 1284,
+    "aegisName": "Krishna",
+    "name": "Krishna [2]",
+    "unidName": "Katar",
+    "resName": "크리슈나",
+    "description": "Katar ที่ตกแต่งเป็นสีดำ มันใช้พละกำลังมากในการที่จะใช้งาน\nความแรงของสกิล 'Grim Tooth' เพิ่มขึ้น 10% เมื่อโจมตีแบบประชิดมีโอกาสร่ายสกิล 'Sonic Blow Lv. 1' (ถ้าผู้เล่นเรียนสกิลที่ถูกว่าจะถูกใช้แทน)\nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777120^000000\nอาวุธ Lv : ^7777773^000000\nน้ำหนัก : ^777777120^000000\nเลเวลที่ต้องการ : ^77777750^000000\nอาชีพ : ^777777Assassin Cross Cls^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 272,
+    "itemLevel": 3,
+    "attack": 120,
+    "defense": null,
+    "weight": 120,
+    "requiredLevel": 50,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Assassin Cross"
+    ],
+    "script": {
+      "Grimtooth": [
+        "10"
+      ]
+    }
+  },
   "1285": {
     "id": 1285,
     "aegisName": "Cakram",
@@ -352,6 +378,28 @@
         "1---2"
       ]
     }
+  },
+  "1295": {
+    "id": 1295,
+    "aegisName": "Blood_Tears_",
+    "name": "Blood Tears [3]",
+    "unidName": "Katar",
+    "resName": "혈루",
+    "description": "กาตาร์ที่มีลักษณะใบมีดเป็นลิ่ม ด้วยการโจมตีที่กว้างและโหดร้ายจะทิ้งบาดแผลลึก\nเมื่อโจมตี จะมีโอกาสสร้างสถานะเลือดออกแก่ศัตรูทั้งหมดโดยรอบในพื้นที่ 5*5 ช่อง \nสถานะเลือดออกแก่ศัตรูทั้งหมดโดยรอบในพื้นที่ 11*11 ช่อง ในกรณีที่ Refine ถึงระดับ 9 ขึ้นไป\nประเภท : ^777777Katar^000000   โจมตี : ^777777120^000000\nน้ำหนัก : ^777777170^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^77777755^000000\nติดตั้ง : ^777777สำหรับ Assassin Cross^000000",
+    "slots": 3,
+    "itemTypeId": 1,
+    "itemSubTypeId": 272,
+    "itemLevel": 4,
+    "attack": 120,
+    "defense": null,
+    "weight": 170,
+    "requiredLevel": 55,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Assassin Cross"
+    ],
+    "script": {}
   },
   "1326": {
     "id": 1326,
@@ -1073,6 +1121,33 @@
         "18===-2",
         "19===-2",
         "20===-2"
+      ]
+    }
+  },
+  "1659": {
+    "id": 1659,
+    "aegisName": "Recovery_Light",
+    "name": "Recovery Light [1]",
+    "unidName": "Staff",
+    "resName": "회복의빛",
+    "description": "ไม้เท้าที่สร้างขึ้นเป็นพิเศษสำหรับคุณสมบัติในการรักษา ถึงแม้ว่าพลังในการรักษาจะเพิ่มขึ้น แต่ก็ต้องใช้พลังเวทย์เพิ่มขึ้นเหมือนกัน\nผลของสกิล Heal และ สกิล Heal ของ Archbishop เพิ่มขึ้นตามอัตราการอัพเกรด แต่จะใช้ SP มากยิ่งขึ้นตามไปด้วย\nMATK + 160\nไม่สามารถถูกทำลายได้\nประเภท : ^777777One Handed Staff^000000 พลังโจมตี : ^77777730^000000\nน้ำหนัก : ^77777740^000000 ธาตุ : ^777777Saint^000000\nอาวุธ Lv. : ^7777774^000000\nLv ที่ต้องการ : ^777777110^000000\nอาชีพ : ^777777Archbishop^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 4,
+    "attack": 30,
+    "propertyAtk": "Holy",
+    "defense": null,
+    "weight": 40,
+    "requiredLevel": 110,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Arch Bishop"
+    ],
+    "script": {
+      "matk": [
+        "160"
       ]
     }
   },
@@ -3597,7 +3672,7 @@
     "script": {
       "perfectDodge": [
         "USED[Mage||Archer||Acolyte]5",
-        "1---2"
+        "USED[Mage||Archer||Acolyte]1---2"
       ]
     }
   },
@@ -3927,9 +4002,6 @@
     "script": {
       "acd": [
         "5"
-      ],
-      "spPercentCost": [
-        "5"
       ]
     }
   },
@@ -4055,6 +4127,51 @@
       ],
       "range": [
         "3"
+      ]
+    }
+  },
+  "2892": {
+    "id": 2892,
+    "aegisName": "Assassin_Handcuffs",
+    "name": "Assassin Handcuffs [1]",
+    "unidName": "Accssory",
+    "resName": "암살자의수갑",
+    "description": "ถุงมือที่เพิ่มเหล็กเข้าไปยังส่วนของนิ้วจนถึงแขน มันถูกออกแบบมาเพื่อให้สามารถใช้งานได้ทั้งโจมตีและป้องกันในเวลาเดียวกัน\nMSP + 20, CRI + 3.\nเมื่อสวมใส่คู่กับ Krishna เพิ่ม ATK + 50 , เพิ่มพลังโจมตีให้กับ Skill Sonic Blow 50% , FLEE - 30\nเมื่อสวมใส่คู่กับ Cakram เพิ่ม CRI + 4 , และ เพิ่มพลังโจมตีเมื่อติด Critical 40% , MHP - 10%\nประเภท : ^777777Accssory^000000 ป้องกัน : ^7777773^000000\nน้ำหนัก : ^77777740^000000\nLv ที่ต้องการ : ^777777100^000000\nอาชีพ : ^777777Guillotine Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 3,
+    "weight": 40,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Guillotine Cross"
+    ],
+    "script": {
+      "sp": [
+        "20"
+      ],
+      "cri": [
+        "3",
+        "EQUIP[Cakram]===4"
+      ],
+      "atk": [
+        "EQUIP[Krishna]===50"
+      ],
+      "Sonic Blow": [
+        "EQUIP[Krishna]===50"
+      ],
+      "flee": [
+        "EQUIP[Krishna]===-30"
+      ],
+      "criDmg": [
+        "EQUIP[Cakram]===40"
+      ],
+      "hpPercent": [
+        "EQUIP[Cakram]===-10"
       ]
     }
   },
@@ -4466,6 +4583,26 @@
         "20"
       ]
     }
+  },
+  "4038": {
+    "id": 4038,
+    "aegisName": "Zombie_Card",
+    "name": "Zombie Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความเร็วในการฟื้นค่า HP อีก 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Foot Gear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Healthy",
+    "script": {}
   },
   "4047": {
     "id": 4047,
@@ -4928,6 +5065,30 @@
       ]
     }
   },
+  "4123": {
+    "id": 4123,
+    "aegisName": "Eddga_Card",
+    "name": "Eddga Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "ทำให้เกิดสภาวะเหมือนใช้ Skill Endure ตลอดเวลา\nMaxHP -25%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Foot Gear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Bearer's",
+    "script": {
+      "hpPercent": [
+        "-25"
+      ]
+    }
+  },
   "4126": {
     "id": 4126,
     "aegisName": "Minorous_Card",
@@ -4952,6 +5113,30 @@
       ],
       "atk": [
         "5"
+      ]
+    }
+  },
+  "4127": {
+    "id": 4127,
+    "aegisName": "Nightmare_Card",
+    "name": "Nightmare Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "ป้องกันอาการ Sleep 100%\nAGI + 1\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Insomniac",
+    "script": {
+      "agi": [
+        "1"
       ]
     }
   },
@@ -5171,6 +5356,26 @@
         "9===10"
       ]
     }
+  },
+  "4166": {
+    "id": 4166,
+    "aegisName": "Nightmare_Terror_Card",
+    "name": "Nightmare Terror Card",
+    "unidName": "Nightmare Terror Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มโอกาสที่จะร่าย 'Curse' ใส่คู่ต่อสู้ เมื่อได้รับ Physical Damage\nถ้าใช้ร่วมกับ Nightmare Cardโอกาสที่จะ 'Curse' จะมีสูงขึ้น\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "of Jinx",
+    "script": {}
   },
   "4168": {
     "id": 4168,
@@ -5571,12 +5776,6 @@
       ],
       "m_pene_class_normal": [
         "100"
-      ],
-      "spRegen": [
-        "-100"
-      ],
-      "spLoss": [
-        "2000"
       ]
     }
   },
@@ -5858,9 +6057,6 @@
       "p_infiltration": [
         "1"
       ],
-      "spLost": [
-        "1"
-      ],
       "def": [
         "-30"
       ],
@@ -6072,6 +6268,39 @@
       ],
       "matkPercent": [
         "USED[Rogue||Stalker||ShadowChaser]10"
+      ]
+    }
+  },
+  "4427": {
+    "id": 4427,
+    "aegisName": "Sword_Guardian_Card",
+    "name": "Sword Guardian Card",
+    "unidName": "Sword Guardian Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มความรุนแรงของสกิล Bowling Bash 25% ถ้าผู้ใช้ถือดาบมือเดียวหรือสองมือ\nCRI + 5, HIT + 5\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "of Force",
+    "script": {
+      "Bowling Bash": [
+        "WEAPON_TYPE[sword]25",
+        "WEAPON_TYPE[twohandSword]25"
+      ],
+      "cri": [
+        "WEAPON_TYPE[sword]5",
+        "WEAPON_TYPE[twohandSword]5"
+      ],
+      "hit": [
+        "WEAPON_TYPE[sword]5",
+        "WEAPON_TYPE[twohandSword]5"
       ]
     }
   },
@@ -6537,6 +6766,31 @@
       "m_pene_class_boss": [
         "15",
         "15===10"
+      ]
+    }
+  },
+  "4504": {
+    "id": 4504,
+    "aegisName": "Sealed_Eddga_Card",
+    "name": "Sealed Eddga Card",
+    "unidName": "Sealed Eddga Card",
+    "resName": "이름없는카드",
+    "description": "ทำให้เกิดสภาวะเหมือนใช้ Skill Endure ตลอดเวลา\nMaxHP -50%\nหากอัพเกรดตั้งแต่ระดับ +15 ขึ้นไป MaxHP ลดลงแค่ 35%\nประเภท : ^777777Card ^000000\nใช้กับ : ^777777Footwear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Half Bearer's",
+    "script": {
+      "hpPercent": [
+        "-50",
+        "15===15"
       ]
     }
   },
@@ -7248,6 +7502,30 @@
       ]
     }
   },
+  "4595": {
+    "id": 4595,
+    "aegisName": "Cenere_Card",
+    "name": "Cenere Card",
+    "unidName": "Cenere Card",
+    "resName": "이름없는카드",
+    "description": "ทุกๆ Base AGI 10 จะเพิ่มความเร็วในการโจมตี (ดีเลย์หลังการโจมตีลดลง 2%)\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Acid",
+    "script": {
+      "aspdPercent": [
+        "SUM[agi==10]---2"
+      ]
+    }
+  },
   "4596": {
     "id": 4596,
     "aegisName": "AntiqueBook_Card",
@@ -7563,9 +7841,6 @@
     "script": {
       "matkPercent": [
         "20"
-      ],
-      "spPercentInc__all": [
-        "10"
       ]
     }
   },
@@ -11997,7 +12272,11 @@
     "requiredLevel": null,
     "location": null,
     "compositionPos": 65535,
-    "script": {}
+    "script": {
+      "chance__agi": [
+        "200"
+      ]
+    }
   },
   "4878": {
     "id": 4878,
@@ -13215,6 +13494,41 @@
       ]
     }
   },
+  "9097": {
+    "id": 9097,
+    "aegisName": "Diabolic_Egg2",
+    "name": "Diabolic Egg",
+    "unidName": "Diabolic Egg",
+    "resName": "화속성알",
+    "description": "ไข่ที่มี Q-Pet Diabolic อยู่ภายใน สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 1%, MATK +1% \nหากความสัมพันธ์อยู่ในระดับปกติ เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 1%, MATK +1%, MaxHP +1%, MaxSP +1%\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 2%, MATK +2%, MaxHP +1%, MaxSP +1%\nเมื่อโจมตีทางกายภาพทั่วไประยะใกล้ มีโอกาสที่จะร่ายสกิล [Fire Bolt] Lv. 3 \nหากความสัมพันธ์อยู่ในระดับสนิทสนม เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 2%, MATK +2%, MaxHP +2%, MaxSP +2%\nเมื่อโจมตีทางกายภาพทั่วไประยะใกล้ มีโอกาสที่จะร่ายสกิล [Fire Bolt] Lv. 3 \nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_class_all": [
+        "2"
+      ],
+      "matkPercent": [
+        "2"
+      ],
+      "hpPercent": [
+        "2"
+      ],
+      "spPercent": [
+        "2"
+      ]
+    }
+  },
   "9105": {
     "id": 9105,
     "aegisName": "Hodremlin_Egg",
@@ -13362,6 +13676,35 @@
         "5"
       ],
       "acd": [
+        "3"
+      ]
+    }
+  },
+  "9116": {
+    "id": 9116,
+    "aegisName": "Nightmare_TerrorH_EGG",
+    "name": "Rigid Nightmare Terror Egg",
+    "unidName": "Rigid Nightmare Terror Egg",
+    "resName": "암속성알",
+    "description": "ไข่ที่มี Q-pet Rigid Nightmare Terror อยู่ภายใน สามารถปลุกให้ตื่นขึ้นมาได้ด้วย\n[Pet Incubator]\n\nในกรณีที่ความสัมพันธ์อยู่ระดับไม่คุ้นเคย หรือเขินอาย INT+ 1\nหากความสัมพันธ์อยู่ระดับปกติ INT+ 2\nหากความสัมพันธ์อยู่ระดับเป็นมิตร INT+ 3, MSP + 1%, ป้องกันการติดสถานะ Sleep\nหากความสัมพันธ์อยู่ระดับสนิทสนม INT+ 4, MSP + 3%, ป้องกันการติดสถานะ Sleep\n\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "4"
+      ],
+      "spPercent": [
         "3"
       ]
     }
@@ -13945,6 +14288,25 @@
         "10"
       ]
     }
+  },
+  "12684": {
+    "id": 12684,
+    "aegisName": "ASPD_Potion",
+    "name": "ASPD Potion",
+    "unidName": "ASPD Potion",
+    "resName": "태국향수ASPD",
+    "description": "^ff0000ไอเท็มชิ้นนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้\nและเป็นยาที่มีความสามารถแบบเดียวกันกับยาเพิ่มความเร็วที่มีอยู่ แต่ความเร็วในการโจมตี จะเพิ่มขึ้นตามค่า AGI^000000\nยาเสริมพลังที่มีผลมากขึ้นเมื่อใช้กับยาเพิ่มความเร็วในการโจมตีอื่น ๆ\nเมื่อใช้งานจะเพิ่มความเร็วในการโจมตีขึ้นจำนวนหนึ่งเป็นเวลา 15 นาที สามารถใช้ได้กับทุกอาชีพ\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 3333,
+    "itemSubTypeId": 768,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {}
   },
   "12775": {
     "id": 12775,
@@ -15704,9 +16066,6 @@
       ],
       "aspd": [
         "1"
-      ],
-      "spPercentCost": [
-        "5"
       ],
       "fctPercent": [
         "30"
@@ -19488,6 +19847,39 @@
     ],
     "script": {}
   },
+  "18112": {
+    "id": 18112,
+    "aegisName": "Upg_Bow",
+    "name": "Upgrade Bow [1]",
+    "unidName": "Bow",
+    "resName": "강화보우",
+    "description": "Bow ที่ถูกเคลือบด้วย Oridecon และ Gold ออกแบบมาได้อย่างสมบูรณ์แบบ\nHunter Class : Atk + 20.\nAtk + 7 และ การโจมตีทางกายภาพระยะไกล + 2% ต่อระดับการอัพเกรดทุกๆ 1 Lv. (ไม่รวมค่าอัพเกรดตามปกติ)\nหากตัวละครมี Lv. ตั้งแต่ 70 ขึ้นไป : เพิ่มค่า Atk + 10 ทุกๆ 10 BaseLv.\nประเภท : ^777777Bow^000000 พลังโจมตี : ^77777760^000000\nน้ำหนัก : ^77777760^000000\nLv. ของอาวุธ : ^7777773^000000\nLv. ที่ต้องการ : ^7777771^000000\nอาชีพ : ^777777Archer Cls/Rogue Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 3,
+    "attack": 60,
+    "defense": null,
+    "weight": 60,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Archer",
+      "Rogue"
+    ],
+    "script": {
+      "atk": [
+        "20",
+        "1---7",
+        "SUM[level==70]===-70",
+        "SUM[level==10]---10"
+      ],
+      "range": [
+        "1---2"
+      ]
+    }
+  },
   "18119": {
     "id": 18119,
     "aegisName": "Thanos_Bow",
@@ -19520,6 +19912,47 @@
       ],
       "matk": [
         "110"
+      ]
+    }
+  },
+  "18121": {
+    "id": 18121,
+    "aegisName": "Sinister_Bow",
+    "name": "Vicious Mind Bow [1]",
+    "unidName": "Bow",
+    "resName": "사념의보우",
+    "description": "ธนูที่เต็มไปด้วยความคิดมุ่งร้าย\nเพิ่ม ATK เท่ากับ (ระดับ Refine*ระดับ Refine) (สามารถ Refine ได้ถึง 15)\nประเภท : ^777777Bow^000000 โจมตี : ^777777170^000000\nน้ำหนัก : ^777777170^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777160^000000\nติดตั้ง : ^777777อาชีพ Archer / อาชีพ Rogue^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 4,
+    "attack": 170,
+    "defense": null,
+    "weight": 170,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Archer",
+      "Rogue"
+    ],
+    "script": {
+      "atk": [
+        "1===1",
+        "2===3",
+        "3===5",
+        "4===7",
+        "5===9",
+        "6===11",
+        "7===13",
+        "8===15",
+        "9===17",
+        "10===19",
+        "11===21",
+        "12===23",
+        "13===25",
+        "14===27",
+        "15===29"
       ]
     }
   },
@@ -19607,6 +20040,52 @@
         "level:180===5",
         "level:190===5",
         "level:200===5"
+      ]
+    }
+  },
+  "18132": {
+    "id": 18132,
+    "aegisName": "Union_Bow",
+    "name": "Union Bow [1]",
+    "unidName": "Bow",
+    "resName": "결속의활",
+    "description": "อุปกรณ์อย่างเป็นทางการ อภินันทนาการจากราชอาณาจักรสำหรับนักผจญภัย\nเพิ่ม ATK เท่ากับ (ขั้นอัพเกรด x ขั้นอัพเกรด x 1.25)\n\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777114^000000\nน้ำหนัก : ^77777760^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777Archer Class, Rouge Class^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 3,
+    "attack": 114,
+    "defense": null,
+    "weight": 60,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Archer",
+      "Rogue"
+    ],
+    "script": {
+      "atk": [
+        "1===1",
+        "2===4",
+        "3===6",
+        "4===9",
+        "5===11",
+        "6===14",
+        "7===16",
+        "8===19",
+        "9===21",
+        "10===24",
+        "11===26",
+        "12===29",
+        "13===31",
+        "14===34",
+        "15===36",
+        "16===39",
+        "17===41",
+        "18===44",
+        "19===46",
+        "20===49"
       ]
     }
   },
@@ -20408,10 +20887,6 @@
       "acd": [
         "5",
         "3---3"
-      ],
-      "spPercentCost": [
-        "10",
-        "3---3"
       ]
     }
   },
@@ -20806,9 +21281,6 @@
     ],
     "script": {
       "acd": [
-        "5"
-      ],
-      "spPercentCost": [
         "5"
       ]
     }
@@ -21210,9 +21682,6 @@
       ],
       "mdef": [
         "5"
-      ],
-      "spRegenPercent": [
-        "20"
       ],
       "matkPercent": [
         "1---1"
@@ -21896,9 +22365,6 @@
     "script": {
       "allStatus": [
         "1"
-      ],
-      "spPercentCost": [
-        "10"
       ],
       "exp": [
         "5"
@@ -22721,6 +23187,32 @@
       ],
       "allStatus": [
         "EQUIP[Candy Bag Backpack (Physical)||Candy Bag Backpack (Range)||Candy Bag Backpack (Magical)]REFINE[garment==12]===1"
+      ]
+    }
+  },
+  "19244": {
+    "id": 19244,
+    "aegisName": "Necklace_Rosary_K",
+    "name": "Rosary Necklace",
+    "unidName": "Accessory",
+    "resName": "로자리오목걸이",
+    "description": "Rosary ศักดิ์สิทธิ์ ได้รับพลังจากอัครสาวกของพระเจ้า ดูเหมือนว่าพลังลึกลับล้นออกมา\nเพิ่มปริมาณ Heal + 5%.\nเมื่อสวมใส่กับ [Recovery Light], ทุกการอัพเกรด Recovery Light 2 ขั้น ลดดีเลย์หลังใช้สกิลลง 3%\nบทลงโทษการใช้ SP เพิ่มขึ้นของ [Recovery Light] จะหายไป\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777712^000000\nตำแหน่ง : ^777777Lower ^000000น้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 12,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "EQUIP[Recovery Light]REFINE[weapon==2]---3"
       ]
     }
   },
@@ -23651,9 +24143,6 @@
         "vit:18---1"
       ],
       "spPercent": [
-        "int:18---2"
-      ],
-      "spPercentCost": [
         "int:18---2"
       ],
       "cri": [
@@ -24608,6 +25097,38 @@
       "acd": [
         "10",
         "9===10"
+      ]
+    }
+  },
+  "20744": {
+    "id": 20744,
+    "aegisName": "Felock_Cape",
+    "name": "Felrock's Cloak [1]",
+    "unidName": "Garment",
+    "resName": "펠록의망토",
+    "description": "ข้าวของของ Airship Captain Felrock \nแก้ปัญหาเหตุการณ์โจมตี Airship และได้รับเป็นของรางวัล \nเพิ่มการต้านทานธาตุ Neutral 10%, Flee + 20\nลด Veriable Cast Time  10%\nVariable Cast Timeลดลง 10% เมื่อระดับ Refine 7\nVariable Cast Timeลดลงอีก 10%% เมื่อระดับ Refine 9\nVariable Cast time ลดลง อีก 5% เมื่อระดับ Refine 12\nประเภท : ^777777Garment^000000    ป้องกัน : ^77777712^000000\nน้ำหนัก : ^77777740^000000\nเลเวลที่ต้องการ : ^777777125^000000\nติดตั้ง : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 12,
+    "weight": 40,
+    "requiredLevel": 125,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "flee": [
+        "20"
+      ],
+      "vct": [
+        "10",
+        "7===10",
+        "9===10",
+        "12===5"
       ]
     }
   },
@@ -25999,9 +26520,6 @@
       "range": [
         "1---2",
         "EQUIP[Illusion Boots]===3"
-      ],
-      "spPercentCost": [
-        "7===20"
       ],
       "acd": [
         "9===20"
@@ -27893,9 +28411,6 @@
       "all"
     ],
     "script": {
-      "spPercentCost": [
-        "SKILL[ ]===10"
-      ],
       "vct": [
         "10"
       ],
@@ -30760,9 +31275,6 @@
       ],
       "m_size_all": [
         "EQUIP[Rogue Shadow Shoes]USED[Rogue]===3"
-      ],
-      "spPercentCost__Sightless Mind": [
-        "EQUIP[Rogue Shadow Shoes]USED[Rogue]===20"
       ]
     }
   },
@@ -32248,9 +32760,6 @@
       ],
       "spPercent": [
         "EQUIP[Ninja Shadow Weapon]2"
-      ],
-      "spPercentCost": [
-        "EQUIP[Ninja Shadow Weapon]10"
       ]
     }
   },
@@ -32301,9 +32810,6 @@
       ],
       "spPercent": [
         "EQUIP[Taekwon Shadow Weapon]2"
-      ],
-      "spPercentCost": [
-        "EQUIP[Taekwon Shadow Weapon]10"
       ]
     }
   },
@@ -32445,9 +32951,6 @@
       ],
       "spPercent": [
         "EQUIP[Super Novice Shadow Weapon]===2"
-      ],
-      "spPercentCost": [
-        "EQUIP[Super Novice Shadow Weapon]===10"
       ]
     }
   },
@@ -32489,9 +32992,6 @@
       ],
       "spPercent": [
         "EQUIP[Gunslinger Shadow Weapon]2"
-      ],
-      "spPercentCost": [
-        "EQUIP[Gunslinger Shadow Weapon]10"
       ]
     }
   },
@@ -37188,12 +37688,7 @@
     "usableClass": [
       "Shadow Chaser"
     ],
-    "script": {
-      "spPercentCost__Triangle Shot": [
-        "2",
-        "2---1"
-      ]
-    }
+    "script": {}
   },
   "24527": {
     "id": 24527,
@@ -41516,7 +42011,7 @@
     "name": "Full Penetration Shadow Earring",
     "unidName": "Shadow Earring",
     "resName": "이어링쉐도우3",
-    "description": "Ignores defense rate of all race monsters (except players) by 5%.\nIgnores defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases physical damage against all race monsters (except players) by 3%.\nWhen equipped with Full Penetration Shadow Pendant, Atk + 2%, if the sum of refine rate of set is 18 or higher, ignores defense rate of all race monsters (except players) by 100%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Earring^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "ต่างหูมงคลที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางกายภาพต่อทุกเผ่า 3% (ยกเว้น Player)\nเมื่อสวมใส่ร่วมกับ Full Penetration Shadow Pendant, ATK +2%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่า 100% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 529,
@@ -41550,7 +42045,7 @@
     "name": "Full Penetration Shadow Pendant",
     "unidName": "Shadow Pendant",
     "resName": "펜던트쉐도우3",
-    "description": "Ignores defense rate of all race monsters (except players) by 5%.\nIgnores defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases physical damage against all race monsters (except players) by 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Pendant^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางกายภาพต่อทุกเผ่า 3% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 530,
@@ -41580,7 +42075,7 @@
     "name": "Full Penetration Shadow Armor",
     "unidName": "Shadow Armor",
     "resName": "아머쉐도우3",
-    "description": "Ignores defense rate of all race monsters (except players) by 5%.\nIgnores defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases physical damage against all race monsters (except players) by 3%.\nWhen equipped with Full Penetration Shadow Shoes, Atk + 2%, if the sum of refine rate of set is 18 or higher, ignores defense rate of all race monsters (except players) by 100%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Padded Armor ^000000Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเพิกเฉยต่อพลังป้องกันทางกายของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางกายภาพต่อทุกเผ่า 3% (ยกเว้น Player)\nเมื่อสวมใส่ร่วมกับ Full Penetration Shadow Shoes, ATK +2%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่า 100% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 526,
@@ -41614,7 +42109,7 @@
     "name": "Full Penetration Shadow Shoes",
     "unidName": "Shadow Shoes",
     "resName": "슈즈쉐도우3",
-    "description": "Ignores defense rate of all race monsters (except players) by 5%.\nIgnores defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases physical damage against all race monsters (except players) by 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shoes^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nเพิกเฉยต่อพลังป้องกันทางกายของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางกายภาพต่อทุกเผ่า 3% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 528,
@@ -41644,7 +42139,7 @@
     "name": "Full Tempest Shadow Earring",
     "unidName": "Shadow Earring",
     "resName": "이어링쉐도우3",
-    "description": "Ignores magical defense rate of all race monsters (except players) by 5%.\nIgnores magical defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases magical damage against all race monsters (except players) by 3%.\nWhen equipped with Full Tempest Shadow Pendant, Matk + 2%, if the sum of refine rate of set is 18 or higher, ignores magical defense rate of all race monsters (except players) by 100%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Earring^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "ต่างหูมงคลที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางเวทมนตร์ต่อทุกเผ่า 3% (ยกเว้น Player)\nเมื่อสวมใส่ร่วมกับ Full Tempest Shadow Pendant,\nMATK +2%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 100% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 529,
@@ -41678,13 +42173,13 @@
     "name": "Full Tempest Shadow Shoes",
     "unidName": "Shadow Shoes",
     "resName": "슈즈쉐도우3",
-    "description": "Ignores magical defense rate of all race monsters (except players) by 5%.\nIgnores magical defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases magical damage against all race monsters (except players) by 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shoes^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางเวทมนตร์ต่อทุกเผ่า 3% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 528,
     "itemLevel": null,
-    "attack": 0,
-    "defense": 0,
+    "attack": null,
+    "defense": null,
     "weight": 0,
     "requiredLevel": 1,
     "location": "Shoes",
@@ -41708,13 +42203,13 @@
     "name": "Full Tempest Shadow Armor",
     "unidName": "Shadow Armor",
     "resName": "아머쉐도우3",
-    "description": "Ignores magical defense rate of all race monsters (except players) by 5%.\nIgnores magical defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases magical damage against all race monsters (except players) by 3%.\nWhen equipped with Full Tempest Shadow Shoes, Matk + 2%, if the sum of refine rate of set is 18 or higher, ignores magical defense rate of all race monsters (except players) by 100%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Armor^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางเวทมนตร์ต่อทุกเผ่า 3% (ยกเว้น Player)\nเมื่อสวมใส่ร่วมกับ Full Tempest Shadow Shoes,\nMATK + 2%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 100% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 526,
     "itemLevel": null,
-    "attack": 0,
-    "defense": 0,
+    "attack": null,
+    "defense": null,
     "weight": 0,
     "requiredLevel": 1,
     "location": "Armor",
@@ -41742,7 +42237,7 @@
     "name": "Full Tempest Shadow Pendant",
     "unidName": "Shadow Pendant",
     "resName": "펜던트쉐도우3",
-    "description": "Ignores magical defense rate of all race monsters (except players) by 5%.\nIgnores magical defense rate of all race monsters (except players) by additional 1% per 2 refine rate.\nIf refine rate is 10, increases magical damage against all race monsters (except players) by 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Pendant^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 5% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่าเพิ่มอีก 1% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 10 เพิ่ม Damage ทางเวทมนตร์ต่อทุกเผ่า 3% (ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 530,
@@ -41989,9 +42484,6 @@
       "vct": [
         "10===3"
       ],
-      "spPercentCost": [
-        "EQUIP[True Gemstone Shadow Shoes]REFINE[shadowArmor,shadowBoot==18]===40"
-      ],
       "m_size_all": [
         "EQUIP[True Gemstone Shadow Shoes]REFINE[shadowArmor,shadowBoot==20]===12"
       ]
@@ -42059,9 +42551,6 @@
       ],
       "vct": [
         "10===3"
-      ],
-      "spPercentCost": [
-        "EQUIP[True Gemstone Shadow Pendant]REFINE[shadowEarring,shadowPendant==18]===40"
       ],
       "m_size_all": [
         "EQUIP[True Gemstone Shadow Pendant]REFINE[shadowEarring,shadowPendant==20]===12"
@@ -44485,6 +44974,82 @@
       ]
     }
   },
+  "27122": {
+    "id": 27122,
+    "aegisName": "Curupira_Card",
+    "name": "Curupira Card",
+    "unidName": "Curupira Card",
+    "resName": "이름없는카드",
+    "description": "พลังโจมตีทางเวทย์ที่สร้างต่อศัตรูธาตุ Water +3%\nเมื่ออัพเกรดขั้น 7 ขึ้นไป\nพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูธาตุ Water +5%\nเมื่ออัพเกรดขั้น 9 ขึ้นไป\nพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูธาตุ Water +7%\nประเภท :^777777Card^000000\nติดตั้ง :^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Tidal Wave",
+    "script": {
+      "m_element_water": [
+        "3",
+        "7===5",
+        "9===7"
+      ]
+    }
+  },
+  "27123": {
+    "id": 27123,
+    "aegisName": "Toucan_Card",
+    "name": "Toucan Card",
+    "unidName": "Toucan Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อมอนสเอตร์เผ่า Insect 10% \nเมื่อ Headgear ที่สวมใส่มีขั้นอัพเกรด 9 จะเพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อมอนสเตอร์เผ่า Insect ขึ้นอีก 5% \nประเภท :^777777Card^000000 \nติดตั้ง :^777777Heaadgear^000000 \nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Insect collective",
+    "script": {
+      "m_race_insect": [
+        "10",
+        "9===5"
+      ]
+    }
+  },
+  "27124": {
+    "id": 27124,
+    "aegisName": "Jaguar_Card",
+    "name": "Jaguar Card",
+    "unidName": "Jaguar Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูเผ่า Brute 10%\nเมื่อ Headgear ที่สวมใส่มีขั้นอัพเกรด 9 จะเพิ่มพลังโจมตีทางเวทย์ที่สร้างต่อศัตรูเผ่า Brute ขึ้นอีก 5%\nประเภท :^777777Card^000000\nติดตั้ง :^777777Heaadgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Hunting",
+    "script": {
+      "m_race_brute": [
+        "10",
+        "9===5"
+      ]
+    }
+  },
   "27125": {
     "id": 27125,
     "aegisName": "Headless_Mule_Card",
@@ -45337,6 +45902,33 @@
       ]
     }
   },
+  "27251": {
+    "id": 27251,
+    "aegisName": "Geffen_Gang_Card",
+    "name": "Geffen Gangster Card",
+    "unidName": "Geffen Gangster Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มคริติคอลดาเมจ 3%\nASPD +5%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Gangster",
+    "script": {
+      "criDmg": [
+        "3"
+      ],
+      "aspdPercent": [
+        "5"
+      ]
+    }
+  },
   "27252": {
     "id": 27252,
     "aegisName": "Geffen_Thug_Card",
@@ -45390,6 +45982,36 @@
         "5"
       ],
       "m_my_element_holy": [
+        "5"
+      ]
+    }
+  },
+  "27255": {
+    "id": 27255,
+    "aegisName": "Ordre_Card",
+    "name": "Ordre Card",
+    "unidName": "Ordre Card",
+    "resName": "이름없는카드",
+    "description": "MATK + 3%\nเพิ่มดาเมจทางเวทย์ธาตุ Wind, Water 5%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Ordre",
+    "script": {
+      "matkPercent": [
+        "3"
+      ],
+      "m_my_element_water": [
+        "5"
+      ],
+      "m_my_element_wind": [
         "5"
       ]
     }
@@ -46190,6 +46812,30 @@
       ]
     }
   },
+  "27317": {
+    "id": 27317,
+    "aegisName": "Mt_Caput_Card",
+    "name": "Mutant Twin Caput Card",
+    "unidName": "Mutant Twin Caput Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Formless 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Natural Piercing",
+    "script": {
+      "p_race_formless": [
+        "5"
+      ]
+    }
+  },
   "27318": {
     "id": 27318,
     "aegisName": "Miguel_Card",
@@ -46211,6 +46857,30 @@
     "script": {
       "criDmg": [
         "20"
+      ]
+    }
+  },
+  "27319": {
+    "id": 27319,
+    "aegisName": "R48_85_Bestia_Card",
+    "name": "R48-85-BESTIA Card",
+    "unidName": "R48-85-BESTIA Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางกายภาพต่อศัตรูประเภท Poison 40%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Poison Break",
+    "script": {
+      "p_element_poison": [
+        "40"
       ]
     }
   },
@@ -46791,6 +47461,34 @@
       ]
     }
   },
+  "27352": {
+    "id": 27352,
+    "aegisName": "Firm_Nightmare_T_Card",
+    "name": "Rigid Nightmare Terror Card",
+    "unidName": "Rigid Nightmare Terror Card",
+    "resName": "이름없는카드",
+    "description": "MSP + 5%\nเมื่อใช้ร่วมกับ Nightmare Terror Card, ATK + 10%\nเมื่อใช้ร่วมกับ Nightmare Card, MSP + 10%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Slumber",
+    "script": {
+      "spPercent": [
+        "5",
+        "EQUIP[Nightmare Card]===10"
+      ],
+      "atkPercent": [
+        "EQUIP[Nightmare Terror Card]===10"
+      ]
+    }
+  },
   "27354": {
     "id": 27354,
     "aegisName": "Polluted_Raydric_Card",
@@ -46862,6 +47560,31 @@
     "script": {
       "def": [
         "20"
+      ]
+    }
+  },
+  "27359": {
+    "id": 27359,
+    "aegisName": "Ice_Ghost_Card",
+    "name": "Ice Ghost Card",
+    "unidName": "Ice Ghost Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางเวทมนตร์แก่ศัตรูธาตุ Water 15%\nเมื่อใช้ร่วมกับ Curupira Card,\nเพิ่ม Damage ทางเวทมนตร์แก่ศัตรูธาตุ Water 8% เพิ่มเติม\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Cold Magic",
+    "script": {
+      "m_element_water": [
+        "15",
+        "EQUIP[Curupira Card]===8"
       ]
     }
   },
@@ -47176,6 +47899,30 @@
       "p_race_demon": [
         "5",
         "EQUIP[Cursed Raydric Card]5"
+      ]
+    }
+  },
+  "27388": {
+    "id": 27388,
+    "aegisName": "C_Cursed_Butler",
+    "name": "Cursed Butler Card",
+    "unidName": "Cursed Butler Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มปริมาณการฟื้นฟู HP เอง 30%\nเมื่อใช้ร่วมกับ Zombie Card, MHP +15%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Strong Recovery",
+    "script": {
+      "hpPercent": [
+        "EQUIP[Zombie Card]===15"
       ]
     }
   },
@@ -48245,6 +48992,47 @@
       ],
       "atk": [
         "level:10---6"
+      ]
+    }
+  },
+  "28130": {
+    "id": 28130,
+    "aegisName": "Avenger",
+    "name": "Avenger [2]",
+    "unidName": "Axe",
+    "resName": "어벤저투핸드액스",
+    "description": "ขวานสองมือที่เล่าขานกันว่าถูกทำขึ้นเพื่อล้างแค้นโดยช่างตีเหล็กที่มีฝีมือ\nดูกลมกลืนเข้ากับ Ancient Hero Boots \nไม่สามารถทำลายได้\nทุก ๆ การอัพเกรด 2 ขั้น, ATK +10 \nทุก ๆ การอัพเกรด 3 ขั้น, เพิ่ม Damage ของ Axe Tornado 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ของ Axe Boomerang 40%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพแก่ศัตรูทุกขนาด 15%\nเมื่อโจมตีทางกายภาพและเวทมนตร์ระหว่างสวมใส่ร่วมกับ Ancient Hero Boots, มีโอกาสที่ STR +20, ATK +15% เป็นเวลา 7 วินาที\nประเภท : ^777777Two-Handed Axe^000000 พลังโจมตี : ^777777270^000000\nน้ำหนัก : ^777777600^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic Cls^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 262,
+    "itemLevel": 4,
+    "attack": 270,
+    "defense": null,
+    "weight": 600,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mechanic"
+    ],
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "Axe Tornado": [
+        "3---10"
+      ],
+      "Axe Boomerang": [
+        "9===40"
+      ],
+      "p_size_all": [
+        "11===15"
+      ],
+      "chance__str": [
+        "EQUIP[Ancient Hero Boots]===20"
+      ],
+      "chance__atkPercent": [
+        "EQUIP[Ancient Hero Boots]===15"
       ]
     }
   },
@@ -49667,7 +50455,7 @@
         "50"
       ],
       "m_size_all": [
-        "15"
+        "LEARN_SKILL[Impositio Manus==1]---3"
       ],
       "Magnus Exorcismus": [
         "level:2---2"
@@ -53743,6 +54531,9 @@
     "script": {
       "p_size_all": [
         "ACTIVE_SKILL[Two hand Quicken]7"
+      ],
+      "chance__ignore_size_penalty": [
+        "1"
       ]
     }
   },
@@ -53769,6 +54560,9 @@
       ],
       "p_size_all": [
         "ACTIVE_SKILL[Two hand Quicken]15"
+      ],
+      "chance__ignore_size_penalty": [
+        "1"
       ]
     }
   },
@@ -57681,12 +58475,6 @@
       "Fatal Manace": [
         "15",
         "EQUIP[Stalker Stone II (Upper)]10"
-      ],
-      "spPercentCost__Fatal Manace": [
-        "EQUIP[Stalker Stone II (Middle)]10"
-      ],
-      "spPercentDrain__Fatal Manace": [
-        "EQUIP[Stalker Stone II (Lower)]1"
       ]
     }
   },
@@ -61992,9 +62780,6 @@
       "m_my_element_earth": [
         "10",
         "9===10"
-      ],
-      "spPercentCost": [
-        "5"
       ]
     }
   },
@@ -63556,6 +64341,457 @@
       ]
     }
   },
+  "300177": {
+    "id": 300177,
+    "aegisName": "MD_Geffen_Archi_Card",
+    "name": "Arena Arhi Card",
+    "unidName": "Arena Arhi Card",
+    "resName": "이름없는카드",
+    "description": "Increases damage against all size monsters by 5%, MaxHP + 1000, Flee + 35.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Arhi",
+    "script": {
+      "p_size_all": [
+        "5"
+      ],
+      "m_size_all": [
+        "5"
+      ],
+      "hp": [
+        "1000"
+      ],
+      "flee": [
+        "35"
+      ]
+    }
+  },
+  "300178": {
+    "id": 300178,
+    "aegisName": "MD_Geffen_Dio_Card",
+    "name": "Arena Dio Anemos Card",
+    "unidName": "Arena Dio Anemos Card",
+    "resName": "이름없는카드",
+    "description": "Increases earth and neutral property magical damage by 10%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Anemos",
+    "script": {
+      "m_my_element_earth": [
+        "10"
+      ],
+      "m_my_element_neutral": [
+        "10"
+      ]
+    }
+  },
+  "300179": {
+    "id": 300179,
+    "aegisName": "MD_Geffen_Thief_Card",
+    "name": "Arena Shoplifter Card",
+    "unidName": "Arena Shoplifter Card",
+    "resName": "이름없는카드",
+    "description": "Increases fire and holy property magical damage by 10%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Shoplifter",
+    "script": {
+      "m_my_element_fire": [
+        "10"
+      ],
+      "m_my_element_holy": [
+        "10"
+      ]
+    }
+  },
+  "300180": {
+    "id": 300180,
+    "aegisName": "MD_Geffen_Gang_Card",
+    "name": "Arena Gangster Card",
+    "unidName": "Arena Gangster Card",
+    "resName": "이름없는카드",
+    "description": "Increases attack speed (reduces delay after attack by 10%).\nIncreases critical damage by 7%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Bully",
+    "script": {
+      "aspdPercent": [
+        "10"
+      ],
+      "criDmg": [
+        "7"
+      ]
+    }
+  },
+  "300181": {
+    "id": 300181,
+    "aegisName": "MD_Geffen_Thug_Card",
+    "name": "Arena Bully Card",
+    "unidName": "Arena Bully Card",
+    "resName": "이름없는카드",
+    "description": "Increases attack speed (reduces delay after attack by 7%).\nIncreases critical damage by 10%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Gangster",
+    "script": {
+      "aspdPercent": [
+        "7"
+      ],
+      "criDmg": [
+        "10"
+      ]
+    }
+  },
+  "300182": {
+    "id": 300182,
+    "aegisName": "MD_Geffen_Monk_Card",
+    "name": "Arena Faymont Card",
+    "unidName": "Arena Faymont Card",
+    "resName": "이름없는카드",
+    "description": "MaxSP + 20%.\nWhen receiving physical damage, has a chance to auto-cast Zen lv. 1.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Faymont",
+    "script": {
+      "spPercent": [
+        "20"
+      ]
+    }
+  },
+  "300183": {
+    "id": 300183,
+    "aegisName": "MD_Geffen_Ordre_Card",
+    "name": "Arena Ordre Card",
+    "unidName": "Arena Ordre Card",
+    "resName": "이름없는카드",
+    "description": "Increases wind and water property magical damage by 10%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Ordre",
+    "script": {
+      "m_my_element_wind": [
+        "10"
+      ],
+      "m_my_element_water": [
+        "10"
+      ]
+    }
+  },
+  "300184": {
+    "id": 300184,
+    "aegisName": "MD_Geffen_Blut_Card",
+    "name": "Arena Blut Hase Card",
+    "unidName": "Arena Blut Hase Card",
+    "resName": "이름없는카드",
+    "description": "Atk + 5%.\nIncreases long ranged physical damage by 7%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Hase",
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "range": [
+        "7"
+      ]
+    }
+  },
+  "300185": {
+    "id": 300185,
+    "aegisName": "MD_Geffen_Akuma_Card",
+    "name": "Arena Kuro Akuma Card",
+    "unidName": "Arena Kuro Akuma Card",
+    "resName": "이름없는카드",
+    "description": "Reduces variable casting time by 10%.\nIncreases Wind Blade, Freezing Spear, Flaming Petals damage by 15%.\nIncreases long ranged physical damage by 8%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Akuma",
+    "script": {
+      "vct": [
+        "10"
+      ],
+      "Wind Blade": [
+        "15"
+      ],
+      "Freezing Spear": [
+        "15"
+      ],
+      "Flaming Petals": [
+        "15"
+      ],
+      "range": [
+        "8"
+      ]
+    }
+  },
+  "300186": {
+    "id": 300186,
+    "aegisName": "MD_Geffen_Hyper_Card",
+    "name": "Arena Ifodes Card",
+    "unidName": "Arena Ifodes Card",
+    "resName": "이름없는카드",
+    "description": "Increases attack speed (reduces delay after attack by 7%).\nIncreases melee physical damage by 7%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Ifodes",
+    "script": {
+      "aspdPercent": [
+        "7"
+      ],
+      "melee": [
+        "7"
+      ]
+    }
+  },
+  "300187": {
+    "id": 300187,
+    "aegisName": "MD_Geffen_Odorico_Card",
+    "name": "Arena Odoric Card",
+    "unidName": "Arena Odoric Card",
+    "resName": "이름없는카드",
+    "description": "Increases attack speed (reduces delay after attack by 7%).\nIncreases long ranged physical damage by 7%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Odoric",
+    "script": {
+      "aspdPercent": [
+        "7"
+      ],
+      "range": [
+        "7"
+      ]
+    }
+  },
+  "300188": {
+    "id": 300188,
+    "aegisName": "MD_Geffen_Reche_Card",
+    "name": "Arena Licheniyes Card",
+    "unidName": "Arena Licheniyes Card",
+    "resName": "이름없는카드",
+    "description": "Increases holy property magical damage by 10%.\nIncreases heal effectiveness by 20%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Licheniyes",
+    "script": {
+      "m_my_element_holy": [
+        "10"
+      ]
+    }
+  },
+  "300189": {
+    "id": 300189,
+    "aegisName": "MD_Geffen_Jew_Card",
+    "name": "Arena Ju Card",
+    "unidName": "Arena Ju Card",
+    "resName": "이름없는카드",
+    "description": "Increases Fire Bolt, Cold Bolt, Lightning Bolt damage by 15%.\nIf compounded on Book, increases Fire Bolt, Cold Bolt, Lightning Bolt damage by additional 20%.\nIf refine rate is 14 or higher, increases Fire Bolt, Cold Bolt, Lightning Bolt damage by additional 30%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Ju",
+    "script": {
+      "Fire Bolt": [
+        "15",
+        "WEAPON_TYPE[book]20",
+        "14===30"
+      ],
+      "Cold Bolt": [
+        "15",
+        "WEAPON_TYPE[book]20",
+        "14===30"
+      ],
+      "Lightening Bolt": [
+        "15",
+        "WEAPON_TYPE[book]20",
+        "14===30"
+      ]
+    }
+  },
+  "300190": {
+    "id": 300190,
+    "aegisName": "MD_Geffen_Fei_Card",
+    "name": "Arena Fay Kanavian Card",
+    "unidName": "Arena Fay Kanavian Card",
+    "resName": "이름없는카드",
+    "description": "Increases neutral and earth property magical damage by 10%.\nWhen dealing melee physical damage, has a low chance to transform into Golem for 5 seconds.\nDuring Golem form, Def + 500.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Kanavian",
+    "script": {
+      "m_my_element_neutral": [
+        "10"
+      ],
+      "m_my_element_earth": [
+        "10"
+      ]
+    }
+  },
+  "300191": {
+    "id": 300191,
+    "aegisName": "MD_Geffen_Dy_Card",
+    "name": "Arena Dwigh Card",
+    "unidName": "Arena Dwigh Card",
+    "resName": "이름없는카드",
+    "description": "Increases neutral, shadow and undead property magical damage by 20%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Dwigh",
+    "script": {
+      "m_my_element_neutral": [
+        "20"
+      ],
+      "m_my_element_dark": [
+        "20"
+      ],
+      "m_my_element_undead": [
+        "20"
+      ]
+    }
+  },
+  "300207": {
+    "id": 300207,
+    "aegisName": "SLD_Shining_T_Bear_Card",
+    "name": "Sealed Shiny Teddy Bear Card",
+    "unidName": "Sealed Shiny Teddy Bear Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อใช้สกิล เพิ่มปริมาณการใช้ SP 15%\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 2%\nเมื่อค่าอัพเกรดรองเท้าตั้งแต่ 15 ขึ้นไป\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 7% เพิ่มเติม\n\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of half Luminant",
+    "script": {
+      "m_my_element_holy": [
+        "1---2",
+        "15===7"
+      ]
+    }
+  },
   "300209": {
     "id": 300209,
     "aegisName": "SLD_Grave_Amon_Ra_Card",
@@ -63617,9 +64853,6 @@
       ],
       "m_my_element_holy": [
         "7"
-      ],
-      "spPercentCost": [
-        "5"
       ]
     }
   },
@@ -64005,9 +65238,6 @@
     "compositionPos": 16,
     "cardPrefix": "of Lugenburg",
     "script": {
-      "spPercentCost": [
-        "10"
-      ],
       "melee": [
         "3---4"
       ],
@@ -64930,7 +66160,7 @@
     "name": "Str Blessing",
     "unidName": "Str Blessing",
     "resName": "Cassock_Str",
-    "description": "STR +10\nDEF +25, MDEF +3\nATK +10%\nเมื่อใช้กับ Str Soutane, ATK +5%, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกประเภท 12%",
+    "description": "STR +10\nDEF +25, MDEF +3\nATK +10%\nเมื่อใช้กับ Str Soutane, ATK +5%, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกเผ่า 12%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -64955,7 +66185,7 @@
         "10",
         "EQUIP[Str Soutane]5"
       ],
-      "p_class_all": [
+      "p_race_all": [
         "EQUIP[Str Soutane]12"
       ]
     }
@@ -71357,9 +72587,6 @@
     "script": {
       "m_my_element_all": [
         "LEARN_SKILL[Espa==1]---1"
-      ],
-      "spPercentCost__Espa": [
-        "EQUIP[Soul Reaper Stone (Garment)]===15"
       ]
     }
   },
@@ -79337,9 +80564,6 @@
       "m_my_element_fire": [
         "9===10"
       ],
-      "spPercentCost": [
-        "11===20"
-      ],
       "matk": [
         "11===30"
       ],
@@ -80030,6 +81254,9 @@
       ],
       "cd__Comet": [
         "EQUIP[Kardui Ear]20"
+      ],
+      "chance__int": [
+        "EQUIP[Tree Sprout]===150"
       ]
     }
   },
@@ -80157,6 +81384,47 @@
       ],
       "chance__dex": [
         "11===200"
+      ]
+    }
+  },
+  "470123": {
+    "id": 470123,
+    "aegisName": null,
+    "name": "Hunting Shoes [1]",
+    "unidName": "Shoes",
+    "resName": "True_Hunting_Boots",
+    "description": "รองเท้าของนักล่า  ทำให้ผู้สวมใส่มีความมั่นใจในการล่ามากขึ้น\nMHP + 1000, MSP + 200.\nเมื่ออัพเกรดขั้น 7 ค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ + 8%,\nเมื่ออัพเกรดขั้น 9  เพิ่มดาเมจทางเวทย์/กายภาพที่สร้างต่อมอนสเตอร์เผ่า Brute และเผ่า Fish + 15%,\nเมื่ออัพเกรดขั้น 11 ลดดาเมจทางเวทย์/กายภาพที่ได้รับจากมอนสเตอร์เผ่า Brute และเผ่า Fish 20%\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777730^000000\nน้ำหนัก : ^77777790^000000\nเลเวลที่ต้องการ : ^77777730^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 30,
+    "weight": 90,
+    "requiredLevel": 30,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1000"
+      ],
+      "sp": [
+        "200"
+      ],
+      "p_race_brute": [
+        "9===15"
+      ],
+      "p_race_fish": [
+        "9===15"
+      ],
+      "m_race_brute": [
+        "9===15"
+      ],
+      "m_race_fish": [
+        "9===15"
       ]
     }
   },
@@ -82334,6 +83602,94 @@
       ]
     }
   },
+  "480439": {
+    "id": 480439,
+    "aegisName": null,
+    "name": "Black Mithril Manteau [1]",
+    "unidName": "Black Mithril Manteau",
+    "resName": "보자기망토",
+    "description": "ผ้าคลุมที่หลอมขึ้นด้วยมิธริลซึ่งมีน้ำหนักเบาและแข็งแกร่งเหนือเหล็กกล้า ได้รับความนิยมอย่างมากในองกรค์ลับแห่งหนึ่ง\n\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nทุก ๆ การเรียนรู้สกิล Reproduce 1 เลเวล Perfect Hit +10%\nทุก ๆ Base Lv. 10 เพิ่ม Damage สกิล Fatal Menace, Severe Rainstorm 2%\n\nเมื่ออัพเกรดตั้งแต่ 7 ขึ้นไป,\nลดปริมาณการใช้ SP สกิล Fatal Menace 10 หน่วย\n\nเมื่ออัพเกรดตั้งแต่ 9 ขึ้นไป,\nลด Delay หลังใช้สกิล 12%\n\nเมื่ออัพเกรดตั้งแต่ 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 15%\n\nเมื่ออัพเกรดตั้งแต่ 13 ขึ้นไป,\nยกเลิกการลงโทษขนาดของอาวุธ\n\nเมื่อสวมใส่ร่วมกับ Black Mithril Guard หรือ [Not for Sale] Black Mithril Guard,\nสามารถใช้สกิล Dark Claw Lv. 5\nทุก ๆ การอัพเกรดรวมกัน 3 ขั้น MaxHP +2%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 21 ขึ้นไป เมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะ AGI +200 เป็นเวลา 10 วินาที\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777780^000000\nน้ำหนัก : ^777777250^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 250,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Shadow Chaser"
+    ],
+    "script": {
+      "p_size_all": [
+        "10"
+      ],
+      "perfectHit": [
+        "LEARN_SKILL[Reproduce==1]---10"
+      ],
+      "Fatal Manace": [
+        "level:10---2"
+      ],
+      "Severe Rainstorm": [
+        "level:10---2"
+      ],
+      "acd": [
+        "9===12"
+      ],
+      "p_class_boss": [
+        "11===15"
+      ],
+      "ignore_size_penalty": [
+        "13===1"
+      ],
+      "hpPercent": [
+        "EQUIP[Black Mithril Guard]REFINE[garment,shield==3]---2"
+      ],
+      "chance__agi": [
+        "EQUIP[Black Mithril Guard]REFINE[garment,shield==21]===200"
+      ]
+    }
+  },
+  "480446": {
+    "id": 480446,
+    "aegisName": null,
+    "name": "Moonlight Bell [1]",
+    "unidName": "Moonlight Bell",
+    "resName": "C_Moonlight_Bell",
+    "description": "กระดิ่งที่ Moonlight Flower เคยถือเอาไว้ เมื่อสวมใส่มันจะทำให้รู้สึกเหมือน Moonlight Flower เดินอยู่ใกล้ ๆ\n\nเมื่อใช้สกิล Cart Boost จะเปลี่ยนร่างเป็น Moonlight Flower เป็นเวลา 60 วินาที\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nทุก ๆ Base Lv. 10 เพิ่ม Damage สกิล Cart Cannon 2%\n\nเมื่ออัพเกรดตั้งแต่ 7 ขึ้นไป,\nลดปริมาณการใช้ SP สกิล Cart Cannon 20 หน่วย\n\nเมื่ออัพเกรดตั้งแต่ 9 ขึ้นไป,\nลด Delay หลังใช้สกิล 12%\n\nเมื่ออัพเกรดตั้งแต่ 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 15%\n\nเมื่ออัพเกรดตั้งแต่ 13 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777755^000000\nน้ำหนัก : ^777777150^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 55,
+    "weight": 150,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_size_all": [
+        "10"
+      ],
+      "Cart Cannon": [
+        "SUM[level==10]---2"
+      ],
+      "acd": [
+        "9===12"
+      ],
+      "p_class_boss": [
+        "11===15"
+      ],
+      "range": [
+        "13===20"
+      ]
+    }
+  },
   "490004": {
     "id": 490004,
     "aegisName": "Atker_Ring",
@@ -82895,13 +84251,69 @@
       ]
     }
   },
+  "490037": {
+    "id": 490037,
+    "aegisName": "Dark_Ring",
+    "name": "Dark Ring [1]",
+    "unidName": "Clip",
+    "resName": "Dark_Ring",
+    "description": "STR +5, AGI +5, DEX +5\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 5%\n\nเมื่อเรียนรู้สกิล Cross Impact ถึงเลเวล 5, \nลด Delay หลังใช้สกิล 10%\n\nเมื่อเรียนรู้สกิล Dark Claw ถึงเลเวล 5, \nลด Cooldown สกิล Dark Claw 15 วินาที\n\nทุก ๆ การเรียนรู้สกิล Weapon Blocking 1 เลเวล,\nSTR +1, AGI +1, DEX +1, ATK +20 และเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 5%\n\nเมื่อเรียนรู้สกิล Cloaking Exceed ถึงเลเวล 5,\nASPD +2, MaxSP +15%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "str": [
+        "5",
+        "LEARN_SKILL[Weapon Blocking==1]---1"
+      ],
+      "agi": [
+        "5",
+        "LEARN_SKILL[Weapon Blocking==1]---1"
+      ],
+      "dex": [
+        "5",
+        "LEARN_SKILL[Weapon Blocking==1]---1"
+      ],
+      "atk": [
+        "LEARN_SKILL[Weapon Blocking==1]---20"
+      ],
+      "p_class_all": [
+        "5"
+      ],
+      "acd": [
+        "LEARN_SKILL[Cross Impact==5]===10"
+      ],
+      "cd__Dark Claw": [
+        "LEARN_SKILL[Dark Claw==5]===15"
+      ],
+      "p_element_all": [
+        "LEARN_SKILL[Weapon Blocking==1]---5"
+      ],
+      "aspd": [
+        "LEARN_SKILL[Cloaking Exceed==5]===2"
+      ],
+      "spPercent": [
+        "LEARN_SKILL[Cloaking Exceed==5]===15"
+      ]
+    }
+  },
   "490044": {
     "id": 490044,
     "aegisName": "Sin_Ring_R",
     "name": "Sinful Ruby Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Sin_Ring_R",
-    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Red Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับทับทิมสีแดงที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Red Dragon Plate, Dragon Scale Hood, Dragon Scale Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Dragon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Dragon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -82940,9 +84352,9 @@
     "id": 490045,
     "aegisName": "Sin_Necklace_R",
     "name": "Sinful Ruby Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Sin_Necklace_R",
-    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Ruby Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับทับทิมสีแดงที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Sinful Ruby Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Dragon 15%=],\n\t\t\t\t[=[^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -82981,9 +84393,9 @@
     "id": 490046,
     "aegisName": "Sin_Ring_E",
     "name": "Sinful Emerald Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Sin_Ring_E",
-    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Green Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับมรกตที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Green Dragon Plate, Dragon Scale Hood, Dragon Scale Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Dragon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Dragon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83022,9 +84434,9 @@
     "id": 490047,
     "aegisName": "Sin_Necklace_E",
     "name": "Sinful Emerald Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Sin_Necklace_E",
-    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Emerald Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับมรกตที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Sinful Emerald Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Dragon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83063,9 +84475,9 @@
     "id": 490048,
     "aegisName": "Sin_Ring_T",
     "name": "Sinful Topaz Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Sin_Ring_T",
-    "description": "Atk + 7%, Matk + 7%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Gold Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับโทพาซสีทองที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Gold Dragon Plate, Dragon Scale Hood, Dragon Scale Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Dragon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Dragon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83113,9 +84525,9 @@
     "id": 490049,
     "aegisName": "Sin_Necklace_T",
     "name": "Sinful Topaz Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Sin_Necklace_T",
-    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Sinful Topaz Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical and magical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับโทพาซสีทองที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Sinful Topaz Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Dragon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83163,9 +84575,9 @@
     "id": 490050,
     "aegisName": "Sin_Ring_A",
     "name": "Sinful Amethyst Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Sin_Ring_A",
-    "description": "When equipped with Purple Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับอเมทิสต์ที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Purple Dragon Plate, Dragon Scale Hood, Dragon Scale Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Dragon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Dragon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83204,9 +84616,9 @@
     "id": 490051,
     "aegisName": "Sin_Necklace_A",
     "name": "Sinful Amethyst Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Sin_Necklace_A",
-    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Sinful Amethyst Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical and magical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับอเมทิสต์ที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Sinful Amethyst Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Dragon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83254,9 +84666,9 @@
     "id": 490052,
     "aegisName": "Sin_Ring_S",
     "name": "Sinful Sapphire Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Sin_Ring_S",
-    "description": "Matk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Blue Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases magical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับแซฟไฟต์ที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nMATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Blue Dragon Plate, Dragon Scale Hood, Dragon Scale Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Dragon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Dragon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83295,9 +84707,9 @@
     "id": 490053,
     "aegisName": "Sin_Necklace_S",
     "name": "Sinful Sapphire Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Sin_Necklace_S",
-    "description": "Matk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Sapphire Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases magical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับแซฟไฟต์ที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nMATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Sinful Sapphire Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Dragon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83336,9 +84748,9 @@
     "id": 490054,
     "aegisName": "Sin_Ring_O",
     "name": "Sinful Opal Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Sin_Ring_O",
-    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Silver Dragon Plate, Dragon Scale Hood and Dragon Scale Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and dragon race monsters by 20%, reduces damage taken from angel and dragon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับโอปอลที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Silver Dragon Plate, Dragon Scale Hood, Dragon Scale Boots^000000\nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Dragon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Dragon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83377,9 +84789,9 @@
     "id": 490055,
     "aegisName": "Sin_Necklace_O",
     "name": "Sinful Opal Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Sin_Necklace_O",
-    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Sinful Opal Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.3 seconds, increases physical damage against angel and dragon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับโอปอลที่แปดเปื้อนบาป\nพลังชั่วร้ายที่แข็งแกร่งกำลังปะทุออกมาจากเบื้องลึก\n^ffffff_^000000\nATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Sinful Opal Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Dragon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83418,9 +84830,9 @@
     "id": 490056,
     "aegisName": "Shine_Ring_R",
     "name": "Brilliant Light Ruby Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Shine_Ring_R",
-    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Str Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับทับทิมสีแดงที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Str Soutane, Clergy's Manteau, Clergy's Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Demon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Demon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83459,9 +84871,9 @@
     "id": 490057,
     "aegisName": "Shine_Necklace_R",
     "name": "Brilliant Light Ruby Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Shine_Necklace_R",
-    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Ruby Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับทับทิมสีแดงที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Brilliant Light Ruby Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Demon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83500,9 +84912,9 @@
     "id": 490058,
     "aegisName": "Shine_Ring_A",
     "name": "Brilliant Light Amethyst Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Shine_Ring_A",
-    "description": "Atk + 7%, Matk + 7%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Dex Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับอเมทิสต์ที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Dex Soutane, Clergy's Manteau, Clergy's Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Demon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Demon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83550,9 +84962,9 @@
     "id": 490059,
     "aegisName": "Shine_Necklace_A",
     "name": "Brilliant Light Amethyst Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Shine_Necklace_A",
-    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Amethyst Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับอเมทิสต์ที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Brilliant Light Amethyst Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Demon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83600,9 +85012,9 @@
     "id": 490060,
     "aegisName": "Shine_Ring_E",
     "name": "Brilliant Light Emerald Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Shine_Ring_E",
-    "description": "Atk + 7%, Matk + 7%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Vit Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับมรกตที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Vit Soutane, Clergy's Manteau, Clergy's Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Demon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Demon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83650,9 +85062,9 @@
     "id": 490061,
     "aegisName": "Shine_Necklace_E",
     "name": "Brilliant Light Emerald Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Shine_Necklace_E",
-    "description": "Atk + 7%, Matk + 7%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Emerald Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical and magical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับมรกตที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +7%, MATK +7%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Brilliant Light Emerald Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Demon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83700,9 +85112,9 @@
     "id": 490062,
     "aegisName": "Shine_Ring_Z",
     "name": "Brilliant Light Zircon Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Shine_Ring_Z",
-    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Agi Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับเพทายที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Agi Soutane, Clergy's Manteau, Clergy's Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Demon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Demon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83741,9 +85153,9 @@
     "id": 490063,
     "aegisName": "Shine_Necklace_Z",
     "name": "Brilliant Light Zircon Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Shine_Necklace_Z",
-    "description": "Atk + 10%, reduces variable casting time by 7%. \nWhen equipped with Brilliant Light Zircon Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับเพทายที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Brilliant Light Zircon Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Demon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83782,9 +85194,9 @@
     "id": 490064,
     "aegisName": "Shine_Ring_S",
     "name": "Brilliant Light Sapphire Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Shine_Ring_S",
-    "description": "Matk + 10%, increases attack speed (reduces delay after attack by 7%). \nWhen equipped with Int Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases magical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับแซฟเฟต์ที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nMATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Int Soutane, Clergy's Manteau, Clergy's Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Demon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Demon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83823,9 +85235,9 @@
     "id": 490065,
     "aegisName": "Shine_Necklace_S",
     "name": "Brilliant Light Sapphire Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Shine_Necklace_S",
-    "description": "Matk + 10%, reduces variable casting time by 7%.\n\nWhen equipped with Brilliant Light Sapphire Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases magical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับแซฟไฟต์ที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nMATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Brilliant Light Sapphire Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Angel, Demon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -83864,9 +85276,9 @@
     "id": 490066,
     "aegisName": "Shine_Ring_AQ",
     "name": "Brilliant Light Aquamarine Ring [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Shine_Ring_AQ",
-    "description": "Atk + 10%, increases attack speed (reduces delay after attack by 7%).\n\nWhen equipped with Luk Soutane, Clergy's Manteau and Clergy's Boots,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 20%, reduces damage taken from angel and demon race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "แหวนประดับอะความารีนที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +10%, ASPD +7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Luk Soutane, Clergy's Manteau, Clergy's Boots^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Demon 20%, ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Angel, Demon 10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -83905,9 +85317,9 @@
     "id": 490067,
     "aegisName": "Shine_Necklace_AQ",
     "name": "Brilliant Light Aquamarine Necklace [1]",
-    "unidName": "Accessory",
+    "unidName": "Necklace",
     "resName": "Shine_Necklace_AQ",
-    "description": "Atk + 10%, reduces variable casting time by 7%.\n\nWhen equipped with Brilliant Light Aquamarine Ring,\nreduces global cooldown by 5%, reduces fixed casting time by 0.2 seconds, increases physical damage against angel and demon race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000\nDefense: ^7777770^000000\nWeight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอประดับอะความารีนที่ส่องประกายวูบวาบ\nพลังศักดิ์สิทธิ์ที่แข็งแกร่งกำลังปะทุออกมาจากห้วงลึก\n^ffffff_^000000\nATK +10%, ลดระยะเวลาร่ายแบบแปรผัน 7%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ ^32CD32Brilliant Light Aquamarine Ring^000000 \nลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Angel, Demon 15%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000\nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -87053,6 +88465,53 @@
       ],
       "cri": [
         "LEARN_SKILL[Death Bound==10]15"
+      ]
+    }
+  },
+  "490553": {
+    "id": 490553,
+    "aegisName": null,
+    "name": "Divine Bell [1]",
+    "unidName": "Divine Bell",
+    "resName": "EveningBell_of_Prayer",
+    "description": "ระฆังดังเพราะคนตี ระฆังดีไม่ตีก็ดัง ระฆังไม่ดังเพราะคนไม่ตี แต่คนดีไม่ตีก็ดัง \n\nMATK +10%\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกขนาด 10%\n\nทุก ๆ การเรียนรู้สกิล Metalic Sound 1 เลเวล,\nเพิ่ม Damage สกิล Reverberation 4%\n\nทุก ๆ การเรียนรู้สกิล Great Echo 1 เลเวล,\nเพิ่ม Damage สกิล Metalic Sound 30%\n\nเมื่อเรียนรู้สกิล Dance With Wug ถึงเลเวล 5,\nลดระยะเวลาร่ายแบบแปรผันสกิล Reverberation, Metalic Sound 50%\n\nเมื่อเรียนรู้สกิล Song Of Mana ถึงเลเวล 5,\nลด Delay หลังใช้สกิล 10%\n\nเมื่อเรียนรู้สกิล Lerad's Dew ถึงเลเวล 5,\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 50% (ยกเว้น Player)\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "m_size_all": [
+        "10"
+      ],
+      "Reverberation": [
+        "LEARN_SKILL[Metalic Sound==1]---4"
+      ],
+      "Metalic Sound": [
+        "LEARN_SKILL[Great Echo==1]---30"
+      ],
+      "vct__Reverberation": [
+        "LEARN_SKILL[Dance With Wug==5]===50"
+      ],
+      "vct__Metalic Sound": [
+        "LEARN_SKILL[Dance With Wug==5]===50"
+      ],
+      "acd": [
+        "LEARN_SKILL[Song Of Mana==5]===10"
+      ],
+      "m_pene_race_all": [
+        "LEARN_SKILL[Lerad's Dew==5]===50"
       ]
     }
   },
@@ -90578,9 +92037,6 @@
       ],
       "cd__Metalic Sound": [
         "11===2"
-      ],
-      "spPercentCost__Reverberation": [
-        "11===20"
       ]
     }
   },
@@ -90930,9 +92386,6 @@
       ],
       "cd__Metalic Sound": [
         "11===2"
-      ],
-      "spPercentCost__Reverberation": [
-        "11===20"
       ]
     }
   },
