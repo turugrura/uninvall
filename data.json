@@ -72,7 +72,7 @@
       "Mage",
       "Wizard",
       "Merchant",
-      "Taekwon",
+      "Taekwondo",
       "Gunslinger"
     ],
     "script": {}
@@ -3322,7 +3322,9 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "all"
+      "Priest",
+      "Sage",
+      "Taekwondo"
     ],
     "script": {
       "matk": [
@@ -5471,6 +5473,60 @@
       ]
     }
   },
+  "4176": {
+    "id": 4176,
+    "aegisName": "Dullahan_Card",
+    "name": "Dullahan Card",
+    "unidName": "Dullahan Card",
+    "resName": "이름없는카드",
+    "description": "โจมตีแรงขึ้น 10% เมื่อโจมตี Critical\nCritical +7 เมื่อโจมตี Monster Dragon\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fatal Serpent",
+    "script": {
+      "criDmg": [
+        "10"
+      ],
+      "cri_race_dragon": [
+        "7"
+      ]
+    }
+  },
+  "4214": {
+    "id": 4214,
+    "aegisName": "Bloody_Murderer_Card",
+    "name": "Bloody Murderer Card",
+    "unidName": "Bloody Murderer Card",
+    "resName": "이름없는카드",
+    "description": "โจมตีแรงขึ้น 10% เมื่อโจมตี Critical\nCritical +7 เมื่อโจมตี Monster Insect\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Man Eater",
+    "script": {
+      "criDmg": [
+        "10"
+      ],
+      "cri_race_insect": [
+        "7"
+      ]
+    }
+  },
   "4257": {
     "id": 4257,
     "aegisName": "Wild_Rose_Card",
@@ -6291,16 +6347,13 @@
     "cardPrefix": "of Force",
     "script": {
       "Bowling Bash": [
-        "WEAPON_TYPE[sword]25",
-        "WEAPON_TYPE[twohandSword]25"
+        "WEAPON_TYPE[sword||twohandSword]25"
       ],
       "cri": [
-        "WEAPON_TYPE[sword]5",
-        "WEAPON_TYPE[twohandSword]5"
+        "WEAPON_TYPE[sword||twohandSword]5"
       ],
       "hit": [
-        "WEAPON_TYPE[sword]5",
-        "WEAPON_TYPE[twohandSword]5"
+        "WEAPON_TYPE[sword||twohandSword]5"
       ]
     }
   },
@@ -7261,8 +7314,7 @@
     "cardPrefix": "Sword Master",
     "script": {
       "atk": [
-        "WEAPON_TYPE[sword]===100",
-        "WEAPON_TYPE[twohandSword]===100"
+        "WEAPON_TYPE[sword||twohandSword]===100"
       ]
     }
   },
@@ -18469,7 +18521,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Taekwon"
+      "Taekwondo"
     ],
     "script": {
       "atk": [
@@ -44855,25 +44907,13 @@
     "script": {
       "criDmg": [
         "10",
-        "WEAPON_TYPE[whip]1---1",
-        "WEAPON_TYPE[instrument]1---1",
-        "WEAPON_TYPE[book]1---1",
-        "WEAPON_TYPE[twohandSword]1---1",
-        "WEAPON_TYPE[twohandSpear]1---1"
+        "WEAPON_TYPE[whip||instrument||book||twohandSword||twohandSpear]1---1"
       ],
       "cri": [
-        "WEAPON_TYPE[whip]5",
-        "WEAPON_TYPE[instrument]5",
-        "WEAPON_TYPE[book]5",
-        "WEAPON_TYPE[twohandSword]5",
-        "WEAPON_TYPE[twohandSpear]5"
+        "WEAPON_TYPE[whip||instrument||book||twohandSword||twohandSpear]5"
       ],
       "atk": [
-        "WEAPON_TYPE[whip]1---3",
-        "WEAPON_TYPE[instrument]1---3",
-        "WEAPON_TYPE[book]1---3",
-        "WEAPON_TYPE[twohandSword]1---3",
-        "WEAPON_TYPE[twohandSpear]1---3"
+        "WEAPON_TYPE[whip||instrument||book||twohandSword||twohandSpear]1---3"
       ]
     }
   },
@@ -47911,7 +47951,7 @@
     "description": "เพิ่มปริมาณการฟื้นฟู HP เอง 30%\nเมื่อใช้ร่วมกับ Zombie Card, MHP +15%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
-    "itemSubTypeId": 510,
+    "itemSubTypeId": 0,
     "itemLevel": null,
     "attack": null,
     "defense": null,
@@ -61994,8 +62034,7 @@
     "cardPrefix": "Ghost Magical",
     "script": {
       "m_my_element_ghost": [
-        "WEAPON_TYPE[twohandRod]10",
-        "WEAPON_TYPE[rod]10",
+        "WEAPON_TYPE[rod||twohandRod]10",
         "10===10",
         "14===10"
       ]
@@ -62021,8 +62060,7 @@
     "cardPrefix": "Wind Magical",
     "script": {
       "m_my_element_wind": [
-        "WEAPON_TYPE[twohandRod]10",
-        "WEAPON_TYPE[rod]10",
+        "WEAPON_TYPE[rod||twohandRod]10",
         "10===10",
         "14===10"
       ]
@@ -62048,8 +62086,7 @@
     "cardPrefix": "Saint Magical",
     "script": {
       "m_my_element_holy": [
-        "WEAPON_TYPE[twohandRod]10",
-        "WEAPON_TYPE[rod]10",
+        "WEAPON_TYPE[rod||twohandRod]10",
         "10===10",
         "14===10"
       ]
@@ -62529,8 +62566,7 @@
     "cardPrefix": "Piercing",
     "script": {
       "range": [
-        "WEAPON_TYPE[spear]===10",
-        "WEAPON_TYPE[twohandSpear]===10",
+        "WEAPON_TYPE[spear||twohandSpear]===10",
         "2---2"
       ]
     }
@@ -62966,8 +63002,7 @@
     "cardPrefix": "Harmony",
     "script": {
       "matk": [
-        "WEAPON_TYPE[instrument]===20",
-        "WEAPON_TYPE[whip]===20",
+        "WEAPON_TYPE[instrument||whip]===20",
         "10===20",
         "13===20"
       ],
@@ -63292,8 +63327,7 @@
     "cardPrefix": "Fire Magical",
     "script": {
       "m_my_element_fire": [
-        "WEAPON_TYPE[rod]===10",
-        "WEAPON_TYPE[twohandRod]===10",
+        "WEAPON_TYPE[rod||twohandRod]===10",
         "10===10",
         "14===10"
       ]
@@ -63584,8 +63618,7 @@
     "cardPrefix": "Immortal Magical",
     "script": {
       "m_my_element_neutral": [
-        "WEAPON_TYPE[rod]===10",
-        "WEAPON_TYPE[twohandRod]===10",
+        "WEAPON_TYPE[rod||twohandRod]===10",
         "10===10",
         "14===10"
       ]
@@ -63918,8 +63951,7 @@
     "cardPrefix": "Water Magical",
     "script": {
       "m_my_element_water": [
-        "WEAPON_TYPE[rod]===10",
-        "WEAPON_TYPE[twohandRod]===10",
+        "WEAPON_TYPE[rod||twohandRod]===10",
         "10===10",
         "14===10"
       ]
@@ -64338,6 +64370,136 @@
       ],
       "perfectHit": [
         "5"
+      ]
+    }
+  },
+  "300170": {
+    "id": 300170,
+    "aegisName": "MD_Airboat_Card",
+    "name": "Rotten Wood Card",
+    "unidName": "Rotten Wood Card",
+    "resName": "이름없는카드",
+    "description": "Increases HP recovery rate by 100%.\r\nIncreases all damage against insect race monsters by 10%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Armor^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Rotten",
+    "script": {
+      "p_race_insect": [
+        "10"
+      ],
+      "m_race_insect": [
+        "10"
+      ]
+    }
+  },
+  "300171": {
+    "id": 300171,
+    "aegisName": "MD_Airboat_Card2",
+    "name": "Grave Worm Card",
+    "unidName": "Grave Worm Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on staff or two-handed staff, ignores magical defense rate of all race monsters (except players) by 10%.\nignores magical defense rate by additional 2% and increases damage taken from physical damage by 2% per 4 refine rate.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Digger",
+    "script": {
+      "m_pene_race_all": [
+        "4---2",
+        "WEAPON_TYPE[rod||twohandRod]===10"
+      ]
+    }
+  },
+  "300173": {
+    "id": 300173,
+    "aegisName": "MD_Airboat_Card4",
+    "name": "Moskillro Card",
+    "unidName": "Moskillro Card",
+    "resName": "이름없는카드",
+    "description": "Reduces variable casting time by 7%.\r\nReduces attack speed (increases delay after attack by 3%).\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Annoying",
+    "script": {
+      "vct": [
+        "7"
+      ],
+      "aspdPercent": [
+        "-3"
+      ]
+    }
+  },
+  "300174": {
+    "id": 300174,
+    "aegisName": "MD_Airboat_Card5",
+    "name": "Melted Poring Card",
+    "unidName": "Melted Poring Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP + 10%.\nIf base Vit is 100 or higher, reduces damage taken from earth and poison property by 1%.\nIf base Vit is 130 or higher, reduces damage taken from earth and poison property by additional 3%.\n^ffffff_^000000\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Denied",
+    "script": {
+      "hpPercent": [
+        "10"
+      ]
+    }
+  },
+  "300175": {
+    "id": 300175,
+    "aegisName": "MD_Airboat_Card6",
+    "name": "Unidentified Creature Card",
+    "unidName": "Unidentified Creature Card",
+    "resName": "이름없는카드",
+    "description": "Increases poison and shadow property magical damage by 30%.\r\nIncreases damage taken from holy property by 10%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory (Right)^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 8,
+    "cardPrefix": "Unknown",
+    "script": {
+      "m_my_element_poison": [
+        "30"
+      ],
+      "m_my_element_dark": [
+        "30"
       ]
     }
   },
@@ -64829,6 +64991,969 @@
       ]
     }
   },
+  "300211": {
+    "id": 300211,
+    "aegisName": "EP18_Ash_Toad_Card",
+    "name": "Ash Toad Card",
+    "unidName": "Ash Toad Card",
+    "resName": "이름없는카드",
+    "description": "Increases earth property magical damage by 35%.\nIncreases SP consumption of skills by 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Left)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 128,
+    "cardPrefix": "Magic Ground",
+    "script": {
+      "m_my_element_earth": [
+        "35"
+      ]
+    }
+  },
+  "300213": {
+    "id": 300213,
+    "aegisName": "EP18_Spark_Card",
+    "name": "Spark Card",
+    "unidName": "Spark Card",
+    "resName": "이름없는카드",
+    "description": "Atk + 5.\nIncreases physical damage against fire property enemies by 10%.\nIncreases critical chance against undead and demon race monsters by 15%.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Devil Catch",
+    "script": {
+      "atk": [
+        "5"
+      ],
+      "p_element_fire": [
+        "10"
+      ],
+      "cri_race_undead": [
+        "15"
+      ],
+      "cri_race_demon": [
+        "15"
+      ]
+    }
+  },
+  "300214": {
+    "id": 300214,
+    "aegisName": "EP18_Hot_Molar_Card",
+    "name": "Hot Molar Card",
+    "unidName": "Hot Molar Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Katar, increases melee physical damage by 10%.\nIncreases melee physical damage by additional 1% per 2 refine rate.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Power Quarter",
+    "script": {
+      "melee": [
+        "WEAPON_TYPE[katar]===10",
+        "WEAPON_TYPE[katar]2---1"
+      ]
+    }
+  },
+  "300215": {
+    "id": 300215,
+    "aegisName": "EP18_Volcaring_Card",
+    "name": "Volcaring Card",
+    "unidName": "Volcaring Card",
+    "resName": "이름없는카드",
+    "description": "Increases fire and earth property magical damage by 5%.\nIncreases fire and earth property magical damage by additional 1% per 2 refine rate.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Geothermal",
+    "script": {
+      "m_my_element_fire": [
+        "5",
+        "2---1"
+      ],
+      "m_my_element_earth": [
+        "5",
+        "2---1"
+      ]
+    }
+  },
+  "300216": {
+    "id": 300216,
+    "aegisName": "EP18_Lava_Toad_Card",
+    "name": "Lava Toad Card",
+    "unidName": "Lava Toad Card",
+    "resName": "이름없는카드",
+    "description": "Increases fire property magical damage by 35%.\nIncreases SP consumption of skills by 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Left)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 128,
+    "cardPrefix": "High Blast",
+    "script": {
+      "m_my_element_fire": [
+        "35"
+      ]
+    }
+  },
+  "300217": {
+    "id": 300217,
+    "aegisName": "EP18_Burning_Fang_Card",
+    "name": "Burning Fang Card",
+    "unidName": "Burning Fang Card",
+    "resName": "이름없는카드",
+    "description": "Increases melee physical damage by 20%.\nIncreases damage taken from all property by 15%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Burning Fang",
+    "script": {
+      "melee": [
+        "20"
+      ]
+    }
+  },
+  "300218": {
+    "id": 300218,
+    "aegisName": "EP18_Ashhopper_Card",
+    "name": "Ashhopper Card",
+    "unidName": "Ashhopper Card",
+    "resName": "이름없는카드",
+    "description": "Increases neutral property magical damage by 35%.\nIncreases SP consumption of skills by 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Left)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 128,
+    "cardPrefix": "High Immortal",
+    "script": {
+      "m_my_element_neutral": [
+        "35"
+      ]
+    }
+  },
+  "300219": {
+    "id": 300219,
+    "aegisName": "EP18_Ashring_Card",
+    "name": "Ashring Card",
+    "unidName": "Ashring Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Staff or Two-handed Staff, increases shadow property magical damage by 10%.\nIf refine rate of weapon is 10 or higher, increases shadow property magical damage by additional 10%.\nIf refine rate of weapon is 14 or higher, increases shadow property magical damage by additional 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Dark Magical",
+    "script": {
+      "m_my_element_dark": [
+        "WEAPON_TYPE[rod||twohandRod]===10",
+        "WEAPON_TYPE[rod||twohandRod]10===10",
+        "WEAPON_TYPE[rod||twohandRod]14===10"
+      ]
+    }
+  },
+  "300220": {
+    "id": 300220,
+    "aegisName": "EP18_Grey_Wolf_Card",
+    "name": "Grey Wolf Card",
+    "unidName": "Grey Wolf Card",
+    "resName": "이름없는카드",
+    "description": "Increases melee physical damage by 6%.\nWhen equipped with Phantom Wolf card, increases melee physical damage by additional 8%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Left)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 128,
+    "cardPrefix": "Wolf Scratch",
+    "script": {
+      "melee": [
+        "6",
+        "EQUIP[Phantom Wolf Card]===8"
+      ]
+    }
+  },
+  "300221": {
+    "id": 300221,
+    "aegisName": "EP18_Tumble_Ring_Card",
+    "name": "Tumblering Card",
+    "unidName": "Tumblering Card",
+    "resName": "이름없는카드",
+    "description": "Increases neutral and shadow property magical damage by 5%.\nIncreases neutral and shadow property magical damage by additional 1% per 2 refine rate.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Intangible Exorcist",
+    "script": {
+      "m_my_element_neutral": [
+        "5",
+        "2---1"
+      ],
+      "m_my_element_dark": [
+        "5",
+        "2---1"
+      ]
+    }
+  },
+  "300222": {
+    "id": 300222,
+    "aegisName": "EP18_Firewind_Kite_Card",
+    "name": "Firewind Kite Card",
+    "unidName": "Firewind Kite Card",
+    "resName": "이름없는카드",
+    "description": "Increases wind property magical damage by 35%.\nIncreases SP consumption of skills by 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Left)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 128,
+    "cardPrefix": "High Wind",
+    "script": {
+      "m_my_element_wind": [
+        "35"
+      ]
+    }
+  },
+  "300223": {
+    "id": 300223,
+    "aegisName": "EP18_Phantom_Wolf_Card",
+    "name": "Phantom Wolf Card",
+    "unidName": "Phantom Wolf Card",
+    "resName": "이름없는카드",
+    "description": "Increases melee physical damage by 6%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Right)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 8,
+    "cardPrefix": "Wolf Tackle",
+    "script": {
+      "melee": [
+        "6"
+      ]
+    }
+  },
+  "300227": {
+    "id": 300227,
+    "aegisName": "EP18_Schulang_Card",
+    "name": "Schulang Card",
+    "unidName": "Schulang Card",
+    "resName": "이름없는카드",
+    "description": "Increases magical damage against angel race monsters by 75%.\nIncreases all damage taken from angel race monsters by 25%.\nClass: ^777777Card^000000\nCompound on: ^777777Armor^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Angel Killer",
+    "script": {
+      "m_race_angel": [
+        "75"
+      ]
+    }
+  },
+  "300228": {
+    "id": 300228,
+    "aegisName": "EP18_Demi_Freyja_Card",
+    "name": "Twisted God Card",
+    "unidName": "Twisted God Card",
+    "resName": "이름없는카드",
+    "description": "Increases magical damage against demon race monsters by 75%.\nIncreases all damage taken from demon race monsters by 25%.\nClass: ^777777Card^000000\nCompound on: ^777777Armor^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Devil Killer",
+    "script": {
+      "m_race_demon": [
+        "75"
+      ]
+    }
+  },
+  "300230": {
+    "id": 300230,
+    "aegisName": "ILL_Andre_Card",
+    "name": "Diligent Andre Card",
+    "unidName": "Diligent Andre Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP + 1% per refine rate.\nReduces physical and magical damage taken from insect race monsters by 20%.\nWhen equipped with Diligent Andre Larva Card, increases physical damage against insect race monsters by 20%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "Yellow Spawn",
+    "script": {
+      "hpPercent": [
+        "1---1"
+      ],
+      "p_race_insect": [
+        "EQUIP[Diligent Andre Larva Card]===20"
+      ]
+    }
+  },
+  "300231": {
+    "id": 300231,
+    "aegisName": "ILL_Andre_soldier_Card",
+    "name": "Diligent Soldier Andre Card",
+    "unidName": "Diligent Soldier Andre Card",
+    "resName": "이름없는카드",
+    "description": "Increases physical damage against small and medium size monsters by 20%.\nHas a chance to destroy target's armor when dealing physical damage.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Royal Spawn",
+    "script": {
+      "p_size_s": [
+        "20"
+      ],
+      "p_size_m": [
+        "20"
+      ]
+    }
+  },
+  "300232": {
+    "id": 300232,
+    "aegisName": "ILL_Andre_larva_Card",
+    "name": "Diligent Andre Larva Card",
+    "unidName": "Diligent Andre Larva Card",
+    "resName": "이름없는카드",
+    "description": "Increases physical and magical damage against insect race monsters by 20%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Spawn",
+    "script": {
+      "p_race_insect": [
+        "20"
+      ],
+      "m_race_insect": [
+        "20"
+      ]
+    }
+  },
+  "300233": {
+    "id": 300233,
+    "aegisName": "ILL_Deniro_Card",
+    "name": "Diligent Deniro Card",
+    "unidName": "Diligent Deniro Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP + 1% per refine rate.\nReduces physical and magical damage taken from insect race monsters by 20%.\nWhen equipped with Diligent Andre Larva Card, increases magical damage against insect race monsters by 20%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "Red Spawn",
+    "script": {
+      "hpPercent": [
+        "1---1"
+      ],
+      "m_race_insect": [
+        "EQUIP[Diligent Andre Larva Card]===20"
+      ]
+    }
+  },
+  "300234": {
+    "id": 300234,
+    "aegisName": "ILL_Piere_Card",
+    "name": "Diligent Piere Card",
+    "unidName": "Diligent Piere Card",
+    "resName": "이름없는카드",
+    "description": "Ignores defense rate of plant race monsters by 15%.\nIncreases physical damage against plant race monsters by 5% per 2 refine rate.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "Green Spawn",
+    "script": {
+      "p_pene_race_plant": [
+        "15"
+      ],
+      "p_race_plant": [
+        "2---5"
+      ]
+    }
+  },
+  "300235": {
+    "id": 300235,
+    "aegisName": "ILL_Ant_egg_Card",
+    "name": "Mushy Ant Egg Card",
+    "unidName": "Mushy Ant Egg Card",
+    "resName": "이름없는카드",
+    "description": "MaxSP + 10%.\nMaxHP + 1% per refine rate.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "Fray",
+    "script": {
+      "spPercent": [
+        "10"
+      ],
+      "hpPercent": [
+        "1---1"
+      ]
+    }
+  },
+  "300236": {
+    "id": 300236,
+    "aegisName": "ILL_Giearth_Card",
+    "name": "Intrepid Giearth Card",
+    "unidName": "Intrepid Giearth Card",
+    "resName": "이름없는카드",
+    "description": "Increases resistance to confusion and blind by 100%.\r\nIncreases physical damage against insect race monsters by 4% per 2 refine rate.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Headgear^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Stubborn",
+    "script": {
+      "p_race_insect": [
+        "2---4"
+      ]
+    }
+  },
+  "300237": {
+    "id": 300237,
+    "aegisName": "ILL_Farmiliar_Card",
+    "name": "Intrepid Familiar Card",
+    "unidName": "Intrepid Familiar Card",
+    "resName": "이름없는카드",
+    "description": "Ignores magical defense rate of brute race monsters by 15%.\r\nIncreases magical damage against brute race monsters by 5% per 2 refine rate.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Pierce",
+    "script": {
+      "m_pene_race_brute": [
+        "15"
+      ],
+      "m_race_brute": [
+        "2---5"
+      ]
+    }
+  },
+  "300238": {
+    "id": 300238,
+    "aegisName": "ILL_Vitata_Card",
+    "name": "Diligent Vitata Card",
+    "unidName": "Diligent Vitata Card",
+    "resName": "이름없는카드",
+    "description": "Increases poison property magical damage by 5%.\nIf refine rate is 9 or higher, increases poison property magical damage by additional 5%.\nEnables to use Heal level 5.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Double Heal",
+    "script": {
+      "m_my_element_poison": [
+        "5",
+        "9===5"
+      ]
+    }
+  },
+  "300239": {
+    "id": 300239,
+    "aegisName": "ILL_Maya_Card",
+    "name": "Silent Maya Card",
+    "unidName": "Silent Maya Card",
+    "resName": "이름없는카드",
+    "description": "Increases magical damage against brute race enemies and plant race monsters by 50%.\nIncreases SP consumption of skills by 50%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "Distortion",
+    "script": {
+      "m_race_brute": [
+        "50"
+      ],
+      "m_race_plant": [
+        "50"
+      ]
+    }
+  },
+  "300240": {
+    "id": 300240,
+    "aegisName": "Gan_Ceann_Card",
+    "name": "Gan Ceann Card",
+    "unidName": "Gan Ceann Card",
+    "resName": "이름없는카드",
+    "description": "Atk + 15.\nIncreases physical damage against large size enemies by 15%.\nIf the user's base level is 200 or higher, increases physical damage against large size enemies by additional 25%.\nWhen equipped with Dullahan Card, increases physical damage against large size enemies by additional 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fatal Heavy",
+    "script": {
+      "atk": [
+        "15"
+      ],
+      "p_size_l": [
+        "15",
+        "SUM[level==200]===25",
+        "EQUIP[Dullahan Card]===30"
+      ]
+    }
+  },
+  "300241": {
+    "id": 300241,
+    "aegisName": "Brutal_Murderer_Card",
+    "name": "Brutal Murderer Card",
+    "unidName": "Brutal Murderer Card",
+    "resName": "이름없는카드",
+    "description": "Atk + 15.\nIncreases physical damage against medium size enemies by 15%.\nIf the user's base level is 200 or higher, increases physical damage against medium size enemies by additional 25%.\nWhen equipped with Bloody Murderer Card, increases physical damage against medium size enemies by additional 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fatal Boned",
+    "script": {
+      "atk": [
+        "15"
+      ],
+      "p_size_m": [
+        "15",
+        "SUM[level==200]===25",
+        "EQUIP[Bloody Murderer Card]===30"
+      ]
+    }
+  },
+  "300242": {
+    "id": 300242,
+    "aegisName": "Ghost_Cube_Card",
+    "name": "Ghost Cube Card",
+    "unidName": "Ghost Cube Card",
+    "resName": "이름없는카드",
+    "description": "When equipped by Novice or Super Novice, Atk + 10%, MaxHP + 1500,\nwhen equipped with Lude Gal Card and both are equipped by Novice or Super Novice, has a chance to negate size penalty for 7 seconds dealing physical damage.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Shrewd",
+    "script": {
+      "atkPercent": [
+        "USED[Super Novice]===10"
+      ],
+      "hp": [
+        "USED[Super Novice]===1500"
+      ],
+      "chance__ignore_size_penalty": [
+        "EQUIP[Lude Gal Card]USED[Super Novice]===1"
+      ]
+    }
+  },
+  "300243": {
+    "id": 300243,
+    "aegisName": "Lude_Gal_Card",
+    "name": "Lude Gal Card",
+    "unidName": "Lude Gal Card",
+    "resName": "이름없는카드",
+    "description": "When equipped by Novice or Super Novice, Matk + 10%, MaxSP + 500,\nwhen equipped with Ghost Cube Card and both are equipped by Novice or Super Novice, has a chance to increase water and fire property magical damage by 40% for 7 seconds dealing magical damage.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Strong Patient",
+    "script": {
+      "matkPercent": [
+        "USED[Super Novice]===10"
+      ],
+      "sp": [
+        "USED[Super Novice]===500"
+      ],
+      "chance__m_my_element_water": [
+        "EQUIP[Ghost Cube Card]USED[Super Novice]===40"
+      ],
+      "chance__m_my_element_fire": [
+        "EQUIP[Ghost Cube Card]USED[Super Novice]===40"
+      ]
+    }
+  },
+  "300244": {
+    "id": 300244,
+    "aegisName": "Disguiser_Card",
+    "name": "Disguiser Card",
+    "unidName": "Disguiser Card",
+    "resName": "이름없는카드",
+    "description": "Increases variable casting time by 5%.\nReduces variable casting time by 1% per refine rate of headgear.\nIf refine rate is 9 or higher, increases long ranged physical damage by 1%. \nIf refine rate is 11 or higher, increases long ranged physical damage by additional 2%. \nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Spiral",
+    "script": {
+      "vct": [
+        "-5",
+        "1---1"
+      ],
+      "range": [
+        "9===1",
+        "11===2"
+      ]
+    }
+  },
+  "300245": {
+    "id": 300245,
+    "aegisName": "Bluemoon_Loli_Ruri_Card",
+    "name": "Blue Moon Loli Ruri Card",
+    "unidName": "Blue Moon Loli Ruri Card",
+    "resName": "이름없는카드",
+    "description": "Increases variable casting time by 5%.\nReduces variable casting time by 1% per refine rate of headgear.\nIf refine rate is 9 or higher, increases heal effectiveness by 3%. \nIf refine rate is 11 or higher, increases heal effectiveness by additional 5%. \nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Fast Heal",
+    "script": {
+      "vct": [
+        "-5",
+        "1---1"
+      ]
+    }
+  },
+  "300246": {
+    "id": 300246,
+    "aegisName": "Grote_Card",
+    "name": "Grote Card",
+    "unidName": "Grote Card",
+    "resName": "이름없는카드",
+    "description": "Increases variable casting time by 5%.\nReduces variable casting time by 1% per refine rate of headgear.\nIf refine rate is 9 or higher, Mdef + 8, reduces magical damage taken from small size enemies by 1%. \nIf refine rate is 11 or higher, reduces magical damage taken from small size enemies by additional 2%. \nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Gigantic Magic Immune",
+    "script": {
+      "vct": [
+        "-5",
+        "1---1"
+      ],
+      "mdef": [
+        "9===8"
+      ]
+    }
+  },
+  "300247": {
+    "id": 300247,
+    "aegisName": "Pierrotzoist_Card",
+    "name": "Pierrotzoist Card",
+    "unidName": "Pierrotzoist Card",
+    "resName": "이름없는카드",
+    "description": "Increases variable casting time by 5%.\nReduces variable casting time by 1% per refine rate of headgear.\nIf refine rate is 9 or higher, increases ghost property magical damage by 1%. \nIf refine rate is 11 or higher, increases ghost property magical damage by additional 2%. \nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Ghost Killer",
+    "script": {
+      "vct": [
+        "-5",
+        "1---1"
+      ],
+      "m_my_element_ghost": [
+        "9===1",
+        "11===2"
+      ]
+    }
+  },
+  "300248": {
+    "id": 300248,
+    "aegisName": "Death_Witch_Card",
+    "name": "Death Witch Card",
+    "unidName": "Death Witch Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 10%, increases SP consumption of skills by 50%.\nIncreases magical damage against demon and formless race monsters by 50%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Death Witch",
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "m_race_demon": [
+        "50"
+      ],
+      "m_race_formless": [
+        "50"
+      ]
+    }
+  },
+  "300249": {
+    "id": 300249,
+    "aegisName": "Giant_Caput_Card",
+    "name": "Giant Caput Card",
+    "unidName": "Giant Caput Card",
+    "resName": "이름없는카드",
+    "description": "Increases physical damage against formless race monsters by 5%.\nIf the user's base level is 200 or higher, increases physical damage against formless race monsters by additional 15%. \nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Formless Destroyer's",
+    "script": {
+      "p_race_formless": [
+        "5",
+        "SUM[level==200]===15"
+      ]
+    }
+  },
+  "300250": {
+    "id": 300250,
+    "aegisName": "Dolorian_Card",
+    "name": "Dolorian Card",
+    "unidName": "Dolorian Card",
+    "resName": "이름없는카드",
+    "description": "Increases physical damage against demon race monsters by 5%.\nIf the user's base level is 200 or higher, increases physical damage against demon race monsters by additional 15%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Demon Slayer's",
+    "script": {
+      "p_race_demon": [
+        "5",
+        "SUM[level==200]===15"
+      ]
+    }
+  },
+  "300251": {
+    "id": 300251,
+    "aegisName": "Plagarion_Card",
+    "name": "Plagarion Card",
+    "unidName": "Plagarion Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIncreases neutral property magical damage by 7%, increases SP consumption of skills by 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of High Immortal",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_neutral": [
+        "7"
+      ]
+    }
+  },
   "300252": {
     "id": 300252,
     "aegisName": "Deadre_Card",
@@ -64853,6 +65978,362 @@
       ],
       "m_my_element_holy": [
         "7"
+      ]
+    }
+  },
+  "300253": {
+    "id": 300253,
+    "aegisName": "Venedi_Card",
+    "name": "Venedi Card",
+    "unidName": "Venedi Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIncreases poison property magical damage by 7%, increases SP consumption of skills by 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Venomous",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_poison": [
+        "7"
+      ]
+    }
+  },
+  "300254": {
+    "id": 300254,
+    "aegisName": "Amitera_Card",
+    "name": "Amitera Card",
+    "unidName": "Amitera Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP + 10%.\nIf the user's base level is 200 or higher, additional MaxHP + 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Armor^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "of High Mars",
+    "script": {
+      "hpPercent": [
+        "10",
+        "SUM[level==200]===10"
+      ]
+    }
+  },
+  "300255": {
+    "id": 300255,
+    "aegisName": "Litus_Card",
+    "name": "Litus Card",
+    "unidName": "Litus Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIncreases wind property magical damage by 7%, increases SP consumption of skills by 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Gale",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_wind": [
+        "7"
+      ]
+    }
+  },
+  "300256": {
+    "id": 300256,
+    "aegisName": "Fillia_Card",
+    "name": "Fillia Card",
+    "unidName": "Fillia Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIncreases fire property magical damage by 7%, increases SP consumption of skills by 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Hellfire",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_fire": [
+        "7"
+      ]
+    }
+  },
+  "300257": {
+    "id": 300257,
+    "aegisName": "Vanilaqus_Card",
+    "name": "Vanilaqus Card",
+    "unidName": "Vanilaqus Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIncreases water property magical damage by 7%, increases SP consumption of skills by 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Torrent",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_water": [
+        "7"
+      ]
+    }
+  },
+  "300258": {
+    "id": 300258,
+    "aegisName": "Lava_Eater_Card",
+    "name": "Lava Eater Card",
+    "unidName": "Lava Eater Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIncreases shadow property magical damage by 7%, increases SP consumption of skills by 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Deep Darkness",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_dark": [
+        "7"
+      ]
+    }
+  },
+  "300259": {
+    "id": 300259,
+    "aegisName": "Fulgor_Card",
+    "name": "Fulgor Card",
+    "unidName": "Fulgor Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIncreases earth property magical damage by 7%, increases SP consumption of skills by 5%.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Earthquake",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_earth": [
+        "7"
+      ]
+    }
+  },
+  "300260": {
+    "id": 300260,
+    "aegisName": "Napeo_Card",
+    "name": "Napeo Card",
+    "unidName": "Napeo Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 5 per 10 base Int.\nIf base Int is 125 or higher, additional Matk + 60.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of High Intelligence",
+    "script": {
+      "matk": [
+        "SUM[int==10]---5",
+        "SUM[int==125]===60"
+      ]
+    }
+  },
+  "300261": {
+    "id": 300261,
+    "aegisName": "Galensis_Card",
+    "name": "Galensis Card",
+    "unidName": "Galensis Card",
+    "resName": "이름없는카드",
+    "description": "Cri + 2 per 10 base Luk.\nIf base Lukis 125 or higher, increases critical damage by 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Garment^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of High Lucky",
+    "script": {
+      "cri": [
+        "SUM[luk==10]---2"
+      ],
+      "criDmg": [
+        "SUM[luk==125]===30"
+      ]
+    }
+  },
+  "300262": {
+    "id": 300262,
+    "aegisName": "The_One_Card",
+    "name": "The One Card",
+    "unidName": "The One Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 10%, increases SP consumption of skills by 50%.\nIncreases magical damage against undead and dragon race monsters by 50%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Undead Dragon Hunter's",
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "m_race_undead": [
+        "50"
+      ],
+      "m_race_dragon": [
+        "50"
+      ]
+    }
+  },
+  "300263": {
+    "id": 300263,
+    "aegisName": "Reken_Guard_Card",
+    "name": "Rekenber Guard Card",
+    "unidName": "Rekenber Guard Card",
+    "resName": "이름없는카드",
+    "description": "Atk + 5%.\nWhen compounded on dagger, one-handed sword or two-handed sword, increases melee physical damage by 10% and additional 2% per 3 refine rate of weapon,\nif the user's base level is 200 or higher, increases melee physical damage by additional 3% per 3 refine rate of weapon.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Guardman",
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "melee": [
+        "WEAPON_TYPE[dagger||sword||twohandSword]===10",
+        "WEAPON_TYPE[dagger||sword||twohandSword]3---2",
+        "WEAPON_TYPE[dagger||sword||twohandSword]SUM[level==200]3---3"
+      ]
+    }
+  },
+  "300264": {
+    "id": 300264,
+    "aegisName": "Reken_H_Guard_Card",
+    "name": "Rekenber High Guard Card",
+    "unidName": "Rekenber High Guard Card",
+    "resName": "이름없는카드",
+    "description": "Atk + 5%.\r\nWhen compounded on one-handed spear or two-handed spear, increases long ranged physical damage by 10% and additional 2% per 3 refine rate of weapon,\r\nif the user's base level is 200 or higher, increases long ranged physical damage by additional 3% per 3 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "High Guardman",
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "range": [
+        "WEAPON_TYPE[spear||twohandSpear]===10",
+        "WEAPON_TYPE[spear||twohandSpear]3---2",
+        "WEAPON_TYPE[spear||twohandSpear]SUM[level==200]3---3"
+      ]
+    }
+  },
+  "300265": {
+    "id": 300265,
+    "aegisName": "Regen_Scientist_Card",
+    "name": "Regenschirm Scientist Card",
+    "unidName": "Regenschirm Scientist Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 5%.\r\nWhen compounded on two-handed staff, increases all property magical damage by 10% and additional 2% per 3 refine rate of weapon,\r\nif the user's base level is 200 or higher, increases all property magical damage by additional 3% per 3 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Magic Guardman",
+    "script": {
+      "matkPercent": [
+        "5"
+      ],
+      "m_my_element_all": [
+        "WEAPON_TYPE[twohandRod]===10",
+        "WEAPON_TYPE[twohandRod]3---2",
+        "WEAPON_TYPE[twohandRod]SUM[level==200]3---3"
       ]
     }
   },
@@ -64886,6 +66367,78 @@
       "range": [
         "EQUIP[Boss Egnigem Card]USED[Swordman]===10",
         "EQUIP[Boss Egnigem Card]USED[Swordman]REFINE[armor,boot==4]---2"
+      ]
+    }
+  },
+  "300267": {
+    "id": 300267,
+    "aegisName": "Crow_Baron_Card",
+    "name": "Crow Baron Card",
+    "unidName": "Crow Baron Card",
+    "resName": "이름없는카드",
+    "description": "Increases attack speed (reduces delay after attack by 5%).\nIf the user's base level is 200 or higher, increases fire and wind property magical damage by 15%.\nWhen equipped with Crow Duke Card and both are equipped by Sage classes, increases Fire Bolt and Lightning Bolt damage by 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Left)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 128,
+    "cardPrefix": "of Speed Bolt",
+    "script": {
+      "aspdPercent": [
+        "5"
+      ],
+      "m_my_element_fire": [
+        "SUM[level==200]===15"
+      ],
+      "m_my_element_wind": [
+        "SUM[level==200]===15"
+      ],
+      "Fire Bolt": [
+        "EQUIP[Crow Duke Card]USED[Sage]===30"
+      ],
+      "Lightening Bolt": [
+        "EQUIP[Crow Duke Card]USED[Sage]===30"
+      ]
+    }
+  },
+  "300268": {
+    "id": 300268,
+    "aegisName": "Crow_Duke_Card",
+    "name": "Crow Duke Card",
+    "unidName": "Crow Duke Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 5%.\nIf the user's base level is 200 or higher, increases water and earth property magical damage by 15%.\nWhen equipped with Crow Baron Card and both are equipped by Sage classes, increases Cold Bolt and Heaven's Drive damage by 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory (Right)^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 8,
+    "cardPrefix": "of Power Bolt",
+    "script": {
+      "matkPercent": [
+        "5"
+      ],
+      "m_my_element_water": [
+        "SUM[level==200]===15"
+      ],
+      "m_my_element_earth": [
+        "SUM[level==200]===15"
+      ],
+      "Cold Bolt": [
+        "EQUIP[Crow Baron Card]USED[Sage]===30"
+      ],
+      "Heaven's Drive": [
+        "EQUIP[Crow Baron Card]USED[Sage]===30"
       ]
     }
   },
@@ -65156,6 +66709,63 @@
       ],
       "m_my_element_ghost": [
         "EQUIP[Death Word Card]SUM[level==200]===30"
+      ]
+    }
+  },
+  "300280": {
+    "id": 300280,
+    "aegisName": "Broken_Thanatos_Card",
+    "name": "Broken Memory of Thanatos Card",
+    "unidName": "Broken Memory of Thanatos Card",
+    "resName": "이름없는카드",
+    "description": "Increases physical damage against demihuman and demon race monsters (except players) by 40%.\r\nIncreases physical damage taken from demihuman and demon race monsters (except players) by 30%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Shoes^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Corrupted Magic Swordsman's",
+    "script": {
+      "p_race_demihuman": [
+        "40"
+      ],
+      "p_race_demon": [
+        "40"
+      ]
+    }
+  },
+  "300281": {
+    "id": 300281,
+    "aegisName": "R001_Bestia_Card",
+    "name": "R001-Bestia Card",
+    "unidName": "R001-Bestia Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 10%, increases SP consumption of skills by 50%.\nIncreases magical damage against fish and insect race monsters by 50%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Water Bug",
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "m_race_fish": [
+        "50"
+      ],
+      "m_race_insect": [
+        "50"
       ]
     }
   },
