@@ -4538,6 +4538,30 @@
       ]
     }
   },
+  "4031": {
+    "id": 4031,
+    "aegisName": "Pecopeco_Card",
+    "name": "Pecopeco Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP + 10%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "of Ares",
+    "script": {
+      "hpPercent": [
+        "10"
+      ]
+    }
+  },
   "4034": {
     "id": 4034,
     "aegisName": "Worm_Tail_Card",
@@ -5805,6 +5829,30 @@
       ],
       "spPercent": [
         "10"
+      ]
+    }
+  },
+  "4357": {
+    "id": 4357,
+    "aegisName": "B_Seyren_Card",
+    "name": "Lord Knight Card",
+    "unidName": "Lord Knight Card",
+    "resName": "이름없는카드",
+    "description": "สามารถใช้สกิล\nFrenzy Lv.1 ได้\nลด Max HP 50%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Fury",
+    "script": {
+      "hpPercent": [
+        "-50"
       ]
     }
   },
@@ -7242,6 +7290,31 @@
       "matkPercent": [
         "7",
         "SUM[dex==110]7"
+      ]
+    }
+  },
+  "4562": {
+    "id": 4562,
+    "aegisName": "Champion_Card",
+    "name": "Champion Chen Card",
+    "unidName": "Champion Chen Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อโดนโจมตีทางกายภาพ มีโอกาสสูงที่จะร่าย Infiltration Lv.5\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 7% , เมื่อ AGI 110 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูทุกระดับประเภทอีก 7%\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "of Penetrating",
+    "script": {
+      "p_class_all": [
+        "7",
+        "SUM[agi==110]===7"
       ]
     }
   },
@@ -22336,10 +22409,10 @@
         "int:108===50",
         "int:120===125"
       ],
-      "vct_inc": [
-        "int:8---1",
-        "int:108===4",
-        "int:120===6"
+      "vct": [
+        "int:8----1",
+        "int:108===-4",
+        "int:120===-6"
       ]
     }
   },
@@ -47966,6 +48039,45 @@
       ]
     }
   },
+  "27390": {
+    "id": 27390,
+    "aegisName": "S_Wolf_Card_E",
+    "name": "Wolf Lugenburg Card",
+    "unidName": "Wolf Lugenburg Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Insect 15%\nเมื่อใช้ร่วมกับ Poe Richard Card,\nATK +5%, MATK +5% และเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูขนาดกลาง 5%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "cardPrefix": "of Wolfe Lugenburg",
+    "script": {
+      "p_race_insect": [
+        "15"
+      ],
+      "m_race_insect": [
+        "15"
+      ],
+      "atkPercent": [
+        "EQUIP[Poe Richard Card]===5"
+      ],
+      "matkPercent": [
+        "EQUIP[Poe Richard Card]===5"
+      ],
+      "p_size_m": [
+        "EQUIP[Poe Richard Card]===5"
+      ],
+      "m_size_m": [
+        "EQUIP[Poe Richard Card]===5"
+      ]
+    }
+  },
   "27394": {
     "id": 27394,
     "aegisName": "S_Kathryn_Card",
@@ -55302,7 +55414,7 @@
     "compositionPos": null,
     "script": {
       "range": [
-        "ACTIVE[Fear Breeze]2"
+        "ACTIVE_SKILL[Fear Breeze]2"
       ]
     }
   },
@@ -55328,7 +55440,7 @@
         "0.5"
       ],
       "range": [
-        "ACTIVE[Fear Breeze]4"
+        "ACTIVE_SKILL[Fear Breeze]4"
       ]
     }
   },
@@ -55354,7 +55466,7 @@
         "1.5"
       ],
       "range": [
-        "ACTIVE[Fear Breeze]7"
+        "ACTIVE_SKILL[Fear Breeze]7"
       ]
     }
   },
@@ -64069,7 +64181,7 @@
     "name": "Abysmal Sropho Card",
     "unidName": "Abysmal Sropho Card",
     "resName": "이름없는카드",
-    "description": "Increases wind property magical damage by 3%.\r\nIf refine rate is 9 or higher, increases wind property magical damage by additional 2%.\r\nIf refine rate is 11 or higher, increases wind property magical damage by additional 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind 3%\nเมื่ออัพเกรด Weapon ถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind ขึ้นอีก 2%\nเมื่ออัพเกรด Weapon ถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind ขึ้นอีก 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64095,7 +64207,7 @@
     "name": "Abysmal Obeaune Card",
     "unidName": "Abysmal Obeaune Card",
     "resName": "이름없는카드",
-    "description": "Matk + 30.\r\nWhen equipped with Boiling Water Piranha Card, increases magical damage against water property enemies by 15%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "description": "MATK +30\nเมื่อใช้กับ Boiling Water Piranha Card,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Water 15%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64122,7 +64234,7 @@
     "name": "Abysmal Deviace Card",
     "unidName": "Abysmal Deviace Card",
     "resName": "이름없는카드",
-    "description": "Increases physical damage against water property enemies and fish race monsters by 5%.\r\nIf refine rate is 7 or higher, increases physical damage against water property enemies and fish race monsters by additional 5%.\r\nIf refine rate is 9 or higher, increases physical damage against water property enemies and fish race monsters by additional 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Water, มอนสเตอร์เผ่า Fish 5%\nเมื่ออัพเกรด Weapon ถึงขั้น 7 เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Water 5%\nเมื่ออัพเกรด Weapon ถึงขั้น 9 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Fish 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64137,12 +64249,10 @@
     "script": {
       "p_element_water": [
         "5",
-        "7===5",
-        "9===5"
+        "7===5"
       ],
       "p_race_fish": [
         "5",
-        "7===5",
         "9===5"
       ]
     }
@@ -64153,7 +64263,7 @@
     "name": "Abysmal Merman Card",
     "unidName": "Abysmal Merman Card",
     "resName": "이름없는카드",
-    "description": "Atk + 4 per 15 base Str.\r\nWhen equipped with Abysmal King Dramoh, increases critical damage by 15%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Shoes^000000\r\nWeight: ^7777771^000000",
+    "description": "ทุก ๆ Base STR 15, ATK +4\nเมื่อสวมใส่ร่วมกับ Abysmal King Dramoh Card, Critical Damage +15%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64180,7 +64290,7 @@
     "name": "Abysmal Witch Card",
     "unidName": "Abysmal Witch Card",
     "resName": "이름없는카드",
-    "description": "Increases fire and shadow property magical damage by 100%.\r\nIncreases damage taken from all property by 30%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Shadow 100%\nลดความต้านทานต่อการโจมตีทุกธาตุ 30%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64207,7 +64317,7 @@
     "name": "Abysmal Sedora Card",
     "unidName": "Abysmal Sedora Card",
     "resName": "이름없는카드",
-    "description": "Increases critical chance against fish race monsters by 30%.\r\nWhen equipped with Sedora Card, Increases critical damage by 15%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่มอัตราการเกิดคริติคอลต่อมอนสเตอร์เผ่า Fish 30%\nเมื่อใช้กับ Sedora Card, Critical Damage +15%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64220,6 +64330,9 @@
     "compositionPos": 0,
     "cardPrefix": "Fatal Fish",
     "script": {
+      "cri_race_fish": [
+        "30"
+      ],
       "criDmg": [
         "EQUIP[Sedora Card]===15"
       ]
@@ -64231,7 +64344,7 @@
     "name": "Abysmal Swordfish Card",
     "unidName": "Abysmal Swordfish Card",
     "resName": "이름없는카드",
-    "description": "Reduces damage taken from water property by 10%.\r\nIf refine rate is 9 or higher, increases magical damage against water property enemies by 10%.\r\nWhen equipped with Swordfish Card, Matk + 3%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Headgear^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่มความต้านทานต่อการโจมตีธาตุ Water 10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Water 10%\nเมื่อใช้กับ Swordfish Card, MATK +3%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64258,7 +64371,7 @@
     "name": "Abysmal Strouf Card",
     "unidName": "Abysmal Strouf Card",
     "resName": "이름없는카드",
-    "description": "MaxHP + 10%, MaxSP + 5%.\r\nIf refine rate is 9 or higher, increases physical and magical damage against water property enemies by 5%.\r\nWhen equipped with Abysmal Deviace Card, Atk + 30.\r\nWhen equipped with Abysmal Sropho Card, Matk + 30.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Armor^000000\r\nWeight: ^7777771^000000",
+    "description": "MaxHP +10%, MaxSP +5%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Water 5%\nเมื่อใช้กับ Abysmal Deviace Card, ATK +30\nเมื่อใช้กับ Abysmal Sropho Card, MATK +30\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64269,7 +64382,7 @@
     "requiredLevel": null,
     "location": null,
     "compositionPos": 16,
-    "cardPrefix": "Deep Sea",
+    "cardPrefix": "Deep sea",
     "script": {
       "hpPercent": [
         "10"
@@ -64297,7 +64410,7 @@
     "name": "Abysmal Phen Card",
     "unidName": "Abysmal Phen Card",
     "resName": "이름없는카드",
-    "description": "Reduces damage taken from neutral property by 15%.\r\nIncreases wind property magical damage by 3% per refine rate.\r\nWhen equipped with Abysmal Obeaune Card, reduces damage taken from neutral property by additional 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่มความต้านทานต่อการโจมตีธาตุ Neutral 15%\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind 3%\nเมื่อใช้กับ Abysmal Obeaune Card,\nเพิ่มความต้านทานต่อการโจมตีธาตุ Neutral ขึ้นอีก 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64321,7 +64434,7 @@
     "name": "Abysmal King Dramoh Card",
     "unidName": "Abysmal King Dramoh Card",
     "resName": "이름없는카드",
-    "description": "MaxHP - 5%.\r\nAtk + 1% per 3 refine rate.\r\nWhen equipped with King Dramoh Card, Str + 4, MaxHP + 15%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Headgear^000000\r\nWeight: ^7777771^000000",
+    "description": "MaxHP -5%\nทุก ๆ การอัพเกรด 3 ขั้น ATK +1%\nเมื่อใช้กับ King Dramoh Card, STR +4, MaxHP +15%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -64352,7 +64465,7 @@
     "name": "Abysmal Kraken Card",
     "unidName": "Abysmal Kraken Card",
     "resName": "이름없는카드",
-    "description": "Increases long ranged physical damage by 25%.\r\nPerfect Hit + 5.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 25%\nPerfect Hit +5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -66865,7 +66978,7 @@
     "name": "Catherine Gaebolg Card",
     "unidName": "Catherine Gaebolg Card",
     "resName": "이름없는카드",
-    "description": "Increases damage taken from neutral property by 10%, increases melee physical damage by 5%.\r\nIncreases melee physical damage by additional 4% per 2 refine rate.\r\nWhen equipped with Helmut Lugenburg Card, increases melee physical damage by 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "description": "ลดความต้านทานต่อการโจมตีธาตุ Neutral 10%, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 4%\nเมื่อใช้ร่วมกับ Helmut Lugenburg Card เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -66891,7 +67004,7 @@
     "name": "Friedrich S. Heine Card",
     "unidName": "Friedrich S. Heine Card",
     "resName": "이름없는카드",
-    "description": "Increases damage taken from neutral property by 10%, increases all property magical damage by 5%.\r\nIncreases all property magical damage by additional 4% per 2 refine rate.\r\nWhen equipped with Meyer Lugenburg Card, increases all property magical damage by 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "description": "ลดความต้านทานต่อการโจมตีธาตุ Neutral 10%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุขึ้นอีก 4%\nเมื่อใช้ร่วมกับ Meyer Lugenburg Card เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -66917,7 +67030,7 @@
     "name": "Crux Findel Card",
     "unidName": "Crux Findel Card",
     "resName": "이름없는카드",
-    "description": "Increases damage taken from neutral property by 10%, increases long ranged physical damage by 5%.\r\nIncreases long ranged physical damage by additional 4% per 2 refine rate.\r\nWhen equipped with Helmut Lugenburg Card, increases long ranged physical damage by 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "description": "ลดความต้านทานต่อการโจมตีธาตุ Neutral 10%, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 4%\nเมื่อใช้ร่วมกับ Helmut Lugenburg Card เพิ่ม Damage ทางกายภาพระยะไกล 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -67465,6 +67578,46 @@
       ],
       "Reverberation": [
         "EQUIP[Alphoccio's Memory&&Biolab Cape(Melee)||Biolab Cape(Range)||Biolab Cape(Magic)]REFINE[garment==3]---5"
+      ]
+    }
+  },
+  "300553": {
+    "id": 300553,
+    "aegisName": null,
+    "name": "4th Anniversary Card",
+    "unidName": "4th Anniversary Card",
+    "resName": "이름없는카드",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll Status +4\n\nเมื่อใช้ร่วมกับ 1st Anniversary Card,\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 5%\n\nเมื่อใช้ร่วมกับ 2nd Anniversary Card,\nลด Delay หลังใช้สกิล 5%\n\nเมื่อใช้ร่วมกับ 1st Anniversary Card และ 2nd Anniversary Card,\nCRI +10\nลด Delay หลังใช้สกิล 5%\nลดระยะเวลาร่ายแบบแปรผัน 10%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Highness",
+    "script": {
+      "allStatus": [
+        "4"
+      ],
+      "m_my_element_all": [
+        "EQUIP[1st Anniversary Card]===10"
+      ],
+      "p_class_all": [
+        "EQUIP[1st Anniversary Card]===5"
+      ],
+      "acd": [
+        "EQUIP[2nd Anniversary Card]===5",
+        "EQUIP[1st Anniversary Card&&2nd Anniversary Card]===5"
+      ],
+      "cri": [
+        "EQUIP[1st Anniversary Card&&2nd Anniversary Card]===10"
+      ],
+      "vct": [
+        "EQUIP[1st Anniversary Card&&2nd Anniversary Card]===10"
       ]
     }
   },
@@ -74899,9 +75052,9 @@
     "id": 400053,
     "aegisName": "Morrigane_Helm_IL",
     "name": "Illusion Morrigane's Helm [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "Morrigane_Helm_IL",
-    "description": "Str + 5, Cri + 5.\nIf refine rate is 7 or higher, Atk + 50.\nIf refine rate is 9 or higher, increases attack speed (reduces delay after attack by 10%).\n\nWhen equipped with Illusion Morrigane's Manteau, Belt and Pendant,\nStr + 5, Atk + 10%, Cri + 5, MaxHP + 10%, MaxSP + 10%, increases physical damage against small size monsters by 20%.\nIf the sum of refine rate is 18 or higher, Perfect Dodge + 10, Atk + 50.\nIf the sum of refine rate is 22 or higher, increases critical damage by 20%, increases physical damage against medium size monsters by 20%.\n^ffffff_^000000\nClass: ^777777Headgear^000000 Defense: ^77777715^000000\nLocation: ^777777Upper ^000000 Weight: ^77777750^000000\nRequired Level: ^777777130^000000\nJobs: ^777777All except Novice^000000",
+    "description": "หมวกที่เป็นสัญลักษณ์ของผู้นำในหมู่เทพีแห่งสงคราม ภาพเทาทะมึนของเธอแจ่มชัดอย่างมาก\nSTR +5, CRI +5\nเมื่ออัพเกรดถึงขั้น 7, ATK +50\nเมื่ออัพเกรดถึงขั้น 9, ASPD +10%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Morrigane's Manteau/Belt/Pendant,\nSTR +5, ATK +10%, CRI +5, MaxHP/MaxSP +10% และเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ขนาดเล็ก 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป Perfect Dodge +10, ATK +50\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป Critical Damage +20% และเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ขนาดกลาง 20%\n^ffffff_^000000\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777715^000000\nตำแหน่ง : ^777777Upper ^000000 น้ำหนัก : ^77777750^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพยกเว้น Novice^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -75919,6 +76072,84 @@
       ]
     }
   },
+  "410018": {
+    "id": 410018,
+    "aegisName": "Booster_Mask_A",
+    "name": "Booster Mask A-Type [1]",
+    "unidName": "Ribbon",
+    "resName": "포티어의가면",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nหน้ากากที่ตกแต่งด้วยขนนกสีแดง\n\nลด Delay หลังใช้สกิล 8%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 130,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "8"
+      ]
+    }
+  },
+  "410019": {
+    "id": 410019,
+    "aegisName": "Booster_Mask_B",
+    "name": "Booster Mask B-Type [1]",
+    "unidName": "Ribbon",
+    "resName": "네로가면",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nหน้ากากที่ตกแต่งด้วยขนนกสีน้ำเงิน\n\nลดระยะเวลาร่ายแบบแปรผัน 8%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 130,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "8"
+      ]
+    }
+  },
+  "410020": {
+    "id": 410020,
+    "aegisName": "Booster_Mask_C",
+    "name": "Booster Mask C-Type [1]",
+    "unidName": "Ribbon",
+    "resName": "아네모스가면",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nหน้ากากที่ตกแต่งด้วยขนนกสีเขียวอ่อน\n\nASPD +8%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 130,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspdPercent": [
+        "8"
+      ]
+    }
+  },
   "410071": {
     "id": 410071,
     "aegisName": "Demons_Familiar_",
@@ -76239,6 +76470,116 @@
       ],
       "cd__Water Insignia": [
         "USED[Sorcerer]===55"
+      ]
+    }
+  },
+  "410333": {
+    "id": 410333,
+    "aegisName": null,
+    "name": "Karasu Tengu Mask [1]",
+    "unidName": "Smile",
+    "resName": "타나토스의슬픔가면",
+    "description": "ATK +40\nลด Delay หลังใช้สกิล 10%\nเมื่อโจมตีทางกายภาพ มีโอกาส 5% ที่จะฟื้นฟู HP 5% ของ Damage ที่ทำ\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะฟื้นฟู SP 3% ของ Damage ที่ทำ\n\nเมื่อ Base STR ตั้งแต่ 120 ขึ้นไป,\nATK +60 เพิ่มเติม\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\nเพิ่ม Damage ทางกายภาพระยะไกล 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "40",
+        "SUM[str==120]===60"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_element_all": [
+        "SUM[str==120]===15"
+      ],
+      "range": [
+        "SUM[str==120]===15"
+      ]
+    }
+  },
+  "410335": {
+    "id": 410335,
+    "aegisName": null,
+    "name": "Wishing Tree [1]",
+    "unidName": "Hat",
+    "resName": "소원종이모자",
+    "description": "INT +10\nMATK +100\nลดระยะเวลาร่ายแบบแปรผัน 15%\n\nเมื่อ Base DEX ตั้งแต่ 120 ขึ้นไป,\nINT +10, MATK +150 เพิ่มเติม\nลดระยะเวลาร่ายแบบแปรผันลงอีก 15%\nลด Delay หลังใช้สกิล 5%\n\nเมื่อใช้กับ Tendrillion Card,\nทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 2%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "10",
+        "SUM[dex==120]===10"
+      ],
+      "matk": [
+        "100",
+        "SUM[dex==120]===150"
+      ],
+      "vct": [
+        "15",
+        "SUM[dex==120]===15"
+      ],
+      "acd": [
+        "SUM[dex==120]===5"
+      ],
+      "m_element_all": [
+        "EQUIP[Tendrillion Card]REFINE[weapon==1]---2"
+      ]
+    }
+  },
+  "410337": {
+    "id": 410337,
+    "aegisName": null,
+    "name": "Cherub Coronet [1]",
+    "unidName": "Ribbon",
+    "resName": "GorgonCoronet",
+    "description": "STR +10\nATK +140\nเพิ่มปริมาณการฟื้นฟูของ Heal 30%\nเพิ่มปริมาณการฟื้นฟูของ Heal ที่ได้รับ 15%\nเพิ่มความต้านทานต่อสถานะ Bleeding, Chaos 100%\n\nเมื่อ Base INT ตั้งแต่ 120 ขึ้นไป,\nATK +200 เพิ่มเติม\nเพิ่มปริมาณการฟื้นฟูของ Heal ขึ้นอีก 50%\nเพิ่มปริมาณการฟื้นฟูของ Heal ที่ได้รับขึ้นอีก 30%\nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 10%\nลดระยะเวลาร่ายแบบแปรผันสกิล Coluseo Heal 100%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "str": [
+        "10"
+      ],
+      "atk": [
+        "140",
+        "SUM[int==120]===200"
+      ],
+      "p_class_boss": [
+        "SUM[int==120]===10"
       ]
     }
   },
@@ -76843,6 +77184,39 @@
       ],
       "m_race_all": [
         "EQUIP[Illusion Armor A-type||Illusion Armor B-type]8"
+      ]
+    }
+  },
+  "420342": {
+    "id": 420342,
+    "aegisName": null,
+    "name": "Wireless Security Drone",
+    "unidName": "Hat",
+    "resName": "C_Mobile_Pursuit_System",
+    "description": "เมื่อโจมตีทางกายภาพ มีโอกาส 2% ที่จะฟื้นฟู HP 2% ของ Damage ที่ทำ\nเมื่อโจมตีทางกายภาพ มีโอกาส 1% ที่จะฟื้นฟู SP 1% ของ Damage ที่ทำ\n\nเมื่อกำจัดมอนสเตอร์ด้วยเวทมนตร์ ฟื้นฟู HP 300 หน่วยและ SP 5 หน่วย\nลด Delay หลังใช้สกิล 3%\nเพิ่ม EXP ที่ได้รับจากมอนสเตอร์ 8%\n\nเมื่อสวมใส่ร่วมกับ Automatic Engine Wing C-Type,\nเพิ่ม EXP ที่ได้รับจากมอนสเตอร์ขึ้นอีก 4%\nทุก ๆ การอัพเกรด Garment 2 ขั้น เพิ่ม EXP ที่ได้รับจากมอนสเตอร์ขึ้นอีก 1%\n\nเมื่อสวมใส่ร่วมกับ Automatic Armor A-Type หรือ Automatic Armor B-Type,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 8%\nทุก ๆ การอัพเกรด Armor 2 ขั้น ลด Delay หลังใช้สกิล 1%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777745^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 45,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "3",
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor==2]---1"
+      ],
+      "p_race_all": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]===8"
+      ],
+      "m_race_all": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]===8"
       ]
     }
   },
@@ -81661,9 +82035,9 @@
     "id": 450144,
     "aegisName": "Saint_Robe_IL",
     "name": "Illusion Saint Robe [1]",
-    "unidName": "Robe",
+    "unidName": "Cotton Shirt",
     "resName": "Saint_Robe_IL",
-    "description": "MaxHP + 10%, MaxSP + 10%.\nMdef + 10.\nIf refine rate is 9 or higher, reduces physical and magical damage taken from fish race monsters by 15%.\nIf refine rate is 11 or higher, ignores defense rate of fish race monsters by 20%.\n\nWhen equipped with Illusion Combo Battle Glove, Atk + 30.\nIf refine rate of each is 7 or higher, Atk + 5%.\nIf the sum of refine rate is 18 or higher, increases Sky Blow damage by 20%.\nIf the sum of refine rate is 22 or higher, reduces global cooldown by 10%.\n^ffffff_^000000\nClass: ^777777Armor^000000  Defense: ^77777760^000000\nWeight: ^77777760^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Acolyte classes, Merchant classes^000000",
+    "description": "ชุดสำหรับนักบวชที่ทำจากสีเขียว และมีพลังปกปักษ์ซึ่งเป็นพรจากพระเจ้า\nMaxHP/MaxSP +10%\nMDEF +10\nเมื่ออัพเกรดถึงขั้น 9 ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์เผ่า Fish 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์เผ่า Fish 20%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Combo Battle Glove, ATK +30\nเมื่อ Illusion Saint Robe และ Illusion Combo Battle Glove อัพเกรดตั้งแต่ 7 ขึ้นไป ATK +5%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Sky Blow 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ลด Delay หลังใช้สกิล 10%\n^ffffff_^000000\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Acolyte Class, Merchant Class^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 513,
@@ -81709,9 +82083,9 @@
     "id": 450145,
     "aegisName": "Water_Sprits_Armor_IL",
     "name": "Illusion Saphien's Armor of Ocean [1]",
-    "unidName": "Armor",
+    "unidName": "Wooden Mail",
     "resName": "Water_Sprits_Armor_IL",
-    "description": "MaxHP + 10%.\nMaxHP + 125 per refine rate.\nIf refine rate is 7 or higher, Def + 50.\nIf refine rate is 9 or higher, when dealing physical damage, has a chance to reduce damage taken from water property by 15% for 5 seconds.\n^ffffff_^000000\nClass: ^777777Armor^000000  Defense: ^77777750^000000\nWeight: ^777777220^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Swordsman classes, Merchant classes^000000",
+    "description": "ชุดเกราะที่สวมใส่แล้วจะรู้สึกถึงความหนาวเหน็บราวกับจะเสียดแทงเข้าไปถึงกระดูก\nตัวชุดเกราะจะมอบธาตุ Water ให้\nMaxHP +10%\nทุก ๆ การอัพเกรด 1 ขั้น MaxHP +125\nเมื่ออัพเกรดถึงขั้น 7, DEF +50\nเมื่ออัพเกรดถึงขั้น 9 เมื่อถูกโจมตีทางกายภาพ มีโอกาสที่จะเพิ่มความต้านทานต่อการโจมตีธาตุ Water 15% เป็นเวลา 5 วินาที\n^ffffff_^000000\nประเภท : ^777777Armor^000000 พลังป้องกัน : ^77777750^000000\nน้ำหนัก : ^777777220^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Class, Merchant Class^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 513,
@@ -81742,9 +82116,9 @@
     "id": 450146,
     "aegisName": "Chain_Mail_IL",
     "name": "Illusion Chain Mail [1]",
-    "unidName": "Armor",
+    "unidName": "Wooden Mail",
     "resName": "Chain_Mail_IL",
-    "description": "MaxHP + 10%, MaxSP + 10%.\nAtk + 4 per refine rate.\nIncreases physical damage against fire and water property enemies by 4% per 3 refine rate.\nIf refine rate is 9 or higher, Atk + 10%.\n\nWhen equipped with Illusion Katar of Frozen Icicle, Atk + 5%.\nIf refine rate of each is 7 or higher, Cri + 5.\nIf the sum of refine rate is 18 or higher, increases critical damage by 15%.\nIf the sum of refine rate is 22 or higher, increases physical damage against fire property enemies and insect race monsters by 10%.\n^ffffff_^000000\nClass: ^777777Armor^000000  Defense: ^77777770^000000\nWeight: ^777777330^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Swordsman classes, Merchant classes, Thief classes^000000",
+    "description": "ชุดเกราะที่ประกอบขึ้นจากเหล็กแกร่ง\nMaxHP/MaxSP +10%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Fire, Water 4%\nเมื่ออัพเกรดถึงขั้น 9, ATK +10%\nเมื่ออัพเกรดถึงขั้น 11, ASPD +10%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Katar of Frozen Icicle, ATK +5%\nเมื่อ Illusion Chain Mail และ Illusion Katar of Frozen Icicle อัพเกรดตั้งแต่ 7 ขึ้นไป CRI +5\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป Critical Damage +15%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Fire, มอนสเตอร์เผ่า Insect 10%\n^ffffff_^000000\nประเภท : ^777777Armor^000000 พลังป้องกัน : ^77777770^000000\nน้ำหนัก : ^777777330^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Class, Merchant Class, Thief Class^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 513,
@@ -84085,9 +84459,9 @@
     "id": 480054,
     "aegisName": "Morrigane_Manyeau_IL",
     "name": "Illusion Morrigane's Manteau [1]",
-    "unidName": "Garment",
+    "unidName": "Hood",
     "resName": "Morrigane_Manyeau_IL",
-    "description": "Luk + 5, Flee + 20.\nIf refine rate is 7 or higher, increases physical damage against demon, fish, insect and demihuman race monsters by 5%.\nIf refine rate is 9 or higher, increases physical damage against demon, fish, insect and demihuman race monsters by additional 10%.\n^ffffff_^000000\nClass: ^777777Garment^000000  Defense: ^77777712^000000\nWeight: ^77777760^000000\nRequired Level: ^777777130^000000\nJobs: ^777777All except Novice^000000",
+    "description": "เสื้อคลุมสีเทาทำจากขนอีกาที่มีฤทธิ์ของ Morrigan เทพธิดาแห่งนกกาสีเทา\nLUK +5, FLEE +20\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Demon, Fish, Insect, Demi-Human 5%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Demon, Fish, Insect, Demi-Human ขึ้นอีก 10%\n^ffffff_^000000\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^77777712^000000\nน้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพยกเว้น Novice^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 515,
@@ -85297,6 +85671,77 @@
       ],
       "range": [
         "13===20"
+      ]
+    }
+  },
+  "480451": {
+    "id": 480451,
+    "aegisName": null,
+    "name": "Automatic Engine Wing C-Type [1]",
+    "unidName": "Muffler",
+    "resName": "메카닉윙",
+    "description": "สามารถใช้สกิล Greed Lv. 1\nMaxHP +2500\n\nทุก ๆ การอัพเกรด 2 ขั้น ATK/MATK +10\n\nเมื่ออัพเกรดถึงขั้น 7,\nASPD +10%, ลดระยะเวลาร่ายแบบแปรผัน 15%, CRI +10\n\nเมื่ออัพเกรดถึงขั้น 9,\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%, MATK +10%\n\nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกลขึ้นอีก 7%, MATK +10% เพิ่มเติม\n\nเมื่อสวมใส่ร่วมกับ Automatic Armor A-Type หรือ Automatic Armor B-Type,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 21 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์เผ่า Dragon, Fish, Demon 30%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777735^000000\nน้ำหนัก : ^77777780^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 35,
+    "weight": 80,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "2500"
+      ],
+      "atk": [
+        "2---10"
+      ],
+      "matk": [
+        "2---10"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "vct": [
+        "7===15"
+      ],
+      "cri": [
+        "7===10"
+      ],
+      "melee": [
+        "9===10",
+        "11===7"
+      ],
+      "range": [
+        "9===10",
+        "11===7"
+      ],
+      "matkPercent": [
+        "9===10",
+        "11===10"
+      ],
+      "p_pene_race_dragon": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor,garment==21]===30"
+      ],
+      "p_pene_race_fish": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor,garment==21]===30"
+      ],
+      "p_pene_race_demon": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor,garment==21]===30"
+      ],
+      "m_pene_race_dragon": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor,garment==21]===30"
+      ],
+      "m_pene_race_fish": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor,garment==21]===30"
+      ],
+      "m_pene_race_demon": [
+        "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor,garment==21]===30"
       ]
     }
   },
@@ -86968,9 +87413,9 @@
     "id": 490069,
     "aegisName": "Morrigane_Belt_IL",
     "name": "Illusion Morrigane's Belt [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Morrigane_Belt_IL",
-    "description": "Str + 3, MaxHP + 5%.\n\nWhen equipped with Illusion Morrigane's Pendant,\nincreases attack speed (reduces delay after attack by 10%).\n^ffffff_^000000\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\nWeight: ^77777720^000000\nRequired Level: ^777777130^000000\nJobs: ^777777All except Novice^000000",
+    "description": "เข็มขัดที่ถูกเก็บเป็นมรดกตกทอด เคยครอบครองโดยนักรบ Cu Chulainn ที่สละชีพในสงคราม\nSTR +3, MaxHP +5%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Morrigane's Pendant, ASPD +10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพยกเว้น Novice^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -87003,9 +87448,9 @@
     "id": 490070,
     "aegisName": "Morrigane_Pendant_IL",
     "name": "Illusion Morrigane's Pendant [1]",
-    "unidName": "Accessory",
+    "unidName": "Ring",
     "resName": "Morrigane_Pendant_IL",
-    "description": "Atk + 20, Cri + 5.\n^ffffff_^000000\nWhen equipped with Illusion Morrigane's Belt,\nAtk + 10%.\n^ffffff_^000000\nClass: ^777777Accessory (Left)^000000 Defense: ^7777770^000000\nWeight: ^77777720^000000\nRequired Level: ^777777130^000000\nJobs: ^777777All except Novice^000000",
+    "description": "สร้อยคอที่ Morrigan ได้รับจาก Cu Chulainn ผู้เป็นที่รัก เป็นเครื่องหมายของความรักที่แน่วแน่แม้จะถูกเขาทอดทิ้งไป\nATK +20, CRI +5\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Morrigane's Belt,\nATK +10%\n^ffffff_^000000\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพยกเว้น Novice^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -90125,6 +90570,63 @@
       ]
     }
   },
+  "490565": {
+    "id": 490565,
+    "aegisName": "aegisName_490565",
+    "name": "[Event] 4th Anniversary Glove [1]",
+    "unidName": "[Event] 4th Anniversary Glove",
+    "resName": "림닐의장갑",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nถุงมือที่ทำขึ้นเพื่อมอบให้กับผู้กล้าที่สามารถพิชิตความท้าทายในระยะเวลากิจกรรมได้\n\nMaxHP/MaxSP +5%\nATK/MATK +10%\nลด Delay หลังใช้สกิล 10%\n\nเมื่อสวมใส่ร่วมกับ Automatic Booster R,\nเมื่อโจมตีทางกายภาพ มีโอกาส 2% ที่จะฟื้นฟู SP 1% ของ Damage ที่ทำ\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Automatic Booster L,\nลด Delay หลังใช้สกิล 5%\nเพิกเฉยต่อพลังป้องกันทางกายภาพของทุกเผ่า 20% (ยกเว้น Player)\n\nเมื่อสวมใส่ร่วมกับ Automatic Battle Chip R,\nลดระยะเวลาร่ายแบบแปรผัน 15%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Automatic Battle Chip L,\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่า 20% (ยกเว้น Player)\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hpPercent": [
+        "5"
+      ],
+      "spPercent": [
+        "5"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "mtkPercent": [
+        "10"
+      ],
+      "acd": [
+        "10",
+        "EQUIP[Automatic Booster L]===5"
+      ],
+      "p_class_all": [
+        "EQUIP[Automatic Booster R]===10"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Automatic Booster L]===20"
+      ],
+      "vct": [
+        "EQUIP[Automatic Battle Chip R]===15"
+      ],
+      "m_class_all": [
+        "EQUIP[Automatic Battle Chip R]===10"
+      ],
+      "fct": [
+        "EQUIP[Automatic Battle Chip L]===0.5"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Automatic Battle Chip L]===20"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -90435,7 +90937,7 @@
     "name": "Pressure Genesis Booster Sword",
     "unidName": "Sword",
     "resName": "PG_B_Sword",
-    "description": "Can't be refined by normal means.\nMatk + 2%, Matk + 180.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases holy property magical damage by 1% per each level of Faith user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Gloria Domini and Genesis Ray damage by 25%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases holy property magical damage by 15%.\nIf refine rate is 13 or higher, increases Gloria Domini and Genesis Ray damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Sword^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Royal Guard^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nดาบมือเดียวที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nMATK +2%, MATK +180\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Faith 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 1%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Gloria Domini, Genesis Ray 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Gloria Domini, Genesis Ray ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -90484,7 +90986,7 @@
     "name": "Hell Tornado Booster Sword",
     "unidName": "Sword",
     "resName": "HS_T_Sword",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases melee physical damage by 2% per each level of Sword Training user learned.\nIf refine rate is 9 or higher, reduces global cooldown by 5%, increases Hell Plant and Cart Tornado damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by additional 10%, increases physical damage against all size enemies by 20%.\nIf refine rate is 13 or higher, increases Hell Plant and Cart Tornado damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Sword^000000 Attack: ^777777190^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Genetic^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nดาบมือเดียวที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Sword Mastery 1 เลเวล เพิ่ม Damage ทางกายภาพระยะใกล้ 2%\nเมื่ออัพเกรดถึงขั้น 9 ลด Delay หลังใช้สกิล 5%, เพิ่ม Damage สกิล Hell Plant, Cart Tornado Attack 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิลลงอีก 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Hell Plant, Cart Tornado Attack ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -90637,7 +91139,7 @@
     "name": "Super Psychic Booster Saber",
     "unidName": "Sword",
     "resName": "SP_B_Saber",
-    "description": "^000088Can't be refined by normal means.^000000\nMatk + 2%, Matk + 170.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 1%) per each level of Increase SP Recovery user learned.\nIf refine rate is 9 or higher, increases fire and neutral property magical damage by 10%, increases Psychic Wave damage by 25%, has a chance to auto-cast Psychic Wave level 2 when dealing normal melee physical damage.\nIf refine rate is 11 or higher, Matk + 10%, increases magical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Psychic Wave damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Sword^000000 Attack: ^777777130^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Novice classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nดาบมือเดียวที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nMATK +2%, MATK +170\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Increase SP Recovery 1 เลเวล ASPD +1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Neutral 10%, เพิ่ม Damage สกิล Psychic Wave 25%\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาสที่จะใช้สกิล Psychic Wave Lv. 2 โดยอัตโนมัติ\nเมื่ออัพเกรดถึงขั้น 11 MATK +10% เพิ่มเติม, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Psychic Wave ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777130^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Novice Class^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -90685,7 +91187,7 @@
     "name": "Super Ignition Booster Saber",
     "unidName": "Sword",
     "resName": "SI_B_Saber",
-    "description": "^000088Can't be refined by normal means.^000000\nCri + 15.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 1%) per each level of Sword Mastery user learned.\nIf refine rate is 9 or higher, increases critical damage by 10%, increases Ignition Break damage by 25%, has a chance to auto-cast Ignition Break level 2 when dealing normal melee physical damage.\nIf refine rate is 11 or higher, additional Cri + 15, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Ignition Break damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Sword^000000 Attack: ^777777190^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Novice classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nดาบมือเดียวที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nCRI +15\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Sword Mastery 1 เลเวล ASPD +1%\nเมื่ออัพเกรดถึงขั้น 9, Critical Damage +10%, เพิ่ม Damage สกิล Ignition Break 25%\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาสที่จะใช้สกิล Ignition Break Lv. 2 โดยอัตโนมัติ\nเมื่ออัพเกรดถึงขั้น 11, CRI +15 เพิ่มเติม, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Ignition Break ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Novice Class^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -91036,9 +91538,9 @@
     "id": 510018,
     "aegisName": "MF_B_Dagger",
     "name": "Magic Fatal Booster Dagger",
-    "unidName": "Dagger",
+    "unidName": "Knife",
     "resName": "MF_B_Dagger",
-    "description": "Can't be refined by normal means.\nMatk + 180.\nAtk + 2%, Matk + 2%.\nAtk + 3 and Matk + 3 per refine rate.\nAtk + 3 and Matk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases neutral property magical damage by 1% per each level of Intimidate user learned, reduces global cooldown by 1% per each level of Back Stab user learned.\nIf refine rate is 9 or higher, ASPD + 1, increases Fatal Menace damage by 25%.\nIf refine rate is 11 or higher, increases physical and magical damage against all size enemies by 15%, increases melee physical damage by 15%.\nIf refine rate is 13 or higher, increases Fatal Menace damage by additional 15%, increases Psychic Wave damage by 15%.\n^ffffff_^000000\nClass: ^777777Dagger^000000 Attack: ^777777190^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Shadow Chaser^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nมีดสั้นที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nMATK +180\nATK +2%, MATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3, MATK +3\nทุก ๆ Base Lv. 15, ATK +3, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Plagiarism 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 1%, ทุก ๆ การเรียนรู้สกิล Back Stab 1 เลเวล ลด Delay หลังใช้สกิล 1%\nเมื่ออัพเกรดถึงขั้น 9, ASPD +1, เพิ่ม Damage สกิล Fatal Menace 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Fatal Menace ขึ้นอีก 15%, เพิ่ม Damage สกิล Psychic Wave 15%\n^ffffff_^000000\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 256,
@@ -91546,10 +92048,10 @@
   "530005": {
     "id": 530005,
     "aegisName": "BC_B_Spear",
-    "name": "Vanishing Cannon Booster Spear",
+    "name": "Banishing Cannon Booster Spear",
     "unidName": "Spear",
     "resName": "BC_B_Spear",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 1%) per each level of Spear Quicken user learned.\nIf refine rate is 9 or higher, ASPD + 1, increases Vanishing Point and Cannon Spear damage by 25%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 15%, increases long ranged physical damage by 15%\nIf refine rate is 13 or higher, increases Vanishing Point and Cannon Spear damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Spear^000000 Attack: ^777777200^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Royal Guard^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nหอกมือเดียวที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Spear Quicken 1 เลเวล ASPD +1%\nเมื่ออัพเกรดถึงขั้น 9, ASPD +1, เพิ่ม Damage สกิล Over Brand, Banishing Point, Cannon Spear 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางกายภาพระยะใกล้/ระยะไกล 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Over Brand, Banishing Point, Cannon Spear ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Spear^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 259,
@@ -91891,7 +92393,7 @@
     "name": "Spell Bolt Booster Book",
     "unidName": "Book",
     "resName": "SB_B_Book",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nMatk + 2%, Matk + 160.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases water, wind, earth and fire property magical damage by 1% per each level of Hindsight user learned.\nIf refine rate is 9 or higher, ASPD + 1, increases Fire Bolt, Cold Bolt, Lightning Bolt, Earth Spike and Heaven's Drive damage by 25%.\nIf refine rate is 11 or higher, additional ASPD + 1, increases water, wind, earth and fire property magical damage by additional 15%.\nIf refine rate is 13 or higher, increases Fire Bolt, Cold Bolt, Lightning Bolt, Earth Spike and Heaven's Drive damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Book^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Sorcerer^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nตำราเวทย์ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +160.\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Auto Spell 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind, Earth, Fire 1%\nเมื่ออัพเกรดถึงขั้น 9, ASPD +1, เพิ่ม Damage สกิล Fire/Cold/Lightening Bolt, Earth Spike, Heaven's Drive 25%\nเมื่ออัพเกรดถึงขั้น 11, ASPD +1 เพิ่มเติม, เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind, Earth, Fire ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Fire/Cold/Lightening Bolt, Earth Spike, Heaven's Drive ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Book^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -92059,7 +92561,7 @@
     "name": "Moon Starlight Booster Book",
     "unidName": "Book",
     "resName": "ML_B_Book",
-    "description": "^000088Can't be refined by normal means.^000000\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases melee physical damage by 1% per each level of Kihop user learned.\nIf refine rate is 9 or higher, increases melee physical damage by additional 10%, increases Full Moon Kick, New Moon Kick and Falling Star damage by 25%.\nIf refine rate is 11 or higher, Atk + 10%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Full Moon Kick, New Moon Kick and Falling Star damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Book^000000 Attack: ^777777230^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Star Emperor^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nตำราที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Power 1 เลเวล เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 10%, เพิ่ม Damage สกิล Full Moon Kick, New Moon Kick, Falling Stars 25%\nเมื่ออัพเกรดถึงขั้น 11, ATK +10% เพิ่มเติม, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Full Moon Kick, New Moon Kick, Falling Stars ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Book^000000 พลังโจมตี : ^777777230^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Star Emperor^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -92109,7 +92611,7 @@
     "name": "Sunshine Booster Book",
     "unidName": "Book",
     "resName": "SS_B_Book",
-    "description": "^000088Can't be refined by normal means.^000000\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases melee physical damage by 1% per each level of Kihop user learned.\nIf refine rate is 9 or higher, increases melee physical damage by additional 10%, increases Prominence Kick and Solar Burst damage by 25%.\nIf refine rate is 11 or higher, Atk + 10%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Prominence Kick and Solar Burst damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Book^000000 Attack: ^777777230^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Star Emperor^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nตำราที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3. (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Power 1 เลเวล เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 10%, เพิ่ม Damage สกิล Blaze Kick, Solar Explosion 25%\nเมื่ออัพเกรดถึงขั้น 11, ATK +10% เพิ่มเติม, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Blaze Kick, Solar Explosion ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Book^000000 พลังโจมตี : ^777777230^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Star Emperor^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -92451,9 +92953,9 @@
     "id": 550010,
     "aegisName": "ES_B_Stick",
     "name": "Elemental Spell Booster Stick",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "ES_B_Stick",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nMatk + 2%, Matk + 160.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases water, wind, earth and neutral property magical damage by 1% per each level of Magnetic Earth user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Psychic Wave, Diamond Dust, Earth Grave and Varetyr Spear damage by 25%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases water, wind, earth and neutral property magical damage by additional 15%.\nIf refine rate is 13 or higher, increases Psychic Wave, Diamond Dust, Earth Grave and Varetyr Spear damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Staff^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Sorcerer^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nไม้คทามือเดียวที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +160\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Land Protector 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind, Earth, Neutral, Poison 1%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Psychic Wave, Diamond Dust, Earth Grave, Varetyr Spear, Poison Burst 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind, Earth, Neutral, Poison ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Psychic Wave, Diamond Dust, Earth Grave, Varetyr Spear, Poison Burst ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -92520,9 +93022,9 @@
     "id": 550011,
     "aegisName": "AN_B_Wand",
     "name": "Adonus Booster Wand",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "AN_B_Wand",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nMatk + 2%, Matk + 160.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases holy property magical damage by 1% per each level of Meditation user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Magnus Exorcismus and Adoramus damage by 25%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases holy property magical damage by additional 15%.\nIf refine rate is 13 or higher, increases Magnus Exorcismus and Adoramus damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Staff^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Archbishop^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nไม้คทามือเดียวที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +160\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Meditation 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 1%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Magnus Exorcismus, Adoramus 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Magnus Exorcismus, Adoramus ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Archbishop^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -92834,9 +93336,9 @@
     "id": 550050,
     "aegisName": "SP_B_Fox",
     "name": "Lunatic Picky Booster Foxtail",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "SP_B_Fox",
-    "description": "^000088Can't be refined by normal means.^000000\nCan't be destroyed.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by 2% per each level of Picky Peck user learned.\nIf refine rate is 9 or higher, increases long ranged physical damage by 10%, increases Picky Peck and Lunatic Carrot Beat damage by 25%.\nIf refine rate is 11 or higher, increases long ranged physical damage by additional 10%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Picky Peck and Lunatic Carrot Beat damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Staff^000000 Attack: ^777777280^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Summoner (Doram)^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nหางจิ้งจอกที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Picky Peck 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Lunatic Carrot Beat, Picky Peck 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Lunatic Carrot Beat, Picky Peck ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777280^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Summoner (Doram)^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -92880,9 +93382,9 @@
     "id": 550051,
     "aegisName": "GB_B_Fox",
     "name": "Catnip Booster Foxtail Model",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "GB_B_Fox",
-    "description": "^000088Can't be refined by normal means.^000000\nMatk + 2%, Matk + 280.\nReduces skill cooldown of Catnip Meteor by 1.5 seconds.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, Matk + 2% per each level of Silvervine Stem Spear user learned.\nIf refine rate is 9 or higher, increases all property magical damage by 10%, increases Silvervine Stem Spear and Catnip Meteor damage by 25%.\nIf refine rate is 11 or higher, reduces variable casting time by 10%, increases magical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Silvervine Stem Spear and Catnip Meteor damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Staff^000000 Attack: ^777777120^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Summoner (Doram)^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nหางจิ้งจอกที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nMATK +2%, MATK +280\nลด Cooldown สกิล Catnip Meteor 1.5 วินาที\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Silvervine Stem Spear 1 เลเวล MATK +2%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Silvervine Stem Spear, Catnip Meteor 25%\nเมื่ออัพเกรดถึงขั้น 11 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Silvervine Stem Spear, Catnip Meteor ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777120^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Summoner (Doram)^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -92932,9 +93434,9 @@
     "id": 550052,
     "aegisName": "ES_B_Staff",
     "name": "Es Booster Staff",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "ES_B_Staff",
-    "description": "^000088Can't be refined by normal means.^000000\r\nCan't be destroyed.\r\nMatk + 2%, Matk + 175.\r\nMatk + 3 per refine rate.\r\nMatk + 3 per 15 base level (up to level 195).\r\nIf refine rate is 7 or higher, reduces variable casting time by 1% per each level of Happy Break user learned.\r\nIf refine rate is 9 or higher, increases all property magical damage by 10%, increases Espa and Eswhoo damage by 25%.\r\nIf refine rate is 11 or higher, reduces variable casting time by additional 10%, increases magical damage against all size enemies by 15%.\r\nIf refine rate is 13 or higher, increases Espa and Eswhoo damage by additional 15%.\r\n^ffffff_^000000\r\nClass: ^777777Staff^000000 Attack: ^777777110^000000\r\nWeight: ^7777770^000000\r\nWeapon Level: ^7777774^000000\r\nRequired Level: ^777777100^000000\r\nJobs: ^777777Soul Reaper^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคทาเวทย์ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +175\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Happy Break 1 เลเวล ลดระยะเวลาร่ายแบบแปรผัน 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Espa, Eswhoo 25%\nเมื่ออัพเกรดถึงขั้น 11 ลดระยะเวลาร่ายแบบแปรผันลงอีก 10%, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Espa, Eswhoo ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777110^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Soul Reaper^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -92981,9 +93483,9 @@
     "id": 550053,
     "aegisName": "EC_B_Staff",
     "name": "Evil Curse Booster Staff",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "EC_B_Staff",
-    "description": "^000088Can't be refined by normal means.^000000\r\nCan't be destroyed.\r\nMatk + 2%, Matk + 175.\r\nMatk + 3 per refine rate.\r\nMatk + 3 per 15 base level (up to level 195).\r\nIf refine rate is 7 or higher, reduces variable casting time by 1% per each level of Happy Break user learned.\r\nIf refine rate is 9 or higher, increases all property magical damage by 10%, increases Curse Explosion damage by 25%.\r\nIf refine rate is 11 or higher, reduces skill cooldown of Evil spirit's Curse by 2 seconds, increases magical damage against all size enemies by 15%.\r\nIf refine rate is 13 or higher, increases shadow property magical damage by 25%, increases Curse Explosion damage by additional 15%.\r\n^ffffff_^000000\r\nClass: ^777777Staff^000000 Attack: ^777777110^000000\r\nWeight: ^7777770^000000\r\nWeapon Level: ^7777774^000000\r\nRequired Level: ^777777100^000000\r\nJobs: ^777777Soul Reaper^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคทาเวทย์ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +175\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Happy Break 1 เลเวล ลดระยะเวลาร่ายแบบแปรผัน 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Curse Explosion 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Evil Soul Curse 2 วินาที, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow 25%, เพิ่ม Damage สกิล Curse Explosion ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777110^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Soul Reaper^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -93307,9 +93809,9 @@
     "id": 560006,
     "aegisName": "PS_B_Knuckle",
     "name": "Rampage Arrow Booster Knuckle",
-    "unidName": "Knuckle",
+    "unidName": "Claw",
     "resName": "PS_B_Knuckle",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by 1% per each level of Summon Spirit Sphere user learned.\nIf refine rate is 9 or higher, MaxSP + 10%, increases Rampage Blast and Knuckle Arrow damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by 10%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Rampage Blast and Knuckle Arrow damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Knuckle^000000 Attack: ^777777190^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Sura^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nกรงเล็บที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Vigor condensation 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 9, MaxSP +10%, เพิ่ม Damage สกิล Rampage Blast, Knuckle Arrow 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Rampage Blast, Knuckle Arrow ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Sura^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 268,
@@ -93357,9 +93859,9 @@
     "id": 560007,
     "aegisName": "CP_B_Knuckle",
     "name": "Sky Cannon Booster Knuckle",
-    "unidName": "Knuckle",
+    "unidName": "Claw",
     "resName": "CP_B_Knuckle",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nMaxHP + 250 and MaxSP + 20 per refine rate.\nAtk + 1% per 15 base level (up to level 195).\nIf refine rate is 7 or higher, MaxSP + 2% per each level of Raging Quadruple Blow user learned.\nIf refine rate is 9 or higher, additional Atk + 5%, increases Sky Blow and Tiger Cannon damage by 25%.\nIf refine rate is 11 or higher, reduces skill cooldown of Tiger Cannon by 1 second, increases melee physical damage by 15%.\nIf refine rate is 13 or higher, increases Sky Blow and Tiger Cannon damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Knuckle^000000 Attack: ^777777190^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Sura^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nกรงเล็บที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น MaxHP +250, MaxSP +20\nทุก ๆ Base Lv. 15, ATK +1% (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Chain Combo 1 เลเวล MaxHP +2%\nเมื่ออัพเกรดถึงขั้น 9, ATK +5% เพิ่มเติม, เพิ่ม Damage สกิล Sky Blow, Tiger Cannon 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Tiger Cannon 1 วินาที, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Sky Blow, Tiger Cannon ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Sura^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 268,
@@ -93654,9 +94156,9 @@
     "id": 570008,
     "aegisName": "Electronic_Guitar_IL",
     "name": "Illusion Electric Guitar [2]",
-    "unidName": "Musical Instrument",
+    "unidName": "Violin",
     "resName": "Electronic_Guitar_IL",
-    "description": "Matk + 180\nMatk + 6 and increases long ranged physical damage by 3% per 2 refine rate.\nIf refine rate is 7 or higher, increases neutral property magical damage by 10%, reduces SP consumption of Severer Rainstorm by 10%.\nIf refine rate is 9 or higher, increases Reverberation and Severe Rainstorm damage by 15%.\nIf refine rate is 11 or higher, increases magical damage against water property monsters by 10%, reduces skill cooldown of Severe Rainstorm by 1 second.\n\nWhen equipped with Illusion Muffler, Atk + 30\nIf refine rate of each is 7 or higher, increases long ranged physical damage by 5%.\nIf the sum of refine rate is 18 or higher, increases Severe Rainstorm damage by 20%.\nIf the sum of refine rate is 22 or higher, reduces skill cooldown of Severe Rainstorm by 1 second.\n\nWhen equipped with Illusion Shoes, Matk + 40\nIf refine rate of each is 7 or higher, increases neutral property magical damage by 5%.\nIf the sum of refine rate is 18 or higher, increases Reverberation damage by 20%.\nIf the sum of refine rate is 22 or higher, reduces fixed casting time of Reverberation by 0.5 seconds.\n^ffffff_^000000\nClass: ^777777Instrument^000000 Attack: ^777777170^000000\nWeight: ^777777180^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Minstrel^000000",
+    "description": "ถึงแม้รูปลักษณ์จะเป็นกีต้าร์ทั่วไป แต่มีการติดตั้งเครื่องขยายเสียงและใช้สายเหล็ก ทำให้มีพละกำลังมหาศาลกว่ามาก\nMATK +180\nทุก ๆ การอัพเกรด 2 ขั้น MATK +6 และเพิ่ม Damage ทางกายภาพระยะไกล 3%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 10% และลดปริมาณการใช้ SP สกิล Severe Rainstorm 10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Reverberation และ Severe Rainstorm 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ธาตุ Water 10% และลด Cooldown สกิล Severe Rainstorm 1 วินาที\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Muffler, ATK +30\nเมื่อ Illusion Electric Guitar และ Illusion Muffler อัพเกรดตั้งแต่ 7 ขึ้นไป เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Severe Rainstorm 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ลด Cooldown สกิล Severe Rainstorm 1 วินาที\n^ffffff_^000000\nเมื่อสวมใส่รวมกับ Illusion Shoes, MATK +40\nเมื่อ Illusion Electric Guitar และ Illusion Shoes อัพเกรดตั้งแต่ 7 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 5%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Reverberation 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ลดระยะเวลาร่ายแบบคงที่สกิล Reverberation 0.5 วินาที\n^ffffff_^000000\nประเภท : ^777777Instrument^000000 พลังโจมตี : ^777777170^000000\nน้ำหนัก : ^777777180^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 269,
@@ -93758,10 +94260,10 @@
   "570010": {
     "id": 570010,
     "aegisName": "MV_B_Violin",
-    "name": "Metallic Vibration Booster Violin",
-    "unidName": "Musical Instrument",
+    "name": "Metalic Vibration Booster Violin",
+    "unidName": "Violin",
     "resName": "MV_B_Violin",
-    "description": "Can't be refined by normal means.\nMatk + 2%, Matk + 180.\nMatk + 3 per refine rate.\nMatk + 1% per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases all property magical damage by 2% per each level of Music Lessons user learned.\nIf refine rate is 9 or higher, reduces skill cooldown of Metallic Sound by 2 seconds, increases Reverberation and Metallic Sound damage by 25%.\nIf refine rate is 11 or higher, reduces fixed casting time of Reverberation by 0.5 seconds, increases all property magical damage by additional 15%.\nIf refine rate is 13 or higher, increases Reverberation and Metallic Sound damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Instrument^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Minstrel^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nไวโอลินที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nMATK +2%, MATK +180\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +1% (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Musical Lesson 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 2%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Metalic Sound 2 วินาที, เพิ่ม Damage สกิล Reverberation, Metalic Sound 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Reverberation 0.5 วินาที, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Reverberation, Metalic Sound ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Instrument^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 269,
@@ -93808,9 +94310,9 @@
     "id": 570024,
     "aegisName": "RS_B_Violin",
     "name": "Rainstorm Booster Violin",
-    "unidName": "Musical Instrument",
+    "unidName": "Violin",
     "resName": "서늘한바이올린",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by by 2% per each level of Music Lessons user learned.\nIf refine rate is 9 or higher, reduces skill cooldown of Severe Rainstorm by 1 second, increases Severe Rainstorm damage by 25%.\nIf refine rate is 11 or higher, reduces skill cooldown of Severe Rainstorm by additional 1 second, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Severe Rainstorm damage by additional 15%.\nClass: ^777777Instrument^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Minstrel classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nไวโอลินที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Musical Lesson 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Severe Rainstorm 1 วินาที, เพิ่ม Damage สกิล Severe Rainstorm 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Severe Rainstorm ลงอีก 1 วินาที, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Severe Rainstorm ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Instrument^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 269,
@@ -94005,7 +94507,7 @@
     "name": "Illusion Electric Eel [2]",
     "unidName": "Whip",
     "resName": "Electric_Eel_IL",
-    "description": "Matk + 180\nMatk + 6 and increases long ranged physical damage by 3% per 2 refine rate.\nIf refine rate is 7 or higher, increases neutral property magical damage by 10%, reduces SP consumption of Severer Rainstorm by 10%.\nIf refine rate is 9 or higher, increases Reverberation and Severe Rainstorm damage by 15%.\nIf refine rate is 11 or higher, increases magical damage against water property monsters by 10%, reduces skill cooldown of Severe Rainstorm by 1 second.\n\nWhen equipped with Illusion Muffler, Atk + 30\nIf refine rate of each is 7 or higher, increases long ranged physical damage by 5%.\nIf the sum of refine rate is 18 or higher, increases Severe Rainstorm damage by 20%.\nIf the sum of refine rate is 22 or higher, reduces skill cooldown of Severe Rainstorm by 1 second.\n\nWhen equipped with Illusion Shoes, Matk + 40\nIf refine rate of each is 7 or higher, increases neutral property magical damage by 5%.\nIf the sum of refine rate is 18 or higher, increases Reverberation damage by 20%.\nIf the sum of refine rate is 22 or higher, reduces fixed casting time of Reverberation by 0.5 seconds.\n^ffffff_^000000\nClass: ^777777Whip^000000 Attack: ^777777170^000000\nWeight: ^777777180^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Wanderer^000000",
+    "description": "แส้ที่ทำมาจากสิ่งมีชีวิตที่มีพลังไฟฟ้าสถิตย์รุนแรง ผิวลื่น ๆ ของมันทำให้รู้สึกไม่ดี\nMATK +180\nทุก ๆ การอัพเกรด 2 ขั้น MATK +6 และเพิ่ม Damage ทางกายภาพระยะไกล 3%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 10% และลดปริมาณการใช้ SP สกิล Severe Rainstorm 10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Reverberation และ Severe Rainstorm 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ธาตุ Water 10% และลด Cooldown สกิล Severe Rainstorm 1 วินาที\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Muffler, ATK +30\nเมื่อ Illusion Electric Eel และ Illusion Muffler อัพเกรดตั้งแต่ 7 ขึ้นไป เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Severe Rainstorm 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ลด Cooldown สกิล Severe Rainstorm 1 วินาที\n^ffffff_^000000\nเมื่อสวมใส่รวมกับ Illusion Shoes, MATK +40\nเมื่อ Illusion Electric Eel และ Illusion Shoes อัพเกรดตั้งแต่ 7 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 5%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Reverberation 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ลดระยะเวลาร่ายแบบคงที่สกิล Reverberation 0.5 วินาที\n^ffffff_^000000\nประเภท : ^777777Whip^000000 พลังโจมตี : ^777777170^000000\nน้ำหนัก : ^777777180^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Wanderer^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 270,
@@ -94107,10 +94609,10 @@
   "580010": {
     "id": 580010,
     "aegisName": "MV_B_Whip",
-    "name": "Metallic Vibration Booster Whip",
-    "unidName": "Whip",
+    "name": "Metalic Vibration Booster Whip",
+    "unidName": "Rope",
     "resName": "MV_B_Whip",
-    "description": "Can't be refined by normal means.\nMatk + 2%, Matk + 180.\nMatk + 3 per refine rate.\nMatk + 1% per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases all property magical damage by 2% per each level of Dance Lessons user learned.\nIf refine rate is 9 or higher, reduces skill cooldown of Metallic Sound by 2 seconds, increases Reverberation and Metallic Sound damage by 25%.\nIf refine rate is 11 or higher, reduces fixed casting time of Reverberation by 0.5 seconds, increases all property magical damage by additional 15%.\nIf refine rate is 13 or higher, increases Reverberation and Metallic Sound damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Whip^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Wanderer^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nแส้ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nMATK +2%, MATK +180\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +1% (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Dancing Lesson 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 2%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Metalic Sound 2 วินาที, เพิ่ม Damage สกิล Reverberation, Metalic Sound 25%\nเมื่ออัพเกรดถึงขั้น 11 ลดระยะเวลาร่ายแบบคงที่สกิล Reverberation 0.5 วินาที, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Reverberation, Metalic Sound ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Whip^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Wanderer^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 270,
@@ -94157,9 +94659,9 @@
     "id": 580024,
     "aegisName": "RS_B_Whip",
     "name": "Rainstorm Booster Whip",
-    "unidName": "Whip",
+    "unidName": "Rope",
     "resName": "서늘한채찍",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by by 2% per each level of Dance Lessons user learned.\nIf refine rate is 9 or higher, reduces skill cooldown of Severe Rainstorm by 1 second, increases Severe Rainstorm damage by 25%.\nIf refine rate is 11 or higher, reduces skill cooldown of Severe Rainstorm by additional 1 second, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Severe Rainstorm damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Whip^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Wanderer classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nแส้ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Dancing Lesson 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Severe Rainstorm 1 วินาที, เพิ่ม Damage สกิล Severe Rainstorm 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Severe Rainstorm ลงอีก 1 วินาที, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Severe Rainstorm ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Whip^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Wanderer^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 270,
@@ -94394,7 +94896,7 @@
     "name": "Arm Knuckle Booster Mace",
     "unidName": "Mace",
     "resName": "AK_B_Mace",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by 2% per each level of Madogear License user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Knuckle Boost and Arm Cannon damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by 10%, increases physical damage against all size enemies by 20%.\nIf refine rate is 13 or higher, increases Knuckle Boost and Arm Cannon damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Mace^000000 Attack: ^777777400^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Mechanic^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nกระบองที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Madogear License 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Vulcan Arm, Knuckle Boost, Arm Cannon 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Vulcan Arm, Knuckle Boost, Arm Cannon ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777400^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 263,
@@ -94444,7 +94946,7 @@
     "name": "Acid Cannon Booster Club",
     "unidName": "Mace",
     "resName": "AC_B_Club",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by 2% per each level of Potion Research user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Acid Bomb and Cart Cannon damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by 10%, increases physical damage against all size enemies by 20%.\nIf refine rate is 13 or higher, increases Acid Bomb and Cart Cannon damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Mace^000000 Attack: ^777777190^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Genetic^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nกระบองที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Learning Potion 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 2%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Acid Demonstration, Cart Cannon 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Acid Demonstration, Cart Cannon ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 263,
@@ -94494,7 +94996,7 @@
     "name": "Dupledex Booster Mace",
     "unidName": "Mace",
     "resName": "DD_B_Mace",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nAtk + 2%, Matk + 2%, Matk + 160.\nAtk + 3 and Matk + 3 per refine rate.\nAtk + 3 and Matk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases melee physical damage and holy property magical damage by 1% per each level of Meditation user learned.\nIf refine rate is 9 or higher, reduces variable casting time and global cooldown by 10%, increases Judex and Duple Light damage by 25%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases holy property magical damage by 15%.\nIf refine rate is 13 or higher, increases Judex and Duple Light damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Mace^000000 Attack: ^777777190^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Archbishop^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคทาที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nATK +2%, MATK +2%, MATK +160\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3, MATK +3\nทุก ๆ Base Lv. 15, ATK +3, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Meditation 1 เลเวล เพิ่ม Damage ทางกายภาพระยะใกล้ 1%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 1%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage สกิล Judex, Duple Light 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Judex, Duple Light ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Archbishop^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 263,
@@ -94831,9 +95333,9 @@
     "id": 600011,
     "aegisName": "Death_Guidance_IL",
     "name": "Illusion Death Guidance [2]",
-    "unidName": "Two-handed Sword",
+    "unidName": "Bastard Sword",
     "resName": "Death_Guidance_IL",
-    "description": "Atk + 4 per refine rate.\nIf refine rate is 7 or higher, increases Storm Blast damage by 20%.\nIf refine rate is 9 or higher, when dealing physical damage, has a 3% chance to recover HP as 50 times of refine rate per second for 4 times.\nIf refine rate is 11 or higher, Cri + 15, increases critical damage by 15%.\n\nWhen equipped with Illusion Chain Mail, Atk + 30.\nIf refine rate of each is 7 or higher, Cri + 5.\nIf the sum of refine rate is 18 or higher, increases Storm Blast damage by 20%.\nIf the sum of refine rate is 22 or higher, increases physical damage against water property enemies and fish race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Two-handed Sword^000000 Attack: ^777777240^000000\nWeight: ^777777200^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Swordsman classes^000000",
+    "description": "อาวุธต้องคำสาปที่มีไว้เพื่อทำลายมวลมนุษยชาติ คำสาปของดาบนี้มีผลต่อผู้ใช้อาจทำให้เข้าสู่ด้านมืดได้\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Storm Blast 20%\nเมื่ออัพเกรดถึงขั้น 9 เมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะฟื้นฟู HP 50 หน่วยต่อการอัพเกรด 1 ขั้นทุก ๆ วินาทีทั้งหมด 4 ครั้ง\nเมื่ออัพเกรดถึงขั้น 11, CRI +15, Critical Damage +15%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Chain Mail, ATK +30\nเมื่อ Illusion Death Guidance และ Illusion Chain Mail อัพเกรดตั้งแต่ 7 ขึ้นไป CRI +5\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Storm Blast 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Water, มอนสเตอร์เผ่า Fish 15%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^777777240^000000\nน้ำหนัก : ^777777200^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Hi-Swordsman Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 258,
@@ -94874,10 +95376,10 @@
   "600012": {
     "id": 600012,
     "aegisName": "IW_B_T_Sword",
-    "name": "Ignition Wave Booster Two-handed Sword",
-    "unidName": "Two-handed Sword",
+    "name": "Ignition Wave Booster Two-Handed Sword",
+    "unidName": "Two-Handed Sword",
     "resName": "IW_B_T_Sword",
-    "description": "Can't be refined by normal means.\nCri + 15.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 1%) per each level of Two Hand Quicken user learned.\nIf refine rate is 9 or higher, increases critical damage by 10%, increases Ignition Break and Sonic Wave damage by 25%, has a high chance to auto-cast Sonic Wave which has level as user learned when dealing normal melee damage\nIf refine rate is 11 or higher, additional Cri + 15, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Ignition Break and Sonic Wave damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Two-handed Sword^000000 Attack: ^777777250^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Rune Knight^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nดาบสองมือที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nCRI +15\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Two hand Quicken 1 เลเวล ASPD +1%\nเมื่ออัพเกรดถึงขั้น 9, Critical Damage +10%, เพิ่ม Damage สกิล Wind Cutter, Ignition Break, Sonic Wave 25%\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาสสูงที่จะใช้งานสกิล Sonic Wave ตามเลเวลที่เรียนรู้โดยอัตโนมัติ\nเมื่ออัพเกรดถึงขั้น 11, CRI +15 เพิ่มเติม, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Wind Cutter, Ignition Break, Sonic Wave ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 258,
@@ -95158,9 +95660,9 @@
     "id": 610012,
     "aegisName": "KatarOfCold_Icicle_IL",
     "name": "Illusion Katar of Frozen Icicle [2]",
-    "unidName": "Katar",
+    "unidName": "Jur",
     "resName": "KatarOfCold_Icicle_IL",
-    "description": "Atk + 5 per refine rate.\nIf refine rate is 7 or higher, increases Cross Impact damage by 20%.\nIf refine rate is 9 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 11 or higher, Cri + 15, increases physical damage against fire property enemies and insect race monsters by 10%.\n\nWhen equipped with Illusion Ring, Atk + 5%.\nIf refine rate of Illusion Katar of Frozen Icicle is 9 or higher, increases critical damage by 20%.\nIf refine rate of Illusion Katar of Frozen Icicle is 11 or higher, Gains Cri + 15 for 30 seconds when using Venom Impression.\n^ffffff_^000000\nClass: ^777777Katar^000000 Attack: ^777777220^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Assassin classes^000000",
+    "description": "กาตาร์ทำมาจากน้ำแข็งอันเย็นเฉียบและแหลมคมที่อาจทำให้ศัตรูถูกแช่แข็ง\nทุก ๆ การอัพเกรด 1 ขั้น ATK +5\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Cross Impact 20%\nเมื่ออัพเกรดถึงขั้น 9, ASPD +10%\nเมื่ออัพเกรดถึงขั้น 11, CRI +15 และเพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Fire, มอนสเตอร์เผ่า Insect 10%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Ring, ATK +5%\nเมื่อ Illusion Katar of Frozen Icicle อัพเกรดถึงขั้น 9, Critical Damage +20%\nเมื่อ Illusion Katar of Frozen Icicle อัพเกรดถึงขั้น 11 เมื่อใช้สกิล Venom Impression, CRI +15 เป็นเวลา 30 วินาที\n^ffffff_^000000\nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777220^000000\nน้ำหนัก : ^777777120^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Assassin Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 272,
@@ -95206,9 +95708,9 @@
     "id": 610013,
     "aegisName": "RC_B_Katar",
     "name": "Rolling Cross Booster Katar",
-    "unidName": "Katar",
+    "unidName": "Jur",
     "resName": "RC_B_Katar",
-    "description": "Cri + 15.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases melee physical damage by 2% per each level of Advanced Katar Mastery user learned.\nIf refine rate is 9 or higher, reduces global cooldown by 5%, increases Cross Impact and Rolling Cutter damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by additional 10%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Cross Impact and Rolling Cutter damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Katar^000000 Attack: ^777777200^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Guillotine Cross^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nกาตาร์ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nCRI +15\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Advanced Katar Mastery 1 เลเวล เพิ่ม Damage ทางกายภาพระยะใกล้ 2%\nเมื่ออัพเกรดถึงขั้น 9 ลด Delay หลังใช้สกิล 5%, เพิ่ม Damage สกิล Cross Impact, Rolling Cutter 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิลลงอีก 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Cross Impact, Rolling Cutter ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 272,
@@ -95254,9 +95756,9 @@
     "id": 610028,
     "aegisName": "CA_B_Katar",
     "name": "Counter Assault Booster Katar",
-    "unidName": "Katar",
+    "unidName": "Jur",
     "resName": "어벤저블러디로어",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, reduces global cooldown by 1% per 2 level of Katar Mastery user learned.\nIf refine rate is 9 or higher, increases melee physical damage by 10%, increases Meteor Assault and Counter Slash damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by additional 10%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Meteor Assault and Counter Slash damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Katar^000000 Attack: ^777777240^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Guillotine Cross classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nกาตาร์ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Katar Mastery 2 เลเวล ลด Delay หลังใช้สกิล 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะใกล้ 10%, เพิ่ม Damage สกิล Meteor Assault, Counter Slash 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิลลงอีก 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Meteor Assault, Counter Slash ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777240^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 272,
@@ -95301,10 +95803,10 @@
   "620003": {
     "id": 620003,
     "aegisName": "PT_B_Axe",
-    "name": "Power Swing Booster Axe",
-    "unidName": "Two-handed Axe",
+    "name": "Power Tornado Booster Axe",
+    "unidName": "Axe",
     "resName": "PT_B_Axe",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases melee physical damage by 1% per each level of Weaponry Research user learned.\nIf refine rate is 9 or higher, reduces skill cooldown of Axe Tornado by 1 second, increases Axe Tornado and Power Swing damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by 10%, increases physical damage against all size enemies by 20%.\nIf refine rate is 13 or higher, increases Axe Tornado and Power Swing damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Two-handed Axe^000000 Attack: ^777777300^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Mechanic^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nขวานสองมือที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Weaponry Research 1 เลเวล เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Axe Tornado 1 วินาที, เพิ่ม Damage สกิล Axe Tornado, Power Swing 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Axe Tornado, Power Swing ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Axe^000000 พลังโจมตี : ^777777300^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 262,
@@ -95430,9 +95932,9 @@
     "id": 630006,
     "aegisName": "Brionac_IL",
     "name": "Illusion Brionac [2]",
-    "unidName": "Spear",
+    "unidName": "Lance",
     "resName": "Brionac_IL",
-    "description": "Atk + 10%\nIncreases Overbrand damage by 5% per 2 refine rate.\nIf refine rate is 7 or higher, increases Overbrand damage by additional 20%.\nIf refine rate is 9 or higher, increases physical damage against medium and large size enemies by 15%.\nIf refine rate is 11 or higher, increases physical damage against fish and demon race monsters by 30%.\n\nWhen equipped with Illusion Saphien's Armor of Ocean, Atk + 5%.\nIf refine rate of each is 7 or higher, reduces global cooldown by 5%.\nIf the sum of refine rate is 18 or higher, increases Overbrand damage by 20%.\nIf the sum of refine rate is 22 or higher, when using Overbrand, has a chance to gain Atk + 50 and increases physical damage against fish and demon race monsters by 50% for 10 seconds.\n^ffffff_^000000\nClass: ^777777Two-handed Spear^000000 Attack: ^777777210^000000\nWeight: ^777777300^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Swordsman classes^000000",
+    "description": "หอกที่เปล่งรัศมีศักดิ์สิทธิ์ออกมารอบทิศ ว่ากันว่าอาวุธนี้สามารถโจมตีศัตรูจำนวนมากได้ด้วยลำแสงของมัน\nATK +10%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Over Brand 5%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Over Brand ขึ้นอีก 20%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพต่อศัตรูขนาดกลาง, ใหญ่ 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Fish, Demon 30%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Saphien's Armor of Ocean, ATK +5%\nเมื่อ Illusion Brionac และ Illusion Saphien's Armor of Ocean อัพเกรดตั้งแต่ 7 ขึ้นไป ลด Delay หลังใช้สกิล 5%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Over Brand 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เมื่อใช้สกิล Over Brand มีโอกาสที่จะเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Fish, Demon 50% และ ATK +50 เป็นเวลา 10 วินาที\n^ffffff_^000000\nประเภท : ^777777Two-Handed Spear^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777300^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 260,
@@ -95486,9 +95988,9 @@
     "id": 630007,
     "aegisName": "Zephyrus_IL",
     "name": "Illusion Zephyrus [2]",
-    "unidName": "Spear",
+    "unidName": "Lance",
     "resName": "Zephyrus_IL",
-    "description": "Atk + 4 per refine rate.\nIncreases long ranged physical damage by 3% per 2 refine rate.\nIf refine rate is 7 or higher, increases Clashing Spiral damage by 20%.\nIf refine rate is 9 or higher, increases long ranged physical damage by additional 5%.\nIf refine rate is 11 or higher, Hit + 10, increases physical damage against medium and large size monsters by 10%.\n\nWhen equipped with Illusion Chain Mail, Atk + 30.\nIf refine rate of each is 7 or higher, increases long ranged physical damage by 5%.\nIf the sum of refine rate is 18 or higher, increases Clashing Spiral damage by 20%.\nIf the sum of refine rate is 22 or higher, increases physical damage against water property enemies and fish race monsters by 15%.\n^ffffff_^000000\nClass: ^777777Two-handed Spear^000000 Attack: ^777777250^000000\nWeight: ^777777330^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Swordsman classes^000000",
+    "description": "หอกที่โค้งเว้ารูปร่างคล้ายสายฟ้าแลบ มีคุณสมบัติตัดและเฉือนในเวลาเดียวกัน\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 3%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Clashing Spiral 20%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 5%\nเมื่ออัพเกรดถึงขั้น 11, HIT + 10 และเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ขนาดกลาง, ใหญ่ 10%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Chain Mail, ATK +30\nเมื่อ Illusion Zephyrus และ Illusion Chain Mail อัพเกรดตั้งแต่ 7 ขึ้นไป เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Clashing Spiral 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Water, มอนสเตอร์เผ่า Fish 15%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Spear^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777330^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 260,
@@ -95537,9 +96039,9 @@
     "id": 630008,
     "aegisName": "HB_B_T_Spear",
     "name": "Hundred Breath Booster Spear",
-    "unidName": "Two-handed Spear",
+    "unidName": "Lance",
     "resName": "HB_B_T_Spear",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nMaxHP + 250 and MaxSP + 20 per refine rate.\nAtk + 1% per 15 base level (up to level 195).\nIf refine rate is 7 or higher, reduces global cooldown by 3% per each level of Dragon Training user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Dragon Breath, Dragon Breath - Water and Hundred Spears damage by 25%.\nIf refine rate is 11 or higher, reduces skill cooldown of Hundred Spears by 2 seconds, increases long ranged physical damage by 15%.\nIf refine rate is 13 or higher, increases Dragon Breath, Dragon Breath - Water and Hundred Spears damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Two-handed Spear^000000 Attack: ^777777250^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Rune Knight^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nหอกสองมือที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น MaxHP +250, MaxSP +20\nทุก ๆ Base Lv. 15, ATK +1% (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Dragon Training 1 เลเวล ลด Delay หลังใช้สกิล 3%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - WATER, Hundred Spears 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Hundred Spears 2 วินาที, เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - WATER, Hundred Spears ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Spear^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 260,
@@ -95752,9 +96254,9 @@
     "id": 640009,
     "aegisName": "CS_B_Staff",
     "name": "Crimson Strain Booster Staff",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "CS_B_Staff",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nMatk + 2%, Matk + 230.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases fire and earth property magical damage by 1% per each level of Mystical Amplification user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Crimson Rock and Earth Strain damage by 25%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases fire and earth property magical damage by additional 15%.\nIf refine rate is 13 or higher, increases Crimson Rock and Earth Strain damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Two-handed Staff^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Warlock^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคทาสองมือที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +230\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Mystical Amplification 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Earth, Neutral 1%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Crimson Rock, Earth Strain, Comet 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Earth, Neutral ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Crimson Rock, Earth Strain, Comet ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Staff^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 266,
@@ -95805,9 +96307,9 @@
     "id": 640010,
     "aegisName": "CJ_B_Staff",
     "name": "Chain Jack Booster Staff",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "CJ_B_Staff",
-    "description": "Can't be refined by normal means.\nCan't be destroyed.\nMatk + 2%, Matk + 230.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases wind and water property magical damage by 1% per each level of Mystical Amplification user learned.\nIf refine rate is 9 or higher, reduces global cooldown by 10%, increases Chain Lightning and Jack Frost damage by 25%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases wind and water property magical damage by additional 15%.\nIf refine rate is 13 or higher, increases Chain Lightning and Jack Frost damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Two-handed Staff^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Warlock^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคทาสองมือที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +230\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Mystical Amplification 1 เลเวล เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind, Water, Ghost 1%\nเมื่ออัพเกรดถึงขั้น 9 ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage สกิล Chain Lightning, Jack Frost, Soul Expansion 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind, Water, Ghost ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Chain Lightning, Jack Frost, Soul Expansion ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Two-Handed Staff^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 266,
@@ -96076,7 +96578,7 @@
     "name": "Wind Spear Petal Booster Huuma Shuriken",
     "unidName": "Huuma Shuriken",
     "resName": "FCH_B_Huuma",
-    "description": "^000088Can't be refined by normal means.^000000\nCan't be destroyed.\nMatk + 2%, Matk + 220.\nMatk + 3 per refine rate.\nMatk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, reduces variable casting time by 1% per each level of Ninja Mastery user learned.\nIf refine rate is 9 or higher, increases fire, water and wind property magical damage by 10%, increases Flaming Petals, Freezing Spear and Wind Blade damage by 25%.\nIf refine rate is 11 or higher, reduces variable casting time by additional 10%, increases magical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases shadow property magical damage by 25%, increases Flaming Petals, Freezing Spear and Wind Blade damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Huuma Shuriken^000000 Attack: ^777777150^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Kagerou classes, Oboro classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nดาวกระจายที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nMATK +2%, MATK +220\nทุก ๆ การอัพเกรด 1 ขั้น MATK +3\nทุก ๆ Base Lv. 15, MATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Ninja Mastery 1 เลเวล ลดระยะเวลาร่ายแบบแปรผัน 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Water, Wind 10%, เพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade 25%\nเมื่ออัพเกรดถึงขั้น 11 ลดระยะเวลาร่ายแบบแปรผันลงอีก 10%, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Kagerou, Oboro^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 278,
@@ -96139,7 +96641,7 @@
     "name": "Cross Petal Booster Huuma Shuriken",
     "unidName": "Huuma Shuriken",
     "resName": "SN_B_Huuma",
-    "description": "^000088Can't be refined by normal means.^000000\nCan't be destroyed.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by 1% per each level of Dagger Throwing Practice user learned.\nIf refine rate is 9 or higher, reduces skill cooldown of Cross Slash by 2 seconds, increases long ranged physical damage by additional 10%, increases Cross Slash and Swirling Petal damage by 25%.\nIf refine rate is 11 or higher, reduces skill cooldown of Swirling Petal by 2 seconds, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Cross Slash and Swirling Petal damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Huuma Shuriken^000000 Attack: ^777777250^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Kagerou classes, Oboro classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nดาวกระจายที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nไม่สามารถทำลายได้\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Dagger Throwing Practice 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Cross Slash 2 วินาที, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 10%, เพิ่ม Damage สกิล Cross Slash, Swirling Petal 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Swirling Petal 2 วินาที, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Cross Slash, Swirling Petal ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Kagerou, Oboro^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 278,
@@ -96441,7 +96943,7 @@
     "name": "Triangle Bomb Booster Bow",
     "unidName": "Bow",
     "resName": "TB_B_Bow",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, reduces global cooldown by 1% per 2 level of Vulture's Eye user learned.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, increases Triangle Shot and Feint Bomb damage by 25%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 15%, increases long ranged physical damage by 15%.\nIf refine rate is 13 or higher, increases Triangle Shot and Feint Bomb damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Bow^000000 Attack: ^777777210^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Shadow Chaser^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคันธนูที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Vulture's Eye 2 เลเวล ลด Delay หลังใช้สกิล 1%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Triangle Shot, Feint Bomb 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Triangle Shot, Feint Bomb ขึ้นอีก 25%\n^ffffff_^000000\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
@@ -96491,7 +96993,7 @@
     "name": "Arrow Booster Bow",
     "unidName": "Bow",
     "resName": "AS_B_Bow",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by by 1% per each level of Owl's Eye user learned.\nIf refine rate is 9 or higher, MaxSP + 10%, increases Arrow Storm damage by 25%.\nIf refine rate is 11 or higher, reduces skill cooldown of Arrow Storm by 0.7 seconds, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Arrow Storm damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Bow^000000 Attack: ^777777205^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Ranger^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคันธนูที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Owl's Eye 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9, MaxSP +10%, เพิ่ม Damage สกิล Arrow Storm 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Arrow Storm 0.7 วินาที, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Arrow Storm ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Ranger^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
@@ -96537,7 +97039,7 @@
     "name": "Sharpbolt Booster Bow",
     "unidName": "Bow",
     "resName": "SB_B_Bow",
-    "description": "Can't be refined by normal means.\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by by 1% per each level of Vulture's Eye user learned.\nIf refine rate is 9 or higher, reduces global cooldown by 10%, increases Focused Arrow Strike and Aimed Bolt damage by 25%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 15%, Atk + 10%.\nIf refine rate is 13 or higher, increases Focused Arrow Strike and Aimed Bolt damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Bow^000000 Attack: ^777777200^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Ranger^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nคันธนูที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Vulture's Eye 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage สกิล Focused Arrow Strike, Aimed Bolt 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%, ATK +10% เพิ่มเติม\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Focused Arrow Strike, Aimed Bolt ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Ranger^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
@@ -96776,9 +97278,9 @@
     "id": 800008,
     "aegisName": "DF_B_Revolver",
     "name": "Desperado Fire Booster Revolver",
-    "unidName": "Pistol",
+    "unidName": "Revolver",
     "resName": "DF_B_Revolver",
-    "description": "^000088Can't be refined by normal means.^000000\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by 1% per each level of Chain Action user learned.\nIf refine rate is 9 or higher, increases long ranged physical damage by additional 10%, increases Desperado and Fire Dance damage by 25%.\nIf refine rate is 11 or higher, reduces global cooldown by 15%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Desperado and Fire Dance damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Pistol^000000 Attack: ^777777220^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Gunslinger classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nปืนพกที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Chain Action 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 10%, เพิ่ม Damage สกิล Desperado, Fire Dance 25%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิล 15%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Desperado, Fire Dance ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Revolver^000000 พลังโจมตี : ^777777220^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Gunslinger^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 273,
@@ -97142,7 +97644,7 @@
     "name": "Fire Round Booster Gatling Gun",
     "unidName": "Gatling Gun",
     "resName": "FR_B_Gatling",
-    "description": "^000088Can't be refined by normal means.^000000\nAtk + 2%.\nAtk + 3 per refine rate.\nAtk + 3 per 15 base level (up to level 195).\nIf refine rate is 7 or higher, increases long ranged physical damage by 1% per each level of Single Action user learned.\nIf refine rate is 9 or higher, reduces skill cooldown of Fire Rain by 1 second, increases long ranged physical damage by additional 10%, increases Fire Rain and Round Trip damage by 25%.\nIf refine rate is 11 or higher, increases long ranged physical damage by additional 10%, increases physical damage against all size enemies by 15%.\nIf refine rate is 13 or higher, increases Fire Rain and Round Trip damage by additional 15%.\n^ffffff_^000000\nClass: ^777777Gatling Gun^000000 Attack: ^777777220^000000\nWeight: ^7777770^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777100^000000\nJobs: ^777777Gunslinger classes^000000",
+    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\n^ff0000ไม่สามารถฝากคลังได้^000000\nGatling Gun ที่ถูกสร้างขึ้นเพื่อช่วยเหลือการเติบโตของนักผจญภัย\n^000088ไม่สามารถอัพเกรดทั่วไปได้^000000\nATK +2%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 195)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Single Action 1 เลเวล เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Fire Rain 1 วินาที, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 10%, เพิ่ม Damage สกิล Fire Rain, Round Trip 25%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 10%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 13 เพิ่ม Damage สกิล Fire Rain, Round Trip ขึ้นอีก 15%\n^ffffff_^000000\nประเภท : ^777777Gatling Gun^000000 พลังโจมตี : ^777777220^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Gunslinger^000000",
     "slots": 0,
     "itemTypeId": 1,
     "itemSubTypeId": 275,
