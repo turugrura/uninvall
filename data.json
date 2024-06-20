@@ -2663,6 +2663,39 @@
       ]
     }
   },
+  "2015": {
+    "id": 2015,
+    "aegisName": "Upg_Staff",
+    "name": "Upgrade Staff [1]",
+    "unidName": "Two Hand Staff",
+    "resName": "강화스태프",
+    "description": "Staff ที่ถูกเคลือบด้วย Oridecon และ Gold ออกแบบมาได้อย่างสมบูรณ์แบบ\nMatk + 70.\nWizard Class : Matk + 30\nSage Class : Matk + 20\nMatk + 10 และ Heal เพิ่มขึ้น + 1% ต่อระดับการอัพเกรดทุกๆ 1 Lv. (ไม่รวมค่าอัพเกรดตามปกติ)\nหากตัวละครมี Lv. ตั้งแต่ 70 ขึ้นไป : เพิ่มค่า Matk + 10 ทุกๆ 10 BaseLv.\nประเภท : ^777777Two-Handed Staff^000000 พลังโจมตี : ^77777750^000000\nน้ำหนัก : ^777777100^000000\nLv. ของอาวุธ : ^7777773^000000\nLv. ที่ต้องการ : ^7777771^000000\nอาชีพ : ^777777Magician, Acolyte, Soul Linker Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 266,
+    "itemLevel": 3,
+    "attack": 50,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mage",
+      "Acolyte",
+      "Soul Linker"
+    ],
+    "script": {
+      "matk": [
+        "70",
+        "USED[Wizard]30",
+        "USED[Sage]20",
+        "1---10",
+        "SUM[level==70]===-70",
+        "SUM[level==10]---10"
+      ]
+    }
+  },
   "2023": {
     "id": 2023,
     "aegisName": "Thanos_Rod",
@@ -4391,6 +4424,35 @@
       ],
       "hp": [
         "500"
+      ]
+    }
+  },
+  "2985": {
+    "id": 2985,
+    "aegisName": "Gyges_Ring",
+    "name": "Gyges Ring [1]",
+    "unidName": "Accessory",
+    "resName": "기게스의반지",
+    "description": "แหวนทองที่มี skill hiding ซ่อนอยู่ ได้ยินมาว่าคนเลี้ยงแกะที่ชื่อ Gyges สังหารพระราชาและขโมยแหวนนี้มาจากพระราชินี\nINT + 3.\nMATK + 30.\nสามารถใช้ Skill \"Hiding 1Lv\" ได้\nประเภท : ^777777Accessary^000000 ป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nLv ที่ต้องการ : ^77777750^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 50,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "3"
+      ],
+      "matk": [
+        "30"
       ]
     }
   },
@@ -13224,6 +13286,70 @@
       ]
     }
   },
+  "5325": {
+    "id": 5325,
+    "aegisName": "Robo_Eye",
+    "name": "Robo Eye",
+    "unidName": "Glass",
+    "resName": "로보아이",
+    "description": "วัตถุลึกลับคล้ายดวงตา ดูเหมือนว่ามันจะมาจากอวกาศและสามารถปล่อยแสงออกมาได้\nเพิ่ม Damage ทางกายภาพ ต่อศัตรู ทุกประเภท 2 % , Matk + 2% , Dex +1\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nใช้สำหรับ : ^777777Middle^000000\nน้ำหนัก : ^77777720^000000\nLv ที่ต้องการ : ^77777710^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 2,
+    "weight": 20,
+    "requiredLevel": 10,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_class_all": [
+        "2"
+      ],
+      "matkPercent": [
+        "2"
+      ],
+      "dex": [
+        "1"
+      ]
+    }
+  },
+  "5359": {
+    "id": 5359,
+    "aegisName": "J_Captain_Hat",
+    "name": "Ship Captain Hat [1]",
+    "unidName": "Cap",
+    "resName": "선장모자",
+    "description": "นี่คือหมวกของกัปตันผู้คอยควบคุมเรือ\nDEX + 1. MHP + 100. เพิ่มพลังโจมตีระยะไกล 7 %.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777773^000000\nใช้สำหรับ : ^777777Upper^000000 น้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^77777760^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 3,
+    "weight": 30,
+    "requiredLevel": 60,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "dex": [
+        "1"
+      ],
+      "hp": [
+        "100"
+      ],
+      "range": [
+        "7"
+      ]
+    }
+  },
   "5389": {
     "id": 5389,
     "aegisName": "Angel_Spirit",
@@ -13250,6 +13376,51 @@
       ],
       "str": [
         "2"
+      ]
+    }
+  },
+  "5592": {
+    "id": 5592,
+    "aegisName": "Sigrun's_Wing",
+    "name": "Sigrun's Wing",
+    "unidName": "Accessory",
+    "resName": "사이그룬의날개",
+    "description": "หมวกรูปทรงปีกที่ปรับเข้ากันกับรูปทรงของนักรบได้อย่างน่าแปลกใจ\nASPD + 1 สำหรับ Knight, Theif, Merchant, Taegweon, Taekwon Master class.\nMATK + 5 สำหรับ Magician, Acolyte, Ninja, Soul linger class และ เพิ่มผลของ Heal ขึ้น 2%\nเพิ่มความแรงในการโจมตีระยะไกล 2% สำหรับ Archer, Gun slinger class.\nHP + 120, SP + 60 สำหรับ Novice และ Super Novice class.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nใช้สำหรับ : ^777777Middle ^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 2,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspd": [
+        "USED[Swordman]1",
+        "USED[Thief]1",
+        "USED[Merchant]1",
+        "USED[Taekwondo]1"
+      ],
+      "matk": [
+        "USED[Mage]5",
+        "USED[Acolyte]5",
+        "USED[Ninja]5",
+        "USED[Soul Linker]5"
+      ],
+      "range": [
+        "USED[Archer]2",
+        "USED[Gunslinger]2"
+      ],
+      "hp": [
+        "USED[Super Novice]120"
+      ],
+      "sp": [
+        "USED[Super Novice]60"
       ]
     }
   },
@@ -21611,7 +21782,7 @@
     "name": "Old Driver Band (Yellow) [1]",
     "unidName": "Cap",
     "resName": "드라이버밴드_",
-    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State + 1 \nทุกๆ การอัพเกรด 1 ขั้น ATK + 4\nทุกๆ การอัพเกรด 5 ขั้น ASPD + 1\nทุกๆ การอัพเกรด 2 ขั้น เพิ่ม Max HP และ Max SP ทีละ 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Arm Cannon 5%\nทุกๆ การอัพเกรด 4 ขั้น ลดคูลดาวน์สกิล Suicidal Destruction 10 วินาที\nประเภท : ^777777Helm^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State +1\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nทุก ๆ การอัพเกรด 2 ขั้น MaxHP/MaxSP +1%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Arm Cannon 15%\nทุก ๆ การอัพเกรด 4 ขั้น ลด Cooldown สกิล Suicidal Destruction 10 วินาที\nทุก ๆ การอัพเกรด 5 ขั้น ASPD +1\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -21642,7 +21813,7 @@
         "2---1"
       ],
       "Arm Cannon": [
-        "2---5"
+        "2---15"
       ],
       "cd__Suicidal Destruction": [
         "4---10"
@@ -21705,7 +21876,7 @@
     "name": "Old Maestro Song's Hat [1]",
     "unidName": "Cap",
     "resName": "민스트럴송의모자",
-    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State + 1 \nทุกๆ การอัพเกรด 1 ขั้น เพิ่มพลังโจมตีระยะไกล 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่ม Max HP และ Max SP ทีละ 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Arrow Vulcan 20%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Severe Rainstorm 5%\nประเภท : ^777777Helm^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Maestro^000000",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State +1\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่มพลังโจมตีทางกายภาพระยะไกล 1%\nทุก ๆ การอัพเกรด 2 ขั้น MaxHP/MaxSP +1%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Arrow Vulcan 20%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Severe Rainstorm 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -21736,7 +21907,7 @@
         "2---20"
       ],
       "Severe Rainstorm": [
-        "2---5"
+        "2---15"
       ]
     }
   },
@@ -21787,7 +21958,7 @@
     "name": "Old Magic Stone Hat [1]",
     "unidName": "Cap",
     "resName": "마력의돌모자",
-    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State + 1, MDEF+ 5, เพิ่มการฟื้นฟู SP 20%\nทุกๆ การอัพเกรด 1 ขั้น MATK + 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่ม Max HP และ Max SP ทีละ 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Soul Expansion 5%\nลดคูลดาวน์สกิล Crimson Rock 1 วินาที\nลดคูลดาวน์สกิล Crimson Rock ลง 0.1 วินาที ตามขั้นอัพเกรด\nประเภท : ^777777Helm^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State +1, MDEF +5, เพิ่มปริมาณการฟื้นฟู SP 20%\nทุก ๆ การอัพเกรด 1 ขั้น MATK +1%\nทุก ๆ การอัพเกรด 2 ขั้น MaxHP/MaxSP +1%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Soul Expansion 15%\nลด Cooldown สกิล Crimson Rock 1 วินาที\nลด Cooldown สกิล Crimson Rock ลงอีก 0.1 วินาที ตามขั้นอัพเกรด\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -21818,7 +21989,7 @@
         "2---1"
       ],
       "Soul Expansion": [
-        "2---5"
+        "2---15"
       ],
       "cd__Crimson Rock": [
         "1",
@@ -21921,9 +22092,9 @@
     "id": 18981,
     "aegisName": "Old_Dying_Swan",
     "name": "Old Dying Swan [1]",
-    "unidName": "Helm",
+    "unidName": "Cap",
     "resName": "빈사의백조",
-    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State + 1 \nทุกๆ การอัพเกรด 1 ขั้น เพิ่มพลังโจมตีระยะไกล 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่ม Max HP และ Max SP ทีละ 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Arrow Vulcan 20%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Severe Rainstorm 5%\nประเภท : ^777777Helm^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Wanderer^000000",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State +1\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่มพลังโจมตีทางกายภาพระยะไกล 1%\nทุก ๆ การอัพเกรด 2 ขั้น MaxHP/MaxSP +1%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Arrow Vulcan 20%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Severe Rainstorm 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Wanderer^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -21954,7 +22125,7 @@
         "2---20"
       ],
       "Severe Rainstorm": [
-        "2---5"
+        "2---15"
       ]
     }
   },
@@ -21964,7 +22135,7 @@
     "name": "Old Bone Circlet [1]",
     "unidName": "Helm",
     "resName": "뼈의서클릿",
-    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State + 1 \nทุกๆ การอัพเกรด 1 ขั้น เพิ่ม Critical Damage 1%, ASPD + 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่ม Max HP และ Max SP ทีละ 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Cross Impact 10%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Cross Ripper Slasher 20%\nประเภท : ^777777Helm^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross^000000",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State +1\nทุก ๆ การอัพเกรด 1 ขั้น Critical Damage +1%, ASPD +1%\nทุก ๆ การอัพเกรด 2 ขั้น MaxHP/MaxSP +1%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Cross Impact 15%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Cross Ripper Slasher 20%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -21995,7 +22166,7 @@
         "2---1"
       ],
       "Cross Impact": [
-        "2---10"
+        "2---15"
       ],
       "Cross Ripper Slasher": [
         "2---20"
@@ -22008,7 +22179,7 @@
     "name": "Old Casket of Protection [1]",
     "unidName": "Helm",
     "resName": "수호의관",
-    "description": "^ff0000ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State + 1, MDEF+ 5 \nทุกๆ การอัพเกรด 1 ขั้น ATK + 4\nทุกๆ การอัพเกรด 5 ขั้น ASPD + 1\nทุกๆ การอัพเกรด 2 ขั้น เพิ่ม Max HP และ Max SP ทีละ 1%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Cannon Spear 20%\nทุกๆ การอัพเกรด 2 ขั้น เพิ่มความแรงสกิล Over Brand 5%\nประเภท : ^777777Helm^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State +1, MDEF +5\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nทุก ๆ การอัพเกรด 5 ขั้น ASPD +1\nทุก ๆ การอัพเกรด 2 ขั้น MaxHP/MaxSP +1%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Cannon Spear 20%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Over Brand 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -22045,7 +22216,7 @@
         "2---20"
       ],
       "Over Brand": [
-        "2---5"
+        "2---15"
       ]
     }
   },
@@ -22216,6 +22387,89 @@
       "hpPercent": [
         "SUM[vit==120]===3",
         "EQUIP[Feather Beret]REFINE[headUpper==9]===5"
+      ]
+    }
+  },
+  "19085": {
+    "id": 19085,
+    "aegisName": "Sigrun's_Wing_",
+    "name": "Sigrun's Wing [1]",
+    "unidName": "Accessory",
+    "resName": "사이그룬의날개",
+    "description": "ปีกอันน่าอัศจรรย์ใจที่สามารถเปลี่ยนความสามารถให้เข้ากับคลาสของผู้สวมใส่ได้\nสำหรับ Swordman, Theif, Merchant, Taekwon, Star Gladiator class ASPD + 1, AGI - 2.\nสำหรับ Magician, Acolyte, Ninja, Soul Linker class MATK + 5, ค่า Heal + 1%.\nสำหรับ Archer, Gun Slinger class เพิ่ม Damage การโจมตีระยะไกล 1%.\nสำหรับ Novice, Super Novice Class HP + 60, SP + 30.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nตำแหน่ง : ^777777Middle ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 2,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspd": [
+        "USED[Swordman]1",
+        "USED[Thief]1",
+        "USED[Merchant]1",
+        "USED[Taekwondo]1"
+      ],
+      "agi": [
+        "USED[Swordman]===-2",
+        "USED[Thief]===-2",
+        "USED[Merchant]===-2",
+        "USED[Taekwondo]===-2"
+      ],
+      "matk": [
+        "USED[Mage]5",
+        "USED[Acolyte]5",
+        "USED[Ninja]5",
+        "USED[Soul Linker]5"
+      ],
+      "range": [
+        "USED[Archer]1",
+        "USED[Gunslinger]1"
+      ],
+      "hp": [
+        "USED[Super Novice]60"
+      ],
+      "sp": [
+        "USED[Super Novice]30"
+      ]
+    }
+  },
+  "19086": {
+    "id": 19086,
+    "aegisName": "Robo_Eye_",
+    "name": "Robo Eye [1]",
+    "unidName": "Glasses",
+    "resName": "로보아이",
+    "description": "วัตถุลึกลับคล้ายดวงตา ดูเหมือนว่ามันจะมาจากอวกาศและสามารถปล่อยแสงออกมาได้\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 1%, MATK +1%, DEX +1\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nตำแหน่ง : ^777777Middle ^000000น้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^77777710^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 2,
+    "weight": 20,
+    "requiredLevel": 10,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_class_all": [
+        "1"
+      ],
+      "matkPercent": [
+        "1"
+      ],
+      "dex": [
+        "1"
       ]
     }
   },
@@ -24151,6 +24405,78 @@
     ],
     "script": {}
   },
+  "19428": {
+    "id": 19428,
+    "aegisName": "Morpheus_Hood_IL",
+    "name": "Illusion Morpheus's Hood [1]",
+    "unidName": "Headband",
+    "resName": "Morpheus_Hood_IL",
+    "description": "ผ้าคาดหัวที่ว่ากันว่ามีพลังที่แท้จริงของ Morpheus ผนึกอยู่ภายใน จำเป็นต้องใช้ไอเท็มบางอย่างในการปลดปล่อยพลังนั้น \nINT +10, MDEF +15, MSP +20%\nทุก ๆ การอัพเกรด 2 ขั้น ลดระยะเวลาร่ายแบบแปรผัน 3%\nเมื่ออัพเกรดถึงขั้น 7, MATK +30\nเมื่ออัพเกรดถึงขั้น 9 การร่ายไม่ถูกขัดขวาง\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Morpheus's Shawl/Bracelet/Ring \nINT +5, MSP +10%, DEF +100\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Earth, Neutral 10%\nเมื่อ Illusion Morpheus's Hood และ Illusion Morpheus's Shawl อัพเกรดตั้งแต่ 7 ขึ้นไป MATK +40\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, \nMATK +40, เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Wind, Holy 15%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป,\nMATK +10%, เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ประเภท Formless, Brute, Demon 50%\n^ffffff_^000000\nประเภท : ^777777Headgear^000000พลังป้องกัน : ^77777715^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 15,
+    "weight": 20,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "int": [
+        "10",
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]===5"
+      ],
+      "mdef": [
+        "15"
+      ],
+      "spPercent": [
+        "20",
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]===10"
+      ],
+      "vct": [
+        "2---3"
+      ],
+      "matk": [
+        "7===30",
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[garment==7]7===40",
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==18]===40"
+      ],
+      "def": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]===100"
+      ],
+      "m_my_element_water": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]===10"
+      ],
+      "m_my_element_earth": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]===10"
+      ],
+      "m_my_element_neutral": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]===10"
+      ],
+      "m_my_element_ghost": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==18]===15"
+      ],
+      "m_my_element_wind": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==18]===15"
+      ],
+      "m_my_element_holy": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==18]===15"
+      ],
+      "matkPercent": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==22]===10"
+      ],
+      "m_pene_race_formless": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==22]===50"
+      ],
+      "m_pene_race_brute": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==22]===50"
+      ],
+      "m_pene_race_demon": [
+        "EQUIP[Illusion Morpheus's Shawl&&Illusion Morpheus's Bracelet&&Illusion Morpheus's Ring]REFINE[headUpper,garment==22]===50"
+      ]
+    }
+  },
   "19437": {
     "id": 19437,
     "aegisName": "LittleGarden",
@@ -25937,6 +26263,45 @@
       ]
     }
   },
+  "20943": {
+    "id": 20943,
+    "aegisName": "Geffen_Magic_Muffler",
+    "name": "Geffen Magic Muffler [1]",
+    "unidName": "Hood",
+    "resName": "이뮨드망토",
+    "description": "หนึ่งในของล้ำค่าที่อยู่ใน List สะสมของ Kachua นักสะสมอุปกรณ์ระดับหายาก\nเล่าขานกันว่าเป็นผ้าคลุมที่จอมเวทย์ในอดีตใช้กันในการต่อสู้ในสนามรบ\nเหมือนว่าจะเกี่ยวข้องกับอุปกรณ์ที่แจกในงานประลองเวทย์ Geffen\nลดระยะเวลาร่ายแบบแปรผัน 10%\nทุก ๆ การอัปเกรด 2 ขั้น MATK +10\nทุก ๆ การอัปเกรด 3 ขั้น MATK +1%\nเมื่ออัปเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัปเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผันลงอีก 10%\nเมื่อสวมใส่ร่วมกับ Geffen Magic Robe\nMATK +30\nเมื่อ Geffen Magic Robe มีค่าอัปเกรดตั้งแต่ 11 ขึ้นไป\nMATK +40 เพิ่มเติม, ลดระยะเวลาร่ายแบบแปรผัน 20%\nเมื่อสวมใส่ร่วมกับ Magic Intensifier Ring\nลดปริมาณ SP ที่ใช้ 5%\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^77777755^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 20,
+    "weight": 55,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "10",
+        "EQUIP[Geffen Magic Robe]REFINE[armor==11]===20",
+        "9===10"
+      ],
+      "matk": [
+        "2---10",
+        "EQUIP[Geffen Magic Robe]===30",
+        "EQUIP[Geffen Magic Robe]REFINE[armor==11]===40"
+      ],
+      "matkPercent": [
+        "3---1"
+      ],
+      "m_my_element_all": [
+        "7===5"
+      ]
+    }
+  },
   "20944": {
     "id": 20944,
     "aegisName": "Anti_Magic_Manteau",
@@ -26044,6 +26409,39 @@
       ],
       "m_race_demon": [
         "2---1"
+      ]
+    }
+  },
+  "20948": {
+    "id": 20948,
+    "aegisName": "Morpheus_Shawl_IL",
+    "name": "Illusion Morpheus's Shawl [1]",
+    "unidName": "Hood",
+    "resName": "Morpheus_Shawl_IL",
+    "description": "ผ้าคลุมไหล่ซึ่งเป็น 1 ใน 3 กุญแจสำคัญในการปลดผนึกพลังของ Morpheus ว่ากันว่ามีมนตร์คาถาเก่าแก่สลักอยู่ \nMSP +10%, MDEF +5\nเมื่ออัพเกรดถึงขั้น 7 ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผันลงอีก 10%\n^ffffff_^000000\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^7777778^000000\nน้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 8,
+    "weight": 60,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "spPercent": [
+        "10"
+      ],
+      "mdef": [
+        "5"
+      ],
+      "vct": [
+        "7===10",
+        "9===10"
       ]
     }
   },
@@ -36826,6 +37224,104 @@
     ],
     "script": {}
   },
+  "24488": {
+    "id": 24488,
+    "aegisName": "S_Duplelight_Armor",
+    "name": "Duple Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเพิ่ม Damage สกิล Duple Light 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Duple Light ขึ้นอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Arch Bishop"
+    ],
+    "script": {
+      "Duple Light": [
+        "5",
+        "2---2"
+      ]
+    }
+  },
+  "24489": {
+    "id": 24489,
+    "aegisName": "S_Duplelight_Shield",
+    "name": "Duple Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우",
+    "description": "โล่เล็กที่สามารถสวมใส่ที่แขนได้ สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์การป้องกันของมันจะลดน้อยลง\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 1%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 1%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 2%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy ขึ้นอีก 2%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 2%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy ขึ้นอีก 2%\nเมื่อสวมใส่ Duple Shadow Armor/Shield/Shoes ร่วมกัน,\nเพิ่ม Damage สกิล Duple Light % เท่ากับค่าอัพเกรดรวมกัน\nเมื่อสวมใส่ร่วมกับ Arch Bishop Shadow Weapon,\nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของทุกเผ่ายกเว้น Player 40% และเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์เพิ่มอีกตามค่าอัพเกรดรวมกันของ Duple Shadow Shield และ Arch Bishop Shadow Weapon\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Arch Bishop"
+    ],
+    "script": {
+      "p_size_all": [
+        "1",
+        "7===2",
+        "9===2"
+      ],
+      "m_my_element_holy": [
+        "1",
+        "7===2",
+        "9===2"
+      ],
+      "Duple Light": [
+        "EQUIP[Duple Shadow Armor&&Duple Shadow Shoes]REFINE[shadowArmor,shadowBoot,shadowShield==1]---1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Arch Bishop Shadow Weapon]40",
+        "EQUIP[Arch Bishop Shadow Weapon]REFINE[shadowWeapon,shadowShield==1]---1"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Arch Bishop Shadow Weapon]40",
+        "EQUIP[Arch Bishop Shadow Weapon]REFINE[shadowWeapon,shadowShield==1]---1"
+      ]
+    }
+  },
+  "24490": {
+    "id": 24490,
+    "aegisName": "S_Duplelight_Shoes",
+    "name": "Duple Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nCritical Damage +5%\nทุก ๆ การอัพเกรด 2 ขั้น Critical Damage +1% เพิ่มเติม\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Arch Bishop"
+    ],
+    "script": {
+      "criDmg": [
+        "5",
+        "2---1"
+      ]
+    }
+  },
   "24491": {
     "id": 24491,
     "aegisName": "S_Adoramus_Weapon",
@@ -42720,7 +43216,7 @@
     "name": "Maximum Mammoth Shadow Armor",
     "unidName": "Shadow Armor",
     "resName": "아머쉐도우3",
-    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nWhen equipped with Maximum Mammoth Shadow Shoes, Atk + 2%,\nif the sum of refine rate of set is 18 or higher, grants immunity to knock-back.\nif the sum of refine rate of set is 20 or higher, increases physical damage against all property enemies by 12%.\nClass: ^777777Shadow Equipment^000000 \nLocation: ^777777Padded Armor^000000\nWeight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "เพิ่มพลังป้องกันเพิ่มเติมด้วยเกราะที่สวมทับชุดเกราะ สามารถใช้เดี่ยว ๆ ได้ แต่พลังป้องกันจะน้อย\nATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล +1%\nเมื่ออัพเกรดถึงขั้น 10, MHP + 3%\nเมื่อสวมใส่ร่วมกับ Maximum Mammoth Shadow Shoes, ATK + 2%,\nเมื่อขั้นอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, ไม่ถูก Knock-back\nเมื่อขั้นอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ +12%\nประเภท : ^777777Shadow^000000 \nตำแหน่ง : ^777777Armor^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 526,
@@ -42759,7 +43255,7 @@
     "name": "Maximum Mammoth Shadow Shoes",
     "unidName": "Shadow Shoes",
     "resName": "슈즈쉐도우3",
-    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shoes^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "รองเท้าที่สามารถสวมทับรองเท้าเพิ่มได้ สามารถใช้เดี่ยว ๆ ได้ แต่ประสิทธิภาพจะน้อย\nATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล +1%\nเมื่ออัพเกรดถึงขั้น 10, MHP + 3%.\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 528,
@@ -42794,7 +43290,7 @@
     "name": "Maximum Mammoth Shadow Earring",
     "unidName": "Shadow Earring",
     "resName": "이어링쉐도우3",
-    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nWhen equipped with Maximum Mammoth Shadow Pendant, Atk + 2%,\nif the sum of refine rate of set is 18 or higher, grants immunity to knock-back.\nif the sum of refine rate of set is 20 or higher, increases physical damage against all property enemies by 12%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Earring^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่ว่ากันว่าจะปกปักษ์รักษาผู้สวมใส่ สามารถดึงความสามารถที่หลับใหลอยู่ของผู้สวมใส่ออกมาได้\nATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล +1%\nเมื่ออัพเกรดถึงขั้น 10, MHP + 3%.\nเมื่อสวมใส่ร่วมกับ Maximum Mammoth Shadow Pendant, ATK + 2%,\nเมื่อขั้นอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, ไม่ถูก Knock-back\nเมื่อขั้นอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ +12%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 529,
@@ -42833,7 +43329,7 @@
     "name": "Maximum Mammoth Shadow Pendant",
     "unidName": "Shadow Pendant",
     "resName": "펜던트쉐도우3",
-    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Pendant^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่ว่ากันว่าจะปกปักษ์รักษาผู้สวมใส่ สามารถดึงความสามารถที่หลับใหลอยู่ของผู้สวมใส่ออกมาได้\nATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล +1%\nเมื่ออัพเกรดถึงขั้น 10, MHP + 3%.\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 530,
@@ -44637,6 +45133,33 @@
       ]
     }
   },
+  "27083": {
+    "id": 27083,
+    "aegisName": "BitterBonGun_Card",
+    "name": "Resentful Bongun Card",
+    "unidName": "Resentful Bongun Card",
+    "resName": "이름없는카드",
+    "description": "ATK + 20\nMATK + 20\nเมื่อใช้กับ Bongun Card และโจมตีทางกายภาพ มีโอกาสที่จะแปลงร่างเป็น Bongun เป็นเวลา 5 วินาที (เมื่อแปลงร่าง ได้รับความเสียหายจาก Munak แรงขึ้น 100%)\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Armor^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Growth",
+    "script": {
+      "atk": [
+        "20"
+      ],
+      "matk": [
+        "20"
+      ]
+    }
+  },
   "27086": {
     "id": 27086,
     "aegisName": "BitterArcherSk_Card",
@@ -44658,6 +45181,30 @@
     "script": {
       "bowRange": [
         "10===20"
+      ]
+    }
+  },
+  "27087": {
+    "id": 27087,
+    "aegisName": "WizardOfVeritas_Card",
+    "name": "Truthful Wizard Card",
+    "unidName": "Truthful Wizard Card",
+    "resName": "이름없는카드",
+    "description": "MATK + 25\nเมื่อโจมตีทางเวทย์ มีโอกาสที่จะไม่ถูกขัดขวางการร่ายสกิลเป็นเวลา 5 วินาที (จะตะโกนออกมาว่า 'นี่คือสิ่งที่แท้จริง!')\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Truth",
+    "script": {
+      "matk": [
+        "25"
       ]
     }
   },
@@ -44927,6 +45474,38 @@
       ],
       "vit": [
         "SUM[level==160]3"
+      ]
+    }
+  },
+  "27115": {
+    "id": 27115,
+    "aegisName": "OminousPermeter_Card",
+    "name": "Ominous Pemeter Card",
+    "unidName": "Ominous Pemeter Card",
+    "resName": "이름없는카드",
+    "description": "INT + 1, MSP + 80\nทุก ๆ การอัพเกรด 2 ขั้นของ Headgear ที่ติดตั้ง Ominous Pemeter Card SP + 10\nเมื่อขั้นอัพเกรดตั้งแต่7 ขึ้นไป เพิ่ม SP Recovery SP 30%\nเมื่อติดตั้งร่วมกับ Ominous Solider Card\nทุก ๆ การอัพเกรด 3 ขั้น ของ Armor ที่ติดตั้ง Ominous Solider Card MHP + 1%, ทุก ๆ การอัพเกรด 2 ขั้นของ Headgear ที่ติดตั้ง Ominous Pemeter Card MSP + 5\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Sensible",
+    "script": {
+      "int": [
+        "1"
+      ],
+      "sp": [
+        "80",
+        "2---10",
+        "EQUIP[Ominous Solider Card]2---5"
+      ],
+      "hpPercent": [
+        "EQUIP[Ominous Solider Card]REFINE[armor==3]---1"
       ]
     }
   },
@@ -45726,6 +46305,35 @@
       ]
     }
   },
+  "27179": {
+    "id": 27179,
+    "aegisName": "Coyote_Card",
+    "name": "Coyote Card",
+    "unidName": "Coyote Card",
+    "resName": "이름없는카드",
+    "description": "การร่ายเวทไม่ถูกขัด\nMHP - 12%, MSP - 6%\nเมื่ออัพเกรดถึงขั้น 10 MHP + 6%, MSP + 3%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Wild Fang",
+    "script": {
+      "hpPercent": [
+        "-12",
+        "10===6"
+      ],
+      "spPercent": [
+        "-6",
+        "10===3"
+      ]
+    }
+  },
   "27182": {
     "id": 27182,
     "aegisName": "Felock_Card",
@@ -46511,6 +47119,36 @@
       ]
     }
   },
+  "27290": {
+    "id": 27290,
+    "aegisName": "Sinister_Obsidian_Card",
+    "name": "Sinister Dwelling Obsidian Card",
+    "unidName": "Sinister Dwelling Obsidian Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ Base AGI 10, FLEE +3, ASPD +1%\nเมื่อ Base AGI ตั้งแต่ 120 ขึ้นไป, ASPD +1\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Obsidian",
+    "script": {
+      "flee": [
+        "SUM[agi==10]---3"
+      ],
+      "aspdPercent": [
+        "SUM[agi==10]---1"
+      ],
+      "aspd": [
+        "SUM[agi==120]===1"
+      ]
+    }
+  },
   "27292": {
     "id": 27292,
     "aegisName": "Ancient_Sta_Golem_Card",
@@ -46538,6 +47176,33 @@
       ],
       "acd": [
         "SUM[vit==120]===3"
+      ]
+    }
+  },
+  "27293": {
+    "id": 27293,
+    "aegisName": "Ancient_Megalith_Card",
+    "name": "Ancient Megalith Card",
+    "unidName": "Ancient Megalith Card",
+    "resName": "이름없는카드",
+    "description": "MATK + 30, MSP - 1%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "of Cricler",
+    "script": {
+      "matk": [
+        "30"
+      ],
+      "spPercent": [
+        "-1"
       ]
     }
   },
@@ -50155,6 +50820,58 @@
       ]
     }
   },
+  "28439": {
+    "id": 28439,
+    "aegisName": "SeeOtter_Fan",
+    "name": "Sea Otter Mini Fan [1]",
+    "unidName": "Accessory",
+    "resName": "해달선풍기",
+    "description": "พัดลมขนาดเล็กที่มีรูป Sea Otter ที่อาศัยอยู่บนหาดโคโมโด\nช่วยคลายร้อนในช่วงฤดูร้อนได้อย่างดี\nAll State +1, EXP ที่ได้รับจากมอนสเตอร์ +5%\nสามารถใส่ 'Fan Modification Kit' ได้\nประเภท : ^777777Accessory^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "allStatus": [
+        "1"
+      ]
+    }
+  },
+  "28440": {
+    "id": 28440,
+    "aegisName": "FurSeal_Fan",
+    "name": "Fur Seal Mini Fan [1]",
+    "unidName": "Accessory",
+    "resName": "퍼씰선풍기",
+    "description": "พัดลมตัวเล็กที่มีรูป Fur Seal ประจำหาดโคโมโดประดับอยู่\nพอลองประกอบ Sea Otter Mini Fan มันก็เปลี่ยนรูปไป\nขายได้ในราคาแพง แต่ดูเหมือนจะไม่มีประสิทธิภาพที่ดีขึ้นเลย\nAll State +1, EXP ที่ได้รับจากมอนสเตอร์ +5%\nไม่สามารถใส่ 'Fan Modification Kit' ได้\nประเภท : ^777777Accessory^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "allStatus": [
+        "1"
+      ]
+    }
+  },
   "28441": {
     "id": 28441,
     "aegisName": "Vigilante_Bedge",
@@ -51156,6 +51873,70 @@
         "level:180===5",
         "level:190===5",
         "level:200===5"
+      ]
+    }
+  },
+  "28706": {
+    "id": 28706,
+    "aegisName": "Sinister_Dagger",
+    "name": "Vicious Mind Dagger [1]",
+    "unidName": "Dagger",
+    "resName": "사념의대거",
+    "description": "กริชที่เต็มไปด้วยความคิดมุ่งร้าย\nMATK + 50\nเพิ่ม ATK เท่ากับ (ระดับ Refine*ระดับ Refine) (สามารถ Refine ได้ถึง 15)\nเพิ่ม MATK เท่ากับ (ระดับ Refine*ระดับ Refine)/2 (สามารถ Refine ได้ถึง 15)\nประเภท : ^777777Dagger^000000 โจมตี : ^777777105^000000\nน้ำหนัก : ^777777105^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777160^000000\nติดตั้ง : ^777777อาชีพ Novice / อาชีพ Swordman / อาชีพ Mage / อาชีพ Archer / อาชีพ Merchant / อาชีพ Thief / อาชีพ Ninja / Soul Linker^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 105,
+    "defense": null,
+    "weight": 105,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice",
+      "Swordman",
+      "Mage",
+      "Archer",
+      "Merchant",
+      "Thief",
+      "Ninja",
+      "Soul Linker"
+    ],
+    "script": {
+      "matk": [
+        "50",
+        "2===2",
+        "3===2",
+        "4===4",
+        "5===4",
+        "6===6",
+        "7===6",
+        "8===8",
+        "9===8",
+        "10===10",
+        "11===10",
+        "12===12",
+        "13===12",
+        "14===14",
+        "15===14"
+      ],
+      "atk": [
+        "1===1",
+        "2===3",
+        "3===5",
+        "4===7",
+        "5===9",
+        "6===11",
+        "7===13",
+        "8===15",
+        "9===17",
+        "10===19",
+        "11===21",
+        "12===23",
+        "13===25",
+        "14===27",
+        "15===29"
       ]
     }
   },
@@ -60034,6 +60815,30 @@
       ]
     }
   },
+  "31018": {
+    "id": 31018,
+    "aegisName": "XM_Mystcase_Card",
+    "name": "Evil Dwelling Box Card",
+    "unidName": "Evil Dwelling Box Card",
+    "resName": "이름없는카드",
+    "description": "MHP - 1225.\nเมื่อทำการโจมตีด้วยเวทมนตร์ มีโอกาสสูงที่จะทำให้ศัตรูติดสถานะ Curse\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Frustration",
+    "script": {
+      "hp": [
+        "-1225"
+      ]
+    }
+  },
   "31023": {
     "id": 31023,
     "aegisName": "XM_Celine_Kimi_Card",
@@ -61118,6 +61923,70 @@
       ],
       "m_class_boss": [
         "EQUIP[Celine's Ribbon]REFINE[headUpper==11]===20"
+      ]
+    }
+  },
+  "32238": {
+    "id": 32238,
+    "aegisName": "Morpheus_Ring_IL",
+    "name": "Illusion Morpheus's Ring [1]",
+    "unidName": "Ring",
+    "resName": "Morpheus_Ring_IL",
+    "description": "แหวนซึ่งเป็น 1 ใน 3 กุญแจสำคัญในการปลดผนึกพลังของ Morpheus มีพลังศิลาแห่งโชคชะตาแผ่ซ่านอยู่ภายใน \nINT +3, MSP +5% \n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Morpheus's Bracelet,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n^ffffff_^000000\nประเภท : ^777777Accessory(Right)^000000\nพลังป้องกัน : ^7777770^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "3"
+      ],
+      "spPercent": [
+        "5"
+      ],
+      "vct": [
+        "EQUIP[Illusion Morpheus's Bracelet]===10"
+      ]
+    }
+  },
+  "32239": {
+    "id": 32239,
+    "aegisName": "Morpheus_Armlet_IL",
+    "name": "Illusion Morpheus's Bracelet [1]",
+    "unidName": "Earring",
+    "resName": "Morpheus_Armlet_IL",
+    "description": "กำไลซึ่งเป็น 1 ใน 3 กุญแจสำคัญในการปลดผนึกพลังของ Morpheus เล่ากันมาว่าเป็นสมบัติล้ำค่าของผู้เป็นที่รักของ Morpheus \nINT +3, MSP +5%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Morpheus's Ring,\nMATK +10%\n^ffffff_^000000\nประเภท : ^777777Accessory(Left)^000000\nพลังป้องกัน : ^7777770^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "3"
+      ],
+      "spPercent": [
+        "5"
+      ],
+      "matkPercent": [
+        "EQUIP[Illusion Morpheus's Ring]===10"
       ]
     }
   },
@@ -76583,6 +77452,123 @@
       ]
     }
   },
+  "410345": {
+    "id": 410345,
+    "aegisName": null,
+    "name": "Clown Smiling [1]",
+    "unidName": "Clown Smiling",
+    "resName": "C_Smiling_Eyes",
+    "description": "CRI + 10\nCritical Damage + 20%\nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss + 10%\nASPD + 2\n\nเมื่อ Base LUK ตั้งแต่ 120 ขึ้นไป,\nCRI + 20\nCritical Damage + 30% เพิ่มเติม\nATK + 150\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "cri": [
+        "10",
+        "SUM[luk==120]===20"
+      ],
+      "criDmg": [
+        "20",
+        "SUM[luk==120]===30"
+      ],
+      "p_class_boss": [
+        "10"
+      ],
+      "aspd": [
+        "2"
+      ],
+      "atk": [
+        "SUM[luk==120]===150"
+      ]
+    }
+  },
+  "410347": {
+    "id": 410347,
+    "aegisName": null,
+    "name": "Imperial Ear Wing [1]",
+    "unidName": "Imperial Ear Wing",
+    "resName": "파란귀장식",
+    "description": "ATK + 100\nPerfect Hit + 50%\nเพิ่มความต้านทานต่อสถานะ Blind, Silent + 100%\nGlobal Cooldown -6%\n\nเมื่อ Base AGI ตั้งแต่ 120 ขึ้นไป, \nATK + 120 เพิ่มเติม\nASPD + 20%\nASPD + 3\nPerfect Hit + 50% เพิ่มเติม\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "100",
+        "SUM[agi==120]===120"
+      ],
+      "perfectHit": [
+        "50",
+        "SUM[agi==120]===50"
+      ],
+      "acd": [
+        "6"
+      ],
+      "aspdPercent": [
+        "SUM[agi==120]===20"
+      ],
+      "aspd": [
+        "SUM[agi==120]===3"
+      ]
+    }
+  },
+  "410348": {
+    "id": 410348,
+    "aegisName": null,
+    "name": "Divine Protect Shields",
+    "unidName": "Divine Protect Shields",
+    "resName": "Phalanx",
+    "description": "เพิ่มความต้านทานต่อสถานะ Confuse, Hallucination + 100%\nDEF + 100, MDEF + 20\nเปิดใช้งานสกิล Shield Spell Lv.3\nลด Damage ที่ได้รับจาก Player 10%\n\nเมื่อ Base VIT ตั้งแต่ 60 ขึ้นไป,\nทุก ๆ 5 วินาที, ฟื้นฟู HP 300, SP 30\nลดระยะเวลาร่ายแบบแปรผัน -30%\n\nเมื่อ Base VIT ตั้งแต่ 90 ขึ้นไป,\nลดระยะเวลาร่ายแบบคงที่ลง 0.5 วินาที\nทุก ๆ 5 วินาที, ฟื้นฟู HP 300, SP 30 เพิ่มเติม\nDEF + 200, MDEF + 40\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "def": [
+        "100",
+        "SUM[vit==90]===200"
+      ],
+      "mdef": [
+        "20",
+        "SUM[vit==90]===40"
+      ],
+      "vct": [
+        "SUM[vit==60]===30"
+      ],
+      "fct": [
+        "SUM[vit==90]===0.5"
+      ]
+    }
+  },
   "420003": {
     "id": 420003,
     "aegisName": "CD_In_MouthK",
@@ -76611,6 +77597,28 @@
         "EQUIP[Old Parasol]50"
       ]
     }
+  },
+  "420005": {
+    "id": 420005,
+    "aegisName": "Love_Feeling_TW",
+    "name": "Feeling of Love",
+    "unidName": "Ribbon",
+    "resName": "Love_Feeling",
+    "description": "เครื่องตกแต่งที่ให้ความรู้สึกมีชีวิตชีวา\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 1% ที่จะฟื้นฟู 400 HP, 80 SP ทุก ๆ 1 วินาทีเป็นเวลา 10 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower ^000000 น้ำหนัก: ^77777730^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
   },
   "420017": {
     "id": 420017,
@@ -82477,6 +83485,76 @@
       ]
     }
   },
+  "460004": {
+    "id": 460004,
+    "aegisName": "Illusion_Shield_A",
+    "name": "Illusion Shield I [1]",
+    "unidName": "Shield",
+    "resName": "Illusion_Shield_A",
+    "description": "โล่สำหรับต่อสู้ที่สร้างขึ้นโดยรวบรวม Essence ของเทคโนโลยี Illusion\n\nMaxHP + 10%, HaxSP + 10%\nทุก ๆ 3 ขั้นอัพเกรด, DEF + 50, MDEF + 5\n\nเมื่อ Base.Lv 170 ขึ้นไป, \nเพิ่มความต้านทานต่อการโจมตีธาตุ Neutral + 5%\n\nประเภท: ^777777Shield^000000  พลังป้องกัน : ^77777795^000000\nน้ำหนัก: ^777777120^000000\nเลเวลที่ต้องการ: ^777777100^000000\nอาชีพที่ใส่ได้: ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 95,
+    "weight": 120,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "def": [
+        "3---50"
+      ],
+      "mdef": [
+        "3---5"
+      ]
+    }
+  },
+  "460014": {
+    "id": 460014,
+    "aegisName": "Illusion_Shield_B",
+    "name": "Illusion Shield II [1]",
+    "unidName": "Shield",
+    "resName": "Illusion_Shield_B",
+    "description": "โล่สำหรับต่อสู้ที่สร้างขึ้นโดยรวบรวม Essence ของเทคโนโลยี Illusion\n\nMaxHP + 10%, MaxSP + 10%\nทุก ๆ 3 ขั้นอัพเกรด, ATK + 15, MATK + 15\n\nเมื่อ Base.Lv 170 ขึ้นไป, \nเพิ่มความต้านทานต่อการโจมตีธาตุ Neutral + 5%\n\n\t\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^77777740^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 40,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "atk": [
+        "3---15"
+      ],
+      "matk": [
+        "3---15"
+      ]
+    }
+  },
   "460027": {
     "id": 460027,
     "aegisName": "Titan_Shield_TW",
@@ -83250,7 +84328,7 @@
     "name": "Destroyer Boots [1]",
     "unidName": "Sandals",
     "resName": "Hollow_Shoes",
-    "description": "MATK +30\n\nทุก ๆ การอัพเกรด 3 ขั้น,\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Demon, Undead, Angel 4%\n\nเมื่ออัพเกรดถึงขั้น 7,\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow, Fire, Earth 10%\n\nเมื่ออัพเกรดถึงขั้น 9,\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n\nเมื่ออัพเกรดถึงขั้น 11,\nลด Cooldown สกิล Hell Inferno 2 วินาที\nลด Cooldown สกิล Crimson Rock 1 วินาที\n\nเมื่ออัพเกรดถึงขั้น 12,\nเพิ่ม Damage สกิล Comet, Hell Inferno, Earth Grave 30%\n\nเมื่อใช้กับ Dark Lord Card หรือ Sealed Dark Lord Card,\nMATK +50\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 30%\nเมื่อถูกโจมตีทางกายภาพมีโอกาสที่สกิล Comet Lv. 1 จะทำงาน\nเมื่อโจมตีทางเวทมนตร์ มีโอกาสที่ INT +30, MATK +20% เป็นเวลา 10 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "description": "MATK +30\n\nทุก ๆ การอัพเกรด 3 ขั้น,\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Demon, Undead, Angel 4%\n\nเมื่ออัพเกรดถึงขั้น 7,\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow, Fire, Earth 10%\n\nเมื่ออัพเกรดถึงขั้น 9,\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n\nเมื่ออัพเกรดถึงขั้น 11,\nลด Cooldown สกิล Hell Inferno 2 วินาที\nลด Cooldown สกิล Crimson Rock 1 วินาที\nลด Cooldown สกิล Earth Grave 1 วินาที\n\nเมื่ออัพเกรดถึงขั้น 12,\nเพิ่ม Damage สกิล Comet, Hell Inferno, Earth Grave 30%\n\nเมื่อใช้ร่วมกับ Coyote Card,\nMATK +50\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 10%\nเมื่อถูกโจมตีทางกายภาพ มีโอกาส 10% ที่สกิล Comet Lv. 1 จะทำงาน\n\nเมื่อใช้กับ Dark Lord Card หรือ Sealed Dark Lord Card,\nMATK +50\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 30%\nเมื่อถูกโจมตีทางกายภาพ มีโอกาส 30% ที่สกิล Comet Lv. 1 จะทำงาน\nเมื่อโจมตีทางเวทมนตร์ มีโอกาสที่ INT +30, MATK +20% เป็นเวลา 10 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 516,
@@ -83267,6 +84345,7 @@
     "script": {
       "matk": [
         "30",
+        "EQUIP[Coyote Card]50",
         "EQUIP[Dark Lord Card||Sealed Dark Lord Card]50"
       ],
       "m_race_demon": [
@@ -83296,6 +84375,9 @@
       "cd__Crimson Rock": [
         "11===1"
       ],
+      "cd__Earth Grave": [
+        "11===1"
+      ],
       "Comet": [
         "12===30"
       ],
@@ -83306,6 +84388,7 @@
         "12===30"
       ],
       "m_class_boss": [
+        "EQUIP[Coyote Card]10",
         "EQUIP[Dark Lord Card||Sealed Dark Lord Card]30"
       ],
       "chance__int": [
@@ -90600,7 +91683,7 @@
       "atkPercent": [
         "10"
       ],
-      "mtkPercent": [
+      "matkPercent": [
         "10"
       ],
       "acd": [
@@ -93268,6 +94351,88 @@
       ],
       "matkPercent": [
         "EQUIP[Great Hero Boots]===7"
+      ]
+    }
+  },
+  "550030": {
+    "id": 550030,
+    "aegisName": "Thorn_Staff_IL",
+    "name": "Illusion Thorn Staff of Darkness [2]",
+    "unidName": "Staff",
+    "resName": "Thorn_Staff_IL",
+    "description": "Matk + 180, Int + 3, Dex + 3.\r\nIgnores magical defense of all race monsters (except players) by 3% per refine rate.\r\nReduce global cooldown by 3% per 2 refine level.\r\nIf refine rate is 7 or higher, Matk + 7%, reduces variable casting time by 7%.\r\nIf refine rate is 9 or higher, increases magical damage against holy property enemies and angel race monsters by 20%.\r\nIf refine rate is 11 or higher, increases poison, shadow, undead and ghost property magical damage by 15%.\r\n\r\nWhen equipped with Illusion Morpheus's Hood, Matk + 20.\r\nIf refine rate of each is 7 or higher, increases magical damage against all property monsters by 10%.\r\nIf the sum of refine rate is 18 or higher, increases magical damage against shadow property enemies and demon race monsters by 20%.\r\nIf the sum of refine rate is 22 or higher, increases magical damage against all size monsters by 15%, reduces fixed casting time by 0.5 seconds.\r\nClass: ^777777Staff^000000 Attack: ^77777760^000000\r\nWeight: ^777777120^000000 Property: ^777777Shadow^000000\r\nWeapon Level: ^7777774^000000\r\nRequired Level: ^777777120^000000\r\nJobs: ^777777Mage classes, Acolyte classes, Soul Linker classes^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 4,
+    "attack": 60,
+    "propertyAtk": "Dark",
+    "defense": null,
+    "weight": 120,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mage",
+      "Acolyte",
+      "Soul Linker"
+    ],
+    "script": {
+      "matk": [
+        "180",
+        "EQUIP[Illusion Morpheus's Hood]===20"
+      ],
+      "int": [
+        "3"
+      ],
+      "dex": [
+        "3"
+      ],
+      "m_pene_race_all": [
+        "1---3"
+      ],
+      "acd": [
+        "2---3"
+      ],
+      "matkPercent": [
+        "7===7"
+      ],
+      "vct": [
+        "7===7"
+      ],
+      "m_element_holy": [
+        "9===20"
+      ],
+      "m_race_angel": [
+        "9===20"
+      ],
+      "m_my_element_poison": [
+        "11===15"
+      ],
+      "m_my_element_dark": [
+        "11===15"
+      ],
+      "m_my_element_undead": [
+        "11===15"
+      ],
+      "m_my_element_ghost": [
+        "11===15"
+      ],
+      "m_element_all": [
+        "EQUIP[Illusion Morpheus's Hood]REFINE[headUpper==7]7===10"
+      ],
+      "m_element_dark": [
+        "11===15",
+        "EQUIP[Illusion Morpheus's Hood]REFINE[weapon,headUpper==18]===20"
+      ],
+      "m_race_demon": [
+        "EQUIP[Illusion Morpheus's Hood]REFINE[weapon,headUpper==18]===20"
+      ],
+      "m_size_all": [
+        "EQUIP[Illusion Morpheus's Hood]REFINE[weapon,headUpper==22]===15"
+      ],
+      "fct": [
+        "EQUIP[Illusion Morpheus's Hood]REFINE[weapon,headUpper==22]===0.5"
       ]
     }
   },
@@ -96287,6 +97452,10 @@
         "REFINE[7]LEARN_SKILL[Mystical Amplification==1]---1",
         "11===15"
       ],
+      "m_my_element_neutral": [
+        "REFINE[7]LEARN_SKILL[Mystical Amplification==1]---1",
+        "11===15"
+      ],
       "vct": [
         "9===10"
       ],
@@ -96295,6 +97464,10 @@
         "13===15"
       ],
       "Earth Strain": [
+        "9===25",
+        "13===15"
+      ],
+      "Comet": [
         "9===25",
         "13===15"
       ],
