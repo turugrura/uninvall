@@ -154,7 +154,7 @@
     "usableClass": [
       "Novice",
       "Swordman",
-      "Magician",
+      "Mage",
       "Archer",
       "Merchant",
       "Thief",
@@ -189,6 +189,40 @@
       "Ninja"
     ],
     "script": {}
+  },
+  "1223": {
+    "id": 1223,
+    "aegisName": "Forturn_Sword",
+    "name": "Fortune Sword",
+    "unidName": "Dagger",
+    "resName": "포츈소드",
+    "description": "มีดวิเศษที่นำโชคลาภมาสู่ผู้ใช้\nPerfect Dodge + 20\nLUK + 5\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^77777790^000000\nน้ำหนัก : ^77777750^000000\nLv ของอาวุธ : ^7777774^000000\nLv ที่ต้องการ : ^77777724^000000\nอาชีพ : ^777777Swordman Cls/Magician Cls/Archer Cls/Merchant Cls/Thief Cls/Ninja Cls^000000",
+    "slots": 0,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 90,
+    "defense": null,
+    "weight": 50,
+    "requiredLevel": 24,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Mage",
+      "Archer",
+      "Merchant",
+      "Thief",
+      "Ninja"
+    ],
+    "script": {
+      "luk": [
+        "5"
+      ],
+      "perfectDodge": [
+        "20"
+      ]
+    }
   },
   "1230": {
     "id": 1230,
@@ -549,6 +583,35 @@
       ]
     }
   },
+  "1398": {
+    "id": 1398,
+    "aegisName": "Metal_Two_Handed_Axe",
+    "name": "Metal Two Handed Axe [1]",
+    "unidName": "Two-Handed Axe",
+    "resName": "메탈투핸드액스",
+    "description": "Two-Handed Axe ทำจากโลหะที่ช่วยเพิ่มความสามารถโดยผลิตจากการผสมกันระหว่าง Phracon และ Emveretarcon ลงในเหล็กกล้า\nไม่สามารถทำลายได้\nทุกการอัพเกรด 1 ขั้น ATK เพิ่มขึ้น +7\nเมื่อตัวละครเลเวลมากกว่า 20 : ทุกการเพิ่มขึ้นของ Base lv. 10 ขั้น ATK เพิ่มขึ้นทีละ +5\n(ปริมาณการเพิ่มขึ้นจะสูงสุดถึง 120)\nประเภท : ^777777Two-Handed Axe^000000 พลังโจมตี : ^777777105^000000\nน้ำหนัก : ^7777770^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777Swordsman Cls/Merchant Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 262,
+    "itemLevel": 3,
+    "attack": 105,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Merchant"
+    ],
+    "script": {
+      "atk": [
+        "1---7",
+        "level:20===-10",
+        "level:10(1-120)---5"
+      ]
+    }
+  },
   "1408": {
     "id": 1408,
     "aegisName": "Pike_",
@@ -715,6 +778,34 @@
       ]
     }
   },
+  "1493": {
+    "id": 1493,
+    "aegisName": "Metal_Lance",
+    "name": "Metal Lance [1]",
+    "unidName": "Two-Handed Spear",
+    "resName": "메탈랜스",
+    "description": "Lance ทำจากโลหะที่ช่วยเพิ่มความสามารถโดยผลิตจากการผสมกันระหว่าง Phracon และ Emveretarcon ลงในเหล็กกล้า\nทุกการอัพเกรด 1 ขั้น ATK เพิ่มขึ้น +6\nเมื่อตัวละครเลเวลมากกว่า 20 : ทุกการเพิ่มขึ้นของ Base lv. 10 ขั้น ATK เพิ่มขึ้นทีละ +5\n(ปริมาณการเพิ่มขึ้นจะสูงสุดถึง 120)\nประเภท : ^777777Two-Handed Spear^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^7777770^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777Swordsman Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 260,
+    "itemLevel": 3,
+    "attack": 100,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "atk": [
+        "1---6",
+        "level:20===-10",
+        "level:10(1-120)---5"
+      ]
+    }
+  },
   "1496": {
     "id": 1496,
     "aegisName": "Thanos_Long_Spear",
@@ -814,6 +905,40 @@
       ]
     }
   },
+  "1588": {
+    "id": 1588,
+    "aegisName": "Metal_Book",
+    "name": "Metal Book [1]",
+    "unidName": "Book",
+    "resName": "메탈북",
+    "description": "Book ทำจากโลหะที่ช่วยเพิ่มความสามารถโดยผลิตจากการผสมกันระหว่าง Phracon และ Emveretarcon ลงในเหล็กกล้า\nMATK + 10.\nทุกการอัพเกรด 1 ขั้น เพิ่ม ATK +5/ MATK + 2\nเมื่อตัวละครเลเวลมากกว่า 20 : ทุกการเพิ่มขึ้นของ Base lv. 10 ขั้น ATK เพิ่มขึ้นทีละ +5\n(ปริมาณการเพิ่มขึ้นจะสูงสุดถึง 120)\nประเภท : ^777777Book^000000 พลังโจมตี : ^77777745^000000\nน้ำหนัก : ^7777770^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777Priest Cls/Sage Cls/Star Gladiator^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 271,
+    "itemLevel": 3,
+    "attack": 45,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Priest",
+      "Sage",
+      "Star Gladiator"
+    ],
+    "script": {
+      "matk": [
+        "10",
+        "1---2"
+      ],
+      "atk": [
+        "1---5",
+        "level:20===-10",
+        "level:10(1-120)---5"
+      ]
+    }
+  },
   "1600": {
     "id": 1600,
     "aegisName": "Sinister_Rod",
@@ -880,7 +1005,7 @@
     "compositionPos": null,
     "usableClass": [
       "Novice",
-      "Magician",
+      "Mage",
       "Acolyte"
     ],
     "script": {
@@ -2696,6 +2821,38 @@
       ]
     }
   },
+  "2018": {
+    "id": 2018,
+    "aegisName": "Metal_Staff",
+    "name": "Metal Staff [1]",
+    "unidName": "Two-Handed Staff",
+    "resName": "메탈스태프",
+    "description": "Staff ทำจากโลหะที่ช่วยเพิ่มความสามารถโดยผลิตจากการผสมกันระหว่าง Phracon และ Emveretarcon ลงในเหล็กกล้า\nMATK + 70.\nเมื่อ Wizard Class สวมใส่ เพิ่ม MATK + 15\nเมื่อ Sage Class สวมใส่ เพิ่ม MATK + 10\nทุกๆการอัพเกรด 1 ขั้น เพิ่ม MATK + 5\nเมื่อตัวละครเลเวลมากกว่า 20 : ทุกการเพิ่มขึ้นของ Base lv. 10 เพิ่ม MATK ขึ้นอีกครั้งละ + 5\n(ปริมาณการเพิ่มขึ้นจะสูงสุดถึง 120)\nประเภท : ^777777Two-Handed Staff^000000 พลังโจมตี : ^77777750^000000\nน้ำหนัก : ^7777770^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777Magician Cls/Acolyte Cls/Soul Linker^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 266,
+    "itemLevel": 3,
+    "attack": 50,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mage",
+      "Acolyte",
+      "Soul Linker"
+    ],
+    "script": {
+      "matk": [
+        "70",
+        "USED[Wizard]15",
+        "USED[Sage]10",
+        "level:20===-10",
+        "level:10(1-120)---5"
+      ]
+    }
+  },
   "2023": {
     "id": 2023,
     "aegisName": "Thanos_Rod",
@@ -3195,6 +3352,31 @@
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
+  },
+  "2114": {
+    "id": 2114,
+    "aegisName": "Stone_Buckler",
+    "name": "Stone Buckler [1]",
+    "unidName": "Guard",
+    "resName": "스톤버클러",
+    "description": "โล่หิน ที่ Thor ได้มาจาก Hrungnir ราชาแห่งยักษ์ ตอนที่กำจัดเขาได้\nมีพลังแห่งแห่งยักษ์ที่ยิ่งใหญ่พอๆกับพลังของเหล่าเทพสถิตอยู่\nลดพลังโจมตีจากมอนสเตอร์ขนาดใหญ่ 5%\nถ้าผู้ใช้สวม Odin's Blessing และ Magni's Cap ไว้ด้วยจะได้รับ Str +2 Def +5 Mdef +5\nถ้าใส่โดย Swordman Class จะได้รับ Def +6 เพิ่ม\nประเภท : ^777777Shield^000000 พลังป้องกัน : ^77777745^000000\nน้ำหนัก : ^777777150^000000\nLv ที่ต้องการ : ^77777765^000000\nอาชีพ : ^777777ทุกอาชีพ ยกเว้น Novice Cls^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 45,
+    "weight": 150,
+    "requiredLevel": 65,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "unusableClass": [
+      "Novice"
+    ],
+    "script": {}
   },
   "2115": {
     "id": 2115,
@@ -4711,6 +4893,33 @@
     "compositionPos": 16,
     "cardPrefix": "Ghost",
     "script": {}
+  },
+  "4051": {
+    "id": 4051,
+    "aegisName": "Yoyo_Card",
+    "name": "Yoyo Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "Perfect Dodge + 5\nAGI + 1\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Flash",
+    "script": {
+      "agi": [
+        "1"
+      ],
+      "perfectDodge": [
+        "5"
+      ]
+    }
   },
   "4060": {
     "id": 4060,
@@ -6386,6 +6595,33 @@
     "cardPrefix": "Resistant",
     "script": {}
   },
+  "4416": {
+    "id": 4416,
+    "aegisName": "Siroma_Card",
+    "name": "Siroma Card",
+    "unidName": "Siroma Card",
+    "resName": "이름없는카드",
+    "description": "ลดเวลาร่ายเวทย์และเพิ่มความรุนแรงให้กับสกิล Cold Bolt 25%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Yana",
+    "script": {
+      "vct__Cold Bolt": [
+        "25"
+      ],
+      "Cold Bolt": [
+        "25"
+      ]
+    }
+  },
   "4419": {
     "id": 4419,
     "aegisName": "Ktullanux_Card",
@@ -7532,6 +7768,30 @@
       ],
       "m_my_element_ghost": [
         "20"
+      ]
+    }
+  },
+  "4581": {
+    "id": 4581,
+    "aegisName": "Rudo_Card",
+    "name": "Rudo Card",
+    "unidName": "Rudo Card",
+    "resName": "이름없는카드",
+    "description": "เมื่อได้รับการโจมตีทางกายภาพ มีโอกาสที่จะเพิ่มความเร็วในการเคลื่อนที่เป็นระยะเวลา 3 วินาที, เพิ่ม AGI +44, อยู่ในสถานะ Endure แต่จะเสีย SP 40 ในขณะเดียวกัน\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Boot^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Toilet",
+    "script": {
+      "chance__agi": [
+        "44"
       ]
     }
   },
@@ -13379,6 +13639,38 @@
       ]
     }
   },
+  "5527": {
+    "id": 5527,
+    "aegisName": "Lunatic_Hat",
+    "name": "Lunatic Hat",
+    "unidName": "Cap",
+    "resName": "루나틱모자",
+    "description": "หมวกที่มีรูปทรงเหมือน Lunatic จอมซน\nLUK + 5, MDEF + 2, Perfect Dodge + 5\nมีโอกาสได้ Rainbow Carrot เมื่อกำจัดมอนสเตอร์ประเภทสัตว์\nไม่สามารถซื้อขายแลกเปลี่ยนได้\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nใช้สำหรับ : ^777777Upper ^000000 น้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^7777770^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 2,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "luk": [
+        "5"
+      ],
+      "mdef": [
+        "2"
+      ],
+      "perfectDodge": [
+        "5"
+      ]
+    }
+  },
   "5592": {
     "id": 5592,
     "aegisName": "Sigrun's_Wing",
@@ -14841,7 +15133,7 @@
     "compositionPos": null,
     "usableClass": [
       "Swordman",
-      "Magician",
+      "Mage",
       "Archer",
       "Merchant",
       "Thief"
@@ -14980,6 +15272,44 @@
       ],
       "hit": [
         "EQUIP[Black Cat]5"
+      ]
+    }
+  },
+  "13079": {
+    "id": 13079,
+    "aegisName": "Metal_Dagger",
+    "name": "Metal Dagger [1]",
+    "unidName": "Dagger",
+    "resName": "메탈대거",
+    "description": "Dagger ทำจากโลหะที่ช่วยเพิ่มความสามารถโดยผลิตจากการผสมกันระหว่าง Phracon และ Emveretarcon ลงในเหล็กกล้า\nทุกการอัพเกรด 1 ขั้น เพิ่ม ATK +5/ MATK + 2\nเมื่อตัวละครเลเวลมากกว่า 20 : ทุกการเพิ่มขึ้นของ Base lv. 10 ขั้น ATK เพิ่มขึ้นทีละ +5\n(ปริมาณการเพิ่มขึ้นจะสูงสุดถึง 120)\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^77777755^000000\nน้ำหนัก : ^7777770^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777Novice/Swordsman Cls/Magician Cls/Archer Cls/Merchant Cls/ Thief Cls/Soul Linker/Ninja Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 3,
+    "attack": 55,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice",
+      "Swordman",
+      "Mage",
+      "Archer",
+      "Merchant",
+      "Thief",
+      "Soul Linker",
+      "Ninja"
+    ],
+    "script": {
+      "atk": [
+        "1---5",
+        "level:20===-10",
+        "level:10(1-120)---5"
+      ],
+      "matk": [
+        "1---2"
       ]
     }
   },
@@ -19474,6 +19804,37 @@
       ]
     }
   },
+  "16023": {
+    "id": 16023,
+    "aegisName": "Metal_Mace",
+    "name": "Metal Mace [1]",
+    "unidName": "Club",
+    "resName": "메탈메이스",
+    "description": "Mace ทำจากโลหะที่ช่วยเพิ่มความสามารถโดยผลิตจากการผสมกันระหว่าง Phracon และ Emveretarcon ลงในเหล็กกล้า\nทุกการอัพเกรด 1 ขั้น เพิ่ม ATK +5\nเมื่อตัวละครเลเวลมากกว่า 20 : ทุกการเพิ่มขึ้นของ Base lv. 10 ขั้น ATK เพิ่มขึ้นทีละ +5\n(ปริมาณการเพิ่มขึ้นจะสูงสุดถึง 120)\nประเภท : ^777777Club^000000 พลังโจมตี : ^77777780^000000\nน้ำหนัก : ^7777770^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777Novice/Swordsman Cls/Acolyte Cls/Merchant Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 3,
+    "attack": 80,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice",
+      "Swordman",
+      "Acolyte",
+      "Merchant"
+    ],
+    "script": {
+      "atk": [
+        "1---5",
+        "level:20===-10",
+        "level:10(1-120)---5"
+      ]
+    }
+  },
   "16028": {
     "id": 16028,
     "aegisName": "Thanos_Hammer",
@@ -21159,6 +21520,41 @@
       ]
     }
   },
+  "18551": {
+    "id": 18551,
+    "aegisName": "Galaxy_Circlet",
+    "name": "Galaxy Circlet [1]",
+    "unidName": "Necklace",
+    "resName": "갤럭시서클릿",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้.^000000\nรัดเกล้าที่รวมความงดงามของกาแล็คซี่ไว้และเปล่งประกายราวกับดวงดาว\n\nMDEF + 5\n\nทุก ๆ ขั้นอัพเกรด, \nMaxHP + 100 \nMaxSP + 20\n\nเมื่ออัพเกรดถึงขั้น 9,\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n\nเมื่ออัพเกรดถึงขั้น 11,\nสามารถใช้งานสกิล Wind Cutter Lv.5\nสามารถใช้งานสกิล Adoramus Lv.6\nประเภท  : ^777777Headgear^000000 พลังป้องกัน : ^7777771^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 1,
+    "weight": 100,
+    "requiredLevel": 50,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "mdef": [
+        "5"
+      ],
+      "hp": [
+        "1---100"
+      ],
+      "sp": [
+        "1---20"
+      ],
+      "fct": [
+        "9===0.5"
+      ]
+    }
+  },
   "18563": {
     "id": 18563,
     "aegisName": "Heart_Wing_Hairband",
@@ -22250,10 +22646,10 @@
       "perfectDodge": [
         "3---1"
       ],
-      "hp": [
+      "hpPercent": [
         "2---1"
       ],
-      "sp": [
+      "spPercent": [
         "2---1"
       ],
       "Bomb Cluster": [
@@ -26810,6 +27206,37 @@
         "9===20",
         "11===10",
         "EQUIP[Temporal Luk Boots||Modified Luk Boots]REFINE[boot==10]30"
+      ]
+    }
+  },
+  "21005": {
+    "id": 21005,
+    "aegisName": "Metal_Two_Hand_Sword",
+    "name": "Metal Two Hand Sword [1]",
+    "unidName": "Two-Handed Sword",
+    "resName": "메탈투핸드소드",
+    "description": "Two-Handed Sword ทำจากโลหะที่ช่วยเพิ่มความสามารถโดยผลิตจากการผสมกันระหว่าง Phracon และ Emveretarcon ลงในเหล็กกล้า\nทุกการอัพเกรด 1 ขั้นเพิ่ม ATK + 6 / MATK + 2\nเมื่อตัวละครเลเวลมากกว่า 20 : ทุกการเพิ่มขึ้นของ Base lv. 10 ขั้น ATK เพิ่มขึ้นทีละ +5\n(ปริมาณการเพิ่มขึ้นจะสูงสุดถึง 120)\nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^77777795^000000\nน้ำหนัก : ^7777770^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777Swordsman Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 3,
+    "attack": 95,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "atk": [
+        "1---6",
+        "level:20===-10",
+        "level:10(1-120)---5"
+      ],
+      "matk": [
+        "1---2"
       ]
     }
   },
@@ -31531,6 +31958,36 @@
       ]
     }
   },
+  "24267": {
+    "id": 24267,
+    "aegisName": "S_Bard_Shoes",
+    "name": "Bard Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nเพิ่ม ATK เท่ากับเลเวลของสกิล Music Lessons ที่ผู้สวมใส่เรียน\nเมื่อขั้นอัพเกรดมากกว่า 6 ทุกๆ การอัพเกรด 1 ขั้น เพิ่ม ATK เท่ากับเลเวลของสกิล Music Lessons ที่ผู้สวมใส่เรียนเพิ่มเติม\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "LEARN_SKILL[Musical Lesson==1]---1",
+        "REFINE[7]LEARN_SKILL[Musical Lesson==1]---1",
+        "REFINE[8]LEARN_SKILL[Musical Lesson==1]---1",
+        "REFINE[9]LEARN_SKILL[Musical Lesson==1]---1",
+        "REFINE[10]LEARN_SKILL[Musical Lesson==1]---1"
+      ]
+    }
+  },
   "24268": {
     "id": 24268,
     "aegisName": "S_Dancer_Shoes",
@@ -31912,6 +32369,28 @@
         "EQUIP[Hunter Shadow Shoes]3"
       ]
     }
+  },
+  "24280": {
+    "id": 24280,
+    "aegisName": "S_Bard_Armor",
+    "name": "Bard Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเมื่อใช้สกิลของ Bard จะฟื้นฟู 5 SP ทุกๆ 5 วินาทีในระยะเวลา 30 วินาที\nทุกๆ การอัพเกรด 1 ขั้น เพิ่มค่าฟื้นฟู SP ทีละ 1\n^ff0000Bard skills:  Dissonance, Bragi's Poem, Assassin Cross at Sunset, Idun's Apple, Whistle^000000\n\nเมื่อสวมใส่ร่วมกับ Bard Shadow Shoes\nเมื่อใช้สกิล Extemporaneousness เพิ่ม ASPD และ Moving Speed อย่างสูงในระยะเวลา 5 วินาที\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
   },
   "24281": {
     "id": 24281,
@@ -34580,6 +35059,39 @@
         "9===3",
         "EQUIP[Magical Shadow Shield&&Magical Shadow Shoes]REFINE[shadowArmor,shadowShield,shadowBoot==23]===2",
         "EQUIP[Magical Shadow Shield&&Magical Shadow Shoes]REFINE[shadowArmor,shadowShield,shadowBoot==25]===3"
+      ]
+    }
+  },
+  "24399": {
+    "id": 24399,
+    "aegisName": "S_ImmunedAthena_Shield",
+    "name": "Immune Athena Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우3",
+    "description": "โล่เล็กที่สามารถสวมใส่ที่แขนได้ สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์การป้องกันของมันจะลดน้อยลง \nDEF + 50\nทุก ๆ การอัปเกรด 2 ขั้น, DEF +20 เพิ่มเติม\nเมื่อสวมใส่ร่วมกับ ^32CD32Hard Champion Shadow Shoes^000000,\nDEF + 50, MHP, MSP + 2%\nเมื่อค่าอัปเกรดรวมกันตั้งแต่ 16 ขึ้นไป,\nDEF + 50, MHP, MSP + 2% เพิ่มเติม\nประเภท : ^777777Shadow^000000 \nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "def": [
+        "50",
+        "2---20",
+        "EQUIP[Hard Champion Shadow Shoes]===50",
+        "EQUIP[Hard Champion Shadow Shoes]REFINE[shadowShield,shadowBoot==16]===50"
+      ],
+      "spPercent": [
+        "EQUIP[Hard Champion Shadow Shoes]===2",
+        "EQUIP[Hard Champion Shadow Shoes]REFINE[shadowShield,shadowBoot==16]===2"
       ]
     }
   },
@@ -43428,6 +43940,1164 @@
       ]
     }
   },
+  "24693": {
+    "id": 24693,
+    "aegisName": "S_2Para_Shield",
+    "name": "Eden Group Advanced Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우",
+    "description": "โล่ป้องกันขนาดเล็กสำหรับแขน ช่วยเพิ่มพลังป้องกันให้กับผู้สวมใส่ได้ สามารถสวมใส่เพียงชิ้นเดียวได้แต่จะได้รับพลังป้องกันน้อยลง\nไม่สามารถอัพเกรดได้\nMHP + 100\nลดระยะเวลาร่ายแบบแปรผัน 10%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "100"
+      ],
+      "vct": [
+        "10"
+      ]
+    }
+  },
+  "24694": {
+    "id": 24694,
+    "aegisName": "S_2Para_Armor",
+    "name": "Eden Group Advanced Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะสำหรับใส่ทับเกราะอีกที ช่วยเพิ่มพลังป้องกันให้กับผู้สวมใส่ได้ สามารถสวมใส่เพียงชิ้นเดียวได้แต่จะได้รับพลังป้องกันน้อยลง\nไม่สามารถอัพเกรดได้\nMHP + 100\nHIT + 15\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "100"
+      ],
+      "hit": [
+        "15"
+      ]
+    }
+  },
+  "24695": {
+    "id": 24695,
+    "aegisName": "S_2Para_Shoes",
+    "name": "Eden Group Advanced Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우",
+    "description": "รองเท้าที่สามารถสวมทับรองเท้าอีกทีได้ สามารถสวมใส่เพียงชิ้นเดียวได้แต่จะได้รับพลังป้องกันน้อยลง\nไม่สามารถอัพเกรดได้\nMHP + 100\nASPD + 7%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "100"
+      ],
+      "aspdPercent": [
+        "7"
+      ]
+    }
+  },
+  "24696": {
+    "id": 24696,
+    "aegisName": "S_2Para_Earing",
+    "name": "Eden Group Advanced Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่ว่ากันว่าช่วยปกป้องผู้สวมใส่ สามารถดึงศักยภาพของผู้สวมใส่ออกมาได้\nไม่สามารถอัพเกรดได้\nMHP + 100\nMATK + 15\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "100"
+      ],
+      "matk": [
+        "15"
+      ]
+    }
+  },
+  "24697": {
+    "id": 24697,
+    "aegisName": "S_2Para_Pendant",
+    "name": "Eden Group Advanced Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่ว่ากันว่าช่วยปกป้องผู้สวมใส่ สามารถดึงศักยภาพของผู้สวมใส่ออกมาได้\nไม่สามารถอัพเกรดได้\nMHP + 100\nATK + 15\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "100"
+      ],
+      "atk": [
+        "15"
+      ]
+    }
+  },
+  "24698": {
+    "id": 24698,
+    "aegisName": "S_2Para_RK_Weapon",
+    "name": "Rune Knight Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nลด Cooldown สกิล Ignition Break 0.5 วินาที, \nเมื่อทำการโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาสที่จะใช้สกิล Ignition Break Lv.3 โดยอัตโนมัติ\n(เมื่อเรียนรู้สกิลสูงกว่า Lv. 3 จะใช้ตามเลเวลที่เรียนรู้), \nเพิ่ม Damage สกิล Sonic Wave, Dragon Breath, Dragon Breath - WATER, Hundred Spears 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, ลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "cd__Ignition Break": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===0.5"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Dragon Breath": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Dragon Breath - WATER": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Hundred Spears": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24699": {
+    "id": 24699,
+    "aegisName": "S_2Para_LG_Weapon",
+    "name": "Royal Guard Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nลด Cooldown สกิล Cannon Spear 0.5 วินาที, \nเพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 10%, \nเพิ่ม Damage สกิล Banishing Point, Over Brand, Genesis Ray 15%, \nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, \nASPD + 2, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "cd__Cannon Spear": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===0.5"
+      ],
+      "m_my_element_holy": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "Banishing Point": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Over Brand": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Genesis Ray": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "aspd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===2"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24700": {
+    "id": 24700,
+    "aegisName": "S_2Para_NC_Weapon",
+    "name": "Mechanic Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางกายภาพที่ทำต่อศัตรูทุกขนาด 5%, \nเพิ่ม Damage สกิล Axe Tornado, Power Swing, Vulcan Arm, Knuckle Boost, Arm Cannon 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Mechanic"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "p_size_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===5"
+      ],
+      "Axe Tornado": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Power Swing": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Vulcan Arm": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Knuckle Boost": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Arm Cannon": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24701": {
+    "id": 24701,
+    "aegisName": "S_2Para_GN_Weapon",
+    "name": "Genetic Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nลดระยะเวลาร่ายแบบแปรผัน 10%, ลด Cooldown สกิล Cart Tornado Attack 1 วินาที, \nเพิ่ม Damage สกิล Cart Tornado Attack, Cart Cannon 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "cd__Cart Tornado": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===1"
+      ],
+      "Cart Tornado": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24702": {
+    "id": 24702,
+    "aegisName": "S_2Para_GC_Weapon",
+    "name": "Guillotine Cross Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant CRI + 10, \nเพิ่ม Damage สกิล Cross Impact, Rolling Cutter, Counter Slash 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Guillotine Cross"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "cri": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "Cross Impact": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Rolling Cutter": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Counter Slash": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24703": {
+    "id": 24703,
+    "aegisName": "S_2Para_SC_Weapon",
+    "name": "Shadow Chaser Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเมื่อทำการโจมตีทางกายภาพทั่วไป มีโอกาสที่จะใช้สกิล Psychic Wave Lv.3 โดยอัตโนมัติ, \nเพิ่ม Damage สกิล Triangle Shot, Fatal Menace 15%, \nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, \nลด Delay หลังใช้สกิล 15%, \nASPD + 2, \nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Shadow Chaser"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Triangle Shot": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Fatal Manace": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "aspd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===2"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24704": {
+    "id": 24704,
+    "aegisName": "S_2Para_WL_Weapon",
+    "name": "Warlock Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Crimson Rock, Earth Strain, Chain Lightning, Soul Expansion 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Warlock"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Crimson Rock": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Earth Strain": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Chain Lightning": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Soul Expansion": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24705": {
+    "id": 24705,
+    "aegisName": "S_2Para_SO_Weapon",
+    "name": "Sorcerer Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nเพิ่ม Damage สกิล Psychic Wave, Diamond Dust, Earth Grave, Varetyr Spear 15%, \nลด Delay หลังใช้สกิล 15%, ASPD + 2, \nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Sorcerer"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Psychic Wave": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Diamond Dust": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Earth Grave": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Varetyr Spear": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "aspd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===2"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24706": {
+    "id": 24706,
+    "aegisName": "S_2Para_AB_Weapon",
+    "name": "Archbishop Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, ลด Cooldown สกิล Adoramus 1 วินาที, \nเพิ่ม Damage สกิล Adoramus, Judex, Magnus Exorcismus, Duple Light 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Archbishop^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Arch Bishop"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Adoramus": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Judex": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Magnus Exorcismus": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Duple Light": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "cd__Adoramus": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===1"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24707": {
+    "id": 24707,
+    "aegisName": "S_2Para_SR_Weapon",
+    "name": "Sura Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nลด Cooldown สกิล Rampage Blast 7.5 วินาที, \nเพิ่ม Damage สกิล Fallen Empire, Tiger Cannon, Rampage Blast, Knuckle Arrow 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Sura^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "cd__Rampage Blast": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===7.5"
+      ],
+      "Fallen Empire": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Tiger Cannon": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Rampage Blast": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Knuckle Arrow": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24708": {
+    "id": 24708,
+    "aegisName": "S_2Para_RA_Weapon",
+    "name": "Ranger Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nลด Delay หลังใช้สกิล 15%, ลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Focused Arrow Strike, Aimed Bolt, Arrow Storm 15%, เพิ่ม Damage ทางกายภาพระยะไกล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Ranger^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "Focused Arrow Strike": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Aimed Bolt": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Arrow Storm": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24709": {
+    "id": 24709,
+    "aegisName": "S_2Para_WM_Weapon",
+    "name": "Wanderer & Minstrel Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, ลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Severe Rainstorm, Metallic Sound, Reverberation 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิ่ม Damage ทางกายภาพระยะไกล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel, Wanderer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Minstrel",
+      "Wanderer"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Severe Rainstorm": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Metalic Sound": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Reverberation": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24710": {
+    "id": 24710,
+    "aegisName": "S_2Para_KO_Weapon",
+    "name": "Kagerou & Oboro Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade, Cross Slash, Swirling Petal 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิ่ม Damage ทางกายภาพระยะไกล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Kagerou, Oboro^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Kagerou",
+      "Oboro"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Flaming Petals": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Freezing Spear": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Wind Blade": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Cross Slash": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Swirling Petal": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24711": {
+    "id": 24711,
+    "aegisName": "S_2Para_RL_Weapon",
+    "name": "Rebellion Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nลด Cooldown สกิล Hot Barrel 5 วินาที, \nลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Fire Dance, Fire Rain, Round Trip 15%, \nลด Delay หลังใช้สกิล 15%, เพิ่ม Damage ทางกายภาพระยะไกล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Gunslinger^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Gunslinger"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "cd__Hot Barrel": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===5"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "Fire Dance": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Fire Rain": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Round Trip": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24712": {
+    "id": 24712,
+    "aegisName": "S_2Para_SJ_Weapon",
+    "name": "Star Emperor Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant \nลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Blaze Kick, Solar Explosion, New Moon Kick, Full Moon Kick 15%, \nลด Delay หลังใช้สกิล 15%, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Star Emperor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Star Emperor"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "Blaze Kick": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Solar Explosion": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "New Moon Kick": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Full Moon Kick": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24713": {
+    "id": 24713,
+    "aegisName": "S_2Para_SP_Weapon",
+    "name": "Soul Reaper Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage สกิล Espa, Eswhoo, Curse Explosion 15%, ลด Cooldown สกิล Evil Soul Curse 1.5 วินาที, \nลด Delay หลังใช้สกิล 15%, \nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Soul Reaper^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Soul Reaper"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Espa": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Eswhoo": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Curse Explosion": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "cd__Evil Soul Curse": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===1.5"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24714": {
+    "id": 24714,
+    "aegisName": "S_2Para_SU_Weapon",
+    "name": "Doram Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Picky Peck, Sprit Of Savage, Silvervine Stem Spear, Catnip Meteor 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิ่ม Damage ทางกายภาพระยะไกล 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Picky Peck": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Sprit Of Savage": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Silvervine Stem Spear": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Catnip Meteor": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
+  "24715": {
+    "id": 24715,
+    "aegisName": "S_2Para_NV_Weapon",
+    "name": "Super Novice Eden Group Advanced Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา ไม่สามารถอัพเกรดได้\nไม่สามารถอัพเกรดได้\nATK + 10, MATK + 10\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Shadow Armor, Shield, Shoes, Earring, Pendant\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, \nลดระยะเวลาร่ายแบบแปรผัน 10%, \nเพิ่ม Damage สกิล Raid, Back Stab, Fire Bolt, Cold Bolt, Lightning Bolt, Fire Ball, Heaven's Drive 15%, \nลด Delay หลังใช้สกิล 15%, \nเพิ่ม Damage ทางกายภาพระยะใกล้ 15%, \nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์ทุกเผ่า 50%(ยกเว้น Player)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "matk": [
+        "10"
+      ],
+      "Raid": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Back Stab": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Fire Bolt": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Cold Bolt": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Lightening Bolt": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Fire Ball": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "Heaven's Drive": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===10"
+      ],
+      "acd": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===15"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Eden Group Advanced Shadow Armor&&Eden Group Advanced Shadow Shield&&Eden Group Advanced Shadow Shoes&&Eden Group Advanced Shadow Earring&&Eden Group Advanced Shadow Pendant]===50"
+      ]
+    }
+  },
   "24723": {
     "id": 24723,
     "aegisName": "S_AutoSpell_Armor",
@@ -44080,6 +45750,51 @@
       ],
       "matkPercent": [
         "9===3"
+      ]
+    }
+  },
+  "26007": {
+    "id": 26007,
+    "aegisName": "Spectral_Spear_IL",
+    "name": "Illusion Spectral Spear [1]",
+    "unidName": "Spear",
+    "resName": "Spectral_Spear_IL",
+    "description": "หอกสองมือที่ช่างฝีมือสละชีวิตเพื่อแก้แค้นเหล่าผีร้าย หอกนี้สามารถครอบงำจิตใจของผู้ใช้งาน\nเพิ่มพลังโจมตีทางกายภาพต่อมอนสเตอร์ธาตุ Shadow กับเผ่า Demon และ Undead 20%\nลดความเสียหายที่ได้รับจากมอนสเตอร์ธาตุ Shadow กับเผ่า Demon และ Undead 10%\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่มพลังโจมตีทางกายภาพและลดความเสียหายที่ได้รับ 3% เพิ่มเติม\nเมื่อกำจัดมอนสเตอร์ด้วยการโจมตีทางกายภาพระยะใกล้จะฟื้นฟู HP 50 หน่วย และทุก ๆ การอัพเกรด 2 ขั้น เมื่อกำจัดมอนสเตอร์ด้วยการโจมตีทางกายภาพระยะใกล้จะฟื้นฟู SP 1 หน่วย\nเมื่อโจมตีทางกายภาพระยะใกล้ ผู้ใช้มีโอกาสได้รับสถานะ Confusion\n^ffffff_^000000\nเมื่อสวมใส่กับ Illusion Shoes,\nเพิ่ม ASPD 8%\nเมื่อค่าอัพเกรด Illusion Spectral Spear และ Illusion Shoes แต่ละชิ้นตั้งแต่ 7 ขึ้นไป เพิ่มดาเมจของ Banishing Point 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป,\nเพิ่มพลังโจมตีระยะไกล 10%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป,\nเพิ่มดาเมจของ Banishing Point 30% เพิ่มเติม\n^ffffff_^000000\nประเภท : ^777777Two-Handed Spear^000000 พลังโจมตี : ^777777240^000000\nน้ำหนัก : ^777777200^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Cls^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 260,
+    "itemLevel": 4,
+    "attack": 240,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "p_element_dark": [
+        "20",
+        "2---3"
+      ],
+      "p_race_demon": [
+        "20",
+        "2---3"
+      ],
+      "p_element_undead": [
+        "20",
+        "2---3"
+      ],
+      "aspdPercent": [
+        "EQUIP[Illusion Shoes]===8"
+      ],
+      "Banishing Point": [
+        "EQUIP[Illusion Shoes]REFINE[boot==7]7===20",
+        "EQUIP[Illusion Shoes]REFINE[weapon,boot==22]===30"
+      ],
+      "range": [
+        "EQUIP[Illusion Shoes]REFINE[weapon,boot==18]===10"
       ]
     }
   },
@@ -54140,7 +55855,7 @@
     "name": "Mettle Lv. 2",
     "unidName": "Mettle Lv. 2",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 6%, HIT + 6",
+    "description": "ATK + 8%, HIT + 20",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54153,10 +55868,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "6"
+        "8"
       ],
       "hit": [
-        "6"
+        "20"
       ]
     }
   },
@@ -54166,7 +55881,7 @@
     "name": "Mettle Lv. 3",
     "unidName": "Mettle Lv. 3",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 9%, HIT + 9",
+    "description": "ATK + 12%, HIT + 30",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54179,10 +55894,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "9"
+        "12"
       ],
       "hit": [
-        "9"
+        "30"
       ]
     }
   },
@@ -54192,7 +55907,7 @@
     "name": "Mettle Lv. 4",
     "unidName": "Mettle Lv. 4",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 12%, HIT + 12",
+    "description": "ATK + 16%, HIT + 40",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54205,10 +55920,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "12"
+        "16"
       ],
       "hit": [
-        "12"
+        "40"
       ]
     }
   },
@@ -54218,7 +55933,7 @@
     "name": "Mettle Lv. 5",
     "unidName": "Mettle Lv. 5",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 15%, HIT + 15",
+    "description": "ATK + 20%, HIT + 50",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54231,10 +55946,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "15"
+        "20"
       ],
       "hit": [
-        "15"
+        "50"
       ]
     }
   },
@@ -54244,7 +55959,7 @@
     "name": "Mettle Lv. 6",
     "unidName": "Mettle Lv. 6",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 18%, HIT + 18",
+    "description": "ATK + 24%, HIT + 60",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54257,10 +55972,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "18"
+        "24"
       ],
       "hit": [
-        "18"
+        "60"
       ]
     }
   },
@@ -54270,7 +55985,7 @@
     "name": "Mettle Lv. 7",
     "unidName": "Mettle Lv. 7",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 21%, HIT + 21",
+    "description": "ATK + 28%, HIT + 70",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54283,10 +55998,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "21"
+        "28"
       ],
       "hit": [
-        "21"
+        "70"
       ]
     }
   },
@@ -54296,7 +56011,7 @@
     "name": "Mettle Lv. 8",
     "unidName": "Mettle Lv. 8",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 24%, HIT + 24",
+    "description": "ATK + 32%, HIT + 80",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54309,10 +56024,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "24"
+        "32"
       ],
       "hit": [
-        "24"
+        "80"
       ]
     }
   },
@@ -54322,7 +56037,7 @@
     "name": "Mettle Lv. 9",
     "unidName": "Mettle Lv. 9",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 27%, HIT + 27",
+    "description": "ATK + 36%, HIT + 90",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54335,10 +56050,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "27"
+        "36"
       ],
       "hit": [
-        "27"
+        "90"
       ]
     }
   },
@@ -54348,7 +56063,7 @@
     "name": "Mettle Lv. 10",
     "unidName": "Mettle Lv. 10",
     "resName": "레드크리스탈조각",
-    "description": "ATK + 33%, HIT + 30",
+    "description": "ATK + 44%, HIT + 100",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54361,10 +56076,10 @@
     "compositionPos": 65535,
     "script": {
       "atkPercent": [
-        "33"
+        "44"
       ],
       "hit": [
-        "30"
+        "100"
       ]
     }
   },
@@ -54374,7 +56089,7 @@
     "name": "Magic Essence Lv. 2",
     "unidName": "Magic Essence Lv. 2",
     "resName": "블루크리스탈조각",
-    "description": "MATK + 6%, ลด Fixed Cast Time 0.2 วินาที",
+    "description": "MATK + 8%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54387,7 +56102,7 @@
     "compositionPos": 65535,
     "script": {
       "matkPercent": [
-        "6"
+        "8"
       ],
       "fct": [
         "0.2"
@@ -54400,33 +56115,7 @@
     "name": "Magic Essence Lv. 3",
     "unidName": "Magic Essence Lv. 3",
     "resName": "블루크리스탈조각",
-    "description": "MATK + 9%, ลด Fixed Cast Time 0.3 วินาที",
-    "slots": 0,
-    "itemTypeId": 11,
-    "itemSubTypeId": 0,
-    "itemLevel": null,
-    "attack": null,
-    "defense": null,
-    "weight": null,
-    "requiredLevel": null,
-    "location": null,
-    "compositionPos": 65535,
-    "script": {
-      "matkPercent": [
-        "9"
-      ],
-      "fct": [
-        "0.3"
-      ]
-    }
-  },
-  "29074": {
-    "id": 29074,
-    "aegisName": "MagicEessence4",
-    "name": "Magic Essence Lv. 4",
-    "unidName": "Magic Essence Lv. 4",
-    "resName": "블루크리스탈조각",
-    "description": "MATK + 12%, ลด Fixed Cast Time 0.4 วินาที",
+    "description": "MATK + 12%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54442,17 +56131,17 @@
         "12"
       ],
       "fct": [
-        "0.4"
+        "0.3"
       ]
     }
   },
-  "29075": {
-    "id": 29075,
-    "aegisName": "MagicEessence5",
-    "name": "Magic Essence Lv. 5",
-    "unidName": "Magic Essence Lv. 5",
+  "29074": {
+    "id": 29074,
+    "aegisName": "MagicEessence4",
+    "name": "Magic Essence Lv. 4",
+    "unidName": "Magic Essence Lv. 4",
     "resName": "블루크리스탈조각",
-    "description": "MATK + 15%, ลด Fixed Cast Time 0.5 วินาที",
+    "description": "MATK + 16%, ลดระยะเวลาร่ายแบบคงที่ 0.4 วินาที",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54465,7 +56154,33 @@
     "compositionPos": 65535,
     "script": {
       "matkPercent": [
-        "15"
+        "16"
+      ],
+      "fct": [
+        "0.4"
+      ]
+    }
+  },
+  "29075": {
+    "id": 29075,
+    "aegisName": "MagicEessence5",
+    "name": "Magic Essence Lv. 5",
+    "unidName": "Magic Essence Lv. 5",
+    "resName": "블루크리스탈조각",
+    "description": "MATK + 20%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matkPercent": [
+        "20"
       ],
       "fct": [
         "0.5"
@@ -54478,59 +56193,7 @@
     "name": "Magic Essence Lv. 6",
     "unidName": "Magic Essence Lv. 6",
     "resName": "블루크리스탈조각",
-    "description": "MATK + 18%, ลด Fixed Cast Time 0.6 วินาที",
-    "slots": 0,
-    "itemTypeId": 11,
-    "itemSubTypeId": 0,
-    "itemLevel": null,
-    "attack": null,
-    "defense": null,
-    "weight": null,
-    "requiredLevel": null,
-    "location": null,
-    "compositionPos": 65535,
-    "script": {
-      "matkPercent": [
-        "18"
-      ],
-      "fct": [
-        "0.6"
-      ]
-    }
-  },
-  "29077": {
-    "id": 29077,
-    "aegisName": "MagicEessence7",
-    "name": "Magic Essence Lv. 7",
-    "unidName": "Magic Essence Lv. 7",
-    "resName": "블루크리스탈조각",
-    "description": "MATK + 21%, ลด Fixed Cast Time 0.7 วินาที",
-    "slots": 0,
-    "itemTypeId": 11,
-    "itemSubTypeId": 0,
-    "itemLevel": null,
-    "attack": null,
-    "defense": null,
-    "weight": null,
-    "requiredLevel": null,
-    "location": null,
-    "compositionPos": 65535,
-    "script": {
-      "matkPercent": [
-        "21"
-      ],
-      "fct": [
-        "0.7"
-      ]
-    }
-  },
-  "29078": {
-    "id": 29078,
-    "aegisName": "MagicEessence8",
-    "name": "Magic Essence Lv. 8",
-    "unidName": "Magic Essence Lv. 8",
-    "resName": "블루크리스탈조각",
-    "description": "MATK + 24%, ลด Fixed Cast Time 0.8 วินาที",
+    "description": "MATK + 24%, ลดระยะเวลาร่ายแบบคงที่ 0.6 วินาที",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54546,17 +56209,17 @@
         "24"
       ],
       "fct": [
-        "0.8"
+        "0.6"
       ]
     }
   },
-  "29079": {
-    "id": 29079,
-    "aegisName": "MagicEessence9",
-    "name": "Magic Essence Lv. 9",
-    "unidName": "Magic Essence Lv. 9",
+  "29077": {
+    "id": 29077,
+    "aegisName": "MagicEessence7",
+    "name": "Magic Essence Lv. 7",
+    "unidName": "Magic Essence Lv. 7",
     "resName": "블루크리스탈조각",
-    "description": "MATK + 27%, ลด Fixed Cast Time 0.9 วินาที",
+    "description": "MATK + 28%, ลดระยะเวลาร่ายแบบคงที่ 0.7 วินาที",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54569,7 +56232,59 @@
     "compositionPos": 65535,
     "script": {
       "matkPercent": [
-        "27"
+        "28"
+      ],
+      "fct": [
+        "0.7"
+      ]
+    }
+  },
+  "29078": {
+    "id": 29078,
+    "aegisName": "MagicEessence8",
+    "name": "Magic Essence Lv. 8",
+    "unidName": "Magic Essence Lv. 8",
+    "resName": "블루크리스탈조각",
+    "description": "MATK + 32%, ลดระยะเวลาร่ายแบบคงที่ 0.8 วินาที",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matkPercent": [
+        "32"
+      ],
+      "fct": [
+        "0.8"
+      ]
+    }
+  },
+  "29079": {
+    "id": 29079,
+    "aegisName": "MagicEessence9",
+    "name": "Magic Essence Lv. 9",
+    "unidName": "Magic Essence Lv. 9",
+    "resName": "블루크리스탈조각",
+    "description": "MATK + 36%, ลดระยะเวลาร่ายแบบคงที่ 0.9 วินาที",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matkPercent": [
+        "36"
       ],
       "fct": [
         "0.9"
@@ -54582,7 +56297,7 @@
     "name": "Magic Essence Lv. 10",
     "unidName": "Magic Essence Lv. 10",
     "resName": "블루크리스탈조각",
-    "description": "MATK + 33%, ลด Fixed Cast Time 1 วินาที",
+    "description": "MATK + 44%, ลดระยะเวลาร่ายแบบคงที่ 1 วินาที",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54595,7 +56310,7 @@
     "compositionPos": 65535,
     "script": {
       "matkPercent": [
-        "33"
+        "44"
       ],
       "fct": [
         "1"
@@ -54608,7 +56323,7 @@
     "name": "Acute Lv. 2",
     "unidName": "Acute Lv. 2",
     "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 20%, CRI + 6",
+    "description": "Critical Damage + 35%, CRI + 6",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54621,7 +56336,7 @@
     "compositionPos": 65535,
     "script": {
       "criDmg": [
-        "20"
+        "35"
       ],
       "cri": [
         "6"
@@ -54634,59 +56349,7 @@
     "name": "Acute Lv. 3",
     "unidName": "Acute Lv. 3",
     "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 30%, CRI + 9",
-    "slots": 0,
-    "itemTypeId": 11,
-    "itemSubTypeId": 0,
-    "itemLevel": null,
-    "attack": null,
-    "defense": null,
-    "weight": null,
-    "requiredLevel": null,
-    "location": null,
-    "compositionPos": 65535,
-    "script": {
-      "criDmg": [
-        "30"
-      ],
-      "cri": [
-        "9"
-      ]
-    }
-  },
-  "29084": {
-    "id": 29084,
-    "aegisName": "Acute4",
-    "name": "Acute Lv. 4",
-    "unidName": "Acute Lv. 4",
-    "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 40%, CRI + 12",
-    "slots": 0,
-    "itemTypeId": 11,
-    "itemSubTypeId": 0,
-    "itemLevel": null,
-    "attack": null,
-    "defense": null,
-    "weight": null,
-    "requiredLevel": null,
-    "location": null,
-    "compositionPos": 65535,
-    "script": {
-      "criDmg": [
-        "40"
-      ],
-      "cri": [
-        "12"
-      ]
-    }
-  },
-  "29085": {
-    "id": 29085,
-    "aegisName": "Acute5",
-    "name": "Acute Lv. 5",
-    "unidName": "Acute Lv. 5",
-    "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 50%, CRI + 15",
+    "description": "Critical Damage + 50%, CRI + 9",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54702,17 +56365,17 @@
         "50"
       ],
       "cri": [
-        "15"
+        "9"
       ]
     }
   },
-  "29086": {
-    "id": 29086,
-    "aegisName": "Acute6",
-    "name": "Acute Lv. 6",
-    "unidName": "Acute Lv. 6",
+  "29084": {
+    "id": 29084,
+    "aegisName": "Acute4",
+    "name": "Acute Lv. 4",
+    "unidName": "Acute Lv. 4",
     "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 60%, CRI + 18",
+    "description": "Critical Damage + 65%, CRI + 12",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54725,46 +56388,20 @@
     "compositionPos": 65535,
     "script": {
       "criDmg": [
-        "60"
+        "65"
       ],
       "cri": [
-        "18"
+        "12"
       ]
     }
   },
-  "29087": {
-    "id": 29087,
-    "aegisName": "Acute7",
-    "name": "Acute Lv. 7",
-    "unidName": "Acute Lv. 7",
+  "29085": {
+    "id": 29085,
+    "aegisName": "Acute5",
+    "name": "Acute Lv. 5",
+    "unidName": "Acute Lv. 5",
     "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 70%, CRI + 21",
-    "slots": 0,
-    "itemTypeId": 11,
-    "itemSubTypeId": 0,
-    "itemLevel": null,
-    "attack": null,
-    "defense": null,
-    "weight": null,
-    "requiredLevel": null,
-    "location": null,
-    "compositionPos": 65535,
-    "script": {
-      "criDmg": [
-        "70"
-      ],
-      "cri": [
-        "21"
-      ]
-    }
-  },
-  "29088": {
-    "id": 29088,
-    "aegisName": "Acute8",
-    "name": "Acute Lv. 8",
-    "unidName": "Acute Lv. 8",
-    "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 80%, CRI + 24",
+    "description": "Critical Damage + 80%, CRI + 15",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54780,17 +56417,17 @@
         "80"
       ],
       "cri": [
-        "24"
+        "15"
       ]
     }
   },
-  "29089": {
-    "id": 29089,
-    "aegisName": "Acute9",
-    "name": "Acute Lv. 9",
-    "unidName": "Acute Lv. 9",
+  "29086": {
+    "id": 29086,
+    "aegisName": "Acute6",
+    "name": "Acute Lv. 6",
+    "unidName": "Acute Lv. 6",
     "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 90%, CRI + 27",
+    "description": "Critical Damage + 95%, CRI + 18",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54803,20 +56440,20 @@
     "compositionPos": 65535,
     "script": {
       "criDmg": [
-        "90"
+        "95"
       ],
       "cri": [
-        "27"
+        "18"
       ]
     }
   },
-  "29090": {
-    "id": 29090,
-    "aegisName": "Acute10",
-    "name": "Acute Lv. 10",
-    "unidName": "Acute Lv. 10",
+  "29087": {
+    "id": 29087,
+    "aegisName": "Acute7",
+    "name": "Acute Lv. 7",
+    "unidName": "Acute Lv. 7",
     "resName": "그린크리스탈조각",
-    "description": "คริติคอลดาเมจ + 110%, CRI + 30",
+    "description": "Critical Damage + 110%, CRI + 21",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54832,17 +56469,17 @@
         "110"
       ],
       "cri": [
-        "30"
+        "21"
       ]
     }
   },
-  "29092": {
-    "id": 29092,
-    "aegisName": "MasterArcher2",
-    "name": "Master Archer Lv. 2",
-    "unidName": "Master Archer Lv. 2",
-    "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 8% เมื่อใช้ธนู, ASPD + 2%",
+  "29088": {
+    "id": 29088,
+    "aegisName": "Acute8",
+    "name": "Acute Lv. 8",
+    "unidName": "Acute Lv. 8",
+    "resName": "그린크리스탈조각",
+    "description": "Critical Damage + 125%, CRI + 24",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54854,7 +56491,85 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "criDmg": [
+        "125"
+      ],
+      "cri": [
+        "24"
+      ]
+    }
+  },
+  "29089": {
+    "id": 29089,
+    "aegisName": "Acute9",
+    "name": "Acute Lv. 9",
+    "unidName": "Acute Lv. 9",
+    "resName": "그린크리스탈조각",
+    "description": "Critical Damage + 140%, CRI + 27",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "140"
+      ],
+      "cri": [
+        "27"
+      ]
+    }
+  },
+  "29090": {
+    "id": 29090,
+    "aegisName": "Acute10",
+    "name": "Acute Lv. 10",
+    "unidName": "Acute Lv. 10",
+    "resName": "그린크리스탈조각",
+    "description": "Critical Damage + 170%, CRI + 30",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "170"
+      ],
+      "cri": [
+        "30"
+      ]
+    }
+  },
+  "29092": {
+    "id": 29092,
+    "aegisName": "MasterArcher2",
+    "name": "Master Archer Lv. 2",
+    "unidName": "Master Archer Lv. 2",
+    "resName": "옐로크리스탈조각",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 8%, ASPD + 2%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
         "8"
       ],
       "aspdPercent": [
@@ -54868,7 +56583,7 @@
     "name": "Master Archer Lv. 3",
     "unidName": "Master Archer Lv. 3",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 12% เมื่อใช้ธนู, ASPD + 3%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 12%, ASPD + 3%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54880,7 +56595,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "12"
       ],
       "aspdPercent": [
@@ -54894,7 +56609,7 @@
     "name": "Master Archer Lv. 4",
     "unidName": "Master Archer Lv. 4",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 16% เมื่อใช้ธนู, ASPD + 4%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 16%, ASPD + 4%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54906,7 +56621,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "16"
       ],
       "aspdPercent": [
@@ -54920,7 +56635,7 @@
     "name": "Master Archer Lv. 5",
     "unidName": "Master Archer Lv. 5",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 20% เมื่อใช้ธนู, ASPD + 5%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 20%, ASPD + 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54932,7 +56647,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "20"
       ],
       "aspdPercent": [
@@ -54946,7 +56661,7 @@
     "name": "Master Archer Lv. 6",
     "unidName": "Master Archer Lv. 6",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 24% เมื่อใช้ธนู, ASPD + 6%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 24%, ASPD + 6%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54958,7 +56673,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "24"
       ],
       "aspdPercent": [
@@ -54972,7 +56687,7 @@
     "name": "Master Archer Lv. 7",
     "unidName": "Master Archer Lv. 7",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 28% เมื่อใช้ธนู, ASPD + 7%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 28%, ASPD + 7%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -54984,7 +56699,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "28"
       ],
       "aspdPercent": [
@@ -54998,7 +56713,7 @@
     "name": "Master Archer Lv. 8",
     "unidName": "Master Archer Lv. 8",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 32% เมื่อใช้ธนู, ASPD + 8%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 32%, ASPD + 8%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55010,7 +56725,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "32"
       ],
       "aspdPercent": [
@@ -55024,7 +56739,7 @@
     "name": "Master Archer Lv. 9",
     "unidName": "Master Archer Lv. 9",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 36% เมื่อใช้ธนู, ASPD + 9%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 36%, ASPD + 9%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55036,7 +56751,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "36"
       ],
       "aspdPercent": [
@@ -55050,7 +56765,7 @@
     "name": "Master Archer Lv. 10",
     "unidName": "Master Archer Lv. 10",
     "resName": "옐로크리스탈조각",
-    "description": "เพิ่มความเสียหายทางกายภาพ + 44% เมื่อใช้ธนู, ASPD + 10%",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 44%, ASPD + 10%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55062,7 +56777,7 @@
     "location": null,
     "compositionPos": 65535,
     "script": {
-      "bowRange": [
+      "range": [
         "44"
       ],
       "aspdPercent": [
@@ -55076,7 +56791,7 @@
     "name": "Adamantine Lv. 2",
     "unidName": "Adamantine Lv. 2",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 10%, DEF + 30",
+    "description": "MHP + 10%, DEF + 180, MDEF + 40",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55092,7 +56807,10 @@
         "10"
       ],
       "def": [
-        "30"
+        "180"
+      ],
+      "mdef": [
+        "40"
       ]
     }
   },
@@ -55102,7 +56820,7 @@
     "name": "Adamantine Lv. 3",
     "unidName": "Adamantine Lv. 3",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 15%, DEF + 45",
+    "description": "MHP + 15%, DEF + 220, MDEF + 60",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55118,7 +56836,10 @@
         "15"
       ],
       "def": [
-        "45"
+        "220"
+      ],
+      "mdef": [
+        "60"
       ]
     }
   },
@@ -55128,7 +56849,7 @@
     "name": "Adamantine Lv. 4",
     "unidName": "Adamantine Lv. 4",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 20%, DEF + 60",
+    "description": "MHP + 20%, DEF + 260, MDEF + 80",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55144,7 +56865,10 @@
         "20"
       ],
       "def": [
-        "60"
+        "260"
+      ],
+      "mdef": [
+        "80"
       ]
     }
   },
@@ -55154,7 +56878,7 @@
     "name": "Adamantine Lv. 5",
     "unidName": "Adamantine Lv. 5",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 25%, DEF + 75",
+    "description": "MHP + 25%, DEF + 300, MDEF + 100",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55170,7 +56894,10 @@
         "25"
       ],
       "def": [
-        "75"
+        "300"
+      ],
+      "mdef": [
+        "100"
       ]
     }
   },
@@ -55180,7 +56907,7 @@
     "name": "Adamantine Lv. 6",
     "unidName": "Adamantine Lv. 6",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 30%, DEF + 90",
+    "description": "MHP + 30%, DEF + 340, MDEF + 120",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55196,7 +56923,10 @@
         "30"
       ],
       "def": [
-        "90"
+        "340"
+      ],
+      "mdef": [
+        "120"
       ]
     }
   },
@@ -55206,7 +56936,7 @@
     "name": "Adamantine Lv. 7",
     "unidName": "Adamantine Lv. 7",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 35%, DEF + 105",
+    "description": "MHP + 35%, DEF + 380, MDEF + 140",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55222,7 +56952,10 @@
         "35"
       ],
       "def": [
-        "105"
+        "380"
+      ],
+      "mdef": [
+        "140"
       ]
     }
   },
@@ -55232,7 +56965,7 @@
     "name": "Adamantine Lv. 8",
     "unidName": "Adamantine Lv. 8",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 40%, DEF + 120",
+    "description": "MHP + 40%, DEF + 420, MDEF + 160",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55248,7 +56981,10 @@
         "40"
       ],
       "def": [
-        "120"
+        "420"
+      ],
+      "mdef": [
+        "160"
       ]
     }
   },
@@ -55258,7 +56994,7 @@
     "name": "Adamantine Lv. 9",
     "unidName": "Adamantine Lv. 9",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 45%, DEF + 135",
+    "description": "MHP + 45%, DEF + 460, MDEF + 180",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55274,7 +57010,10 @@
         "45"
       ],
       "def": [
-        "135"
+        "460"
+      ],
+      "mdef": [
+        "180"
       ]
     }
   },
@@ -55284,7 +57023,7 @@
     "name": "Adamantine Lv. 10",
     "unidName": "Adamantine Lv. 10",
     "resName": "퍼플크리스탈조각",
-    "description": "Max HP + 55%, DEF + 150",
+    "description": "MHP + 55%, DEF + 500, MDEF + 200",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -55300,7 +57039,10 @@
         "55"
       ],
       "def": [
-        "150"
+        "500"
+      ],
+      "mdef": [
+        "200"
       ]
     }
   },
@@ -60462,7 +62204,7 @@
     "name": "Temporal Jewel (Luk) Lv. 1",
     "unidName": "Temporal Jewel (Luk) Lv. 1",
     "resName": "Time_Jewely_Luk",
-    "description": "ทุก ๆ การอัพเกรด Headgear 2 ขั้น Critical Damage +2%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น CRI +1\nทุก ๆ การอัพเกรด Headgear 5 ขั้น ATK +1%",
+    "description": "ทุก ๆ การอัพเกรด Headgear 2 ขั้น Critical Damage + 3%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น CRI + 1\nทุก ๆ การอัพเกรด Headgear 5 ขั้น ATK + 1%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -60475,7 +62217,7 @@
     "compositionPos": null,
     "script": {
       "criDmg": [
-        "2---2"
+        "2---3"
       ],
       "cri": [
         "2---1"
@@ -60491,7 +62233,7 @@
     "name": "Temporal Jewel (Luk) Lv. 2",
     "unidName": "Temporal Jewel (Luk) Lv. 2",
     "resName": "Time_Jewely_Luk",
-    "description": "ทุก ๆ การอัพเกรด Headgear 2 ขั้น Critical Damage +4%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น CRI +2\nทุก ๆ การอัพเกรด Headgear 5 ขั้น ATK +2%",
+    "description": "ทุก ๆ การอัพเกรด Headgear 2 ขั้น Critical Damage + 6%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น CRI + 2\nทุก ๆ การอัพเกรด Headgear 5 ขั้น ATK + 2%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -60504,7 +62246,7 @@
     "compositionPos": null,
     "script": {
       "criDmg": [
-        "2---4"
+        "2---6"
       ],
       "cri": [
         "2---2"
@@ -60520,7 +62262,7 @@
     "name": "Temporal Jewel (Luk) Lv. 3",
     "unidName": "Temporal Jewel (Luk) Lv. 3",
     "resName": "Time_Jewely_Luk",
-    "description": "ทุก ๆ การอัพเกรด Headgear 2 ขั้น Critical Damage +6%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น CRI +3\nทุก ๆ การอัพเกรด Headgear 5 ขั้น ATK +3%",
+    "description": "ทุก ๆ การอัพเกรด Headgear 2 ขั้น Critical Damage + 9%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น CRI + 3\nทุก ๆ การอัพเกรด Headgear 5 ขั้น ATK + 3%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -60533,7 +62275,7 @@
     "compositionPos": null,
     "script": {
       "criDmg": [
-        "2---6"
+        "2---9"
       ],
       "cri": [
         "2---3"
@@ -60812,6 +62554,39 @@
       ],
       "flee": [
         "EQUIP[Modification Orb (Lucky Strike)]40"
+      ]
+    }
+  },
+  "31017": {
+    "id": 31017,
+    "aegisName": "XM_Cookie_Card",
+    "name": "Vicious Cookie Card",
+    "unidName": "Vicious Cookie Card",
+    "resName": "이름없는카드",
+    "description": "ATK + 1%, MATK + 1%, MHP - 2%.\nทุกการอัพเกรด 2 ขั้น จะเพิ่ม ATK + 1%, MATK + 1%, MHP - 2%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Foot Gear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Hate",
+    "script": {
+      "atkPercent": [
+        "1",
+        "2---1"
+      ],
+      "matkPercent": [
+        "1",
+        "2---1"
+      ],
+      "hpPercent": [
+        "-2",
+        "2----2"
       ]
     }
   },
@@ -76883,6 +78658,64 @@
       ]
     }
   },
+  "400139": {
+    "id": 400139,
+    "aegisName": "2Para_Cap_A",
+    "name": "Eden Group Advanced Cap",
+    "unidName": "Cap",
+    "resName": "낙원단모자100",
+    "description": "หมวกระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nATK + 60\nเมื่อทำการโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะดูดซับ 2% ของ Damage ที่ทำมาเป็น HP\nเมื่อทำการโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะดูดซับ 2% ของ Damage ที่ทำมาเป็น SP\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "60"
+      ]
+    }
+  },
+  "400140": {
+    "id": 400140,
+    "aegisName": "2Para_Cap_B",
+    "name": "Eden Group Advanced Hat",
+    "unidName": "Cap",
+    "resName": "퍼레이드모자",
+    "description": "หมวกระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nMATK + 60\nเมื่อทำการโจมตีทางเวทมนตร์ มีโอกาสเล็กน้อยที่จะฟื้นฟู HP 350 ทุก ๆ 1 วินาที เป็นจำนวน 4 ครั้ง\nเมื่อทำการโจมตีทางเวทมนตร์ มีโอกาสเล็กน้อยที่จะฟื้นฟู SP 80 ทุก ๆ 1 วินาที เป็นจำนวน 4 ครั้ง\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777777^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "60"
+      ],
+      "hp": [
+        "350"
+      ],
+      "sp": [
+        "80"
+      ]
+    }
+  },
   "410016": {
     "id": 410016,
     "aegisName": "Battle_Processor",
@@ -83391,6 +85224,90 @@
       ]
     }
   },
+  "450185": {
+    "id": 450185,
+    "aegisName": "2Para_Armor_A",
+    "name": "Eden Group Advanced Suit",
+    "unidName": "Tights",
+    "resName": "L_60Lv_Dress",
+    "description": "ชุดระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nMHP + 1500, MSP + 150, ลด Delay หลังใช้สกิล 5%\nทุก ๆ 10 Base Lv, ATK + 5 (มีผลจนถึงเลเวล 150)\nหาก Base Lv.105 ขึ้นไป ATK + 3%\nหาก Base Lv.110 ขึ้นไป ลด Delay หลังใช้สกิลลงอีก 5%\nหาก Base Lv.120 ขึ้นไป MHP + 3%\nหาก Base Lv.130 ขึ้นไป ATK + 40 เพิ่มเติม\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777750^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 50,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1500"
+      ],
+      "sp": [
+        "150"
+      ],
+      "acd": [
+        "5",
+        "SUM[level==110]===5"
+      ],
+      "atkPercent": [
+        "SUM[level==105]===3"
+      ],
+      "hpPercent": [
+        "SUM[level==120]===3"
+      ],
+      "atk": [
+        "SUM[level==130]===40"
+      ]
+    }
+  },
+  "450186": {
+    "id": 450186,
+    "aegisName": "2Para_Armor_B",
+    "name": "Eden Group Advanced Robe",
+    "unidName": "Tights",
+    "resName": "L_60Lv_Robe",
+    "description": "ชุดคลุมระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nMHP + 1000, MSP + 250, ลด Delay หลังใช้สกิล 5%\nทุก ๆ 10 Base Lv, MATK + 5 (มีผลจนถึงเลเวล 150)\nหาก Base Lv.105 ขึ้นไป MATK + 3%\nหาก Base Lv.110 ขึ้นไป ลด Delay หลังใช้สกิลลงอีก 5%\nหาก Base Lv.120 ขึ้นไป MHP + 3%\nหาก Base Lv.130 ขึ้นไป MATK + 40 เพิ่มเติม\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777735^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 35,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1000"
+      ],
+      "sp": [
+        "250"
+      ],
+      "acd": [
+        "5",
+        "SUM[level==110]===5"
+      ],
+      "matkPercent": [
+        "SUM[level==105]===3"
+      ],
+      "hpPercent": [
+        "SUM[level==120]===3"
+      ],
+      "matk": [
+        "SUM[level==130]===40"
+      ]
+    }
+  },
   "450209": {
     "id": 450209,
     "aegisName": "Imp_Powered_Suit",
@@ -84228,6 +86145,51 @@
       ]
     }
   },
+  "470069": {
+    "id": 470069,
+    "aegisName": "2Para_Boots_A",
+    "name": "Eden Group Advanced Boots",
+    "unidName": "Sandle",
+    "resName": "L_60Lv_Sandal",
+    "description": "รองเท้าระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\nทุก ๆ 10 Base Lv, MHP + 50, MSP + 20 (มีผลจนถึงเลเวล 150)\nหาก Base Lv.105 ขึ้นไป CRI + 15\nหาก Base Lv.110 ขึ้นไป เพิ่ม Critical Damage 5%\nหาก Base Lv.120 ขึ้นไป เพิ่ม Critical Damage ขึ้นอีก 5%\nหาก Base Lv.130 ขึ้นไป ATK + 5%\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777714^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 14,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "melee": [
+        "10"
+      ],
+      "range": [
+        "10"
+      ],
+      "fct": [
+        "0.3"
+      ],
+      "sp": [
+        "level,mhp + 50---20"
+      ],
+      "cri": [
+        "SUM[level==105]===15"
+      ],
+      "criDmg": [
+        "SUM[level==110]===5",
+        "SUM[level==120]===5"
+      ],
+      "atkPercent": [
+        "SUM[level==130]===5"
+      ]
+    }
+  },
   "470070": {
     "id": 470070,
     "aegisName": "Egirnion_Shoes",
@@ -84319,6 +86281,48 @@
       ],
       "chance__int": [
         "EQUIP[Tree Sprout]===150"
+      ]
+    }
+  },
+  "470093": {
+    "id": 470093,
+    "aegisName": "2Para_Boots_B",
+    "name": "Eden Group Advanced Shoes",
+    "unidName": "Sandle",
+    "resName": "L_60Lv_Shoes",
+    "description": "รองเท้าระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\nทุก ๆ 10 Base Lv, MHP + 40, MSP + 30 (มีผลจนถึงเลเวล 150)\nหาก Base Lv.105 ขึ้นไป ลดระยะเวลาร่ายแบบแปรผัน 10%\nหาก Base Lv.110 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อศัตรูทุกธาตุ 5%\nหาก Base Lv.120 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อศัตรูทุกธาตุขึ้นอีก 5%\nหาก Base Lv.130 ขึ้นไป MATK + 5%\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "m_my_element_all": [
+        "10"
+      ],
+      "fct": [
+        "0.3"
+      ],
+      "sp": [
+        "level,mhp + 40---30"
+      ],
+      "vct": [
+        "SUM[level==105]===10"
+      ],
+      "เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อศัตรูทุกธาตุ": [
+        "SUM[level==110]===5",
+        "SUM[level==120]===5"
+      ],
+      "matkPercent": [
+        "SUM[level==130]===5"
       ]
     }
   },
@@ -85711,6 +87715,86 @@
       ]
     }
   },
+  "480105": {
+    "id": 480105,
+    "aegisName": "2Para_Manteau_A",
+    "name": "Eden Group Advanced Manteau",
+    "unidName": "Hood",
+    "resName": "L_60Lv_Cape",
+    "description": "เสื้อคลุมระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nเพิ่มความต้านทานธาตุ Neutral 20%, HIT + 35, ASPD + 10%\nทุก ๆ 10 Base Lv, ลดระยะเวลาร่ายแบบแปรผัน 1% (มีผลจนถึงเลเวล 150)\nหาก Base Lv.105 ขึ้นไป ASPD + 5% เพิ่มเติม\nหาก Base Lv.110 ขึ้นไป ลดระยะเวลาร่ายแบบแปรผัน 5%\nหาก Base Lv.120 ขึ้นไป ลด Delay หลังใช้สกิล 5%\nหาก Base Lv.130 ขึ้นไป ลด Delay หลังใช้สกิลลงอีก 5%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777714^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 14,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "เพิ่มความต้านทานธาตุ Neutral": [
+        "20"
+      ],
+      "hit": [
+        "35"
+      ],
+      "aspdPercent": [
+        "10",
+        "SUM[level==105]===5"
+      ],
+      "vct": [
+        "SUM[level==110]===5"
+      ],
+      "acd": [
+        "SUM[level==120]===5",
+        "SUM[level==130]===5"
+      ]
+    }
+  },
+  "480106": {
+    "id": 480106,
+    "aegisName": "2Para_Manteau_B",
+    "name": "Eden Group Advanced Muffler",
+    "unidName": "Hood",
+    "resName": "L_60Lv_Muffler",
+    "description": "ผ้าคลุมระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nไม่สามารถอัพเกรดได้\nเพิ่มความต้านทานธาตุ Neutral 20%, FLEE + 40, ลดระยะเวลาร่ายแบบแปรผัน 15%\nทุก ๆ 10 Base Lv, ASPD + 1% (มีผลจนถึงเลเวล 150)\nหาก Base Lv.105 ขึ้นไป ASPD + 5% เพิ่มเติม\nหาก Base Lv.110 ขึ้นไป ลดระยะเวลาร่ายแบบแปรผันลงอีก 5%\nหาก Base Lv.120 ขึ้นไป ลด Delay หลังใช้สกิล 5%\nหาก Base Lv.130 ขึ้นไป ลด Delay หลังใช้สกิลลงอีก 5%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "เพิ่มความต้านทานธาตุ Neutral": [
+        "20"
+      ],
+      "flee": [
+        "40"
+      ],
+      "vct": [
+        "15",
+        "SUM[level==110]===5"
+      ],
+      "aspdPercent": [
+        "SUM[level==105]===5"
+      ],
+      "acd": [
+        "SUM[level==120]===5",
+        "SUM[level==130]===5"
+      ]
+    }
+  },
   "480120": {
     "id": 480120,
     "aegisName": "Guardian_Soul_TH",
@@ -86806,7 +88890,7 @@
       ],
       "matkPercent": [
         "9===10",
-        "11===10"
+        "11===7"
       ],
       "p_pene_race_dragon": [
         "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]REFINE[armor,garment==21]===30"
@@ -88892,6 +90976,145 @@
       ],
       "fct": [
         "EQUIP[Drooping Thanatos's Dolor]REFINE[headUpper==11]===0.5"
+      ]
+    }
+  },
+  "490126": {
+    "id": 490126,
+    "aegisName": "2Para_Acc_L_A",
+    "name": "Eden Group Advanced Ring",
+    "unidName": "Ring",
+    "resName": "L_60Lv_Aring",
+    "description": "แหวนระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nATK + 3%, การร่ายไม่ถูกขัด\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Glove ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, ASPD + 10%  \nหาก Base Lv.105 ขึ้นไป ATK + 2% เพิ่มเติม\nหาก Base Lv.110 ขึ้นไป เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 5%\nหาก Base Lv.120 ขึ้นไป เพิ่ม Critical Damage 5%\nประเภท : ^777777Accessory (Left)^000000 \nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "3",
+        "EQUIP[Eden Group Advanced Glove ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]SUM[level==105]===2"
+      ],
+      "fct": [
+        "EQUIP[Eden Group Advanced Glove ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]===0.2"
+      ],
+      "aspdPercent": [
+        "EQUIP[Eden Group Advanced Glove ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]===10"
+      ],
+      "melee": [
+        "EQUIP[Eden Group Advanced Glove ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]SUM[level==110]===5"
+      ],
+      "range": [
+        "EQUIP[Eden Group Advanced Glove ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]SUM[level==110]===5"
+      ],
+      "criDmg": [
+        "EQUIP[Eden Group Advanced Glove ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]SUM[level==120]===5"
+      ]
+    }
+  },
+  "490127": {
+    "id": 490127,
+    "aegisName": "2Para_Acc_R_A",
+    "name": "Eden Group Advanced Glove",
+    "unidName": "Glove",
+    "resName": "L_60Lv_Gloves",
+    "description": "ถุงมือระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nสามารถใช้สกิล Heal เลเวล 1 ได้, ASPD + 10%, ลดระยะเวลาร่ายแบบแปรผัน 5%\nประเภท : ^777777Accessory (Right)^000000 \nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspdPercent": [
+        "10"
+      ],
+      "vct": [
+        "5"
+      ]
+    }
+  },
+  "490128": {
+    "id": 490128,
+    "aegisName": "2Para_Acc_L_B",
+    "name": "Eden Group Advanced Magic Ring",
+    "unidName": "Ring",
+    "resName": "L_60Lv_Mring",
+    "description": "แหวนเวทมนตร์ระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nMATK + 3%, การร่ายไม่ถูกขัด\nเมื่อสวมใส่ร่วมกับ Eden Group Advanced Necklace ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, ลดระยะเวลาร่ายแบบแปรผัน 10%\nหาก Base Lv.105 ขึ้นไป MATK + 2% เพิ่มเติม\nหาก Base Lv.110 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nหาก Base Lv.120 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อศัตรูทุกธาตุ 5%\nประเภท : ^777777Accessory (Left)^000000 \nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "3",
+        "EQUIP[Eden Group Advanced Necklace ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]SUM[level==105]===2"
+      ],
+      "fct": [
+        "EQUIP[Eden Group Advanced Necklace ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]===0.2"
+      ],
+      "vct": [
+        "EQUIP[Eden Group Advanced Necklace ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]===10"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Eden Group Advanced Necklace ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]SUM[level==110]===5"
+      ],
+      "เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อศัตรูทุกธาตุ": [
+        "EQUIP[Eden Group Advanced Necklace ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที]SUM[level==120]===5"
+      ]
+    }
+  },
+  "490129": {
+    "id": 490129,
+    "aegisName": "2Para_Acc_R_B",
+    "name": "Eden Group Advanced Necklace",
+    "unidName": "Necklace",
+    "resName": "L_60Lv_Necklace",
+    "description": "สร้อยคอระดับสูงที่มอบให้เฉพาะสมาชิกของ Eden Group\nสามารถใช้สกิล Heal เลเวล 1 ได้, ลดระยะเวลาร่ายแบบแปรผัน 10%, ASPD + 5%\nประเภท : ^777777Accessory (Right)^000000 \nพลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลเกราะ : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "10"
+      ],
+      "aspdPercent": [
+        "5"
       ]
     }
   },
