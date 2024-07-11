@@ -29,6 +29,7 @@ const mapAll = {
 		'm_size_all',
 	],
 	'เพิ่ม Damage ต่อศัตรูทุกเผ่า': ['p_race_all', 'm_race_all'],
+	'เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล': ['melee', 'range'],
 };
 const mapPrefix = {
 	'เพิ่ม Damage ทางเวทมนตร์ธาตุ': 'm_my_element',
@@ -134,6 +135,7 @@ const map = {
 	ทางเวทย์ที่สร้างต่อศัตรูทุกขนาด: 'm_size_all',
 	'magical damage against all size enemies': 'm_size_all',
 	'เพิ่ม Damage เวทมนตร์ที่ทำต่อศัตรูทุกขนาด': 'm_size_all',
+	'เพิ่ม Damage ทางเวทมนตร์ที่ทำต่อศัตรูทุกขนาด': 'm_size_all',
 	'เพิ่ม Damage ทางเวทย์ที่ทำต่อศัตรูขนาดใหญ่': 'm_size_l',
 	'เพิ่ม Damage ทางเวทย์ต่อศัตรูขนาดกลาง': 'm_size_m',
 
