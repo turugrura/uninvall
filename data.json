@@ -1234,7 +1234,7 @@
       "Sorcerer"
     ],
     "script": {
-      "cd__Psychic Wave": [
+      "fix_vct__Psychic Wave": [
         "3"
       ],
       "Psychic Wave": [
@@ -4541,6 +4541,38 @@
       ]
     }
   },
+  "2936": {
+    "id": 2936,
+    "aegisName": "Recovery_Ring",
+    "name": "Recovery Ring [1]",
+    "unidName": "Accessory",
+    "resName": "회복의반지",
+    "description": "แหวนที่ซ่อนพลังอันยิ่งใหญ่ เกี่ยวกับการรักษาไว้ภายใน เมื่อคุณสวมใส่มัน จะรับรู้ได้ถึงพลังชีวิตที่เพิ่มขึ้นมา\nVIT + 1, MHP + 250, MaxHP + 10%\nเพิ่ม 5% ให้กับผลของสกิล [ฟื้นฟู HP]\nไม่มีวันถูกทำลาย\nประเภท : ^777777Accessory^000000\nDefense : ^7777775^000000 น้ำหนัก : ^77777710^000000\nLv ที่ต้องการ : ^77777710^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 5,
+    "weight": 10,
+    "requiredLevel": 10,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vit": [
+        "1"
+      ],
+      "hp": [
+        "250"
+      ],
+      "hpPercent": [
+        "10"
+      ]
+    }
+  },
   "2963": {
     "id": 2963,
     "aegisName": "Body_Power_Up_Ring",
@@ -6782,6 +6814,36 @@
       ]
     }
   },
+  "4428": {
+    "id": 4428,
+    "aegisName": "Bow_Guardian_Card",
+    "name": "Bow Guardian Card",
+    "unidName": "Bow Guardian Card",
+    "resName": "이름없는카드",
+    "description": "ถ้าใส่กับธนู ความรุนแรงของสกิล Arrow Shower จะแรงขึ้น 50%\nCRI + 5, HIT + 5\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "of Shaft",
+    "script": {
+      "Arrow Shower": [
+        "WEAPON_TYPE[bow]===50"
+      ],
+      "cri": [
+        "5"
+      ],
+      "hit": [
+        "5"
+      ]
+    }
+  },
   "4430": {
     "id": 4430,
     "aegisName": "Ifrit_Card",
@@ -7877,6 +7939,30 @@
       ],
       "m_my_element_ghost": [
         "20"
+      ]
+    }
+  },
+  "4578": {
+    "id": 4578,
+    "aegisName": "Pyuriel_Card",
+    "name": "Angry Student Pyuriel Card",
+    "unidName": "Angry Student Pyuriel Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Critical Damage 30%\nแต่จะได้รับความเสียหายจากมอนสเตอร์ทุกประเภทเพิ่มขึ้น 10%\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fear",
+    "script": {
+      "criDmg": [
+        "30"
       ]
     }
   },
@@ -14253,6 +14339,41 @@
       ]
     }
   },
+  "9094": {
+    "id": 9094,
+    "aegisName": "Leaf_Lunatic_Egg",
+    "name": "Leaf Lunatic Egg",
+    "unidName": "Leaf Lunatic Egg",
+    "resName": "무속성알",
+    "description": "ไข่ที่มี Q-Pet Leaf Lunatic หลับใหลอยู่ สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย CRI + 2, ATK + 2.\nหากความสัมพันธ์อยู่ในระดับปกติ CRI + 3, ATK + 3.\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร CRI + 4, ATK + 4, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Formless 3%\nหากความสัมพันธ์อยู่ในระดับสนิทสนม CRI + 5, ATK + 5, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Formless 6%\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "cri": [
+        "5"
+      ],
+      "atk": [
+        "5"
+      ],
+      "p_race_formless": [
+        "6"
+      ],
+      "m_race_formless": [
+        "6"
+      ]
+    }
+  },
   "9095": {
     "id": 9095,
     "aegisName": "Nine_Tail_Egg",
@@ -14587,6 +14708,32 @@
       ]
     }
   },
+  "9120": {
+    "id": 9120,
+    "aegisName": "Aliza_EGG",
+    "name": "Aliza Egg",
+    "unidName": "Aliza Egg",
+    "resName": "무속성알",
+    "description": "ไข่ที่มี Q-Pet Aliza หลับใหลอยู่ สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย MDEF + 4.\nหากความสัมพันธ์อยู่ในระดับปกติ MDEF + 5, เพิ่มปริมาณ Heal 2%\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร MDEF + 6, เพิ่มปริมาณ Heal 4%\nหากความสัมพันธ์อยู่ในระดับสนิทสนม MDEF + 7, เพิ่มปริมาณ Heal 6%\n\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "mdef": [
+        "7"
+      ]
+    }
+  },
   "9121": {
     "id": 9121,
     "aegisName": "Ork_Hero_EGG",
@@ -14799,6 +14946,116 @@
       ],
       "range": [
         "5"
+      ]
+    }
+  },
+  "9138": {
+    "id": 9138,
+    "aegisName": "Farmiliar_Egg",
+    "name": "Familiar Egg",
+    "unidName": "Familiar Egg",
+    "resName": "암속성알",
+    "description": "ไข่ที่มี Q-Pet Familiar หลับใหลอยู่ สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร INT + 3, เพิ่มความต้านทานต่อสถานะ Curse 10%\nหากความสัมพันธ์อยู่ในระดับสนิทสนม INT + 5, เพิ่มความต้านทานต่อสถานะ Curse 20%\n\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "5"
+      ]
+    }
+  },
+  "9139": {
+    "id": 9139,
+    "aegisName": "Dark_Illusion_Egg",
+    "name": "Dark Illusion Egg",
+    "unidName": "Dark Illusion Egg",
+    "resName": "언데드알",
+    "description": "ไข่ที่มี Q-Pet Dark Illusion หลับใหลอยู่ สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย ลดระยะเวลาร่ายแบบแปรผัน 2%\nหากความสัมพันธ์อยู่ในระดับปกติ ลดระยะเวลาร่ายแบบแปรผัน 3%\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร ลดระยะเวลาร่ายแบบแปรผัน 4%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow 3%\nหากความสัมพันธ์อยู่ในระดับสนิทสนม ลดระยะเวลาร่ายแบบแปรผัน 5%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow 5%\n\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "5"
+      ],
+      "m_my_element_dark": [
+        "5"
+      ]
+    }
+  },
+  "9140": {
+    "id": 9140,
+    "aegisName": "Blue_Moon_Loli_Ruri_Egg",
+    "name": "Blue Moon Loli Ruri Egg",
+    "unidName": "Blue Moon Loli Ruri Egg",
+    "resName": "수속성알",
+    "description": "ไข่ที่มี Q-Pet Blue Moon Loli Ruri หลับใหลอยู่ สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย, VIT + 1, MHP + 1%.\nหากความสัมพันธ์อยู่ในระดับปกติ  VIT + 2, MHP + 2%.\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร VIT + 3, MHP + 3%\nเมื่อถูกโจมตีทางกายภาพ, มีโอกาสเล็กน้อยที่จะร่าย Kyrie Eleison Lv.2 ใส่ตนเอง (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดผลลัพธ์ตามเลเวลที่เรียนรู้)\nหากความสัมพันธ์อยู่ในระดับสนิทสนม VIT + 4, MHP + 5%\nเมื่อถูกโจมตีทางกายภาพ, มีโอกาสเล็กน้อยที่จะร่าย Kyrie Eleison Lv.2 ใส่ตนเอง (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดผลลัพธ์ตามเลเวลที่เรียนรู้)\n\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vit": [
+        "4"
+      ],
+      "hpPercent": [
+        "5"
+      ]
+    }
+  },
+  "9148": {
+    "id": 9148,
+    "aegisName": "Darklord_Egg",
+    "name": "Dark Lord Egg",
+    "unidName": "Dark Lord Egg",
+    "resName": "Darklord_Egg",
+    "description": "ไข่ที่มี Q-Pet Dark Lord หลับใหลอยู่ สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow 3%\nหากความสัมพันธ์อยู่ในระดับปกติ เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow 5%\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow 7%\nหากความสัมพันธ์อยู่ในระดับสนิทสนม เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow 7%, เพิ่มความเร็วในการเคลื่อนที่ตลอดเวลา\n\nประเภท : Monster Egg",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "m_my_element_dark": [
+        "7"
       ]
     }
   },
@@ -18950,6 +19207,56 @@
       ]
     }
   },
+  "15405": {
+    "id": 15405,
+    "aegisName": "Fafnir_Scale_J",
+    "name": "Fafnir Scale",
+    "unidName": "Plate",
+    "resName": "Fafnir_Scale",
+    "description": "เกราะที่ทำมาจากเกล็ดของ Fafnir ที่ถูกจัดการโดยวีรบุรุษ Sigurd\nเมื่อสวมใส่จะรู้สึกได้ถึงความทรงพลังที่ห่อหุ้มร่างกายไว้\n\nMaxHP + 10% , MaxSP + 10%\n\nMDEF + 15\nไม่สามารถทำลายได้\n\nเพิ่ม Damage สกิล Dragon Breath, Dragon Breath - Water 50%\n\nทุก ๆ การเรียนรู้สกิล Dragon Breath 1 เลเวล, เพิ่ม Damage ทางกายภาพระยะไกล 2%\nทุก ๆ การเรียนรู้สกิล Dragon Breath - Water 1 เลเวล, Global Cooldown -2%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 11 ขึ้นไป,\nMaxHP + 20% , MaxSP + 20%,\nGlobal Cooldown -5%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 12 ขึ้นไป,\nMaxHP + 20% , MaxSP + 20%,\nGlobal Cooldown -5%\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^777777120^000000\nน้ำหนัก : ^777777150^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight Class^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 120,
+    "weight": 150,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "hpPercent": [
+        "10",
+        "11===20",
+        "12===20"
+      ],
+      "spPercent": [
+        "10",
+        "11===20",
+        "12===20"
+      ],
+      "mdef": [
+        "15"
+      ],
+      "Dragon Breath": [
+        "50"
+      ],
+      "Dragon Breath - WATER": [
+        "50"
+      ],
+      "range": [
+        "LEARN_SKILL[Dragon Breath==1]---2"
+      ],
+      "acd": [
+        "LEARN_SKILL[Dragon Breath - WATER==1]---2",
+        "11===5",
+        "12===5"
+      ]
+    }
+  },
   "15461": {
     "id": 15461,
     "aegisName": "Apollo_Armor_TH",
@@ -20167,6 +20474,28 @@
         "level:200===5"
       ]
     }
+  },
+  "16063": {
+    "id": 16063,
+    "aegisName": "Long_Mace_IL",
+    "name": "Illusion Long Mace [2]",
+    "unidName": "Mace",
+    "resName": "Long_Mace_IL",
+    "description": "หอกยาวที่ไม่ได้ทำให้รู้สึกปลอดภัยขึ้นแม้ว่าจะอยู่ไกลจากมันแล้วก็ตาม\nระยะโจมตี 3 ช่อง \nลดความเสียหายจากพลังโจมตีระยะไกล 10% ทุก ๆ การอัพเกรด 2 ขั้น, ลดความเสียหายจากพลังโจมตีระยะไกล 3%\nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777185^000000\nน้ำหนัก : ^77777780^000000\nLV ของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Acolyte Cls^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 185,
+    "defense": null,
+    "weight": 80,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Acolyte"
+    ],
+    "script": {}
   },
   "16088": {
     "id": 16088,
@@ -22998,7 +23327,7 @@
   "19085": {
     "id": 19085,
     "aegisName": "Sigrun's_Wing_",
-    "name": "Sigrun's Wing [1]",
+    "name": "Sigrun's Wing_[1]",
     "unidName": "Accessory",
     "resName": "사이그룬의날개",
     "description": "ปีกอันน่าอัศจรรย์ใจที่สามารถเปลี่ยนความสามารถให้เข้ากับคลาสของผู้สวมใส่ได้\nสำหรับ Swordman, Theif, Merchant, Taekwon, Star Gladiator class ASPD + 1, AGI - 2.\nสำหรับ Magician, Acolyte, Ninja, Soul Linker class MATK + 5, ค่า Heal + 1%.\nสำหรับ Archer, Gun Slinger class เพิ่ม Damage การโจมตีระยะไกล 1%.\nสำหรับ Novice, Super Novice Class HP + 60, SP + 30.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nตำแหน่ง : ^777777Middle ^000000น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ได้ : ^777777ทุกอาชีพ^000000",
@@ -24078,6 +24407,28 @@
       ]
     }
   },
+  "19241": {
+    "id": 19241,
+    "aegisName": "Magical_Booster_K",
+    "name": "Magical Booster K [1]",
+    "unidName": "Accessory",
+    "resName": "매지컬부스터",
+    "description": "A helm which increases the magical powers of the wearer by controlling the brainwaves.\nIt has voice recognition function and interacts with other equipment!\n\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Middle ^000000Weight: ^77777730^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
+  },
   "19242": {
     "id": 19242,
     "aegisName": "Cat_Lace_Hairband_K",
@@ -24170,6 +24521,28 @@
         "EQUIP[Recovery Light]REFINE[weapon==2]---3"
       ]
     }
+  },
+  "19245": {
+    "id": 19245,
+    "aegisName": "Crimson_Booster",
+    "name": "Crimson Booster [1]",
+    "unidName": "Accessory",
+    "resName": "크림슨부스터",
+    "description": "A tool that amplifies your ability by regulating brain waves.\nThe design looks like a magical booster, but the purpose of its development is unknown.\n\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Middle ^000000Weight: ^77777730^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
   },
   "19246": {
     "id": 19246,
@@ -26292,6 +26665,32 @@
       ]
     }
   },
+  "20804": {
+    "id": 20804,
+    "aegisName": "AmistrBag_Greed",
+    "name": "Greed Amistr Bag [1]",
+    "unidName": "Garment",
+    "resName": "아미스트르가방",
+    "description": "กระเป๋าโฮมุน \"Amistr\"\nALL Status + 1.\nสามารถใช้ Skill Greed Lv. 1 ได้\nทุกๆอัพเกรด 2 ขั้น EXP ที่ได้รับจากมอนสเตอร์ +1%, อัตราการดร็อปไอเท็ม +1%\nเมื่ออัพเกรดถึงระดับ 9 หรือมากกว่า, ฟื้นฟู SP 3 เมื่อฆ่าศัตรูด้วยการโจมตีทางกายภาพและทางเวทย์\nเมื่ออัพเกรดขั้น 12 การร่ายจะไม่ถูกขัดขวาง\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^77777730^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 30,
+    "weight": 20,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "allStatus": [
+        "1"
+      ]
+    }
+  },
   "20821": {
     "id": 20821,
     "aegisName": "Golden_Scarf",
@@ -26824,6 +27223,50 @@
       ],
       "fct": [
         "EQUIP[Temporal Transcendent Boots]===0.5"
+      ]
+    }
+  },
+  "20940": {
+    "id": 20940,
+    "aegisName": "Violet_Halo",
+    "name": "Violet Halo [1]",
+    "unidName": "Hood",
+    "resName": "Violet_Halo",
+    "description": "ปีกสีม่วงระยิบระยับที่ลอยอยู่เบื้องหลัง\nราวกับเป็นภาพฉายโฮโลแกรมขนาดเล็ก\nไม่สามารถทำลายได้\nMATK + 20, เพิ่ม Damage ทางกายภาพระยะไกล 3%, Critical Damage +3%\nทุกๆ การอัพเกรด 3 ขั้น, MATK + 20, เพิ่ม Damage ทางกายภาพระยะไกล 3%, Critical Damage +3%\nเมื่ออัพเกรดถึงขั้น 11, Global Cooldown -4%\n \nเมื่อสวมใส่ร่วมกับ Magical Booster K [1], ลดระยะเวลาร่ายแบบแปรผัน 30%\nเมื่อสวมใส่ร่วมกับ Crimson Booster [1], เพิ่ม Damage ทางกายภาพระยะไกล 14%\nเมื่อสวมใส่ร่วมกับ Sigrun's Wing, Sigrun's Wing [1], Critical Damage +14%\nเมื่อสวมใส่ร่วมกับ Dark Blinkers, Dark Blinkers [1], Global Cooldown -6%\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สี่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "20",
+        "3---20"
+      ],
+      "range": [
+        "3",
+        "3---3",
+        "EQUIP[Crimson Booster]===14"
+      ],
+      "criDmg": [
+        "3",
+        "3---3",
+        "EQUIP[Sigrun's Wing||Sigrun's Wing_]===14"
+      ],
+      "acd": [
+        "11===4",
+        "EQUIP[Dark Blinkers]===6"
+      ],
+      "vct": [
+        "EQUIP[Magical Booster K]===30"
       ]
     }
   },
@@ -52015,7 +52458,7 @@
       "Rebellion"
     ],
     "script": {
-      "aspd": [
+      "aspdPercent": [
         "10",
         "7===5"
       ],
@@ -62922,6 +63365,39 @@
       ]
     }
   },
+  "32013": {
+    "id": 32013,
+    "aegisName": "Metal_Stick",
+    "name": "Metal Stick [3]",
+    "unidName": "Spear",
+    "resName": "Metal_Stick",
+    "description": "หอกมือเดียวที่ทำขึ้นมาจากชิ้นส่วนของรถถังแมงมุม\nถึงแม้ว่ามันจะค่อนข้างหนัก แต่ก็ถือได้ว่าเป็นอาวุธที่ยอดเยี่ยมมาก\nเพิ่ม Damage สกิล Cannon Spear 10%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Over Brand 10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Over Brand ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 12 ลด Delay หลังใช้สกิล 15%\n^ffffff_^000000\nประเภท : ^777777One-handed Spear^000000 พลังโจมตี : ^777777180^000000\nน้ำหนัก : ^777777200^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^7777773rd classes swordsman^000000",
+    "slots": 3,
+    "itemTypeId": 1,
+    "itemSubTypeId": 259,
+    "itemLevel": 4,
+    "attack": 180,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "Cannon Spear": [
+        "10"
+      ],
+      "Over Brand": [
+        "7===10",
+        "9===15"
+      ],
+      "acd": [
+        "12===15"
+      ]
+    }
+  },
   "32018": {
     "id": 32018,
     "aegisName": "Undine_Spear_K",
@@ -68276,7 +68752,7 @@
     "name": "Diligent Andre Card",
     "unidName": "Diligent Andre Card",
     "resName": "이름없는카드",
-    "description": "MaxHP + 1% per refine rate.\nReduces physical and magical damage taken from insect race monsters by 20%.\nWhen equipped with Diligent Andre Larva Card, increases physical damage against insect race monsters by 20%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "description": "ทุก ๆ การอัพเกรด 1 ขั้น MHP + 1%, ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์เผ่า Insect 20%\nเมื่อใช้งานร่วมกับ Diligent Andre Larva Card, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Insect 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shield^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68303,7 +68779,7 @@
     "name": "Diligent Soldier Andre Card",
     "unidName": "Diligent Soldier Andre Card",
     "resName": "이름없는카드",
-    "description": "Increases physical damage against small and medium size monsters by 20%.\nHas a chance to destroy target's armor when dealing physical damage.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ขนาดเล็ก, กลาง 20%\nเมื่อโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะทำให้ Armor ของศัตรูเสียหาย\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68330,7 +68806,7 @@
     "name": "Diligent Andre Larva Card",
     "unidName": "Diligent Andre Larva Card",
     "resName": "이름없는카드",
-    "description": "Increases physical and magical damage against insect race monsters by 20%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Insect 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68357,7 +68833,7 @@
     "name": "Diligent Deniro Card",
     "unidName": "Diligent Deniro Card",
     "resName": "이름없는카드",
-    "description": "MaxHP + 1% per refine rate.\nReduces physical and magical damage taken from insect race monsters by 20%.\nWhen equipped with Diligent Andre Larva Card, increases magical damage against insect race monsters by 20%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "description": "ทุก ๆ การอัพเกรด 1 ขั้น MHP + 1%, ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์เผ่า Insect 20%\nเมื่อใช้งานร่วมกับ Diligent Andre Larva Card, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Insect 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shield^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68384,7 +68860,7 @@
     "name": "Diligent Piere Card",
     "unidName": "Diligent Piere Card",
     "resName": "이름없는카드",
-    "description": "Ignores defense rate of plant race monsters by 15%.\nIncreases physical damage against plant race monsters by 5% per 2 refine rate.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "description": "เพิกเฉยต่อพลังป้องกันของมอนสเตอร์เผ่า Plant 15%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Plant 5%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shield^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68411,7 +68887,7 @@
     "name": "Mushy Ant Egg Card",
     "unidName": "Mushy Ant Egg Card",
     "resName": "이름없는카드",
-    "description": "MaxSP + 10%.\nMaxHP + 1% per refine rate.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "description": "MSP + 10%.\nทุก ๆ การอัพเกรด 1 ขั้น MHP + 1%.\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shield^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68438,7 +68914,7 @@
     "name": "Intrepid Giearth Card",
     "unidName": "Intrepid Giearth Card",
     "resName": "이름없는카드",
-    "description": "Increases resistance to confusion and blind by 100%.\r\nIncreases physical damage against insect race monsters by 4% per 2 refine rate.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Headgear^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิ่มความต้านทานต่อสถานะ Confuse, Blind 100%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Insect 4%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68462,7 +68938,7 @@
     "name": "Intrepid Familiar Card",
     "unidName": "Intrepid Familiar Card",
     "resName": "이름없는카드",
-    "description": "Ignores magical defense rate of brute race monsters by 15%.\r\nIncreases magical damage against brute race monsters by 5% per 2 refine rate.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "description": "เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์เผ่า Brute 15%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Brute 5%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68489,7 +68965,7 @@
     "name": "Diligent Vitata Card",
     "unidName": "Diligent Vitata Card",
     "resName": "이름없는카드",
-    "description": "Increases poison property magical damage by 5%.\nIf refine rate is 9 or higher, increases poison property magical damage by additional 5%.\nEnables to use Heal level 5.\nClass: ^777777Card^000000\nCompound on: ^777777Headgear^000000\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ธาตุ Poison 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ธาตุ Poison ขึ้นอีก 5%\nสามารถใช้ Heal Lv.5 ได้\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -68514,7 +68990,7 @@
     "name": "Silent Maya Card",
     "unidName": "Silent Maya Card",
     "resName": "이름없는카드",
-    "description": "Increases magical damage against brute race enemies and plant race monsters by 50%.\nIncreases SP consumption of skills by 50%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูเผ่า Brute, มอนสเตอร์เผ่า Plant 50%\nเพิ่มปริมาณการใช้ SP 50%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Shield^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -70425,6 +70901,529 @@
       ],
       "vct": [
         "EQUIP[1st Anniversary Card&&2nd Anniversary Card]===10"
+      ]
+    }
+  },
+  "300567": {
+    "id": 300567,
+    "aegisName": null,
+    "name": "Upgrade Rune Knight Seyren Card",
+    "unidName": "Upgrade Rune Knight Seyren Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Rune Knight,\nCri +20, MaxHP +15%, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อใช้งานร่วมกับ True Seyren Windsor Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Seyren Windsor เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced RuneKnight",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "cri": [
+        "USED[Rune Knight]20"
+      ],
+      "hpPercent": [
+        "USED[Rune Knight]15"
+      ],
+      "p_race_all": [
+        "USED[Rune Knight]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Seyren Windsor Card]===200"
+      ]
+    }
+  },
+  "300568": {
+    "id": 300568,
+    "aegisName": null,
+    "name": "Upgrade Royal Guard Randel Card",
+    "unidName": "Upgrade Royal Guard Randel Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Royal Guard,\nMaxHP + 15%, DEF + 350 \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อใช้งานร่วมกับ True Randel Lawrence Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Randel Lawrence เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced RoyalGuard",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "hpPercent": [
+        "USED[Royal Guard]15"
+      ],
+      "def": [
+        "USED[Royal Guard]350"
+      ],
+      "p_race_all": [
+        "USED[Royal Guard]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Randel Lawrence Card]===200"
+      ]
+    }
+  },
+  "300569": {
+    "id": 300569,
+    "aegisName": null,
+    "name": "Upgrade Arch Bishop Margaretha Card",
+    "unidName": "Upgrade Arch Bishop Margaretha Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Arch Bishop,\nMATK + 15%, MaxHP + 15%, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%\n\nเมื่อใช้งานร่วมกับ True Margaretha Sorin Card,\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Margaretha Sorin เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, MATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Archbishop",
+    "script": {
+      "m_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "matkPercent": [
+        "USED[ArchBishop]15"
+      ],
+      "hpPercent": [
+        "USED[ArchBishop]15"
+      ],
+      "m_element_all": [
+        "USED[ArchBishop]15"
+      ],
+      "chance__matk": [
+        "EQUIP[True Margaretha Sorin Card]===200"
+      ]
+    }
+  },
+  "300570": {
+    "id": 300570,
+    "aegisName": null,
+    "name": "Upgrade Sura Chen Card",
+    "unidName": "Upgrade Sura Chen Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Sura,\nเพิ่ม Damage ทางกายภาพระยะไกล 15%, MaxHP +15%, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n \nเมื่อใช้งานร่วมกับ True Chen Lio Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Chen Lio เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Sura",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "range": [
+        "USED[Sura]15"
+      ],
+      "hpPercent": [
+        "USED[Sura]15"
+      ],
+      "p_race_all": [
+        "USED[Sura]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Chen Lio Card]===200"
+      ]
+    }
+  },
+  "300571": {
+    "id": 300571,
+    "aegisName": null,
+    "name": "Upgrade Warlock Kathryne Card",
+    "unidName": "Upgrade Warlock Kathryne Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Warlock,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%, MaxHP + 15%, MATK + 15%\n\nเมื่อใช้งานร่วมกับ True Kathryne Keyron Card,\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Kathryne Keyron เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, MATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Warlock",
+    "script": {
+      "m_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "m_race_all": [
+        "USED[Warlock]15"
+      ],
+      "hpPercent": [
+        "USED[Warlock]15"
+      ],
+      "matkPercent": [
+        "USED[Warlock]15"
+      ],
+      "chance__matk": [
+        "EQUIP[True Kathryne Keyron Card]===200"
+      ]
+    }
+  },
+  "300572": {
+    "id": 300572,
+    "aegisName": null,
+    "name": "Upgrade Sorcerer Celia Card",
+    "unidName": "Upgrade Sorcerer Celia Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Sorcerer,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%, MaxHP + 15%, MATK + 15%\n\nเมื่อใช้งานร่วมกับ True Celia Alde Card,\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Celia Alde เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, MATK + 200 \nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Sorcerer",
+    "script": {
+      "m_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "m_race_all": [
+        "USED[Sorcerer]15"
+      ],
+      "hpPercent": [
+        "USED[Sorcerer]15"
+      ],
+      "matkPercent": [
+        "USED[Sorcerer]15"
+      ],
+      "chance__matk": [
+        "EQUIP[True Celia Alde Card]===200"
+      ]
+    }
+  },
+  "300573": {
+    "id": 300573,
+    "aegisName": null,
+    "name": "Upgrade Mechanic Howard Card",
+    "unidName": "Upgrade Mechanic Howard Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Mechanic,\nเพิ่ม Damage ทางกายภาพระยะไกล 15%, MaxHP + 15% \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n \nเมื่อใช้งานร่วมกับ True Howard Alt-Eisen Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Howard Alt-Eisen เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Mechanic",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "range": [
+        "USED[Mechanic]15"
+      ],
+      "hpPercent": [
+        "USED[Mechanic]15"
+      ],
+      "p_race_all": [
+        "USED[Mechanic]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Howard Alt-Eisen Card]===200"
+      ]
+    }
+  },
+  "300574": {
+    "id": 300574,
+    "aegisName": null,
+    "name": "Upgrade Genetic Flamel Card",
+    "unidName": "Upgrade Genetic Flamel Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Genetic,\nเพิ่ม Damage ทางกายภาพระยะไกล 15%, MaxHP + 15%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อใช้งานร่วมกับ True Flamel Emure Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Flamel Emure เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Genetic",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "range": [
+        "USED[Genetic]15"
+      ],
+      "hpPercent": [
+        "USED[Genetic]15"
+      ],
+      "p_race_all": [
+        "USED[Genetic]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Flamel Emure Card]===200"
+      ]
+    }
+  },
+  "300575": {
+    "id": 300575,
+    "aegisName": null,
+    "name": "Upgrade Guillotine Cross Eremes Card",
+    "unidName": "Upgrade Guillotine Cross Eremes Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Guillotine Cross,\nCRI +20, เพิ่ม Damage ทางกายภาพระยะไกล 15% \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อใช้งานร่วมกับ True Eremes Guile Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Eremes Guile เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Guillotine Cross",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "cri": [
+        "USED[Guillotine Cross]20"
+      ],
+      "range": [
+        "USED[Guillotine Cross]15"
+      ],
+      "p_race_all": [
+        "USED[Guillotine Cross]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Eremes Guile Card]===200"
+      ]
+    }
+  },
+  "300576": {
+    "id": 300576,
+    "aegisName": null,
+    "name": "Upgrade Shadow Chaser Gertie Card",
+    "unidName": "Upgrade Shadow Chaser Gertie Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Shadow Chaser,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 15%\nMaxHP +15%.\n\nเมื่อใช้งานร่วมกับ True Gertie Wie Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Gertie Wie เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Shadow Chaser",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "m_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "p_race_all": [
+        "USED[Shadow Chaser]15"
+      ],
+      "m_race_all": [
+        "USED[Shadow Chaser]15"
+      ],
+      "hpPercent": [
+        "USED[Shadow Chaser]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Gertie Wie Card]===200"
+      ]
+    }
+  },
+  "300577": {
+    "id": 300577,
+    "aegisName": null,
+    "name": "Upgrade Ranger Cecil Card",
+    "unidName": "Upgrade Ranger Cecil Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Ranger,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nCRI + 20, เพิ่มพลังโจมตีอาวุธประเภท Bow 15%\n\nเมื่อใช้งานร่วมกับ True Cecil Damon Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Cecil Damon เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Ranger",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "p_race_all": [
+        "USED[Ranger]15"
+      ],
+      "cri": [
+        "USED[Ranger]20"
+      ],
+      "bowRange": [
+        "USED[Ranger]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Cecil Damon Card]===200"
+      ]
+    }
+  },
+  "300578": {
+    "id": 300578,
+    "aegisName": null,
+    "name": "Upgrade Minstrel Alphoccio Card",
+    "unidName": "Upgrade Minstrel Alphoccio Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Minstrel/Wanderer,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%, MaxHP + 15%,  MATK + 15%\n\nเมื่อใช้งานร่วมกับ True Alphoccio Basil Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Alphoccio เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, MATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Minstrel",
+    "script": {
+      "m_my_element_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "m_race_all": [
+        "USED[Minstrel||Wanderer]15"
+      ],
+      "hpPercent": [
+        "USED[Minstrel||Wanderer]15"
+      ],
+      "matkPercent": [
+        "USED[Minstrel||Wanderer]15"
+      ],
+      "chance__matk": [
+        "EQUIP[True Alphoccio Basil Card]===200"
+      ]
+    }
+  },
+  "300579": {
+    "id": 300579,
+    "aegisName": null,
+    "name": "Upgrade Wanderer Trentini Card",
+    "unidName": "Upgrade Wanderer Trentini Card",
+    "resName": "이름없는카드",
+    "description": "ทุก ๆ การอัพเกรด Garment 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่อ Base Lv.175 ขึ้นไป, All State + 15\nเมื่อขั้นอัพเกรด Garment ตั้งแต่ 10 ขึ้นไป, All State + 15\n\nเมื่อผู้ใช้งานเป็นอาชีพ Wanderer/Minstrel,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%, MaxHP + 15%, MaxSP + 15%\n\nเมื่อใช้งานร่วมกับ True Trentini Card,\nเมื่อโจมตีทางกายภาพ มีโอกาส 6% ที่จะเปลี่ยนร่างเป็น Trentini เป็นเวลา 12 วินาที\nตลอดระยะเวลาที่เปลี่ยนร่าง, ATK + 200\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Enhanced Wanderer",
+    "script": {
+      "p_size_all": [
+        "3---4"
+      ],
+      "allStatus": [
+        "SUM[level==175]===15",
+        "10===15"
+      ],
+      "p_race_all": [
+        "USED[Minstrel||Wanderer]15"
+      ],
+      "hpPercent": [
+        "USED[Minstrel||Wanderer]15"
+      ],
+      "spPercent": [
+        "USED[Minstrel||Wanderer]15"
+      ],
+      "chance__atk": [
+        "EQUIP[True Trentini Card]===200"
       ]
     }
   },
@@ -77804,6 +78803,640 @@
       ]
     }
   },
+  "313362": {
+    "id": 313362,
+    "aegisName": "Essence_of_Sin_Fate_Lv1",
+    "name": "Essence of Sin Fate Lv.1",
+    "unidName": "Essence of Sin Fate Lv.1",
+    "resName": "소울캐논볼",
+    "description": "เมื่อสวมใส่ร่วมกับ Abyss Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Ghost, Shadow 3%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Plant, Demon 3%\n\nเมื่อสวมใส่ร่วมกับ Neutral Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Neutral, Earth 3%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Dragon, Formless 3%\n\nเมื่อสวมใส่ร่วมกับ Gabriel Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Holy, Undead 3%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Angel, Undead 3%\n\nเมื่อสวมใส่ร่วมกับ Ice Flame Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Water, Fire 3%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Fish, Demi-Human (ยกเว้น Player) 3%\n\nเมื่อสวมใส่ร่วมกับ Red Serpent Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Poison, Wind 3%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Brute, Insect 3%\nน้ำหนัก : ^7777770^000000",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_element_ghost": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_dark": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_plant": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_demon": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_ghost": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_dark": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_plant": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_demon": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_neutral": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_earth": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_formless": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_neutral": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_earth": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_formless": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_holy": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_angel": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_holy": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_angel": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_water": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_fire": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_fish": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_demihuman": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_water": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_fire": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_fish": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_demihuman": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_poison": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ],
+      "p_element_wind": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_brute": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ],
+      "p_race_insect": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_poison": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ],
+      "m_element_wind": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_brute": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ],
+      "m_race_insect": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===3"
+      ]
+    }
+  },
+  "313363": {
+    "id": 313363,
+    "aegisName": "Essence_of_Sin_Fate_Lv2",
+    "name": "Essence of Sin Fate Lv.2",
+    "unidName": "Essence of Sin Fate Lv.2",
+    "resName": "소울캐논볼",
+    "description": "เมื่อสวมใส่ร่วมกับ Abyss Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Ghost, Shadow 7%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Plant, Demon 7%\n\nเมื่อสวมใส่ร่วมกับ Neutral Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Neutral, Earth 7%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Dragon, Formless 7%\n\nเมื่อสวมใส่ร่วมกับ Gabriel Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Holy, Undead 7%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Angel, Undead 7%\n\nเมื่อสวมใส่ร่วมกับ Ice Flame Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Water, Fire 7%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Fish, Demi-Human (ยกเว้น Player) 7%\n\nเมื่อสวมใส่ร่วมกับ Red Serpent Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Poison, Wind 7%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Brute, Insect 7%\nน้ำหนัก : ^7777770^000000",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_element_ghost": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_dark": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_plant": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_demon": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_ghost": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_dark": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_plant": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_demon": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_neutral": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_earth": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_formless": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_neutral": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_earth": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_formless": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_holy": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_angel": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_holy": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_angel": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_water": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_fire": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_fish": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_demihuman": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_water": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_fire": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_fish": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_demihuman": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_poison": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ],
+      "p_element_wind": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_brute": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ],
+      "p_race_insect": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_poison": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ],
+      "m_element_wind": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_brute": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ],
+      "m_race_insect": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===7"
+      ]
+    }
+  },
+  "313364": {
+    "id": 313364,
+    "aegisName": "Essence_of_Sin_Fate_Lv3",
+    "name": "Essence of Sin Fate Lv.3",
+    "unidName": "Essence of Sin Fate Lv.3",
+    "resName": "소울캐논볼",
+    "description": "เมื่อสวมใส่ร่วมกับ Abyss Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Ghost, Shadow 15%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Plant, Demon 15%\n\nเมื่อสวมใส่ร่วมกับ Neutral Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Neutral, Earth 15%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Dragon, Formless 15%\n\nเมื่อสวมใส่ร่วมกับ Gabriel Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Holy, Undead 15%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Angel, Undead 15%\n\nเมื่อสวมใส่ร่วมกับ Ice Flame Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Water, Fire 15%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Fish, Demi-Human (ยกเว้น Player) 15%\n\nเมื่อสวมใส่ร่วมกับ Red Serpent Dress,\nเมื่อขั้นอัพเกรด Armor 11 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Poison, Wind 15%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Brute, Insect 15%\nน้ำหนัก : ^7777770^000000",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_element_ghost": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_dark": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_plant": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_demon": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_ghost": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_dark": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_plant": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_demon": [
+        "EQUIP[Abyss Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_neutral": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_earth": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_dragon": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_formless": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_neutral": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_earth": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_dragon": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_formless": [
+        "EQUIP[Neutral Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_holy": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_angel": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_holy": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_angel": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_undead": [
+        "EQUIP[Gabriel Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_water": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_fire": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_fish": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_demihuman": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_water": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_fire": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_fish": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_demihuman": [
+        "EQUIP[Ice Flame Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_poison": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ],
+      "p_element_wind": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_brute": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ],
+      "p_race_insect": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_poison": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ],
+      "m_element_wind": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_brute": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ],
+      "m_race_insect": [
+        "EQUIP[Red Serpent Dress]REFINE[armor==11]===15"
+      ]
+    }
+  },
+  "313365": {
+    "id": 313365,
+    "aegisName": "Battle_Pass_ATK",
+    "name": "Battle Pass (ATK)",
+    "unidName": "Battle Pass Modification Orb (ATK)",
+    "resName": "마법석암",
+    "description": "ATK + 5%, ATK + 75.\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะไกล/ใกล้ 2%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะไกล/ใกล้ขึ้นอีก 3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "atk": [
+        "75"
+      ],
+      "melee": [
+        "9===2",
+        "11===3"
+      ],
+      "range": [
+        "9===2",
+        "11===3"
+      ]
+    }
+  },
+  "313366": {
+    "id": 313366,
+    "aegisName": "Battle_Pass_MATK",
+    "name": "Battle Pass (MATK)",
+    "unidName": "Battle Pass Modification Orb (MATK)",
+    "resName": "마법석암",
+    "description": "MATK + 5%, MATK + 75\nเมื่ออัพเกรดถึงขั้น 9, MATK + 2% เพิ่มเติม\nเมื่ออัพเกรดถึงขั้น 11, MATK + 3% เพิ่มเติม",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matkPercent": [
+        "5",
+        "9===2",
+        "11===3"
+      ],
+      "matk": [
+        "75"
+      ]
+    }
+  },
+  "313367": {
+    "id": 313367,
+    "aegisName": "Battle_Pass_Magical Force",
+    "name": "Battle Pass (Magical Force)",
+    "unidName": "Battle Pass Modification Orb (Magical Force)",
+    "resName": "마법석화",
+    "description": "MATK + 20, \nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 20%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 3%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาดขึ้นอีก 1%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาดขึ้นอีก 2%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "20"
+      ],
+      "m_my_element_all": [
+        "20"
+      ],
+      "m_size_all": [
+        "3",
+        "9===1",
+        "11===1"
+      ]
+    }
+  },
+  "313368": {
+    "id": 313368,
+    "aegisName": "Battle_Pass_Attacker Force",
+    "name": "Battle Pass (Attacker Force)",
+    "unidName": "Battle Pass Modification Orb (Attacker Force)",
+    "resName": "마법석화",
+    "description": "ATK + 20, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\nลด Cooldown สกิล Ignition Break 0.5 วินาที\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 3%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 1%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "20"
+      ],
+      "melee": [
+        "10"
+      ],
+      "cd__Ignition Break": [
+        "0.5"
+      ],
+      "p_size_all": [
+        "3",
+        "9===1",
+        "11===1"
+      ]
+    }
+  },
+  "313369": {
+    "id": 313369,
+    "aegisName": "Battle_Pass_Range Force",
+    "name": "Battle Pass (Range Force)",
+    "unidName": "Battle Pass Modification Orb (Range Force)",
+    "resName": "마법석지",
+    "description": "ATK + 20, เพิ่ม Damage ทางกายภาพระยะไกล 15%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 3%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 1%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "20"
+      ],
+      "range": [
+        "15"
+      ],
+      "p_size_all": [
+        "3",
+        "9===1",
+        "11===1"
+      ]
+    }
+  },
+  "313370": {
+    "id": 313370,
+    "aegisName": "Battle_Pass_Critical Force",
+    "name": "Battle Pass (Critical Force)",
+    "unidName": "Battle Pass Modification Orb (Critical Force)",
+    "resName": "마법석화",
+    "description": "CRI + 5, Critical Damage + 40%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 3%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 1%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 1%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cri": [
+        "5"
+      ],
+      "criDmg": [
+        "40"
+      ],
+      "p_size_all": [
+        "3",
+        "9===1",
+        "11===1"
+      ]
+    }
+  },
+  "313371": {
+    "id": 313371,
+    "aegisName": "Battle_Pass_Global Cooldown",
+    "name": "Battle Pass (Global Cooldown)",
+    "unidName": "Battle Pass Modification Orb (Global Cooldown)",
+    "resName": "마법석화",
+    "description": "ลด Delay หลังใช้สกิล 4%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิลลงอีก 6%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิลลงอีก 6%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "4",
+        "9===6",
+        "11===6"
+      ]
+    }
+  },
   "400001": {
     "id": 400001,
     "aegisName": "Victory_Wing_Ear",
@@ -78533,7 +80166,7 @@
         "11===0.2"
       ],
       "vct": [
-        "EQUIP[Farthezan]===10"
+        "EQUIP[Farthezan]===15"
       ],
       "Gloria Domini": [
         "EQUIP[Farthezan]REFINE[weapon==1]---10"
@@ -79206,6 +80839,32 @@
     "script": {
       "matk": [
         "60"
+      ]
+    }
+  },
+  "400706": {
+    "id": 400706,
+    "aegisName": "Mask_of_Sin_Fate",
+    "name": "Mask of Sin Fate",
+    "unidName": "Mask of Sin Fate",
+    "resName": "귀족의가면",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nเมื่อกำจัดมอนสเตอร์, เพิ่มค่าประสบการณ์ที่ได้รับ 5%\nเพิ่มอัตราการดร็อปไอเท็ม 5%\n\nเมื่อใช้งานรวมกับ Essence of Sin Fate Lv.2 หรือ  Essence of Sin Fate Lv.3,\nลด Delay หลังใช้สกิล 5%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 20,
+    "requiredLevel": 160,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "EQUIP[Essence of Sin Fate Lv.2||Essence of Sin Fate Lv.3]===5"
       ]
     }
   },
@@ -80485,6 +82144,38 @@
       ]
     }
   },
+  "420164": {
+    "id": 420164,
+    "aegisName": "Sleep_RedSheep",
+    "name": "Dreaming Red Sheep",
+    "unidName": "Ribbon",
+    "resName": "Sleep_RedSheep",
+    "description": "ลูกแกะสีแดงที่วิ่งวนรอบตัวเอง\nหากมองไปเรื่อย ๆ อาจจะเคลิ้มจนหลับไปเลยก็เป็นได้\n\nลด Delay หลังใช้สกิล 6%\n\nทุก ๆ Wug Rider 1 เลเวล, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\n\nเมื่อเรียนรู้สกิล Camouflage Lv.5,\nลด Cooldown สกิล No Limits 60 วินาที\nเมื่อถอดอุปกรณ์, ผลสกิล No Limits จะหายไป\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Ranger^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "acd": [
+        "6"
+      ],
+      "p_size_all": [
+        "LEARN_SKILL[Wug Rider==1]---4"
+      ],
+      "cd__No Limits": [
+        "LEARN_SKILL[Camouflage==5]===60"
+      ]
+    }
+  },
   "420239": {
     "id": 420239,
     "aegisName": "Adventure_Clover",
@@ -80544,6 +82235,194 @@
       ],
       "m_race_all": [
         "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]===8"
+      ]
+    }
+  },
+  "420361": {
+    "id": 420361,
+    "aegisName": null,
+    "name": "Flame Heart In Mouth",
+    "unidName": "Flame Heart In Mouth",
+    "resName": "챰오브프레임하트",
+    "description": "ดวงใจอันรุ่มร้อนที่ใช้คาบเอาไว้\nเมื่อสวมใส่จะช่วยเพิ่มพลังของธาตุไฟ\n\nMATK + 20,\nลด Delay หลังใช้สกิล 5%,\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Fire 10%.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "20"
+      ],
+      "acd": [
+        "5"
+      ],
+      "m_my_element_fire": [
+        "10"
+      ]
+    }
+  },
+  "420363": {
+    "id": 420363,
+    "aegisName": null,
+    "name": "Ice Crystal In Mouth",
+    "unidName": "Ribbon",
+    "resName": "챰오브미스틱프로즌",
+    "description": "ผลึกน้ำแข็งที่ใช้คาบเอาไว้\nพลังของธาตุน้ำจะเพิ่มขึ้นเมื่อสวมใส่\n\nMATK + 20\nลด Delay หลังใช้สกิล 5%\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Water 10%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "20"
+      ],
+      "acd": [
+        "5"
+      ],
+      "m_my_element_water": [
+        "10"
+      ]
+    }
+  },
+  "420368": {
+    "id": 420368,
+    "aegisName": null,
+    "name": "Reaper Of Tomb",
+    "unidName": "Mask",
+    "resName": "사신님의가호",
+    "description": "เมื่อสวมใส่วิญญาณอันชั่วร้ายจะปกคลุมรอบตัว ดูเหมือนมันจะเฝ้าคอยแย่งชิงจิตวิญญาณผู้สวมใส่\n\nทุก ๆ Base Lv. 6, \nเพิ่ม Damage สกิล Ignition Break, Earth Drive, Cross Impact,\nTriangle Shot, Axe Tornado, Arm Cannon, Cart Cannon,\nVaretyr Spear, Comet, Focus Arrow Strike, Severe Rainstorm,\nJudex, Rampage Blast 1%\n\nเมื่อสวมใส่ร่วมกับ Raven of Tomb หรือ [Not For Sale] Raven of Tomb,\nทุก ๆ Base STR 15, เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nทุก ๆ Base AGI 15, Global Cooldown -1%\nทุก ๆ Base VIT 15, MHP + 1%, ASPD + 1%\nทุก ๆ Base INT 15, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 1%\nทุก ๆ Base DEX 15, เพิ่ม Damage ทางกายภาพระยะไกล 1%\nทุก ๆ Base LUK 15, ATK + 6, MATK + 6.\nเมื่อผลรวมของค่า Status พื้นฐานทั้งหมด 600 ขึ้นไป, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท 6%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 60,
+    "requiredLevel": 100,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "Ignition Break": [
+        "level:6---1"
+      ],
+      "Earth Drive": [
+        "level:6---1"
+      ],
+      "Cross Impact": [
+        "level:6---1"
+      ],
+      "Triangle Shot": [
+        "level:6---1"
+      ],
+      "Axe Tornado": [
+        "level:6---1"
+      ],
+      "Arm Cannon": [
+        "level:6---1"
+      ],
+      "Cart Cannon": [
+        "level:6---1"
+      ],
+      "Varetyr Spear": [
+        "level:6---1"
+      ],
+      "Comet": [
+        "level:6---1"
+      ],
+      "Focused Arrow Strike": [
+        "level:6---1"
+      ],
+      "Severe Rainstorm": [
+        "level:6---1"
+      ],
+      "Judex": [
+        "level:6---1"
+      ],
+      "Rampage Blast": [
+        "level:6---1"
+      ],
+      "melee": [
+        "EQUIP[Raven Of Tomb]SUM[str==15]---1"
+      ],
+      "acd": [
+        "EQUIP[Raven Of Tomb]SUM[agi==15]---1"
+      ],
+      "hpPercent": [
+        "EQUIP[Raven Of Tomb]SUM[vit==15]---1"
+      ],
+      "aspdPercent": [
+        "EQUIP[Raven Of Tomb]SUM[vit==15]---1"
+      ],
+      "m_size_all": [
+        "EQUIP[Raven Of Tomb]SUM[int==15]---1"
+      ],
+      "range": [
+        "EQUIP[Raven Of Tomb]SUM[dex==15]---1"
+      ],
+      "atk": [
+        "EQUIP[Raven Of Tomb]SUM[luk==15]---6"
+      ],
+      "matk": [
+        "EQUIP[Raven Of Tomb]SUM[luk==15]---6"
+      ],
+      "p_class_all": [
+        "EQUIP[Raven Of Tomb]SUM[str,agi,vit,int,dex,luk==600]===6"
+      ],
+      "m_class_all": [
+        "EQUIP[Raven Of Tomb]SUM[str,agi,vit,int,dex,luk==600]===6"
+      ]
+    }
+  },
+  "420369": {
+    "id": 420369,
+    "aegisName": null,
+    "name": "Earth Stone In Mouth",
+    "unidName": "Earth Stone In Mouth",
+    "resName": "챰오브그레이트네이쳐",
+    "description": "ก้อนดินที่ใช้คาบเอาไว้\nเมื่อสวมใส่จะช่วยเพิ่มพลังธาตุดิน\n\nMATK + 20\nลด Delay หลังใช้สกิล 5%\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Earth 10%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "20"
+      ],
+      "acd": [
+        "5"
+      ],
+      "m_my_element_earth": [
+        "10"
       ]
     }
   },
@@ -85710,6 +87589,60 @@
       ]
     }
   },
+  "450182": {
+    "id": 450182,
+    "aegisName": "Sprint_Mail_IL",
+    "name": "Illusion Sprint Mail [1]",
+    "unidName": "Wooden Mail",
+    "resName": "Sprint_Mail_IL",
+    "description": "ชุดเกราะที่เผยให้เห็นถึงการเคลื่อนไหวฉับไวราวกับปีกเพื่อให้วิ่งได้อย่างอิสระ\n\nVIT + 5, เพิ่มปริมาณการฟื้นฟู HP เอง 20%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่มปริมาณการฟื้นฟู HP เองขึ้นอีก 20%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิล 5%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิลลงอีก 7%\n\nเมื่อสวมใส่ร่วมกับ Illusion Sprint Shoes, ATK + 10%.\nเมื่อขั้นอัพเกรดของ llusion Sprint Mail และ Illusion Sprint Shoes ตั้งแต่ 7 ขึ้นไป, ATK + 70.\nเมื่อขั้นอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%\nเมื่อขั้นอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป, ลดระยะเวลาร่ายแบบคงที่ 0.7 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 25%\n\nเมื่อสวมใส่ร่วมกับ Illusion Sprint Ring และ Illusion Sprint Glove, MHP + 15%, MSP + 15%\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^777777150^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 150,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vit": [
+        "5"
+      ],
+      "acd": [
+        "9===5",
+        "11===7"
+      ],
+      "atkPercent": [
+        "EQUIP[Illusion Sprint Shoes]===10"
+      ],
+      "hpPercent": [
+        "EQUIP[Illusion Sprint Ring&&Illusion Sprint Glove]===15"
+      ],
+      "spPercent": [
+        "EQUIP[Illusion Sprint Ring&&Illusion Sprint Glove]===15"
+      ],
+      "atk": [
+        "EQUIP[Illusion Sprint Shoes]REFINE[boot==7]7===70"
+      ],
+      "melee": [
+        "EQUIP[Illusion Sprint Shoes]REFINE[armor,boot==18]===15"
+      ],
+      "range": [
+        "EQUIP[Illusion Sprint Shoes]REFINE[armor,boot==18]===15"
+      ],
+      "fct": [
+        "EQUIP[Illusion Sprint Shoes]REFINE[armor,boot==22]===0.7"
+      ],
+      "p_class_boss": [
+        "EQUIP[Illusion Sprint Shoes]REFINE[armor,boot==22]===25"
+      ]
+    }
+  },
   "450185": {
     "id": 450185,
     "aegisName": "2Para_Armor_A",
@@ -85846,6 +87779,436 @@
       ]
     }
   },
+  "450396": {
+    "id": 450396,
+    "aegisName": "Abyss_Dress",
+    "name": "Abyss Dress [1]",
+    "unidName": "Abyss Dress",
+    "resName": "Abyss_Dress",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nATK/MATK + 125\nทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 10\n \nเมื่ออัพเกรดถึงขั้น 7,\nลดระยะเวลาร่ายแบบแปรผัน 10%\nASPD + 10%\n \nเมื่ออัพเกรดถึงขั้น 9,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Ghost, Shadow 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Plant, Demon 5%\n \nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Ghost, Shadow 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Plant, Demon 5%\n \nเมื่ออัพเกรดถึงขั้น 12,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Ghost, Shadow 8%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Plant, Demon 8%\n\nเมื่อสวมใส่ร่วมกับ Wireless Security Drone,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 8%\nทุก ๆ การอัพเกรด Armor 2 ขั้น, ลด Delay หลังใช้สกิล 1%\n\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777780^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 100,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "125",
+        "2---10"
+      ],
+      "matk": [
+        "125",
+        "2---10"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "p_element_ghost": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_element_dark": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_plant": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_demon": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_ghost": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_dark": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_plant": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_demon": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "m_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "acd": [
+        "EQUIP[Wireless Security Drone]2---1"
+      ]
+    }
+  },
+  "450397": {
+    "id": 450397,
+    "aegisName": "Neutral_Dress",
+    "name": "Neutral Dress [1]",
+    "unidName": "Neutral Dress",
+    "resName": "Nature_Dress",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nATK/MATK + 125\nทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 10\n \nเมื่ออัพเกรดถึงขั้น 7,\nลดระยะเวลาร่ายแบบแปรผัน 10%\nASPD + 10%\n \nเมื่ออัพเกรดถึงขั้น 9,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Neutral, Earth 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Dragon, Formless 5%\n \nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Neutral, Earth 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Dragon, Formless 5%\n \nเมื่ออัพเกรดถึงขั้น 12,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Neutral, Earth 8%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Dragon, Formless 8%\n\nเมื่อสวมใส่ร่วมกับ Wireless Security Drone,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 8%\nทุก ๆ การอัพเกรด Armor 2 ขั้น, ลด Delay หลังใช้สกิล 1%\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777780^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 100,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "125",
+        "2---10"
+      ],
+      "matk": [
+        "125",
+        "2---10"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "p_element_neutral": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_element_earth": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_dragon": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_formless": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_neutral": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_earth": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_dragon": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_formless": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "m_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "acd": [
+        "EQUIP[Wireless Security Drone]2---1"
+      ]
+    }
+  },
+  "450398": {
+    "id": 450398,
+    "aegisName": "Gabriel_Dress",
+    "name": "Gabriel Dress [1]",
+    "unidName": "Gabriel Dress",
+    "resName": "웨딩드레스",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nATK/MATK + 125\nทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 10\n \nเมื่ออัพเกรดถึงขั้น 7,\nลดระยะเวลาร่ายแบบแปรผัน 10%\nASPD + 10%\n \nเมื่ออัพเกรดถึงขั้น 9,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Holy, Undead 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Angel, Undead 5%\n \nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Holy, Undead 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Angel, Undead 5%\n \nเมื่ออัพเกรดถึงขั้น 12,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Holy, Undead 8%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Angel, Undead 8%\n\nเมื่อสวมใส่ร่วมกับ Wireless Security Drone,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 8%\nทุก ๆ การอัพเกรด Armor 2 ขั้น, ลด Delay หลังใช้สกิล 1%\n\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777780^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 100,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "125",
+        "2---10"
+      ],
+      "matk": [
+        "125",
+        "2---10"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "p_element_holy": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_element_undead": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_angel": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_undead": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_holy": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_undead": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_angel": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_undead": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "m_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "acd": [
+        "EQUIP[Wireless Security Drone]2---1"
+      ]
+    }
+  },
+  "450399": {
+    "id": 450399,
+    "aegisName": "Ice_Flame_Dress",
+    "name": "Ice Flame Dress [1]",
+    "unidName": "Ice Flame Dress",
+    "resName": "Icefall_Dress",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nATK/MATK + 125\nทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 10\n \nเมื่ออัพเกรดถึงขั้น 7,\nลดระยะเวลาร่ายแบบแปรผัน 10%\nASPD + 10%\n \nเมื่ออัพเกรดถึงขั้น 9, \nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Water, Fire 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Fish, Demi-Human (ยกเว้น Player) 5%\n \nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Water, Fire 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Fish, Demi-Human (ยกเว้น Player) 5%\n \nเมื่ออัพเกรดถึงขั้น 12,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Water, Fire 8%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Fish, Demi-Human (ยกเว้น Player) 8%\n\nเมื่อสวมใส่ร่วมกับ Wireless Security Drone,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 8%\nทุก ๆ การอัพเกรด Armor 2 ขั้น, ลด Delay หลังใช้สกิล 1%\n\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777780^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 100,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "125",
+        "2---10"
+      ],
+      "matk": [
+        "125",
+        "2---10"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "p_element_water": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_element_fire": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_fish": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_demihuman": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_water": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_fire": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_fish": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_demihuman": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "m_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "acd": [
+        "EQUIP[Wireless Security Drone]2---1"
+      ]
+    }
+  },
+  "450400": {
+    "id": 450400,
+    "aegisName": "Red_Serpent_Dress",
+    "name": "Red Serpent Dress [1]",
+    "unidName": "Red Serpent Dress",
+    "resName": "Samael_Dress",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nATK/MATK + 125\nทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 10\n \nเมื่ออัพเกรดถึงขั้น 7,\nลดระยะเวลาร่ายแบบแปรผัน 10%\nASPD + 10%\n \nเมื่ออัพเกรดถึงขั้น 9, \nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Poison, Wind 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Brute, Insect 5%\n \nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Poison, Wind 5%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Brute, Insect 5%\n \nเมื่ออัพเกรดถึงขั้น 12,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Poison, Wind 8%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูเผ่า Brute, Insect 8%\n\nเมื่อสวมใส่ร่วมกับ Wireless Security Drone,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 8%\nทุก ๆ การอัพเกรด Armor 2 ขั้น, ลด Delay หลังใช้สกิล 1%\n\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777780^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 100,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "125",
+        "2---10"
+      ],
+      "matk": [
+        "125",
+        "2---10"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "p_element_poison": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_element_wind": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_brute": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_insect": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_poison": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_element_wind": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_brute": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "m_race_insect": [
+        "9===5",
+        "11===5",
+        "12===8"
+      ],
+      "p_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "m_race_all": [
+        "EQUIP[Wireless Security Drone]===8"
+      ],
+      "acd": [
+        "EQUIP[Wireless Security Drone]2---1"
+      ]
+    }
+  },
   "460003": {
     "id": 460003,
     "aegisName": "Feather_Shield",
@@ -85957,6 +88320,74 @@
       ],
       "matk": [
         "3---15"
+      ]
+    }
+  },
+  "460017": {
+    "id": 460017,
+    "aegisName": "Guard_IL",
+    "name": "Illusion Guard [1]",
+    "unidName": "Guard",
+    "resName": "Guard_IL",
+    "description": "โล่ที่สร้างขึ้นให้สามารถป้องกันการโจมตีง่าย ๆ ของศัตรูได้\nASPD + 2.\nทุก ๆ การอัพเกรด 2 ขั้น Perfect Hit + 3% (จนถึงขั้นอัพเกรด 12)\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 60,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspd": [
+        "2"
+      ],
+      "perfectHit": [
+        "2===3",
+        "4===3",
+        "6===3",
+        "8===3",
+        "10===3",
+        "12===3"
+      ]
+    }
+  },
+  "460018": {
+    "id": 460018,
+    "aegisName": "Siver_Guard_IL",
+    "name": "Illusion Silver Guard [1]",
+    "unidName": "Guard",
+    "resName": "Siver_Guard_IL",
+    "description": "โล่ที่ทำจากเงินและเหล็กผสมกันแล้วตีให้บางเฉียบ\nลดระยะเวลาร่ายแบบแปรผัน 7%\nทุก ๆ การอัพเกรด 2 ขั้น ลด Delay หลังใช้สกิล 1% (จนถึงขั้นอัพเกรด 12)\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 30,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "7"
+      ],
+      "acd": [
+        "2===1",
+        "4===1",
+        "6===1",
+        "8===1",
+        "10===1",
+        "12===1"
       ]
     }
   },
@@ -86716,6 +89147,47 @@
       ],
       "m_my_element_all": [
         "EQUIP[Elemental Sword]REFINE[weapon==10]===10"
+      ]
+    }
+  },
+  "470066": {
+    "id": 470066,
+    "aegisName": "Sprint_Shoes_IL",
+    "name": "Illusion Sprint Shoes [1]",
+    "unidName": "Sandals",
+    "resName": "Sprint_Shoes_IL",
+    "description": "รองเท้าที่สะดวกสบายต่อการวิ่งเร็ว ผูกเชือกให้แน่นกันเถอะ\n\nAGI + 5, เพิ่มปริมาณการฟื้นฟู SP เอง 20%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่มปริมาณการฟื้นฟู SP เองขึ้นอีก 20%\nเมื่ออัพเกรดถึงขั้น 9, MHP + 5%, MSP + 5%.\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\n\nเมื่อสวมใส่ร่วมกับ Illusion Sprint Ring, ลด HP 500 ทุก ๆ 1 วินาที, เมื่อโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะ STR + 150 เป็นเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ Illusion Sprint Glove, ลด SP 50 ทุก ๆ 1 วินาที, เมื่อโจมตีทางกายภาพ มีโอกาสเล็กน้อยที่จะ AGI + 150 เป็นเวลา 10 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^77777770^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 20,
+    "weight": 70,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "agi": [
+        "5"
+      ],
+      "hpPercent": [
+        "9===5"
+      ],
+      "spPercent": [
+        "9===5"
+      ],
+      "p_size_all": [
+        "11===15"
+      ],
+      "chance__str": [
+        "EQUIP[Illusion Sprint Ring]===150"
+      ],
+      "chance__agi": [
+        "EQUIP[Illusion Sprint Glove]===150"
       ]
     }
   },
@@ -87652,6 +90124,50 @@
       ]
     }
   },
+  "470287": {
+    "id": 470287,
+    "aegisName": null,
+    "name": "Starry Sky Twin Prime [1]",
+    "unidName": "Starry Sky Twin Prime",
+    "resName": "Starry_Sky_Twin_Prime",
+    "description": "รองเท้าที่ออกแบบตามกลุ่มดาวฝาแฝดที่ลอยอยู่บนท้องฟ้าอันเจิดจรัสสุกสกาวราวกับดาวฤกษ์สองดวง\n\nATK + 50\nทุก ๆ การอัพเกรด 3 ขั้น, DEX , AGI + 3\n\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage สกิล Severe Rainstorm 12%.\n\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Severe Rainstorm 0.5 วินาที\n\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะ DEX, AGI + 100 เป็นระยะเวลา 10 วินาที.\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777722^000000\nน้ำหนัก : ^77777740^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 22,
+    "weight": 40,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "50"
+      ],
+      "agi": [
+        "3---3"
+      ],
+      "dex": [
+        "3---3"
+      ],
+      "Severe Rainstorm": [
+        "4---12"
+      ],
+      "cd__Severe Rainstorm": [
+        "9===0.5"
+      ],
+      "chance__agi": [
+        "11===100"
+      ],
+      "chance__dex": [
+        "11===100"
+      ]
+    }
+  },
   "480000": {
     "id": 480000,
     "aegisName": "Atker_Manteau",
@@ -88289,6 +90805,52 @@
       "m_race_demihuman": [
         "EQUIP[Aegirnian Helm]10",
         "EQUIP[Aegirnian Helm]1---1"
+      ]
+    }
+  },
+  "480084": {
+    "id": 480084,
+    "aegisName": "Fafnir_Manteau",
+    "name": "Fafnir Manteau [1]",
+    "unidName": "Hood",
+    "resName": "Fafnir_Manteau",
+    "description": "เพิ่มความต้านทานต่อการโจมตีธาตุ Fire, Water 5%\nASPD + 3%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป,\nเพิ่มความต้านทานต่อการโจมตีธาตุ Fire, Water ขึ้นอีก 10%\nเพิ่ม Damage ทางกายภาพระยะไกล 10%\nASPD + 7%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 11 ขึ้นไป,\nเพิ่มความต้านทานต่อการโจมตีธาตุ Fire, Water ขึ้นอีก 10%\nเพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 10%\nลด Delay หลังใช้สกิล -10%\nเมื่อเรียนรู้สกิล Dragon Training Lv.5, MaxHP + 20%, MaxSP + 20%\nเมื่อเรียนรู้สกิล Dragon Breath - Water Lv.10, สามารถใช้ Deluge Lv.5 ได้\nทุก ๆ การเรียนรู้ Dragon Howling 1 เลเวล, เพิ่ม Dragon Breath, Dragon Breath - Water 20%\nเมื่อเรียนรู้สกิล Dragon Breath Lv.10, สามารถใช้ Volcano Lv.5 ได้\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777712^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 12,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "aspdPercent": [
+        "3",
+        "9===7"
+      ],
+      "range": [
+        "9===10",
+        "11===10"
+      ],
+      "acd": [
+        "11===10"
+      ],
+      "hpPercent": [
+        "REFINE[11]LEARN_SKILL[Dragon Training==5]===20"
+      ],
+      "spPercent": [
+        "REFINE[11]LEARN_SKILL[Dragon Training==5]===20"
+      ],
+      "Dragon Breath": [
+        "REFINE[11]LEARN_SKILL[Dragon Howling==1]---20"
+      ],
+      "Dragon Breath - WATER": [
+        "REFINE[11]LEARN_SKILL[Dragon Howling==1]---20"
       ]
     }
   },
@@ -91638,6 +94200,65 @@
       ]
     }
   },
+  "490120": {
+    "id": 490120,
+    "aegisName": "Sprint_Ring_IL",
+    "name": "Illusion Sprint Ring [1]",
+    "unidName": "Ring",
+    "resName": "Sprint_Ring_IL",
+    "description": "แหวนที่เมื่อสวมใส่แล้วจะสัมผัสได้ถึงทิศทางของลมและรู้สึกราวกับสามารถทำได้ทุกอย่าง\n\nลดระยะเวลาร่ายแบบแปรผัน 10%\n\nเมื่อสวมใส่ร่วมกับ Illusion Sprint Mail, ลด Delay หลังใช้สกิล 10%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "10"
+      ],
+      "acd": [
+        "EQUIP[Illusion Sprint Mail]===10"
+      ]
+    }
+  },
+  "490121": {
+    "id": 490121,
+    "aegisName": "Sprint_Glove_IL",
+    "name": "Illusion Sprint Glove [1]",
+    "unidName": "Glove",
+    "resName": "Sprint_Glove_IL",
+    "description": "ถุงมือที่มีความทนทาน ดูดซับเหงื่อได้ดีและแห้งอย่างรวดเร็ว แถมยังยึดติดได้ดีเยี่ยมเวลาจับสิ่งของอะไร\n\nลด Delay หลังใช้สกิล 3%\n\nเมื่อสวมใส่ร่วมกับ Illusion Sprint Ring, ลด Delay หลังใช้สกิล 5%\n\nเมื่อสวมใส่ร่วมกับ Illusion Sprint Mail, ลดระยะเวลาร่ายแบบแปรผัน 10%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "3",
+        "EQUIP[Illusion Sprint Ring]===5"
+      ],
+      "vct": [
+        "EQUIP[Illusion Sprint Mail]===10"
+      ]
+    }
+  },
   "490126": {
     "id": 490126,
     "aegisName": "2Para_Acc_L_A",
@@ -91897,6 +94518,66 @@
       ],
       "fct": [
         "EQUIP[Modification Orb (Lucky Strike)]3"
+      ]
+    }
+  },
+  "490159": {
+    "id": 490159,
+    "aegisName": "Rough_Core",
+    "name": "Rough Core [1]",
+    "unidName": "Accessory",
+    "resName": "Omega_Core",
+    "description": "MaxHP - 3%, Cri + 10, reduces variable casting time by 10%.\n\nWhen equipped with Violet Halo and Magical Booster [1], increases all property magical damage by 5%,\nif refine rate of garment is 7 or higher, increases magical damage against boss monsters by 15%,\nif refine rate of garment is 9 or higher, increases all property magical damage by additional 5%.\n\nWhen equipped with Violet Halo and Crimson Booster [1], increases long ranged physical damage by 5%,\nif refine rate of garment is 7 or higher, Cri + 10,\nif refine rate of garment is 9 or higher, increases long ranged physical damage by additional 5%.\n\nWhen equipped with Violet Halo and Sigrun's Wing [1], increases melee physical damage by 5%,\nif refine rate of garment is 7 or higher, Perfect Hit + 10,\nif refine rate of garment is 9 or higher, increases melee physical damage by additional 5%.\n\nWhen equipped with Violet Halo and Dark Blinder [1], reduces global cooldown by 5%,\nif refine rate of garment is 7 or higher, increases physical damage against boss monsters by 15%,\nif refine rate of garment is 9 or higher, reduces fixed casting time by 0.2 seconds.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777750^000000\nRequired Level: ^777777150^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 50,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hpPercent": [
+        "-3"
+      ],
+      "cri": [
+        "10",
+        "EQUIP[Violet Halo&&Crimson Booster]REFINE[garment==7]===10"
+      ],
+      "vct": [
+        "10"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Violet Halo&&Magical Booster K]===5",
+        "EQUIP[Violet Halo&&Magical Booster K]REFINE[garment==9]===5"
+      ],
+      "m_class_boss": [
+        "EQUIP[Violet Halo&&Magical Booster K]REFINE[garment==7]===15"
+      ],
+      "range": [
+        "EQUIP[Violet Halo&&Crimson Booster]===5",
+        "EQUIP[Violet Halo&&Crimson Booster]REFINE[garment==9]===5"
+      ],
+      "melee": [
+        "EQUIP[Violet Halo&&Sigrun's Wing_]===5",
+        "EQUIP[Violet Halo&&Sigrun's Wing_]REFINE[garment==9]===5"
+      ],
+      "perfectHit": [
+        "EQUIP[Violet Halo&&Sigrun's Wing_]REFINE[garment==7]===10"
+      ],
+      "acd": [
+        "EQUIP[Violet Halo&&Dark Blinkers]===5"
+      ],
+      "p_class_boss": [
+        "EQUIP[Violet Halo&&Dark Blinkers]REFINE[garment==7]===15"
+      ],
+      "fct": [
+        "EQUIP[Violet Halo&&Dark Blinkers]REFINE[garment==9]===0.2"
       ]
     }
   },
@@ -94800,7 +97481,7 @@
     "name": "King Of Elemental Ring [1]",
     "unidName": "King Of Elemental Ring",
     "resName": "Lord_of_Elemental",
-    "description": "Global Cooldown -5%\nMATK + 100 \nMATK + 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Circlet (Sorcerer),\nGlobal Cooldown -5%\nทุก ๆ 3 ขั้นอัพเกรด Headgear, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 4%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางเวทมนตร์ มีโอกาส 3% ที่จะ MATK + 20%, INT + 100 เป็นเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ All Above Time (Magic),\nGlobal Cooldown -5%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Int) Lv. 3,\nลด Cooldown สกิล Psychic Wave 1 วินาที\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Psychic Wave 20%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Agi) Lv. 3,\nลด Cooldown สกิล Diamond Dust 1 วินาที\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Diamond Dust 20%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Vit) Lv. 3,\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป, มีโอกาส 15% ที่จะเกิดสกิล Cold Bolt Lv. 10\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 8%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Int) Lv. 3,\nลด Cooldown สกิล Psychic Wave 0.35 วินาที\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Psychic Wave 10%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Agi) Lv. 3,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Diamond Dust 10%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Vit) Lv. 3,\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป, มีโอกาส 8% ที่จะใช้งานสกิล Dark Claw Lv. 5 ใส่เป้าหมาย\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Fire Bolt, Cold Bolt, Lightning Bolt 40%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
+    "description": "Global Cooldown -5%\nMATK + 100 \nMATK + 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Circlet (Sorcerer),\nGlobal Cooldown -5%\nทุก ๆ 3 ขั้นอัพเกรด Headgear, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 4%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางเวทมนตร์ มีโอกาส 3% ที่จะ MATK + 20%, INT + 100 เป็นเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ All Above Time (Magic),\nGlobal Cooldown -5%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Int) Lv. 3,\nลด Cooldown สกิล Psychic Wave 1 วินาที\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Psychic Wave 20%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Agi) Lv. 3,\nลด Cooldown สกิล Diamond Dust 1 วินาที\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Diamond Dust 20%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Vit) Lv. 3,\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป, มีโอกาส 15% ที่จะเกิดสกิล Cold Bolt Lv. 10\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 8%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Int) Lv. 3,\nลด Cooldown สกิล Psychic Wave 0.35 วินาที\nเพิ่ม Damage สกิล Psychic Wave 70%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Agi) Lv. 3,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\nเพิ่ม Damage สกิล Diamond Dust 70%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Vit) Lv. 3,\nเมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป, มีโอกาส 8% ที่จะใช้งานสกิล Dark Claw Lv. 5 ใส่เป้าหมาย\nเพิ่ม Damage สกิล Fire Bolt, Cold Bolt, Lightning Bolt 280%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 511,
@@ -94828,7 +97509,7 @@
       ],
       "m_size_all": [
         "EQUIP[Temporal Circlet (Sorcerer)]REFINE[headUpper==3]---4",
-        "EQUIP[Temporal Circlet (Sorcerer)&&Time Jewel (Agi) Lv.3]===10"
+        "EQUIP[Time Jewel (Agi) Lv.3]===10"
       ],
       "chance__matkPercent": [
         "EQUIP[Temporal Circlet (Sorcerer)]REFINE[headUpper==11]===20"
@@ -94837,32 +97518,32 @@
         "EQUIP[Temporal Circlet (Sorcerer)]REFINE[headUpper==11]===100"
       ],
       "m_class_all": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&All Above Time(Magic)]===10",
-        "EQUIP[Temporal Circlet (Sorcerer)&&Temporal Jewel (Vit) Lv. 3]REFINE[headUpper==2]---8"
+        "EQUIP[All Above Time(Magic)]===10",
+        "EQUIP[Temporal Jewel (Vit) Lv. 3]REFINE[headUpper==2]---8"
       ],
       "cd__Psychic Wave": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&Temporal Jewel (Int) Lv. 3]===1",
-        "EQUIP[Temporal Circlet (Sorcerer)&&Time Jewel (Int) Lv.3]===0.35"
+        "EQUIP[Temporal Jewel (Int) Lv. 3]===1",
+        "EQUIP[Time Jewel (Int) Lv.3]===0.35"
       ],
       "Psychic Wave": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&Temporal Jewel (Int) Lv. 3]REFINE[headUpper==2]---20",
-        "EQUIP[Temporal Circlet (Sorcerer)&&Time Jewel (Int) Lv.3]REFINE[headUpper==2]---10"
+        "EQUIP[Temporal Jewel (Int) Lv. 3]REFINE[headUpper==2]---20",
+        "EQUIP[Time Jewel (Int) Lv.3]===70"
       ],
       "cd__Diamond Dust": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&Temporal Jewel (Agi) Lv. 3]===1"
+        "EQUIP[Temporal Jewel (Agi) Lv. 3]===1"
       ],
       "Diamond Dust": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&Temporal Jewel (Agi) Lv. 3]REFINE[headUpper==2]---20",
-        "EQUIP[Temporal Circlet (Sorcerer)&&Time Jewel (Agi) Lv.3]REFINE[headUpper==2]---10"
+        "EQUIP[Temporal Jewel (Agi) Lv. 3]REFINE[headUpper==2]---20",
+        "EQUIP[Time Jewel (Agi) Lv.3]===70"
       ],
       "Fire Bolt": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&Time Jewel (Vit) Lv.3]REFINE[headUpper==2]---40"
+        "EQUIP[Time Jewel (Vit) Lv.3]===280"
       ],
       "Cold Bolt": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&Time Jewel (Vit) Lv.3]REFINE[headUpper==2]---40"
+        "EQUIP[Time Jewel (Vit) Lv.3]===280"
       ],
       "Lightening Bolt": [
-        "EQUIP[Temporal Circlet (Sorcerer)&&Time Jewel (Vit) Lv.3]REFINE[headUpper==2]---40"
+        "EQUIP[Time Jewel (Vit) Lv.3]===280"
       ]
     }
   },
@@ -94875,7 +97556,7 @@
     "description": "เครื่องประดับที่สร้างขึ้นมาเพื่อแก้กรรมแห่งกงเกวียนกาลเวลา\n\nGlobal Cooldown -5%\nATK + 50, ATK + 10%\n\nเมื่อสวมใส่กับ Black Eagle Ring หรือ [Not For Sale] Black Eagle Ring\nและ Temporal Jewel (Str) Lv. 3,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%,\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Aimed Bolt 10%\n\nเมื่อสวมใส่กับ Black Eagle Ring หรือ [Not For Sale] Black Eagle Ring\nและ Temporal Jewel (Dex) Lv. 3,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%,\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Arrow Storm 10%\n\nเมื่อสวมใส่กับ Black Eagle Ring หรือ [Not For Sale] Black Eagle Ring\nและ Temporal Jewel (Luk) Lv. 3,\nATK + 80, Critical Damage + 15%\nทุก ๆ 2 ขั้นอัพเกรด Headgear, เพิ่ม Damage สกิล Focus Arrow Strike 10%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
-    "itemSubTypeId": 517,
+    "itemSubTypeId": 510,
     "itemLevel": null,
     "attack": null,
     "defense": 0,
@@ -94892,28 +97573,687 @@
       ],
       "atk": [
         "50",
-        "EQUIP[Black Eagle Ring&&Temporal Jewel (Luk) Lv.3]===80"
+        "EQUIP[Black Eagle Ring&&Temporal Jewel (Luk) Lv. 3]===80"
       ],
       "atkPercent": [
         "10"
       ],
       "p_size_all": [
-        "EQUIP[Black Eagle Ring&&Temporal Jewel (Str) Lv.3]===20"
+        "EQUIP[Black Eagle Ring&&Temporal Jewel (Str) Lv. 3]===20"
       ],
       "Aimed Bolt": [
-        "EQUIP[Black Eagle Ring&&Temporal Jewel (Str) Lv.3]REFINE[headUpper==2]---10"
+        "EQUIP[Black Eagle Ring&&Temporal Jewel (Str) Lv. 3]REFINE[headUpper==2]---10"
       ],
       "p_race_all": [
-        "EQUIP[Black Eagle Ring&&Temporal Jewel (Dex) Lv.3]===15"
+        "EQUIP[Black Eagle Ring&&Temporal Jewel (Dex) Lv. 3]===15"
       ],
       "Arrow Storm": [
-        "EQUIP[Black Eagle Ring&&Temporal Jewel (Dex) Lv.3]REFINE[headUpper==2]---10"
+        "EQUIP[Black Eagle Ring&&Temporal Jewel (Dex) Lv. 3]REFINE[headUpper==2]---10"
       ],
       "criDmg": [
-        "EQUIP[Black Eagle Ring&&Temporal Jewel (Luk) Lv.3]===15"
+        "EQUIP[Black Eagle Ring&&Temporal Jewel (Luk) Lv. 3]===15"
       ],
       "Focused Arrow Strike": [
-        "EQUIP[Black Eagle Ring&&Temporal Jewel (Luk) Lv.3]REFINE[headUpper==2]---10"
+        "EQUIP[Black Eagle Ring&&Temporal Jewel (Luk) Lv. 3]REFINE[headUpper==2]---10"
+      ]
+    }
+  },
+  "490598": {
+    "id": 490598,
+    "aegisName": null,
+    "name": "Giant Protection [1]",
+    "unidName": "Giant Protection",
+    "resName": "Giant_Protection",
+    "description": "ลดดีเลย์หลังใช้สกิล 5%,\nATK + 100\nATK + 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Circlet (Shadow Chaser),\nลดดีเลย์หลังใช้สกิล 5%,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Fatal Menace, Triangle Shot 15%,\nทุก ๆ การอัพเกรด Headgear 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%,\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะ ATK + 20%, AGI + 100 เป็นเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ All Above Time (Range) หรือ All Above Time (Melee),\nลดดีเลย์หลังใช้สกิล 5%,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Str) Lv. 3,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 15%,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Fatal Menace 5%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Dex) Lv. 3,\nลด Cooldown สกิล Feint Bomb ลง 1.8 วินาที,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Triangle Shot 10%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Str) Lv. 3,\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะฟื้นฟู HP 3% ของ Damage ที่ทำ,\nเมื่อโจมตีทางกายภาพ มีโอกาส 1% ที่จะฟื้นฟู SP 2% ของ Damage ที่ทำ,\nเพิ่ม Damage สกิล Fatal Menace 70%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Dex) Lv. 3,\nเพิ่ม Damage ทางกายภาพระยะไกล 30%,\nเพิ่ม Damage สกิล Triangle Shot 105%\n\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 20,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Shadow Chaser"
+    ],
+    "script": {
+      "acd": [
+        "5",
+        "EQUIP[Temporal Circlet (Shadow Chaser)]===5",
+        "EQUIP[All Above Time(Range)||All Above Time(Melee)]===5"
+      ],
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "Fatal Manace": [
+        "EQUIP[Temporal Circlet (Shadow Chaser)]REFINE[headUpper==2]---15",
+        "EQUIP[Temporal Jewel (Str) Lv. 3]REFINE[headUpper==2]---5",
+        "EQUIP[Time Jewel (Str) Lv.3]===70"
+      ],
+      "Triangle Shot": [
+        "EQUIP[Temporal Circlet (Shadow Chaser)]REFINE[headUpper==2]---15",
+        "EQUIP[Temporal Jewel (Dex) Lv. 3]REFINE[headUpper==2]---10",
+        "EQUIP[Time Jewel (Dex) Lv.3]===105"
+      ],
+      "p_size_all": [
+        "EQUIP[Temporal Circlet (Shadow Chaser)]REFINE[headUpper==3]---4"
+      ],
+      "chance__atkPercent": [
+        "EQUIP[Temporal Circlet (Shadow Chaser)]REFINE[headUpper==11]===20"
+      ],
+      "chance__agi": [
+        "EQUIP[Temporal Circlet (Shadow Chaser)]REFINE[headUpper==11]===100"
+      ],
+      "p_class_all": [
+        "EQUIP[All Above Time(Range)||All Above Time(Melee)]===10"
+      ],
+      "melee": [
+        "EQUIP[Temporal Jewel (Str) Lv. 3]===15"
+      ],
+      "cd__Feint Bomb": [
+        "EQUIP[Temporal Jewel (Dex) Lv. 3]===1.8"
+      ],
+      "range": [
+        "EQUIP[Time Jewel (Dex) Lv.3]===30"
+      ]
+    }
+  },
+  "490600": {
+    "id": 490600,
+    "aegisName": null,
+    "name": "Imperial Glove [1]",
+    "unidName": "Imperial Glove",
+    "resName": "임페리얼글러브",
+    "description": "ลด Delay หลังใช้สกิล 5%\nATK + 100\nATK + 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Circlet (Royal Guard),\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Overbrand, Canon Spear 15%\nทุก ๆ การอัพเกรด Headgear 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะ ATK + 20%, STR + 100 เป็นระยะเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ All Above Time (Range) หรือ All Above Time (Melee),\nSTR + 20\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Str) Lv. 3,\nลด Delay หลังใช้สกิล 15%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Overbrand 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Luk) Lv. 3,\nCRI + 20\nCritical Damage + 20%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Canon Spear 5%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Str) Lv. 3,\nลด Delay หลังใช้สกิล 5%\nลด Cooldown สกิล Overbrand 0.1 วินาที\nเพิ่ม Damage สกิล Overbrand 105%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Luk) Lv. 3,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\nSTR + 56, เพิ่ม Damage สกิล Canon Spear 70%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 20,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "acd": [
+        "5",
+        "EQUIP[Temporal Jewel (Str) Lv. 3]===15",
+        "EQUIP[Time Jewel (Str) Lv.3]===5"
+      ],
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "melee": [
+        "EQUIP[Temporal Circlet (Royal Guard)]===10"
+      ],
+      "range": [
+        "EQUIP[Temporal Circlet (Royal Guard)]===10",
+        "EQUIP[Time Jewel (Luk) Lv.3]===20"
+      ],
+      "Over Brand": [
+        "EQUIP[Temporal Circlet (Royal Guard)]REFINE[headUpper==2]---15",
+        "EQUIP[Temporal Jewel (Str) Lv. 3]REFINE[headUpper==2]---10",
+        "EQUIP[Time Jewel (Str) Lv.3]===105"
+      ],
+      "Cannon Spear": [
+        "EQUIP[Temporal Circlet (Royal Guard)]REFINE[headUpper==2]---15",
+        "EQUIP[Temporal Jewel (Luk) Lv. 3]REFINE[headUpper==2]---5",
+        "EQUIP[Time Jewel (Luk) Lv.3]===70"
+      ],
+      "p_size_all": [
+        "EQUIP[Temporal Circlet (Royal Guard)]REFINE[headUpper==3]---4"
+      ],
+      "chance__atkPercent": [
+        "EQUIP[Temporal Circlet (Royal Guard)]REFINE[headUpper==11]===20"
+      ],
+      "chance__str": [
+        "EQUIP[Temporal Circlet (Royal Guard)]REFINE[headUpper==11]===100"
+      ],
+      "str": [
+        "EQUIP[All Above Time(Range)||All Above Time(Melee)]===20",
+        "EQUIP[Time Jewel (Luk) Lv.3]===56"
+      ],
+      "p_class_all": [
+        "EQUIP[All Above Time(Range)||All Above Time(Melee)]===10"
+      ],
+      "cri": [
+        "EQUIP[Temporal Jewel (Luk) Lv. 3]===20"
+      ],
+      "criDmg": [
+        "EQUIP[Temporal Jewel (Luk) Lv. 3]===20"
+      ],
+      "cd__Over Brand": [
+        "EQUIP[Time Jewel (Str) Lv.3]===0.1"
+      ]
+    }
+  },
+  "490603": {
+    "id": 490603,
+    "aegisName": null,
+    "name": "Ice Crystal Circle [1]",
+    "unidName": "Ice Crystal Circle",
+    "resName": "Geffenia_Magictool_Ice",
+    "description": "ลด Delay หลังใช้สกิล 5%\nMATK + 100 \nMATK + 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Circlet (Warlock),\nลด Delay หลังใช้สกิล 5%,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Jack Frost, Chain Lightning 10%\nทุก ๆ การอัพเกรด Headgear 3 ขั้น, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 4%\nเมื่ออัพเกรดถึงขั้น 11, ลด Cooldown สกิล Jack Frost 2.5 วินาที, ลดระยะเวลาร่ายแบบแปรผัน 30%\n\nเมื่อสวมใส่ร่วมกับ All Above Time (Magic),\nลด Delay หลังใช้สกิล 5%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Int) Lv.3,\nลด Cooldown สกิล Frost Misty 3 วินาที\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Jack Frost 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Agi) Lv.3,\nลด Delay หลังใช้สกิล 10%\nASPD + 10%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Chain Lightning 10%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Int) Lv.3,\nลด Cooldown สกิล Jack Frost 0.5 วินาที\nASPD + 15%\nเพิ่ม Damage สกิล Jack Frost 70%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Agi) Lv.3,\nเมื่อใช้สกิล Chain Lightning มีโอกาส 35% ที่จะใช้สกิล Chain Lightning Lv.5 ใส่ศัตรู\nเพิ่ม Damage สกิล Chain Lightning 70%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 20,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Warlock"
+    ],
+    "script": {
+      "acd": [
+        "5",
+        "EQUIP[Temporal Circlet (Warlock)]===5",
+        "EQUIP[All Above Time(Magic)]===5",
+        "EQUIP[Temporal Jewel (Agi) Lv. 3]===10"
+      ],
+      "matk": [
+        "100"
+      ],
+      "matkPercent": [
+        "10"
+      ],
+      "Jack Frost": [
+        "EQUIP[Temporal Circlet (Warlock)]REFINE[headUpper==2]---10",
+        "EQUIP[Temporal Jewel (Int) Lv. 3]REFINE[headUpper==2]---10",
+        "EQUIP[Time Jewel (Int) Lv.3]===70"
+      ],
+      "Chain Lightning": [
+        "EQUIP[Temporal Circlet (Warlock)]REFINE[headUpper==2]---10",
+        "EQUIP[Temporal Jewel (Agi) Lv. 3]REFINE[headUpper==2]---10",
+        "EQUIP[Time Jewel (Agi) Lv.3]===70"
+      ],
+      "m_size_all": [
+        "EQUIP[Temporal Circlet (Warlock)]REFINE[headUpper==3]---4"
+      ],
+      "cd__Jack Frost": [
+        "EQUIP[Temporal Circlet (Warlock)]REFINE[headUpper==11]===2.5",
+        "EQUIP[Time Jewel (Int) Lv.3]===0.5"
+      ],
+      "vct": [
+        "EQUIP[Temporal Circlet (Warlock)]REFINE[headUpper==11]===30"
+      ],
+      "m_class_all": [
+        "EQUIP[All Above Time(Magic)]===10"
+      ],
+      "cd__Frost Misty": [
+        "EQUIP[Temporal Jewel (Int) Lv. 3]===3"
+      ],
+      "aspdPercent": [
+        "EQUIP[Temporal Jewel (Agi) Lv. 3]===10",
+        "EQUIP[Time Jewel (Int) Lv.3]===15"
+      ]
+    }
+  },
+  "490605": {
+    "id": 490605,
+    "aegisName": null,
+    "name": "Document Swordsman [1]",
+    "unidName": "Clip",
+    "resName": "Ep18_Docu_File",
+    "description": "เอกสารบันทึกการเดินทางฉบับสมบูรณ์ของกลุ่มอัศวินที่เข้าไปสำรวจพื้นที่ Tomb of Honor\n\nATK + 100, ATK + 10%.\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nเพิ่ม Damage สกิล Ignition Break, Earth Drive 30%\n\nเมื่อผู้สวมใส่เป็น Rune Knight,\nลดระยะเวลาร่ายแบบแปรผันสกิล Ignition Break 100%,\nCritical Damage +40%.\n\nเมื่อผู้สวมใส่เป็น Royal Guard,\nลด Delay หลังใช้สกิลลงอีก 15%,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%\n\nเมื่อสวมใส่ร่วมกับ Old Rune Circlet,\nลด Cooldown สกิล Ignition Break 1.5 วินาที,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Ignition Break ขึ้นอีก 10%\n\nเมื่อสวมใส่ร่วมกับ Old Casket of Protection,\nลด Cooldown สกิล Earth Drive 2.5 วินาที,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Earth Drive ขึ้นอีก 30%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Swordsman Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "acd": [
+        "10",
+        "USED[Royal Guard]===15"
+      ],
+      "p_size_all": [
+        "10"
+      ],
+      "vct__Ignition Break": [
+        "USED[Rune Knight]===100"
+      ],
+      "criDmg": [
+        "USED[Rune Knight]===40"
+      ],
+      "melee": [
+        "USED[Royal Guard]===20"
+      ],
+      "cd__Ignition Break": [
+        "EQUIP[Old Rune Circlet]===1.5"
+      ],
+      "p_class_all": [
+        "EQUIP[Old Rune Circlet]REFINE[headUpper==2]---4",
+        "EQUIP[Old Casket of Protection]REFINE[headUpper==2]---4"
+      ],
+      "Ignition Break": [
+        "30",
+        "EQUIP[Old Rune Circlet]REFINE[headUpper==2]---10"
+      ],
+      "cd__Earth Drive": [
+        "EQUIP[Old Casket of Protection]===2.5"
+      ],
+      "Earth Drive": [
+        "30",
+        "EQUIP[Old Casket of Protection]REFINE[headUpper==2]---30"
+      ]
+    }
+  },
+  "490606": {
+    "id": 490606,
+    "aegisName": null,
+    "name": "Document Thief [1]",
+    "unidName": "Clip",
+    "resName": "Ep18_Docu_File",
+    "description": "เอกสารบันทึกการเดินทางฉบับสมบูรณ์ของกลุ่มโจรที่เข้าไปสำรวจพื้นที่ Tomb of Honor\n\nATK + 100, ATK + 10%.\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nเพิ่ม Damage สกิล Cross Impact, Triangle Shot 30%\n\nเมื่อผู้สวมใส่เป็น Guillotine Cross,\nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50% (ยกเว้น Player)\nCritical Damage +20%.\n\nเมื่อผู้สวมใส่เป็น Shadow Chaser,\nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50% (ยกเว้น Player)\nเมื่อใช้สกิล Triangle Shot, มีโอกาส 35% ที่จะเกิดสกิล Triangle Shot Lv.10 ต่อเป้าหมาย\n\nเมื่อสวมใส่ร่วมกับ Old Bone Circlet,\nลด Cooldown สกิล Dark Claw 10 วินาที,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Cross Impact ขึ้นอีก 10%\n\nเมื่อสวมใส่ร่วมกับ Old Shadow Handicraft,\nสามารถใช้งานสกิล No Limits Lv.1 ได้ (ยกเลิกผลสกิลเมื่อถอดอุปกรณ์)\nเพิ่ม Cooldown สกิล No Limits 180 วินาที\nลดความต้านทานต่อการโจมตีทุกธาตุ 30%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Triangle Shot ขึ้นอีก 10%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Thief Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Thief"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_size_all": [
+        "10"
+      ],
+      "p_pene_race_all": [
+        "USED[Guillotine Cross]===50",
+        "USED[Shadow Chaser]===50"
+      ],
+      "criDmg": [
+        "USED[Guillotine Cross]===20"
+      ],
+      "cd__Dark Claw": [
+        "EQUIP[Old Bone Circlet]===10"
+      ],
+      "p_class_all": [
+        "EQUIP[Old Bone Circlet]REFINE[headUpper==2]---4",
+        "EQUIP[Old Shadow Handicraft]REFINE[headUpper==2]---4"
+      ],
+      "Cross Impact": [
+        "30",
+        "EQUIP[Old Bone Circlet]REFINE[headUpper==2]---10"
+      ],
+      "cd__No Limits": [
+        "EQUIP[Old Shadow Handicraft]===-180"
+      ],
+      "Triangle Shot": [
+        "30",
+        "EQUIP[Old Shadow Handicraft]REFINE[headUpper==2]---10"
+      ]
+    }
+  },
+  "490607": {
+    "id": 490607,
+    "aegisName": null,
+    "name": "Document Merchant [1]",
+    "unidName": "Clip",
+    "resName": "Ep18_Docu_File",
+    "description": "เอกสารบันทึกการเดินทางฉบับสมบูรณ์ของกลุ่มพ่อค้าที่เข้าไปสำรวจพื้นที่ Tomb of Honor\n\nATK + 100, ATK + 10%.\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nเพิ่ม Damage สกิล Axe Tornado, Arm Cannon, Cart Cannon 30%\n\nเมื่อผู้สวมใส่เป็น Mechanic,\nเมื่อใช้สกิลจะไม่สูญเสีย Magic Gear Fuel\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\n\nเมื่อผู้สวมใส่เป็น Genetic,\nAll Status + 10.\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\n\nเมื่อสวมใส่ร่วมกับ Old Driver Band (Red),\nลด Cooldown สกิล Axe Tornado 1 วินาที,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Axe Tornado 10%\n\nเมื่อสวมใส่ร่วมกับ Old Driver Band (Yellow),\nลดระยะเวลาร่ายแบบแปรผันสกิล Arm Cannon 100%,\nลด Cooldown สกิล Arm Cannon 0.5 วินาที\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Arm Cannon ขึ้นอีก 10%\n\nเมื่อสวมใส่ร่วมกับ Old Midas Whisper,\nเมื่อกำจัดมอนสเตอร์ มีโอกาส 0.5% ที่จะได้รับ Bomb Mushroom Spore \nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Cart Cannon ขึ้นอีก 10%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Merchant Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Merchant"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_size_all": [
+        "10"
+      ],
+      "p_element_all": [
+        "USED[Mechanic]===15"
+      ],
+      "allStatus": [
+        "USED[Genetic]===10"
+      ],
+      "range": [
+        "USED[Genetic]===20"
+      ],
+      "cd__Axe Tornado": [
+        "EQUIP[Old Driver Band (Red)]===1"
+      ],
+      "p_class_all": [
+        "EQUIP[Old Driver Band (Red)]REFINE[headUpper==2]---4",
+        "EQUIP[Old Driver Band (Yellow)]REFINE[headUpper==2]---4",
+        "EQUIP[Old Midas Whisper]REFINE[headUpper==2]---4"
+      ],
+      "Axe Tornado": [
+        "30",
+        "EQUIP[Old Driver Band (Red)]REFINE[headUpper==2]---10"
+      ],
+      "vct__Arm Cannon": [
+        "EQUIP[Old Driver Band (Yellow)]===100"
+      ],
+      "cd__Arm Cannon": [
+        "EQUIP[Old Driver Band (Yellow)]===0.5"
+      ],
+      "Arm Cannon": [
+        "30",
+        "EQUIP[Old Driver Band (Yellow)]REFINE[headUpper==2]---10"
+      ],
+      "Cart Cannon": [
+        "30",
+        "EQUIP[Old Midas Whisper]REFINE[headUpper==2]---10"
+      ]
+    }
+  },
+  "490608": {
+    "id": 490608,
+    "aegisName": null,
+    "name": "Document Mage [1]",
+    "unidName": "Clip",
+    "resName": "Ep18_Docu_File",
+    "description": "เอกสารบันทึกการเดินทางฉบับสมบูรณ์ของกลุ่มนักเวทย์ที่เข้าไปสำรวจพื้นที่ Tomb of Honor\n\nMATK + 100, MATK + 10%.\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\nเพิ่ม Damage สกิล Comet, Varetyr Spear 30%\n\nเมื่อผู้สวมใส่เป็น Warlock,\nลดระยะเวลาร่ายแบบคงที่ 1 วินาที\nลด Cooldown สกิล Comet 20 วินาที\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 50% (ยกเว้น Player)\n\nเมื่อผู้สวมใส่เป็น Sorcerer,\nสามารถใช้งานสกิล Mystical Amplification Lv.5 ได้\nลด Cooldown สกิล Varetyr Spear 4 วินาที\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 50% (ยกเว้น Player)\n\nเมื่อสวมใส่ร่วมกับ Old Magic Stone Hat,\nลด Delay หลังใช้สกิลลงอีก 15%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 4%,\nเพิ่ม Damage สกิล Comet ขึ้นอีก 12%\n\nเมื่อสวมใส่ร่วมกับ Old Wind Whisper,\nลด Delay หลังใช้สกิลลงอีก 15%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 4%,\nเพิ่ม Damage สกิล Varetyr Spear ขึ้นอีก 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Mage Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mage"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "matkPercent": [
+        "10"
+      ],
+      "acd": [
+        "10",
+        "EQUIP[Old Magic Stone Hat]===15",
+        "EQUIP[Old Wind Whisper]===15"
+      ],
+      "m_size_all": [
+        "10"
+      ],
+      "fct": [
+        "USED[Warlock]===1"
+      ],
+      "cd__Comet": [
+        "USED[Warlock]===20"
+      ],
+      "m_pene_race_all": [
+        "USED[Warlock]===50",
+        "USED[Sorcerer]===50"
+      ],
+      "cd__Varetyr Spear": [
+        "USED[Sorcerer]===4"
+      ],
+      "m_race_all": [
+        "EQUIP[Old Magic Stone Hat]REFINE[headUpper==2]---4",
+        "EQUIP[Old Wind Whisper]REFINE[headUpper==2]---4"
+      ],
+      "Comet": [
+        "30",
+        "EQUIP[Old Magic Stone Hat]REFINE[headUpper==2]---12"
+      ],
+      "Varetyr Spear": [
+        "30",
+        "EQUIP[Old Wind Whisper]REFINE[headUpper==2]---15"
+      ]
+    }
+  },
+  "490609": {
+    "id": 490609,
+    "aegisName": null,
+    "name": "Document Archer [1]",
+    "unidName": "Clip",
+    "resName": "Ep18_Docu_File",
+    "description": "เอกสารบันทึกการเดินทางฉบับสมบูรณ์ของกลุ่มนักธนูที่เข้าไปสำรวจพื้นที่ Tomb of Honor\n\nATK + 100, ATK + 10%.\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nเพิ่ม Damage สกิล Focused Arrow Strike, Severe Rainstorm 30%\n\nเมื่อผู้สวมใส่เป็น Ranger,\nลด Cooldown สกิล No Limits 90 วินาที\n(เมื่อถอดอุปกรณ์ออก ผลสกิล No Limits จะถูกยกเลิกทันที)\nลดระยะเวลาร่ายแบบแปรผันสกิล Focused Arrow Strike 100%\n\nเมื่อผู้สวมใส่เป็น Minstrel หรือ Wanderer,\nลด Cooldown สกิล Severe Rainstorm 4 วินาที\n\nเมื่อสวมใส่ร่วมกับ Old Camouflage Bunny Hood,\nลด Delay หลังใช้สกิลลงอีก 15%,\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Focused Arrow Strike ขึ้นอีก 15%\n\nเมื่อสวมใส่ร่วมกับ Old Maestro Song’s Hat หรือ Old Dying Swan,\nเมื่อใช้สกิล Severe Rainstorm ลดปริมาณการใช้ SP 60 หน่วย\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Severe Rainstorm ขึ้นอีก 10%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Archer Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Archer"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "acd": [
+        "10",
+        "EQUIP[Old Camouflage Bunny Hood]===15"
+      ],
+      "p_size_all": [
+        "10"
+      ],
+      "cd__No Limits": [
+        "USED[Ranger]===90"
+      ],
+      "vct__Focused Arrow Strike": [
+        "USED[Ranger]===100"
+      ],
+      "cd__Severe Rainstorm": [
+        "USED[Minstrel]===4",
+        "USED[Wanderer]===4"
+      ],
+      "p_class_all": [
+        "EQUIP[Old Camouflage Bunny Hood]REFINE[headUpper==2]---4",
+        "EQUIP[Old Maestro Song's Hat||Old Dying Swan]REFINE[headUpper==2]---4"
+      ],
+      "Focused Arrow Strike": [
+        "30",
+        "EQUIP[Old Camouflage Bunny Hood]REFINE[headUpper==2]---15"
+      ],
+      "Severe Rainstorm": [
+        "30",
+        "EQUIP[Old Maestro Song's Hat||Old Dying Swan]REFINE[headUpper==2]---10"
+      ]
+    }
+  },
+  "490610": {
+    "id": 490610,
+    "aegisName": null,
+    "name": "Document Acolyte [1]",
+    "unidName": "Clip",
+    "resName": "Ep18_Docu_File",
+    "description": "เอกสารบันทึกการเดินทางฉบับสมบูรณ์ของกลุ่มนักบวชที่เข้าไปสำรวจพื้นที่ Tomb of Honor\n\nATK + 100, ATK + 10%.\nMATK + 100, MATK + 10%.\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพ/เวทมนต์ต่อศัตรูทุกขนาด 10%\nเพิ่ม Damage สกิล Judex, Rampage Blast 30%\n\nเมื่อผู้สวมใส่เป็น Arch Bishop,\nลดระยะเวลาร่ายแบบแปรผันสกิล Judex 100%\nเมื่อใช้สกิล Judex มีโอกาส 35% ที่จะเกิดสกิล Judex Lv.10 ต่อเป้าหมาย\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 50% (ยกเว้น Player)\n\nเมื่อผู้สวมใส่เป็น Sura,\nลด Cooldown สกิล Earth Shaker, Rampage Blast 1.5 วินาที\nเพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 50% (ยกเว้น Player)\n\nเมื่อสวมใส่ร่วมกับ Old Mitra,\nลด Delay หลังใช้สกิลลงอีก 15%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 4%,\nเพิ่ม Damage สกิล Judex ขึ้นอีก 40%\n\nเมื่อสวมใส่ร่วมกับ Old Blazing Soul,\nเมื่อใช้สกิล Rampage Blast จะเกิดสกิล Zen อัตโนมัติ\nทุก ๆ การอัพเกรด Headgear 2 ขั้น,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%,\nเพิ่ม Damage สกิล Rampage Blast ขึ้นอีก 10%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Acolyte Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Acolyte"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "matk": [
+        "100"
+      ],
+      "matkPercent": [
+        "10"
+      ],
+      "acd": [
+        "10",
+        "EQUIP[Old Mitra]===15"
+      ],
+      "p_size_all": [
+        "10"
+      ],
+      "m_size_all": [
+        "10"
+      ],
+      "vct__Judex": [
+        "USED[Arch Bishop]===100"
+      ],
+      "m_pene_race_all": [
+        "USED[Arch Bishop]===50"
+      ],
+      "p_pene_race_all": [
+        "USED[Sura]===50"
+      ],
+      "m_race_all": [
+        "EQUIP[Old Mitra]REFINE[headUpper==2]---4"
+      ],
+      "cd__Earth Shaker": [
+        "USED[Sura]===1.5"
+      ],
+      "cd__Rampage Blast": [
+        "USED[Sura]===1.5"
+      ],
+      "Judex": [
+        "30",
+        "EQUIP[Old Mitra]REFINE[headUpper==2]---40"
+      ],
+      "p_class_all": [
+        "EQUIP[Old Blazing Soul]REFINE[headUpper==2]---4"
+      ],
+      "Rampage Blast": [
+        "30",
+        "EQUIP[Old Blazing Soul]REFINE[headUpper==2]---10"
+      ]
+    }
+  },
+  "490611": {
+    "id": 490611,
+    "aegisName": null,
+    "name": "Durga Ring [1]",
+    "unidName": "Durga Ring",
+    "resName": "Anulus_Ira",
+    "description": "ลด Delay หลังใช้สกิล 5%\nATK + 100\nATK + 10%\n\nเมื่อสวมใส่ร่วมกับ Temporal Circlet (Sura),\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Knuckle Arrow, Tiger Cannon 15%\nทุก ๆ การอัพเกรด Headgear 3 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 4%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะ ATK +20%, VIT +100 เป็นระยะเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ All Above Time (Range) หรือ All Above Time (Melee),\nลด Delay หลังใช้สกิล 5%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Str) Lv.3,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 7%\n\nเมื่อใช้งานร่วมกับ Temporal Jewel (Vit) Lv.3,\nลด Cooldown สกิล Tiger Cannon 0.5 วินาที\nทุก ๆ การอัพเกรด Headgear 2 ขั้น, เพิ่ม Damage สกิล Tiger Cannon 5%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Str),\nเมื่อใช้สกิล Knuckle Arrow มีโอกาส 35% ที่จะเกิดสกิล Knuckle Arrow Lv.10 ต่อเป้าหมาย\nเพิ่ม Damage สกิล Knuckle Arrow 105%\n\nเมื่อใช้งานร่วมกับ Time Jewel (Vit) Lv.3,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%\nเพิ่ม Damage สกิล Tiger Cannon 105%\nประเภท  : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777720^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Sura^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 20,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "acd": [
+        "5",
+        "EQUIP[All Above Time(Range)||All Above Time(Melee)]===5"
+      ],
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "10"
+      ],
+      "melee": [
+        "EQUIP[Temporal Circlet (Sura)]===10",
+        "EQUIP[Time Jewel (Vit) Lv.3]===20"
+      ],
+      "range": [
+        "EQUIP[Temporal Circlet (Sura)]===10",
+        "EQUIP[Temporal Jewel (Str) Lv. 3]===20"
+      ],
+      "p_size_all": [
+        "EQUIP[Temporal Circlet (Sura)]REFINE[headUpper==3]---4"
+      ],
+      "chance__atkPercent": [
+        "EQUIP[Temporal Circlet (Sura)]REFINE[headUpper==11]===20"
+      ],
+      "chance__vit": [
+        "EQUIP[Temporal Circlet (Sura)]REFINE[headUpper==11]===100"
+      ],
+      "p_class_all": [
+        "EQUIP[All Above Time(Range)||All Above Time(Melee)]===10",
+        "EQUIP[Temporal Jewel (Str) Lv. 3]REFINE[headUpper==2]---7"
+      ],
+      "cd__Tiger Cannon": [
+        "EQUIP[Temporal Jewel (Vit) Lv. 3]===0.5"
+      ],
+      "Knuckle Arrow": [
+        "EQUIP[Temporal Circlet (Sura)]REFINE[headUpper==2]---15",
+        "EQUIP[Time Jewel (Str) Lv.3]===105"
+      ],
+      "Tiger Cannon": [
+        "EQUIP[Temporal Circlet (Sura)]REFINE[headUpper==2]---15",
+        "EQUIP[Temporal Jewel (Vit) Lv. 3]REFINE[headUpper==2]---5",
+        "EQUIP[Time Jewel (Vit) Lv.3]===105"
       ]
     }
   },
@@ -95374,7 +98714,7 @@
     "name": "Illusion Excalibur [2]",
     "unidName": "Sword",
     "resName": "Excalibur_IL",
-    "description": "Matk + 180.\nMatk + 5%, reduces global cooldown by 5%.\nIf refine rate is 7 or higher, increases Genesis Ray damage by 15%.\nIf refine rate is 9 or higher, increases neutral and holy property magical damage by 15%, reduces variable casting time by 10%.\nIf refine rate is 11 or higher, increases Genesis Ray damage by additional 25%.\n\nWhen equipped with Illusion Sacred Mission, Matk + 50, reduces variable casting time by 10%.\nIf refine rate of each is 7 or higher, increases Genesis Ray damage by 10%.\nIf the sum of refine rate is 18 or higher, increases magical damage against all race monsters by 20%.\nIf the sum of refine rate is 22 or higher, reduces skill cooldown of Genesis Ray by 1 second, reduces global cooldown by 5%.\nClass: ^777777Sword^000000 Attack: ^777777120^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Royal Guard^000000",
+    "description": "ดาบที่ว่ากันว่าถูกเสียบอยู่ในก้อนหินของประเทศทางตะวันตกอันไกลแสนไกล มันเลือกเจ้าของด้วยตัวเองและมีพลังศักดิ์สิทธิ์เต็มเปี่ยม\n\nMATK + 180.\nMATK + 5%, ลด Delay หลังใช้สกิล 5%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Genesis Ray 15%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Holy 15%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Genesis Ray ขึ้นอีก 25%\n\nเมื่อสวมใส่ร่วมกับ Illusion Sacred Mission, MATK + 50, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่อค่าอัพเกรดของ Illusion Excalibur และ Illusion Sacred Mission ตั้งแต่ 7 ขึ้นไป, เพิ่ม Damage สกิล Genesis Ray 10%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ลด Cooldown สกิล Genesis Ray 1 วินาที, ลด Delay หลังใช้สกิล 5%\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777120^000000\nน้ำหนัก : ^777777100^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -96107,6 +99447,58 @@
       ]
     }
   },
+  "510034": {
+    "id": 510034,
+    "aegisName": "Ancient_Dagger_IL",
+    "name": "Illusion Ancient Dagger [2]",
+    "unidName": "Knife",
+    "resName": "Ancient_Dagger_IL",
+    "description": "มีดสั้นที่ถูกใช้ในพิธีบวงสรวงหรือสักการะในโบราณกาล รู้สึกได้ถึงพลังที่ไม่อาจทราบได้\nMATK + 180.\nMSP + 100, ฟื้นฟูปริมาณ SP เอง 10%\nเมื่อโจมตีทางกายภาพ, MATK + 10%, MATK + 70 ในอัตราที่กำหนดไว้เป็นระยะเวลา 10 วินาที\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูขนาดกลาง, ใหญ่ 20%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางเวทมนตร์ มีโอกาสเล็กน้อยที่จะเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า 15% เป็นระยะเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ Illusion Guard, MATK + 50.\nเมื่อค่าอัพเกรดของ Illusion Ancient Dagger และ Illusion Guard ตั้งแต่ 7 ขึ้นไป, Perfect Hit + 10%.\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, เมื่อโจมตีทางกายภาพระยะใกล้ มีโอกาสที่จะเกิด Killing Cloud Lv.3\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เมื่อร่ายสกิล Killing Cloud เมื่อโจมตีทางเวทมนตร์ มีโอกาสที่จะเกิด Poison Burst Lv.4 เป็นระยะเวลา 30 วินาที\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777107^000000\nน้ำหนัก : ^77777760^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 107,
+    "defense": null,
+    "weight": 60,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Shadow Chaser"
+    ],
+    "script": {
+      "matk": [
+        "180",
+        "EQUIP[Illusion Guard]===50"
+      ],
+      "sp": [
+        "100"
+      ],
+      "chance__matkPercent": [
+        "10"
+      ],
+      "chance__matk": [
+        "70"
+      ],
+      "m_my_element_all": [
+        "7===15",
+        "EQUIP[Illusion Guard]REFINE[weapon,shield==18]===15"
+      ],
+      "m_size_m": [
+        "9===20"
+      ],
+      "m_size_l": [
+        "9===20"
+      ],
+      "chance__m_race_all": [
+        "11===15"
+      ],
+      "perfectHit": [
+        "EQUIP[Illusion Guard]REFINE[shield==7]7===10"
+      ]
+    }
+  },
   "510038": {
     "id": 510038,
     "aegisName": "3Para_Dagger_SC",
@@ -96689,9 +100081,9 @@
     "id": 530015,
     "aegisName": "Gelerdria_IL",
     "name": "Illusion Gelerdria [2]",
-    "unidName": "Spear",
+    "unidName": "Javelin",
     "resName": "Gelerdria_IL",
-    "description": "MaxHP + 10%, Cri + 15.\nAtk + 20 and increases attack speed (reduces delay after attack by 2%) per 3 refine rate.\nIf refine rate is 7 or higher, increases Cannon Spear damage by 25%, increases critical damage by 30%.\nIf refine rate is 9 or higher, increases Vanishing Point damage by 25%, increases long ranged physical damage by 15%.\nIf refine rate is 11 or higher, increases Cannon Spear and Vanishing Point damage by additional 25%.\n\nWhen equipped with Illusion Hot-blooded Headband, increases Cannon Spear and Vanishing Point damage by 25% for 60 seconds when using Shield Spell.\nIf refine rate of each is 7 or higher, increases long ranged physical damage by 15%.\nIf the sum of refine rate is 18 or higher, increases physical damage against all race monsters by 15%.\nIf the sum of refine rate is 22 or higher, increases Cannon Spear and Vanishing Point damage as percentage equal to 2 tiems of the sum of refine rate of set.\nClass: ^777777Spear^000000 Attack: ^777777170^000000\nWeight: ^777777200^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Royal Guard^000000",
+    "description": "One-handed Spear ที่เต็มไปด้วยพลังงานของผืนดิน ว่ากันว่าเมื่อสวมใส่จะทำให้ระบบเมตาบอลิซึมไหลเวียน\nMHP + 10%, CRI + 15.\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 20, ASPD + 2%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Canon Spear 25%, Critical Damage + 30%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Vanishing Point 25%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Canon Spear, Vanishing Point ขึ้นอีก 20%\n\nเมื่อสวมใส่ร่วมกับ Illusion Hot-blooded Headband, เมื่อใช้ Shield Spell เพิ่ม Damage สกิล Canon Spear, Banishing Point 25% เป็นระยะเวลา 60 วินาที\nเมื่อค่าอัพเกรดของ Illusion Gelerdria และ Illusion Hot-blooded Headband ตั้งแต่ 7 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เพิ่ม Damage สกิล Canon Spear, Banishing Poing ใน % ที่เป็น 2 เท่าของผลรวมค่าอัพเกรด\nประเภท : ^777777One-handed Spear^000000 พลังโจมตี : ^777777170^000000\nน้ำหนัก : ^777777200^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 259,
@@ -96720,7 +100112,7 @@
       ],
       "Cannon Spear": [
         "7===25",
-        "11===25",
+        "11===20",
         "EQUIP[Illusion Hot-blooded Headband]ACTIVE_SKILL[Shield Spell]===25",
         "EQUIP[Illusion Hot-blooded Headband]REFINE[weapon,headUpper==22]REFINE[weapon,headUpper==1]---2"
       ],
@@ -96729,7 +100121,7 @@
       ],
       "Banishing Point": [
         "9===25",
-        "11===25",
+        "11===20",
         "EQUIP[Illusion Hot-blooded Headband]ACTIVE_SKILL[Shield Spell]===25",
         "EQUIP[Illusion Hot-blooded Headband]REFINE[weapon,headUpper==22]REFINE[weapon,headUpper==1]---2"
       ],
@@ -98088,9 +101480,9 @@
     "id": 550030,
     "aegisName": "Thorn_Staff_IL",
     "name": "Illusion Thorn Staff of Darkness [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Thorn_Staff_IL",
-    "description": "Matk + 180, Int + 3, Dex + 3.\r\nIgnores magical defense of all race monsters (except players) by 3% per refine rate.\r\nReduce global cooldown by 3% per 2 refine level.\r\nIf refine rate is 7 or higher, Matk + 7%, reduces variable casting time by 7%.\r\nIf refine rate is 9 or higher, increases magical damage against holy property enemies and angel race monsters by 20%.\r\nIf refine rate is 11 or higher, increases poison, shadow, undead and ghost property magical damage by 15%.\r\n\r\nWhen equipped with Illusion Morpheus's Hood, Matk + 20.\r\nIf refine rate of each is 7 or higher, increases magical damage against all property monsters by 10%.\r\nIf the sum of refine rate is 18 or higher, increases magical damage against shadow property enemies and demon race monsters by 20%.\r\nIf the sum of refine rate is 22 or higher, increases magical damage against all size monsters by 15%, reduces fixed casting time by 0.5 seconds.\r\nClass: ^777777Staff^000000 Attack: ^77777760^000000\r\nWeight: ^777777120^000000 Property: ^777777Shadow^000000\r\nWeapon Level: ^7777774^000000\r\nRequired Level: ^777777120^000000\r\nJobs: ^777777Mage classes, Acolyte classes, Soul Linker classes^000000",
+    "description": "ไม้เท้าที่ล้อมด้วยหนามเถาวัลย์และมีพลังลึกลับอันแข็งแกร่งอยู่\nไม่สามารถทำลายได้\nMATK + 180, INT + 3, DEX + 3.\nทุก ๆ การอัพเกรด 1 ขั้น เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 3% (ยกเว้น Player)\nทุก ๆ การอัพเกรด 2 ขั้น ลด Delay หลังใช้สกิล 3%\nเมื่ออัพเกรดถึงขั้น 7, MATK + 7%, ลดระยะเวลาร่ายแบบแปรผัน 7%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Holy, มอนสเตอร์เผ่า Angel 20%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ธาตุ Poison, Shadow, Undead, Ghost 15%\n\nเมื่อสวมใส่ร่วมกับ Illusion Morpheus's Hood, MATK + 20.\nเมื่อค่าอัพเกรดของ Illusion Thorn Staff of Darkness และ Illusion Morpheus's Hood ตั้งแต่ 7 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Shadow, มอนสเตอร์เผ่า Demon 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^77777760^000000\nน้ำหนัก : ^777777120^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใช้ได้ : ^777777Mage, Acolyte, Soul Linker^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -98170,9 +101562,9 @@
     "id": 550031,
     "aegisName": "Dea_Staff_IL",
     "name": "Illusion Dea Staff [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Dea_Staff_IL",
-    "description": "Matk + 190, Int + 6, Vit + 2.\nHas a low chance to recover 150 SP every second for 4 times when dealing magical damage.\nIncreases Judex damage by 20% per 3 refine rate.\nIf refine rate is 7 or higher, increases holy property magical damage by 15%.\nIf refine rate is 9 or higher, increases Judex damage by 30%, reduces global cooldown by 15%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 20% for 15 seconds when using Magnus Exorcismus.\n\nWhen equipped with Illusion Saint Robe, Matk + 50, reduces global cooldown by 10%.\nIf refine rate of each is 7 or higher, Matk + 10%, ASPD + 2.\nIf the sum of refine rate is 18 or higher, increases magical damage against all race monsters by 20%.\nIf the sum of refine rate is 22 or higher, reduces variable casting time by 15%, reduces global cooldown by additional 10%.\nClass: ^777777Staff^000000 Attack: ^77777750^000000\nWeight: ^777777100^000000 Property ^777777Holy^000000\nWeapon Level: ^7777774^000000\nRequired Level: ^777777120^000000\nJobs: ^777777Archbishop^000000",
+    "description": "ไม้เท้ายาวที่แกะสลักรูปเทพธิดาแห่งแสงศักดิ์สิทธิ์ไว้\nไม่สามารถทำลายได้\nMATK + 190, INT + 6, VIT + 2.\nเมื่อโจมตีทางเวทมนตร์, มีโอกาสเล็กน้อยที่จะฟื้นฟู SP 150 ทุก ๆ 1 วินาที จำนวน 4 ครั้ง\nทุก ๆ การอัพเกรด 3 ขั้น, เพิ่ม Damage สกิล Judex 20%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 15%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Judex 30%, ลด Delay หลังใช้สกิล 15%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อใช้สกิล Magnus Exorcismus เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 20% เป็นระยะเวลา 15 วินาที\n\nเมื่อสวมใส่ร่วมกับ Illusion Saint Robe, MATK + 50, ลด Delay หลังใช้สกิล 10%\nเมื่อค่าอัพเกรดของ Illusion Dea Staff และ Illusion Saint Robe ตั้งแต่ 7 ขึ้นไป, MATK + 10%, ASPD + 2.\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ลดระยะเวลาร่ายแบบแปรผัน 15%, ลด Delay หลังใช้สกิลลงอีก 10%\nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^77777750^000000\nน้ำหนัก : ^777777100^000000 ธาตุ : ^777777Holy^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -101510,6 +104902,60 @@
       ],
       "atkPercent": [
         "EQUIP[Great Hero Boots]===7"
+      ]
+    }
+  },
+  "620010": {
+    "id": 620010,
+    "aegisName": "Doom_Slayer_IL",
+    "name": "Illusion Doom Slayer [2]",
+    "unidName": "Axe",
+    "resName": "Doom_Slayer_IL",
+    "description": "ขวานที่ใหญ่และหนักมากเสียจนแม้แต่คำว่ามหึมายังดูน้อยไป\nไม่สามารถทำลายได้\nลดระยะเวลาร่ายแบบแปรผัน 5%, เมื่อ Base STR 100 ขึ้นไป ATK + 75.\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผันลงอีก 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิล 10%\n\nเมื่อสวมใส่ร่วมกับ Illusion Chain Mail, ATK + 50, ลด Delay หลังใช้สกิล 15%\nเมื่อค่าอัพเกรดของ Illusion Doom Slayer และ Illusion Chain Mail ตั้งแต่ 7 ขึ้นไป, ASPD + 15%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกเผ่า 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป ATK + 15%, ลดระยะเวลาร่ายแบบแปรผัน 10%\n\nประเภท : ^777777Two-handed Axe^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777700^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Merchant^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 262,
+    "itemLevel": 4,
+    "attack": 250,
+    "defense": null,
+    "weight": 700,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Merchant"
+    ],
+    "script": {
+      "atk": [
+        "SUM[str==100]===75",
+        "EQUIP[Illusion Chain Mail]===50"
+      ],
+      "vct": [
+        "5",
+        "7===10",
+        "EQUIP[Illusion Chain Mail]REFINE[weapon,armor==22]===10"
+      ],
+      "melee": [
+        "9===15"
+      ],
+      "range": [
+        "9===15"
+      ],
+      "p_size_all": [
+        "9===20"
+      ],
+      "acd": [
+        "11===10",
+        "EQUIP[Illusion Chain Mail]===15"
+      ],
+      "aspdPercent": [
+        "EQUIP[Illusion Chain Mail]REFINE[armor==7]7===15"
+      ],
+      "p_race_all": [
+        "EQUIP[Illusion Chain Mail]REFINE[weapon,armor==18]===20"
+      ],
+      "atkPercent": [
+        "EQUIP[Illusion Chain Mail]REFINE[weapon,armor==22]===15"
       ]
     }
   },
