@@ -53,6 +53,23 @@ enum ItemSubTypeId {
 	ShadowWeapon = 280,
 }
 
+const itemNam = {
+[ItemSubTypeId.Upper]: 'headUpper',
+[ItemSubTypeId.Shield]: 'dhield',
+[ItemSubTypeId.Armor]: 'armor',
+[ItemSubTypeId.Garment]: 'garment',
+[ItemSubTypeId.Boot]: 'boot',
+[ItemSubTypeId.Acc]: 'acc',
+[ItemSubTypeId.Acc_R]: 'accRight',
+[ItemSubTypeId.Acc_L]: 'accLeft',
+
+[ItemSubTypeId.ShadowShield]: 'shadowShield',
+[ItemSubTypeId.ShadowBoot]: 'shadowBoot',
+[ItemSubTypeId.ShadowEarning]: 'shadowEarning',
+[ItemSubTypeId.ShadowPendant]: 'shadowPendant',
+[ItemSubTypeId.ShadowWeapon]: 'shadowWeapon',
+}
+
 interface ItemModel {
 	id: number;
 	aegisName: string;
@@ -76,6 +93,7 @@ interface ItemModel {
 }
 
 const UsedWordingMap = {
+	fourthClass: '4th',
 	ทุกอาชีพ: 'all',
 } as const;
 
@@ -243,6 +261,7 @@ export class RoScriptTranslatorService {
 				console.log({ 'item.id': item.id });
 				currentData[item.id].script = new BuildScript(
 					currentData[item.id].description,
+					itemNam[item.itemSubTypeId],
 				).scripts;
 			}
 		}
@@ -269,6 +288,7 @@ export class RoScriptTranslatorService {
 				try {
 					currentData[updatedItem.id].script = new BuildScript(
 						currentData[updatedItem.id].description,
+						itemNam[updatedItem.itemSubTypeId],
 					).scripts;
 				} catch (error) {
 					console.error(error)				
@@ -373,6 +393,7 @@ export class RoScriptTranslatorService {
 			x?: Partial<ItemAPIModel>;
 			enchants: any[];
 			usableClass: string[];
+			canGrade: boolean;
 		},
 	) {
 		const {
@@ -486,8 +507,18 @@ export class RoScriptTranslatorService {
 				this.getTextBetween(description, 'อาชีพ : ^777777');
 
 			item.usableClass = [
-				UsedWordingMap[wording] || wording || UsedWordingMap.ทุกอาชีพ,
+				UsedWordingMap[wording] || wording?.replaceAll(' ', '') || UsedWordingMap.ทุกอาชีพ,
 			];
+
+			if (item.usableClass.length === 1 && item.usableClass[0] === UsedWordingMap.ทุกอาชีพ) {
+				if (item.requiredLevel > 200) {
+					item.usableClass = [UsedWordingMap.fourthClass]
+				}
+			}
+		}
+
+		if (description.includes('Bonus by grade')) {
+			item.canGrade = true;
 		}
 
 		// item.enchants = getEnchants(aegisName ?? name);

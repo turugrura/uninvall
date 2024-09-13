@@ -272,7 +272,7 @@
       "Archer",
       "Merchant",
       "Thief",
-      "Soul Linker",
+      "SoulLinker",
       "Ninja"
     ],
     "script": {
@@ -305,7 +305,7 @@
       "Archer",
       "Merchant",
       "Thief",
-      "Soul Linker",
+      "SoulLinker",
       "Ninja"
     ],
     "script": {
@@ -335,7 +335,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Assassin Cross"
+      "AssassinCross"
     ],
     "script": {
       "Grimtooth": [
@@ -361,7 +361,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Assassin Cross"
+      "AssassinCross"
     ],
     "script": {
       "hit": [
@@ -390,7 +390,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "dex": [
@@ -456,7 +456,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Assassin Cross"
+      "AssassinCross"
     ],
     "script": {}
   },
@@ -677,7 +677,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Cannon Spear": [
@@ -950,7 +950,7 @@
     "usableClass": [
       "Priest",
       "Sage",
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "matk": [
@@ -985,7 +985,7 @@
       "Novice",
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -1059,7 +1059,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "dex": [
@@ -1093,7 +1093,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -1165,7 +1165,7 @@
       "Novice",
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -1293,7 +1293,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -1429,7 +1429,7 @@
       "Novice",
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -2833,7 +2833,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -2866,7 +2866,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -2933,7 +2933,7 @@
     "compositionPos": null,
     "usableClass": [
       "Mage",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -3069,7 +3069,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -3122,7 +3122,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "dex": [
@@ -3266,7 +3266,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -3475,7 +3475,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "mdef": [
@@ -3821,7 +3821,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "Judex": [
@@ -3850,7 +3850,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "sp": [
@@ -4052,7 +4052,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "flee": [
@@ -4100,7 +4100,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "flee": [
@@ -4332,7 +4332,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -4390,7 +4390,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "sp": [
@@ -9373,10 +9373,10 @@
     "cardPrefix": "of RuneKnight",
     "script": {
       "aspd": [
-        "USED[Rune Knight]2"
+        "USED[RuneKnight]2"
       ],
       "p_race_all": [
-        "USED[Rune Knight]15"
+        "USED[RuneKnight]15"
       ],
       "allStatus": [
         "level:175===10",
@@ -9407,10 +9407,10 @@
     "cardPrefix": "of RoyalGuard",
     "script": {
       "def": [
-        "USED[Royal Guard]350"
+        "USED[RoyalGuard]350"
       ],
       "p_race_all": [
-        "USED[Royal Guard]10"
+        "USED[RoyalGuard]10"
       ],
       "allStatus": [
         "level:175===10",
@@ -9475,10 +9475,10 @@
     "cardPrefix": "of Shadow Chaser",
     "script": {
       "matkPercent": [
-        "USED[Shadow Chaser]15"
+        "USED[ShadowChaser]15"
       ],
       "p_race_all": [
-        "USED[Shadow Chaser]5"
+        "USED[ShadowChaser]5"
       ],
       "allStatus": [
         "level:175===10",
@@ -13959,17 +13959,17 @@
         "USED[Mage]5",
         "USED[Acolyte]5",
         "USED[Ninja]5",
-        "USED[Soul Linker]5"
+        "USED[SoulLinker]5"
       ],
       "range": [
         "USED[Archer]2",
         "USED[Gunslinger]2"
       ],
       "hp": [
-        "USED[Super Novice]120"
+        "USED[SuperNovice]120"
       ],
       "sp": [
-        "USED[Super Novice]60"
+        "USED[SuperNovice]60"
       ]
     }
   },
@@ -15558,7 +15558,7 @@
       "Archer",
       "Merchant",
       "Thief",
-      "Soul Linker",
+      "SoulLinker",
       "Ninja"
     ],
     "script": {
@@ -15637,7 +15637,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Assassin Cross"
+      "AssassinCross"
     ],
     "script": {
       "sp": [
@@ -15672,7 +15672,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Assassin Cross"
+      "AssassinCross"
     ],
     "script": {}
   },
@@ -15694,7 +15694,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Fatal Manace": [
@@ -15748,7 +15748,7 @@
       "Archer",
       "Merchant",
       "Thief",
-      "Soul Linker",
+      "SoulLinker",
       "Ninja"
     ],
     "script": {
@@ -17304,7 +17304,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "str": [
@@ -17336,7 +17336,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "mdef": [
@@ -17602,7 +17602,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "dex": [
@@ -19225,7 +19225,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hpPercent": [
@@ -20217,7 +20217,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "chance__p_race_demon": [
@@ -20265,7 +20265,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "chance__p_race_demon": [
@@ -20550,7 +20550,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -20690,7 +20690,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -20761,7 +20761,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -21276,7 +21276,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "bowRange": [
@@ -21344,7 +21344,7 @@
     "compositionPos": null,
     "usableClass": [
       "Ranger",
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -21382,7 +21382,7 @@
       "Ranger",
       "Wanderer",
       "Minstrel",
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -21552,7 +21552,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -21588,7 +21588,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "range": [
@@ -21801,7 +21801,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "range": [
@@ -22590,7 +22590,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "allStatus": [
@@ -22637,7 +22637,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "allStatus": [
@@ -22772,7 +22772,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "allStatus": [
@@ -23081,7 +23081,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "allStatus": [
@@ -23125,7 +23125,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "allStatus": [
@@ -23361,17 +23361,17 @@
         "USED[Mage]5",
         "USED[Acolyte]5",
         "USED[Ninja]5",
-        "USED[Soul Linker]5"
+        "USED[SoulLinker]5"
       ],
       "range": [
         "USED[Archer]1",
         "USED[Gunslinger]1"
       ],
       "hp": [
-        "USED[Super Novice]60"
+        "USED[SuperNovice]60"
       ],
       "sp": [
-        "USED[Super Novice]30"
+        "USED[SuperNovice]30"
       ]
     }
   },
@@ -23880,7 +23880,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -23915,7 +23915,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "aspdPercent": [
@@ -24015,7 +24015,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -24047,7 +24047,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -24082,7 +24082,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -24315,7 +24315,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Super Novice"
+      "SuperNovice"
     ],
     "script": {
       "atk": [
@@ -25282,7 +25282,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -25315,7 +25315,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -25580,7 +25580,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hp": [
@@ -25621,7 +25621,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -25744,7 +25744,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -25785,7 +25785,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -25826,7 +25826,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -26076,7 +26076,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -26114,7 +26114,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -26283,7 +26283,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Super Novice"
+      "SuperNovice"
     ],
     "script": {
       "atk": [
@@ -26327,7 +26327,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "atk": [
@@ -26910,7 +26910,7 @@
     "compositionPos": null,
     "unusableClass": [
       "Mage",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "vit": [
@@ -27904,8 +27904,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight",
-      "Royal Guard"
+      "RuneKnight",
+      "RoyalGuard"
     ],
     "script": {
       "aspdPercent": [
@@ -27938,8 +27938,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight",
-      "Royal Guard"
+      "RuneKnight",
+      "RoyalGuard"
     ],
     "script": {
       "p_class_all": [
@@ -27968,7 +27968,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -28003,8 +28003,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight",
-      "Royal Guard"
+      "RuneKnight",
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -28071,8 +28071,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight",
-      "Royal Guard"
+      "RuneKnight",
+      "RoyalGuard"
     ],
     "script": {
       "perfectDodge": [
@@ -28123,7 +28123,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Bowling Bash": [
@@ -28159,7 +28159,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atkPercent": [
@@ -28197,7 +28197,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atkPercent": [
@@ -28239,7 +28239,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atkPercent": [
@@ -28290,7 +28290,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hpPercent": [
@@ -28813,8 +28813,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -28852,8 +28852,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -28894,8 +28894,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -28935,8 +28935,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -28973,8 +28973,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29017,8 +29017,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29059,8 +29059,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29098,8 +29098,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29140,8 +29140,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29181,8 +29181,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29219,8 +29219,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29263,8 +29263,8 @@
       "Rebellion",
       "Kagerou",
       "Oboro",
-      "Star Emperor",
-      "Soul Reaper"
+      "StarEmperor",
+      "SoulReaper"
     ],
     "script": {
       "hp": [
@@ -29440,7 +29440,7 @@
       "Thief",
       "Archer",
       "Gunslinger",
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "aspdPercent": [
@@ -29792,7 +29792,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "hpPercent": [
@@ -33308,7 +33308,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Sonic Wave": [
@@ -33341,7 +33341,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Cannon Spear": [
@@ -33440,7 +33440,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "Duple Light": [
@@ -33506,7 +33506,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -33535,7 +33535,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Triangle Shot": [
@@ -33741,7 +33741,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "aspdPercent": [
@@ -33786,7 +33786,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Earth Drive": [
@@ -33924,7 +33924,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "Adoramus": [
@@ -34017,7 +34017,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "cd__Dark Claw": [
@@ -34062,7 +34062,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Triangle Shot": [
@@ -36146,7 +36146,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "New Moon Kick": [
@@ -36184,7 +36184,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {}
   },
@@ -36206,7 +36206,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "Eswhoo": [
@@ -36247,7 +36247,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "cd__Soul Harvest": [
@@ -37022,7 +37022,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Sonic Wave": [
@@ -37049,7 +37049,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "range": [
@@ -37084,7 +37084,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {}
   },
@@ -37106,7 +37106,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Ignition Break": [
@@ -37142,7 +37142,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Ignition Break": [
@@ -37169,7 +37169,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "cd__Ignition Break": [
@@ -37196,7 +37196,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Dragon Breath - WATER": [
@@ -37223,7 +37223,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "range": [
@@ -37257,7 +37257,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {}
   },
@@ -37279,7 +37279,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "range": [
@@ -37322,7 +37322,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Dragon Breath": [
@@ -37349,7 +37349,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {}
   },
@@ -38360,7 +38360,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "Duple Light": [
@@ -38387,7 +38387,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "p_size_all": [
@@ -38431,7 +38431,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "criDmg": [
@@ -38458,7 +38458,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "m_my_element_holy": [
@@ -38497,7 +38497,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "Adoramus": [
@@ -38524,7 +38524,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {}
   },
@@ -38546,7 +38546,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "Judex": [
@@ -38573,7 +38573,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "m_my_element_holy": [
@@ -38608,7 +38608,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "m_size_all": [
@@ -38635,7 +38635,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "m_my_element_holy": [
@@ -38674,7 +38674,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "Magnus Exorcismus": [
@@ -38701,7 +38701,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {}
   },
@@ -39363,7 +39363,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Triangle Shot": [
@@ -39390,7 +39390,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "range": [
@@ -39425,7 +39425,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {}
   },
@@ -39447,7 +39447,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -39483,7 +39483,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Meteor Storm": [
@@ -39510,7 +39510,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "m_my_element_neutral": [
@@ -39541,7 +39541,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Fatal Manace": [
@@ -39568,7 +39568,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "p_size_all": [
@@ -39603,7 +39603,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {}
   },
@@ -39625,7 +39625,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -39665,7 +39665,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Feint Bomb": [
@@ -39692,7 +39692,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "cd__Feint Bomb": [
@@ -39719,7 +39719,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "Rolling Cutter": [
@@ -39746,7 +39746,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "p_size_all": [
@@ -39781,7 +39781,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {}
   },
@@ -39803,7 +39803,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "chance__criDmg": [
@@ -39845,7 +39845,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "criDmg": [
@@ -39872,7 +39872,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "p_size_all": [
@@ -39899,7 +39899,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "Counter Slash": [
@@ -39926,7 +39926,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "p_size_all": [
@@ -39961,7 +39961,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {}
   },
@@ -39983,7 +39983,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "range": [
@@ -40024,7 +40024,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "Cross Ripper Slasher": [
@@ -40051,7 +40051,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "p_size_all": [
@@ -40701,7 +40701,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Over Brand": [
@@ -40728,7 +40728,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "p_size_all": [
@@ -40763,7 +40763,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Over Brand": [
@@ -40792,7 +40792,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "p_size_all": [
@@ -40836,7 +40836,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Shield Press": [
@@ -40863,7 +40863,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Shield Chain": [
@@ -40890,7 +40890,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Banishing Point": [
@@ -40919,7 +40919,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "p_size_all": [
@@ -40957,7 +40957,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "cd__Cannon Spear": [
@@ -40984,7 +40984,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "m_my_element_holy": [
@@ -41025,7 +41025,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Genesis Ray": [
@@ -41052,7 +41052,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "cd__Genesis Ray": [
@@ -41224,7 +41224,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -41270,7 +41270,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -41411,7 +41411,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -41457,7 +41457,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -41592,7 +41592,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "atk": [
@@ -42894,7 +42894,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "range": [
@@ -42935,7 +42935,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "p_size_all": [
@@ -42962,7 +42962,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "Picky Peck": [
@@ -42989,7 +42989,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "range": [
@@ -43026,7 +43026,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "Lunatic Carrot Beat": [
@@ -43055,7 +43055,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "p_size_all": [
@@ -43082,7 +43082,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "Catnip Meteor": [
@@ -43123,7 +43123,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "cd__Nyang Grass": [
@@ -43152,7 +43152,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "m_size_all": [
@@ -43179,7 +43179,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "m_my_element_earth": [
@@ -43234,7 +43234,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "vct": [
@@ -43261,7 +43261,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "m_element_all": [
@@ -43288,7 +43288,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "melee": [
@@ -43329,7 +43329,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "p_size_all": [
@@ -43356,7 +43356,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "Blaze Kick": [
@@ -43383,7 +43383,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "melee": [
@@ -43417,7 +43417,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "p_size_all": [
@@ -43444,7 +43444,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "New Moon Kick": [
@@ -43471,7 +43471,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "atk": [
@@ -43514,7 +43514,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "aspd": [
@@ -43543,7 +43543,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "p_element_all": [
@@ -43570,7 +43570,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "spPercent": [
@@ -43612,7 +43612,7 @@
     "location": "Shield",
     "compositionPos": null,
     "usableClass": [
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "m_size_all": [
@@ -43639,7 +43639,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "Esma": [
@@ -43671,7 +43671,7 @@
     "location": "AccessoryRight",
     "compositionPos": null,
     "usableClass": [
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "m_my_element_dark": [
@@ -43706,7 +43706,7 @@
     "location": "AccessoryLeft",
     "compositionPos": null,
     "usableClass": [
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "m_my_element_dark": [
@@ -43735,7 +43735,7 @@
     "location": "Shoes",
     "compositionPos": null,
     "usableClass": [
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "cd__Evil Soul Curse": [
@@ -44709,7 +44709,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -44765,7 +44765,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -44939,7 +44939,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -44992,7 +44992,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -45154,7 +45154,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "atk": [
@@ -45489,7 +45489,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -45542,7 +45542,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "atk": [
@@ -45996,7 +45996,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "atk": [
@@ -46045,7 +46045,7 @@
     "location": "Weapon",
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -46235,7 +46235,7 @@
       ]
     },
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ]
   },
   "24744": {
@@ -46466,7 +46466,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -46506,7 +46506,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -46547,7 +46547,7 @@
       "Novice",
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -46588,7 +46588,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -46815,7 +46815,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -46853,7 +46853,7 @@
     "compositionPos": null,
     "usableClass": [
       "Mage",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -46957,7 +46957,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -47061,7 +47061,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "matk": [
@@ -51595,7 +51595,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "int": [
@@ -51683,7 +51683,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "p_class_all": [
@@ -51712,7 +51712,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Assassin Cross"
+      "AssassinCross"
     ],
     "script": {
       "def": [
@@ -51796,7 +51796,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -51837,7 +51837,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -51872,7 +51872,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "criDmg": [
@@ -51907,7 +51907,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -51949,7 +51949,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -53211,7 +53211,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "flee": [
@@ -53790,7 +53790,7 @@
     "usableClass": [
       "Priest",
       "Sage",
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "aspdPercent": [
@@ -53827,7 +53827,7 @@
     "usableClass": [
       "Sage",
       "Priest",
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "hpPercent": [
@@ -53889,7 +53889,7 @@
     "usableClass": [
       "Sage",
       "Priest",
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "p_element_dark": [
@@ -53950,7 +53950,7 @@
     "usableClass": [
       "Sage",
       "Priest",
-      "Star Gladiator"
+      "StarGladiator"
     ],
     "script": {
       "atkPercent": [
@@ -54036,7 +54036,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atkPercent": [
@@ -54146,7 +54146,7 @@
       "Merchant",
       "Thief",
       "Ninja",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -54222,7 +54222,7 @@
       "Merchant",
       "Thief",
       "Ninja",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -54374,7 +54374,7 @@
       "Mage",
       "Merchant",
       "Ninja",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "int": [
@@ -54502,7 +54502,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -54545,7 +54545,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {}
   },
@@ -54567,7 +54567,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Back Stab": [
@@ -54599,7 +54599,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -54647,7 +54647,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -54689,7 +54689,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -54736,7 +54736,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -54787,7 +54787,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {}
   },
@@ -54809,7 +54809,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -55075,7 +55075,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "int": [
@@ -55362,11 +55362,11 @@
         "7===2"
       ],
       "cd__Hundred Spears": [
-        "REFINE[10]USED[Rune Knight]===1",
+        "REFINE[10]USED[RuneKnight]===1",
         "EQUIP[Record of Swordsman&&Old Rune Circlet]REFINE[headUpper,shield==21]===0.5"
       ],
       "vct__Earth Drive": [
-        "REFINE[10]USED[Royal Guard]===100"
+        "REFINE[10]USED[RoyalGuard]===100"
       ],
       "cd__Earth Drive": [
         "EQUIP[Record of Swordsman&&Old Casket of Protection]REFINE[headUpper,shield==21]0.5"
@@ -63416,7 +63416,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -63462,7 +63462,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "aspdPercent": [
@@ -63493,7 +63493,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Brandish Spear": [
@@ -63526,7 +63526,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "Shield Chain": [
@@ -63560,7 +63560,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atkPercent": [
@@ -63595,7 +63595,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atkPercent": [
@@ -63637,7 +63637,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "range": [
@@ -64831,7 +64831,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -64943,7 +64943,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -69089,13 +69089,13 @@
     "cardPrefix": "Shrewd",
     "script": {
       "atkPercent": [
-        "USED[Super Novice]===10"
+        "USED[SuperNovice]===10"
       ],
       "hp": [
-        "USED[Super Novice]===1500"
+        "USED[SuperNovice]===1500"
       ],
       "chance__ignore_size_penalty": [
-        "EQUIP[Lude Gal Card]USED[Super Novice]===1"
+        "EQUIP[Lude Gal Card]USED[SuperNovice]===1"
       ]
     }
   },
@@ -69119,16 +69119,16 @@
     "cardPrefix": "Strong Patient",
     "script": {
       "matkPercent": [
-        "USED[Super Novice]===10"
+        "USED[SuperNovice]===10"
       ],
       "sp": [
-        "USED[Super Novice]===500"
+        "USED[SuperNovice]===500"
       ],
       "chance__m_my_element_water": [
-        "EQUIP[Ghost Cube Card]USED[Super Novice]===40"
+        "EQUIP[Ghost Cube Card]USED[SuperNovice]===40"
       ],
       "chance__m_my_element_fire": [
-        "EQUIP[Ghost Cube Card]USED[Super Novice]===40"
+        "EQUIP[Ghost Cube Card]USED[SuperNovice]===40"
       ]
     }
   },
@@ -70931,13 +70931,13 @@
         "10===15"
       ],
       "cri": [
-        "USED[Rune Knight]20"
+        "USED[RuneKnight]20"
       ],
       "hpPercent": [
-        "USED[Rune Knight]15"
+        "USED[RuneKnight]15"
       ],
       "p_race_all": [
-        "USED[Rune Knight]15"
+        "USED[RuneKnight]15"
       ],
       "chance__atk": [
         "EQUIP[True Seyren Windsor Card]===200"
@@ -70971,13 +70971,13 @@
         "10===15"
       ],
       "hpPercent": [
-        "USED[Royal Guard]15"
+        "USED[RoyalGuard]15"
       ],
       "def": [
-        "USED[Royal Guard]350"
+        "USED[RoyalGuard]350"
       ],
       "p_race_all": [
-        "USED[Royal Guard]15"
+        "USED[RoyalGuard]15"
       ],
       "chance__atk": [
         "EQUIP[True Randel Lawrence Card]===200"
@@ -71251,13 +71251,13 @@
         "10===15"
       ],
       "cri": [
-        "USED[Guillotine Cross]20"
+        "USED[GuillotineCross]20"
       ],
       "range": [
-        "USED[Guillotine Cross]15"
+        "USED[GuillotineCross]15"
       ],
       "p_race_all": [
-        "USED[Guillotine Cross]15"
+        "USED[GuillotineCross]15"
       ],
       "chance__atk": [
         "EQUIP[True Eremes Guile Card]===200"
@@ -71294,13 +71294,13 @@
         "10===15"
       ],
       "p_race_all": [
-        "USED[Shadow Chaser]15"
+        "USED[ShadowChaser]15"
       ],
       "m_race_all": [
-        "USED[Shadow Chaser]15"
+        "USED[ShadowChaser]15"
       ],
       "hpPercent": [
-        "USED[Shadow Chaser]15"
+        "USED[ShadowChaser]15"
       ],
       "chance__atk": [
         "EQUIP[True Gertie Wie Card]===200"
@@ -76694,6 +76694,1011 @@
       ]
     }
   },
+  "310674": {
+    "id": 310674,
+    "aegisName": "Star_Cluster_Of_Pow1",
+    "name": "Star Cluster of Power Lv1",
+    "unidName": "Star Cluster of Power Lv1",
+    "resName": "Star_Cluster_Of_Pow",
+    "description": "Atk + 5 and increases melee physical damage by 1% per 15 base POW of the user.\nIf the enchanted armor is grade D, P.Atk + 1 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade C, additional P.Atk + 1 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade B, additional P.Atk + 1 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade A, additional P.Atk + 1 and increases melee physical damage by additional 1% per 15 base POW.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "SUM[pow==15]---5"
+      ],
+      "melee": [
+        "SUM[pow==15]---1",
+        "GRADE[armor==D]SUM[pow==15]---1",
+        "GRADE[armor==C]SUM[pow==15]---1",
+        "GRADE[armor==B]SUM[pow==15]---1",
+        "GRADE[armor==A]SUM[pow==15]---1"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]===1",
+        "GRADE[armor==C]===1",
+        "GRADE[armor==B]===1",
+        "GRADE[armor==A]===1"
+      ]
+    }
+  },
+  "310675": {
+    "id": 310675,
+    "aegisName": "Star_Cluster_Of_Pow2",
+    "name": "Star Cluster of Power Lv2",
+    "unidName": "Star Cluster of Power Lv2",
+    "resName": "Star_Cluster_Of_Pow",
+    "description": "Atk + 7 and increases melee physical damage by 1% per 15 base POW of the user.\nIf the enchanted armor is grade D, P.Atk + 1 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade C, additional P.Atk + 1 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade B, additional P.Atk + 2 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade A, additional P.Atk + 2 and increases melee physical damage by additional 2% per 15 base POW.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "SUM[pow==15]---7"
+      ],
+      "melee": [
+        "SUM[pow==15]---1",
+        "GRADE[armor==D]SUM[pow==15]---1",
+        "GRADE[armor==C]SUM[pow==15]---1",
+        "GRADE[armor==B]SUM[pow==15]---1",
+        "GRADE[armor==A]SUM[pow==15]---2"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]===1",
+        "GRADE[armor==C]===1",
+        "GRADE[armor==B]===2",
+        "GRADE[armor==A]===2"
+      ]
+    }
+  },
+  "310676": {
+    "id": 310676,
+    "aegisName": "Star_Cluster_Of_Pow3",
+    "name": "Star Cluster of Power Lv3",
+    "unidName": "Star Cluster of Power Lv3",
+    "resName": "Star_Cluster_Of_Pow",
+    "description": "Atk + 15 and increases melee physical damage by 2% per 15 base POW of the user.\nIf the enchanted armor is grade D, P.Atk + 1 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade C, additional P.Atk + 2 and increases melee physical damage by additional 1% per 15 base POW.\nIf the enchanted armor is grade B, additional P.Atk + 2 and increases melee physical damage by additional 2% per 15 base POW.\nIf the enchanted armor is grade A, additional P.Atk + 3 and increases melee physical damage by additional 3% per 15 base POW.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "SUM[pow==15]---15"
+      ],
+      "melee": [
+        "SUM[pow==15]---2",
+        "GRADE[armor==D]SUM[pow==15]---1",
+        "GRADE[armor==C]SUM[pow==15]---1",
+        "GRADE[armor==B]SUM[pow==15]---2",
+        "GRADE[armor==A]SUM[pow==15]---3"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]===1",
+        "GRADE[armor==C]===2",
+        "GRADE[armor==B]===2",
+        "GRADE[armor==A]===3"
+      ]
+    }
+  },
+  "310677": {
+    "id": 310677,
+    "aegisName": "Star_Cluster_Of_Sta1",
+    "name": "Star Cluster of Stamina Lv1",
+    "unidName": "Star Cluster of Stamina Lv1",
+    "resName": "Star_Cluster_Of_Sta",
+    "description": "MaxHP + 1% and Res + 1 per 15 base STA of the user.\nIf the enchanted armor is grade D, additional MaxHP + 1% and Res + 1 per 15 base STA. \nIf the enchanted armor is grade C, additional MaxHP + 1% and additional Res + 1 per 15 base STA. \nIf the enchanted armor is grade B, additional MaxHP + 1% and additional Res + 1 per 15 base STA. \nIf the enchanted armor is grade A, additional MaxHP + 1% and additional Res + 2 per 15 base STA.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hpPercent": [
+        "SUM[sta==15]---1",
+        "GRADE[armor==D]SUM[sta==15]---1",
+        "GRADE[armor==C]SUM[sta==15]---1",
+        "GRADE[armor==B]SUM[sta==15]---1",
+        "GRADE[armor==A]SUM[sta==15]---1"
+      ],
+      "res": [
+        "SUM[sta==15]---1",
+        "GRADE[armor==D]SUM[sta==15]---1",
+        "GRADE[armor==C]SUM[sta==15]---1",
+        "GRADE[armor==B]SUM[sta==15]---1",
+        "GRADE[armor==A]SUM[sta==15]---2"
+      ]
+    }
+  },
+  "310678": {
+    "id": 310678,
+    "aegisName": "Star_Cluster_Of_Sta2",
+    "name": "Star Cluster of Stamina Lv2",
+    "unidName": "Star Cluster of Stamina Lv2",
+    "resName": "Star_Cluster_Of_Sta",
+    "description": "MaxHP + 2% and Res + 2 per 15 base STA of the user.\nIf the enchanted armor is grade D, additional MaxHP + 1% and Res + 1 per 15 base STA. \nIf the enchanted armor is grade C, additional MaxHP + 1% and additional Res + 1 per 15 base STA. \nIf the enchanted armor is grade B, additional MaxHP + 2% and additional Res + 1 per 15 base STA. \nIf the enchanted armor is grade A, additional MaxHP + 2% and additional Res + 2 per 15 base STA.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hpPercent": [
+        "SUM[sta==15]---2",
+        "GRADE[armor==D]SUM[sta==15]---1",
+        "GRADE[armor==C]SUM[sta==15]---1",
+        "GRADE[armor==B]SUM[sta==15]---2",
+        "GRADE[armor==A]SUM[sta==15]---2"
+      ],
+      "res": [
+        "SUM[sta==15]---2",
+        "GRADE[armor==D]SUM[sta==15]---1",
+        "GRADE[armor==C]SUM[sta==15]---1",
+        "GRADE[armor==B]SUM[sta==15]---1",
+        "GRADE[armor==A]SUM[sta==15]---2"
+      ]
+    }
+  },
+  "310679": {
+    "id": 310679,
+    "aegisName": "Star_Cluster_Of_Sta3",
+    "name": "Star Cluster of Stamina Lv3",
+    "unidName": "Star Cluster of Stamina Lv3",
+    "resName": "Star_Cluster_Of_Sta",
+    "description": "MaxHP + 3% and Res + 4 per 15 base STA of the user.\nIf the enchanted armor is grade D, additional MaxHP + 1% and Res + 1 per 15 base STA. \nIf the enchanted armor is grade C, additional MaxHP + 2% and additional Res + 2 per 15 base STA. \nIf the enchanted armor is grade B, additional MaxHP + 2% and additional Res + 2 per 15 base STA.\nIf the enchanted armor is grade A, additional MaxHP + 3% and additional Res + 3 per 15 base STA.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hpPercent": [
+        "SUM[sta==15]---3",
+        "GRADE[armor==D]SUM[sta==15]---1",
+        "GRADE[armor==C]SUM[sta==15]---2",
+        "GRADE[armor==B]SUM[sta==15]---2",
+        "GRADE[armor==A]SUM[sta==15]---3"
+      ],
+      "res": [
+        "SUM[sta==15]---4",
+        "GRADE[armor==D]SUM[sta==15]---1",
+        "GRADE[armor==C]SUM[sta==15]---2",
+        "GRADE[armor==B]SUM[sta==15]---2",
+        "GRADE[armor==A]SUM[sta==15]---3"
+      ]
+    }
+  },
+  "310680": {
+    "id": 310680,
+    "aegisName": "Star_Cluster_Of_Con1",
+    "name": "Star Cluster of Concentration Lv1",
+    "unidName": "Star Cluster of Concentration Lv1",
+    "resName": "Star_Cluster_Of_Con",
+    "description": "Increases long ranged physical damage by 1% and Atk + 5 per 15 base CON of the user.\r\nIf the enchanted armor is grade D, increases long ranged physical damage by additional 1% and P.Atk + 1 per 15 base CON.\r\nIf the enchanted armor is grade C, increases long ranged physical damage by additional 1% and additional P.Atk + 1 per 15 base CON.\r\nIf the enchanted armor is grade B, increases long ranged physical damage by additional 1% and additional P.Atk + 1 per 15 base CON.\r\nIf the enchanted armor is grade A, increases long ranged physical damage by additional 1% and additional P.Atk + 2 per 15 base CON.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "SUM[con==15]---1",
+        "GRADE[armor==D]SUM[con==15]---1",
+        "GRADE[armor==C]SUM[con==15]---1",
+        "GRADE[armor==B]SUM[con==15]---1",
+        "GRADE[armor==A]SUM[con==15]---1"
+      ],
+      "atk": [
+        "SUM[con==15]---5"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]SUM[con==15]---1",
+        "GRADE[armor==C]SUM[con==15]---1",
+        "GRADE[armor==B]SUM[con==15]---1",
+        "GRADE[armor==A]SUM[con==15]---2"
+      ]
+    }
+  },
+  "310681": {
+    "id": 310681,
+    "aegisName": "Star_Cluster_Of_Con2",
+    "name": "Star Cluster of Concentration Lv2",
+    "unidName": "Star Cluster of Concentration Lv2",
+    "resName": "Star_Cluster_Of_Con",
+    "description": "Increases long ranged physical damage by 2% and Atk + 7 per 15 base CON of the user.\r\nIf the enchanted armor is grade D, increases long ranged physical damage by additional 1% and P.Atk + 1 per 15 base CON.\r\nIf the enchanted armor is grade C, increases long ranged physical damage by additional 1% and additional P.Atk + 1 per 15 base CON.\r\nIf the enchanted armor is grade B, increases long ranged physical damage by additional 1% and additional P.Atk + 2 per 15 base CON.\r\nIf the enchanted armor is grade A, increases long ranged physical damage by additional 2% and additional P.Atk + 2 per 15 base CON.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "SUM[con==15]---2",
+        "GRADE[armor==D]SUM[con==15]---1",
+        "GRADE[armor==C]SUM[con==15]---1",
+        "GRADE[armor==B]SUM[con==15]---1",
+        "GRADE[armor==A]SUM[con==15]---2"
+      ],
+      "atk": [
+        "SUM[con==15]---7"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]SUM[con==15]---1",
+        "GRADE[armor==C]SUM[con==15]---1",
+        "GRADE[armor==B]SUM[con==15]---2",
+        "GRADE[armor==A]SUM[con==15]---2"
+      ]
+    }
+  },
+  "310682": {
+    "id": 310682,
+    "aegisName": "Star_Cluster_Of_Con3",
+    "name": "Star Cluster of Concentration Lv3",
+    "unidName": "Star Cluster of Concentration Lv3",
+    "resName": "Star_Cluster_Of_Con",
+    "description": "Increases long ranged physical damage by 2% and Atk + 15 per 15 base CON of the user.\r\nIf the enchanted armor is grade D, increases long ranged physical damage by additional 1% and P.Atk + 1 per 15 base CON.\r\nIf the enchanted armor is grade C, increases long ranged physical damage by additional 2% and additional P.Atk + 2 per 15 base CON.\r\nIf the enchanted armor is grade B, increases long ranged physical damage by additional 2% and additional P.Atk + 2 per 15 base CON.\r\nIf the enchanted armor is grade A, increases long ranged physical damage by additional 3% and additional P.Atk + 3 per 15 base CON.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "SUM[con==15]---2",
+        "GRADE[armor==D]SUM[con==15]---1",
+        "GRADE[armor==C]SUM[con==15]---2",
+        "GRADE[armor==B]SUM[con==15]---2",
+        "GRADE[armor==A]SUM[con==15]---3"
+      ],
+      "atk": [
+        "SUM[con==15]---15"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]SUM[con==15]---1",
+        "GRADE[armor==C]SUM[con==15]---2",
+        "GRADE[armor==B]SUM[con==15]---2",
+        "GRADE[armor==A]SUM[con==15]---3"
+      ]
+    }
+  },
+  "310683": {
+    "id": 310683,
+    "aegisName": "Star_Cluster_Of_Crt1",
+    "name": "Star Cluster of Creative Lv1",
+    "unidName": "Star Cluster of Creative Lv1",
+    "resName": "Star_Cluster_Of_Crt",
+    "description": "Increases critical damage by 1% and Atk + 5 per 15 base CRT of the user.\nIf the enchanted armor is grade D, increases critical damage by additional 1% and P.Atk + 1 per 15 base CRT.\nIf the enchanted armor is grade C, increases critical damage by additional 1% and additional P.Atk + 1 per 15 base CRT.\nIf the enchanted armor is grade B, increases critical damage by additional 1% and additional P.Atk + 1 per 15 base CRT.\nIf the enchanted armor is grade A, increases critical damage by additional 1% and additional P.Atk + 1 per 15 base CRT.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "SUM[crt==15]---1",
+        "GRADE[armor==D]SUM[crt==15]---1",
+        "GRADE[armor==C]SUM[crt==15]---1",
+        "GRADE[armor==B]SUM[crt==15]---1",
+        "GRADE[armor==A]SUM[crt==15]---1"
+      ],
+      "atk": [
+        "SUM[crt==15]---5"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]SUM[crt==15]---1",
+        "GRADE[armor==C]SUM[crt==15]---1",
+        "GRADE[armor==B]SUM[crt==15]---1",
+        "GRADE[armor==A]SUM[crt==15]---1"
+      ]
+    }
+  },
+  "310684": {
+    "id": 310684,
+    "aegisName": "Star_Cluster_Of_Crt2",
+    "name": "Star Cluster of Creative Lv2",
+    "unidName": "Star Cluster of Creative Lv2",
+    "resName": "Star_Cluster_Of_Crt",
+    "description": "Increases critical damage by 2% and Atk + 7 per 15 base CRT of the user.\nIf the enchanted armor is grade D, increases critical damage by additional 1% and P.Atk + 1 per 15 base CRT.\nIf the enchanted armor is grade C, increases critical damage by additional 1% and additional P.Atk + 1 per 15 base CRT.\nIf the enchanted armor is grade B, increases critical damage by additional 1% and additional P.Atk + 2 per 15 base CRT.\nIf the enchanted armor is grade A, increases critical damage by additional 2% and additional P.Atk + 2 per 15 base CRT.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "SUM[crt==15]---2",
+        "GRADE[armor==D]SUM[crt==15]---1",
+        "GRADE[armor==C]SUM[crt==15]---1",
+        "GRADE[armor==B]SUM[crt==15]---1",
+        "GRADE[armor==A]SUM[crt==15]---2"
+      ],
+      "atk": [
+        "SUM[crt==15]---7"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]SUM[crt==15]---1",
+        "GRADE[armor==C]SUM[crt==15]---1",
+        "GRADE[armor==B]SUM[crt==15]---2",
+        "GRADE[armor==A]SUM[crt==15]---2"
+      ]
+    }
+  },
+  "310685": {
+    "id": 310685,
+    "aegisName": "Star_Cluster_Of_Crt3",
+    "name": "Star Cluster of Creative Lv3",
+    "unidName": "Star Cluster of Creative Lv3",
+    "resName": "Star_Cluster_Of_Crt",
+    "description": "Increases critical damage by 3% and Atk + 15 per 15 base CRT of the user.\r\nIf the enchanted armor is grade D, increases critical damage by additional 1% and P.Atk + 1 per 15 base CRT.\r\nIf the enchanted armor is grade C, increases critical damage by additional 1% and additional P.Atk + 1 per 15 base CRT.\r\nIf the enchanted armor is grade B, increases critical damage by additional 2% and additional P.Atk + 3 per 15 base CRT.\r\nIf the enchanted armor is grade A, increases critical damage by additional 3% and additional P.Atk + 3 per 15 base CRT.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "SUM[crt==15]---3",
+        "GRADE[armor==D]SUM[crt==15]---1",
+        "GRADE[armor==C]SUM[crt==15]---1",
+        "GRADE[armor==B]SUM[crt==15]---2",
+        "GRADE[armor==A]SUM[crt==15]---3"
+      ],
+      "atk": [
+        "SUM[crt==15]---15"
+      ],
+      "pAtk": [
+        "GRADE[armor==D]SUM[crt==15]---1",
+        "GRADE[armor==C]SUM[crt==15]---1",
+        "GRADE[armor==B]SUM[crt==15]---3",
+        "GRADE[armor==A]SUM[crt==15]---3"
+      ]
+    }
+  },
+  "310686": {
+    "id": 310686,
+    "aegisName": "Star_Cluster_Of_Spl1",
+    "name": "Star Cluster of Spell Lv1",
+    "unidName": "Star Cluster of Spell Lv1",
+    "resName": "Star_Cluster_Of_Spl",
+    "description": "Increases all property magical damage by 1% and Matk + 5 per 15 base SPL of the user.\nIf the enchanted armor is grade D, increases all property magical damage by additional 1% and S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade C, increases all property magical damage by additional 1% and additional S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade B, increases all property magical damage by additional 1% and additional S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade A, increases all property magical damage by additional 1% and additional S.Matk + 1 per 15 base SPL.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_my_element_all": [
+        "SUM[spl==15]---1",
+        "GRADE[armor==D]SUM[spl==15]---1",
+        "GRADE[armor==C]SUM[spl==15]---1",
+        "GRADE[armor==B]SUM[spl==15]---1",
+        "GRADE[armor==A]SUM[spl==15]---1"
+      ],
+      "matk": [
+        "SUM[spl==15]---5"
+      ],
+      "sMatk": [
+        "GRADE[armor==D]SUM[spl==15]---1",
+        "GRADE[armor==C]SUM[spl==15]---1",
+        "GRADE[armor==B]SUM[spl==15]---1",
+        "GRADE[armor==A]SUM[spl==15]---1"
+      ]
+    }
+  },
+  "310687": {
+    "id": 310687,
+    "aegisName": "Star_Cluster_Of_Spl2",
+    "name": "Star Cluster of Spell Lv2",
+    "unidName": "Star Cluster of Spell Lv2",
+    "resName": "Star_Cluster_Of_Spl",
+    "description": "Increases all property magical damage by 2% and Matk + 7 per 15 base SPL of the user.\nIf the enchanted armor is grade D, increases all property magical damage by additional 1% and S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade C, increases all property magical damage by additional 1% and additional S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade B, increases all property magical damage by additional 2% and additional S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade A, increases all property magical damage by additional 2% and additional S.Matk + 2 per 15 base SPL.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_my_element_all": [
+        "SUM[spl==15]---2",
+        "GRADE[armor==D]SUM[spl==15]---1",
+        "GRADE[armor==C]SUM[spl==15]---1",
+        "GRADE[armor==B]SUM[spl==15]---2",
+        "GRADE[armor==A]SUM[spl==15]---2"
+      ],
+      "matk": [
+        "SUM[spl==15]---7"
+      ],
+      "sMatk": [
+        "GRADE[armor==D]SUM[spl==15]---1",
+        "GRADE[armor==C]SUM[spl==15]---1",
+        "GRADE[armor==B]SUM[spl==15]---1",
+        "GRADE[armor==A]SUM[spl==15]---2"
+      ]
+    }
+  },
+  "310688": {
+    "id": 310688,
+    "aegisName": "Star_Cluster_Of_Spl3",
+    "name": "Star Cluster of Spell Lv3",
+    "unidName": "Star Cluster of Spell Lv3",
+    "resName": "Star_Cluster_Of_Spl",
+    "description": "Increases all property magical damage by 3% and Matk + 15 per 15 base SPL of the user.\nIf the enchanted armor is grade D, increases all property magical damage by additional 1% and S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade C, increases all property magical damage by additional 1% and additional S.Matk + 1 per 15 base SPL.\nIf the enchanted armor is grade B, increases all property magical damage by additional 2% and additional S.Matk + 2 per 15 base SPL.\nIf the enchanted armor is grade A, increases all property magical damage by additional 3% and additional S.Matk + 2 per 15 base SPL.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_my_element_all": [
+        "SUM[spl==15]---3",
+        "GRADE[armor==D]SUM[spl==15]---1",
+        "GRADE[armor==C]SUM[spl==15]---1",
+        "GRADE[armor==B]SUM[spl==15]---2",
+        "GRADE[armor==A]SUM[spl==15]---3"
+      ],
+      "matk": [
+        "SUM[spl==15]---15"
+      ],
+      "sMatk": [
+        "GRADE[armor==D]SUM[spl==15]---1",
+        "GRADE[armor==C]SUM[spl==15]---1",
+        "GRADE[armor==B]SUM[spl==15]---2",
+        "GRADE[armor==A]SUM[spl==15]---2"
+      ]
+    }
+  },
+  "310689": {
+    "id": 310689,
+    "aegisName": "Star_Cluster_Of_Wis1",
+    "name": "Star Cluster of Wisdom Lv1",
+    "unidName": "Star Cluster of Wisdom Lv1",
+    "resName": "Star_Cluster_Of_Wis",
+    "description": "MaxSP + 1% and increases heal effectiveness by 1% per 15 base WIS of the user.\nIf the enchanted armor is grade D, additional MaxSP + 1% and increases heal effectiveness by additional 1% per 15 base WIS. \nIf the enchanted armor is grade C, additional MaxSP + 1%, increases heal effectiveness by additional 2% and increases SP recovery rate by 1% per 15 base WIS. \nIf the enchanted armor is grade B, additional MaxSP + 1%, increases heal effectiveness by additional 2% and increases SP recovery rate by additional 2% per 15 base WIS. \nIf the enchanted armor is grade A, additional MaxSP + 1% and H.Plus + 1 per 15 base WIS.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "spPercent": [
+        "SUM[wis==15]---1",
+        "GRADE[armor==D]SUM[wis==15]---1",
+        "GRADE[armor==C]SUM[wis==15]---1",
+        "GRADE[armor==B]SUM[wis==15]---1",
+        "GRADE[armor==A]SUM[wis==15]---1"
+      ]
+    }
+  },
+  "310690": {
+    "id": 310690,
+    "aegisName": "Star_Cluster_Of_Wis2",
+    "name": "Star Cluster of Wisdom Lv2",
+    "unidName": "Star Cluster of Wisdom Lv2",
+    "resName": "Star_Cluster_Of_Wis",
+    "description": "MaxSP + 1% and increases heal effectiveness by 3% per 15 base WIS of the user.\nIf the enchanted armor is grade D, additional MaxSP + 1% and increases heal effectiveness by additional 2% per 15 base WIS. \nIf the enchanted armor is grade C, additional MaxSP + 1%, increases heal effectiveness by additional 2% and increases SP recovery rate by 1% per 15 base WIS. \nIf the enchanted armor is grade B, additional MaxSP + 1%, H.Plus + 1 and increases SP recovery rate by additional 2% per 15 base WIS. \nIf the enchanted armor is grade A, additional MaxSP + 2% and additional H.Plus + 2 per 15 base WIS.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "spPercent": [
+        "SUM[wis==15]---1",
+        "GRADE[armor==D]SUM[wis==15]---1",
+        "GRADE[armor==C]SUM[wis==15]---1",
+        "GRADE[armor==B]SUM[wis==15]---1",
+        "GRADE[armor==A]SUM[wis==15]---2"
+      ]
+    }
+  },
+  "310691": {
+    "id": 310691,
+    "aegisName": "Star_Cluster_Of_Wis3",
+    "name": "Star Cluster of Wisdom Lv3",
+    "unidName": "Star Cluster of Wisdom Lv3",
+    "resName": "Star_Cluster_Of_Wis",
+    "description": "MaxSP + 2% and increases heal effectiveness by 5% per 15 base WIS of the user.\r\nIf the enchanted armor is grade D, additional MaxSP + 1% and increases heal effectiveness by additional 2% per 15 base WIS.\r\nIf the enchanted armor is grade C, additional MaxSP + 1%, increases heal effectiveness by additional 2% and increases SP recovery rate by 2% per 15 base WIS.\r\nIf the enchanted armor is grade B, additional MaxSP + 2%, H.Plus + 2 and increases SP recovery rate by additional 3% per 15 base WIS.\r\nIf the enchanted armor is grade A, additional MaxSP + 2% and additional H.Plus + 3 per 15 base WIS.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "spPercent": [
+        "SUM[wis==15]---2",
+        "GRADE[armor==D]SUM[wis==15]---1",
+        "GRADE[armor==C]SUM[wis==15]---1",
+        "GRADE[armor==B]SUM[wis==15]---2",
+        "GRADE[armor==A]SUM[wis==15]---2"
+      ]
+    }
+  },
+  "310727": {
+    "id": 310727,
+    "aegisName": "Nebula_Of_FS1",
+    "name": "Nebula of Fighting Spirit Lv1",
+    "unidName": "Nebula of Fighting Spirit Lv1",
+    "resName": "Nebula_Of_FS",
+    "description": "Atk + 10\nIf refine rate is 9 or higher, additional Atk + 10.\nIf refine rate is 11 or higher, additional Atk + 15.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "10",
+        "9===10",
+        "11===15"
+      ]
+    }
+  },
+  "310728": {
+    "id": 310728,
+    "aegisName": "Nebula_Of_FS2",
+    "name": "Nebula of Fighting Spirit Lv2",
+    "unidName": "Nebula of Fighting Spirit Lv2",
+    "resName": "Nebula_Of_FS",
+    "description": "Atk + 15\nIf refine rate is 9 or higher, additional Atk + 15.\nIf refine rate is 11 or higher, additional Atk + 30.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "15",
+        "9===15",
+        "11===30"
+      ]
+    }
+  },
+  "310729": {
+    "id": 310729,
+    "aegisName": "Nebula_Of_FS3",
+    "name": "Nebula of Fighting Spirit Lv3",
+    "unidName": "Nebula of Fighting Spirit Lv3",
+    "resName": "Nebula_Of_FS",
+    "description": "Atk + 20\nIf refine rate is 9 or higher, additional Atk + 20.\nIf refine rate is 11 or higher, additional Atk + 40.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "20",
+        "9===20",
+        "11===40"
+      ]
+    }
+  },
+  "310730": {
+    "id": 310730,
+    "aegisName": "Nebula_Of_EA1",
+    "name": "Nebula of Expert Archer Lv1",
+    "unidName": "Nebula of Expert Archer Lv1",
+    "resName": "Nebula_Of_EA",
+    "description": "Increases long ranged physical damage by 3%.\nIf refine rate is 9 or higher, increases long ranged physical damage by additional 3%.\nIf refine rate is 11 or higher, increases long ranged physical damage by additional 4%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "3",
+        "9===3",
+        "11===4"
+      ]
+    }
+  },
+  "310731": {
+    "id": 310731,
+    "aegisName": "Nebula_Of_EA2",
+    "name": "Nebula of Expert Archer Lv2",
+    "unidName": "Nebula of Expert Archer Lv2",
+    "resName": "Nebula_Of_EA",
+    "description": "Increases long ranged physical damage by 5%.\nIf refine rate is 9 or higher, increases long ranged physical damage by additional 5%.\nIf refine rate is 11 or higher, increases long ranged physical damage by additional 7%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "5",
+        "9===5",
+        "11===7"
+      ]
+    }
+  },
+  "310732": {
+    "id": 310732,
+    "aegisName": "Nebula_Of_EA3",
+    "name": "Nebula of Expert Archer Lv3",
+    "unidName": "Nebula of Expert Archer Lv3",
+    "resName": "Nebula_Of_EA",
+    "description": "Increases long ranged physical damage by 7%.\nIf refine rate is 9 or higher, increases long ranged physical damage by additional 7%.\nIf refine rate is 11 or higher, increases long ranged physical damage by additional 15%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "7",
+        "9===7",
+        "11===15"
+      ]
+    }
+  },
+  "310733": {
+    "id": 310733,
+    "aegisName": "Nebula_Of_SH1",
+    "name": "Nebula of Sharp Lv1",
+    "unidName": "Nebula of Sharp Lv1",
+    "resName": "Nebula_Of_SH",
+    "description": "Increases critical damage by 5%.\nIf refine rate is 9 or higher, increases critical damage by additional 5%.\nIf refine rate is 11 or higher, increases critical damage by additional 7%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "5",
+        "9===5",
+        "11===7"
+      ]
+    }
+  },
+  "310734": {
+    "id": 310734,
+    "aegisName": "Nebula_Of_SH2",
+    "name": "Nebula of Sharp Lv2",
+    "unidName": "Nebula of Sharp Lv2",
+    "resName": "Nebula_Of_SH",
+    "description": "Increases critical damage by 7%.\nIf refine rate is 9 or higher, increases critical damage by additional 7%.\nIf refine rate is 11 or higher, increases critical damage by additional 12%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "7",
+        "9===7",
+        "11===12"
+      ]
+    }
+  },
+  "310735": {
+    "id": 310735,
+    "aegisName": "Nebula_Of_SH3",
+    "name": "Nebula of Sharp Lv3",
+    "unidName": "Nebula of Sharp Lv3",
+    "resName": "Nebula_Of_SH",
+    "description": "Increases critical damage by 10%.\nIf refine rate is 9 or higher, increases critical damage by additional 10%.\nIf refine rate is 11 or higher, increases critical damage by additional 15%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "10",
+        "9===10",
+        "11===15"
+      ]
+    }
+  },
+  "310736": {
+    "id": 310736,
+    "aegisName": "Nebula_Of_SP1",
+    "name": "Nebula of Spell Lv1",
+    "unidName": "Nebula of Spell Lv1",
+    "resName": "Nebula_Of_SP",
+    "description": "Matk + 10\nIf refine rate is 9 or higher, additional Matk + 10.\nIf refine rate is 11 or higher, additional Matk + 15.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "10",
+        "9===10",
+        "11===15"
+      ]
+    }
+  },
+  "310737": {
+    "id": 310737,
+    "aegisName": "Nebula_Of_SP2",
+    "name": "Nebula of Spell Lv2",
+    "unidName": "Nebula of Spell Lv2",
+    "resName": "Nebula_Of_SP",
+    "description": "Matk + 15\nIf refine rate is 9 or higher, additional Matk + 15.\nIf refine rate is 11 or higher, additional Matk + 30.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "15",
+        "9===15",
+        "11===30"
+      ]
+    }
+  },
+  "310738": {
+    "id": 310738,
+    "aegisName": "Nebula_Of_SP3",
+    "name": "Nebula of Spell Lv3",
+    "unidName": "Nebula of Spell Lv3",
+    "resName": "Nebula_Of_SP",
+    "description": "Matk + 20\nIf refine rate is 9 or higher, additional Matk + 20.\nIf refine rate is 11 or higher, additional Matk + 40.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "20",
+        "9===20",
+        "11===40"
+      ]
+    }
+  },
+  "310742": {
+    "id": 310742,
+    "aegisName": "Nebula_Of_HP1",
+    "name": "Nebula of Health Lv1",
+    "unidName": "Nebula of Health Lv1",
+    "resName": "Nebula_Of_HP",
+    "description": "MaxHP + 3%, Def + 25.\nIf refine rate is 9 or higher, additional MaxHP + 3%, additional Def + 15.\nIf refine rate is 11 or higher, additional MaxHP + 5%, additional Def + 25.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hpPercent": [
+        "3",
+        "9===3",
+        "11===5"
+      ],
+      "def": [
+        "25",
+        "9===15",
+        "11===25"
+      ]
+    }
+  },
+  "310743": {
+    "id": 310743,
+    "aegisName": "Nebula_Of_HP2",
+    "name": "Nebula of Health Lv2",
+    "unidName": "Nebula of Health Lv2",
+    "resName": "Nebula_Of_HP",
+    "description": "MaxHP + 5%, Def + 30.\nIf refine rate is 9 or higher, additional MaxHP + 4%, additional Def + 20.\nIf refine rate is 11 or higher, additional MaxHP + 6%, additional Def + 30.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hpPercent": [
+        "5",
+        "9===4",
+        "11===6"
+      ],
+      "def": [
+        "30",
+        "9===20",
+        "11===30"
+      ]
+    }
+  },
+  "310744": {
+    "id": 310744,
+    "aegisName": "Nebula_Of_HP3",
+    "name": "Nebula of Health Lv3",
+    "unidName": "Nebula of Health Lv3",
+    "resName": "Nebula_Of_HP",
+    "description": "MaxHP + 7%, Def + 45.\nIf refine rate is 9 or higher, additional MaxHP + 5%, additional Def + 30.\nIf refine rate is 11 or higher, additional MaxHP + 8%, additional Def + 45.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hpPercent": [
+        "7",
+        "9===5",
+        "11===8"
+      ],
+      "def": [
+        "45",
+        "9===30",
+        "11===45"
+      ]
+    }
+  },
   "310881": {
     "id": 310881,
     "aegisName": "Runeknight_Top3",
@@ -80085,7 +81090,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -80138,7 +81143,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -80585,7 +81590,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "atk": [
@@ -80695,7 +81700,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -80758,7 +81763,7 @@
     "location": "Upper",
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -82588,7 +83593,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hpPercent": [
@@ -82632,7 +83637,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -82674,7 +83679,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -82716,7 +83721,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -82930,7 +83935,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -82972,7 +83977,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "atk": [
@@ -83188,7 +84193,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -83232,7 +84237,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -83274,7 +84279,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -83318,7 +84323,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -83698,7 +84703,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -83740,7 +84745,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -83870,7 +84875,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -83912,7 +84917,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -84038,7 +85043,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hpPercent": [
@@ -84082,7 +85087,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -84124,7 +85129,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -84166,7 +85171,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -84380,7 +85385,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -84422,7 +85427,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "atk": [
@@ -84722,7 +85727,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -84766,7 +85771,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -84808,7 +85813,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -84852,7 +85857,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -85232,7 +86237,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -85274,7 +86279,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -85404,7 +86409,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -85446,7 +86451,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -85488,7 +86493,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hpPercent": [
@@ -85532,7 +86537,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -85574,7 +86579,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -85616,7 +86621,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -85830,7 +86835,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -85872,7 +86877,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "atk": [
@@ -86172,7 +87177,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -86216,7 +87221,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -86258,7 +87263,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -86302,7 +87307,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -86682,7 +87687,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -86724,7 +87729,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -86854,7 +87859,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -86896,7 +87901,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -87400,6 +88405,107 @@
       "spPercent": [
         "5",
         "9===2"
+      ]
+    }
+  },
+  "450169": {
+    "id": 450169,
+    "aegisName": "Star_Armor_Of_Pow",
+    "name": "Nebula Armor of Power [1]",
+    "unidName": "Armor",
+    "resName": "Star_Armor_Of_Pow",
+    "description": "POW + 1.\nAtk + 125.\nAtk + 15 per 2 refine rate.\nIf refine rate is 9 or higher, Atk + 5%.\nIf refine rate is 11 or higher, increases melee physical damage by 20%.\n\n[Bonus by grade]\n[Grade D] Atk + 2 and Atk + 1% per 2 refine rate, increases melee physical damage by 1% per 3 refine rate.\n[Grade C] Atk + 3 and Atk + 1% per 2 refine rate, increases melee physical damage by 1% per 3 refine rate.\n[Grade B] Atk + 2% per 2 refine rate, increases melee physical damage by 1% per 3 refine rate, P.Atk + 1 per 4 refine rate.\n[Grade A] Atk + 3% per 2 refine rate, increases melee physical damage by 2% per 3 refine rate, P.Atk + 2 per 4 refine rate.\n^ffffff_^000000\nClass: ^777777Armor^000000  Defense: ^777777175^000000\nWeight: ^777777250^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777240^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 175,
+    "weight": 250,
+    "requiredLevel": 240,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "pow": [
+        "1"
+      ],
+      "atk": [
+        "125",
+        "2---15",
+        "GRADE[armor==D]2---2",
+        "GRADE[armor==C]2---3"
+      ],
+      "atkPercent": [
+        "9===5",
+        "GRADE[armor==D]2---1",
+        "GRADE[armor==C]2---1",
+        "GRADE[armor==B]2---2",
+        "GRADE[armor==A]2---3"
+      ],
+      "melee": [
+        "11===20",
+        "GRADE[armor==D]3---1",
+        "GRADE[armor==C]3---1",
+        "GRADE[armor==B]3---1",
+        "GRADE[armor==A]3---2"
+      ],
+      "pAtk": [
+        "GRADE[armor==B]4---1",
+        "GRADE[armor==A]4---2"
+      ]
+    }
+  },
+  "450173": {
+    "id": 450173,
+    "aegisName": "Star_Robe_Of_Spl",
+    "name": "Nebula Robe of Spell [1]",
+    "unidName": "Armor",
+    "resName": "Star_Robe_Of_Spl",
+    "description": "SPL + 1.\nMatk + 125.\nMatk + 15 per 2 refine rate.\nIf refine rate is 9 or higher, Matk + 5%.\nIf refine rate is 11 or higher, increases all property magical damage by 15%.\n\n[Bonus by grade]\n[Grade D] Matk + 2 and Matk + 1% per 2 refine rate, increases all property magical damage by 3% per 3 refine rate.\n[Grade C] Matk + 3 and Matk + 1% per 2 refine rate, increases all property magical damage by 3% per 3 refine rate.\n[Grade B] Matk + 2% per 2 refine rate, increases all property magical damage by 5% per 3 refine rate, S.Matk + 1 per 4 refine rate.\n[Grade A] Matk + 3% per 2 refine rate, increases all property magical damage by 5% per 3 refine rate, S.Matk + 2 per 4 refine rate.\n^ffffff_^000000\nClass: ^777777Armor^000000  Defense: ^777777105^000000\nWeight: ^77777750^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777240^000000\nJobs: ^777777All^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 105,
+    "weight": 50,
+    "requiredLevel": 240,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "canGrade": true,
+    "script": {
+      "spl": [
+        "1"
+      ],
+      "matk": [
+        "125",
+        "2---15",
+        "GRADE[armor==D]2---2",
+        "GRADE[armor==C]2---3"
+      ],
+      "matkPercent": [
+        "9===5",
+        "GRADE[armor==D]2---1",
+        "GRADE[armor==C]2---1",
+        "GRADE[armor==B]2---2",
+        "GRADE[armor==A]2---3"
+      ],
+      "m_my_element_all": [
+        "11===15",
+        "GRADE[armor==D]3---3",
+        "GRADE[armor==C]3---3",
+        "GRADE[armor==B]3---5",
+        "GRADE[armor==A]3---5"
+      ],
+      "sMatk": [
+        "GRADE[armor==B]4---1",
+        "GRADE[armor==A]4---2"
       ]
     }
   },
@@ -88488,7 +89594,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "hpPercent": [
@@ -88718,7 +89824,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "hpPercent": [
@@ -89053,7 +90159,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "hpPercent": [
@@ -89663,8 +90769,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight",
-      "Royal Guard"
+      "RuneKnight",
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -89952,7 +91058,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop",
+      "ArchBishop",
       "Sura"
     ],
     "script": {
@@ -90021,8 +91127,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross",
-      "Shadow Chaser"
+      "GuillotineCross",
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -90826,7 +91932,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "aspdPercent": [
@@ -91159,7 +92265,7 @@
       "Mage",
       "Acolyte",
       "Archer",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -91405,7 +92511,7 @@
       ],
       "hit": [
         "3---8",
-        "REFINE[9]USED[Royal Guard]===20",
+        "REFINE[9]USED[RoyalGuard]===20",
         "11===30"
       ],
       "melee": [
@@ -91413,13 +92519,13 @@
         "11===5"
       ],
       "acd": [
-        "REFINE[9]USED[Guillotine Cross]===5"
+        "REFINE[9]USED[GuillotineCross]===5"
       ],
       "aspdPercent": [
-        "REFINE[9]USED[Guillotine Cross]===20"
+        "REFINE[9]USED[GuillotineCross]===20"
       ],
       "Shield Press": [
-        "REFINE[9]USED[Royal Guard]ACTIVE_SKILL[Earth Drive]===30"
+        "REFINE[9]USED[RoyalGuard]ACTIVE_SKILL[Earth Drive]===30"
       ],
       "allStatus": [
         "11===5"
@@ -91578,7 +92684,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "range": [
@@ -91628,7 +92734,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -91680,27 +92786,27 @@
     "script": {
       "atk": [
         "2---10",
-        "REFINE[11]USED[Rune Knight]SUM[level==100]===50"
+        "REFINE[11]USED[RuneKnight]SUM[level==100]===50"
       ],
       "vct": [
         "2---3",
-        "REFINE[11]USED[Rune Knight]SUM[level==100]===15"
+        "REFINE[11]USED[RuneKnight]SUM[level==100]===15"
       ],
       "p_class_all": [
         "4---4"
       ],
       "aspdPercent": [
         "7===10",
-        "REFINE[11]USED[Rune Knight]SUM[level==100]===10"
+        "REFINE[11]USED[RuneKnight]SUM[level==100]===10"
       ],
       "melee": [
         "9===10",
-        "REFINE[11]USED[Rune Knight]SUM[level==100]===10",
-        "REFINE[11]USED[Rune Knight]SUM[level==170]===20"
+        "REFINE[11]USED[RuneKnight]SUM[level==100]===10",
+        "REFINE[11]USED[RuneKnight]SUM[level==170]===20"
       ],
       "cd__Ignition Break": [
-        "REFINE[11]USED[Rune Knight]LEVEL[1-169]===1",
-        "REFINE[11]USED[Rune Knight]LEVEL[170]===0.15"
+        "REFINE[11]USED[RuneKnight]LEVEL[1-169]===1",
+        "REFINE[11]USED[RuneKnight]LEVEL[170]===0.15"
       ]
     }
   },
@@ -91903,7 +93009,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "p_size_all": [
@@ -94483,7 +95589,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "m_size_all": [
@@ -94721,8 +95827,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight",
-      "Royal Guard"
+      "RuneKnight",
+      "RoyalGuard"
     ],
     "script": {
       "atkPercent": [
@@ -94801,7 +95907,7 @@
         "EQUIP[2nd Anniversary Neptune Armor||2nd Anniversary Neptune Armor(Doram)]===7"
       ],
       "melee": [
-        "EQUIP[2nd Anniversary Mars Armor]USED[Guillotine Cross]===10"
+        "EQUIP[2nd Anniversary Mars Armor]USED[GuillotineCross]===10"
       ],
       "aspdPercent": [
         "EQUIP[2nd Anniversary Keres Armor]===5"
@@ -95401,7 +96507,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "mdef": [
@@ -95536,8 +96642,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight",
-      "Royal Guard"
+      "RuneKnight",
+      "RoyalGuard"
     ],
     "script": {
       "acd": [
@@ -95689,7 +96795,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "vct__Picky Peck": [
@@ -95733,8 +96839,8 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross",
-      "Shadow Chaser"
+      "GuillotineCross",
+      "ShadowChaser"
     ],
     "script": {
       "aspdPercent": [
@@ -95797,7 +96903,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "acd": [
@@ -95886,7 +96992,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "acd": [
@@ -95974,7 +97080,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Super Novice"
+      "SuperNovice"
     ],
     "script": {
       "vct": [
@@ -96093,7 +97199,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hpPercent": [
@@ -96437,7 +97543,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop",
+      "ArchBishop",
       "Sura"
     ],
     "script": {
@@ -96511,7 +97617,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "acd": [
@@ -96555,7 +97661,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "acd": [
@@ -96687,7 +97793,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "acd": [
@@ -96729,7 +97835,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matkPercent": [
@@ -97616,7 +98722,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "acd": [
@@ -97681,7 +98787,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "acd": [
@@ -97833,19 +98939,19 @@
       ],
       "acd": [
         "10",
-        "USED[Royal Guard]===15"
+        "USED[RoyalGuard]===15"
       ],
       "p_size_all": [
         "10"
       ],
       "vct__Ignition Break": [
-        "USED[Rune Knight]===100"
+        "USED[RuneKnight]===100"
       ],
       "criDmg": [
-        "USED[Rune Knight]===40"
+        "USED[RuneKnight]===40"
       ],
       "melee": [
-        "USED[Royal Guard]===20"
+        "USED[RoyalGuard]===20"
       ],
       "cd__Ignition Break": [
         "EQUIP[Old Rune Circlet]===1.5"
@@ -97901,11 +99007,11 @@
         "10"
       ],
       "p_pene_race_all": [
-        "USED[Guillotine Cross]===50",
-        "USED[Shadow Chaser]===50"
+        "USED[GuillotineCross]===50",
+        "USED[ShadowChaser]===50"
       ],
       "criDmg": [
-        "USED[Guillotine Cross]===20"
+        "USED[GuillotineCross]===20"
       ],
       "cd__Dark Claw": [
         "EQUIP[Old Bone Circlet]===10"
@@ -98161,10 +99267,10 @@
         "10"
       ],
       "vct__Judex": [
-        "USED[Arch Bishop]===100"
+        "USED[ArchBishop]===100"
       ],
       "m_pene_race_all": [
-        "USED[Arch Bishop]===50"
+        "USED[ArchBishop]===50"
       ],
       "p_pene_race_all": [
         "USED[Sura]===50"
@@ -98333,7 +99439,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -98579,7 +99685,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matkPercent": [
@@ -98676,7 +99782,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -98726,7 +99832,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -98781,7 +99887,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -98966,7 +100072,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -99112,7 +100218,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -99193,7 +100299,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Fatal Manace": [
@@ -99227,7 +100333,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -99275,7 +100381,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -99338,7 +100444,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -99377,7 +100483,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -99465,7 +100571,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -99517,7 +100623,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "matk": [
@@ -99896,7 +101002,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -99954,7 +101060,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "matk": [
@@ -99989,7 +101095,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atkPercent": [
@@ -100043,7 +101149,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atk": [
@@ -100095,7 +101201,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "hpPercent": [
@@ -100152,7 +101258,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Royal Guard"
+      "RoyalGuard"
     ],
     "script": {
       "atkPercent": [
@@ -100255,7 +101361,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atkPercent": [
@@ -100308,7 +101414,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "New Moon Kick": [
@@ -100459,7 +101565,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atk": [
@@ -100506,7 +101612,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -100694,7 +101800,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atkPercent": [
@@ -100736,7 +101842,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atkPercent": [
@@ -100778,7 +101884,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atkPercent": [
@@ -100828,7 +101934,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Star Emperor"
+      "StarEmperor"
     ],
     "script": {
       "atkPercent": [
@@ -100874,7 +101980,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -100926,7 +102032,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "matk": [
@@ -101091,7 +102197,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -101128,7 +102234,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Summoner (Doram)"
+      "Doram"
     ],
     "script": {
       "matk": [
@@ -101241,7 +102347,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matkPercent": [
@@ -101449,7 +102555,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -101497,7 +102603,7 @@
     "usableClass": [
       "Mage",
       "Acolyte",
-      "Soul Linker"
+      "SoulLinker"
     ],
     "script": {
       "matk": [
@@ -101577,7 +102683,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -101637,7 +102743,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -101954,7 +103060,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matkPercent": [
@@ -102003,7 +103109,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matkPercent": [
@@ -103493,7 +104599,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -103601,7 +104707,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -103646,7 +104752,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -103784,7 +104890,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "atkPercent": [
@@ -103893,7 +104999,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -103982,7 +105088,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Arch Bishop"
+      "ArchBishop"
     ],
     "script": {
       "matk": [
@@ -104047,7 +105153,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "cri": [
@@ -104108,7 +105214,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "hpPercent": [
@@ -104152,7 +105258,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Wind Cutter": [
@@ -104186,7 +105292,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atk": [
@@ -104274,7 +105380,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "cri": [
@@ -104322,7 +105428,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "cri": [
@@ -104366,7 +105472,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -104420,7 +105526,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -104461,7 +105567,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "Rolling Cutter": [
@@ -104498,7 +105604,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -104551,7 +105657,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atk": [
@@ -104649,7 +105755,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "cri": [
@@ -104697,7 +105803,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "cri": [
@@ -104741,7 +105847,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -104781,7 +105887,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Guillotine Cross"
+      "GuillotineCross"
     ],
     "script": {
       "atkPercent": [
@@ -105023,7 +106129,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "Hundred Spears": [
@@ -105164,7 +106270,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atkPercent": [
@@ -105221,7 +106327,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Rune Knight"
+      "RuneKnight"
     ],
     "script": {
       "atkPercent": [
@@ -105757,7 +106863,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -105804,7 +106910,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Soul Reaper"
+      "SoulReaper"
     ],
     "script": {
       "matk": [
@@ -106308,7 +107414,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "Triangle Shot": [
@@ -106380,7 +107486,7 @@
       "Ranger",
       "Minstrel",
       "Wanderer",
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -106423,7 +107529,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atkPercent": [
@@ -106614,7 +107720,7 @@
     "compositionPos": null,
     "usableClass": [
       "Ranger",
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atk": [
@@ -106699,6 +107805,64 @@
       ]
     }
   },
+  "700029": {
+    "id": 700029,
+    "aegisName": "Thanos_Bow_AD",
+    "name": "Thanos Bow-AD [2]",
+    "unidName": "Bow",
+    "resName": "Thanos_Bow_AD",
+    "description": "When dealing physical damage, has a chance to recovers 2500 HP and 50 SP every 1 second for 4 times.\r\nAtk + 10 per 2 refine rate.\r\nIncreases Focused Arrow Strike damage by 5% per 3 refine rate.\r\nIf refine rate is 7 or higher, increases critical damage by 15%, increases Focused Arrow Strike damage by additional 10%.\r\nIf refine rate is 9 or higher, Cri + 15, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 15%, increases long ranged physical damage by 15%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Atk + 2%, increases Crescive Bolt damage by 10%.\r\n[Grade C] Reduces global cooldown by 5%, P.Atk + 1.\r\n[Grade B] Increases Crescive Bolt damage by additional 10%.\r\nClass: ^777777Bow^000000 Attack: ^777777230^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777190^000000\r\nJobs: ^777777Ranger^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 5,
+    "attack": 230,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "Focused Arrow Strike": [
+        "3---5",
+        "7===10"
+      ],
+      "criDmg": [
+        "7===15"
+      ],
+      "cri": [
+        "9===15"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "p_size_all": [
+        "11===15"
+      ],
+      "range": [
+        "11===15"
+      ],
+      "atkPercent": [
+        "GRADE[weapon==D]===2"
+      ],
+      "Crescive Bolt": [
+        "GRADE[weapon==D]===10",
+        "GRADE[weapon==B]===10"
+      ],
+      "pAtk": [
+        "GRADE[weapon==C]===1"
+      ],
+      "acd": [
+        "GRADE[weapon==C]===5"
+      ]
+    }
+  },
   "700041": {
     "id": 700041,
     "aegisName": "3Para_Bow_SC",
@@ -106717,7 +107881,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Shadow Chaser"
+      "ShadowChaser"
     ],
     "script": {
       "atkPercent": [

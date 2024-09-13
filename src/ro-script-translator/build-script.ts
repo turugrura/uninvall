@@ -210,6 +210,8 @@ const map = {
 	Matk: 'matk',
 	ATK: 'atk',
 	Atk: 'atk',
+	'P.Atk': 'pAtk',
+	'S.Matk': 'sMatk',
 	'เพิ่ม ATK': 'atk',
 	MaxHP: 'hp',
 	MHP: 'hp',
@@ -227,6 +229,12 @@ const map = {
 	LUK: 'luk',
 	INT: 'int',
 	VIT: 'vit',
+	POW: 'pow',
+	STA: 'sta',
+	WIS: 'wis',
+	SPL: 'spl',
+	CON: 'con',
+	CRT: 'crt',
 	'EXP ที่ได้รับจากมอนสเตอร์': 'exp',
 	เพิ่มค่าประสบการณ์ที่ได้รับ: 'exp',
 	'Item Drop Rate': 'itemDrop',
@@ -251,6 +259,9 @@ export class BuildScript {
 			'เมื่ออัพเกรดขั้น',
 			'เมื่ออัปเกรดถึงขั้น',
 			'ATK',
+			'Atk',
+			'P.Atk',
+			'S.Matk',
 			'MSP',
 		],
 		itemSet: ['เมื่อสวมใส่ร่วมกับ', 'เมื่อใส่ร่วมกับ', 'When equipped with'],
@@ -267,6 +278,13 @@ export class BuildScript {
 			'DEX',
 			'LUK',
 			'CRI',
+			'Cri',
+			'POW',
+			'STA',
+			'WIS',
+			'SPL',
+			'CON',
+			'CRT',
 			'เพิ่มพลังโจมตี',
 		],
 	};
@@ -317,7 +335,7 @@ export class BuildScript {
 		return this._extractedScript.comboes;
 	}
 
-	constructor(private rawItemDescription: string) {
+	constructor(private rawItemDescription: string, private itemType: string) {
 		this.extractItemExpressionTh2(this.rawItemDescription);
 		this.toScripts(
 			this._extractedScript.expressions,
@@ -371,6 +389,7 @@ export class BuildScript {
 		const [_, combo] =
 			rawExpression.match(/When equipped with\s*(.+?),/) ??
 			rawExpression.match(/\s(.*?),\s/) ??
+			rawExpression.match(/\[Grade (.*?)\]/) ??
 			[];
 		for (const expression of expressions.filter((a) => a.match(/\d/))) {
 			// console.log({ expression });
@@ -460,7 +479,7 @@ export class BuildScript {
 		const fixCast1 = /ลด\s*(Fixed\D+)\s*(\d+\.*\d*)/;
 		const fixCast2 = /(ลดระยะเวลาร่ายแบบคง\D+)\s*(\d+\.*\d*)/;
 		const constantRegex =
-			/(All State|All Status|Perfect Hit|MATK|FLEE|ATK|DEX|MDEF|DEF|INT|VIT|AGI|STR|CRI|LUK|Critical Damage|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/;
+			/(All State|All Status|Perfect Hit|S.Matk|P.Atk|MATK|FLEE|ATK|DEX|MDEF|DEF|INT|VIT|AGI|STR|CRI|LUK|POW|STA|WIS|SPL|CON|CRT|Critical Damage|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/;
 		const constantRegex2 =
 			/(Damage ทางกายภาพระยะไกล|ความเร็วในการโจมตี|Item Drop Rate|EXP ที่ได้รับจากมอนสเตอร์|โอกาสคริติคอล)\D*(\d+%*)/;
 		const engConstantRex1 = /(reduces variable casting time) by (\d+)/i;
@@ -468,8 +487,8 @@ export class BuildScript {
 		const engConstantRex5 = /reduces skill (cooldown of \D+)by\D+(\d+%*)/i;
 		const engConstantRex3 =
 			/(increases attack speed|reduces global cooldown|Reduces global cooldown by|Hit|Cri)\D+(\d+%*)/i;
-		const engConstantRex4 = /(Matk|Atk)\D*(\d+%*)/;
-		const engConstantRex6 = /(Dex|Int|Vit|Agi|Str|Luk)\D*(\d+%*)/;
+		const engConstantRex4 = /(S.Matk|P.Atk|Matk|Atk)\D*(\d+%*)/;
+		const engConstantRex6 = /(Dex|Int|Vit|Agi|Str|Luk|POW|STA|WIS|SPL|CON|CRT|)\D*(\d+%*)/;
 		const engConstantRex7 = /(melee|long ranged physical damage)\D*(\d+%*)/;
 		const engConstantRex8 =
 			/(physical damage against all property enemies|physical damage against all race|all property magical damage|magical damage against all race|critical damage|magical damage against all size enemies|physical damage against all size)\D*(\d+%*)/;
@@ -775,6 +794,12 @@ export class BuildScript {
 		);
 	}
 
+	isGrade(script: string) {
+		return (
+			script.startsWith('[Grade')
+		);
+	}
+
 	isAutoByAtk(script: string) {
 		return script.startsWith('เมื่อโจมตี');
 	}
@@ -936,6 +961,7 @@ export class BuildScript {
 					ss2.match(/เมื่อใช้.*กับ\s*(.+),*\s*(ลด.+|เพิ่ม.+|ATK.+|ASPD+.)/) ??
 					ss2.match(/เมื่อใช้.*กับ\s*(.+)/) ??
 					ss2.match(/When equipped with\s*(.+?),/) ??
+					// ss2.match(/\[Grade (.+)/) ??
 					[];
 				// console.log({ss2, curComboCondition})
 				const [_a, curCondition] =
@@ -951,6 +977,7 @@ export class BuildScript {
 					ss2.match(/(เมื่อทุกๆ\s*\d+.*หน่วย.+)/) ??
 					ss2.match(/(If refine rate is\s*\d+\s*or higher)/) ??
 					ss2.match(/(If refine rate is.+)/) ??
+					ss2.match(/(\[Grade.+\])/) ??
 					[];
 				// console.log({ ss2, curComboCondition, prevComboCondition });
 				if (curComboCondition) {
@@ -1004,27 +1031,58 @@ export class BuildScript {
 
 	toScripts(expressions: string[], comboes: Record<string, string[]>) {
 		const all: Record<string, string[]> = {};
+		let currentGrade = ''
 		const addScript = (prop: string, newScript: string) => {
 			// console.log({ prop, newScript });
+			const gradeScript = !!currentGrade ?  `GRADE[${this.itemType}==${currentGrade}]` : ''
 			for (const oneProp of prop.split(' and ')) {
 				if (all[oneProp]) {
-					all[oneProp].push(newScript);
+					all[oneProp].push(`${gradeScript}${newScript}`);
 				} else {
-					all[oneProp] = [newScript];
+					all[oneProp] = [`${gradeScript}${newScript}`];
 				}
 			}
 		};
 
 		// console.log({ expressions, comboes });
 
-		for (const expression of expressions) {
-			// console.log({expression})
+		for (const _expression of expressions) {
+			console.log({_expression})
+			let expression = _expression
+			if (this.isGrade(expression)) {
+				const [_, grade, restExpr] = expression.match(/\[Grade (\D)\]\s*(.+)/) || []
+				currentGrade = grade;
+				expression = restExpr
+			}
+
 			if (this.isCombo(expression)) {
 				for (const { actualAttr, bonus } of this.getMiniScript(expression)) {
 					addScript(actualAttr as string, bonus as string);
 				}
 			} else if (this.matchRefineStepBonus(expression)) {
 				// console.log({ expression });
+				// const en = expression.split('refine rate, ')
+				// console.log({en})
+				// if (en.length >= 2) {	
+				// 	for (const _expression of en) {
+				// 		let newExpre = _expression.includes('refine rate') ? _expression : `${_expression}refine rate`
+				// 		console.log({newExpre})
+
+				// 		for (const obj of this.toRefineStepBonus(
+				// 			this.matchRefineStepBonus(newExpre)!,
+				// 		)) {
+				// 			const [prop, newScript] = Object.entries(obj)[0];
+				// 			addScript(prop, newScript);
+				// 		}
+				// 	}
+				// } else {
+				// 	for (const obj of this.toRefineStepBonus(
+				// 		this.matchRefineStepBonus(expression)!,
+				// 	)) {
+				// 		const [prop, newScript] = Object.entries(obj)[0];
+				// 		addScript(prop, newScript);
+				// 	}
+				// }
 				for (const obj of this.toRefineStepBonus(
 					this.matchRefineStepBonus(expression)!,
 				)) {
@@ -1186,7 +1244,7 @@ export class BuildScript {
 					.map((a) => {
 						const [_, _raw, status, statusCond] =
 							a.match(
-								/(.*?)(str|dex|vit|luk|int|agi|lv|level)(\d{1,3})(===|---)(.+)/,
+								/(.*?)(str|dex|vit|luk|int|agi|pow|sta|wis|spl|con|crt|lv|level)(\d{1,3})(===|---)(.+)/,
 							) ?? [];
 
 						// console.log({status, statusCond, sperator, bonus})

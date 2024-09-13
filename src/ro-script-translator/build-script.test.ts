@@ -17,7 +17,7 @@ describe('RO read item descript', () => {
   it('should match all', () => {
     for (const [itemId, expectedScripts] of Object.entries(testTable)) {
       const description = itemMap.get(Number(itemId));
-      const scripts = new BuildScript(description).scripts;
+      const scripts = new BuildScript(description, '').scripts;
       console.log('last check', itemId);
       expect(scripts).toEqual(expectedScripts);
     }
