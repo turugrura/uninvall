@@ -94,6 +94,7 @@ interface ItemModel {
 
 const UsedWordingMap = {
 	fourthClass: '4th',
+	All: 'all',
 	ทุกอาชีพ: 'all',
 } as const;
 
@@ -261,7 +262,7 @@ export class RoScriptTranslatorService {
 				console.log({ 'item.id': item.id });
 				currentData[item.id].script = new BuildScript(
 					currentData[item.id].description,
-					itemNam[item.itemSubTypeId],
+					item.itemSubTypeId === 1 ? 'weapon' : itemNam[item.itemSubTypeId],
 				).scripts;
 			}
 		}
@@ -324,7 +325,7 @@ export class RoScriptTranslatorService {
 				try {
 					const { data } = await this.http
 						.get<ItemAPIModel>(url, { timeout: 1000 * 5 })
-						.pipe(retry({ count: 7, delay: 3000 }))
+						.pipe(retry({ count: 20, delay: 3000 }))
 						.toPromise();
 					const {
 						id,
@@ -366,6 +367,7 @@ export class RoScriptTranslatorService {
 						compositionPos,
 						cardPrefix: cardPrefix || undefined,
 					});
+					console.log({itemLevel})
 
 					this.loadImage([itemId]);
 				} catch (error) {
@@ -495,6 +497,11 @@ export class RoScriptTranslatorService {
 			}
 		}
 
+
+		if (description.includes('Bonus by grade')) {
+			item.canGrade = true;
+		}
+
 		if (
 			!item.usableClass &&
 			(item.itemTypeId === ItemTypeId.WEAPON ||
@@ -504,7 +511,8 @@ export class RoScriptTranslatorService {
 		) {
 			const wording =
 				this.getTextBetween(description, 'อาชีพที่ใส่ได้ : ^777777') ||
-				this.getTextBetween(description, 'อาชีพ : ^777777');
+				this.getTextBetween(description, 'อาชีพ : ^777777') ||
+				this.getTextBetween(description, 'Jobs: ^777777');
 
 			item.usableClass = [
 				UsedWordingMap[wording] || wording?.replaceAll(' ', '') || UsedWordingMap.ทุกอาชีพ,
@@ -517,15 +525,12 @@ export class RoScriptTranslatorService {
 			}
 		}
 
-		if (description.includes('Bonus by grade')) {
-			item.canGrade = true;
-		}
-
 		// item.enchants = getEnchants(aegisName ?? name);
 
 		return item;
 	}
 
+	// Jobs: ^777777Genetic^000000
 	private getTextBetween(description: string, searchString: string) {
 		const a1 = description.split(searchString)[1];
 		if (!a1 || typeof a1 !== 'string') return '';
