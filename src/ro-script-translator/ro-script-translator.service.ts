@@ -94,6 +94,7 @@ interface ItemModel {
 
 const UsedWordingMap = {
 	fourthClass: '4th',
+	AllJobs: 'all',
 	All: 'all',
 	ทุกอาชีพ: 'all',
 } as const;
@@ -498,7 +499,7 @@ export class RoScriptTranslatorService {
 		}
 
 
-		if (description.includes('Bonus by grade')) {
+		if (item.itemTypeId !== 11 && description.includes('Bonus by grade')) {
 			item.canGrade = true;
 		}
 
@@ -518,7 +519,7 @@ export class RoScriptTranslatorService {
 				UsedWordingMap[wording] || wording?.replaceAll(' ', '') || UsedWordingMap.ทุกอาชีพ,
 			];
 
-			if (item.usableClass.length === 1 && item.usableClass[0] === UsedWordingMap.ทุกอาชีพ) {
+			if (item.usableClass.length === 1 && item.usableClass[0] === UsedWordingMap.ทุกอาชีพ || item.usableClass[0] === "AllJobs") {
 				if (item.requiredLevel > 200) {
 					item.usableClass = [UsedWordingMap.fourthClass]
 				}
