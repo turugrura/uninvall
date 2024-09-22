@@ -54,20 +54,20 @@ enum ItemSubTypeId {
 }
 
 const itemNam = {
-[ItemSubTypeId.Upper]: 'headUpper',
-[ItemSubTypeId.Shield]: 'dhield',
-[ItemSubTypeId.Armor]: 'armor',
-[ItemSubTypeId.Garment]: 'garment',
-[ItemSubTypeId.Boot]: 'boot',
-[ItemSubTypeId.Acc]: 'acc',
-[ItemSubTypeId.Acc_R]: 'accRight',
-[ItemSubTypeId.Acc_L]: 'accLeft',
+	[ItemSubTypeId.Upper]: 'headUpper',
+	[ItemSubTypeId.Shield]: 'shield',
+	[ItemSubTypeId.Armor]: 'armor',
+	[ItemSubTypeId.Garment]: 'garment',
+	[ItemSubTypeId.Boot]: 'boot',
+	[ItemSubTypeId.Acc]: 'acc',
+	[ItemSubTypeId.Acc_R]: 'accRight',
+	[ItemSubTypeId.Acc_L]: 'accLeft',
 
-[ItemSubTypeId.ShadowShield]: 'shadowShield',
-[ItemSubTypeId.ShadowBoot]: 'shadowBoot',
-[ItemSubTypeId.ShadowEarning]: 'shadowEarning',
-[ItemSubTypeId.ShadowPendant]: 'shadowPendant',
-[ItemSubTypeId.ShadowWeapon]: 'shadowWeapon',
+	[ItemSubTypeId.ShadowShield]: 'shadowShield',
+	[ItemSubTypeId.ShadowBoot]: 'shadowBoot',
+	[ItemSubTypeId.ShadowEarning]: 'shadowEarning',
+	[ItemSubTypeId.ShadowPendant]: 'shadowPendant',
+	[ItemSubTypeId.ShadowWeapon]: 'shadowWeapon',
 }
 
 interface ItemModel {
@@ -199,7 +199,7 @@ export class RoScriptTranslatorService {
 		process.env.RO_USING_MONSTER_FILE_PATH;
 	private readonly baseAssetFilePath = process.env.RO_ASSET_FILE_PATH;
 
-	constructor(private http: HttpService) {}
+	constructor(private http: HttpService) { }
 
 	async loadMonster(monsterIds: number[]) {
 		const path = this.baseMonsterFilePath;
@@ -263,7 +263,7 @@ export class RoScriptTranslatorService {
 				console.log({ 'item.id': item.id });
 				currentData[item.id].script = new BuildScript(
 					currentData[item.id].description,
-					item.itemSubTypeId === 1 ? 'weapon' : itemNam[item.itemSubTypeId],
+					item.itemSubTypeId === 1 || item.itemTypeId === ItemTypeId.WEAPON ? 'weapon' : itemNam[item.itemSubTypeId],
 				).scripts;
 			}
 		}
@@ -281,6 +281,7 @@ export class RoScriptTranslatorService {
 		const currentData = JSON.parse(fileContent);
 		for (const updatedItem of updatedItems) {
 			const bkItemTypeId = currentData[updatedItem.id]?.itemTypeId;
+			const bkItemSubTypeId = currentData[updatedItem.id]?.itemSubTypeId;
 			currentData[updatedItem.id] = {
 				...(currentData[updatedItem.id] ?? {}),
 				...this.addExtra(updatedItem as any),
@@ -290,11 +291,11 @@ export class RoScriptTranslatorService {
 				try {
 					currentData[updatedItem.id].script = new BuildScript(
 						currentData[updatedItem.id].description,
-						itemNam[updatedItem.itemSubTypeId],
+						updatedItem.itemSubTypeId === 1 || updatedItem.itemTypeId === ItemTypeId.WEAPON ? 'weapon' : itemNam[updatedItem.itemSubTypeId],
 					).scripts;
 				} catch (error) {
-					console.error(error)				
-					currentData[updatedItem.id].script = {}	
+					console.error(error)
+					currentData[updatedItem.id].script = {}
 				}
 			} else if (currentData[updatedItem.id]?.script) {
 				const bk = currentData[updatedItem.id].script;
@@ -304,6 +305,9 @@ export class RoScriptTranslatorService {
 
 			if (bkItemTypeId) {
 				currentData[updatedItem.id].itemTypeId = bkItemTypeId;
+			}
+			if (bkItemSubTypeId) {
+				currentData[updatedItem.id].itemSubTypeId = bkItemSubTypeId;
 			}
 		}
 		const s = JSON.stringify(currentData, undefined, 2);
@@ -319,67 +323,74 @@ export class RoScriptTranslatorService {
 		];
 		const updatedItems: any[] = [];
 
-		await Promise.all(
-			itemIds.map(async (itemId) => {
-				let url = `${this.baseDbAPI}/Item/${itemId}?apiKey=${this.baseDbAPIKey}`;
-				isThServer ? (url += '&server=thROG') : (url += '&server=dpRO');
-				try {
-					const { data } = await this.http
-						.get<ItemAPIModel>(url, { timeout: 1000 * 5 })
-						.pipe(retry({ count: 20, delay: 3000 }))
-						.toPromise();
-					const {
-						id,
-						aegisName,
-						name,
-						unidName,
-						resName,
-						description,
-						slots,
-						itemTypeId,
-						itemSubTypeId,
-						itemLevel,
-						attack,
-						defense,
-						weight,
-						requiredLevel,
-						location,
-						compositionPos,
-						attribute,
-						cardPrefix,
-					} = data;
-					updatedItems.push({
-						id,
-						aegisName,
-						name,
-						unidName,
-						resName,
-						description,
-						slots,
-						itemTypeId,
-						itemSubTypeId,
-						itemLevel,
-						attack,
-						propertyAtk: attribute ? mapElement[attribute] : undefined,
-						defense,
-						weight,
-						requiredLevel,
-						location,
-						compositionPos,
-						cardPrefix: cardPrefix || undefined,
-					});
-					console.log({itemLevel})
+		const callAPI = async () => {
+			const itemId = itemIds.pop()
+			if (!itemId) return;
 
-					this.loadImage([itemId]);
-				} catch (error) {
-					console.error({
-						itemId,
-						msg:
-							error?.response?.statusText || error?.response || error?.message,
-					});
-				}
-			}),
-		);
+			let url = `${this.baseDbAPI}/Item/${itemId}?apiKey=${this.baseDbAPIKey}`;
+			isThServer ? (url += '&server=thROG') : (url += '&server=dpRO');
+			try {
+				const { data } = await this.http
+					.get<ItemAPIModel>(url, { timeout: 1000 * 5 })
+					.pipe(retry({ count: 20, delay: 3000 }))
+					.toPromise();
+				const {
+					id,
+					aegisName,
+					name,
+					unidName,
+					resName,
+					description,
+					slots,
+					itemTypeId,
+					itemSubTypeId,
+					itemLevel,
+					attack,
+					defense,
+					weight,
+					requiredLevel,
+					location,
+					compositionPos,
+					attribute,
+					cardPrefix,
+				} = data;
+				updatedItems.push({
+					id,
+					aegisName,
+					name,
+					unidName,
+					resName,
+					description,
+					slots,
+					itemTypeId,
+					itemSubTypeId,
+					itemLevel,
+					attack,
+					propertyAtk: attribute ? mapElement[attribute] : undefined,
+					defense,
+					weight,
+					requiredLevel,
+					location,
+					compositionPos,
+					cardPrefix: cardPrefix || undefined,
+				});
+				// console.log({ itemLevel })
+
+				this.loadImage([itemId]);
+				return callAPI()
+			} catch (error) {
+				console.error({
+					itemId,
+					msg:
+						error?.response?.statusText || error?.response || error?.message,
+				});
+			}
+		}
+
+		const TOTAL_WORKER = 10
+		for (let i = 0; i <= TOTAL_WORKER; i++) {
+			await callAPI()
+		}
 
 		this.sync(updatedItems);
 		const successIdSet = new Set(updatedItems.map((a) => a.id));
@@ -516,7 +527,7 @@ export class RoScriptTranslatorService {
 				this.getTextBetween(description, 'Jobs: ^777777');
 
 			item.usableClass = [
-				UsedWordingMap[wording] || wording?.replaceAll(' ', '') || UsedWordingMap.ทุกอาชีพ,
+				UsedWordingMap[wording] || wording?.replaceAll(' ', '')?.replace('classes', '') || UsedWordingMap.ทุกอาชีพ,
 			];
 
 			if (item.usableClass.length === 1 && item.usableClass[0] === UsedWordingMap.ทุกอาชีพ || item.usableClass[0] === "AllJobs") {
@@ -524,9 +535,11 @@ export class RoScriptTranslatorService {
 					item.usableClass = [UsedWordingMap.fourthClass]
 				}
 			}
-		}
 
-		// item.enchants = getEnchants(aegisName ?? name);
+			if (Array.isArray(item.usableClass) && item.usableClass.length) {
+				item.usableClass = item.usableClass.flatMap(a => a.split(',').map(b => b.replace(/classes/i, ''))) //"Swordman,Merchantclasses"
+			}
+		}
 
 		return item;
 	}
