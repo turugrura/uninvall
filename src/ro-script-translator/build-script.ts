@@ -1,3 +1,7 @@
+import { Logger } from "@nestjs/common";
+
+const logger = new Logger('what_is_context')
+
 const mapAll = {
 	เพิ่มพลังโจมตีทางกายภาพและเวทย์ต่อศัตรูธาตุ: [
 		'p_element_{a}',
@@ -84,13 +88,16 @@ const map = {
 	'long ranged physical damage': 'range',
 	'long range physical': 'range',
 	'longed ranged physical': 'range',
+	'longed physical damage': 'range',
 
 	'เพิ่ม Damage ทางกายภาพระยะใกล้': 'melee',
 	'melee physical': 'melee',
 	'Melee physical': 'melee',
+	'melee physical damage': 'melee',
 
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ': 'p_element_all',
 	'physical damage against all property enemies': 'p_element_all',
+	'physical damage against all property': 'p_element_all',
 	'เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อศัตรูธาตุ Neutral': 'p_element_neutral',
 
 	'physical damage against normal monsters by': 'p_class_normal',
@@ -151,6 +158,8 @@ const map = {
 	'physical damage against dark property': 'p_element_dark',
 	'physical damage against dark': 'p_element_dark',
 	'physical damage against undead property': 'p_element_undead',
+	'physical damage against ghost': 'p_element_ghost',
+	'physical damage against ghost property': 'p_element_ghost',
 
 	'เพิ่ม Damage เมื่อโจมตีมอนสเตอร์ทุกประเภท (ทั่วไป, Boss, Guardian)':
 		'p_class_all',
@@ -224,6 +233,7 @@ const map = {
 	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า': 'm_race_all',
 	'เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า': 'm_race_all',
 	'magical damage against all race': 'm_race_all',
+
 	'neutral property magical': 'm_my_element_neutral',
 	'fire property magical': 'm_my_element_fire',
 	'water property magical': 'm_my_element_water',
@@ -233,6 +243,7 @@ const map = {
 	'holy property magical': 'm_my_element_holy',
 	'dark property magical': 'm_my_element_dark',
 	'undead property magical': 'm_my_element_undead',
+	'ghost property magical': 'm_my_element_ghost',
 
 	'neutral': 'm_my_element_neutral',
 	'fire': 'm_my_element_fire',
@@ -243,6 +254,7 @@ const map = {
 	'holy': 'm_my_element_holy',
 	'dark': 'm_my_element_dark',
 	'undead': 'm_my_element_undead',
+	'ghost': 'm_my_element_ghost',
 
 	'magical damage against neutral property': 'm_element_neutral',
 	'magical damage against neutral': 'm_element_neutral',
@@ -271,6 +283,7 @@ const map = {
 	ลดดีเลย์หลังจากใช้สกิล: 'acd',
 	ลดการดีเลย์หลังร่ายสกิล: 'acd',
 	ลดดีเลย์หลังโจมตีลง: 'acd',
+	'global cooldown': 'acd',
 	'reduces global cooldown': 'acd',
 	'Reduces global cooldown': 'acd',
 
@@ -350,6 +363,7 @@ const map = {
 	Def: 'def',
 	MDEF: 'mdef',
 	Mdef: 'mdef',
+	Flee: 'flee',
 	'C.Rate': 'cRate',
 	Res: 'res',
 	MRes: 'mres',
@@ -373,15 +387,44 @@ const map = {
 	Int: 'int',
 	VIT: 'vit',
 	Vit: 'vit',
+
 	POW: 'pow',
+	Pow: 'pow',
 	STA: 'sta',
+	Sta: 'sta',
 	WIS: 'wis',
+	Wis: 'wis',
 	SPL: 'spl',
+	Spl: 'spl',
 	CON: 'con',
+	Con: 'con',
 	CRT: 'crt',
+	Crt: 'crt',
 	'EXP ที่ได้รับจากมอนสเตอร์': 'exp',
 	เพิ่มค่าประสบการณ์ที่ได้รับ: 'exp',
 	'Item Drop Rate': 'itemDrop',
+
+	'Dragon Breath - Water': 'Dragon Breath - WATER',
+	'Overbrand': 'Over Brand',
+	'Vanishing Point': 'Banishing Point',
+	'Crazy Vines': 'Crazy Weed',
+	'cd__Crazy Vines': 'cd__Crazy Weed',
+	'Fatal Menace': 'Fatal Manace',
+	'Prominence Kick': 'Blaze Kick',
+	'Solar Burst': 'Solar Explosion',
+	'Hammer of God': "God's Hammer",
+	'cd__Hammer of God': "cd__God's Hammer",
+	'Metallic Sound': 'Metalic Sound',
+	'cd__Metallic Sound': 'cd__Metalic Sound',
+	'Falling Star': 'Falling Stars',
+	'Napalm Vulcan Strike': 'Napalm Vulcan',
+	'Hack and Slash': 'Hack and Slasher',
+	'Grenades Dropping': 'Grenade Dropping',
+	'Gates of Hell': 'Hell Gate',
+	'Shattering Storm': 'Shatter Storm',
+	'Second Judge': 'Second Judgement',
+	'dark Dance': 'Shadow Dance',
+	'dark Stab': 'Shadow Stab',
 };
 
 export class BuildScript {
@@ -449,6 +492,9 @@ export class BuildScript {
 			/If the enchanted equipment is grade (\D{1}),*\s*(.+)/i, //If the enchanted equipment is grade D, additional P.Atk + 1 per 20 base POW
 			/\[Grade (\D)\]\s*(.+)/i,
 		],
+		matchGrades: [
+			/if grade of (\D+) is (\D+) or higher, (.+)/i,
+		],
 		toConstants: [
 			/เมื่ออัพเกรด.*ขั้น (\d+)\s*,*\s*(\D+\d+.+)/,
 			/เมื่ออัปเกรดถึงขั้น (\d+)\s*,*\s*(\D+\d+.+)/,
@@ -504,7 +550,10 @@ export class BuildScript {
 		return this._extractedScript.comboes;
 	}
 
+	private isEnchant = false;
+
 	constructor(private rawItemDescription: string, private itemType: string) {
+		this.isEnchant = this.itemType === 'enchant'
 		this.extractItemExpressionTh2(this.rawItemDescription);
 		this.toScripts(
 			this._extractedScript.expressions,
@@ -514,11 +563,6 @@ export class BuildScript {
 
 	private pushFinalScript(scripts: any[], attr: string, txtScript: string) {
 		scripts.push({ [attr]: txtScript });
-		// for (const actualAttr of attr?.split(' and ')) {
-		// 	if (actualAttr) {
-		// 		scripts.push({ [actualAttr]: txtScript });
-		// 	}
-		// }
 	}
 
 	getComboScript(
@@ -541,7 +585,7 @@ export class BuildScript {
 				for (const a of this.getMiniScript(expression)) {
 					scripts.push({
 						actualAttr: `chance__${a.actualAttr}`,
-						bonus: `EQUIP[${comboItem.replace(' and ', '&&')}]===${a.bonus}`,
+						bonus: `EQUIP[${comboItem.replace(' and ', '&&').replace(' or ', '||')}]===${Number(a.bonus)}`,
 					});
 				}
 			}
@@ -561,15 +605,12 @@ export class BuildScript {
 			.trim()
 			.split(',')
 			.map((a) => a.trim());
-		// console.log({ rawExpression, expressions });
 
 		for (const expression of expressions.filter((a) => a.match(/\d/))) {
-			// console.log({ expression });
 			for (const a of this.getMiniScript(expression)) {
-				// console.log({ rawExpression, expression, a });
 				scripts.push({
 					actualAttr: a.actualAttr,
-					bonus: `EQUIP[${combo.replace(' and ', '&&')}]===${a.bonus}`,
+					bonus: `EQUIP[${combo.replace(' and ', '&&')}]===${Number(a.bonus)}`,
 				});
 			}
 		}
@@ -652,23 +693,25 @@ export class BuildScript {
 		const fixCast1 = /ลด\s*(Fixed\D+)\s*(\d+\.*\d*)/;
 		const fixCast2 = /(ลดระยะเวลาร่ายแบบคง\D+)\s*(\d+\.*\d*)/;
 		const baseStatRegex =
-			/(Crimson Rock|Critical Damage|All Talent Stat|all basic status|all triat status|All State|All Status|S.Matk|P.Atk|C.Rate|MATK|FLEE|ATK|DEX|MDEF|DEF|Def|Mres|Res|H.Plus|INT|VIT|AGI|STR|CRI|LUK|POW|STA|WIS|SPL|CON|CRT|Cri|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/i;
+			/(Crimson Rock|Critical Damage|All Talent Stat|all basic status|all triat status|All State|All Status|P.Atk|S.Matk|C.Rate|MATK|FLEE|ATK|DEX|MDEF|DEF|Def|Mres|Res|H.Plus|INT|VIT|AGI|STR|CRI|LUK|POW|STA|WIS|SPL|CON|CRT|Cri|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/i;
 		const constantRegex2 =
 			/(Damage ทางกายภาพระยะไกล|ความเร็วในการโจมตี|Item Drop Rate|EXP ที่ได้รับจากมอนสเตอร์|โอกาสคริติคอล)\D*(\d+)%*/;
-		const engConstantRex1 = /(reduces variable casting time) by (\d+)/i;
+		const engConstantRex1 = /(reduces variable casting time|reduces variable casting time and global cooldown) by (\d+)/i;
 		const engConstantRex2 = /increases(\D+)damage\D+(\d+)%*/i;
-		const engSkill = /[increases]*\s*(\D+)damage\D+(\d+)%*/i;
+		const engSkill = /[increases ]*?(\D+)damage\D+(\d+)%*/i;
 		const engConstantRex5 = /reduces skill (cooldown of \D+)by\D+(\d+\.*\d*)%*/i;
 		const engConstantRex3 =
-			/(increases attack speed \(reduces delay after attack by|increases attack speed|reduces delay after attack by|reduces global cooldown|reduces global cooldown by|Reduces global cooldown by|Perfect Hit|Hit|Cri)\D+(\d+)%*/i;
+			/(increases attack speed \(reduces delay after attack by|Reduce after cast delay|increases attack speed|reduces delay after attack by|reduces global cooldown|reduces global cooldown by|Reduces global cooldown by|Perfect Hit|Hit|Cri)\D+(\d+\.*\d*)%*/i;
 		const engConstantRex4 = /(S.Matk|P.Atk|Matk|Atk)\D*(\d+%*)/i;
 		const engConstantRex6 = /(Dex|Int|Vit|Agi|Str|Luk|POW|STA|WIS|SPL|CON|CRT|Flee)\D*(\d+%*)/i;
 		const engConstantRex7 = /(melee|long ranged[ physical damage]*)\D*(\d+%*)/i;
 		const engConstantRex8 =
-			/(magical damage against all property|magical damage to against all race|physical damage against all property enemies|physical damage to against all race monsters|physical damage against all race|all property magical damage|magical damage against all race|critical damage|magical damage against all size enemies|physical damage against all size)\D*(\d+%*)/i;
+			/(magical damage against all property|magical damage to against all race|physical damage against all property enemies|physical damage to against all race monsters|physical damage against all race|all property magical damage|magical damage against all race|critical damage|magical damage against all size|physical damage against all size)\D*(\d+%*)/i;
 		const engConstantRex8_specific = /(physical damage against normal and boss|magical physical damage against normal and boss|damage against \D+|physical damage against \D+|magical damage against \D+)\D*(\d+%*)/i;
-		const bothBonus = /(physical and magical damage against .+)\D*(\d+%*)/i;
+		const bothBonus = /(physical and magical damage against all property|physical and magical damage against all size)\D+(\d+%*)/i;
 		const engConstantRex9 = /(fixed casting time)\D*(\d\.*\d*)/i;
+		const crimsonSkill = /(Crimson Rock.+?|Crimson Arrow.+?)(?:damage by)? (\d+)%/i;
+
 		// console.log({usableStr, m: usableStr.match(engConstantRex3)})
 		const result = (
 			usableStr.match(fixCast1) ||
@@ -689,11 +732,12 @@ export class BuildScript {
 			usableStr.match(engConstantRex4) ||
 			usableStr.match(engConstantRex5) ||
 			usableStr.match(engSkill) ||
+			usableStr.match(crimsonSkill) ||
 			usableStr.match(baseStatRegex) ||
 			usableStr.match(engConstantRex6)
 		);
 
-		// console.log({usableStr, result})
+		// console.log({ usableStr, result })
 
 		return result
 	}
@@ -723,11 +767,17 @@ export class BuildScript {
 
 	matchGrade(
 		rawExpression: string,
-	): { condition: string; script: string } | undefined {
-		for (const isGradeRegex of this.regex.isGrades) {
-			const [_, grade, restExpr] = rawExpression.match(isGradeRegex) || []
-			if (grade && restExpr) {
-				return { condition: grade, script: restExpr }
+	): Record<string, string>[] | undefined {
+		for (const isGradeRegex of this.regex.matchGrades) {
+			const [_, itemPosition, grade, restExpr] = rawExpression.match(isGradeRegex) || []
+			if (itemPosition && grade && restExpr) { // weapon, C
+				const all = []
+
+				for (const { actualAttr, bonus } of this.getMiniScript(restExpr)) {
+					this.pushFinalScript(all, actualAttr, `GRADE[${itemPosition.toLowerCase()}==${grade.toUpperCase()}]===${Number(bonus)}`)
+				}
+
+				return all
 			}
 		}
 
@@ -801,7 +851,7 @@ export class BuildScript {
 
 		const usableStr = rawExpression.replace(/(ขึ้น)?อีก\s*/, '');
 		const [_raw, attr, bonus] = this.matchBonusScript(usableStr) ?? [];
-		// console.log({rawExpression, attr, bonus})
+		// console.log('getMiniScript954656', { rawExpression, attr, bonus })
 
 		const scripts = [] as any[];
 		if (attr && bonus) {
@@ -825,10 +875,10 @@ export class BuildScript {
 				bonus.includes('%')
 			) {
 				const goodAttr = `${actualAttr}Percent`;
-				return [{ actualAttr: goodAttr, bonus: goodBonus }];
+				return [{ actualAttr: goodAttr, bonus: String(Number(goodBonus)) }];
 			}
 
-			scripts.push({ actualAttr, bonus: goodBonus });
+			scripts.push({ actualAttr, bonus: Number(goodBonus) });
 		}
 
 		return scripts;
@@ -859,9 +909,6 @@ export class BuildScript {
 		if (this.isBuffWhenSkill(scriptStr)) {
 			// console.log({scriptStr})
 			for (const { actualAttr, bonus } of this.getMiniScript(scriptStr)) {
-				// if (actualAttr) {
-				// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
-				// }
 				// console.log('x123', {actualAttr, condition, bonus})
 				this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
 			}
@@ -876,9 +923,6 @@ export class BuildScript {
 				.filter((a) => !!a);
 			for (const ss of scripts) {
 				for (const { actualAttr, bonus } of this.getMiniScript(ss)) {
-					// if (actualAttr) {
-					// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
-					// }
 					// console.log('x1234', {actualAttr, condition, bonus})
 					this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
 				}
@@ -886,22 +930,16 @@ export class BuildScript {
 			if (all.length > 0) return all;
 		}
 
-		// const scripts = this.toManyBonusKey(scriptStr)
-		const scripts = scriptStr.split(/(\D+\d+%*)/g).filter(a => a.match(/\d+/))
+		const scripts = scriptStr.split(/(\D+\d+\.*\d*%*)/g).filter(a => a.match(/\d+/))
 		for (const ss of scripts) {
 			// console.log({ss})
 			for (const { actualAttr, bonus } of this.getMiniScript(ss)) {
-				// console.log({scriptStr, actualAttr, bonus})
-				// if (actualAttr) {
-				// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
-				// }
-				// console.log('x12345', { actualAttr, condition, bonus })
+				console.log('x12345', { ss, actualAttr, condition, bonus })
 				if (condition.startsWith('levelis')) {
 					const lvCondition = condition.replace('levelis', '')
 					this.pushFinalScript(all, actualAttr, `SUM[level==${lvCondition}]===${bonus}`);
 				} else {
 					this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
-
 				}
 			}
 		}
@@ -911,9 +949,6 @@ export class BuildScript {
 		// console.log({checkes})
 		if (Array.isArray(checkes) && checkes.length > 0) {
 			for (const { actualAttr, bonus } of checkes) {
-				// if (actualAttr) {
-				// 	all.push({ [actualAttr]: `${condition}===${bonus}` });
-				// }
 				this.pushFinalScript(all, actualAttr, `${condition}===${bonus}`);
 			}
 
@@ -936,8 +971,9 @@ export class BuildScript {
 	}
 
 	addStepBonus(p: { all: any[], every: string, actualAttr: string, bonus: string }) {
-		const { actualAttr, all, bonus, every } = p;
+		const { actualAttr, all, bonus: _bonus, every } = p;
 		let wasSetBonus = false
+		const bonus = Number(_bonus)
 		for (const rx of this.regex.stepOnOther) {
 			const [_, everyRefine, equipmentPostion] = every.match(rx) || []
 			// console.log({ every, everyRefine, equipmentPostion, actualAttr, bonus });
@@ -968,7 +1004,7 @@ export class BuildScript {
 		// 	bonusScript: 'increases Cart Cannon damage by 10%'
 		// console.log({ every, bonusScript });
 
-		const moreOneBonusScipts = this.toManyBonusKey(bonusScript) //P.Atk + 2, increases melee and long ranged physical damage by 2%.
+		const moreOneBonusScipts = this.toManyBonus(bonusScript) //P.Atk + 2, increases melee and long ranged physical damage by 2%.
 		// console.log({every, bonusScript, moreOneBonusScipts})
 		if (moreOneBonusScipts.every((a) => this.matchBonusScript(a))) {
 			const all: Record<string, string>[] = [];
@@ -1016,7 +1052,6 @@ export class BuildScript {
 		for (const subScript of script.split(',')) {
 			for (const { actualAttr, bonus } of this.getMiniScript(subScript)) {
 				// console.log({xCondition, actualAttr, bonus})
-				// this.pushFinalScript(all, actualAttr, `${xCondition}---${bonus}`);
 				this.addStepBonus({ actualAttr, all, bonus, every: xCondition })
 			}
 		}
@@ -1035,10 +1070,6 @@ export class BuildScript {
 		for (const { actualAttr, bonus } of this.getMiniScript(bonusScript)) {
 			if (!actualAttr) continue
 
-			// if (condition === 'rate') {
-			// 	all.push({ [actualAttr]: `REFINE[${condition}]===${bonus}` });
-			// } else {
-			// }
 			all.push({ [actualAttr]: `REFINE[${condition}]===${bonus}` });
 		}
 
@@ -1200,7 +1231,7 @@ export class BuildScript {
 		for (const ss of splited) {
 			let prevComboCondition = '';
 			let prevCondition = '';
-			const splited2 = ss.replaceAll('\nและ', ',').split('\n');
+			const splited2 = ss.replaceAll('\nและ', ',').split('\n').map(a => a.replace(' additional', '').replace('againt', 'against'));
 
 			for (const ss2 of splited2) {
 				if (ss2.startsWith('Class:')) break
@@ -1215,8 +1246,8 @@ export class BuildScript {
 					ss2.match(/เมื่อติดตั้งร่วมกับ\s*\[(.+)\]/) ??
 					ss2.match(/เมื่อใช้.*กับ\s*(.+),*\s*(ลด.+|เพิ่ม.+|ATK.+|ASPD+.)/) ??
 					ss2.match(/เมื่อใช้.*กับ\s*(.+)/) ??
-					ss2.match(/When equipped with\s*(.+?),/) ??
-					ss2.match(/If the enchanted equipment is (grade \D{1}).+/) ?? // If the enchanted equipment is grade D, additional P.Atk + 1 per 20 base POW
+					ss2.match(/When equipped with\s*(.+?),/i) ??
+					ss2.match(/If the enchanted equipment is (grade \D{1}).+/i) ?? // If the enchanted equipment is grade D, additional P.Atk + 1 per 20 base POW
 					// ss2.match(/Bonus by grade of (\D+)]/i) ??
 					ss2.match(/(Bonus by grade)/i) ??
 					// ss2.match(/\[Grade (.+)/) ??
@@ -1233,9 +1264,9 @@ export class BuildScript {
 					ss2.match(/(ทุก.+Base.+\d+).+/) ??
 					ss2.match(/(เมื่อ.+Base.+\d+).+/) ??
 					ss2.match(/(เมื่อทุกๆ\s*\d+.*หน่วย.+)/) ??
-					ss2.match(/(If refine rate is\s*\d+\s*or higher)/) ??
-					ss2.match(/(If refine rate is.+)/) ??
-					ss2.match(/(\[Grade.+\])/) ??
+					ss2.match(/(If refine rate is\s*\d+\s*or higher)/i) ??
+					ss2.match(/(If refine rate is.+)/i) ??
+					ss2.match(/(\[Grade.+\])/i) ??
 					[];
 
 
@@ -1283,7 +1314,7 @@ export class BuildScript {
 				} else if (curComboCondition) {
 					// console.log({ ss2 });
 				} else {
-					console.log({ '---------': ss2 });
+					console.log({ '- NOTHING MATCH -': ss2 });
 				}
 			}
 		}
@@ -1293,7 +1324,20 @@ export class BuildScript {
 		return this;
 	}
 
-	toManyBonusKey(_prop: string) {
+	toManyKey(_prop: string) {
+		console.log({ _prop })
+		const [_, ph, mag, bonus] = _prop.match(/(physical) and (magical) (.+)/i) || []
+		if (ph && mag && bonus) {
+			return [ph, mag].map(a => `${a} ${bonus}`)
+		}
+
+		return _prop.split(',')
+			.flatMap((a) => a.split(/และ| and /gi))
+			.map((a) => a.trim().replace(/^and/i, ''))
+			.filter((a) => a !== '');
+	}
+
+	toManyBonus(_prop: string) {
 		const regexes = [
 			/(.+) [race]+ [monsters|enemies] by (.+)/i,
 			/(.+) [monsters|enemies]+ by/i,
@@ -1304,29 +1348,50 @@ export class BuildScript {
 		console.log({ prop, dmgType, x })
 		if (dmgType && x) {
 			return dmgType
-				.split(/\s*and\s*/i)
+				.split(/ and /i)
 				.flatMap(s => {
 					for (const rx of regexes) {
 						const [_, monsterTypes, bonusValue] = x.match(rx) || []
 						console.log({ s, monsterTypes, bonusValue })
 						if (monsterTypes && bonusValue) {
-							return monsterTypes.split('and').map(race => `${s} damage against ${race.trim()} ${bonusValue}`)
-						} else if (monsterTypes) { // physical and magical damage against all size enemies by
-							return monsterTypes.split('and').map(type => `${s} damage against ${type.trim()}`)
+							return monsterTypes.split('and').filter(a => a!!.trim()).map(race => `${s} damage against ${race.trim()} ${bonusValue}`)
 						}
+						// else if (monsterTypes) { // physical and magical damage against all size enemies by
+						// 	return monsterTypes.split('and').filter(a => a!!.trim()).map(type => `${s} damage against ${type.trim()}`)
+						// }
 					}
 
 					return `${s} damage against ${x}`
 				})
-				.map(a => a.toLowerCase().replace('size', '').trim())
+				.map(a => a.toLowerCase().trim())
 		}
 
-		const basic = prop.split(',')
-			.flatMap((a) => a.split(/และ|and/))
-			.map((a) => a.trim())
-			.filter((a) => a !== '');
+		// const basic = prop.split(',')
+		// 	.flatMap((a) => a.split(/และ|(\D+\d+%*)/gi))
+		// 	.map((a) => a.trim().replace(/^and/i, ''))
+		// 	.filter((a) => a !== '');
+
+		//Increases Exploding Dragon, Snow Flake Draft and First Wind damage by 15%.'
+		const basic = prop.split(/(\D+\d+\.*\d*%*)/gi)
+			.map((a) => a.trim().replace(/^and/i, '').trim())
+			.filter((a) => a !== '' && a.match(/(\D+\d+%*)/i));
+
+		// [Grade B] P.Atk, S.Matk + 1.
+		const xs = []
+		// for (const b of basic) {
+		// 	const [_, key, bonus] = b.match(/(\D+?)(?:\+)*\s*(\d+\.*\d*%*)/i)
+		// 	const s = key.split(/and|,/).map(a => a.trim())
+		// 	if (s.length <= 1) continue;
+
+		// 	const suffix = (b.includes('damage by ')) ? ' damage by' : '';
+		// 	const prefix = b.includes('Increases ') ? 'Increases ' : ''
+
+		// 	xs.push(...s.map(a => `${prefix}${a.replace('Increases ', '').replace('damage by', '')}${suffix} ${bonus}`))
+		// }
 
 		console.log({ basic })
+
+		if (xs.length) return xs
 
 		return basic
 	}
@@ -1336,8 +1401,8 @@ export class BuildScript {
 		// let currentGrade = ''
 		const addScript = (prop: string, newScript: string) => {
 			// console.log({ prop, newScript });
-			// const gradeScript = !!currentGrade ?  `GRADE[${this.itemType}==${currentGrade}]===` : ''
-			const props = this.toManyBonusKey(prop)
+
+			const props = this.toManyKey(prop)
 			const gradeScript = ''
 			for (const oneProp of props) {
 				if (all[oneProp]) {
@@ -1348,6 +1413,7 @@ export class BuildScript {
 			}
 		};
 
+		logger.debug('--- start ---')
 		console.log({ expressions, comboes });
 
 		for (const _expression of expressions) {
@@ -1367,8 +1433,6 @@ export class BuildScript {
 				}
 			}
 
-			this.regex.toConstants
-
 			if (this.isCombo(expression)) {
 				for (const { actualAttr, bonus } of this.getMiniScript(expression)) {
 					addScript(actualAttr as string, bonus as string);
@@ -1377,11 +1441,12 @@ export class BuildScript {
 				for (const obj of this.toRefineStepBonus(
 					this.matchRefineStepBonus(expression)!,
 				)) {
+					console.log('matchRefineStepBonus123123', { obj })
 					const [prop, newScript] = Object.entries(obj)[0];
 					addScript(prop, newScript);
 				}
 			} else if (this.matchRefineConstantBonus(expression)) {
-				// console.log('matchRefineConstantBonus123123', { expression })
+				console.log('matchRefineConstantBonus123123', { expression })
 				for (const obj of this.toRefineConstantBonus(
 					this.matchRefineConstantBonus(expression)!,
 				)) {
@@ -1389,13 +1454,13 @@ export class BuildScript {
 					addScript(prop, newScript as any);
 				}
 			} else if (this.isLevelStep(expression)) {
-				// console.log({expression})
+				console.log('isLevelStep123123', { expression })
 				for (const obj of this.toLevelStepBonus(expression)) {
 					const [prop, newScript] = Object.entries(obj)[0];
 					addScript(prop, newScript as any);
 				}
 			} else if (this.matchStepBonusStat(expression)) {
-				// console.log('matchStepBonusStat-123', {expression})
+				console.log('matchStepBonusStat123', { expression })
 				for (const obj of this.toRefineStepBonus(
 					this.matchStepBonusStat(expression)!,
 				)) {
@@ -1403,7 +1468,7 @@ export class BuildScript {
 					addScript(prop, newScript as any);
 				}
 			} else if (this.matchBaseBonusStat(expression)) {
-				// console.log({expression})
+				console.log('matchBaseBonusStat123', { expression })
 				for (const obj of this.toRefineConstantBonus(
 					this.matchBaseBonusStat(expression)!,
 				)) {
@@ -1411,14 +1476,14 @@ export class BuildScript {
 					addScript(prop, newScript as any);
 				}
 			} else {
-				// console.log({ expression });
-				for (const s of this.toManyBonusKey(expression)) {
+				console.log('default_match', { expression });
+				for (const s of this.toManyBonus(expression)) {
 					for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
 						const { skillName, skillLv } =
 							this.getLearnedSkillStepCondition(s.trim()) ?? {};
 						let newBonus = bonus;
 						if (skillName) {
-							newBonus = `LEARN_SKILL[${skillName}==${skillLv}]---${newBonus}`;
+							newBonus = `LEARN_SKILL[${skillName}==${skillLv}]---${Number(newBonus)}`;
 						}
 
 						addScript(actualAttr as string, newBonus);
@@ -1435,27 +1500,30 @@ export class BuildScript {
 		// 	'increases Cart Cannon damage by 10% per 2 refine rate of weapon.'
 		// ],
 		// xComboCondition: 'Thanos Sword-AD'
+		logger.debug('--- start combo ---')
 		for (const [comboCondition, _expressions] of Object.entries(comboes)) {
 			let xComboCondition = comboCondition.replace(/,*\s*$/, '').replace(' or ', '||');
 			let prefix = `EQUIP[${xComboCondition}]`
 			// console.log({ comboCondition, _expressions, xComboCondition });
 
-
-			for (const expression of _expressions) {
+			for (const _expression of _expressions) {
 				let refineCombo = 0;
 
 				for (let i = 0; i <= this.regex.isGrades.length; i++) {
 					const isGradeRegex = this.regex.isGrades[i]
-					const [_, grade, restExpr] = expression.match(isGradeRegex) || []
+					const [_, grade, restExpr] = _expression.match(isGradeRegex) || []
 					if (grade && restExpr) {
 						if (i === 0) {
 							prefix = `GRADE[me==${grade}]`
 						} else {
-							prefix = `GRADE[${this.itemType}==${grade}]`
+							const itemType = this.itemType === 'enchant' ? 'weapon' : this.itemType;
+							prefix = `GRADE[${itemType}==${grade}]`
 						}
 						break;
 					}
 				}
+
+				const expression = _expression.replace(/(^\[GRADE\D+] )?/i, '')
 
 				for (const regex of refineComboRegexs) {
 					const [_, refine] = expression.match(regex) ?? [];
@@ -1471,9 +1539,11 @@ export class BuildScript {
 				if (expression.includes('Class:')) break;
 
 				if (this.matchRefineStepBonus(expression)) {
+					console.log('combomatchRefineStepBonus231', { expression })
 					for (const obj of this.toRefineStepBonus(
 						this.matchRefineStepBonus(expression)!,
 					)) {
+						// console.log('matchRefineStepBonus98456', { obj })
 						const [prop, newScript] = Object.entries(obj)[0];
 						addScript(
 							prop,
@@ -1481,13 +1551,25 @@ export class BuildScript {
 						);
 					}
 				} else if (this.matchRefineConstantBonus(expression)) {
+					console.log('combomatchRefineConstantBonus231', { expression })
 					for (const obj of this.toRefineConstantBonus(
 						this.matchRefineConstantBonus(expression)!,
 					)) {
+						// console.log('matchRefineConstantBonus98456', { obj })
 						const [prop, newScript] = Object.entries(obj)[0];
 						addScript(
 							prop,
 							`${prefix}${refineScript}${newScript}`,
+						);
+					}
+				} else if (this.matchGrade(expression)) { //if grade of weapon is C or higher, 
+					console.log('combomatchGrade231', { expression })
+					for (const obj of this.matchGrade(expression)) {
+						// console.log('matchGrade98456', { obj })
+						const [prop, condition] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${condition}`,
 						);
 					}
 				} else if (this.isLevelStep(expression)) {
@@ -1529,11 +1611,12 @@ export class BuildScript {
 						);
 					}
 				} else {
-					for (const s of expression.split(',')) {
+					console.log('default_combo', { expression })
+					for (const s of this.toManyBonus(expression)) {
 						for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
 							addScript(
 								actualAttr as string,
-								`${prefix}${refineScript}===${bonus}`,
+								`${prefix}${refineScript}===${Number(bonus)}`,
 							);
 						}
 					}
@@ -1543,7 +1626,8 @@ export class BuildScript {
 
 		const script: Record<string, string[]> = {};
 		for (const [attr, values] of Object.entries(all)) {
-			for (const goodAttr of this.toAttr(attr)) {
+			// console.log({ attr })
+			for (const goodAttr of attr.split(/\sand\s/gi).map(a => a.trim()).filter(Boolean).flatMap(this.toAttr)) {
 				// console.log({ attr, goodAttr });
 
 				const newValues = values

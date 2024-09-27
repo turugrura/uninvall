@@ -63,6 +63,8 @@ const itemNam = {
 	[ItemSubTypeId.Acc_R]: 'accRight',
 	[ItemSubTypeId.Acc_L]: 'accLeft',
 
+	[ItemSubTypeId.Enchant]: 'enchant',
+
 	[ItemSubTypeId.ShadowShield]: 'shadowShield',
 	[ItemSubTypeId.ShadowBoot]: 'shadowBoot',
 	[ItemSubTypeId.ShadowEarning]: 'shadowEarning',
@@ -95,6 +97,7 @@ interface ItemModel {
 const UsedWordingMap = {
 	fourthClass: '4th',
 	AllJobs: 'all',
+	'All Jobs': 'all',
 	All: 'all',
 	ทุกอาชีพ: 'all',
 } as const;
@@ -524,7 +527,10 @@ export class RoScriptTranslatorService {
 			const wording =
 				this.getTextBetween(description, 'อาชีพที่ใส่ได้ : ^777777') ||
 				this.getTextBetween(description, 'อาชีพ : ^777777') ||
+				this.getTextBetween(description, 'Job: ^777777') ||
 				this.getTextBetween(description, 'Jobs: ^777777');
+
+			console.log({ wording })
 
 			item.usableClass = [
 				UsedWordingMap[wording] || wording?.replaceAll(' ', '')?.replace('classes', '') || UsedWordingMap.ทุกอาชีพ,
