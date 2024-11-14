@@ -3,6 +3,12 @@ import { Logger } from "@nestjs/common";
 const resetLogger = new Logger('-=-=-')
 const logger = new Logger('what_is_context')
 
+interface TranslateScriptResult {
+	actualAttr?: string;
+	bonus?: string;
+	isFinalBonus?: true
+}
+
 const mapAll = {
 	เพิ่มพลังโจมตีทางกายภาพและเวทย์ต่อศัตรูธาตุ: [
 		'p_element_{a}',
@@ -35,6 +41,7 @@ const mapAll = {
 	],
 	'เพิ่ม Damage ต่อศัตรูทุกเผ่า': ['p_race_all', 'm_race_all'],
 	'เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล': ['melee', 'range'],
+	'เพิ่ม Damage ทางกายภาพระยะใกล้andไกล': ['melee', 'range'],
 };
 const mapPrefix = {
 	'เพิ่ม Damage ทางเวทมนตร์ธาตุ': 'm_my_element',
@@ -87,6 +94,8 @@ const map = {
 	'เพิ่ม Damage ทางกายภาพระยะไกลต่อศัตรูทุกประเภท': 'range',
 	'long ranged physical': 'range',
 	'long ranged physical damage': 'range',
+	'long range': 'range',
+	'long ranged': 'range',
 	'long range physical': 'range',
 	'longed ranged physical': 'range',
 	'longed physical damage': 'range',
@@ -102,6 +111,8 @@ const map = {
 	'เพิ่มพลังโจมตีทางกายภาพที่สร้างต่อศัตรูธาตุ Neutral': 'p_element_neutral',
 
 	'physical damage against normal monsters by': 'p_class_normal',
+	'physical damage against normal enemies': 'p_class_normal',
+	'physical damage against boss enemies': 'p_class_boss',
 	'physical damage against boss monsters by': 'p_class_boss',
 
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด': 'p_size_all',
@@ -112,8 +123,11 @@ const map = {
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูขนาดเล็ก': 'p_size_s',
 
 	'physical damage against small': 'p_size_s',
+	'physical damage against small size': 'p_size_s',
 	'physical damage against medium': 'p_size_m',
+	'physical damage against medium size': 'p_size_m',
 	'physical damage against large': 'p_size_l',
+	'physical damage against large size': 'p_size_l',
 
 	'เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ทุกเผ่า': 'p_race_all',
 	'เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า': 'p_race_all',
@@ -191,6 +205,8 @@ const map = {
 	'เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท': 'm_class_all',
 
 	'magical damage against normal monsters by': 'm_class_normal',
+	'magical damage against normal enemies': 'm_class_normal',
+	'magical damage against boss enemies': 'm_class_boss',
 	'magical damage against boss monsters by': 'm_class_boss',
 	'magical damage against boss': 'm_class_boss',
 
@@ -207,8 +223,11 @@ const map = {
 	'เพิ่ม Damage ทางเวทย์ต่อศัตรูขนาดกลาง': 'm_size_m',
 
 	'magical damage against small': 'm_size_s',
+	'magical damage against small size': 'm_size_s',
 	'magical damage against medium': 'm_size_m',
+	'magical damage against medium size': 'm_size_m',
 	'magical damage against large': 'm_size_l',
+	'magical damage against large size': 'm_size_l',
 
 	'magical damage to against all race': 'm_race_all',
 	'magical damage against formless race': 'm_race_formless',
@@ -276,6 +295,8 @@ const map = {
 	'magical damage against dark property': 'm_element_dark',
 	'magical damage against dark': 'm_element_dark',
 	'magical damage against undead property': 'm_element_undead',
+	'magical damage against ghost': 'm_element_ghost',
+	'magical damage against ghost property': 'm_element_ghost',
 
 	'ลด Delay หลังใช้สกิล': 'acd',
 	'ลด Delay หลังใช้สกิลลง': 'acd',
@@ -430,9 +451,13 @@ const map = {
 	'Gates of Hell': 'Hell Gate',
 	'Shattering Storm': 'Shatter Storm',
 	'Second Judge': 'Second Judgement',
+	'dark Flash': 'Shadow Flash',
 	'dark Dance': 'Shadow Dance',
 	'dark Stab': 'Shadow Stab',
+	"Lightning Bolt": 'Lightening Bolt',
 };
+
+const validItemPositions = ['weapon', 'headUpper', 'armor', 'shield', 'garment', 'boot', 'acc']
 
 export class BuildScript {
 	private _scripts = {};
@@ -497,6 +522,8 @@ export class BuildScript {
 		],
 		isGrades: [
 			/If the enchanted equipment is grade (\D{1}),*\s*(.+)/i, //If the enchanted equipment is grade D, additional P.Atk + 1 per 20 base POW
+			/If grade is (\D+) or higher, (.+)/, // If grade is B or higher, the damage is increases by an additional 5%.
+			/If grade of enchanted equipment is (\D{1}) or higher, (.+)/i, // If grade of enchanted equipment is D or higher, Atk + 2%.
 			/If grade of (\D+) is (\D{1}) or higher, (.+)/i, //if grade of armor is A or higher, every 2 refine rate of armor, increases critical damage by 3%.
 			/\[Grade (\D)\]\s*(.+)/i,
 		],
@@ -514,6 +541,7 @@ export class BuildScript {
 			/if the sum of refine rate of set is\s*\d+\s*or higher, (.+)/i,
 		],
 		toConstants2: [/เพิ่ม\s*(.+)\s*เมื่ออัพเกรด\D+(\d+)/],
+		toConstantsOfOther: [/If refine rate of (.+) is (\d+) or higher, (.+)/i], // If refine rate of Madogum-LT is 10 or higher, increases all property magical damage by 10%
 		toEveryBonus: [
 			/(\d+) base (\D+)/i
 		],
@@ -572,14 +600,441 @@ export class BuildScript {
 		);
 	}
 
+	extractItemExpressionTh2(itemDescription: string): this {
+		const splited = itemDescription
+			.replace(/ประเภท :.+/, '')
+			.replaceAll('oncreases', 'Increases')
+			.replaceAll('by an', 'by')
+			.replaceAll('the damage is increases', 'increases')
+			.replaceAll('(the sum of refine rate)', '(the sum of refine rate x 1)')
+			.split('\n\n')
+			.filter(
+				(a) =>
+					this.matchBonusScript(a) ||
+					this.matchRefineConstantBonus(a) ||
+					this.matchRefineStepBonus(a),
+			);
+		// console.log({splitedDoubleSlash: splited})
+
+		const patternNoCombo = this.statePatterns.filter(
+			(a) => !this.patterns.itemSet.includes(a),
+		);
+		const regexConditionNoCombo = new RegExp(
+			patternNoCombo.join('s*.+|') + ' .+',
+		);
+		const regexCombo = new RegExp(this.patterns.itemSet.join(' .+|') + ' .+');
+		// const regexBonus = /(เพิ่ม.*?\d+)|(ลด.*?\d+)|(ATK.*?\d+%?)|(MATK.*?\d+%?)/i
+		const expressions: string[] = [];
+		const comboes: Record<string, string[]> = {};
+		for (const ss of splited) {
+			let prevComboCondition = '';
+			let prevCondition = '';
+			let prevCondition2 = '';
+			let isClearPrevCond2 = true;
+			const splited2 = ss
+				.replaceAll('\r\n', '\n')
+				.replaceAll('\nและ', ',')
+				.replaceAll('/', 'and')
+				.replaceAll('an additional ', '')
+				.split('\n').map(a => a.replace(' additional', '').replace('againt', 'against'))
+				.map(a => a.trim())
+				.filter(a => !!a);
+
+			for (const ss2 of splited2) {
+				if (ss2.startsWith('Class:')) break
+
+				const [_, curComboCondition] =
+					ss2.match(/เมื่อสวมใส่.+กับ\s*(.+),/) ??
+					ss2.match(/เมื่อสวมใส่.+กับ\s*(.+?,)/) ??
+					ss2.match(/เมื่อสวมใส่.+กับ\s*(.+)/) ??
+					ss2.match(/(เมื่อสวมใส่.+)ATK.+/) ??
+					ss2.match(/(เมื่อสวมใส่.+กับ)/) ??
+					// ss2.match(/เมื่อ\s*(.+อัพ.+)/) ??
+					ss2.match(/เมื่อติดตั้งร่วมกับ\s*\[(.+)\]/) ??
+					ss2.match(/เมื่อใช้.*กับ\s*(.+),*\s*(ลด.+|เพิ่ม.+|ATK.+|ASPD+.)/) ??
+					ss2.match(/เมื่อใช้.*กับ\s*(.+)/) ??
+					ss2.match(/When equipped with\s*(.+?),/i) ??
+					ss2.match(/If equipped with (.+)/i) ??
+					ss2.match(/If the enchanted equipment is (grade \D{1}).+/i) ?? // If the enchanted equipment is grade D, additional P.Atk + 1 per 20 base POW
+					ss2.match(/(Bonus by grade)/i) ??
+					// ss2.match(/\[Grade (.+)/) ??
+					[];
+				// console.log({ss2, curComboCondition})
+				const [_a, curCondition] =
+					ss2.match(/(เมื่อขั้นอัพเกรดตั้งแต่ \d+) ขึ้นไป, (.+)/) ??
+					ss2.match(/(เมื่ออัพเกรดตั้งแต่\s*\d+)/) ??
+					ss2.match(/(เมื่ออัพเกรด.+)/) ??
+					ss2.match(/(ทุก ๆ การอัพเกรด\s*\d+\s*ขั้น)/) ??
+					ss2.match(/ถ้าผู้ใช้มีค่า\s*(.+\d+)\s*หรือ.+/) ??
+					ss2.match(/ถ้าผู้ใช้มีค่า\s*(.+)/) ??
+					ss2.match(/(เมื่อ Base.+\d+).+ขึ้นไป/) ??
+					ss2.match(/(\D*Base.+\d+).+ขึ้นไป/) ??
+					ss2.match(/(ทุก.+Base.+\d+).+/) ??
+					ss2.match(/(เมื่อ.+Base.+\d+).+/) ??
+					ss2.match(/(เมื่อทุกๆ\s*\d+.*หน่วย.+)/) ??
+					ss2.match(/(If refine rate is\s*\d+\s*or higher)/i) ??
+					ss2.match(/(If refine rate is.+)/i) ??
+					ss2.match(/(If grade is.+)/i) ??
+					ss2.match(/(\[Grade.+\])/i) ??
+					[];
+
+
+				// console.log({ ss2, curComboCondition, prevComboCondition });
+				if (curComboCondition) {
+					if (
+						!ss2.match(/เมื่อค่าอัพเกรดรวมกัน/) &&
+						!ss2.match(/ค่าอัพเกรดของ.+รวมกัน.+/) &&
+						!ss2.match(/if the sum of refine rate of set is/)
+					) {
+						prevComboCondition = curComboCondition;
+					}
+				} else if (curCondition) {
+					prevCondition = curCondition;
+				}
+
+				const [__, condNeedToMergeLast, newBonus] = ss2.match(/(.+), increases by (\d+\.?\d?)/i) || [] // If grade is B or higher, increases by 5%.
+				isClearPrevCond2 = true;
+
+				console.log({ ss2, curComboCondition, prevComboCondition });
+				if (this.isCombo(ss2) || regexCombo.test(ss2)) {
+					// console.log({combo:ss2})
+					if (this.matchBonusScript(ss2)) {
+						expressions.push(ss2);
+					}
+				} else if (this.matchBonusScript(ss2)) {
+					console.log({ ss2, prevComboCondition })
+					if (prevComboCondition) {
+						if (comboes[prevComboCondition]) {
+							comboes[prevComboCondition].push(ss2);
+						} else {
+							comboes[prevComboCondition] = [ss2];
+						}
+					} else if (prevCondition && !curCondition) {
+						expressions.push(`${prevCondition} ${ss2}`);
+					} else {
+						expressions.push(ss2);
+					}
+				} else if (
+					/เมื่อโจมตี.+มีโอกาส/.test(ss2) &&
+					regexConditionNoCombo.test(ss2)
+				) {
+					expressions.push(ss2);
+				} else if (prevCondition2 && condNeedToMergeLast && newBonus) {
+					expressions.push(`${condNeedToMergeLast}, ${prevCondition2} by ${newBonus}`);
+					isClearPrevCond2 = false;
+				} else {
+					console.log({ '- NOTHING MATCH -': ss2 });
+				}
+
+				if (isClearPrevCond2) {
+					const [_, pureCondition, _bonus] = ss2.match(/(.+) by (\d+\.?\d?)/i) || [] // Increases physical / magical damage against formless race monsters by 5%.
+					prevCondition2 = pureCondition
+				}
+			}
+		}
+
+		this._extractedScript = { expressions, comboes };
+
+		return this;
+	}
+
+	toScripts(expressions: string[], comboes: Record<string, string[]>) {
+		const all: Record<string, string[]> = {};
+		// let currentGrade = ''
+		const addScript = (prop: string, newScript: string) => {
+			// console.log({ prop, newScript });
+
+			const props = this.toManyKey(prop)
+			const gradeScript = ''
+			for (const oneProp of props) {
+				if (all[oneProp]) {
+					all[oneProp].push(`${gradeScript}${newScript}`);
+				} else {
+					all[oneProp] = [`${gradeScript}${newScript}`];
+				}
+			}
+		};
+
+		resetLogger.warn('--- start ---')
+		console.log({ expressions, comboes });
+
+		for (const _expression of expressions) {
+			let expression = _expression
+			let currentGrade = ''
+			for (const isGradeRegex of this.regex.isGrades) {
+				const [_, grade, restExpr] = expression.match(isGradeRegex) || []
+				if (grade && restExpr) {
+					currentGrade = grade;
+					expression = restExpr
+					break;
+				}
+			}
+
+			if (this.isCombo(expression)) {
+				for (const { actualAttr, bonus } of this.getMiniScript(expression)) {
+					addScript(actualAttr as string, bonus as string);
+				}
+			} else if (this.matchRefineStepBonus(expression)) {
+				for (const obj of this.toRefineStepBonus(
+					this.matchRefineStepBonus(expression)!,
+				)) {
+					console.log('matchRefineStepBonus123123', { obj })
+					const [prop, newScript] = Object.entries(obj)[0];
+					addScript(prop, newScript);
+				}
+			} else if (this.matchRefineConstantBonus(expression)) {
+				console.log('matchRefineConstant123123', { expression })
+				for (const obj of this.toRefineConstantBonus(
+					this.matchRefineConstantBonus(expression)!,
+				)) {
+					const [prop, newScript] = Object.entries(obj)[0];
+					addScript(prop, newScript as any);
+				}
+			} else if (this.isLevelStep(expression)) {
+				console.log('isLevelStep123123', { expression })
+				for (const obj of this.toLevelStepBonus(expression)) {
+					const [prop, newScript] = Object.entries(obj)[0];
+					addScript(prop, newScript as any);
+				}
+			} else if (this.matchStepBonusStat(expression)) {
+				console.log('matchStepBonusStat123', { expression })
+				for (const obj of this.toRefineStepBonus(
+					this.matchStepBonusStat(expression)!,
+				)) {
+					const [prop, newScript] = Object.entries(obj)[0];
+					addScript(prop, newScript as any);
+				}
+			} else if (this.matchBaseBonusStat(expression)) {
+				console.log('matchBaseBonusStat123', { expression })
+				for (const obj of this.toRefineConstantBonus(
+					this.matchBaseBonusStat(expression)!,
+				)) {
+					const [prop, newScript] = Object.entries(obj)[0];
+					addScript(prop, newScript as any);
+				}
+			}
+			// else if (this.matchGradeOfBaseItem(expression)) { //if grade of weapon is C or higher, 
+			// 	console.log('matchGradeOfBaseItem231', { expression })
+			// 	for (const obj of this.matchGrade(expression)) {
+			// 		// console.log('matchGradeOfBaseItem98456', { obj })
+			// 		const [prop, newScript] = Object.entries(obj)[0];
+			// 		addScript(prop, newScript as any);
+			// 	}
+			// } 
+			else {
+				console.log('default_match', { expression });
+				for (const s of this.toManyBonus(expression)) {
+					for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
+						const { skillName, skillLv } =
+							this.getLearnedSkillStepCondition(s.trim()) ?? {};
+						let newBonus = bonus;
+						if (skillName) {
+							newBonus = `LEARN_SKILL[${skillName}==${skillLv}]---${Number(newBonus)}`;
+						}
+						if (currentGrade) {
+							addScript(actualAttr, `GRADE[me==${currentGrade}]===${newBonus}`);
+							continue;
+						}
+
+						addScript(actualAttr as string, newBonus);
+					}
+				}
+			}
+		}
+
+		const refineComboRegexs = [
+			/if the sum of refine rate of set is\s*(\d+)\s*or higher, (.+)/,
+		];
+		// comboCondition: 'Thanos Sword-AD',
+		// _expressions: [
+		// 	'increases Cart Cannon damage by 10% per 2 refine rate of weapon.'
+		// ],
+		// xComboCondition: 'Thanos Sword-AD'
+		logger.debug('--- start combo ---')
+		for (const [comboCondition, _expressions] of Object.entries(comboes)) {
+			let xComboCondition = comboCondition.replace(/,*\s*$/, '').replaceAll(' or ', '||').replaceAll(' and ', '&&');
+			let prefix = `EQUIP[${xComboCondition}]`
+			// console.log({ comboCondition, _expressions, xComboCondition });
+
+			for (let _expression of _expressions) {
+				let refineCombo = 0;
+
+				for (let i = 0; i <= this.regex.isGrades.length; i++) {
+					const isGradeRegex = this.regex.isGrades[i]
+					const [_, grade, restExpr, rest2] = _expression.match(isGradeRegex) || []
+					const itemType = this.itemType === 'enchant' ? 'weapon' : 'me';
+					if (grade && restExpr && rest2) {
+						const newGrade = validItemPositions.includes(grade) ? itemType : 'weapon'
+						prefix += `GRADE[${newGrade}==${restExpr}]`
+						_expression = rest2
+					} else if (grade && restExpr) {
+						if (i === 0) {
+							prefix = `GRADE[me==${grade}]`
+						} else {
+							prefix = `GRADE[${itemType}==${grade}]`
+						}
+						break;
+					}
+				}
+
+				const expression = _expression.replace(/(^\[GRADE\D+] )?/i, '')
+
+				for (const regex of refineComboRegexs) {
+					const [_, refine] = expression.match(regex) ?? [];
+					if (refine) {
+						refineCombo = Number(refine);
+						break;
+					}
+				}
+				const refineScript =
+					refineCombo > 0 ? `REFINE[xxx==${refineCombo}]` : '';
+
+				// console.log({ expression });
+				if (expression.includes('Class:')) break;
+
+				if (this.matchRefineStepBonus(expression)) {
+					console.log('combomatchRefineStep231', { expression })
+					for (const obj of this.toRefineStepBonus(
+						this.matchRefineStepBonus(expression)!,
+					)) {
+						// console.log('matchRefineStep98456', { obj })
+						const [prop, newScript] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${newScript}`,
+						);
+					}
+				} else if (this.matchRefineConstantBonus(expression)) {
+					console.log('combomatchRefineConstant231', { expression })
+					for (const obj of this.toRefineConstantBonus(
+						this.matchRefineConstantBonus(expression)!,
+					)) {
+						// console.log('matchRefineConstant98456', { obj })
+						const [prop, newScript] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${newScript}`,
+						);
+					}
+				} else if (this.matchGrade(expression)) { //if grade of weapon is C or higher, 
+					console.log('combomatchGra231', { expression })
+					for (const obj of this.matchGrade(expression)) {
+						// console.log('matchGra98456', { obj })
+						const [prop, condition] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${condition}`,
+						);
+					}
+				} else if (this.isLevelStep(expression)) {
+					for (const obj of this.toLevelStepBonus(expression)) {
+						const [prop, newScript] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${newScript}`,
+						);
+					}
+				} else if (this.matchStepBonusStat(expression)) {
+					for (const obj of this.toRefineStepBonus(
+						this.matchStepBonusStat(expression)!,
+					)) {
+						const [prop, newScript] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${newScript}`,
+						);
+					}
+				} else if (this.matchBaseBonusStat(expression)) {
+					for (const obj of this.toRefineConstantBonus(
+						this.matchBaseBonusStat(expression)!,
+					)) {
+						const [prop, newScript] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${newScript}`,
+						);
+					}
+				} else if (this.matchTotalRefine(expression)) {
+					for (const obj of this.toTotalRefineBonus(
+						this.matchTotalRefine(expression)!,
+					)) {
+						const [prop, newScript] = Object.entries(obj)[0];
+						addScript(
+							prop,
+							`${prefix}${refineScript}${newScript}`,
+						);
+					}
+				} else {
+					console.log('default_combo', { expression })
+					for (const s of this.toManyBonus(expression)) {
+						for (const { actualAttr, bonus, isFinalBonus } of this.getMiniScript(s.trim())) {
+							console.log('default_combo_b', { actualAttr, bonus })
+							if (isFinalBonus) {
+								addScript(
+									actualAttr as string,
+									`${prefix}${refineScript}${bonus}`,
+								);
+								continue;
+							}
+
+							addScript(
+								actualAttr as string,
+								`${prefix}${refineScript}===${Number(bonus)}`,
+							);
+						}
+					}
+				}
+			}
+		}
+
+		const script: Record<string, string[]> = {};
+		for (const [attr, values] of Object.entries(all)) {
+			// console.log({ attr })
+			for (const goodAttr of attr.split(/\sand\s/gi).map(a => a.trim()).filter(Boolean).flatMap(this.toAttr)) {
+				// console.log({ attr, goodAttr });
+
+				const newValues = values
+					.map((a) => a.replace('lv.', 'lv').replace('lv', 'level'))
+					.map((a) => {
+						if (a.startsWith('EQUIP')) {
+							return a.replace(/\s*และ\s*/, '&&').trim();
+						}
+
+						return a;
+					})
+					.map((a) => {
+						const [_, _raw, status, statusCond] =
+							a.match(
+								/(.*?)(str|dex|vit|luk|int|agi|pow|sta|wis|spl|con|crt|lv|level)(\d{1,3})(===|---)(.+)/i,
+							) ?? [];
+
+						// console.log({status, statusCond, sperator, bonus})
+						if (!status || !statusCond) return a;
+
+						return a.replace(
+							`${status}${statusCond}`,
+							`SUM[${status}==${statusCond}]`,
+						);
+					});
+				if (script[goodAttr]) {
+					script[goodAttr].push(...newValues);
+				} else {
+					script[goodAttr] = newValues;
+				}
+			}
+		}
+
+		this._scripts = script;
+
+		return this;
+	}
+
 	private pushFinalScript(scripts: any[], attr: string, txtScript: string) {
 		scripts.push({ [attr]: txtScript });
 	}
 
-	getComboScript(
-		rawExpression: string,
-	): { actualAttr?: string; bonus?: string }[] {
-		const scripts = [] as { actualAttr?: string; bonus?: string }[];
+	getComboScript(rawExpression: string): TranslateScriptResult[] {
+		const scripts = [] as TranslateScriptResult[];
 
 		const autoRegex = /กับ.\s*(.+?)\sเมื่อโจมตี.*(มีโอกาส.*?\s)(.*)/;
 		const [_raw, comboItem, isAuto, chanceScript] =
@@ -615,13 +1070,26 @@ export class BuildScript {
 			.replace(aSetRegex, '')
 			.trim()
 			.split(',')
-			.map((a) => a.trim());
+			.map((a) => a.trim())
+			.filter(a => !!a);
+		console.log('combo_final_expressios', expressions)
 
 		for (const expression of expressions.filter((a) => a.match(/\d/))) {
+			console.log('combo_final_expression', expression)
 			for (const a of this.getMiniScript(expression)) {
+				const comboCondition = `EQUIP[${combo.replace(' and ', '&&').replace(' or ', '||')}]`
+				if (a.isFinalBonus) {
+					scripts.push({
+						actualAttr: a.actualAttr,
+						bonus: `${comboCondition}${a.bonus}`,
+						isFinalBonus: true,
+					});
+					continue;
+				}
+
 				scripts.push({
 					actualAttr: a.actualAttr,
-					bonus: `EQUIP[${combo.replace(' and ', '&&')}]===${Number(a.bonus)}`,
+					bonus: `${comboCondition}===${Number(a.bonus)}`,
 				});
 			}
 		}
@@ -629,10 +1097,8 @@ export class BuildScript {
 		return scripts;
 	}
 
-	getAutoByAtkScript(
-		rawExpression: string,
-	): { actualAttr?: string; bonus?: string }[] {
-		const scripts = [] as { actualAttr?: string; bonus?: string }[];
+	getAutoByAtkScript(rawExpression: string): TranslateScriptResult[] {
+		const scripts = [] as TranslateScriptResult[];
 		const autoRegex = /เมื่อ(.+?)\sมีโอกาส.*ใช้(.*)/;
 		const [_raw, action, chanceScript] = rawExpression.match(autoRegex) ?? [];
 		// console.log({rawExpression})
@@ -665,8 +1131,8 @@ export class BuildScript {
 
 	getAutoBySkillScript(
 		rawExpression: string,
-	): { actualAttr?: string; bonus?: string }[] {
-		const scripts = [] as { actualAttr?: string; bonus?: string }[];
+	): TranslateScriptResult[] {
+		const scripts = [] as TranslateScriptResult[];
 		const { chanceScript, skillName } = this.isBuffWhenSkill(rawExpression)!;
 		// console.log({rawExpression})
 		if (skillName && chanceScript) {
@@ -704,10 +1170,10 @@ export class BuildScript {
 		const fixCast1 = /ลด\s*(Fixed\D+)\s*(\d+\.*\d*)/;
 		const fixCast2 = /(ลดระยะเวลาร่ายแบบคง\D+)\s*(\d+\.*\d*)/;
 		const baseStatRegex =
-			/(Crimson Rock|Critical Damage|All Talent Stat|all basic status|all triat status|All State|All Status|P.Atk|S.Matk|C.Rate|MATK|FLEE|ATK|DEX|MDEF|DEF|Def|Mres|Res|H.Plus|INT|VIT|AGI|STR|CRI|LUK|POW|STA|WIS|SPL|CON|CRT|Cri|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/i;
+			/(Critical Damage.+|All Talent Stat|all basic status|all triat status|All State|All Status|P.Atk\/S.Matk|POW\/SPL|P.Atk|S.Matk|C.Rate|MATK|FLEE|ATK|DEX|MDEF|DEF|Def|Mres|Res|H.Plus|INT|VIT|AGI|STR|CRI|LUK|POW|STA|WIS|SPL|CON|CRT|Cri|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/i;
 		const constantRegex2 =
 			/(Damage ทางกายภาพระยะไกล|ความเร็วในการโจมตี|Item Drop Rate|EXP ที่ได้รับจากมอนสเตอร์|โอกาสคริติคอล)\D*(\d+)%*/;
-		const engConstantRex1 = /(reduces variable casting time|reduces variable casting time and global cooldown) by (\d+)/i;
+		const engConstantRex1 = /(reduces variable casting time|reduces variable casting time and global cooldown|Global Cooldown) by (-*\d+)/i;
 		const engConstantRex2 = /increases(\D+)damage\D+(\d+)%*/i;
 		const engSkill = /[increases ]*?(\D+)damage\D+(\d+)%*/i;
 		const engConstantRex5 = /reduces skill (cooldown of \D+)by\D+(\d+\.*\d*)%*/i;
@@ -722,9 +1188,13 @@ export class BuildScript {
 		const bothBonus = /(physical and magical damage against all property|physical and magical damage against all size|magical damage against boss|physical damage against boss)\D+(\d+%*)/i;
 		const engConstantRex9 = /(fixed casting time)\D*(\d\.*\d*)/i;
 		const crimsonSkill = /(Crimson Rock.+?|Crimson Arrow.+?)(?:damage by)? (\d+)%/i;
+		const inCreasesPercentage = /increases (.+?)(?:damage)? by \((the sum of refine rate x \d+)/i; // increases Explosive Powder damage by (the sum of refine rate x 1)%. // increases Dawn Break damage by (the sum of refine rate x 2)%.
+		const multi = /(melee and long range|critical damage and long ranged|critical damage and melee|long ranged physical damage and all property magical damage|melee physical damage and all property magical)\D*(\d+%*)/i;
 
 		// console.log({usableStr, m: usableStr.match(engConstantRex3)})
 		const result = (
+			usableStr.match(multi) ||
+			usableStr.match(inCreasesPercentage) ||
 			usableStr.match(fixCast1) ||
 			usableStr.match(fixCast2) ||
 			usableStr.match(multiRegex3) ||
@@ -757,7 +1227,7 @@ export class BuildScript {
 		rawExpression: string,
 	): { condition: string; script: string } | undefined {
 		const usable = rawExpression.trim();
-		// console.log('matchRefineConstantBonus154', { rawExpression }) // If refine rate is 9 or higher, increases Arrow Storm damage by 40% and Focused Arrow Strike damage by 20%.
+		// console.log('matchRefineConstan154', { rawExpression }) // If refine rate is 9 or higher, increases Arrow Storm damage by 40% and Focused Arrow Strike damage by 20%.
 		for (const regex of this.regex.toConstants) {
 			const [_raw, condition, script] = usable.match(regex) ?? [];
 			// if (matched?.length >= 2) return matched[1];
@@ -770,6 +1240,12 @@ export class BuildScript {
 			const [_raw, script, condition] = usable.match(regex) ?? [];
 			if (condition && script) {
 				return { condition, script };
+			}
+		}
+		for (const regex of this.regex.toConstantsOfOther) {
+			const [_raw, itemName, refineCondition, bonus] = usable.match(regex) ?? [];
+			if (itemName && refineCondition && bonus) {
+				return { condition: `REFINE[weapon==${refineCondition}]`, script: bonus };
 			}
 		}
 
@@ -863,25 +1339,20 @@ export class BuildScript {
 		return;
 	}
 
-	getMiniScript(
-		rawExpression: string,
-	): { actualAttr?: string; bonus?: string }[] {
-		// if (rawExpression.startsWith('เมื่อใช้ร่วมกับ')) {
-		//   return this.getComboScript(rawExpression.replace('เมื่อใช้ร่วมกับ', ''))
-		// }
+	getMiniScript(rawExpression: string,): TranslateScriptResult[] {
 		if (this.isCombo(rawExpression)) {
 			return this.getComboScript(rawExpression.replace(/เมื่อสวมใส่|When equipped with/i, ''));
 		}
-		// if (this.isAutoByAtk(rawExpression)) {
-		// 	return this.getAutoByAtkScript(rawExpression);
-		// }
-		// if (this.isBuffWhenSkill(rawExpression)) {
-		// 	return this.getAutoBySkillScript(rawExpression);
-		// }
 
 		const usableStr = rawExpression.replace(/(ขึ้น)?อีก\s*/, '');
 		const [_raw, attr, bonus] = this.matchBonusScript(usableStr) ?? [];
 		// console.log('getMiniScript954656', { rawExpression, attr, bonus })
+
+		const sumOfRefineRateWord = 'the sum of refine rate x '
+		if (bonus?.startsWith(sumOfRefineRateWord)) {
+			const b = Number(bonus.replace(sumOfRefineRateWord, ''))
+			return [{ actualAttr: attr, bonus: `REFINE[==1]---${b}`, isFinalBonus: true }]
+		}
 
 		const scripts = [] as any[];
 		if (attr && bonus) {
@@ -1079,7 +1550,7 @@ export class BuildScript {
 
 		// console.log({condition, xCondition, script})
 		const all: Record<string, string>[] = [];
-		for (const subScript of script.split(',')) {
+		for (const subScript of script.split(',').flatMap(a => a.split('/').map(b => b.trim()))) {
 			for (const { actualAttr, bonus } of this.getMiniScript(subScript)) {
 				// console.log({xCondition, actualAttr, bonus})
 				this.addStepBonus({ actualAttr, all, bonus, every: xCondition })
@@ -1229,127 +1700,6 @@ export class BuildScript {
 		return undefined;
 	}
 
-	extractItemExpressionTh2(itemDescription: string): this {
-		const splited = itemDescription
-			.replace(/ประเภท :.+/, '')
-			.replaceAll('oncreases', 'Increases')
-			.replaceAll('by an', 'by')
-			.split('\n\n')
-			.filter(
-				(a) =>
-					this.matchBonusScript(a) ||
-					this.matchRefineConstantBonus(a) ||
-					this.matchRefineStepBonus(a),
-			);
-		// console.log({splitedDoubleSlash: splited})
-
-		const patternNoCombo = this.statePatterns.filter(
-			(a) => !this.patterns.itemSet.includes(a),
-		);
-		const regexConditionNoCombo = new RegExp(
-			patternNoCombo.join('s*.+|') + ' .+',
-		);
-		const regexCombo = new RegExp(this.patterns.itemSet.join(' .+|') + ' .+');
-		// const regexBonus = /(เพิ่ม.*?\d+)|(ลด.*?\d+)|(ATK.*?\d+%?)|(MATK.*?\d+%?)/i
-		const expressions: string[] = [];
-		const comboes: Record<string, string[]> = {};
-		for (const ss of splited) {
-			let prevComboCondition = '';
-			let prevCondition = '';
-			const splited2 = ss.replaceAll('\nและ', ',').split('\n').map(a => a.replace(' additional', '').replace('againt', 'against'));
-
-			for (const ss2 of splited2) {
-				if (ss2.startsWith('Class:')) break
-
-				const [_, curComboCondition] =
-					ss2.match(/เมื่อสวมใส่.+กับ\s*(.+),/) ??
-					ss2.match(/เมื่อสวมใส่.+กับ\s*(.+?,)/) ??
-					ss2.match(/เมื่อสวมใส่.+กับ\s*(.+)/) ??
-					ss2.match(/(เมื่อสวมใส่.+)ATK.+/) ??
-					ss2.match(/(เมื่อสวมใส่.+กับ)/) ??
-					ss2.match(/เมื่อ\s*(.+อัพ.+)/) ??
-					ss2.match(/เมื่อติดตั้งร่วมกับ\s*\[(.+)\]/) ??
-					ss2.match(/เมื่อใช้.*กับ\s*(.+),*\s*(ลด.+|เพิ่ม.+|ATK.+|ASPD+.)/) ??
-					ss2.match(/เมื่อใช้.*กับ\s*(.+)/) ??
-					ss2.match(/When equipped with\s*(.+?),/i) ??
-					ss2.match(/If equipped with (.+)/i) ??
-					ss2.match(/If the enchanted equipment is (grade \D{1}).+/i) ?? // If the enchanted equipment is grade D, additional P.Atk + 1 per 20 base POW
-					// ss2.match(/Bonus by grade of (\D+)]/i) ??
-					ss2.match(/(Bonus by grade)/i) ??
-					// ss2.match(/\[Grade (.+)/) ??
-					[];
-				// console.log({ss2, curComboCondition})
-				const [_a, curCondition] =
-					ss2.match(/(เมื่ออัพเกรดตั้งแต่\s*\d+)/) ??
-					ss2.match(/(เมื่ออัพเกรด.+)/) ??
-					ss2.match(/(ทุก ๆ การอัพเกรด\s*\d+\s*ขั้น)/) ??
-					ss2.match(/ถ้าผู้ใช้มีค่า\s*(.+\d+)\s*หรือ.+/) ??
-					ss2.match(/ถ้าผู้ใช้มีค่า\s*(.+)/) ??
-					ss2.match(/(เมื่อ Base.+\d+).+ขึ้นไป/) ??
-					ss2.match(/(\D*Base.+\d+).+ขึ้นไป/) ??
-					ss2.match(/(ทุก.+Base.+\d+).+/) ??
-					ss2.match(/(เมื่อ.+Base.+\d+).+/) ??
-					ss2.match(/(เมื่อทุกๆ\s*\d+.*หน่วย.+)/) ??
-					ss2.match(/(If refine rate is\s*\d+\s*or higher)/i) ??
-					ss2.match(/(If refine rate is.+)/i) ??
-					ss2.match(/(\[Grade.+\])/i) ??
-					[];
-
-
-				// console.log({ ss2, curComboCondition, prevComboCondition });
-				if (curComboCondition) {
-					if (
-						!ss2.match(/เมื่อค่าอัพเกรดรวมกัน/) &&
-						!ss2.match(/ค่าอัพเกรดของ.+รวมกัน.+/) &&
-						!ss2.match(/if the sum of refine rate of set is/)
-					) {
-						prevComboCondition = curComboCondition;
-					}
-				} else if (curCondition) {
-					prevCondition = curCondition;
-				}
-
-				// if (ss2.toLowerCase().includes('bonus by grade')) {
-				// 	prevComboCondition = ''
-				// }
-
-				// console.log({ss2})
-				if (this.isCombo(ss2) || regexCombo.test(ss2)) {
-					// console.log({combo:ss2})
-					if (this.matchBonusScript(ss2)) {
-						expressions.push(ss2);
-					}
-				} else if (this.matchBonusScript(ss2)) {
-					// console.log({ss2, prevComboCondition})
-					if (prevComboCondition) {
-						if (comboes[prevComboCondition]) {
-							comboes[prevComboCondition].push(ss2);
-						} else {
-							comboes[prevComboCondition] = [ss2];
-						}
-					} else if (prevCondition && !curCondition) {
-						expressions.push(`${prevCondition} ${ss2}`);
-					} else {
-						expressions.push(ss2);
-					}
-				} else if (
-					/เมื่อโจมตี.+มีโอกาส/.test(ss2) &&
-					regexConditionNoCombo.test(ss2)
-				) {
-					expressions.push(ss2);
-				} else if (curComboCondition) {
-					// console.log({ ss2 });
-				} else {
-					console.log({ '- NOTHING MATCH -': ss2 });
-				}
-			}
-		}
-
-		this._extractedScript = { expressions, comboes };
-
-		return this;
-	}
-
 	toManyKey(_prop: string) {
 		console.log({ _prop })
 		const [_, ph, mag, bonus] = _prop.replaceAll(' monsters by', '').match(/(physical) and (magical) (.+)/i) || []
@@ -1358,8 +1708,8 @@ export class BuildScript {
 		}
 
 		return _prop.split(',')
-			.flatMap((a) => a.split(/และ| and /gi))
-			.map((a) => a.trim().replace(/^and/i, ''))
+			.flatMap((a) => a.split(/\/|และ| and /gi))
+			.map((a) => a.replace(' monsters by', '').trim().replace(/^and/i, ''))
 			.filter((a) => a !== '');
 	}
 
@@ -1421,287 +1771,6 @@ export class BuildScript {
 		if (xs.length) return xs
 
 		return basic
-	}
-
-	toScripts(expressions: string[], comboes: Record<string, string[]>) {
-		const all: Record<string, string[]> = {};
-		// let currentGrade = ''
-		const addScript = (prop: string, newScript: string) => {
-			// console.log({ prop, newScript });
-
-			const props = this.toManyKey(prop)
-			const gradeScript = ''
-			for (const oneProp of props) {
-				if (all[oneProp]) {
-					all[oneProp].push(`${gradeScript}${newScript}`);
-				} else {
-					all[oneProp] = [`${gradeScript}${newScript}`];
-				}
-			}
-		};
-
-		resetLogger.warn('--- start ---')
-		console.log({ expressions, comboes });
-
-		for (const _expression of expressions) {
-			let expression = _expression
-			let currentGrade = ''
-			for (const isGradeRegex of this.regex.isGrades) {
-				const [_, grade, restExpr] = expression.match(isGradeRegex) || []
-				if (grade && restExpr) {
-					currentGrade = grade;
-					expression = restExpr
-					break;
-				}
-			}
-
-			if (this.isCombo(expression)) {
-				for (const { actualAttr, bonus } of this.getMiniScript(expression)) {
-					addScript(actualAttr as string, bonus as string);
-				}
-			} else if (this.matchRefineStepBonus(expression)) {
-				for (const obj of this.toRefineStepBonus(
-					this.matchRefineStepBonus(expression)!,
-				)) {
-					console.log('matchRefineStepBonus123123', { obj })
-					const [prop, newScript] = Object.entries(obj)[0];
-					addScript(prop, newScript);
-				}
-			} else if (this.matchRefineConstantBonus(expression)) {
-				console.log('matchRefineConstantBonus123123', { expression })
-				for (const obj of this.toRefineConstantBonus(
-					this.matchRefineConstantBonus(expression)!,
-				)) {
-					const [prop, newScript] = Object.entries(obj)[0];
-					addScript(prop, newScript as any);
-				}
-			} else if (this.isLevelStep(expression)) {
-				console.log('isLevelStep123123', { expression })
-				for (const obj of this.toLevelStepBonus(expression)) {
-					const [prop, newScript] = Object.entries(obj)[0];
-					addScript(prop, newScript as any);
-				}
-			} else if (this.matchStepBonusStat(expression)) {
-				console.log('matchStepBonusStat123', { expression })
-				for (const obj of this.toRefineStepBonus(
-					this.matchStepBonusStat(expression)!,
-				)) {
-					const [prop, newScript] = Object.entries(obj)[0];
-					addScript(prop, newScript as any);
-				}
-			} else if (this.matchBaseBonusStat(expression)) {
-				console.log('matchBaseBonusStat123', { expression })
-				for (const obj of this.toRefineConstantBonus(
-					this.matchBaseBonusStat(expression)!,
-				)) {
-					const [prop, newScript] = Object.entries(obj)[0];
-					addScript(prop, newScript as any);
-				}
-			}
-			// else if (this.matchGradeOfBaseItem(expression)) { //if grade of weapon is C or higher, 
-			// 	console.log('matchGradeOfBaseItem231', { expression })
-			// 	for (const obj of this.matchGrade(expression)) {
-			// 		// console.log('matchGradeOfBaseItem98456', { obj })
-			// 		const [prop, newScript] = Object.entries(obj)[0];
-			// 		addScript(prop, newScript as any);
-			// 	}
-			// } 
-			else {
-				console.log('default_match', { expression });
-				for (const s of this.toManyBonus(expression)) {
-					for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
-						const { skillName, skillLv } =
-							this.getLearnedSkillStepCondition(s.trim()) ?? {};
-						let newBonus = bonus;
-						if (skillName) {
-							newBonus = `LEARN_SKILL[${skillName}==${skillLv}]---${Number(newBonus)}`;
-						}
-						if (currentGrade) {
-							addScript(actualAttr, `GRADE[me==${currentGrade}]===${newBonus}`);
-							continue;
-						}
-
-						addScript(actualAttr as string, newBonus);
-					}
-				}
-			}
-		}
-
-		const refineComboRegexs = [
-			/if the sum of refine rate of set is\s*(\d+)\s*or higher, (.+)/,
-		];
-		// comboCondition: 'Thanos Sword-AD',
-		// _expressions: [
-		// 	'increases Cart Cannon damage by 10% per 2 refine rate of weapon.'
-		// ],
-		// xComboCondition: 'Thanos Sword-AD'
-		logger.debug('--- start combo ---')
-		for (const [comboCondition, _expressions] of Object.entries(comboes)) {
-			let xComboCondition = comboCondition.replace(/,*\s*$/, '').replaceAll(' or ', '||').replaceAll(' and ', '&&');
-			let prefix = `EQUIP[${xComboCondition}]`
-			// console.log({ comboCondition, _expressions, xComboCondition });
-
-			for (let _expression of _expressions) {
-				let refineCombo = 0;
-
-				for (let i = 0; i <= this.regex.isGrades.length; i++) {
-					const isGradeRegex = this.regex.isGrades[i]
-					const [_, grade, restExpr, rest2] = _expression.match(isGradeRegex) || []
-					if (grade && restExpr && rest2) {
-						prefix += `GRADE[${grade}==${restExpr}]`
-						_expression = rest2
-					} else if (grade && restExpr) {
-						if (i === 0) {
-							prefix = `GRADE[me==${grade}]`
-						} else {
-							const itemType = this.itemType === 'enchant' ? 'weapon' : this.itemType;
-							prefix = `GRADE[${itemType}==${grade}]`
-						}
-						break;
-					}
-				}
-
-				const expression = _expression.replace(/(^\[GRADE\D+] )?/i, '')
-
-				for (const regex of refineComboRegexs) {
-					const [_, refine] = expression.match(regex) ?? [];
-					if (refine) {
-						refineCombo = Number(refine);
-						break;
-					}
-				}
-				const refineScript =
-					refineCombo > 0 ? `REFINE[xxx==${refineCombo}]` : '';
-
-				// console.log({ expression });
-				if (expression.includes('Class:')) break;
-
-				if (this.matchRefineStepBonus(expression)) {
-					console.log('combomatchRefineStepBonus231', { expression })
-					for (const obj of this.toRefineStepBonus(
-						this.matchRefineStepBonus(expression)!,
-					)) {
-						// console.log('matchRefineStepBonus98456', { obj })
-						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(
-							prop,
-							`${prefix}${refineScript}${newScript}`,
-						);
-					}
-				} else if (this.matchRefineConstantBonus(expression)) {
-					console.log('combomatchRefineConstantBonus231', { expression })
-					for (const obj of this.toRefineConstantBonus(
-						this.matchRefineConstantBonus(expression)!,
-					)) {
-						// console.log('matchRefineConstantBonus98456', { obj })
-						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(
-							prop,
-							`${prefix}${refineScript}${newScript}`,
-						);
-					}
-				} else if (this.matchGrade(expression)) { //if grade of weapon is C or higher, 
-					console.log('combomatchGrade231', { expression })
-					for (const obj of this.matchGrade(expression)) {
-						// console.log('matchGrade98456', { obj })
-						const [prop, condition] = Object.entries(obj)[0];
-						addScript(
-							prop,
-							`${prefix}${refineScript}${condition}`,
-						);
-					}
-				} else if (this.isLevelStep(expression)) {
-					for (const obj of this.toLevelStepBonus(expression)) {
-						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(
-							prop,
-							`${prefix}${refineScript}${newScript}`,
-						);
-					}
-				} else if (this.matchStepBonusStat(expression)) {
-					for (const obj of this.toRefineStepBonus(
-						this.matchStepBonusStat(expression)!,
-					)) {
-						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(
-							prop,
-							`${prefix}${refineScript}${newScript}`,
-						);
-					}
-				} else if (this.matchBaseBonusStat(expression)) {
-					for (const obj of this.toRefineConstantBonus(
-						this.matchBaseBonusStat(expression)!,
-					)) {
-						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(
-							prop,
-							`${prefix}${refineScript}${newScript}`,
-						);
-					}
-				} else if (this.matchTotalRefine(expression)) {
-					for (const obj of this.toTotalRefineBonus(
-						this.matchTotalRefine(expression)!,
-					)) {
-						const [prop, newScript] = Object.entries(obj)[0];
-						addScript(
-							prop,
-							`${prefix}${refineScript}${newScript}`,
-						);
-					}
-				} else {
-					console.log('default_combo', { expression })
-					for (const s of this.toManyBonus(expression)) {
-						for (const { actualAttr, bonus } of this.getMiniScript(s.trim())) {
-							addScript(
-								actualAttr as string,
-								`${prefix}${refineScript}===${Number(bonus)}`,
-							);
-						}
-					}
-				}
-			}
-		}
-
-		const script: Record<string, string[]> = {};
-		for (const [attr, values] of Object.entries(all)) {
-			// console.log({ attr })
-			for (const goodAttr of attr.split(/\sand\s/gi).map(a => a.trim()).filter(Boolean).flatMap(this.toAttr)) {
-				// console.log({ attr, goodAttr });
-
-				const newValues = values
-					.map((a) => a.replace('lv.', 'lv').replace('lv', 'level'))
-					.map((a) => {
-						if (a.startsWith('EQUIP')) {
-							return a.replace(/\s*และ\s*/, '&&').trim();
-						}
-
-						return a;
-					})
-					.map((a) => {
-						const [_, _raw, status, statusCond] =
-							a.match(
-								/(.*?)(str|dex|vit|luk|int|agi|pow|sta|wis|spl|con|crt|lv|level)(\d{1,3})(===|---)(.+)/i,
-							) ?? [];
-
-						// console.log({status, statusCond, sperator, bonus})
-						if (!status || !statusCond) return a;
-
-						return a.replace(
-							`${status}${statusCond}`,
-							`SUM[${status}==${statusCond}]`,
-						);
-					});
-				if (script[goodAttr]) {
-					script[goodAttr].push(...newValues);
-				} else {
-					script[goodAttr] = newValues;
-				}
-			}
-		}
-
-		this._scripts = script;
-
-		return this;
 	}
 
 	toAttr(rawAttr: string): string[] {

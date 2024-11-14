@@ -92,6 +92,8 @@ interface ItemModel {
 	compositionPos: number;
 	enchants: [null, string[], string[], string[]];
 	script?: any;
+	usableClass: string[];
+	canGrade: boolean;
 }
 
 const UsedWordingMap = {
@@ -281,13 +283,15 @@ export class RoScriptTranslatorService {
 	sync<T extends { id: number } & ItemModel>(updatedItems: T[]) {
 		const path = this.baseItemFilePath;
 		const fileContent = fs.readFileSync(path, { encoding: 'utf8' });
-		const currentData = JSON.parse(fileContent);
+		const currentData = JSON.parse(fileContent) as Record<number, ItemModel>;
 		for (const updatedItem of updatedItems) {
 			const bkItemTypeId = currentData[updatedItem.id]?.itemTypeId;
 			const bkItemSubTypeId = currentData[updatedItem.id]?.itemSubTypeId;
+			const bkAegis = currentData[updatedItem.id]?.aegisName;
+			const bkUsable = currentData[updatedItem.id]?.usableClass;
 			currentData[updatedItem.id] = {
 				...(currentData[updatedItem.id] ?? {}),
-				...this.addExtra(updatedItem as any),
+				...this.addExtra(updatedItem as any) as any,
 			};
 
 			if (!currentData[updatedItem.id]?.script && !updatedItem.script) {
@@ -311,6 +315,12 @@ export class RoScriptTranslatorService {
 			}
 			if (bkItemSubTypeId) {
 				currentData[updatedItem.id].itemSubTypeId = bkItemSubTypeId;
+			}
+			if (bkAegis) {
+				currentData[updatedItem.id].aegisName = bkAegis;
+			}
+			if (bkUsable) {
+				currentData[updatedItem.id].usableClass = bkUsable;
 			}
 		}
 		const s = JSON.stringify(currentData, undefined, 2);
@@ -408,7 +418,6 @@ export class RoScriptTranslatorService {
 	private addExtra(
 		item: ItemAPIModel & {
 			x?: Partial<ItemAPIModel>;
-			enchants: any[];
 			usableClass: string[];
 			canGrade: boolean;
 		},
