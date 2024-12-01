@@ -46444,7 +46444,7 @@
     "name": "Durable Weapon Shadow",
     "unidName": "Shadow Weapon",
     "resName": "웨폰쉐도우3",
-    "description": "Increases melee and long ranged physical damage by 2%.\nAtk + 1% per 2 refine rate.\nIf refine rate is 9 or higher, ASPD + 1.\nIf refine rate is 10 or higher, increases melee and long ranged physical damage by 7%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^77777799^000000\nJobs: ^777777All^000000",
+    "description": "ถุงมือที่ใช้สวมใส่บนมือข้างที่ถืออาวุธ ช่วยดึงศักยภาพที่ซ่อนอยู่ของผู้สวมใส่ออกมา\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 2%\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 1%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 1\nเมื่ออัพเกรดถึงขั้น 10, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 280,
@@ -46465,6 +46465,43 @@
       "matk": [
         "1---1"
       ],
+      "melee": [
+        "2",
+        "10===7"
+      ],
+      "range": [
+        "2",
+        "10===7"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "aspd": [
+        "9===1"
+      ]
+    }
+  },
+  "24735": {
+    "id": 24735,
+    "aegisName": "S_Durable_Shield",
+    "name": "Durable Shield Shadow",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우3",
+    "description": "โล่ขนาดเล็กที่สามารถสวมใส่บนแขนเพื่อเพิ่มประสิทธิภาพในการป้องกัน สามารถใช้งานเดี่ยว ๆ ได้ แต่ประสิทธิภาพในการป้องกันจะน้อยกว่า\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 2%\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 1%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 1\nเมื่ออัพเกรดถึงขั้น 10, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
       "melee": [
         "2",
         "10===7"
@@ -66405,6 +66442,35 @@
       ]
     }
   },
+  "102803": {
+    "id": 102803,
+    "aegisName": "Force_Booster",
+    "name": "Force Booster",
+    "unidName": "Force Booster",
+    "resName": "ForceBooster",
+    "description": "ยาฟื้นฟูที่ช่วยเพิ่มพูนพลังทางโจมตีทางเวทมนตร์, พลังโจมตีทางกายภาพ และสเตตัสพิเศษออกมา\nAll Trait State + 5, P.ATK + 10, S.MATK + 10 เป็นเวลา 30 นาที\n^000088เมื่อตัวละครอยู่ในสถานะไม่สามารถต่อสู้ได้ บัฟของไอเท็มจะหายไป^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 3,
+    "itemSubTypeId": 768,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "allTrait": [
+        "5"
+      ],
+      "pAtk": [
+        "10"
+      ],
+      "sMatk": [
+        "10"
+      ]
+    }
+  },
   "300001": {
     "id": 300001,
     "aegisName": "Poisonous_Card",
@@ -82419,6 +82485,30 @@
       ]
     }
   },
+  "310658": {
+    "id": 310658,
+    "aegisName": "MinorCast_Robe_D",
+    "name": "Minor Fixed Cast Reduction (Dual)",
+    "unidName": "Minor Fixed Cast Reduction (Dual)",
+    "resName": "태양신의상징",
+    "description": "ลดระยะเวลาร่ายแบบคงที่ 0.1 วินาที\nเมื่อใช้งานร่วมกับ Minor Casting Stone (Garment), ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 76,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "0.1",
+        "EQUIP[Minor Fixed Cast Reduction]===0.3"
+      ]
+    }
+  },
   "310659": {
     "id": 310659,
     "aegisName": "Cast_Robe_D",
@@ -82442,6 +82532,32 @@
       ],
       "fct": [
         "EQUIP[Variable Cast Reduction Garment]===0.5"
+      ]
+    }
+  },
+  "310660": {
+    "id": 310660,
+    "aegisName": "Range_Robe_D",
+    "name": "Range Stone (Dual)",
+    "unidName": "Range Stone (Dual)",
+    "resName": "용의보주_황",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่อใช้งานร่วมกับ Range Stone (Upper), เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 2%\nเมื่อใช้งานร่วมกับ Range Stone (Middle), เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 2%\nเมื่อใช้งานร่วมกับ Range Stone (Lower), เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 2%",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 76,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "4",
+        "EQUIP[Range Stone (Upper)]===2",
+        "EQUIP[Range Stone (Middle)]===2",
+        "EQUIP[Range Stone (Lower)]===2"
       ]
     }
   },
@@ -85115,7 +85231,7 @@
     "name": "Rune Knight Stone (Upper)",
     "unidName": "Rune Knight Stone (Upper)",
     "resName": "Lord_Knight_Figure",
-    "description": "Increases critical damage by 2% per each level of Dragon Training user learned.\nWhen equipped with Rune Knight Stone (Garment), reduces variable casting time by 10%.\nWhen equipped with Rune Knight Stone II (Garment), increases Hundred Spears damage by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Dragon Training 1 เลเวล, Critical Damage + 2%\nเมื่อใช้งานร่วมกับ Rune Knight Stone (Garment), ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่อใช้งานร่วมกับ Rune Knight Stone II (Garment), เพิ่ม Damage สกิล Hundred Spears 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 71,
@@ -85144,7 +85260,7 @@
     "name": "Rune Knight Stone (Middle)",
     "unidName": "Rune Knight Stone (Middle)",
     "resName": "Lord_Knight_Figure",
-    "description": "Increases melee and long ranged physical damage by 1% per 2 levels of Rune Mastery user learned.\nWhen equipped with Rune Knight Stone (Garment), increases Dragon Breath and Dragon Breath - Water damage by 15%.\nWhen equipped with Rune Knight Stone II (Garment), increases Sonic Wave damage by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Rune Mastery 2 เลเวล, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 1%\nเมื่อใช้งานร่วมกับ Rune Knight Stone (Garment), เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - Water 15%\nเมื่อใช้งานร่วมกับ Rune Knight Stone II (Garment), เพิ่ม Damage สกิล Sonic Wave 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 72,
@@ -85179,7 +85295,7 @@
     "name": "Rune Knight Stone (Lower)",
     "unidName": "Rune Knight Stone (Lower)",
     "resName": "Lord_Knight_Figure",
-    "description": "Increases Wind Cutter damage by 5% per each level of Enchant Blade user learned.\nWhen equipped with Rune Knight Stone (Garment), MaxHP/MaxSP + 10%.\nWhen equipped with Rune Knight Stone II (Garment), increases Ignition Break damage by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Enchant Blade 1 เลเวล, เพิ่ม Damage สกิล Wind Cutter 5%\nเมื่อใช้งานร่วมกับ Rune Knight Stone (Garment), MHP/MSP + 10%.\nเมื่อใช้งานร่วมกับ Rune Knight Stone II (Garment), เพิ่ม Damage สกิล Ignition Break 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 73,
@@ -85211,7 +85327,7 @@
     "name": "Warlock Stone (Upper)",
     "unidName": "Warlock Stone (Upper)",
     "resName": "High_Wizard_Figure",
-    "description": "Increases all property magical damage by 2% per each level of Soul Expansion user learned.\nWhen equipped with Warlock Stone (Garment), increases Soul Expansion damage by 15%.\nWhen equipped with Warlock Stone II (Garment), increases Jack Frost damage by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Soul Expansion 1 เลเวล, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 2%\nเมื่อใช้งานร่วมกับ Warlock Stone (Garment), เพิ่ม Damage สกิล Soul Expansion 15%\nเมื่อใช้งานร่วมกับ Warlock Stone II (Garment), เพิ่ม Damage สกิล Jack Frost 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 71,
@@ -85240,7 +85356,7 @@
     "name": "Warlock Stone (Middle)",
     "unidName": "Warlock Stone (Middle)",
     "resName": "High_Wizard_Figure",
-    "description": "Reduces fixed casting time by 0.1 seconds per each level of Comet user learned.\nWhen equipped with Warlock Stone (Garment), increases Crimson Rock damage by 15%.\nWhen equipped with Warlock Stone II (Garment), increases Jack Frost damage by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Comet 1 เลเวล, ลดระยะเวลาร่ายแบบคงที่ 0.1 วินาที\nเมื่อใช้งานร่วมกับ Warlock Stone (Garment), เพิ่ม Damage สกิล Crimson Rock 15%\nเมื่อใช้งานร่วมกับ Warlock Stone II (Garment), เพิ่ม Damage สกิล Jack Frost 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 72,
@@ -85269,7 +85385,7 @@
     "name": "Warlock Stone (Lower)",
     "unidName": "Warlock Stone (Lower)",
     "resName": "High_Wizard_Figure",
-    "description": "Reduces global cooldown by 1% per each level of Chain Lightning user learned.\nWhen equipped with Warlock Stone (Garment), increases Chain Lightning damage by 15%.\nWhen equipped with Warlock Stone II (Garment), increases Comet damage by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Chain Lightning 1 เลเวล, Global Cooldown - 1%\nเมื่อใช้งานร่วมกับ Warlock Stone (Garment), เพิ่ม Damage สกิล Chain Lightning 15%\nเมื่อใช้งานร่วมกับ Warlock Stone II (Garment), เพิ่ม Damage สกิล Comet 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 73,
@@ -85298,7 +85414,7 @@
     "name": "Royal Guard Stone (Upper)",
     "unidName": "Royal Guard Stone (Upper)",
     "resName": "Paladin_Figure",
-    "description": "Reduces fixed casting time by 0.1 seconds per each level of Inspiration user learned.\r\nWhen equipped with Royal Guard Stone (Garment), increases Cannon Spear damage by 15%.\r\nWhen equipped with Royal Guard Stone II (Garment), increases Genesis Ray damage by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Inspiration 1 เลเวล, ลดระยะเวลาร่ายแบบคงที่ 0.1 วินาที\nเมื่อใช้งานร่วมกับ Royal Guard Stone (Garment), เพิ่ม Damage สกิล Cannon Spear 15%\nเมื่อใช้งานร่วมกับ Royal Guard Stone II (Garment), เพิ่ม Damage สกิล Genesis Ray 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 71,
@@ -85325,9 +85441,9 @@
     "id": 310888,
     "aegisName": "Royalguard_Middle3",
     "name": "Royal Guard Stone (Middle)",
-    "unidName": "Royal Guard Stone (Middle)",
+    "unidName": "Royal Guard Stone (Middle))",
     "resName": "Paladin_Figure",
-    "description": "Increases long ranged physical damage and all property magical damage by 2% per each level of Piety user learned.\nWhen equipped with Royal Guard Stone (Garment), increases Vanishing Point damage by 15%.\nWhen equipped with Royal Guard Stone II (Garment), reduces SP consumption of Genesis Ray by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Piety 1 เลเวล, เพิ่ม Damage ทางกายภาพระยะไกล, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 2%\nเมื่อใช้งานร่วมกับ Royal Guard Stone (Garment), เพิ่ม Damage สกิล Vanishing Point 15%\nเมื่อใช้งานร่วมกับ Royal Guard Stone II (Garment), ลดปริมาณ SP ที่ใช้ของสกิล Genesis Ray 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 72,
@@ -85356,7 +85472,7 @@
     "name": "Royal Guard Stone (Lower)",
     "unidName": "Royal Guard Stone (Lower)",
     "resName": "Paladin_Figure",
-    "description": "Increases Overbrand damage by 5% per each level of Moonslasher user learned.\nWhen equipped with Royal Guard Stone (Garment), increases Cannon Spear damage by 15%.\nWhen equipped with Royal Guard Stone II (Garment), increases magical damage against all size enemies by 15%.",
+    "description": "ทุก ๆ การอัพสกิล Moon Slasher 1 เลเวล, เพิ่ม Damage สกิล Overbrand 5%\nเมื่อใช้งานร่วมกับ Royal Guard Stone (Garment), เพิ่ม Damage สกิล Cannon Spear 15%\nเมื่อใช้งานร่วมกับ Royal Guard Stone II (Garment), เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 73,
@@ -123803,6 +123919,615 @@
       ]
     }
   },
+  "313712": {
+    "id": 313712,
+    "aegisName": "Thanos_Melee1",
+    "name": "Thanos Spell (Warrior) Lv.1",
+    "unidName": "Thanos Spell (Warrior) Lv.1",
+    "resName": "Wolf_Orb_Ov_Str",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Greatsword-AD,\nเพิ่ม Damage สกิล Wind Cutter, Servant Weapon 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Servant Weapon 3%\n\nเมื่อสวมใส่ร่วมกับ Thanos Axe-AD,\nเพิ่ม Damage สกิล Axe Tornado, Axe Stomp 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Axe Stomp 1%\n\nเมื่อสวมใส่ร่วมกับ Thanos Spear-AD,\nเพิ่ม Damage สกิล Hesperus Lit, Overslash 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Overslash 1%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] POW + 1\n[Grade C] P.ATK + 1",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "pow": [
+        "GRADE[me==D]===1"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===1"
+      ],
+      "Wind Cutter": [
+        "EQUIP[Thanos Great Sword-AD]===10"
+      ],
+      "Servant Weapon": [
+        "EQUIP[Thanos Great Sword-AD]===10",
+        "EQUIP[Thanos Great Sword-AD]REFINE[weapon==2]---3"
+      ],
+      "Axe Tornado": [
+        "EQUIP[Thanos Axe-AD]===10"
+      ],
+      "Axe Stomp": [
+        "EQUIP[Thanos Axe-AD]===10",
+        "EQUIP[Thanos Axe-AD]REFINE[weapon==2]---1"
+      ],
+      "Hesperus Lit": [
+        "EQUIP[Thanos Spear-AD]===10"
+      ],
+      "Overslash": [
+        "EQUIP[Thanos Spear-AD]===10",
+        "EQUIP[Thanos Spear-AD]REFINE[weapon==2]---1"
+      ]
+    }
+  },
+  "313713": {
+    "id": 313713,
+    "aegisName": "Thanos_Melee2",
+    "name": "Thanos Spell (Warrior) Lv.2",
+    "unidName": "Thanos Spell (Warrior) Lv.2",
+    "resName": "Wolf_Orb_Ov_Str",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Greatsword-AD,\nเพิ่ม Damage สกิล Wind Cutter, Servant Weapon 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Servant Weapon 6%\n\nเมื่อสวมใส่ร่วมกับ Thanos Axe-AD,\nเพิ่ม Damage สกิล Axe Tornado, Axe Stomp 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Axe Stomp 2%\n\nเมื่อสวมใส่ร่วมกับ Thanos Spear-AD,\nเพิ่ม Damage สกิล Hesperus Lit, Overslash 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Overslash 2%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] POW + 2\n[Grade C] P.ATK + 2",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "pow": [
+        "GRADE[me==D]===2"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===2"
+      ],
+      "Wind Cutter": [
+        "EQUIP[Thanos Great Sword-AD]===15"
+      ],
+      "Servant Weapon": [
+        "EQUIP[Thanos Great Sword-AD]===15",
+        "EQUIP[Thanos Great Sword-AD]REFINE[weapon==2]---6"
+      ],
+      "Axe Tornado": [
+        "EQUIP[Thanos Axe-AD]===15"
+      ],
+      "Axe Stomp": [
+        "EQUIP[Thanos Axe-AD]===15",
+        "EQUIP[Thanos Axe-AD]REFINE[weapon==2]---2"
+      ],
+      "Hesperus Lit": [
+        "EQUIP[Thanos Spear-AD]===15"
+      ],
+      "Overslash": [
+        "EQUIP[Thanos Spear-AD]===15",
+        "EQUIP[Thanos Spear-AD]REFINE[weapon==2]---2"
+      ]
+    }
+  },
+  "313714": {
+    "id": 313714,
+    "aegisName": "Thanos_Melee3",
+    "name": "Thanos Spell (Warrior) Lv.3",
+    "unidName": "Thanos Spell (Warrior) Lv.3",
+    "resName": "Wolf_Orb_Ov_Str",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Greatsword-AD,\nเพิ่ม Damage สกิล Wind Cutter, Servant Weapon 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Servant Weapon 9%\n\nเมื่อสวมใส่ร่วมกับ Thanos Axe-AD,\nเพิ่ม Damage สกิล Axe Tornado, Axe Stomp 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Axe Stomp 3%\n\nเมื่อสวมใส่ร่วมกับ Thanos Spear-AD,\nเพิ่ม Damage สกิล Hesperus Lit, Overslash 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Overslash 3%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] POW + 3\n[Grade C] P.ATK + 3",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "pow": [
+        "GRADE[me==D]===3"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===3"
+      ],
+      "Wind Cutter": [
+        "EQUIP[Thanos Great Sword-AD]===25"
+      ],
+      "Servant Weapon": [
+        "EQUIP[Thanos Great Sword-AD]===25",
+        "EQUIP[Thanos Great Sword-AD]REFINE[weapon==2]---9"
+      ],
+      "Axe Tornado": [
+        "EQUIP[Thanos Axe-AD]===25"
+      ],
+      "Axe Stomp": [
+        "EQUIP[Thanos Axe-AD]===25",
+        "EQUIP[Thanos Axe-AD]REFINE[weapon==2]---3"
+      ],
+      "Hesperus Lit": [
+        "EQUIP[Thanos Spear-AD]===25"
+      ],
+      "Overslash": [
+        "EQUIP[Thanos Spear-AD]===25",
+        "EQUIP[Thanos Spear-AD]REFINE[weapon==2]---3"
+      ]
+    }
+  },
+  "313715": {
+    "id": 313715,
+    "aegisName": "Thanos_Range1",
+    "name": "Thanos Spell (Shooter) Lv.1",
+    "unidName": "Thanos Spell (Shooter) Lv.1",
+    "resName": "Wolf_Orb_Fi_Dex",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Sword-AD,\nเพิ่ม Damage สกิล Cart Cannon, Acidified Zone (Fire/Water/Wind/Ground) 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Cart Cannon 6%\n\nเมื่อสวมใส่ร่วมกับ Thanos Bow-AD,\nเพิ่ม Damage สกิล Focused Arrow Strike, Crescive Bolt 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nCritical Damage + 2%\n\nเมื่อสวมใส่ร่วมกับ Thanos Violin-AD หรือ Thanos Whipsword-AD\nเพิ่ม Damage สกิล Severe Rainstorm, Rhythm Shooting 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage ทางกายภาพระยะไกล 2%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] CON + 1\n[Grade C] P.ATK + 1",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "con": [
+        "GRADE[me==D]===1"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===1"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Thanos Sword-AD]===10",
+        "EQUIP[Thanos Sword-AD]REFINE[weapon==2]---6"
+      ],
+      "Acidified Zone Water": [
+        "EQUIP[Thanos Sword-AD]===10"
+      ],
+      "Acidified Zone Wind": [
+        "EQUIP[Thanos Sword-AD]===10"
+      ],
+      "Acidified Zone Earth": [
+        "EQUIP[Thanos Sword-AD]===10"
+      ],
+      "Acidified Zone Fire": [
+        "EQUIP[Thanos Sword-AD]===10"
+      ],
+      "Focused Arrow Strike": [
+        "EQUIP[Thanos Bow-AD]===10"
+      ],
+      "Crescive Bolt": [
+        "EQUIP[Thanos Bow-AD]===10"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Bow-AD]REFINE[weapon==2]---2"
+      ],
+      "Severe Rainstorm": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===10"
+      ],
+      "Rhythm Shooting": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===10"
+      ],
+      "range": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]REFINE[weapon==2]---2"
+      ]
+    }
+  },
+  "313716": {
+    "id": 313716,
+    "aegisName": "Thanos_Range2",
+    "name": "Thanos Spell (Shooter) Lv.2",
+    "unidName": "Thanos Spell (Shooter) Lv.2",
+    "resName": "Wolf_Orb_Fi_Dex",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Sword-AD,\nเพิ่ม Damage สกิล Cart Cannon, Acidified Zone (Fire/Water/Wind/Ground) 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Cart Cannon 9%\n\nเมื่อสวมใส่ร่วมกับ Thanos Bow-AD,\nเพิ่ม Damage สกิล Focused Arrow Strike, Crescive Bolt 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nCritical Damage + 4%\n\nเมื่อสวมใส่ร่วมกับ Thanos Violin-AD หรือ Thanos Whipsword-AD\nเพิ่ม Damage สกิล Severe Rainstorm, Rhythm Shooting 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage ทางกายภาพระยะไกล 4%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] CON + 2\n[Grade C] P.ATK + 2",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "con": [
+        "GRADE[me==D]===2"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===2"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Thanos Sword-AD]===15",
+        "EQUIP[Thanos Sword-AD]REFINE[weapon==2]---9"
+      ],
+      "Acidified Zone Water": [
+        "EQUIP[Thanos Sword-AD]===15"
+      ],
+      "Acidified Zone Wind": [
+        "EQUIP[Thanos Sword-AD]===15"
+      ],
+      "Acidified Zone Earth": [
+        "EQUIP[Thanos Sword-AD]===15"
+      ],
+      "Acidified Zone Fire": [
+        "EQUIP[Thanos Sword-AD]===15"
+      ],
+      "Focused Arrow Strike": [
+        "EQUIP[Thanos Bow-AD]===15"
+      ],
+      "Crescive Bolt": [
+        "EQUIP[Thanos Bow-AD]===15"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Bow-AD]REFINE[weapon==2]---4"
+      ],
+      "Severe Rainstorm": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===15"
+      ],
+      "Rhythm Shooting": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===15"
+      ],
+      "range": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]REFINE[weapon==2]---4"
+      ]
+    }
+  },
+  "313717": {
+    "id": 313717,
+    "aegisName": "Thanos_Range3",
+    "name": "Thanos Spell (Shooter) Lv.3",
+    "unidName": "Thanos Spell (Shooter) Lv.3",
+    "resName": "Wolf_Orb_Fi_Dex",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Sword-AD,\nเพิ่ม Damage สกิล Cart Cannon, Acidified Zone (Fire/Water/Wind/Ground) 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Cart Cannon 12%\n\nเมื่อสวมใส่ร่วมกับ Thanos Bow-AD,\nเพิ่ม Damage สกิล Focused Arrow Strike, Crescive Bolt 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nCritical Damage + 6%\n\nเมื่อสวมใส่ร่วมกับ Thanos Violin-AD หรือ Thanos Whipsword-AD\nเพิ่ม Damage สกิล Severe Rainstorm, Rhythm Shooting 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage ทางกายภาพระยะไกล 6%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] CON + 3\n[Grade C] P.ATK + 3",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "con": [
+        "GRADE[me==D]===3"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===3"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Thanos Sword-AD]===25",
+        "EQUIP[Thanos Sword-AD]REFINE[weapon==2]---12"
+      ],
+      "Acidified Zone Water": [
+        "EQUIP[Thanos Sword-AD]===25"
+      ],
+      "Acidified Zone Wind": [
+        "EQUIP[Thanos Sword-AD]===25"
+      ],
+      "Acidified Zone Earth": [
+        "EQUIP[Thanos Sword-AD]===25"
+      ],
+      "Acidified Zone Fire": [
+        "EQUIP[Thanos Sword-AD]===25"
+      ],
+      "Focused Arrow Strike": [
+        "EQUIP[Thanos Bow-AD]===25"
+      ],
+      "Crescive Bolt": [
+        "EQUIP[Thanos Bow-AD]===25"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Bow-AD]REFINE[weapon==2]---6"
+      ],
+      "Severe Rainstorm": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===25"
+      ],
+      "Rhythm Shooting": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===25"
+      ],
+      "range": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]REFINE[weapon==2]---6"
+      ]
+    }
+  },
+  "313718": {
+    "id": 313718,
+    "aegisName": "Thanos_Magic1",
+    "name": "Thanos Spell (Magic) Lv.1",
+    "unidName": "Thanos Spell (Magic) Lv.1",
+    "resName": "Wolf_Orb_Sp_Int",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Two-Handed Staff-AD,\nเพิ่ม Damage สกิล Crimson Rock, Floral Flare Road 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Crimson Rock 6%\n\nเมื่อสวมใส่ร่วมกับ Thanos Staff-AD,\nเพิ่ม Damage สกิล Varetye Spear, Lightning Land 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Lightning Land 1%\n\nเมื่อสวมใส่ร่วมกับ Thanos Dagger-AD,\nเพิ่ม Damage สกิล Psychic Wave, From the Abyss 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล From the Abyss 3%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] SPL + 1\n[Grade C] S.MATK + 1",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "spl": [
+        "GRADE[me==D]===1"
+      ],
+      "sMatk": [
+        "GRADE[me==C]===1"
+      ],
+      "Crimson Rock": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===10",
+        "EQUIP[Thanos Two-Handed Staff-AD]REFINE[weapon==2]---6"
+      ],
+      "Floral Flare Road": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===10"
+      ],
+      "Varetyr Spear": [
+        "EQUIP[Thanos Staff-AD]===10"
+      ],
+      "Lightning Land": [
+        "EQUIP[Thanos Staff-AD]===10",
+        "EQUIP[Thanos Staff-AD]REFINE[weapon==2]---1"
+      ],
+      "Psychic Wave": [
+        "EQUIP[Thanos Dagger-AD]===10"
+      ],
+      "From the Abyss": [
+        "EQUIP[Thanos Dagger-AD]===10",
+        "EQUIP[Thanos Dagger-AD]REFINE[weapon==2]---3"
+      ]
+    }
+  },
+  "313719": {
+    "id": 313719,
+    "aegisName": "Thanos_Magic2",
+    "name": "Thanos Spell (Magic) Lv.2",
+    "unidName": "Thanos Spell (Magic) Lv.2",
+    "resName": "Wolf_Orb_Sp_Int",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Two-Handed Staff-AD,\nเพิ่ม Damage สกิล Crimson Rock, Floral Flare Road 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Crimson Rock 9%\n\nเมื่อสวมใส่ร่วมกับ Thanos Staff-AD,\nเพิ่ม Damage สกิล Varetye Spear, Lightning Land 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Lightning Land 2%\n\nเมื่อสวมใส่ร่วมกับ Thanos Dagger-AD,\nเพิ่ม Damage สกิล Psychic Wave, From the Abyss 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล From the Abyss 6%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] SPL + 2\n[Grade C] S.MATK + 2",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "spl": [
+        "GRADE[me==D]===2"
+      ],
+      "sMatk": [
+        "GRADE[me==C]===2"
+      ],
+      "Crimson Rock": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===15",
+        "EQUIP[Thanos Two-Handed Staff-AD]REFINE[weapon==2]---9"
+      ],
+      "Floral Flare Road": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===15"
+      ],
+      "Varetyr Spear": [
+        "EQUIP[Thanos Staff-AD]===15"
+      ],
+      "Lightning Land": [
+        "EQUIP[Thanos Staff-AD]===15",
+        "EQUIP[Thanos Staff-AD]REFINE[weapon==2]---2"
+      ],
+      "Psychic Wave": [
+        "EQUIP[Thanos Dagger-AD]===15"
+      ],
+      "From the Abyss": [
+        "EQUIP[Thanos Dagger-AD]===15",
+        "EQUIP[Thanos Dagger-AD]REFINE[weapon==2]---6"
+      ]
+    }
+  },
+  "313720": {
+    "id": 313720,
+    "aegisName": "Thanos_Magic3",
+    "name": "Thanos Spell (Magic) Lv.3",
+    "unidName": "Thanos Spell (Magic) Lv.3",
+    "resName": "Wolf_Orb_Sp_Int",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Two-Handed Staff-AD,\nเพิ่ม Damage สกิล Crimson Rock, Floral Flare Road 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Crimson Rock 12%\n\nเมื่อสวมใส่ร่วมกับ Thanos Staff-AD,\nเพิ่ม Damage สกิล Varetye Spear, Lightning Land 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Lightning Land 3%\n\nเมื่อสวมใส่ร่วมกับ Thanos Dagger-AD,\nเพิ่ม Damage สกิล Psychic Wave, From the Abyss 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล From the Abyss 9%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] SPL + 3\n[Grade C] S.MATK + 3",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "spl": [
+        "GRADE[me==D]===3"
+      ],
+      "sMatk": [
+        "GRADE[me==C]===3"
+      ],
+      "Crimson Rock": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===25",
+        "EQUIP[Thanos Two-Handed Staff-AD]REFINE[weapon==2]---12"
+      ],
+      "Floral Flare Road": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===25"
+      ],
+      "Varetyr Spear": [
+        "EQUIP[Thanos Staff-AD]===25"
+      ],
+      "Lightning Land": [
+        "EQUIP[Thanos Staff-AD]===25",
+        "EQUIP[Thanos Staff-AD]REFINE[weapon==2]---3"
+      ],
+      "Psychic Wave": [
+        "EQUIP[Thanos Dagger-AD]===25"
+      ],
+      "From the Abyss": [
+        "EQUIP[Thanos Dagger-AD]===25",
+        "EQUIP[Thanos Dagger-AD]REFINE[weapon==2]---9"
+      ]
+    }
+  },
+  "313721": {
+    "id": 313721,
+    "aegisName": "Thanos_Fight1",
+    "name": "Thanos Spell (Fighter) Lv.1",
+    "unidName": "Thanos Spell (Fighter) Lv.1",
+    "resName": "Wolf_Orb_Un_Vit",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Hammer-AD,\nเพิ่ม Damage ทางกายภาพระยะไกล 10%\nเพิ่ม Damage สกิล Petitio 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nCritical Damage + 3%\n\nเมื่อสวมใส่ร่วมกับ Thanos Knuckle-AD,\nเพิ่ม Damage สกิล Tiger Cannon, Third Flame Bomb 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Third Flame Bomb 1%\n\nเมื่อสวมใส่ร่วมกับ Thanos Katar-AD,\nเพิ่ม Damage สกิล Rolling Cutter, Counter Slash 10%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Counter Slash 6%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] STA + 1\n[Grade C] P.ATK + 1",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "sta": [
+        "GRADE[me==D]===1"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===1"
+      ],
+      "range": [
+        "EQUIP[Thanos Hammer-AD]===10"
+      ],
+      "Petitio": [
+        "EQUIP[Thanos Hammer-AD]===10"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Hammer-AD]REFINE[weapon==2]---3"
+      ],
+      "Tiger Cannon": [
+        "EQUIP[Thanos Knuckle-AD]===10"
+      ],
+      "Third Flame Bomb": [
+        "EQUIP[Thanos Knuckle-AD]===10",
+        "EQUIP[Thanos Knuckle-AD]REFINE[weapon==2]---1"
+      ],
+      "Rolling Cutter": [
+        "EQUIP[Thanos Katar-AD]===10"
+      ],
+      "Counter Slash": [
+        "EQUIP[Thanos Katar-AD]===10",
+        "EQUIP[Thanos Katar-AD]REFINE[weapon==2]---6"
+      ]
+    }
+  },
+  "313722": {
+    "id": 313722,
+    "aegisName": "Thanos_Fight2",
+    "name": "Thanos Spell (Fighter) Lv.2",
+    "unidName": "Thanos Spell (Fighter) Lv.2",
+    "resName": "Wolf_Orb_Un_Vit",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Hammer-AD,\nเพิ่ม Damage ทางกายภาพระยะไกล 15%\nเพิ่ม Damage สกิล Petitio 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nCritical Damage + 6%\n\nเมื่อสวมใส่ร่วมกับ Thanos Knuckle-AD,\nเพิ่ม Damage สกิล Tiger Cannon, Third Flame Bomb 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Third Flame Bomb 2%\n\nเมื่อสวมใส่ร่วมกับ Thanos Katar-AD,\nเพิ่ม Damage สกิล Rolling Cutter, Counter Slash 15%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Counter Slash 9%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] STA + 2\n[Grade C] P.ATK + 2",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "sta": [
+        "GRADE[me==D]===2"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===2"
+      ],
+      "range": [
+        "EQUIP[Thanos Hammer-AD]===15"
+      ],
+      "Petitio": [
+        "EQUIP[Thanos Hammer-AD]===15"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Hammer-AD]REFINE[weapon==2]---6"
+      ],
+      "Tiger Cannon": [
+        "EQUIP[Thanos Knuckle-AD]===15"
+      ],
+      "Third Flame Bomb": [
+        "EQUIP[Thanos Knuckle-AD]===15",
+        "EQUIP[Thanos Knuckle-AD]REFINE[weapon==2]---2"
+      ],
+      "Rolling Cutter": [
+        "EQUIP[Thanos Katar-AD]===15"
+      ],
+      "Counter Slash": [
+        "EQUIP[Thanos Katar-AD]===15",
+        "EQUIP[Thanos Katar-AD]REFINE[weapon==2]---9"
+      ]
+    }
+  },
+  "313723": {
+    "id": 313723,
+    "aegisName": "Thanos_Fight3",
+    "name": "Thanos Spell (Fighter) Lv.3",
+    "unidName": "Thanos Spell (Fighter) Lv.3",
+    "resName": "Wolf_Orb_Un_Vit",
+    "description": "เมื่อสวมใส่ร่วมกับ Thanos Hammer-AD,\nเพิ่ม Damage ทางกายภาพระยะไกล 25%\nเพิ่ม Damage สกิล Petitio 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nCritical Damage + 9%\n\nเมื่อสวมใส่ร่วมกับ Thanos Knuckle-AD,\nเพิ่ม Damage สกิล Tiger Cannon, Third Flame Bomb 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Third Flame Bomb 3%\n\nเมื่อสวมใส่ร่วมกับ Thanos Katar-AD,\nเพิ่ม Damage สกิล Rolling Cutter, Counter Slash 25%\nทุก ๆ การอัพเกรด 2 ขั้น, \nเพิ่ม Damage สกิล Counter Slash 12%\n\n[Option เพิ่มเติมตาม Grade ของ Shoes] \n[Grade D] STA + 3\n[Grade C] P.ATK + 3",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "sta": [
+        "GRADE[me==D]===3"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===3"
+      ],
+      "range": [
+        "EQUIP[Thanos Hammer-AD]===25"
+      ],
+      "Petitio": [
+        "EQUIP[Thanos Hammer-AD]===25"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Hammer-AD]REFINE[weapon==2]---9"
+      ],
+      "Tiger Cannon": [
+        "EQUIP[Thanos Knuckle-AD]===25"
+      ],
+      "Third Flame Bomb": [
+        "EQUIP[Thanos Knuckle-AD]===25",
+        "EQUIP[Thanos Knuckle-AD]REFINE[weapon==2]---3"
+      ],
+      "Rolling Cutter": [
+        "EQUIP[Thanos Katar-AD]===25"
+      ],
+      "Counter Slash": [
+        "EQUIP[Thanos Katar-AD]===25",
+        "EQUIP[Thanos Katar-AD]REFINE[weapon==2]---12"
+      ]
+    }
+  },
   "400001": {
     "id": 400001,
     "aegisName": "Victory_Wing_Ear",
@@ -133550,6 +134275,38 @@
     "script": {
       "aspdPercent": [
         "8"
+      ]
+    }
+  },
+  "410070": {
+    "id": 410070,
+    "aegisName": "Demons_Familiar",
+    "name": "Demon's Familiar",
+    "unidName": "Ribbon",
+    "resName": "Demons_Familiar",
+    "description": "กล้องควบคุมระยะไกลที่เก็บอยู่ในคฤหาสถ์ของ Varmundt ว่ากันว่าจะเปลี่ยนเป็นรูปร่างที่น่าขนลุก เป็นผลจากอุปกรณ์แทรกแซงพลังงานเวทที่ติดตั้งโดย Illusion\n\nAll State  + 10.\n\nเมื่อสวมใส่ร่วมกับ 1 ในไอเท็มดังต่อไปนี้\n[Hypocrisy Edge], [Avaritia Metal], \n[Luxuria Pierce], [Pride Stone], \n[Wrath Wheel], [Superbia String], \n[Gula Gun], [Pigritia Rhythm], \n[Lust Pointer], [Lust Boom], \n[Lust Crusher], [Lust Shatter], \n[Hypocrisy Machine], [Invidia Bundle], \n[Wrath Rack], [Gula Teeth], \n[Pride Steel], [Gluttony Stick], \n[Sloth Text], [Sloth Bible], \n[Greed Wand], [Addiction Plant], \n[Ira Fist], [Pigritia Wave], \nPigritia Spark], [Envy Blunt]\nAtk + 200 , Matk + 200 เพิ่มเติม\n-\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "allStatus": [
+        "10"
+      ],
+      "atk": [
+        "EQUIP[Addiction Plant||Avaritia Metal||Envy Blunt||Gula Gun||Gula Teeth||Gluttony Stick||Greed Wand||Hypocrisy Machine||Hypocrisy Edge||Invidia Bundle||Ira Fist||Lust Pointer||Lust Shatter||Lust Crusher||Lust Boom||Luxuria Pierce||Pride Stone||Pride Steel||Pigritia Rhythm||Pigritia Wave||Pigritia Spark||Superbia String||Sloth Text||Sloth Bible||Wrath Wheel||Wrath Rack]===200"
+      ],
+      "matk": [
+        "EQUIP[Addiction Plant||Avaritia Metal||Envy Blunt||Gula Gun||Gula Teeth||Gluttony Stick||Greed Wand||Hypocrisy Machine||Hypocrisy Edge||Invidia Bundle||Ira Fist||Lust Pointer||Lust Shatter||Lust Crusher||Lust Boom||Luxuria Pierce||Pride Stone||Pride Steel||Pigritia Rhythm||Pigritia Wave||Pigritia Spark||Superbia String||Sloth Text||Sloth Bible||Wrath Wheel||Wrath Rack]===200"
       ]
     }
   },
@@ -148174,6 +148931,315 @@
       ]
     }
   },
+  "470325": {
+    "id": 470325,
+    "aegisName": "Thanos_Boots1",
+    "name": "Thanos Boots (Warrior) [1]",
+    "unidName": "Thanos Boots (Warrior)",
+    "resName": "Aries_Shoes_J",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMaxHP + 1500\nMaxSP + 100\n \nทุก ๆ การอัพเกรด 2 ขั้น, \nMaxHP + 2%\nMaxSP + 1% \n \nเมื่ออัพเกรดถึงขั้น 7, \nATK + 50\n \nเมื่ออัพเกรดถึงขั้น 9, \nเพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n \nเมื่ออัพเกรดถึงขั้น 11, \nลด Delay หลังใช้สกิล 5%\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n\nเมื่อสวมใส่ร่วมกับ Thanos Greatsword-AD, \nCritical Damage + 20%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Servant Weapon 20%\n \nเมื่อสวมใส่ร่วมกับ Thanos Axe-AD, \nลด Cooldown สกิล Axe Stomp 0.4 วินาที\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Axe Stomp 10%\n \nเมื่อสวมใส่ร่วมกับ Thanos Spear-AD, \nลด Cooldown สกิล Overslash 0.4 วินาที\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Overslash 10%\n \n[Option เพิ่มเติมตาม Grade] \n[Grade D] MaxHP + 2500, MaxSP + 300\n[Grade C] ลด Delay หลังใช้สกิล 5%\nเพิ่ม Damage ทางกายภาพระยะใกล้ 5%\n[Grade B] P.ATK + 5\n[Grade A] P.ATK + 3\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^777777120^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 120,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1500",
+        "GRADE[me==D]===2500"
+      ],
+      "sp": [
+        "100",
+        "GRADE[me==D]===300"
+      ],
+      "hpPercent": [
+        "2---2"
+      ],
+      "spPercent": [
+        "2---1"
+      ],
+      "atk": [
+        "7===50"
+      ],
+      "melee": [
+        "9===10",
+        "GRADE[me==C]===5"
+      ],
+      "acd": [
+        "11===5",
+        "GRADE[me==C]===5"
+      ],
+      "fct": [
+        "11===0.5",
+        "GRADE[me==A]===0.5"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Great Sword-AD]===20"
+      ],
+      "Servant Weapon": [
+        "EQUIP[Thanos Great Sword-AD]GRADE[weapon==C]===20"
+      ],
+      "cd__Axe Stomp": [
+        "EQUIP[Thanos Axe-AD]===0.4"
+      ],
+      "Axe Stomp": [
+        "EQUIP[Thanos Axe-AD]GRADE[weapon==C]===10"
+      ],
+      "cd__Overslash": [
+        "EQUIP[Thanos Spear-AD]===0.4"
+      ],
+      "Overslash": [
+        "EQUIP[Thanos Spear-AD]GRADE[weapon==C]===10"
+      ],
+      "pAtk": [
+        "GRADE[me==B]===5",
+        "GRADE[me==A]===3"
+      ]
+    }
+  },
+  "470326": {
+    "id": 470326,
+    "aegisName": "Thanos_Boots2",
+    "name": "Thanos Boots (Shooter) [1]",
+    "unidName": "Thanos Boots (Shooter)",
+    "resName": "Sagittarius_Shoes_J",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMaxHP + 1500\nMaxSP + 100\n\nทุก ๆ การอัพเกรด 2 ขั้น,\nMaxHP + 2%\nMaxSP + 1%\n\nเมื่ออัพเกรดถึงขั้น 7,\nATK + 50\n\nเมื่ออัพเกรดถึงขั้น 9,\nเพิ่ม Damage ทางกายภาพระยะไกล 10%\n\nเมื่ออัพเกรดถึงขั้น 11,\nลด Delay หลังใช้สกิล 5%\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n\nเมื่อสวมใส่ร่วมกับ Thanos Sword-AD,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Cart Cannon 20%\n\nเมื่อสวมใส่ร่วมกับ Thanos Bow-AD,\nลด Delay หลังใช้สกิล 5%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Crescive Bolt 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Violin-AD หรือ Thanos Whipsword-AD,\nลดระยะเวลาร่ายแบบแปรผัน 30%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Rhythm Shooting 10%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] MaxHP + 2500, MaxSP + 300\n[Grade C] ลด Delay หลังใช้สกิล 5%\nเพิ่ม Damage ทางกายภาพระยะไกล 5%\n[Grade B] P.ATK + 5\n[Grade A] P.ATK + 3\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^777777120^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 120,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1500",
+        "GRADE[me==D]===2500"
+      ],
+      "sp": [
+        "100",
+        "GRADE[me==D]===300"
+      ],
+      "hpPercent": [
+        "2---2"
+      ],
+      "spPercent": [
+        "2---1"
+      ],
+      "atk": [
+        "7===50"
+      ],
+      "range": [
+        "9===10",
+        "GRADE[me==C]===5"
+      ],
+      "acd": [
+        "11===5",
+        "GRADE[me==C]===5",
+        "EQUIP[Thanos Bow-AD]===5"
+      ],
+      "fct": [
+        "11===0.5",
+        "GRADE[me==A]===0.5"
+      ],
+      "pAtk": [
+        "GRADE[me==B]===5",
+        "GRADE[me==A]===3"
+      ],
+      "p_class_all": [
+        "EQUIP[Thanos Sword-AD]===10",
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===10"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Thanos Sword-AD]GRADE[weapon==C]===20"
+      ],
+      "Crescive Bolt": [
+        "EQUIP[Thanos Bow-AD]GRADE[weapon==C]===10"
+      ],
+      "vct": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]===30"
+      ],
+      "Rhythm Shooting": [
+        "EQUIP[Thanos Violin-AD||Thanos Whipsword-AD]GRADE[weapon==C]===10"
+      ]
+    }
+  },
+  "470327": {
+    "id": 470327,
+    "aegisName": "Thanos_Boots3",
+    "name": "Thanos Boots (Magic) [1]",
+    "unidName": "Thanos Boots (Magic)",
+    "resName": "Pisces_Shoes_J",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMaxHP + 1500\nMaxSP + 100\n\nทุก ๆ การอัพเกรด 2 ขั้น,\nMaxHP + 2%\nMaxSP + 1%\n\nเมื่ออัพเกรดถึงขั้น 7,\nMATK + 50\n\nเมื่ออัพเกรดถึงขั้น 9,\nMATK + 10%\n\nเมื่ออัพเกรดถึงขั้น 11,\nลด Delay หลังใช้สกิล 5%\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n\nเมื่อสวมใส่ร่วมกับ Thanos Two-Handed Staff-AD,\nลด Cooldown สกิล Crimson Rock 5 วินาที\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Crimson Rock 20%\n\nเมื่อสวมใส่ร่วมกับ Thanos Staff-AD,\nลด Cooldown สกิล Varetyr Spear 1.5 วินาที\nลด Cooldown สกิล Lightning Land 1 วินาที\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Lightning Land 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Dagger-AD,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล From the Abyss 15%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] MaxHP + 2500, MaxSP + 300\n[Grade C] ลด Delay หลังใช้สกิล 5%, MATK + 5%\n[Grade B] S.MATK + 5\n[Grade A] S.MATK + 3\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^777777120^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 120,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1500",
+        "GRADE[me==D]===2500"
+      ],
+      "sp": [
+        "100",
+        "GRADE[me==D]===300"
+      ],
+      "hpPercent": [
+        "2---2"
+      ],
+      "spPercent": [
+        "2---1"
+      ],
+      "matk": [
+        "7===50"
+      ],
+      "matkPercent": [
+        "9===10",
+        "GRADE[me==C]===5"
+      ],
+      "acd": [
+        "11===5",
+        "GRADE[me==C]===5"
+      ],
+      "fct": [
+        "11===0.5",
+        "GRADE[me==A]===0.5"
+      ],
+      "sMatk": [
+        "GRADE[me==B]===5",
+        "GRADE[me==A]===3"
+      ],
+      "cd__Crimson Rock": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===5"
+      ],
+      "m_class_all": [
+        "EQUIP[Thanos Two-Handed Staff-AD]===10",
+        "EQUIP[Thanos Dagger-AD]===10"
+      ],
+      "Crimson Rock": [
+        "EQUIP[Thanos Two-Handed Staff-AD]GRADE[weapon==C]===20"
+      ],
+      "cd__Varetyr Spear": [
+        "EQUIP[Thanos Staff-AD]===1.5"
+      ],
+      "cd__Lightning Land": [
+        "EQUIP[Thanos Staff-AD]===1"
+      ],
+      "Lightning Land": [
+        "EQUIP[Thanos Staff-AD]GRADE[weapon==C]===10"
+      ],
+      "From the Abyss": [
+        "EQUIP[Thanos Dagger-AD]GRADE[weapon==C]===15"
+      ]
+    }
+  },
+  "470328": {
+    "id": 470328,
+    "aegisName": "Thanos_Boots4",
+    "name": "Thanos Boots (Fighter) [1]",
+    "unidName": "Thanos Boots (Fighter)",
+    "resName": "Aquarius_Shoes_J",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMaxHP + 1500\nMaxSP + 100\n\nทุก ๆ การอัพเกรด 2 ขั้น,\nMaxHP + 2%\nMaxSP + 1%\n\nเมื่ออัพเกรดถึงขั้น 7,\nATK + 50\n\nเมื่ออัพเกรดถึงขั้น 9,\nMaxHP + 2500 เพิ่มเติม\nMaxSP + 300 เพิ่มเติม\n\nเมื่ออัพเกรดถึงขั้น 11,\nลด Delay หลังใช้สกิล 5%\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n\nเมื่อสวมใส่ร่วมกับ Thanos Hammer-AD,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\nCRI + 10\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Petitio 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Knuckle-AD,\nเพิ่ม Damage สกิล Tiger Cannon 15%\nเพิ่ม Damage สกิล Third Flame Bomb 15%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Third Flame Bomb 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Katar-AD,\nPerfect Hit + 20%\nเมื่ออาวุธมี Grade C ขึ้นไป \nเพิ่ม Damage สกิล Counter Slash 20%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] MaxHP + 2500, MaxSP + 300\n[Grade C] ลด Delay หลังใช้สกิล 5%\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 5%\n[Grade B] P.ATK + 5\n[Grade A] P.ATK + 3\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^777777120^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 120,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1500",
+        "9===2500",
+        "GRADE[me==D]===2500"
+      ],
+      "sp": [
+        "100",
+        "9===300",
+        "GRADE[me==D]===300"
+      ],
+      "hpPercent": [
+        "2---2"
+      ],
+      "spPercent": [
+        "2---1"
+      ],
+      "atk": [
+        "7===50"
+      ],
+      "acd": [
+        "11===5",
+        "GRADE[me==C]===5"
+      ],
+      "fct": [
+        "11===0.5",
+        "GRADE[me==A]===0.5"
+      ],
+      "melee": [
+        "GRADE[me==C]===5"
+      ],
+      "range": [
+        "GRADE[me==C]===5",
+        "EQUIP[Thanos Hammer-AD]===20"
+      ],
+      "pAtk": [
+        "GRADE[me==B]===5",
+        "GRADE[me==A]===3"
+      ],
+      "cri": [
+        "EQUIP[Thanos Hammer-AD]===10"
+      ],
+      "Petitio": [
+        "EQUIP[Thanos Hammer-AD]GRADE[weapon==C]===10"
+      ],
+      "Tiger Cannon": [
+        "EQUIP[Thanos Knuckle-AD]===15"
+      ],
+      "Third Flame Bomb": [
+        "EQUIP[Thanos Knuckle-AD]===15",
+        "EQUIP[Thanos Knuckle-AD]GRADE[weapon==C]===10"
+      ],
+      "perfectHit": [
+        "EQUIP[Thanos Katar-AD]===20"
+      ],
+      "Counter Slash": [
+        "EQUIP[Thanos Katar-AD]GRADE[weapon==C]===20"
+      ]
+    }
+  },
   "480000": {
     "id": 480000,
     "aegisName": "Atker_Manteau",
@@ -152052,6 +153118,41 @@
       ]
     }
   },
+  "480469": {
+    "id": 480469,
+    "aegisName": "C_Con_of_Singapura_MSP",
+    "name": "Costume Cons of White and Red",
+    "unidName": "Costume Cons of White and Red",
+    "resName": "C_Con_of_Singapura_MSP",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nคอสตูมที่มีพลังขัดแย้งกันอย่างแสงสีขาวและแดงกำลังพัดโหมกระหน่ำ\nเพียงแค่พัดโอบล้อมร่างกาย ก็รู้สึกได้ถึงความแข็งแกร่ง\nเพราะงั้นเอาไปใช้อวดชาวบ้านได้นะ\nMHP +10000\nMSP +2000\nลดระยะเวลาร่ายแบบแปรผัน 20%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ 20%\n\n(ความสามารถของไอเท็มชิ้นนี้จะถูกลบในวันที่ 20 กุมภาพันธ์ 2568\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 521,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "script": {
+      "hp": [
+        "10000"
+      ],
+      "sp": [
+        "2000"
+      ],
+      "vct": [
+        "20"
+      ],
+      "p_class_all": [
+        "20"
+      ],
+      "m_class_all": [
+        "20"
+      ]
+    }
+  },
   "480474": {
     "id": 480474,
     "aegisName": null,
@@ -155391,9 +156492,9 @@
     "id": 490164,
     "aegisName": "Hero_Token_SHC",
     "name": "Heroic Token (Shadow Cross) [1]",
-    "unidName": "Accessory",
+    "unidName": "Club",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Shiver Katar-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Shiver Katar-LT is 10 or higher, increases melee physical damage by 10%, increases Savage Impact damage by 10%.\nIf grade of Shiver Katar-LT is C or higher, POW + 5, P.Atk + 5, increases Savage Impact damage by additional 10%.\n\nWhen equipped with Blade Katar-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Blade Katar-LT is 10 or higher, increases melee physical damage by 10%, increases Eternal Slash damage by 10%.\nIf grade of Blade Katar-LT is C or higher, POW + 5, P.Atk + 5, increases Eternal Slash damage by additional 10%.\n\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Shadow Cross^000000",
+    "description": "เครื่องประดับลึกลับที่ช่วยดึงศักยภาพที่หลับใหลอยู่ของ Hero Weapon ออกมา มีพลังของ Shadow Cross แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Shiver Katar-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Shiver Katar-LT ขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%, เพิ่ม Damage สกิล Savage Impact 10%\nเมื่อ Shiver Katar-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Savage Impact ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Blade Katar-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Blade Katar-LT ขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%, เพิ่ม Damage สกิล Eternal Slash 10%\nเมื่อ Blade Katar-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Eternal Slash ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -161265,6 +162366,104 @@
         "EQUIP[Thanos Shooter Helmet-LT]===10",
         "EQUIP[Thanos Shooter Helmet-LT]REFINE[headUpper==10]===20",
         "EQUIP[Thanos Shooter Helmet-LT]GRADE[headUpper==C]===20"
+      ],
+      "pAtk": [
+        "EQUIP[Thanos Shooter Helmet-LT]GRADE[headUpper==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Thanos Shooter Helmet-LT]===15"
+      ]
+    }
+  },
+  "490658": {
+    "id": 490658,
+    "aegisName": null,
+    "name": "Memento Memory (Inquisitor) [1]",
+    "unidName": "Memento Memory (Inquisitor)",
+    "resName": "Memento_Mori",
+    "description": "สิ่งช่วยเตือนความทรงจำ ณ ช่วงเวลาอันน่าจดจำ\n\nATK + 100\nลด Delay หลังใช้สกิล 10%\nMaxHP + 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Thanos Knuckle-AD,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Third Flame Bomb 10%\n\nเมื่อ Thanos Knuckle-AD ขั้นอัพเกรด 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%\nเพิ่ม Damage สกิล Third Flame Bomb 10%\n\nเมื่อ Thanos Knuckle-AD มี Grade C ขึ้นไป,\nP.ATK +5\nเพิ่ม Damage สกิล Third Flame Bomb 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sura Classes^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "melee": [
+        "EQUIP[Thanos Knuckle-AD]REFINE[weapon==10]===20"
+      ],
+      "Third Flame Bomb": [
+        "EQUIP[Thanos Knuckle-AD]===10",
+        "EQUIP[Thanos Knuckle-AD]REFINE[weapon==10]===10",
+        "EQUIP[Thanos Knuckle-AD]GRADE[weapon==C]===15"
+      ],
+      "pAtk": [
+        "EQUIP[Thanos Knuckle-AD]GRADE[weapon==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Thanos Knuckle-AD]===15"
+      ]
+    }
+  },
+  "490660": {
+    "id": 490660,
+    "aegisName": null,
+    "name": "Memento Mind (Wind Hawk) [1]",
+    "unidName": "Memento Mind (Wind Hawk)",
+    "resName": "Bracelet_Of_Puppet",
+    "description": "สิ่งช่วยเตือนความจำ ณ ช่วงเวลาอันน่าระลึกถึง\n\nATK + 50\nลด Delay หลังใช้สกิล 10%\nCRI + 10\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Shooter Helmet-LT,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Crescive Bolt 5%\n\nเมื่อ Thanos Shooter Helmet-LT ขั้นอัพเกรด 10 ขึ้นไป,\nCritical Damage + 15%\nเพิ่ม Damage สกิล Crescive Bolt 10%\n\nเมื่อ Thanos Shooter Helmet-LT มี Grade C ขึ้นไป,\nP.ATK +5\nเพิ่ม Damage สกิล Crescive Bolt 10%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Ranger Classes^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "atk": [
+        "50"
+      ],
+      "acd": [
+        "10"
+      ],
+      "cri": [
+        "10"
+      ],
+      "p_class_all": [
+        "10"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Shooter Helmet-LT]REFINE[headUpper==10]===15"
+      ],
+      "Crescive Bolt": [
+        "EQUIP[Thanos Shooter Helmet-LT]===5",
+        "EQUIP[Thanos Shooter Helmet-LT]REFINE[headUpper==10]===10",
+        "EQUIP[Thanos Shooter Helmet-LT]GRADE[headUpper==C]===10"
       ],
       "pAtk": [
         "EQUIP[Thanos Shooter Helmet-LT]GRADE[headUpper==C]===5"
@@ -181609,9 +182808,9 @@
     "id": 610033,
     "aegisName": "Shiver_Katar_K_LT",
     "name": "Shiver Katar-LT [2]",
-    "unidName": "Katar",
+    "unidName": "Jur",
     "resName": "Shiver_Katar_K_LT",
-    "description": "Atk + 5%.\r\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\r\nAtk + 15 per 2 refine rate.\r\nIncreases critical damage by 5% per 3 refine rate.\r\nIf refine rate is 7 or higher, increases Cross Impact damage by 20%, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 9 or higher, increases Cross Impact damage by additional 25%,  increases physical damage against demihuman, brute and dragon race enemies by 25%.\r\nIf refine rate is 11 or higher, Cri + 15, reduces skill cooldown of Dark Claw by 10 seconds.\r\n\r\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Atk + 3%.\r\n[Grade C] Increases melee physical damage by 15%, P.Atk + 1.\r\n[Grade B] POW + 3, P.Atk + 2.\r\nClass: ^777777Katar^000000 Attack: ^777777255^000000\r\nWeight: ^777777140^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777190^000000\r\nJobs: ^777777Guillotine Cross classes^000000",
+    "description": "Katar เวอร์ชั่นปรับปรุงที่เพิ่มประสิทธิภาพในการสังหารถึงขีดสึด ว่ากันว่ามันเคยถูกใช้โดยนักลอบสังหารผู้โด่งดังในอดีต\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น Critical Damage + 5%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Cross Impact 20%, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Cross Impact ขึ้นอีก 25%, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Demi-Human, Brute, Dragon 25%\nเมื่ออัพเกรดถึงขั้น 11, CRI + 15, ลด Cooldown สกิล Dark Claw 10 วินาที\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะใกล้ 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777255^000000\nน้ำหนัก : ^777777140^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 272,
@@ -181679,9 +182878,9 @@
     "id": 610034,
     "aegisName": "Blade_Katar_LT",
     "name": "Blade Katar-LT [2]",
-    "unidName": "Katar",
+    "unidName": "Jur",
     "resName": "Blade_Katar_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nReduces global cooldown by 2% per 3 refine rate.\nIf refine rate is 7 or higher, increases Rolling Cutter and Cross Ripper Slasher damage by 25%, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increases Rolling Cutter and Cross Ripper Slasher damage by additional 20%, reduces global cooldown by 5%.\nIf refine rate is 11 or higher, increases melee and long ranged physical damage by 15%, increases Counter Slash damage by 30%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n\n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases melee and long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Katar^000000 Attack: ^777777275^000000\nWeight: ^777777140^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Guillotine Cross classes^000000",
+    "description": "Katar เวอร์ชั่นปรับปรุงที่สร้างขึ้นจากคมดาบอันแหลมคม\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น ลด Delay หลังใช้สกิล 2%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Rolling Cutter, Cross Ripper Slasher 25%, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Rolling Cutter, Cross Ripper Slasher ขึ้นอีก 20%, ลด Delay หลังใช้สกิล 5%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, เพิ่ม Damage สกิล Counter Slash 30%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%\n[Grade C] เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, P.ATK + 1\n[Grade B] POW + 3, P.ATK + 2\nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777275^000000\nน้ำหนัก : ^777777140^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 272,
