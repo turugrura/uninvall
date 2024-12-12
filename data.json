@@ -7118,6 +7118,9 @@
       ],
       "Soul Expansion": [
         "30"
+      ],
+      "Soul Vulcan Strike": [
+        "30"
       ]
     }
   },
@@ -46524,7 +46527,7 @@
     "name": "Clever Weapon Shadow",
     "unidName": "Shadow Weapon",
     "resName": "웨폰쉐도우3",
-    "description": "Increases all property magical damage by 2%.\nMatk + 1% per 2 refine rate.\nIf refine rate is 9 or higher, reduces variable casting time by 5%.\nIf refine rate is 10 or higher, increases all property magical damage by 7%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^77777799^000000\nJobs: ^777777All^000000",
+    "description": "ถุงมือที่ติดตั้งบนมือที่สวมใส่อาวุธเพื่อปลดปล่อยศักยภาพของผู้สวมใส่\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 2%\nทุก ๆ การอัพเกรด 2 ขั้น, MATK + 1%.\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 5%\nเมื่ออัพเกรดถึงขั้น 10, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 280,
@@ -46563,7 +46566,7 @@
     "name": "Clever Shield Shadow",
     "unidName": "Shadow Shield",
     "resName": "쉴드쉐도우3",
-    "description": "Increases all property magical damage by 2%.\nMatk + 1% per 2 refine rate.\nIf refine rate is 9 or higher, reduces variable casting time by 5%.\nIf refine rate is 10 or higher, increases all property magical damage by 7%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shield^000000 Weight: ^7777770^000000\nRequired Level: ^77777799^000000\nJobs: ^777777All^000000",
+    "description": "สามารถรับพลังป้องกันเพิ่มเติมได้จาก Shield ที่สวมใส่ที่แขน สามารถใช้เดี่ยว ๆ ได้แต่จะมีประสิทธิภาพในการป้องกันน้อย\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 2%\nทุก ๆ การอัพเกรด 2 ขั้น, MATK + 1%.\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 5%\nเมื่ออัพเกรดถึงขั้น 10, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 527,
@@ -84658,7 +84661,7 @@
     "name": "Global Cooldown 1Lv",
     "unidName": "Global Cooldown 1Lv",
     "resName": "Wolf_Orb_S_Delay",
-    "description": "Reduces global cooldown by 1%.",
+    "description": "ลด Delay หลังใช้สกิล 1%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84681,7 +84684,7 @@
     "name": "Global Cooldown 2Lv",
     "unidName": "Global Cooldown 2Lv",
     "resName": "Wolf_Orb_S_Delay",
-    "description": "Reduces global cooldown by 3%.",
+    "description": "ลด Delay หลังใช้สกิล 3%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84704,7 +84707,7 @@
     "name": "Global Cooldown 3Lv",
     "unidName": "Global Cooldown 3Lv",
     "resName": "Wolf_Orb_S_Delay",
-    "description": "Reduces global cooldown by 5%.",
+    "description": "ลด Delay หลังใช้สกิล 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84727,7 +84730,7 @@
     "name": "Attack speed 1Lv",
     "unidName": "Attack speed 1Lv",
     "resName": "마법석수",
-    "description": "Increases attack speed (reduces delay after attack by 5%).",
+    "description": "ASPD + 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84750,7 +84753,7 @@
     "name": "Attack speed 2Lv",
     "unidName": "Attack speed 2Lv",
     "resName": "마법석수",
-    "description": "Increases attack speed (reduces delay after attack by 7%).",
+    "description": "ASPD + 7%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84773,7 +84776,7 @@
     "name": "Attack speed 3Lv",
     "unidName": "Attack speed 3Lv",
     "resName": "마법석수",
-    "description": "Increases attack speed (reduces delay after attack by 10%), ASPD + 1.",
+    "description": "ASPD + 10%, ASPD + 1.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84796,10 +84799,10 @@
   "310857": {
     "id": 310857,
     "aegisName": "Mad_Bunny_Enchant_3_1",
-    "name": "Variable casting (physical) 1Lv",
-    "unidName": "Variable casting (physical) 1Lv",
+    "name": "Variable Casting (Physical) 1Lv",
+    "unidName": "Variable Casting (Physical) 1Lv",
     "resName": "하늘색보석",
-    "description": "Reduces variable casting time by 5%, Atk + 3.",
+    "description": "ลดระยะเวลาร่ายแบบแปรผัน 5%, ATK + 3.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84822,10 +84825,10 @@
   "310858": {
     "id": 310858,
     "aegisName": "Mad_Bunny_Enchant_3_2",
-    "name": "Variable casting (physical) 2Lv",
-    "unidName": "Variable casting (physical) 2Lv",
+    "name": "Variable Casting (Physical) 2Lv",
+    "unidName": "Variable Casting (Physical) 2Lv",
     "resName": "하늘색보석",
-    "description": "Reduces variable casting time by 7%, Atk + 5.",
+    "description": "ลดระยะเวลาร่ายแบบแปรผัน 7%, ATK + 5.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84848,10 +84851,10 @@
   "310859": {
     "id": 310859,
     "aegisName": "Mad_Bunny_Enchant_3_3",
-    "name": "Variable casting (physical) 3Lv",
-    "unidName": "Variable casting (physical) 3Lv",
+    "name": "Variable Casting (Physical) 3Lv",
+    "unidName": "Variable Casting (Physical) 3Lv",
     "resName": "하늘색보석",
-    "description": "Reduces variable casting time by 10%, P.Atk + 1.",
+    "description": "ลดระยะเวลาร่ายแบบแปรผัน 10%, P.ATK + 1.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84874,10 +84877,10 @@
   "310860": {
     "id": 310860,
     "aegisName": "Mad_Bunny_Enchant_3_4",
-    "name": "Variable casting (magical) 3Lv",
-    "unidName": "Variable casting (magical) 3Lv",
+    "name": "Variable Casting (Magical) 3Lv",
+    "unidName": "Variable Casting (Magical) 3Lv",
     "resName": "하늘색보석",
-    "description": "Reduces variable casting time by 10%, S.Matk + 1.",
+    "description": "ลดระยะเวลาร่ายแบบแปรผัน 10%, S.MATK + 1.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84903,7 +84906,7 @@
     "name": "Physical 1Lv",
     "unidName": "Physical 1Lv",
     "resName": "용의보주_녹",
-    "description": "Increases melee physical damage by 1%.",
+    "description": "เพิ่ม Damage ทางกายภาพระยะใกล้ 1%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84926,7 +84929,7 @@
     "name": "Physical 2Lv",
     "unidName": "Physical 2Lv",
     "resName": "용의보주_녹",
-    "description": "Increases melee physical damage by 3%.",
+    "description": "เพิ่ม Damage ทางกายภาพระยะใกล้ 3%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84949,7 +84952,7 @@
     "name": "Physical 3Lv",
     "unidName": "Physical 3Lv",
     "resName": "용의보주_녹",
-    "description": "Increases melee physical damage by 5%.",
+    "description": "เพิ่ม Damage ทางกายภาพระยะใกล้ 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84969,10 +84972,10 @@
   "310867": {
     "id": 310867,
     "aegisName": "Mad_Bunny_Enchant_6_1",
-    "name": "Long ranged 1Lv",
-    "unidName": "Long ranged 1Lv",
+    "name": "Long Ranged 1Lv",
+    "unidName": "Long Ranged 1Lv",
     "resName": "용의보주_황",
-    "description": "Increases long ranged physical damage by 1%.",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 1%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -84992,10 +84995,10 @@
   "310868": {
     "id": 310868,
     "aegisName": "Mad_Bunny_Enchant_6_2",
-    "name": "Long ranged 2Lv",
-    "unidName": "Long ranged 2Lv",
+    "name": "Long Ranged 2Lv",
+    "unidName": "Long Ranged 2Lv",
     "resName": "용의보주_황",
-    "description": "Increases long ranged physical damage by 3%.",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 3%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85015,10 +85018,10 @@
   "310869": {
     "id": 310869,
     "aegisName": "Mad_Bunny_Enchant_6_3",
-    "name": "Long ranged 3Lv",
-    "unidName": "Long ranged 3Lv",
+    "name": "Long Ranged 3Lv",
+    "unidName": "Long Ranged 3Lv",
     "resName": "용의보주_황",
-    "description": "Increases long ranged physical damage by 5%.",
+    "description": "เพิ่ม Damage ทางกายภาพระยะไกล 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85041,7 +85044,7 @@
     "name": "Magical 1Lv",
     "unidName": "Magical 1Lv",
     "resName": "블루크리스탈조각",
-    "description": "Increases all property magical damage by 1%.",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 1%.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85064,7 +85067,7 @@
     "name": "Magical 2Lv",
     "unidName": "Magical 2Lv",
     "resName": "블루크리스탈조각",
-    "description": "Increases all property magical damage by 3%.",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 3%.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85087,7 +85090,7 @@
     "name": "Magical 3Lv",
     "unidName": "Magical 3Lv",
     "resName": "블루크리스탈조각",
-    "description": "Increases all property magical damage by 5%.",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85110,7 +85113,7 @@
     "name": "Vital 1Lv",
     "unidName": "Vital 1Lv",
     "resName": "마력석_빨강",
-    "description": "MaxHP + 3%.",
+    "description": "MHP + 3%.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85133,7 +85136,7 @@
     "name": "Vital 2Lv",
     "unidName": "Vital 2Lv",
     "resName": "마력석_빨강",
-    "description": "MaxHP + 5%.",
+    "description": "MHP + 5%.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85156,7 +85159,7 @@
     "name": "Vital 3Lv",
     "unidName": "Vital 3Lv",
     "resName": "마력석_빨강",
-    "description": "MaxHP + 7%.",
+    "description": "MHP + 7%.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85176,10 +85179,10 @@
   "310879": {
     "id": 310879,
     "aegisName": "Mad_Bunny_Enchant_3_5",
-    "name": "Variable casting (magical) 2Lv",
-    "unidName": "Variable casting (magical) 2Lv",
+    "name": "Variable Casting (Magical) 2Lv",
+    "unidName": "Variable Casting (Magical) 2Lv",
     "resName": "하늘색보석",
-    "description": "Reduces variable casting time by 7%, Matk + 5.",
+    "description": "ลดระยะเวลาร่ายแบบแปรผัน 7%, MATK + 5.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -85202,10 +85205,10 @@
   "310880": {
     "id": 310880,
     "aegisName": "Mad_Bunny_Enchant_3_6",
-    "name": "Variable casting (magical) 1Lv",
-    "unidName": "Variable casting (magical) 1Lv",
+    "name": "Variable Casting (Magical) 1Lv",
+    "unidName": "Variable Casting (Magical) 1Lv",
     "resName": "하늘색보석",
-    "description": "Reduces variable casting time by 5%, Matk + 3.",
+    "description": "ลดระยะเวลาร่ายแบบแปรผัน 5%, MATK + 3.",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -126828,6 +126831,68 @@
       ]
     }
   },
+  "400154": {
+    "id": 400154,
+    "aegisName": "Survive_Circlet_K_LT",
+    "name": "Survivor's Circlet-LT [1]",
+    "unidName": "Helm",
+    "resName": "서바이벌서클릿",
+    "description": "เวอร์ชั่นปรับปรุงของเครื่องประดับที่หัวที่ผู้ฝึกตนใช้\nINT +3, MATK + 50,\nเมื่อ Base Lv.180 ขึ้นไป, MATK + 50.\nเมื่อ Base Lv.210 ขึ้นไป, P.ATK + 2, S.MATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 10.\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 10, MATK + 5%.\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภทบอส 20%\n \nเมื่อสวมใส่ร่วมกับ Survivor's Orb-LT, จะไม่ถูกขัดจังหวะการร่าย, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%,\nเมื่อ Survivor's Circlet-LT มีขั้นอัพเกรด 11 ขึ้นไป, ลด Delay หลังใช้สกิล 12%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ลด Delay หลังใช้สกิล 5%\n[Grade C] P.ATK + 2, S.MATK + 2.\n[Grade B] เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777750^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 50,
+    "requiredLevel": 150,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "3"
+      ],
+      "matk": [
+        "50",
+        "SUM[level==180]===50",
+        "2---10"
+      ],
+      "pAtk": [
+        "SUM[level==210]===2",
+        "GRADE[me==C]===2"
+      ],
+      "sMatk": [
+        "SUM[level==210]===2",
+        "GRADE[me==C]===2"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "m_my_element_all": [
+        "9===15"
+      ],
+      "matkPercent": [
+        "10===5"
+      ],
+      "m_class_boss": [
+        "11===20"
+      ],
+      "m_element_all": [
+        "EQUIP[Survivor's Orb-LT]===10"
+      ],
+      "acd": [
+        "EQUIP[Survivor's Orb-LT]11===12",
+        "GRADE[me==D]===5"
+      ],
+      "fct": [
+        "GRADE[me==B]12===0.5"
+      ]
+    }
+  },
   "400178": {
     "id": 400178,
     "aegisName": "Viva_Adul_Hat_WL1",
@@ -128934,6 +128999,146 @@
       "Hyunrok Breeze": [
         "EQUIP[Vivatus Fides Foxtail Wand]REFINE[weapon==3]---7",
         "EQUIP[Vivatus Fides Foxtail Wand]GRADE[weapon==C]===15"
+      ]
+    }
+  },
+  "400245": {
+    "id": 400245,
+    "aegisName": "King_Tiger_Doll_Hat_LT",
+    "name": "Tiger King Doll Hat-LT [1]",
+    "unidName": "Cap",
+    "resName": "호랑이왕인형모자",
+    "description": "หมวกตุ๊กตาราชาเสือที่สร้างตามความสามารถของ Team Licht\nSTR + 2, DEX + 2, POW + 2, CON + 2.\nASPD + 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูเผ่า Brute 10%\nเมื่อโจมตีทางกายภาพ, มีโอกาสเกิด [Might of the Beast] เป็นเวลา 7 วินาที\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\nเมื่ออัพเกรดถึงขั้น 9, ATK + 10%.\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 10%\n^32CD32ผลเอฟเฟกต์ [Might of the Beast]^000000\nทุก ๆ การอัพเกรด 1 ขั้น ATK + 35.\nเมื่ออัพเกรดถึงขั้น 10, P.ATK + 20.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 5%, POW + 3.\n[Grade C] STA + 2, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n[Grade B] P.ATK + 2, RES + 20.\n[Grade A] P.ATK + 7.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777776^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777740^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 6,
+    "weight": 40,
+    "requiredLevel": 150,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "str": [
+        "2"
+      ],
+      "dex": [
+        "2"
+      ],
+      "pow": [
+        "2",
+        "GRADE[me==D]===3"
+      ],
+      "con": [
+        "2"
+      ],
+      "aspdPercent": [
+        "10"
+      ],
+      "p_race_brute": [
+        "10"
+      ],
+      "melee": [
+        "7===15",
+        "11===10"
+      ],
+      "atkPercent": [
+        "9===10",
+        "GRADE[me==D]===5"
+      ],
+      "chance__atk": [
+        "1---35"
+      ],
+      "chance__pAtk": [
+        "10===20"
+      ],
+      "pAtk": [
+        "GRADE[me==B]===2",
+        "GRADE[me==A]===7"
+      ],
+      "sta": [
+        "GRADE[me==C]===2"
+      ],
+      "fct": [
+        "GRADE[me==C]===0.5"
+      ],
+      "res": [
+        "GRADE[me==B]===20"
+      ]
+    }
+  },
+  "400246": {
+    "id": 400246,
+    "aegisName": "Baksojin_Hat_LT",
+    "name": "Bacsojin Hat-LT [1]",
+    "unidName": "Cap",
+    "resName": "자하인형모자",
+    "description": "หมวกของแพคโซจินที่สร้างตามความสามารถของ Team Licht\nINT + 2, DEX + 2, SPL + 2, CON + 2.\nลดระยะเวลาร่ายแบบแปรผัน 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Undead 10%\nเมื่อโจมตีทางเวทมนตร์, มีโอกาสเกิด [Divine Willpower] เป็นเวลา 7 วินาที\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 9, MATK + 10%.\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุขึ้นอีก 10%\n^32CD32ผลเอฟเฟกต์ [Divine Willpower]^000000\nทุก ๆ การอัพเกรด 1 ขั้น MATK + 35.\nเมื่ออัพเกรดถึงขั้น 10, S.MATK + 20.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 5%, SPL + 3.\n[Grade C] WIS + 2, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n[Grade B] S.MATK + 3, MRES + 20.\n[Grade A] S.MATK + 7.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777776^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777740^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 6,
+    "weight": 40,
+    "requiredLevel": 150,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "int": [
+        "2"
+      ],
+      "dex": [
+        "2"
+      ],
+      "spl": [
+        "2",
+        "GRADE[me==D]===3"
+      ],
+      "con": [
+        "2"
+      ],
+      "vct": [
+        "10"
+      ],
+      "m_race_undead": [
+        "10"
+      ],
+      "m_my_element_all": [
+        "7===15",
+        "11===10"
+      ],
+      "matkPercent": [
+        "9===10",
+        "GRADE[me==D]===5"
+      ],
+      "chance__matk": [
+        "1---35"
+      ],
+      "chance__sMatk": [
+        "10===20"
+      ],
+      "sMatk": [
+        "GRADE[me==B]===3",
+        "GRADE[me==A]===7"
+      ],
+      "wis": [
+        "GRADE[me==C]===2"
+      ],
+      "fct": [
+        "GRADE[me==C]===0.5"
+      ],
+      "mres": [
+        "GRADE[me==B]===20"
       ]
     }
   },
@@ -135296,6 +135501,35 @@
       ],
       "cri": [
         "EQUIP[Archangel Wing]REFINE[garment==8]luk:20---2"
+      ]
+    }
+  },
+  "420066": {
+    "id": 420066,
+    "aegisName": "SurviveOrb_K_LT",
+    "name": "Survivor's Orb-LT",
+    "unidName": "Ribbon",
+    "resName": "서바이벌오브",
+    "description": "Orb อิสระที่ช่วยเหลือเจ้าของโดยอัตโนมัติ\nลดระยะเวลาร่ายแบบแปรผัน 3%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777730^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 2,
+    "weight": 30,
+    "requiredLevel": 150,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "3"
+      ],
+      "m_my_element_all": [
+        "7"
       ]
     }
   },
@@ -144345,9 +144579,9 @@
     "id": 460020,
     "aegisName": "Mad_Bunny_K_LT",
     "name": "Mad Bunny-LT [1]",
-    "unidName": "Shield",
+    "unidName": "Guard",
     "resName": "매드바니",
-    "description": "Atk + 5%, Matk + 5%.\nASPD + 3.\nAtk + 2% and Matk + 2% per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 5%), reduces variable casting time by 5%. \nIf refine rate is 9 or higher, increases melee and long ranged physical damage by 7%, increases all property magical damage by 7%.\nIf refine rate is 12 or higher, skill casting can't be interrupted, Cri + 15.\n\n^CC3D3D[Bonus by grade]^000000\n[Grade D] Reduces physical and magical damage taken from all property enemies by 10%.\n[Grade C] POW + 2, SPL + 2.\n[Grade B] S.Matk + 2, P.Atk + 2.\n[Grade A] Reduces global cooldown by 5%.\n\nClass: ^777777Shield^000000  Defense: ^7777770^000000\nWeight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777160^000000\nJobs: ^777777All^000000",
+    "description": "ตุ๊กตาผ้าที่ใช้งานอย่างสะดวกสบายด้วยพลังโจมตีและพลังป้องกัน Piamette?\nดูเหมือนมันขยับอยู่จริง ๆ นะ...\nATK + 5%, MATK + 5%.\nASPD + 3\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 2%, MATK + 2%.\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 5%, ลดระยะเวลาร่ายแบบแปรผัน 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nเมื่ออัพเกรดถึงขั้น 12, ไม่ถูกขัดจังหวะการร่าย, CRI + 15\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูทุกธาตุ 10%\n[Grade C] POW + 2, SPL + 2.\n[Grade B] S.MATK + 2, P.ATK + 2.\n[Grade A] ลด Delay หลังใช้สกิล 5%\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 514,
@@ -156548,9 +156782,9 @@
     "id": 490165,
     "aegisName": "Hero_Token_ABC",
     "name": "Heroic Token (Abyss Chaser) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Madogum-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Madogum-LT is 10 or higher, increases all property magical damage by 10%, increases Abyss Square damage by 10%.\nIf grade of Madogum-LT is C or higher, SPL + 5, S.Matk + 5, increases Abyss Square damage by additional 10%.\n\nWhen equipped with Fatalist-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Fatalist-LT is 10 or higher, increases melee physical damage by 10%, increases Abyss Dagger damage by 10%.\nIf grade of Fatalist-LT is C or higher, POW + 5, P.Atk + 5, increases Abyss Dagger damage by additional 10%.\n\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Abyss Chaser^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Abyss Chaser แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Madogum-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ Madogum-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Abyss Square 10%\nเมื่อ Madogum-LT มี Grade C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Abyss Square ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Fatalist-LT เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ Fatalist-LT ตั้งแต่ 10 ขึ้นไป เพิ่ม Damage ทางกายภาพระยะใกล้ 10%, เพิ่ม Damage สกิล Abyss Dagger 10%\nเมื่อ Fatalist-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Abyss Dagger ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -162473,6 +162707,101 @@
       ]
     }
   },
+  "490665": {
+    "id": 490665,
+    "aegisName": "Memento_ME_BO",
+    "name": "Memento Memory (Biolo) [1]",
+    "unidName": "Memento Memory (Biolo)",
+    "resName": "Memento_Mori",
+    "description": "สิ่งช่วยเตือนความจำ ณ ช่วงเวลาอันน่าจดจำ\n\nATK + 100\nลด Delay หลังใช้สกิล 10%\nเมื่อใช้สกิล Cart Cannon มีโอกาส 35% ที่จะใช้สกิล Cart Cannon Lv. 5 ใส่เป้าหมาย\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Thanos Sword-AD\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดอีก 15%\nเพิ่ม Damage สกิล Cart Cannon 25%\n\n[เมื่อ Thanos Sword-AD มีค่าอัพเกรดตั้งแต่ 10 ขึ้นไป\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\nเพิ่ม Damage สกิล Cart Cannon 25%\n\nเมื่อ Thanos Sword-AD  มี Grade C ขึ้นไป\nP.ATK +5\nเพิ่ม Damage สกิล Cart Cannon 40%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Genetic Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "range": [
+        "EQUIP[Thanos Sword-AD]REFINE[weapon==10]===20"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Thanos Sword-AD]===25",
+        "EQUIP[Thanos Sword-AD]GRADE[weapon==C]===40",
+        "EQUIP[Thanos Sword-AD]REFINE[weapon==10]===25"
+      ],
+      "pAtk": [
+        "EQUIP[Thanos Sword-AD]GRADE[weapon==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Thanos Sword-AD]===15"
+      ]
+    }
+  },
+  "490667": {
+    "id": 490667,
+    "aegisName": "Memento_MI_IQ",
+    "name": "Memento Mind (Inquisitor) [1]",
+    "unidName": "Memento Mind (Inquisitor)",
+    "resName": "Bracelet_Of_Puppet",
+    "description": "สิ่งช่วยเตือนความจำ ณ ช่วงเวลาอันน่าระลึกถึง\n\nATK + 50\nลด Delay หลังใช้สกิล 10%\nMaxHP + 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Fighter Helmet-LT,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Third Flame Bomb 5%\n\nเมื่อ Thanos Fighter Helmet-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้ 15% \nเพิ่ม Damage สกิล Third Flame Bomb 10%\n\nเมื่อ Thanos Fighter Helmet-LT มี Grade C ขึ้นไป, P.ATK +5, \nเพิ่ม Damage สกิล Third Flame Bomb 10%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sura Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "atk": [
+        "50"
+      ],
+      "acd": [
+        "10"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "p_class_all": [
+        "10"
+      ],
+      "melee": [
+        "EQUIP[Thanos Fighter Helmet-LT]REFINE[headUpper==10]===15"
+      ],
+      "Third Flame Bomb": [
+        "EQUIP[Thanos Fighter Helmet-LT]===5",
+        "EQUIP[Thanos Fighter Helmet-LT]REFINE[headUpper==10]===10",
+        "EQUIP[Thanos Fighter Helmet-LT]GRADE[headUpper==C]===10"
+      ],
+      "pAtk": [
+        "EQUIP[Thanos Fighter Helmet-LT]GRADE[headUpper==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Thanos Fighter Helmet-LT]===15"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -165601,9 +165930,9 @@
     "id": 510040,
     "aegisName": "Magic_Sword_LT",
     "name": "Madogum-LT [2]",
-    "unidName": "Dagger",
+    "unidName": "Knife",
     "resName": "Magic_Sword_LT",
-    "description": "Matk + 195, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases attack speed (reduces delay after attack by 2%) per 3 refine rate.\nIf refine rate is 7 or higher, when dealing melee physical damage, has a chance to auto-cast Meteor Storm level 7.\nIf refine rate is 9 or higher, increases all property magical damage by 15%, increases magical damage against all property enemies by 15%.\nIf refine rate is 11 or higher, when dealing melee physical damage, has a chance to auto-cast Psychic Wave level 5.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases all property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Dagger^000000 Attack: ^777777150^000000\nWeight: ^77777780^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Shadow Chaser classes^000000",
+    "description": "เวอร์ชั่นปรับปรุงของมีดสั้นที่ว่ากันว่าใช้โดยนักเวทย์ที่นับถือนักดาบ\nทำงานประสานกันกับ Hero Boots-LT\nMATK + 195, MATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK +15.\nทุก ๆ การอัพเกรด 3 ขั้น ASPD + 2%\nเมื่ออัพเกรดถึงขั้น 7, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาสเกิด Meteor Storm Lv.7\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, เพิ่ม Damage เวทมนตร์ต่อศัตรูทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาสเกิดสกิล Psychic Wave Lv.5\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%.\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^77777780^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 256,
@@ -165654,9 +165983,9 @@
     "id": 510041,
     "aegisName": "Fatalist_LT",
     "name": "Fatalist-LT [2]",
-    "unidName": "Dagger",
+    "unidName": "Knife",
     "resName": "Fatalist_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases attack speed (reduces delay after attack by 2%) per 3 refine rate.\nIf refine rate is 7 or higher, increases Fatal Menace damage by 25%.\nIf refine rate is 9 or higher, increases Fatal Menace damage by additional 20%, reduces global cooldown by 7%.\nIf refine rate is 11 or higher, increases melee physical damage by 15%, reduces global cooldown by additional 7%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases melee physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Dagger^000000 Attack: ^777777215^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Shadow Chaser classes^000000",
+    "description": "เวอร์ชั่นปรับปรุงของดาบนักเดินทางเก่าที่เน้นการแทงมากกว่าการฟัน\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น ASPD + 2%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Fatal Menace 25%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Fatal Menace ขึ้นอีก 20%, ลด Delay หลังใช้สกิล 7%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%, ลด Delay หลังใช้สกิลลงอีก 7%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะใกล้ 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777215^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 256,
@@ -175687,6 +176016,38 @@
       ],
       "atkPercent": [
         "EQUIP[Great Hero Boots]===7"
+      ]
+    }
+  },
+  "560011": {
+    "id": 560011,
+    "aegisName": "Fourth_1h_Knuckle",
+    "name": "Scrap Fist [2]",
+    "unidName": "Waghnak",
+    "resName": "Fourth_1h_Knuckle",
+    "description": "อาวุธที่สร้างขึ้นอย่างหยาบด้วยเศษผง Etel และเศษเหล็กหลายชนิด\nเริ่มปรากฎความสามารถใหม่ที่ไม่เคยค้นพบมาก่อน\n^ffffff_^000000\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Second Judgement, Second Faith 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 2%\n^ffffff_^000000\nประเภท: ^777777Knuckle^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777130^000000\nเลเวลอาวุธ : ^7777775^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 5,
+    "attack": 210,
+    "defense": null,
+    "weight": 130,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "Second Judgement": [
+        "2---5"
+      ],
+      "Second Faith": [
+        "2---5"
+      ],
+      "melee": [
+        "4---2"
       ]
     }
   },
