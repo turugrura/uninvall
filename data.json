@@ -46372,6 +46372,136 @@
       ]
     }
   },
+  "24728": {
+    "id": 24728,
+    "aegisName": "S_M_AutoSpell_Armor",
+    "name": "Major Auto Spell Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우3",
+    "description": "เกราะที่ใช้สวมทับเกราะอีกชั้นหนึ่ง สามารถใช้เดี่ยว ๆ ได้แต่จะมีประสิทธิภาพในการป้องกันน้อยกว่า\nMATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 1%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 1.\nเมื่ออัพเกรดถึงขั้น 10, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาส 7% ที่จะเกิด Frost Misty Lv.3 (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดตามเลเวลสกิลที่เรียนรู้)\nเมื่อสวมใส่ร่วมกับ Major Auto Spell Shadow Shoes, MATK + 2%,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาส 4% ที่จะเกิด Jack Frost Lv.2 (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดตามเลเวลสกิลที่เรียนรู้),\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาส 8% ที่จะเปลี่ยนเป็นเกิด Jack Frost Lv.4 (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดตามเลเวลสกิลที่เรียนรู้)\nประเภท : ^777777Shadow Equipment^000000 \nตำแหน่ง : ^777777Armor^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "3",
+        "EQUIP[Major Auto Spell Shadow Shoes]===2"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "aspd": [
+        "9===1"
+      ]
+    }
+  },
+  "24729": {
+    "id": 24729,
+    "aegisName": "S_M_AutoSpell_Shoes",
+    "name": "Major Auto Spell Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우3",
+    "description": "รองเท้าที่ใช้สวมทับรองเท้าอีกชั้นหนึ่ง สามารถใช้เดี่ยว ๆ ได้แต่จะมีประสิทธิภาพน้อยกว่า\nMATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 1%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 3%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "3"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "aspdPercent": [
+        "10===3"
+      ]
+    }
+  },
+  "24730": {
+    "id": 24730,
+    "aegisName": "S_M_AutoSpell_Earring",
+    "name": "Major Auto Spell Shadow Earring",
+    "unidName": "Shadow Earrings",
+    "resName": "이어링쉐도우3",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงศักยภาพที่ซ่อนอยู่ของผู้สวมใส่ออกมา\nATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 1.\nเมื่ออัพเกรดถึงขั้น 10, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาส 7% ที่จะเกิด Fatal Menace Lv.7 (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดตามเลเวลสกิลที่เรียนรู้)\nเมื่อสวมใส่ร่วมกับ Major Auto Spell Shadow Pendant, ATK + 2%,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาส 4% ที่จะเกิด Power Swing Lv.4 (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดตามเลเวลสกิลที่เรียนรู้),\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป, เมื่อโจมตีทางกายภาพระยะใกล้ทั่วไป มีโอกาส 8% ที่จะเปลี่ยนเป็นเกิด Power Swing Lv.8 (เมื่อเรียนรู้ในเลเวลที่สูงขึ้น จะเกิดตามเลเวลสกิลที่เรียนรู้)\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earrings^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "3",
+        "EQUIP[Major Auto Spell Shadow Pendant]===2"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "aspd": [
+        "9===1"
+      ]
+    }
+  },
+  "24731": {
+    "id": 24731,
+    "aegisName": "S_M_AutoSpell_Pendant",
+    "name": "Major Auto Spell Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우3",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงศักยภาพที่ซ่อนอยู่ของผู้สวมใส่ออกมา\nATK + 3%.\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 3%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "3"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "aspdPercent": [
+        "10===3"
+      ]
+    }
+  },
   "24732": {
     "id": 24732,
     "aegisName": "S_Hasty_Shield",
@@ -135129,6 +135259,205 @@
       ]
     }
   },
+  "410386": {
+    "id": 410386,
+    "aegisName": "Raven_Of_Tomb_LT",
+    "name": "Raven Of Tomb-LT",
+    "unidName": "Raven Of Tomb-LT",
+    "resName": "수다쟁이까마귀",
+    "description": "นานมาแล้วมีคำกล่าวถึงอีกาผู้เฝ้า Tomb of Honor ว่ามันเปรียบเสมือนกับลางร้ายของผู้ที่พบเห็นมัน\nไม่มีใครรู้ว่ามันอยู่มานานแค่ไหน แต่เราเชื่อว่าดวงตาสีดำนิลกาฬคู่นั้นได้มองเห็นความตายมาแล้วมากมาย!\n\nATK/MATK + 60\n\nเมื่อ Base Str 84 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 4%\nHIT + 10\nเมื่อ Base Str 108 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภทขึ้นอีก 6%\nHIT+ 10 เพิ่มเติม\n\nเมื่อ Base Agi 84 ขึ้นไป,\nCritical Damage + 7%\nFlee + 10\nเมื่อ Base Agi 108 ขึ้นไป,\nCritical Damage + 7% เพิ่มเติม\nFlee +10 เพิ่มเติม\n\nเมื่อ Base Vit 84 ขึ้นไป,\nMaxHP + 4%\nASPD + 4%\nเมื่อ Base Vit 108 ขึ้นไป,\nMaxHP + 4% เพิ่มเติม\nASPD + 4%\n\nเมื่อ Base Int 84 ขึ้นไป,\nMATK + 4% \nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 4%\nเมื่อ Base Int 108 ขึ้นไป,\nMATK + 6% เพิ่มเติม\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุขึ้นอีก 6%\n\nเมื่อ Base Dex 84 ขึ้นไป,\nลด Delay หลังใช้สกิล 4%\nCRI + 6\nเมื่อ Base Dex 108 ขึ้นไป,\nลด Delay หลังใช้สกิลลงอีก 6%\nCRI +9 เพิ่มเติม\n\nเมื่อ Base Luk 84 ขึ้นไป,\nATK/MATK + 40\nเมื่อ Base Luk 108 ขึ้นไป,\nATK/MATK +60 เพิ่มเติม\n\nเมื่อค่าพื้นฐานทั้งหมดรวมกัน 500 ขึ้นไป,\nP.ATK + 10\nS.MATK + 10\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777771^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 1,
+    "requiredLevel": 210,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "atk": [
+        "60",
+        "SUM[luk==84]===40",
+        "SUM[luk==108]===60"
+      ],
+      "matk": [
+        "60",
+        "SUM[luk==84]===40",
+        "SUM[luk==108]===60"
+      ],
+      "p_class_all": [
+        "SUM[str==84]===4",
+        "SUM[str==108]===6"
+      ],
+      "hit": [
+        "SUM[str==84]===10",
+        "SUM[str==108]===10"
+      ],
+      "criDmg": [
+        "SUM[agi==84]===7",
+        "SUM[agi==108]===7"
+      ],
+      "flee": [
+        "SUM[agi==84]===10",
+        "SUM[agi==108]===10"
+      ],
+      "hpPercent": [
+        "SUM[vit==84]===4",
+        "SUM[vit==108]===4"
+      ],
+      "aspdPercent": [
+        "SUM[vit==84]===4",
+        "SUM[vit==108]===4"
+      ],
+      "matkPercent": [
+        "SUM[int==84]===4",
+        "SUM[int==108]===6"
+      ],
+      "m_my_element_all": [
+        "SUM[int==84]===4",
+        "SUM[int==108]===6"
+      ],
+      "acd": [
+        "SUM[dex==84]===4",
+        "SUM[dex==108]===6"
+      ],
+      "cri": [
+        "SUM[dex==84]===6",
+        "SUM[dex==108]===9"
+      ],
+      "pAtk": [
+        "SUM[str,agi,vit,int,dex,luk==500]===10"
+      ],
+      "sMatk": [
+        "SUM[str,agi,vit,int,dex,luk==500]===10"
+      ]
+    }
+  },
+  "410389": {
+    "id": 410389,
+    "aegisName": "Ear_Of_Flame_TH",
+    "name": "Ear of Flame",
+    "unidName": "Ear of Flame",
+    "resName": "Ear_OF_Bloody",
+    "description": "ท่ามกลางเสียงกรีดร้องของวิญญาณที่ถูกสังหาร กลิ่นคาวเลือดแทรกซึมลึกเข้าไปในจิตวิญญาณของผู้สวมใส่\nพลังอันลึกลับและน่าสะพรึงกลัว ก่อกำเนิดขึ้นจากความมืดมิดที่ไม่มีวันดับ\n\nลด Delay หลังใช้สกิล 8%\nทุก ๆ 15 ผลรวมของ Base STR และ LUK,\nPOW + 1\n\nทุก ๆ 30 ผลรวมของ Base STR และ LUK, \nเพิ่ม Damage ทางกายภาพระยะใกล้และไกล 1%\n\nเมื่อผลรวมของ Base STR และ LUK ตั้งแต่ 240 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "8"
+      ],
+      "pow": [
+        "SUM[str,luk==15]---1"
+      ],
+      "melee": [
+        "SUM[str,luk==30]---1"
+      ],
+      "range": [
+        "SUM[str,luk==30]---1"
+      ],
+      "p_class_all": [
+        "SUM[str,luk==240]===15"
+      ]
+    }
+  },
+  "410390": {
+    "id": 410390,
+    "aegisName": "Ear_Of_Soul_TH",
+    "name": "Ear of Soul",
+    "unidName": "Ear of Soul",
+    "resName": "Grisly_Soul",
+    "description": "เสียงรบกวนจากวิญญาณร้ายที่ทำให้ร่างกายตกอยู่ในความบ้าคลั่งที่ไม่อาจควบคุมได้\n\nลด Delay หลังใช้สกิล 8%\nทุก ๆ 15 ผลรวมของ Base INT และ DEX, \nSPL + 1\n\nทุก ๆ 30 ผลรวมของ Base INT และ DEX, \nMATK + 1%\n\nเมื่อผลรวมของ Base INT และ DEX 240 ขึ้นไป, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "8"
+      ],
+      "spl": [
+        "SUM[int,dex==15]---1"
+      ],
+      "matkPercent": [
+        "SUM[int,dex==30]---1"
+      ],
+      "m_class_all": [
+        "SUM[int,dex==240]===15"
+      ]
+    }
+  },
+  "410391": {
+    "id": 410391,
+    "aegisName": "Ear_Of_Abyss_TH",
+    "name": "Ear of Abyss [1]",
+    "unidName": "Ear of Abyss",
+    "resName": "Ear_OF_Abyss",
+    "description": "เมื่อปีศาจเข้าสิง ร่างของผู้ถูกสิงกลายเป็นภาชนะแห่งความมืด ปลดปล่อยพลังอันน่าสะพรึงกลัวที่สามารถสั่นสะเทือนสรรพสิ่งได้\n\nลด Delay หลังใช้สกิล 8%\n\nทุก ๆ 10 ผลรวมของ Base VIT และ AGI, \nPOW, SPL + 1\n\nทุก ๆ 20 ผลรวมของ Base VIT และ AGI, \nเพิ่ม Damage ทางกายภาพระยะใกล้และไกล 1%\nMATK + 1%\n\nเมื่อผลรวมของ Base VIT และ AGI ตั้งแต่ 180 ขึ้นไป, \nเพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูทุกประเภท 15% \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "8"
+      ],
+      "pow": [
+        "SUM[vit,agi==10]---1"
+      ],
+      "spl": [
+        "SUM[vit,agi==10]---1"
+      ],
+      "melee": [
+        "SUM[vit,agi==20]---1"
+      ],
+      "range": [
+        "SUM[vit,agi==20]---1"
+      ],
+      "matkPercent": [
+        "SUM[vit,agi==20]---1"
+      ],
+      "p_class_all": [
+        "SUM[vit,agi==180]===15"
+      ],
+      "m_class_all": [
+        "SUM[vit,agi==180]===15"
+      ]
+    }
+  },
   "420003": {
     "id": 420003,
     "aegisName": "CD_In_MouthK",
@@ -136212,6 +136541,108 @@
       ],
       "m_class_all": [
         "6"
+      ]
+    }
+  },
+  "420431": {
+    "id": 420431,
+    "aegisName": "Sprit_Of_World_LT",
+    "name": "The Spirit Of World-LT",
+    "unidName": "The Spirit Of World-LT",
+    "resName": "도깨비불",
+    "description": "ราชาแห่งดวงวิญญาณที่เป็นดั่งพื้นฐานของเวทมนตร์ต่าง ๆ บนโลกใบนี้\n\nMATK + 60\nฟื้นฟู HP 600 หน่วย ทุก ๆ 6 วินาที\n\nทุก ๆ Base INT 8,\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 1%\n\nทุก ๆ Base DEX 8,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 1%\n\nทุก ๆ Base (STR+AGI+VIT+INT+DEX+LUK) รวมกัน 60 หน่วย,\nRES + 5\nMRES +5\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777760^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 10,
+    "requiredLevel": 210,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "matk": [
+        "60"
+      ],
+      "m_my_element_all": [
+        "SUM[int==8]---1"
+      ],
+      "m_size_all": [
+        "SUM[dex==8]---1"
+      ],
+      "res": [
+        "SUM[str,agi,vit,int,dex,luk==60]---5"
+      ],
+      "mres": [
+        "SUM[str,agi,vit,int,dex,luk==60]---5"
+      ]
+    }
+  },
+  "420436": {
+    "id": 420436,
+    "aegisName": "Flutter_Butterfly_LT",
+    "name": "Flutter Butterfly-LT",
+    "unidName": "Flutter Butterfly-LT",
+    "resName": "C나비의날갯짓",
+    "description": "เหล่าผีเสื้อจำนวนมากที่โบยบินอยู่รอบตัวคุณ\nทำให้ผู้สวมใส่รู้สึกเหมือนกับล่องลอย\n\nASPD + 3\nทุก ๆ Base DEX 10 เพิ่ม Damage ทางกายภาพระยะไกล 1%\nทุก ๆ Base CON 10, P.ATK + 1\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 210,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "aspd": [
+        "3"
+      ],
+      "range": [
+        "SUM[dex==10]---1"
+      ],
+      "pAtk": [
+        "SUM[con==10]---1"
+      ]
+    }
+  },
+  "420437": {
+    "id": 420437,
+    "aegisName": "Vassalage_Neck_LT_TH",
+    "name": "Vassalage Necklace-LT",
+    "unidName": "Vassalage Necklace-LT",
+    "resName": "Vassalage_Necklace",
+    "description": "สร้อยที่มาพร้อมกับข้อสัญญาผูกมัดอันแน่นแฟ้น\n\nHIT + 60\nทุก ๆ Bas STR 10, เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nทุก ๆ Base CON 10, P.ATK + 1\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 210,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "hit": [
+        "60"
+      ],
+      "melee": [
+        "SUM[str==10]---1"
+      ],
+      "pAtk": [
+        "SUM[con==10]---1"
       ]
     }
   },
@@ -144903,6 +145334,162 @@
       ]
     }
   },
+  "460094": {
+    "id": 460094,
+    "aegisName": "Aegis_Illusive_TH",
+    "name": "Aegis of the Illusive [1]",
+    "unidName": "Aegis of the Illusive",
+    "resName": "Spenta_Mainyu",
+    "description": "โล่ที่ปกป้องผู้ใช้จากสิ่งลวงหลอก\n\nCRI + 5\nลด Damage ทางกายภาพและเวทมนตร์ที่ได้รับจากมอนสเตอร์ทั่วไป 10%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 7 ขึ้นไป,\nASPD + 2\n\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป,\nลด Cooldown สกิล Petitio 0.2 วินาที\n\nเมื่อขั้นอัพเกรดตั้งแต่ 11 ขึ้นไป,\nลด Delay หลังใช้สกิล 5%\nCritical Damage + 10%\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 30,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ArchBishop"
+    ],
+    "script": {
+      "cri": [
+        "5"
+      ],
+      "aspd": [
+        "7===2"
+      ],
+      "cd__Petitio": [
+        "9===0.2"
+      ],
+      "acd": [
+        "11===5"
+      ],
+      "criDmg": [
+        "11===10"
+      ]
+    }
+  },
+  "460095": {
+    "id": 460095,
+    "aegisName": "Aegis_Illusive_TH_LT",
+    "name": "Aegis of the Illusive-LT [1]",
+    "unidName": "Aegis of the Illusive-LT",
+    "resName": "Spenta_Mainyu",
+    "description": "โล่ที่ปกป้องผู้ใช้จากสิ่งลวงหลอก\n\nCRI + 15\nลด Damage ทางกายภาพและเวทมนตร์ที่ได้รับจากมอนสเตอร์ทั่วไปและบอส 15%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 7 ขึ้นไป,\nASPD + 2 \nMaxHP + 5%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป,\nลด Cooldown สกิล Petitio 1 วินาที\n\nเมื่อขั้นอัพเกรดตั้งแต่ 11 ขึ้นไป,\nลด Delay หลังใช้สกิล 10%\nCritical Damage + 20%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 12 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] MaxHP + 10%\n[Grade C] CRI + 15, P.ATK + 4\n[Grade B] MaxHP + 5000, P.ATK + 6\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%, ได้รับเอฟเฟกต์ [Endure] ตลอดเวลา\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777780^000000\nน้ำหนัก : ^77777730^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777Cardinal^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 30,
+    "requiredLevel": 210,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Cardinal"
+    ],
+    "script": {
+      "cri": [
+        "15",
+        "GRADE[me==C]===15"
+      ],
+      "aspd": [
+        "7===2"
+      ],
+      "hpPercent": [
+        "7===5",
+        "GRADE[me==D]===10"
+      ],
+      "cd__Petitio": [
+        "9===1"
+      ],
+      "acd": [
+        "11===10"
+      ],
+      "criDmg": [
+        "11===20"
+      ],
+      "melee": [
+        "12===10"
+      ],
+      "range": [
+        "12===10"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===4",
+        "GRADE[me==B]===6"
+      ],
+      "hp": [
+        "GRADE[me==B]===5000"
+      ],
+      "p_size_all": [
+        "GRADE[me==A]===20"
+      ]
+    }
+  },
+  "460097": {
+    "id": 460097,
+    "aegisName": "Forbidden_Grimoire2_LT",
+    "name": "Forbidden Grimoire II-LT [1]",
+    "unidName": "Forbidden Grimoire II-LT",
+    "resName": "Grimoire_Furious",
+    "description": "คัมภีร์ต้องห้ามอีกหนึ่งเล่มที่บันทึกศาสตร์ขั้นสูงเอาไว้\n\nASPD +3\nเมื่อกำจัดมอนสเตอร์ด้วยเวทมนตร์, ฟื้นฟู HP 500 หน่วย\nทุก ๆ การอัพเกรด 1 ขั้น, MaxHP + 500\nทุก ๆ การอัพเกรด 3 ขั้น, เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Wind 8%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป,\nลด Cooldown สกิล Conflagration, Lightning Land 0.3 วินาที\n\nเมื่อขั้นอัพเกรดตั้งแต่ 11 ขึ้นไป,\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 4% ที่จะได้รับสถานะ [Encounter Confusion] เป็นเวลา 10 วินาที\n\nผลเอฟเฟกต์ [Encounter Confusion]\nSPL + 50\nS.MATK + 10\nสูญเสีย HP 500 หน่วยต่อวินาที\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] \nลด Delay หลังใช้สกิล 10%\n\n[Grade C] \nลด Cooldown สกิล Conflagration, Lightning Land 0.3 วินาที\n\n[Grade B] \nเพิ่มผลเอฟเฟกต์ [Encounter Confusion] SPL +50, S.MATK +10 เพิ่มเติม\n\n[Grade A] \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 20%,\nลด Cooldown สกิล Call Ventus, Call Agni 40 วินาที,\nลด Cooldown สกิล Summon Elemental: Ardor, Summon Elemental: Procella 300 วินาที\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^777777100^000000\nน้ำหนัก : ^77777750^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 100,
+    "weight": 50,
+    "requiredLevel": 210,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "aspd": [
+        "3"
+      ],
+      "hp": [
+        "1---500"
+      ],
+      "m_my_element_fire": [
+        "3---8"
+      ],
+      "m_my_element_wind": [
+        "3---8"
+      ],
+      "cd__Conflagration": [
+        "9===0.3",
+        "GRADE[me==C]===0.3"
+      ],
+      "cd__Lightning Land": [
+        "9===0.3",
+        "GRADE[me==C]===0.3"
+      ],
+      "chance__spl": [
+        "11===50",
+        "GRADE[me==B]===50"
+      ],
+      "chance__sMatk": [
+        "11===10",
+        "GRADE[me==B]===10"
+      ],
+      "acd": [
+        "GRADE[me==D]===10"
+      ],
+      "m_class_all": [
+        "GRADE[me==A]===20"
+      ]
+    }
+  },
   "470000": {
     "id": 470000,
     "aegisName": "Atker_Greave",
@@ -146846,16 +147433,16 @@
     "id": 470183,
     "aegisName": "Temporal_Boots_LT_TW",
     "name": "Exotic Temporal Boots-LT [1]",
-    "unidName": "Shoes",
-    "resName": "Exotic Temporal Boots-LT [1]",
-    "description": "All stat + 2, Mdef + 15.\r\nMaxHP + 15%, MaxSP + 5%.\r\n\r\nIf refine rate is 10 or higher,\r\nif base STR is 108 or higher, Atk + 80.\r\nif base AGI is 108 or higher, ASPD + 2.\r\nif base VIT is 108 or higher, MaxHP + 10%.\r\nif base INT is 108 or higher, Matk + 80.\r\nif base DEX is 108 or higher, reduces fixed casting time by 0.5 seconds, increases long ranged physical damage by 10%.\r\nif base LUK is 108 or higher, increases critical damage by 35%.\r\n\r\nIf refine rate is 13 or higher,\r\nif base POW is 60 or higher, increases physical damage against all size enemies by 15%.\r\nif base STA is 60 or higher, reduces global cooldown by 5%, P.Atk + 15.\r\nif base WIS is 60 or higher, reduces global cooldown by 5%, S.Matk + 15.\r\nif base SPL is 60 or higher, increases magical damage against all size enemies by 15%.\r\nif base CON is 60 or higher, increases attack speed (reduces delay after attack by 10%).\r\nif base CRT is 60 or higher, reduces fixed casting time by 0.2 seconds, increases critical damage by 10%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Res + 30, Mres + 30.\r\n[Grade C] Atk / Matk + 50.\r\n[Grade B] Increases physical and magical damage against all race enemies by 15%.\r\n[Grade A] P.Atk / S.Matk + 7.\r\n\r\nClass: ^777777Shoes^000000 Defense: ^77777720^000000\r\nWeight: ^77777730^000000 Armor Level: ^7777772^000000\r\nRequired Level: ^777777190^000000\r\nJobs: ^777777All Jobs^000000",
+    "unidName": "Sandal",
+    "resName": "Temporal_Boots_LT_TW",
+    "description": "MaxHP +15%. MaxSP +5%\nเมื่ออัพเกรดถึงขั้น 10, \nเมื่อ Base Str 108 ขึ้นไป, ATK +80\nเมื่อ Base Agi 108 ขึ้นไป, ASPD +2\nเมื่อ Base Vit 108 ขึ้นไป, MaxHP +10%\nเมื่อ Base Int 108 ขึ้นไป, MATK +80\nเมื่อ Base Dex 108 ขึ้นไป, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที, เพิ่ม Damage ทางกายภาพระยะไกล 10%\nเมื่อ Base Luk 108 ขึ้นไป, Critical Damage +35%\n\nเมื่ออัพเกรดถึงขั้น 13,\nเมื่อ Pow 60 ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Sta  60 ขึ้นไป, ลด Delay หลังใช้สกิล 5%, P.ATK +15\nเมื่อ Wis 60 ขึ้นไป, ลด Delay หลังใช้สกิล 5%, S.MATK +15\nเมื่อ Spl 60 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อ Con 60 ขึ้นไป, ASPD + 10%\nเมื่อ Crt 60 ขึ้นไป, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, Critical Damage +10%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] RES +30, MRES +30.\n[Grade C] ATK / MATK +50.\n[Grade B] เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%\n[Grade A] P.ATK / S.MATK +7.\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^77777730^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 516,
     "itemLevel": null,
     "attack": null,
-    "defense": null,
-    "weight": null,
+    "defense": 20,
+    "weight": 30,
     "requiredLevel": 190,
     "location": null,
     "compositionPos": null,
@@ -151729,9 +152316,9 @@
     "id": 480312,
     "aegisName": "Temporal_Cape_TW_LT",
     "name": "Exotic Temporal Manteau-LT [1]",
-    "unidName": "Garment",
+    "unidName": "Hood",
     "resName": "Temporal_Cape_TW_LT",
-    "description": "Mdef + 10.\r\nEvery 2 refine rate, Atk / Matk + 15.\r\nEvery 3 refine rate, Atk + 4%, Matk + 4%, Cri + 3.\r\nEvery 4 refine rate, increases melee and long ranged physical damage by 5%, increases all property magical damage by 5%, MaxHP + 5%, increases attack speed (reduces delay after attack by 5%), increases critical damage by 5%, reduces global cooldown by 5%.\r\nIf refine is 7 or higher, Atk / Matk + 7%.\r\nIf refine is 9 or higher, increases physical and magical damage against all size enemies by 15%.\r\nIf refine is 12 or higher, increases physical and magical damage against all property enemies by 15%.\r\n\r\nWhen equipped with Exotic Temporal Boots-LT [1],\r\nMdef + 5, reduces fixed casting time by 0.2 seconds,\r\nIf the sum of refine rate of garment and shoes is 25 or higher,\r\nif base STR is 108 or higher, Atk + 120.\r\nif base AGI is 108 or higher, ASPD + 1.\r\nif base VIT is 108 or higher, reduces global cooldown by 8%.\r\nif base INT is 108 or higher, Matk + 120.\r\nif base DEX is 108 or higher, increases long ranged physical damage by 15%.\r\nif base LUK is 108 or higher, increases critical damage by 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Atk / Matk + 5%.\r\n[Grade C] POW / SPL + 5.\r\n[Grade B] P.Atk / S.Matk + 7.\r\n[Grade A] If refine rate is 13 or higher, increases physical and magical damage against all race enemies by 15%.\r\n\r\nClass: ^777777Garment^000000 Defense: ^77777740^000000\r\nWeight: ^77777710^000000 Armor Level: ^7777772^000000\r\nRequired Level: ^777777190^000000\r\nJobs: ^777777All Jobs^000000",
+    "description": "MDEF+10.\nทุก ๆ การอัพเกรด 2 ขั้น, ATK, MATK+15\nทุก ๆ การอัพเกรด 3 ขั้น, ATK+4%, MATK+4%, CRI+3\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 5%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%, MaxHP+5%, ASPD+5%, Critical Damage +5%, ลด Delay หลังใช้สกิล 5%\nเมื่ออัพเกรดถึงขั้น 7, ATK, MATK+7%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 12, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 15%\n\nเมื่อสวมใส่ร่วมกับ Exotic Temporal Boots-LT,\nMDEF+5, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่อขั้นอัพเกรดของ Manteau และ Boots รวมกันตั้งแต่ 25 ขึ้นไป,\nเมื่อ Base STR 108 ขึ้นไป, ATK+120\nเมื่อ Base AGI 108 ขึ้นไป, ASPD+1\nเมื่อ Base VIT 108 ขึ้นไป, ลด Delay หลังใช้สกิล 8%\nเมื่อ Base INT 108 ขึ้นไป, MATK+120.\nเมื่อ Base DEX 108 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่อ Base LUK 108 ขึ้นไป, Critical Damage +20%\n[Option เพิ่มเติมตาม Grade]\n[Grade D] ATK, MATK+5%.\n[Grade C] POW, SPL+5.\n[Grade B] P.ATK, S.MATK+7.\n[Grade A] เมื่ออัพเกรดถึงขั้น 13, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 515,
@@ -153635,6 +154222,150 @@
       ],
       "Eswhoo": [
         "EQUIP[Temporal Circlet (Soul Reaper)]REFINE[headUpper,garment==21]===50"
+      ]
+    }
+  },
+  "480533": {
+    "id": 480533,
+    "aegisName": null,
+    "name": "Hero Courage Cape [1]",
+    "unidName": "Hero Courage Cape",
+    "resName": "Manteau_Of_Guardsman",
+    "description": "ชุดคลุมอันทรงเกียรติแด่วีรบุรุษผู้กล้าหาญ\n\nMaxHP + 3000, MaxSP + 200\n\nทุก ๆ Base Lv.10, \nP.ATK + 1 / RES + 5 / MRES + 5\n\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 10\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 2%\n\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิล 10%\nเมื่ออัพเกรดถึงขั้น 13, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Ancient Hero Boots,\nลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, ATK + 40\n\nเมื่อสวมใส่ร่วมกับ Great Hero's Boots,\nลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, ATK + 60\n\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT,\nลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, ATK + 150\nเมื่อ Hero Boots-LT มี Grade C ขึ้นไป, ATK + 18%\nเมื่อ Hero Boots-LT มี Grade B ขึ้นไป, P.ATK + 8\nเมื่อ Hero Boots-LT มี Grade A ขึ้นไป, \nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะ POW + 50, P.ATK + 20 เป็นเวลา 10 วินาที\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777780^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 80,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "3000"
+      ],
+      "sp": [
+        "200"
+      ],
+      "pAtk": [
+        "SUM[level==10]---1",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===8"
+      ],
+      "chance__pAtk": [
+        "EQUIP[Hero Boots-LT]GRADE[boot==A]===20"
+      ],
+      "res": [
+        "SUM[level==10]---5"
+      ],
+      "mres": [
+        "SUM[level==10]---5"
+      ],
+      "atk": [
+        "2---10",
+        "EQUIP[Ancient Hero Boots]===40",
+        "EQUIP[Great Hero Boots]===60",
+        "EQUIP[Hero Boots-LT]===150"
+      ],
+      "atkPercent": [
+        "3---2",
+        "EQUIP[Hero Boots-LT]GRADE[boot==C]===18"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "p_size_all": [
+        "9===10"
+      ],
+      "acd": [
+        "11===10"
+      ],
+      "p_race_all": [
+        "13===15"
+      ],
+      "fct": [
+        "EQUIP[Ancient Hero Boots]===0.2",
+        "EQUIP[Great Hero Boots]===0.2",
+        "EQUIP[Hero Boots-LT]===0.2"
+      ],
+      "chance__pow": [
+        "EQUIP[Hero Boots-LT]GRADE[boot==A]===50"
+      ]
+    }
+  },
+  "480534": {
+    "id": 480534,
+    "aegisName": null,
+    "name": "Hero Favor Cape [1]",
+    "unidName": "Hero Favor Cape",
+    "resName": "Manteau_Of_Guardsman",
+    "description": "ชุดคลุมอันทรงเกียรติแด่วีรบุรุษผู้สง่างาม\n\nMaxHP + 3000, MaxSP + 200\n\nทุก ๆ Base Lv.10,\nS.MATK + 1 / RES + 5 / MRES + 5\n\nทุก ๆ การอัพเกรด 2 ขั้น, MATK + 10\nทุก ๆ การอัพเกรด 3 ขั้น, MATK + 2%\n\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิล 10%\nเมื่ออัพเกรดถึงขั้น 13, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Ancient Hero Boots,\nลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, MATK + 40\n\nเมื่อสวมใส่ร่วมกับ Great Hero's Boots,\nลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, MATK + 60\n\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT,\nลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที, MATK + 150\nเมื่อ Hero Boots-LT มี Grade C ขึ้นไป, MATK + 18%\nเมื่อ Hero Boots-LT มี Grade B ขึ้นไป, S.MATK + 8\nเมื่อ Hero Boots-LT มี Grade A ขึ้นไป,\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 3% ที่จะ SPL + 50, S.MATK + 20 เป็นเวลา 10 วินาที\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777780^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 80,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "3000"
+      ],
+      "sp": [
+        "200"
+      ],
+      "sMatk": [
+        "SUM[level==10]---1",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===8"
+      ],
+      "chance__sMatk": [
+        "EQUIP[Hero Boots-LT]GRADE[boot==A]===20"
+      ],
+      "res": [
+        "SUM[level==10]---5"
+      ],
+      "mres": [
+        "SUM[level==10]---5"
+      ],
+      "matk": [
+        "2---10",
+        "EQUIP[Ancient Hero Boots]===40",
+        "EQUIP[Great Hero Boots]===60",
+        "EQUIP[Hero Boots-LT]===150"
+      ],
+      "matkPercent": [
+        "3---2",
+        "EQUIP[Hero Boots-LT]GRADE[boot==C]===18"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "m_size_all": [
+        "9===10"
+      ],
+      "acd": [
+        "11===10"
+      ],
+      "m_race_all": [
+        "13===15"
+      ],
+      "fct": [
+        "EQUIP[Ancient Hero Boots]===0.2",
+        "EQUIP[Great Hero Boots]===0.2",
+        "EQUIP[Hero Boots-LT]===0.2"
+      ],
+      "chance__spl": [
+        "EQUIP[Hero Boots-LT]GRADE[boot==A]===50"
       ]
     }
   },
@@ -156391,9 +157122,9 @@
     "id": 490152,
     "aegisName": "Hero_Token_AG",
     "name": "Heroic Token (Arch Mage) [1]",
-    "unidName": "Accessory",
+    "unidName": "Club",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Aeon Staff-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Aeon Staff-LT is 10 or higher, increases all property magical damage by 10%, increases Crimson Arrow and Rock Down damage by 10%.\nIf grade of Aeon Staff-LT is C or higher, SPL + 5, S.Matk + 5, increases Crimson Arrow and Rock Down damage by additional 10%.\n\nWhen equipped with Blue Crystal Staff-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Blue Crystal Staff-LT is 10 or higher, increases all property magical damage by 10%, increases Frozen Slash and Soul Vulcan Strike damage by 10%.\nIf grade of Blue Crystal Staff-LT is C or higher, SPL + 5, S.Matk + 5, increases Frozen Slash and Soul Vulcan Strike damage by additional 10%.\n\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Arch Mage^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Arch Mage แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Aeon Staff-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ Aeon Staff-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Crimson Arrow, Rock Down 10%\nเมื่อ Aeon Staff-LT มี Grade C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Crimson Arrow, Rock Down ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Blue Crystal Staff-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ Blue Crystal Staff-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike 10% \nเมื่อ Blue Crystal Staff-LT มี Grade C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -156511,9 +157242,9 @@
     "id": 490155,
     "aegisName": "Hero_Token_IG",
     "name": "Heroic Token (Imperial Guard) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Aquatic Spear-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Aquatic Spear-LT is 10 or higher, increases long ranged physical damage by 10%, increases Shield Shooting damage by 10%.\nIf grade of Aquatic Spear-LT is C or higher, POW + 5, P.Atk + 5, increases Shield Shooting damage by additional 10%.\n\nWhen equipped with Light Blade-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Light Blade-LT is 10 or higher, increases all property magical damage by 10%, increases Cross Rain damage by 10%.\nIf grade of Light Blade-LT is C or higher, SPL + 5, S.Matk + 5, increases Cross Rain damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Imperial Guard^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Imperial Guard แฝงอยู่\n\nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n\nเมื่อสวมใส่ร่วมกับ Aquatic Spear-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Aquatic Spear-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Shield Shooting 10%\nเมื่อ Aquatic Spear-LT มี Grade ตั้งแต่ C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Shield Shooting ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Light Blade-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อ Light Blade-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Cross Rain 10%\nเมื่อ Light Blade-LT มี Grade ตั้งแต่ C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Cross Rain ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -157041,10 +157772,10 @@
   "490172": {
     "id": 490172,
     "aegisName": "Hero_Token_TR",
-    "name": "Heroic Token (Troubadour / Trouvere) [1]",
-    "unidName": "Accessory",
+    "name": "Heroic Token (Troubadour/Trouvere) [1]",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Narcissus Bow-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Narcissus Bow-LT is 10 or higher, increases long ranged physical damage by 10%, increases Rhythm Shooting damage by 10%.\nIf grade of Narcissus Bow-LT is C or higher, POW + 5, P.Atk + 5, increases Rhythm Shooting damage by additional 10%.\n\nWhen equipped with Trumpet Shell-LT or Barbed Wire Whip-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Trumpet Shell-LT or Barbed Wire Whip-LT is 10 or higher, increases all property magical damage by 10%, increases Metallic Fury damage by 10%.\nIf grade of Trumpet Shell-LT or Barbed Wire Whip-LT is C or higher, SPL + 5, S.Matk + 5, increases Metallic Fury damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Troubadour, Trouvere^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Troubadour/Trouvere แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Narcis Bow-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Narcis Bow-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Rhythm Shooting 10%\nเมื่อ Narcis Bow-LT มี Grade ตั้งแต่ C ขึ้นไป, CON + 5, P.ATK + 5, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Trumpet Shell-LT หรือ Barbed Wire Whip-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อ Trumpet Shell-LT หรือ Barbed Wire Whip-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Metalic Fury 10%\nเมื่อ Trumpet Shell-LT หรือ Barbed Wire Whip-LT มี Grade ตั้งแต่ C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Metalic Fury ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Troubadour, Trouvere^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -157070,23 +157801,23 @@
         "10"
       ],
       "p_size_all": [
-        "EQUIP[Narcissus Bow-LT]===15"
+        "EQUIP[Narcis Bow-LT]===15"
       ],
       "m_size_all": [
         "EQUIP[Trumpet Shell-LT||Barbed Wire Whip-LT]===15"
       ],
       "range": [
-        "EQUIP[Narcissus Bow-LT]REFINE[weapon==10]===10"
+        "EQUIP[Narcis Bow-LT]REFINE[weapon==10]===10"
       ],
       "Rhythm Shooting": [
-        "EQUIP[Narcissus Bow-LT]REFINE[weapon==10]===10",
-        "EQUIP[Narcissus Bow-LT]GRADE[weapon==C]===10"
+        "EQUIP[Narcis Bow-LT]REFINE[weapon==10]===10",
+        "EQUIP[Narcis Bow-LT]GRADE[weapon==C]===10"
       ],
       "pow": [
-        "EQUIP[Narcissus Bow-LT]GRADE[weapon==C]===5"
+        "EQUIP[Narcis Bow-LT]GRADE[weapon==C]===5"
       ],
       "pAtk": [
-        "EQUIP[Narcissus Bow-LT]GRADE[weapon==C]===5"
+        "EQUIP[Narcis Bow-LT]GRADE[weapon==C]===5"
       ],
       "m_my_element_all": [
         "EQUIP[Trumpet Shell-LT||Barbed Wire Whip-LT]REFINE[weapon==10]===10"
@@ -157281,9 +158012,9 @@
     "id": 490181,
     "aegisName": "Hero_Token_IQ",
     "name": "Heroic Token (Inquisitor) [1]",
-    "unidName": "Accessory",
+    "unidName": "Club",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Iron Nail-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Iron Nail-LT is 10 or higher, increases long ranged physical damage by 10%, increases Explosion Blaster damage by 10%.\nIf grade of Iron Nail-LT is C or higher, POW + 5, P.Atk + 5, increases Explosion Blaster damage by additional 10%.\n\nWhen equipped with Ray Knuckle-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Ray Knuckle-LT is 10 or higher, increases melee physical damage by 10%, increases Third Flame Bomb damage by 10%.\nIf grade of Ray Knuckle-LT is C or higher, POW + 5, P.Atk + 5, increases Third Flame Bomb damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Inquisitor^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Inquisitor แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Iron Nail-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ Iron Nail-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Explosion Blaster 10%\nเมื่อ Iron Nail-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Explosion Blaster ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Ray Knuckle-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ Ray Knuckle-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%, เพิ่ม Damage สกิล Third Flame Bomb 10%\nเมื่อ Ray Knuckle-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Third Flame Bomb ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -162802,6 +163533,202 @@
       ]
     }
   },
+  "490670": {
+    "id": 490670,
+    "aegisName": null,
+    "name": "Memento Memory (Cardinal) [1]",
+    "unidName": "Memento Memory (Cardinal)",
+    "resName": "Memento_Mori",
+    "description": "สิ่งช่วยเตือนความจำ ณ ช่วงเวลาอันน่าจดจำ\n\nATK + 100\nลด Delay หลังใช้สกิล 10%\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Thanos Hammer-AD,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Petitio 10%\n\nเมื่อ Thanos Hammer-AD มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\nเพิ่ม Damage สกิล Petitio 10%\n\nเมื่อ Thanos Hammer-AD มี Grade ตั้งแต่ C ขึ้นไป,\nP.ATK +5\nเพิ่ม Damage สกิล Petitio 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ArchBishop"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "cri": [
+        "15"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "range": [
+        "EQUIP[Thanos Hammer-AD]REFINE[weapon==10]===20"
+      ],
+      "Petitio": [
+        "EQUIP[Thanos Hammer-AD]===10",
+        "EQUIP[Thanos Hammer-AD]REFINE[weapon==10]===10",
+        "EQUIP[Thanos Hammer-AD]GRADE[weapon==C]===15"
+      ],
+      "pAtk": [
+        "EQUIP[Thanos Hammer-AD]GRADE[weapon==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Thanos Hammer-AD]===15"
+      ]
+    }
+  },
+  "490672": {
+    "id": 490672,
+    "aegisName": null,
+    "name": "Memento Mind (Elemental Master) [1]",
+    "unidName": "Memento Mind (Elemental Master)",
+    "resName": "Bracelet_Of_Puppet",
+    "description": "สิ่งช่วยเตือนความจำ ณ ช่วงเวลาอันน่าระลึกถึง\n\nMATK + 50\nลด Delay หลังใช้สกิล 10%\nSPL + 5\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Magic Helmet-LT,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Lightning Land 5%\n\nเมื่อ Thanos Magic Helmet-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nMATK + 15%\nเพิ่ม Damage สกิล Lightning Land 10%\n\nเมื่อ Thanos Magic Helmet-LT มี Grade ตั้งแต่ C ขึ้นไป,\nS.MATK +5\nเพิ่ม Damage สกิล Lightning Land 10%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sorcerer"
+    ],
+    "script": {
+      "matk": [
+        "50"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "5"
+      ],
+      "m_class_all": [
+        "10"
+      ],
+      "matkPercent": [
+        "EQUIP[Thanos Magic Helmet-LT]REFINE[headUpper==10]===15"
+      ],
+      "Lightning Land": [
+        "EQUIP[Thanos Magic Helmet-LT]===5",
+        "EQUIP[Thanos Magic Helmet-LT]REFINE[headUpper==10]===10",
+        "EQUIP[Thanos Magic Helmet-LT]GRADE[headUpper==C]===10"
+      ],
+      "sMatk": [
+        "EQUIP[Thanos Magic Helmet-LT]GRADE[headUpper==C]===5"
+      ],
+      "m_size_all": [
+        "EQUIP[Thanos Magic Helmet-LT]===15"
+      ]
+    }
+  },
+  "490674": {
+    "id": 490674,
+    "aegisName": null,
+    "name": "Memento Memory (Elemental Master) [1]",
+    "unidName": "Memento Memory (Elemental Master)",
+    "resName": "Memento_Mori",
+    "description": "สิ่งช่วยเตือนความจำ ณ ช่วงเวลาอันน่าจดจำ\n\nMATK + 100\nลด Delay หลังใช้สกิล 10%\nSPL + 10\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Thanos Staff-AD,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Lightning Land 10%\n\nเมื่อ Thanos Staff-AD มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nMATK + 20%\nเพิ่ม Damage สกิล Lightning Land 10%\n\nเมื่อ Thanos Staff-AD มี Grade ตั้งแต่ C ขึ้นไป, S.MATK + 5\nเพิ่ม Damage สกิล Lightning Land 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sorcerer"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "matkPercent": [
+        "EQUIP[Thanos Staff-AD]REFINE[weapon==10]===20"
+      ],
+      "Lightning Land": [
+        "EQUIP[Thanos Staff-AD]===10",
+        "EQUIP[Thanos Staff-AD]REFINE[weapon==10]===10",
+        "EQUIP[Thanos Staff-AD]GRADE[weapon==C]===15"
+      ],
+      "sMatk": [
+        "EQUIP[Thanos Staff-AD]GRADE[weapon==C]===5"
+      ],
+      "m_size_all": [
+        "EQUIP[Thanos Staff-AD]===15"
+      ]
+    }
+  },
+  "490676": {
+    "id": 490676,
+    "aegisName": null,
+    "name": "Memento Mind (Cardinal) [1]",
+    "unidName": "Memento Mind (Cardinal)",
+    "resName": "Bracelet_Of_Puppet",
+    "description": "สิ่งช่วยเตือนความจำ ณ ช่วงเวลาอันน่าจดจำ\n\nATK + 50\nลด Delay หลังใช้สกิล 10%\nCRI + 10\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Thanos Fighter Helmet-LT,\nเพิ่ม Damage ทางกายภาพแก่ศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Petitio 5%\n\nเมื่อ Thanos Fighter Helmet-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nCritical Damage + 15%\nเพิ่ม Damage สกิล Petitio 10%\n\nเมื่อ Thanos Fighter Helmet-LT มี Grade ตั้งแต่ C ขึ้นไป,\nP.ATK + 5\nเพิ่ม Damage สกิล Petitio 10%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop Class^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ArchBishop"
+    ],
+    "script": {
+      "atk": [
+        "50"
+      ],
+      "acd": [
+        "10"
+      ],
+      "cri": [
+        "10"
+      ],
+      "p_class_all": [
+        "10"
+      ],
+      "criDmg": [
+        "EQUIP[Thanos Fighter Helmet-LT]REFINE[headUpper==10]===15"
+      ],
+      "Petitio": [
+        "EQUIP[Thanos Fighter Helmet-LT]===5",
+        "EQUIP[Thanos Fighter Helmet-LT]REFINE[headUpper==10]===10",
+        "EQUIP[Thanos Fighter Helmet-LT]GRADE[headUpper==C]===10"
+      ],
+      "pAtk": [
+        "EQUIP[Thanos Fighter Helmet-LT]GRADE[headUpper==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Thanos Fighter Helmet-LT]===15"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -163771,9 +164698,9 @@
     "id": 500038,
     "aegisName": "Light_Blade_LT",
     "name": "Light Blade-LT [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Light_Blade_LT",
-    "description": "Matk + 195, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases Gloria Domini and Genesis Ray damage by 5% per 3 refine rate.\nIf refine rate is 7 or higher, reduces variable casting time by 10%.\nIf refine rate is 9 or higher, increases neutral and holy property magical damage by 15%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases Gloria Domini and Genesis Ray damage by additional 30%\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases neutral and holy property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Sword^000000 Attack: ^777777130^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Royal Guard classes^000000",
+    "description": "Light Blade เวอร์ชั่นปรับปรุงที่ว่ากันว่าเคยถูกใช้โดยนักรบผู้หนึ่ง\nทำงานประสานกันกับ Hero Boots-LT\nMATK + 195, MATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, SPL + 2, S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Gloria Domini, Genesis Ray 5%\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Holy 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage สกิล Gloria Domini, Genesis Ray ขึ้นอีก 30%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%.\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Holy 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777130^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -168208,9 +169135,9 @@
     "id": 530019,
     "aegisName": "Undine_Spear_K_LT",
     "name": "Aquatic Spear-LT [2]",
-    "unidName": "Spear",
+    "unidName": "Javelin",
     "resName": "Undine_Spear_K_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases long ranged physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Cannon Spear and Vanishing Point damage by 15%, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increases Cannon Spear and Vanishing Point damage by additional 35%\nIf refine rate is 11 or higher, Perfect Hit + 15, increases physical damage against all size enemies by 15%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases physical damage against all property enemies by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Spear^000000 Attack: ^777777205^000000\nWeight: ^777777140^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Royal Guard classes^000000",
+    "description": "Spear เวอร์ชั่นปรับปรุงที่มีความงดงามราวกับคลื่นทะเลลูกใหญ่ ว่ากันว่าเคยถูกใช้โดยวีรบุรุษที่ได้รับพรจากภูติแห่งน้ำ\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Cannon Spear, Vanishing Point 15%, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Cannon Spear, Vanishing Point ขึ้นอีก 35%\nเมื่ออัพเกรดถึงขั้น 11, Perfect Hit + 15%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777One-Handed Spear^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^777777140^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 259,
@@ -176475,9 +177402,9 @@
     "id": 560026,
     "aegisName": "Iron_Nail_K_LT",
     "name": "Iron Nail-LT [2]",
-    "unidName": "Knuckle",
+    "unidName": "Waghnak",
     "resName": "Iron_Nail_K_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases long ranged physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Rampage Blast and Lightning Ride damage by 20%.\nIf refine rate is 9 or higher, reduces skill cooldown of Rampage Blast and Earth Shaker by 1 second, reduces SP consumption of Rampage Blast by 15%.\nIf refine rate is 11 or higher, increases physical damage against all property enemies by 15%, increases Rampage Blast and Lightning Ride damage by additional 25%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Knuckle^000000 Attack: ^777777205^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Sura^000000",
+    "description": "Knuckle เวอร์ชั่นปรับปรุงที่ว่ากันว่าเคยถูกใช้โดยวีรบุรุษในอดีต\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่มพลังโจมตีทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Rampage Blast, Lightning Ride 20%\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Rampage Blast, Earth Shaker 1 วินาที, ลดปริมาณ SP ที่ใช้สกิล Rampage Blast 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%, เพิ่ม Damage สกิล Rampage Blast, Lightning Ride ขึ้นอีก 25%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sura Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 268,
@@ -176538,9 +177465,9 @@
     "id": 560027,
     "aegisName": "Ray_Knuckle_LT",
     "name": "Ray Knuckle-LT [2]",
-    "unidName": "Knuckle",
+    "unidName": "Waghnak",
     "resName": "Ray_Knuckle_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases Tiger Cannon damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Tiger Cannon damage by additional 25%, increase Gates of Hell damage by 30%.\nIf refine rate is 9 or higher, reduces skill cooldown of Tiger Cannon by 1 second, increases melee and long ranged physcial damage by 10%.\nIf refine rate is 11 or higher, MaxHP + 10%, increase Gates of Hell damage by additional 15%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases melee and long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Knuckle^000000 Attack: ^777777205^000000\nWeight: ^77777780^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Sura^000000",
+    "description": "Knuckle เวอร์ชั่นปรับปรุงที่มีคมซึ่งทำจากแร่ส่องแสงประกายที่ค้นพบจากอุกกาบาต\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Tiger Cannon 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Tiger Cannon ขึ้นอีก 25%, เพิ่ม Damage สกิล Hell Gate 30%\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Tiger Cannon 1 วินาที, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\nเมื่ออัพเกรดถึงขั้น 11, MHP + 10%, เพิ่ม Damage สกิล Hell Gate ขึ้นอีก 15%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^77777780^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sura Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 268,
@@ -177868,9 +178795,9 @@
     "id": 570027,
     "aegisName": "Trumpet_Shell_K_LT",
     "name": "Trumpet Shell-LT [2]",
-    "unidName": "Musical Instrument",
+    "unidName": "Violin",
     "resName": "Trumpet_Shell_K_LT",
-    "description": "Matk + 230, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases all property magical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Reverberation and Metallic Sound damage by 20%.\nIf refine rate is 9 or higher, reduces fixed casting time of Reverberation by 0.5 seconds, reduces skill cooldown of Metallic Sound by 2 seconds.\nIf refine rate is 11 or higher, increases magical damage against all property enemies by 15%, increases Reverberation and Metallic Sound damage by additional 20%.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n\n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases all property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\n\nClass: ^777777Instrument^000000 Attack: ^777777160^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Minstrel^000000",
+    "description": "Trumpet Shell เวอร์ชั่นปรับปรุงที่ส่งเสียงอันน่าอัศจรรย์ออกมา\nทำงานประสานกันกับ Hero Boots-LT\nMATK + 230, MATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Reverberation, Metalic Sound 20%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่สกิล Reverberation 0.5 วินาที, ลด Cooldown สกิล Metalic Sound 2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%, เพิ่ม Damage สกิล Reverberation, Metalic Sound ขึ้นอีก 20%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777Instrument^000000 พลังโจมตี : ^777777160^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 269,
@@ -179198,9 +180125,9 @@
     "id": 580027,
     "aegisName": "Barb_Wire_K_LT",
     "name": "Barbed Wire Whip-LT [2]",
-    "unidName": "Whip",
+    "unidName": "Rope",
     "resName": "Barb_Wire_K_LT",
-    "description": "Matk + 230, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases all property magical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Reverberation and Metallic Sound damage by 20%.\nIf refine rate is 9 or higher, reduces fixed casting time of Reverberation by 0.5 seconds, reduces skill cooldown of Metallic Sound by 2 seconds.\nIf refine rate is 11 or higher, increases magical damage against all property enemies by 15%, increases Reverberation and Metallic Sound damage by additional 20%.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n\n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases all property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\n\nClass: ^777777Whip^000000 Attack: ^777777160^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Wanderer^000000",
+    "description": "Wire Whip เวอร์ชั่นปรับปรุงที่ถักด้วยลวด\nทำงานประสานกันกับ Hero Boots-LT\nMATK + 230, MATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Reverberation, Metalic Sound 20%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่สกิล Reverberation  0.5 วินาที, ลด Cooldown สกิล Metalic Sound 2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%, เพิ่ม Damage สกิล Reverberation, Metalic Sound ขึ้นอีก 20%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777Whip^000000 พลังโจมตี : ^777777160^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Wanderer Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 270,
@@ -186214,9 +187141,9 @@
     "id": 640027,
     "aegisName": "Iron_Staff_LT",
     "name": "Aeon Staff-LT [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Iron_Staff_LT",
-    "description": "Can't be destroyed.\nMatk + 235, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases Earth Strain and Gravitational Field damage by 12% per 3 refine rate.\nIf refine rate is 7 or higher, reduces variable casting time by 15%, increases neutral, earth and fire property magical damage by 20%.\nIf refine rate is 9 or higher, reduces skill cooldown of Earth Strain by 1 second, increases Comet damage by 30%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 20%, increases Crimson Rock damage by 30%.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases neutral, earth and fire property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Two-handed Staff^000000 Attack: ^777777100^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Warlock^000000",
+    "description": "Staff เวอร์ชั่นปรับปรุงที่ทำจากโลหะจากโลกอื่น\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nMATK + 235, MATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Earth Strain, Gravitational Field 12%\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Earth, Fire 20%\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Earth Strain 1 วินาที, เพิ่ม Damage สกิล Comet 30%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 20%, เพิ่ม Damage สกิล Crimson Rock 30%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Earth, Fire 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777Two-handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Warlock Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 266,
@@ -186290,9 +187217,9 @@
     "id": 640028,
     "aegisName": "Blue_Crystal_Staff_LT",
     "name": "Blue Crystal Staff-LT [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Blue_Crystal_Staff_LT",
-    "description": "Can't be destroyed.\nMatk + 235, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases Jack Frost damage by 12% per 3 refine rate.\nIf refine rate is 7 or higher, reduces variable casting time by 10%, increases water, wind and ghost property magical damage by 15%.\nIf refine rate is 9 or higher, reduces skill cooldown of Jack Frost by 1 second, reduces global cooldown by 5%, increases Soul Expansion damage by 30%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, increases Chain Lightning damage by 30%.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases water, wind and ghost property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Two-handed Staff^000000 Attack: ^777777100^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Warlock^000000",
+    "description": "Staff เวอร์ชั่นปรับปรุงที่มีพลังน้ำแข็งอันเยือกเย็น ซึ่งเคยถูกใช้โดยจอมเวทย์ผู้ยิ่งใหญ่ในอดีต\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nMATK + 235, MATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Jack Frost 12%\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind, Ghost 15%\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Jack Frost 1 วินาที, ลด Delay หลังใช้สกิล 5%, เพิ่ม Damage สกิล Soul Expansion 30%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage สกิล Chain Lightning 30%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind, Ghost 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2\nประเภท : ^777777Two-handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Warlock Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 266,
@@ -189201,10 +190128,10 @@
   "700049": {
     "id": 700049,
     "aegisName": "Narcis_Bow_LT",
-    "name": "Narcissus Bow-LT [2]",
+    "name": "Narcis Bow-LT [2]",
     "unidName": "Bow",
     "resName": "Narcis_Bow_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases long ranged physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Severe Rainstorm damage by 25%, reduces skill cooldown of Severe Rainstorm by 2 seconds.\nIf refine rate is 9 or higher, increases Severe Rainstorm damage by additional 30%, reduces variable casting time by 10%.\nIf refine rate is 11 or higher, reduces physical and magical damage taken from all size enemies by 20%, increases physical damage against all property enemies by 15%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n\n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\n\nClass: ^777777Bow^000000 Attack: ^777777210^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Archer classes, Rogue classes^000000",
+    "description": "Bow เวอร์ชั่นปรับปรุงที่บรรจุเรื่องราวของวีรบุรุษผู้สร้างชื่อเสียงในสงครามยุคโบราณไว้\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Severe Rainstorm 25%, ลด Cooldown สกิล Severe Rainstorm 2 วินาที\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Severe Rainstorm ขึ้นอีก 30%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูทุกขนาด 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Archer Class, Rogue Class^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
