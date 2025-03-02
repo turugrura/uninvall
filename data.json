@@ -26832,32 +26832,6 @@
       ]
     }
   },
-  "19785": {
-    "id": 19785,
-    "aegisName": "C_Well_Baked_Toast",
-    "name": "Costume Crunch Toast",
-    "unidName": "Ribbon",
-    "resName": "토스트",
-    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nขนมปังที่จะช่วยทำให้เราอิ่มท้องในวันเร่งรีบ เมื่อกัดลงไปจะรู้สึกได้ถึงความนุ่มและกรอบในเวลาเดียวกัน\nATK/MATK + 50\nเพิ่มอัตราดรอปไอเท็ม 10%\n\n^ff0000ความสามารถของไอเท็มชิ้นนี้จะถูกลบในวันที่ 16 มกราคม 2568 (ก่อนปิดปรับปรุงเซิร์ฟเวอร์)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
-    "slots": 0,
-    "itemTypeId": 9,
-    "itemSubTypeId": 521,
-    "itemLevel": null,
-    "attack": null,
-    "defense": 0,
-    "weight": 0,
-    "requiredLevel": 1,
-    "location": "Lower",
-    "compositionPos": null,
-    "script": {
-      "atk": [
-        "50"
-      ],
-      "matk": [
-        "50"
-      ]
-    }
-  },
   "20718": {
     "id": 20718,
     "aegisName": "FaceWorm_Skin_",
@@ -47198,6 +47172,141 @@
       ]
     }
   },
+  "24747": {
+    "id": 24747,
+    "aegisName": "S_SpellCaster_Armor",
+    "name": "Spell Caster Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우3",
+    "description": "สามารถรับผลพลังป้องกันเพิ่มขึ้นได้อีกจาก Armor ที่สวมทับ Armor ถึงจะสามารถใช้เดี่ยว ๆ ได้ แต่ก็มีผลพลังป้องกันต่ำ\nทุก ๆ การอัพเกรด 1 ขั้น ลดระยะเวลาร่ายแบบแปรผัน 1%\nทุก ๆ การอัพเกรด 3 ขั้น ATK + 1%, MATK + 1%.\n \nเมื่อสวมใส่ร่วมกับ Spell Caster Shadow (Armor, Shoes), ลดปริมาณการใช้ SP 10%,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n(แต่เมื่อสวมใส่ร่วมกับ Spell Caster Shadow (Earring, Pendant), จะไม่เกิดการลดระยะเวลาร่ายแบบคงที่ซ้ำ)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "1---1"
+      ],
+      "atkPercent": [
+        "3---1"
+      ],
+      "matkPercent": [
+        "3---1"
+      ],
+      "fct": [
+        "EQUIP[Spell Caster Shadow Shoes]REFINE[shadowArmor,shadowBoot==20]===0.3"
+      ]
+    }
+  },
+  "24748": {
+    "id": 24748,
+    "aegisName": "S_SpellCaster_Shoes",
+    "name": "Spell Caster Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우3",
+    "description": "รองเท้าที่สามารถใส่ซ้อนทับรองเท้าอีกได้ ถึงจะสามารถใช้เดี่ยว ๆ ได้แต่ก็มีผลต่ำ\nทุก ๆ การอัพเกรด 1 ขั้น ลดระยะเวลาร่ายแบบแปรผัน 1%\nทุก ๆ การอัพเกรด 3 ขั้น ATK + 1%, MATK + 1%.\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "1---1"
+      ],
+      "atkPercent": [
+        "3---1"
+      ],
+      "matkPercent": [
+        "3---1"
+      ]
+    }
+  },
+  "24749": {
+    "id": 24749,
+    "aegisName": "S_SpellCaster_Earring",
+    "name": "Spell Caster Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우3",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่ว่ากันว่าช่วยปกป้องผู้สวมใส่ ช่วยดึงความสามารถที่ซ่อนไว้ของผู้สวมใส่ออกมา\nทุก ๆ การอัพเกรด 1 ขั้น ลดระยะเวลาร่ายแบบแปรผัน 1%\nทุก ๆ การอัพเกรด 3 ขั้น ATK + 1%, MATK + 1%.\n \nเมื่อสวมใส่ร่วมกับ Spell Caster Shadow (Earring, Pendant), ลดปริมาณการใช้ SP 10%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n(แต่เมื่อสวมใส่ร่วมกับ Spell Caster Shadow (Armor, Shoes), จะไม่เกิดการลดระยะเวลาร่ายแบบคงที่ซ้ำ)\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "1---1"
+      ],
+      "atkPercent": [
+        "3---1"
+      ],
+      "matkPercent": [
+        "3---1"
+      ],
+      "fct": [
+        "EQUIP[Spell Caster Shadow Shoes]REFINE[shadowEarring,shadowPendant==20]===0.3",
+        "EQUIP[Spell Caster Shadow Shoes]REFINE[shadowEarring,shadowPendant,shadowArmor,shadowBoot==40]===-0.3"
+      ]
+    }
+  },
+  "24750": {
+    "id": 24750,
+    "aegisName": "S_SpellCaster_Pendant",
+    "name": "Spell Caster Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우3",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่ว่ากันว่าช่วยปกป้องผู้สวมใส่ ช่วยดึงความสามารถที่ซ่อนไว้ของผู้สวมใส่ออกมา\nทุก ๆ การอัพเกรด 1 ขั้น ลดระยะเวลาร่ายแบบแปรผัน 1%\nทุก ๆ การอัพเกรด 3 ขั้น ATK + 1%, MATK + 1%.\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "vct": [
+        "1---1"
+      ],
+      "atkPercent": [
+        "3---1"
+      ],
+      "matkPercent": [
+        "3---1"
+      ]
+    }
+  },
   "24763": {
     "id": 24763,
     "aegisName": "S_R_Bearers_Shoes",
@@ -56008,6 +56117,71 @@
       ]
     }
   },
+  "28785": {
+    "id": 28785,
+    "aegisName": "Katar_Of_Infinite",
+    "name": "Time Gap Abyss Dagger [2]",
+    "unidName": "Dagger",
+    "resName": "Time_Gap_ABC_Dagger",
+    "description": "Matk + 230, Matk + 3%.\r\nIncreases Abyss Flame damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Abyss Flame damage by 5%.\r\nIf refine rate is 7 or higher, increases neutral and fire property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Abyss Flame damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Abyss Chaser), increases Abyss Square damage by 25%, increases magical damage against all size enemies by 15%,\r\nif grade of Time Gap Abyss Dagger and Time Dimensions Rune Crown (Abyss Chaser) is A or higher, Matk + 7%, increases Abyss Flame damage by 15%, increases magical damage against all property enemies by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Abyss Flame damage by 15%.\r\n[Grade B] Increases neutral and fire property magical damage by 10%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\n\r\nClass: ^777777Dagger^000000 Attack: ^777777150^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Abyss Chaser^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 5,
+    "attack": 150,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "matk": [
+        "230",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1",
+        "EQUIP[Time Dimensions Rune Crown (Abyss Chaser)]GRADE[weapon==A]GRADE[headUpper==A]===7"
+      ],
+      "Abyss Flame": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15",
+        "EQUIP[Time Dimensions Rune Crown (Abyss Chaser)]GRADE[weapon==A]GRADE[headUpper==A]===15"
+      ],
+      "m_my_element_neutral": [
+        "7===25",
+        "GRADE[me==B]===10"
+      ],
+      "m_my_element_fire": [
+        "7===25",
+        "GRADE[me==B]===10"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Abyss Square": [
+        "EQUIP[Time Dimensions Rune Crown (Abyss Chaser)]===25"
+      ],
+      "m_size_all": [
+        "EQUIP[Time Dimensions Rune Crown (Abyss Chaser)]===15"
+      ],
+      "m_element_all": [
+        "EQUIP[Time Dimensions Rune Crown (Abyss Chaser)]GRADE[weapon==A]GRADE[headUpper==A]===15"
+      ]
+    }
+  },
   "28787": {
     "id": 28787,
     "aegisName": null,
@@ -56043,6 +56217,65 @@
         "POS[leftWeapon]18===2",
         "POS[leftWeapon]19===2",
         "POS[leftWeapon]20===2"
+      ]
+    }
+  },
+  "28789": {
+    "id": 28789,
+    "aegisName": "Time_Gap_SS_Dagger1",
+    "name": "Time Gap Kurojin (A) [2]",
+    "unidName": "Dagger",
+    "resName": "Time_Gap_SS_Dagger1",
+    "description": "Increases Kunai - Rotation damage by 15%.\r\nWhen equipped with Time Gap Kurojin (B) on the left hand,\r\nevery 3 sum of refine rate, Atk + 25, Atk + 1%,\r\nevery 4 sum of refine rate, increases Kunai - Rotation damage by 5%.\r\nIf the sum of refine rate is 14 or higher, increases long rangedd damage by 25%.\r\nIf the sum of refine rate is 17 or higher, reduces variable casting time by 10%, P.Atk + 7.\r\nIf the sum of refine rate is 21 or higher, increases Kunai - Rotation damage by additional 15%.\r\n\r\nWhen equipped with Time Gap Kurojin (B) and Time Dimensions Rune Crown (Shinkiro & Shiranui), increases Kunai - Refraction damage by 25%, increases long ranged physical damage by 15%,\r\nif grade of Time Gap Kurojin (A), Time Gap Kurojin (B) and Time Dimensions Rune Crown (Shinkiro & Shiranui) is A or higher, reduces skill cooldown of Kunai - Rotation and Kunai - Refraction by 0.7 seconds. (This effect is applied when Time Gap Kurojin (B) is equipped on the left hand.)\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Kunai - Rotation damage by 15%.\r\n[Grade B] Increases long ranged physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\n\r\nClass: ^777777Dagger^000000 Attack: ^777777210^000000\r\nWeight: ^777777150^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Shinkiro, Shiranui^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 5,
+    "attack": 210,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "Kunai - Rotation": [
+        "15",
+        "EQUIP[Time Gap Kurojin (B)]POS[weapon]REFINE[weapon,leftWeapon==4]---5",
+        "EQUIP[Time Gap Kurojin (B)]POS[weapon]REFINE[weapon,leftWeapon==21]===15",
+        "GRADE[me==C]===15"
+      ],
+      "Kunai - Refraction": [
+        "EQUIP[Time Gap Kurojin (B)&&Time Dimensions Rune Crown (Shinkiro & Shiranui)]POS[weapon]===25"
+      ],
+      "range": [
+        "EQUIP[Time Gap Kurojin (B)&&Time Dimensions Rune Crown (Shinkiro & Shiranui)]POS[weapon]===15",
+        "EQUIP[Time Gap Kurojin (B)]POS[weapon]REFINE[weapon,leftWeapon==14]===25",
+        "GRADE[me==B]===10"
+      ],
+      "atk": [
+        "EQUIP[Time Gap Kurojin (B)]POS[weapon]REFINE[weapon,leftWeapon==3]---25"
+      ],
+      "atkPercent": [
+        "EQUIP[Time Gap Kurojin (B)]POS[weapon]REFINE[weapon,leftWeapon==3]---1"
+      ],
+      "vct": [
+        "EQUIP[Time Gap Kurojin (B)]POS[weapon]REFINE[weapon,leftWeapon==17]===10"
+      ],
+      "pAtk": [
+        "EQUIP[Time Gap Kurojin (B)]POS[weapon]REFINE[weapon,leftWeapon==17]===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "cd__Kunai - Rotation": [
+        "EQUIP[Time Gap Kurojin (B)&&Time Dimensions Rune Crown (Shinkiro & Shiranui)]GRADES[weapon==A&&leftWeapon==A&&headUpper==A]POS[weapon]===0.7"
+      ],
+      "cd__Kunai - Refraction": [
+        "EQUIP[Time Gap Kurojin (B)&&Time Dimensions Rune Crown (Shinkiro & Shiranui)]GRADES[weapon==A&&leftWeapon==A&&headUpper==A]POS[weapon]===0.7"
       ]
     }
   },
@@ -64646,58 +64879,6 @@
       ]
     }
   },
-  "31158": {
-    "id": 31158,
-    "aegisName": "C_Squirrel_Ear_Hat",
-    "name": "Costume Squirrel Ear Hat",
-    "unidName": "Cap",
-    "resName": "다람쥐귀모자",
-    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nหมวกกระรอกหูตั้งน่ารัก เมื่อสวมใส่แล้วรู้สึกเหมือนจะกลายเป็นกระรอกตัวเล็กที่มีความเฉียบแหลมในการโจมตี\nATK/MATK + 50\nเพิ่มอัตราดรอปไอเท็ม 10%\n\n^ff0000ความสามารถของไอเท็มชิ้นนี้จะถูกลบในวันที่ 16 มกราคม 2568 (ก่อนปิดปรับปรุงเซิร์ฟเวอร์)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
-    "slots": 0,
-    "itemTypeId": 9,
-    "itemSubTypeId": 519,
-    "itemLevel": null,
-    "attack": null,
-    "defense": 0,
-    "weight": 0,
-    "requiredLevel": 1,
-    "location": null,
-    "compositionPos": null,
-    "script": {
-      "atk": [
-        "50"
-      ],
-      "matk": [
-        "50"
-      ]
-    }
-  },
-  "31716": {
-    "id": 31716,
-    "aegisName": "C_Blinking_Eyes_RD",
-    "name": "Costume Twinkling Red Eyes",
-    "unidName": "Ribbon",
-    "resName": "C_Blinking_Eyes_RD",
-    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nคอนแทคเลนส์สีแดงที่เมื่อใส่แล้วตาจะกระพริบ\nATK/MATK + 50\nเพิ่มอัตราดรอปไอเท็ม 10%\n\n^ff0000ความสามารถของไอเท็มชิ้นนี้จะถูกลบในวันที่ 16 มกราคม 2568 (ก่อนปิดปรับปรุงเซิร์ฟเวอร์)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ ยกเว้น Summonner^000000",
-    "slots": 0,
-    "itemTypeId": 9,
-    "itemSubTypeId": 520,
-    "itemLevel": null,
-    "attack": null,
-    "defense": 0,
-    "weight": 0,
-    "requiredLevel": 1,
-    "location": null,
-    "compositionPos": null,
-    "script": {
-      "atk": [
-        "50"
-      ],
-      "matk": [
-        "50"
-      ]
-    }
-  },
   "32005": {
     "id": 32005,
     "aegisName": "Pole_Axe_IL",
@@ -73002,6 +73183,91 @@
       ],
       "chance__atk": [
         "EQUIP[True Trentini Card]===200"
+      ]
+    }
+  },
+  "300619": {
+    "id": 300619,
+    "aegisName": null,
+    "name": "Upgrade Osiris Card",
+    "unidName": "Upgrade Osiris Card",
+    "resName": "이름없는카드",
+    "description": "MaxHP, MaxSP + 20%\nสามารถใช้งานสกิล Indulge Lv.1 ได้\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Enhanced Eternity",
+    "script": {
+      "hpPercent": [
+        "20"
+      ],
+      "spPercent": [
+        "20"
+      ]
+    }
+  },
+  "300620": {
+    "id": 300620,
+    "aegisName": null,
+    "name": "Upgrade Doppelganger Card",
+    "unidName": "Upgrade Doppelganger Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 15\n\nเมื่อสวมใส่ร่วมกับอาวุธเลเวล 5,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 15%\n\nเมื่ออัพเกรดอาวุธถึงขั้น 14,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาดขึ้นอีก 10%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "of Enhanced Berserk",
+    "script": {
+      "p_size_all": [
+        "15",
+        "14===10",
+        "WEAPON_LEVEL[5]===15"
+      ],
+      "atk": [
+        "2---15"
+      ]
+    }
+  },
+  "300621": {
+    "id": 300621,
+    "aegisName": null,
+    "name": "Upgrade Time Holder Card",
+    "unidName": "Upgrade Time Holder Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nทุก ๆ การอัพเกรด 2 ขั้น, MATK + 15\n\nเมื่อสวมใส่ร่วมกับอาวุธเลเวล 5,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาดขึ้นอีก 15%\n\nเมื่ออัพเกรดอาวุธถึงขั้น 14,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาดขึ้นอีก 10%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "of Enhanced Wisdom ",
+    "script": {
+      "m_size_all": [
+        "15",
+        "14===10",
+        "WEAPON_LEVEL[5]===15"
+      ],
+      "matk": [
+        "2---15"
       ]
     }
   },
@@ -123896,6 +124162,1045 @@
       ]
     }
   },
+  "313406": {
+    "id": 313406,
+    "aegisName": "Yorscalp_Str1",
+    "name": "Strength of Yorscalp 1Lv",
+    "unidName": "Strength of Yorscalp 1Lv",
+    "resName": "Yorscalp_Str",
+    "description": "Every 2 refine rate of headgear, Atk + 3.\r\nEvery 4 refine rate of headgear, P.Atk + 1.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---3"
+      ],
+      "pAtk": [
+        "4---1"
+      ]
+    }
+  },
+  "313407": {
+    "id": 313407,
+    "aegisName": "Yorscalp_Str2",
+    "name": "Strength of Yorscalp 2Lv",
+    "unidName": "Strength of Yorscalp 2Lv",
+    "resName": "Yorscalp_Str",
+    "description": "Every 2 refine rate of headgear, Atk + 5.\r\nEvery 4 refine rate of headgear, P.Atk + 2.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---5"
+      ],
+      "pAtk": [
+        "4---2"
+      ]
+    }
+  },
+  "313408": {
+    "id": 313408,
+    "aegisName": "Yorscalp_Str3",
+    "name": "Strength of Yorscalp 3Lv",
+    "unidName": "Strength of Yorscalp 3Lv",
+    "resName": "Yorscalp_Str",
+    "description": "Every 2 refine rate of headgear, Atk + 10.\r\nEvery 4 refine rate of headgear, P.Atk + 3.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "pAtk": [
+        "4---3"
+      ]
+    }
+  },
+  "313409": {
+    "id": 313409,
+    "aegisName": "Yorscalp_Str4",
+    "name": "Strength of Yorscalp 4Lv",
+    "unidName": "Strength of Yorscalp 4Lv",
+    "resName": "Yorscalp_Str",
+    "description": "Every 2 refine rate of headgear, Atk + 15.\r\nEvery 4 refine rate of headgear, P.Atk + 5.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---15"
+      ],
+      "pAtk": [
+        "4---5"
+      ]
+    }
+  },
+  "313410": {
+    "id": 313410,
+    "aegisName": "Yorscalp_Int1",
+    "name": "Intelligence of Yorscalp 1Lv",
+    "unidName": "Intelligence of Yorscalp 1Lv",
+    "resName": "Yorscalp_Int",
+    "description": "Every 2 refine rate of headgear, Matk + 3.\r\nEvery 4 refine rate of headgear, S.Matk + 1.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "2---3"
+      ],
+      "sMatk": [
+        "4---1"
+      ]
+    }
+  },
+  "313411": {
+    "id": 313411,
+    "aegisName": "Yorscalp_Int2",
+    "name": "Intelligence of Yorscalp 2Lv",
+    "unidName": "Intelligence of Yorscalp 2Lv",
+    "resName": "Yorscalp_Int",
+    "description": "Every 2 refine rate of headgear, Matk + 5.\r\nEvery 4 refine rate of headgear, S.Matk + 2.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "2---5"
+      ],
+      "sMatk": [
+        "4---2"
+      ]
+    }
+  },
+  "313412": {
+    "id": 313412,
+    "aegisName": "Yorscalp_Int3",
+    "name": "Intelligence of Yorscalp 3Lv",
+    "unidName": "Intelligence of Yorscalp 3Lv",
+    "resName": "Yorscalp_Int",
+    "description": "Every 2 refine rate of headgear, Matk + 10.\r\nEvery 4 refine rate of headgear, S.Matk + 3.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "2---10"
+      ],
+      "sMatk": [
+        "4---3"
+      ]
+    }
+  },
+  "313413": {
+    "id": 313413,
+    "aegisName": "Yorscalp_Int4",
+    "name": "Intelligence of Yorscalp 4Lv",
+    "unidName": "Intelligence of Yorscalp 4Lv",
+    "resName": "Yorscalp_Int",
+    "description": "Every 2 refine rate of headgear, Matk + 15.\r\nEvery 4 refine rate of headgear, S.Matk + 5.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "2---15"
+      ],
+      "sMatk": [
+        "4---5"
+      ]
+    }
+  },
+  "313414": {
+    "id": 313414,
+    "aegisName": "Yorscalp_Smart1",
+    "name": "Smart of Yorscalp 1Lv",
+    "unidName": "Smart of Yorscalp 1Lv",
+    "resName": "Yorscalp_Smart",
+    "description": "Every 2 refine rate of headgear, Atk + 3, Matk + 3.\r\nEvery 4 refine rate of headgear, reduces variable casting time by 1%, reduces global cooldown by 1%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---3"
+      ],
+      "matk": [
+        "2---3"
+      ],
+      "vct": [
+        "4---1"
+      ],
+      "acd": [
+        "4---1"
+      ]
+    }
+  },
+  "313415": {
+    "id": 313415,
+    "aegisName": "Yorscalp_Smart3",
+    "name": "Smart of Yorscalp 3Lv",
+    "unidName": "Smart of Yorscalp 3Lv",
+    "resName": "Yorscalp_Smart",
+    "description": "Every 2 refine rate of headgear, Atk + 10, Matk + 10.\r\nEvery 4 refine rate of headgear, reduces variable casting time by 3%, reduces global cooldown by 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "matk": [
+        "2---10"
+      ],
+      "vct": [
+        "4---3"
+      ],
+      "acd": [
+        "4---3"
+      ]
+    }
+  },
+  "313416": {
+    "id": 313416,
+    "aegisName": "Yorscalp_Smart2",
+    "name": "Smart of Yorscalp 2Lv",
+    "unidName": "Smart of Yorscalp 2Lv",
+    "resName": "Yorscalp_Smart",
+    "description": "Every 2 refine rate of headgear, Atk + 5, Matk + 5.\r\nEvery 4 refine rate of headgear, reduces variable casting time by 2%, reduces global cooldown by 2%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---5"
+      ],
+      "matk": [
+        "2---5"
+      ],
+      "vct": [
+        "4---2"
+      ],
+      "acd": [
+        "4---2"
+      ]
+    }
+  },
+  "313417": {
+    "id": 313417,
+    "aegisName": "Yorscalp_Smart4",
+    "name": "Smart of Yorscalp 4Lv",
+    "unidName": "Smart of Yorscalp 4Lv",
+    "resName": "Yorscalp_Smart",
+    "description": "Every 2 refine rate of headgear, Atk + 15, Matk + 15.\r\nEvery 4 refine rate of headgear, reduces variable casting time by 4%, reduces global cooldown by 4%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---15"
+      ],
+      "matk": [
+        "2---15"
+      ],
+      "vct": [
+        "4---4"
+      ],
+      "acd": [
+        "4---4"
+      ]
+    }
+  },
+  "313418": {
+    "id": 313418,
+    "aegisName": "Yorscalp_Speed1",
+    "name": "Speed of Yorscalp 1Lv",
+    "unidName": "Speed of Yorscalp 1Lv",
+    "resName": "Yorscalp_Speed",
+    "description": "Every 2 refine rate of headgear, Atk + 3, Matk + 3.\r\nEvery 4 refine rate of headgear, increases attack speed (reduces delay after attack by 1%), reduces global cooldown by 1%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---3"
+      ],
+      "matk": [
+        "2---3"
+      ],
+      "aspdPercent": [
+        "4---1"
+      ],
+      "acd": [
+        "4---1"
+      ]
+    }
+  },
+  "313419": {
+    "id": 313419,
+    "aegisName": "Yorscalp_Speed2",
+    "name": "Speed of Yorscalp 2Lv",
+    "unidName": "Speed of Yorscalp 2Lv",
+    "resName": "Yorscalp_Speed",
+    "description": "Every 2 refine rate of headgear, Atk + 5, Matk + 5.\r\nEvery 4 refine rate of headgear, increases attack speed (reduces delay after attack by 2%), reduces global cooldown by 2%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---5"
+      ],
+      "matk": [
+        "2---5"
+      ],
+      "aspdPercent": [
+        "4---2"
+      ],
+      "acd": [
+        "4---2"
+      ]
+    }
+  },
+  "313420": {
+    "id": 313420,
+    "aegisName": "Yorscalp_Speed3",
+    "name": "Speed of Yorscalp 3Lv",
+    "unidName": "Speed of Yorscalp 3Lv",
+    "resName": "Yorscalp_Speed",
+    "description": "Every 2 refine rate of headgear, Atk + 10, Matk + 10.\r\nEvery 4 refine rate of headgear, increases attack speed (reduces delay after attack by 3%), reduces global cooldown by 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "matk": [
+        "2---10"
+      ],
+      "aspdPercent": [
+        "4---3"
+      ],
+      "acd": [
+        "4---3"
+      ]
+    }
+  },
+  "313421": {
+    "id": 313421,
+    "aegisName": "Yorscalp_Speed4",
+    "name": "Speed of Yorscalp 4Lv",
+    "unidName": "Speed of Yorscalp 4Lv",
+    "resName": "Yorscalp_Speed",
+    "description": "Every 2 refine rate of headgear, Atk + 15, Matk + 15.\r\nEvery 4 refine rate of headgear, increases attack speed (reduces delay after attack by 4%), reduces global cooldown by 4%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "2---15"
+      ],
+      "matk": [
+        "2---15"
+      ],
+      "aspdPercent": [
+        "4---4"
+      ],
+      "acd": [
+        "4---4"
+      ]
+    }
+  },
+  "313426": {
+    "id": 313426,
+    "aegisName": "Arbiter_Warrant",
+    "name": "Warrant of Arbiter",
+    "unidName": "Warrant of Arbiter",
+    "resName": "Arbiter_Warrant",
+    "description": "When dealing physical damage, has a certain chance to activate [Warrant of Arbiter] for 10 seconds.\r\n\r\n^32CD32[Warrant of Arbiter]^000000\r\nIncreases physical damage against all race enemies by 20%.\r\nIncreases physical damage against all size enemies by 20%.\r\nIncreases physical damage against all property enemies by 20%.\r\nIncreases physical damage against normal and boss type enemies by 20%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "chance__p_race_all": [
+        "20"
+      ],
+      "chance__p_size_all": [
+        "20"
+      ],
+      "chance__p_element_all": [
+        "20"
+      ],
+      "chance__p_class_normal": [
+        "20"
+      ],
+      "chance__p_class_boss": [
+        "20"
+      ]
+    }
+  },
+  "313427": {
+    "id": 313427,
+    "aegisName": "Bailiff_Warrant",
+    "name": "Warrant of Bailiff",
+    "unidName": "Warrant of Bailiff",
+    "resName": "Bailiff_Warrant",
+    "description": "When dealing magical damage, has a certain chance to activate [Warrant of Bailiff] for 10 seconds.\r\n\r\n^32CD32[Warrant of Bailiff]^000000\r\nIncreases magical damage against all race enemies by 20%.\r\nIncreases magical damage against all size enemies by 20%.\r\nIncreases magical damage against all property enemies by 20%.\r\nIncreases magical damage against normal and boss type enemies by 20%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "chance__m_race_all": [
+        "20"
+      ],
+      "chance__m_size_all": [
+        "20"
+      ],
+      "chance__m_element_all": [
+        "20"
+      ],
+      "chance__m_class_normal": [
+        "20"
+      ],
+      "chance__m_class_boss": [
+        "20"
+      ]
+    }
+  },
+  "313527": {
+    "id": 313527,
+    "aegisName": "Hunt_Ev_State",
+    "name": "Hunting Seal (State)",
+    "unidName": "Hunting Seal (State)",
+    "resName": "Elite_Hunter_Token",
+    "description": "Hunting Seal (State)\r\nAll basic status + 5.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "allStatus": [
+        "5"
+      ]
+    }
+  },
+  "313528": {
+    "id": 313528,
+    "aegisName": "Hunt_Ev_Atk",
+    "name": "Hunting Seal (Attack Power)",
+    "unidName": "Hunting Seal (Attack Power)",
+    "resName": "용의보주_홍",
+    "description": "Atk + 5%, Atk + 15.\r\nIf refine rate is 7 or higher, additional Atk + 25.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "atk": [
+        "15",
+        "7===25"
+      ]
+    }
+  },
+  "313529": {
+    "id": 313529,
+    "aegisName": "Hunt_Ev_Matk",
+    "name": "Hunting Seal (Magic Power)",
+    "unidName": "Hunting Seal (Magic Power)",
+    "resName": "용의보주_홍",
+    "description": "Matk + 5%, Matk + 15.\r\nIf refine rate is 7 or higher, additional Matk + 25.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matkPercent": [
+        "5"
+      ],
+      "matk": [
+        "15",
+        "7===25"
+      ]
+    }
+  },
+  "313530": {
+    "id": 313530,
+    "aegisName": "Hunt_Ev_Warrior",
+    "name": "Hunting Seal (Warrior)",
+    "unidName": "Hunting Seal (Warrior)",
+    "resName": "용의보주_황",
+    "description": "Atk + 15, increases melee physical damage by 3%.\r\nIf refine rate is 7 or higher, increases melee physical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "15"
+      ],
+      "melee": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313531": {
+    "id": 313531,
+    "aegisName": "Hunt_Ev_Archer",
+    "name": "Hunting Seal (Archer)",
+    "unidName": "Hunting Seal (Archer)",
+    "resName": "용의보주_황",
+    "description": "Atk + 15, increases long ranged physical damage by 3%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atk": [
+        "15"
+      ],
+      "range": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313532": {
+    "id": 313532,
+    "aegisName": "Hunt_Ev_Assassin",
+    "name": "Hunting Seal (Assassin)",
+    "unidName": "Hunting Seal (Assassin)",
+    "resName": "용의보주_황",
+    "description": "Cri + 5, increases critical damage by 3%.\r\nIf refine rate is 7 or higher, increases critical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cri": [
+        "5"
+      ],
+      "criDmg": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313533": {
+    "id": 313533,
+    "aegisName": "Hunt_Ev_Magician",
+    "name": "Hunting Seal (Magician)",
+    "unidName": "Hunting Seal (Magician)",
+    "resName": "용의보주_황",
+    "description": "Matk + 15, increases all property magical damage by 3%.\r\nIf refine rate is 7 or higher, increases all property magical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_my_element_all": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313534": {
+    "id": 313534,
+    "aegisName": "Hunt_Ev_Speed",
+    "name": "Hunting Seal (Speed)",
+    "unidName": "Hunting Seal (Speed)",
+    "resName": "용의보주_홍",
+    "description": "ASPD + 1, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by additional 3%).",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "aspd": [
+        "1"
+      ],
+      "aspdPercent": [
+        "5",
+        "7===3"
+      ]
+    }
+  },
+  "313535": {
+    "id": 313535,
+    "aegisName": "Hunt_Ev_Caster",
+    "name": "Hunting Seal (Caster)",
+    "unidName": "Hunting Seal (Caster)",
+    "resName": "용의보주_홍",
+    "description": "Reduces variable casting time by 7%.\r\nIf refine rate is 7 or higher, reduces variable casting time by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "7",
+        "7===3"
+      ]
+    }
+  },
+  "313536": {
+    "id": 313536,
+    "aegisName": "Hunt_Ev_Melee",
+    "name": "Hunting Seal (Melee)",
+    "unidName": "Hunting Seal (Melee)",
+    "resName": "용의보주_황",
+    "description": "Hit + 35, increases melee physical damage by 3%.\r\nIf refine rate is 7 or higher, increases melee physical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hit": [
+        "35"
+      ],
+      "melee": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313537": {
+    "id": 313537,
+    "aegisName": "Hunt_Ev_Range",
+    "name": "Hunting Seal (Range)",
+    "unidName": "Hunting Seal (Range)",
+    "resName": "용의보주_황",
+    "description": "Hit + 35, increases long ranged physical damage by 3%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hit": [
+        "35"
+      ],
+      "range": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313538": {
+    "id": 313538,
+    "aegisName": "Hunt_Ev_Critical",
+    "name": "Hunting Seal (Critical)",
+    "unidName": "Hunting Seal (Critical)",
+    "resName": "용의보주_황",
+    "description": "Cri + 10, increases critical damage by 3%.\r\nIf refine rate is 7 or higher, increases critical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cri": [
+        "10"
+      ],
+      "criDmg": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313539": {
+    "id": 313539,
+    "aegisName": "Hunt_Ev_Spell",
+    "name": "Hunting Seal (Spell)",
+    "unidName": "Hunting Seal (Spell)",
+    "resName": "용의보주_황",
+    "description": "Flee + 50, increases all property magical damage by 3%.\r\nIf refine rate is 7 or higher, increases all property magical damage by additional 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "flee": [
+        "50"
+      ],
+      "m_my_element_all": [
+        "3",
+        "7===3"
+      ]
+    }
+  },
+  "313540": {
+    "id": 313540,
+    "aegisName": "Hunt_Ev_Hp",
+    "name": "Hunting Seal (HP)",
+    "unidName": "Hunting Seal (HP)",
+    "resName": "용의보주_홍",
+    "description": "Def + 35, increases HP recovery rate by 15%.\r\nIf refine rate is 7 or higher, Def + 25, MaxHP + 2%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "def": [
+        "35",
+        "7===25"
+      ],
+      "hpPercent": [
+        "7===2"
+      ]
+    }
+  },
+  "313541": {
+    "id": 313541,
+    "aegisName": "Hunt_Ev_Sp",
+    "name": "Hunting Seal (SP)",
+    "unidName": "Hunting Seal (SP)",
+    "resName": "용의보주_홍",
+    "description": "Mdef + 15, increases SP recovery rate by 15%.\r\nIf refine rate is 7 or higher, Mdef + 10, MaxSP + 2%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "mdef": [
+        "15",
+        "7===10"
+      ],
+      "spPercent": [
+        "7===2"
+      ]
+    }
+  },
+  "313542": {
+    "id": 313542,
+    "aegisName": "Hunt_Ev_P_Force",
+    "name": "Hunting Seal (Physical Force)",
+    "unidName": "Hunting Seal (Physical Force)",
+    "resName": "용의보주_황",
+    "description": "Atk + 5%.\r\nIf refine rate is 7 or higher, increases melee and long ranged physical damage by 5%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "melee": [
+        "7===5"
+      ],
+      "range": [
+        "7===5"
+      ]
+    }
+  },
+  "313543": {
+    "id": 313543,
+    "aegisName": "Hunt_Ev_M_Force",
+    "name": "Hunting Seal (Magical Force)",
+    "unidName": "Hunting Seal (Magical Force)",
+    "resName": "용의보주_황",
+    "description": "Matk + 5%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 5%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "matkPercent": [
+        "5"
+      ],
+      "m_my_element_all": [
+        "7===5"
+      ]
+    }
+  },
+  "313544": {
+    "id": 313544,
+    "aegisName": "Hunt_Ev_Robust",
+    "name": "Hunting Seal (Robust)",
+    "unidName": "Hunting Seal (Robust)",
+    "resName": "용의보주_황",
+    "description": "MaxHP + 5%, MaxSP + 5%.\r\nIf refine rate is 7 or higher, additional MaxHP + 3%, MaxSP + 3%.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "hpPercent": [
+        "5",
+        "7===3"
+      ],
+      "spPercent": [
+        "5",
+        "7===3"
+      ]
+    }
+  },
+  "313545": {
+    "id": 313545,
+    "aegisName": "Hunt_Ev_F_Cast",
+    "name": "Hunting Seal (Fixed Casting)",
+    "unidName": "Hunting Seal (Fixed Casting)",
+    "resName": "용의보주_황",
+    "description": "Reduces fixed casting time by 0.3 seconds.\r\nIf refine rate is 7 or higher, reduces fixed casting time by additional 0.2 seconds.",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "0.3",
+        "7===0.2"
+      ]
+    }
+  },
   "313574": {
     "id": 313574,
     "aegisName": "aegis_313574",
@@ -124658,6 +125963,79 @@
       "Counter Slash": [
         "EQUIP[Thanos Katar-AD]===25",
         "EQUIP[Thanos Katar-AD]REFINE[weapon==2]---12"
+      ]
+    }
+  },
+  "313786": {
+    "id": 313786,
+    "aegisName": "HeroAcc_AG1",
+    "name": "Arch Mage Spirit",
+    "unidName": "Arch Mage Spirit",
+    "resName": "C_160LV_Warlock_Violet",
+    "description": "เพิ่ม Damage สกิล All Bloom และ Violent Quake 15% \n\nเมื่อสวมใส่ร่วมกับ Heroic Token (Arch Mage)\nเพิ่ม Damage สกิล All Bloom และ Violent Quake ขึ้นอีก 15%\n\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT,\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 3%\nที่จะได้รับสถานะ [I'm Hero] เป็นเวลา 10 วินาที\n\nผลเอฟเฟกต์ [I'm Hero]\nSPL + 50  \nS.MATK + 10 \n\nเมื่อขั้นเกรดของรองเท้าตั้งแต่ [B] ขึ้นไป, \nเพิ่มผลเอฟเฟกต์ [I'm Hero]\nSPL +50, S.MATK +10 เพิ่มเติม",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "All Bloom": [
+        "15",
+        "EQUIP[Heroic Token (Arch Mage)]===15"
+      ],
+      "Violent Quake": [
+        "15",
+        "EQUIP[Heroic Token (Arch Mage)]===15"
+      ],
+      "chance__spl": [
+        "EQUIP[Hero Boots-LT]===50",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===50"
+      ],
+      "chance__sMatk": [
+        "EQUIP[Hero Boots-LT]===10",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===10"
+      ]
+    }
+  },
+  "313787": {
+    "id": 313787,
+    "aegisName": "HeroAcc_WL1",
+    "name": "Warlock the hero",
+    "unidName": "Warlock the hero",
+    "resName": "High_Wizard_Figure",
+    "description": "เมื่อสวมใส่ร่วมกับ Aeon Staff-LT, ลด Cooldown สกิล All Bloom และ Violent Quake 2 วินาที\n\nทุก ๆ 2 ขั้นอัพเกรด Aeon Staff-LT, \nเพิ่ม Damage สกิล All Bloom และ Violent Quake 2%\n\nเมื่อสวมใส่ร่วมกับ Intelligence,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Knowledge of Wise Man,\nเพิ่ม Damage สกิล All Bloom และ Violent Quake 10% เพิ่มเติม",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cd__All Bloom": [
+        "EQUIP[Aeon Staff-LT]===2"
+      ],
+      "cd__Violent Quake": [
+        "EQUIP[Aeon Staff-LT]===2"
+      ],
+      "All Bloom": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==2]---2",
+        "EQUIP[Knowledge of Wise Man]===10"
+      ],
+      "Violent Quake": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==2]---2",
+        "EQUIP[Knowledge of Wise Man]===10"
+      ],
+      "m_class_all": [
+        "EQUIP[Intelligence]===10"
       ]
     }
   },
@@ -134477,6 +135855,146 @@
       ]
     }
   },
+  "400723": {
+    "id": 400723,
+    "aegisName": "Yorscalp_P_Circlet",
+    "name": "Yorscalp Crown of Execution [1]",
+    "unidName": "Headgear",
+    "resName": "Yorscalp_P_Circlet",
+    "description": "Every 2 refine rate, MaxHP + 300, MaxSP + 50.\r\nEvery 3 refine rate, increases physical damage against all size enemies by 5%.\r\nEvery 4 refine rate, Atk + 5%.\r\nIf refine rate is 7 or higher, increases melee / long ranged physical damage by 10%.\r\nIf refine rate is 9 or higher, P.Atk + 8.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, Cri + 10, reduces fixed casting time by 0.5 seconds.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Armor, MaxHP + 10%.\r\nWhen equipped with Yorscalp Manteau, reduces global cooldown by 10%.\r\nWhen equipped with Yorscalp Boots, increases melee / long ranged physical damage by 10%.\r\nWhen equipped with Yorscalp Ring, P.Atk + 10.\r\nWhen equipped with Yorscalp Glove, Atk + 10%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 7.\r\n[Grade C] Ignores physical resistance of all race monsters (except players) by 5%.\r\n[Grade B] Increases physical damage against all race monsters (except players) by 15%.\r\n[Grade A] Ignores physical resistance of all race monsters (except players) by 5%.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777750^000000\r\nLocation: ^777777Upper^000000 Weight: ^7777770^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 50,
+    "weight": 0,
+    "requiredLevel": 250,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "hp": [
+        "2---300"
+      ],
+      "sp": [
+        "2---50"
+      ],
+      "p_size_all": [
+        "3---5"
+      ],
+      "atkPercent": [
+        "4---5",
+        "EQUIP[Yorscalp Glove]===10"
+      ],
+      "melee": [
+        "7===10",
+        "EQUIP[Yorscalp Boots]===10"
+      ],
+      "range": [
+        "7===10",
+        "EQUIP[Yorscalp Boots]===10"
+      ],
+      "pAtk": [
+        "9===8",
+        "EQUIP[Yorscalp Ring]===10",
+        "GRADE[me==D]===7"
+      ],
+      "aspdPercent": [
+        "10===10"
+      ],
+      "cri": [
+        "11===10"
+      ],
+      "fct": [
+        "11===0.5"
+      ],
+      "hpPercent": [
+        "EQUIP[Yorscalp Armor]===10"
+      ],
+      "acd": [
+        "EQUIP[Yorscalp Manteau]===10"
+      ],
+      "pene_res": [
+        "GRADE[me==C]===5",
+        "GRADE[me==A]===5"
+      ],
+      "p_race_all": [
+        "GRADE[me==B]===15"
+      ]
+    }
+  },
+  "400724": {
+    "id": 400724,
+    "aegisName": "Yorscalp_M_Circlet",
+    "name": "Yorscalp Crown of Judgment [1]",
+    "unidName": "Headgear",
+    "resName": "Yorscalp_M_Circlet",
+    "description": "Every 2 refine rate, MaxHP + 300, MaxSP + 50.\r\nEvery 3 refine rate, increases magical damage against all size enemies by 5%.\r\nEvery 4 refine rate, Matk + 5%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 10%.\r\nIf refine rate is 9 or higher, S.Matk + 8.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, reduces variable casting time by 10%, reduces fixed casting time by 0.5 seconds.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Robe, MaxHP + 10%.\r\nWhen equipped with Yorscalp Muffler, reduces global cooldown by 10%.\r\nWhen equipped with Yorscalp Shoes, increases all property magical damage by 10%.\r\nWhen equipped with Yorscalp Earring, S.Matk + 10.\r\nWhen equipped with Yorscalp Necklace, Matk + 10%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 7.\r\n[Grade C] Ignores magical resistance of all race monsters (except players) by 5%.\r\n[Grade B] Increases magical damage against all race monsters (except players) by 15%.\r\n[Grade A] Ignores magical resistance of all race monsters (except players) by 5%.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777750^000000\r\nLocation: ^777777Upper^000000 Weight: ^7777770^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 50,
+    "weight": 0,
+    "requiredLevel": 250,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "hp": [
+        "2---300"
+      ],
+      "sp": [
+        "2---50"
+      ],
+      "m_size_all": [
+        "3---5"
+      ],
+      "matkPercent": [
+        "4---5",
+        "EQUIP[Yorscalp Necklace]===10"
+      ],
+      "m_my_element_all": [
+        "7===10",
+        "EQUIP[Yorscalp Shoes]===10"
+      ],
+      "sMatk": [
+        "9===8",
+        "EQUIP[Yorscalp Earring]===10",
+        "GRADE[me==D]===7"
+      ],
+      "aspdPercent": [
+        "10===10"
+      ],
+      "vct": [
+        "11===10"
+      ],
+      "fct": [
+        "11===0.5"
+      ],
+      "hpPercent": [
+        "EQUIP[Yorscalp Robe]===10"
+      ],
+      "acd": [
+        "EQUIP[Yorscalp Muffler]===10"
+      ],
+      "pene_mres": [
+        "GRADE[me==C]===5",
+        "GRADE[me==A]===5"
+      ],
+      "m_race_all": [
+        "GRADE[me==B]===15"
+      ]
+    }
+  },
   "410016": {
     "id": 410016,
     "aegisName": "Battle_Processor",
@@ -134965,38 +136483,6 @@
       ],
       "cd__Water Insignia": [
         "USED[Sorcerer]===55"
-      ]
-    }
-  },
-  "410326": {
-    "id": 410326,
-    "aegisName": "C_CLB_SS_EA",
-    "name": "Costume Walking Enjoy A-Ji",
-    "unidName": "Accessory",
-    "resName": "C_CLB_SS_EA",
-    "description": "ตุ๊กตาที่ดูเหมือน A-Ji ผู้ซึ่งอยากจะออกไปเดินเล่นตลอดเวลา\nATK + 100, MATK + 100.\nMaxHP + 12%, ลดระยะเวลาร่ายแบบแปรผัน 10%\n\n(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 31 ธันวาคม 2567)\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
-    "slots": 0,
-    "itemTypeId": 9,
-    "itemSubTypeId": 520,
-    "itemLevel": null,
-    "attack": null,
-    "defense": 0,
-    "weight": 0,
-    "requiredLevel": 1,
-    "location": "Middle",
-    "compositionPos": null,
-    "script": {
-      "atk": [
-        "100"
-      ],
-      "matk": [
-        "100"
-      ],
-      "hpPercent": [
-        "12"
-      ],
-      "vct": [
-        "10"
       ]
     }
   },
@@ -144734,6 +146220,271 @@
       ]
     }
   },
+  "450412": {
+    "id": 450412,
+    "aegisName": "Yorscalp_Armor",
+    "name": "Yorscalp Armor [1]",
+    "unidName": "Armor",
+    "resName": "Yorscalp_Armor",
+    "description": "Atk + 130.\r\nEvery 2 refine rate, Atk + 20, Def + 20.\r\nIf refine rate is 7 or higher, increases melee / long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, P.Atk + 5, reduces variable casting time by 10%.\r\nIf refine rate is 10 or higher, increases melee / long ranged physical damage by additional 10%.\r\nIf refine rate is 12 or higher, reduces global cooldown by 5%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Manteau, increases physical damage against all property enemies by 15%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Manteau and Yorscalp Boots, increases physical damage against all race monsters (except players) by 15%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] POW + 5, CON + 5, reduces global cooldown by 5%.\r\n[Grade C] Atk + 5%, P.Atk + 3.\r\n[Grade B] Additional POW + 5, CON + 5, P.Atk + 3.\r\n[Grade A] Additional Atk + 5%, P.Atk + 5.\r\n\r\nClass: ^777777Armor^000000  Defense: ^777777198^000000\r\nWeight: ^777777240^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 198,
+    "weight": 240,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "atk": [
+        "130",
+        "2---20"
+      ],
+      "def": [
+        "2---20"
+      ],
+      "melee": [
+        "7===5",
+        "10===10"
+      ],
+      "range": [
+        "7===5",
+        "10===10"
+      ],
+      "pAtk": [
+        "9===5",
+        "GRADE[me==C]===3",
+        "GRADE[me==B]===3",
+        "GRADE[me==A]===5"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "acd": [
+        "12===5",
+        "GRADE[me==D]===5"
+      ],
+      "p_element_all": [
+        "EQUIP[Yorscalp Manteau]===15"
+      ],
+      "p_race_all": [
+        "EQUIP[Yorscalp Manteau&&Yorscalp Boots]===15"
+      ],
+      "pow": [
+        "GRADE[me==D]===5",
+        "GRADE[me==B]===5"
+      ],
+      "con": [
+        "GRADE[me==D]===5",
+        "GRADE[me==B]===5"
+      ],
+      "atkPercent": [
+        "GRADE[me==C]===5",
+        "GRADE[me==A]===5"
+      ]
+    }
+  },
+  "450413": {
+    "id": 450413,
+    "aegisName": "Yorscalp_Robe",
+    "name": "Yorscalp Robe [1]",
+    "unidName": "Robe",
+    "resName": "Yorscalp_Robe",
+    "description": "Matk + 130.\r\nEvery 2 refine rate, Matk + 20, Def + 20.\r\nIf refine rate is 7 or higher, increases all property magical damage by 5%.\r\nIf refine rate is 9 or higher, S.Matk + 5, reduces variable casting time by 10%.\r\nIf refine rate is 10 or higher, increases all property magical damage by additional 10%.\r\nIf refine rate is 12 or higher, reduces global cooldown by 5%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Muffler, increases magical damage against all property enemies by 15%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Muffler and Yorscalp Shoes, increases magical damage against all race monsters (except players) by 15%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] SPL + 5, CON + 5, reduces global cooldown by 5%.\r\n[Grade C] Matk + 5%, S.Matk + 3.\r\n[Grade B] Additional SPL + 5, CON + 5, S.Matk + 3.\r\n[Grade A] Additional Matk + 5%, S.Matk + 5.\r\n\r\nClass: ^777777Armor^000000  Defense: ^777777130^000000\r\nWeight: ^777777120^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 130,
+    "weight": 120,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "matk": [
+        "130",
+        "2---20"
+      ],
+      "def": [
+        "2---20"
+      ],
+      "m_my_element_all": [
+        "7===5",
+        "10===10"
+      ],
+      "sMatk": [
+        "9===5",
+        "GRADE[me==C]===3",
+        "GRADE[me==B]===3",
+        "GRADE[me==A]===5"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "acd": [
+        "12===5",
+        "GRADE[me==D]===5"
+      ],
+      "m_element_all": [
+        "EQUIP[Yorscalp Muffler]===15"
+      ],
+      "m_race_all": [
+        "EQUIP[Yorscalp Muffler&&Yorscalp Shoes]===15"
+      ],
+      "spl": [
+        "GRADE[me==D]===5",
+        "GRADE[me==B]===5"
+      ],
+      "con": [
+        "GRADE[me==D]===5",
+        "GRADE[me==B]===5"
+      ],
+      "matkPercent": [
+        "GRADE[me==C]===5",
+        "GRADE[me==A]===5"
+      ]
+    }
+  },
+  "450421": {
+    "id": 450421,
+    "aegisName": "Royal_H_Mail_A",
+    "name": "Royal Hunting Mail A-type [1]",
+    "unidName": "Armor",
+    "resName": "Cursed_Devils_Mail_A",
+    "description": "Atk + 100.\r\nEvery 2 refine rate, Atk + 10.\r\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\r\nWhen equipped with Royal Hunting Manteau A-type, Atk + 50, reduces global cooldown by 10%.\r\n^ffffff_^000000\r\nClass: ^777777Armor^000000  Defense: ^777777125^000000\r\nWeight: ^777777100^000000\r\nArmor Level: ^7777771^000000\r\nRequired Level: ^777777115^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 125,
+    "weight": 100,
+    "requiredLevel": 115,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "100",
+        "2---10",
+        "EQUIP[Royal Hunting Manteau A-type]===50"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "acd": [
+        "EQUIP[Royal Hunting Manteau A-type]===10"
+      ]
+    }
+  },
+  "450422": {
+    "id": 450422,
+    "aegisName": "Royal_H_Mail_B",
+    "name": "Royal Hunting Mail B-type [1]",
+    "unidName": "Armor",
+    "resName": "Kingly_Armor",
+    "description": "Matk + 100.\r\nEvery 2 refine rate, Matk + 10.\r\nIf refine rate is 7 or higher, reduces variable casting time by 10%.\r\nWhen equipped with Royal Hunting Manteau B-type, Matk + 50, increases attack speed (reduces delay after attack by 10%).\r\n^ffffff_^000000\r\nClass: ^777777Armor^000000  Defense: ^77777765^000000\r\nWeight: ^77777775^000000\r\nArmor Level: ^7777771^000000\r\nRequired Level: ^777777115^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 65,
+    "weight": 75,
+    "requiredLevel": 115,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "100",
+        "2---10",
+        "EQUIP[Royal Hunting Manteau B-type]===50"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "aspdPercent": [
+        "EQUIP[Royal Hunting Manteau B-type]===10"
+      ]
+    }
+  },
+  "450435": {
+    "id": 450435,
+    "aegisName": "Imp_Powered_Suit_LT",
+    "name": "Improved Powered Suit-LT [1]",
+    "unidName": "Improved Powered Suit-LT",
+    "resName": "Imp_Powered_Suit",
+    "description": "ชุดเกราะเสริมแกร่งที่ทำขึ้นจากเทคโนโลยีเกราะล่าสุด ถึงจะดูหนักและเทอะทะ แต่สบายกว่ารุ่นเก่าอย่างมาก\n\nMaxHP +10%, MaxSP +10%\n\nเมื่อเรียนรู้สกิล Arm Cannon เลเวล 3, \nATK + 200\n\nเมื่อเรียนรู้สกิล Neutral Barrier เลเวล 3, \nเพิ่ม Damage ทางกายภาพระยะไกล 20%\n\nทุก ๆ การเรียนรู้สกิล Pile Bunker 1 เลเวล, \nลด Delay หลังใช้สกิล 5%\n\nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่ม Damage สกิล Arm Cannon, Cold Slower, Flame Launcher 75%\n\nเมื่ออัพเกรดถึงขั้น 13,\nเพิ่ม Damage สกิล Arm Cannon, Cold Slower, Flame Launcher 75%\n\nเมื่อสวมใส่ร่วมกับ Improved Powered Wing-LT,\nเพิ่มความต้านทานต่อการโจมตีธาตุ Neutral 15% 15%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป, \nจะไม่สูญเสีย Magic Gear Fuel เมื่อใช้สกิล\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] ATK + 50\n[Grade C] ลด CD สกิล Rush Quake ลง 20วินาที\n[Grade B] เพิ่ม Damage สกิล Arm Cannon, Cold Slower, Flame Launcher 50%\n[Grade A] P.ATK + 15\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^777777120^000000\nน้ำหนัก : ^777777250^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 120,
+    "weight": 250,
+    "requiredLevel": 210,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "atk": [
+        "LEARN_SKILL[Arm Cannon==3]===200",
+        "GRADE[me==D]===50"
+      ],
+      "range": [
+        "LEARN_SKILL[Neutral Barrier==3]===20"
+      ],
+      "acd": [
+        "LEARN_SKILL[Pile Bunker==1]---5"
+      ],
+      "Arm Cannon": [
+        "11===75",
+        "13===75",
+        "GRADE[me==B]===50"
+      ],
+      "Cold Slower": [
+        "11===75",
+        "13===75",
+        "GRADE[me==B]===50"
+      ],
+      "Flame Launcher": [
+        "11===75",
+        "13===75",
+        "GRADE[me==B]===50"
+      ],
+      "cd__Rush Quake": [
+        "GRADE[me==C]===20"
+      ],
+      "pAtk": [
+        "GRADE[me==A]===15"
+      ]
+    }
+  },
   "460003": {
     "id": 460003,
     "aegisName": "Feather_Shield",
@@ -149752,6 +151503,219 @@
       ]
     }
   },
+  "470303": {
+    "id": 470303,
+    "aegisName": "Yorscalp_Boots",
+    "name": "Yorscalp Boots [1]",
+    "unidName": "Shoes",
+    "resName": "Yorscalp_Boots",
+    "description": "MaxHP + 10%, MaxSP + 4%.\r\nEvery 2 refine rate, MaxSP + 1%, Def + 15.\r\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 9 or higher, P.Atk + 5, increases melee / long ranged physical damage 5%.\r\nIf refine rate is 10 or higher, Def + 100, Atk + 20.\r\nIf refine rate is 12 or higher, increases melee / long ranged physical damage by additional 8%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Armor, increases physical damage against all property enemies by 15%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] POW + 2, CON + 2, Atk + 10.\r\n[Grade C] Atk + 4%, P.Atk + 4.\r\n[Grade B] Reduces fixed casting time by 1 seconds.\r\n[Grade A] Additional Atk + 5%, P.Atk + 5.\r\n\r\nClass: ^777777Shoes^000000  Defense: ^777777128^000000\r\nWeight: ^777777200^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 128,
+    "weight": 200,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "4",
+        "2---1"
+      ],
+      "def": [
+        "2---15",
+        "10===100"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "pAtk": [
+        "9===5",
+        "GRADE[me==C]===4",
+        "GRADE[me==A]===5"
+      ],
+      "melee": [
+        "9===5",
+        "12===8"
+      ],
+      "range": [
+        "9===5",
+        "12===8"
+      ],
+      "atk": [
+        "10===20",
+        "GRADE[me==D]===10"
+      ],
+      "p_element_all": [
+        "EQUIP[Yorscalp Armor]===15"
+      ],
+      "pow": [
+        "GRADE[me==D]===2"
+      ],
+      "con": [
+        "GRADE[me==D]===2"
+      ],
+      "atkPercent": [
+        "GRADE[me==C]===4",
+        "GRADE[me==A]===5"
+      ],
+      "fct": [
+        "GRADE[me==B]===1"
+      ]
+    }
+  },
+  "470304": {
+    "id": 470304,
+    "aegisName": "Yorscalp_Shoes",
+    "name": "Yorscalp Shoes [1]",
+    "unidName": "Shoes",
+    "resName": "Yorscalp_Shoes",
+    "description": "MaxHP + 10%, MaxSP + 4%.\r\nEvery 2 refine rate, MaxSP + 1%, Def + 15.\r\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 9 or higher, S.Matk + 5, increases all property magical damage 5%.\r\nIf refine rate is 10 or higher, Def + 100, Matk + 20.\r\nIf refine rate is 12 or higher, increases all property magical damage by additional 8%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Robe, increases magical damage against all property enemies by 15%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] SPL + 2, CON + 2, Matk + 10.\r\n[Grade C] Matk + 4%, S.Matk + 4.\r\n[Grade B] Reduces fixed casting time by 1 seconds.\r\n[Grade A] Additional Matk + 5%, S.Matk + 5.\r\n\r\nClass: ^777777Shoes^000000  Defense: ^77777780^000000\r\nWeight: ^777777100^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 80,
+    "weight": 100,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "4",
+        "2---1"
+      ],
+      "def": [
+        "2---15",
+        "10===100"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "sMatk": [
+        "9===5",
+        "GRADE[me==C]===4",
+        "GRADE[me==A]===5"
+      ],
+      "m_my_element_all": [
+        "9===5",
+        "12===8"
+      ],
+      "matk": [
+        "10===20",
+        "GRADE[me==D]===10"
+      ],
+      "m_element_all": [
+        "EQUIP[Yorscalp Robe]===15"
+      ],
+      "spl": [
+        "GRADE[me==D]===2"
+      ],
+      "con": [
+        "GRADE[me==D]===2"
+      ],
+      "matkPercent": [
+        "GRADE[me==C]===4",
+        "GRADE[me==A]===5"
+      ],
+      "fct": [
+        "GRADE[me==B]===1"
+      ]
+    }
+  },
+  "470313": {
+    "id": 470313,
+    "aegisName": "Royal_H_Boots_A",
+    "name": "Royal Hunting Boots A-type [1]",
+    "unidName": "Shoes",
+    "resName": "Cursed_Devils_Boots_A",
+    "description": "MaxSP + 200.\r\nEvery 2 refine rate, MaxSP + 20.\r\nIf refine rate is 7 or higher, increases melee and long ranged physical damage by 5%.\r\nWhen equipped with Royal Hunting Mail A-type, Atk + 5%, MaxHP + 5%.\r\n^ffffff_^000000\r\nClass: ^777777Shoes^000000  Defense: ^77777745^000000\r\nWeight: ^77777760^000000\r\nArmor Level: ^7777771^000000\r\nRequired Level: ^777777115^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 45,
+    "weight": 60,
+    "requiredLevel": 115,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "sp": [
+        "200",
+        "2---20"
+      ],
+      "melee": [
+        "7===5"
+      ],
+      "range": [
+        "7===5"
+      ],
+      "atkPercent": [
+        "EQUIP[Royal Hunting Mail A-type]===5"
+      ],
+      "hpPercent": [
+        "EQUIP[Royal Hunting Mail A-type]===5"
+      ]
+    }
+  },
+  "470314": {
+    "id": 470314,
+    "aegisName": "Royal_H_Boots_B",
+    "name": "Royal Hunting Boots B-type [1]",
+    "unidName": "Shoes",
+    "resName": "Kingly_Boots",
+    "description": "MaxSP + 200.\r\nEvery 2 refine rate, MaxSP + 20.\r\nIf refine rate is 7 or higher, increases all property magical damage by 5%.\r\nWhen equipped with Royal Hunting Mail B-type, Matk + 5%, MaxSP + 5%.\r\n^ffffff_^000000\r\nClass: ^777777Shoes^000000  Defense: ^77777715^000000\r\nWeight: ^77777745^000000\r\nArmor Level: ^7777771^000000\r\nRequired Level: ^777777115^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 15,
+    "weight": 45,
+    "requiredLevel": 115,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "sp": [
+        "200",
+        "2---20"
+      ],
+      "m_my_element_all": [
+        "7===5"
+      ],
+      "matkPercent": [
+        "EQUIP[Royal Hunting Mail B-type]===5"
+      ],
+      "spPercent": [
+        "EQUIP[Royal Hunting Mail B-type]===5"
+      ]
+    }
+  },
   "470325": {
     "id": 470325,
     "aegisName": "Thanos_Boots1",
@@ -153402,38 +155366,6 @@
       ]
     }
   },
-  "480376": {
-    "id": 480376,
-    "aegisName": "C_Rata_Tail",
-    "name": "Costume Rata Tail",
-    "unidName": "Hood",
-    "resName": "C_Rata_Tail",
-    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nชุดที่มีแรงบันดาลใจมาจากหางที่ใหญ่และฟูของ Rata\nระวังอาจถูกเข้าใจผิดว่าเป็น Rata ได้!\nATK/MATK + 100\nMaxHP + 5000\nMaxSP + 2000\n\nเมื่อใช้งานร่วมกับ Costume Squirrel Ear Hat, เมื่อกำจัดมอนสเตอร์ค่าประสบการณ์ที่ได้รับเพิ่มขึ้น 10%\nเมื่อใช้งานร่วมกับ Costume Twinkling Red Eyes, เมื่อกำจัดมอนสเตอร์ค่าประสบการณ์ที่ได้รับเพิ่มขึ้น 10%\nเมื่อใช้งานร่วมกับ Costume Crunch Toast, เมื่อกำจัดมอนสเตอร์ค่าประสบการณ์ที่ได้รับเพิ่มขึ้น 10%\n\n^ff0000ความสามารถของไอเท็มชิ้นนี้จะถูกลบในวันที่ 16 มกราคม 2568 (ก่อนปิดปรับปรุงเซิร์ฟเวอร์)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Garment^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
-    "slots": 0,
-    "itemTypeId": 9,
-    "itemSubTypeId": 522,
-    "itemLevel": null,
-    "attack": null,
-    "defense": 0,
-    "weight": 0,
-    "requiredLevel": 1,
-    "location": null,
-    "compositionPos": null,
-    "script": {
-      "atk": [
-        "100"
-      ],
-      "matk": [
-        "100"
-      ],
-      "hp": [
-        "5000"
-      ],
-      "sp": [
-        "2000"
-      ]
-    }
-  },
   "480415": {
     "id": 480415,
     "aegisName": "Gaebolg_Manteau",
@@ -154018,6 +155950,129 @@
       ]
     }
   },
+  "480495": {
+    "id": 480495,
+    "aegisName": "Yorscalp_Manteau",
+    "name": "Yorscalp Manteau [1]",
+    "unidName": "Garment",
+    "resName": "Yorscalp_Manteau",
+    "description": "POW + 5, CON + 5.\r\nEvery 2 refine rate, Atk + 1%, Def + 10.\r\nIf refine rate is 7 or higher, reduces global cooldown by 5%.\r\nIf refine rate is 9 or higher, increases melee / long ranged physical damage 10%.\r\nIf refine rate is 10 or higher, P.Atk + 3, Atk + 50.\r\nIf refine rate is 12 or higher, reduces global cooldown by additional 5%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Boots, increases physical damage against all race monsters (except players) by 15%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Atk + 3%, P.Atk + 3.\r\n[Grade C] Additional P.Atk + 5.\r\n[Grade B] Additional Atk + 3%, P.Atk + 5.\r\n[Grade A] Additional Atk + 4%, P.Atk + 7, reduces global cooldown by 5%.\r\n\r\nClass: ^777777Garment^000000  Defense: ^777777142^000000\r\nWeight: ^777777160^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 142,
+    "weight": 160,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "pow": [
+        "5"
+      ],
+      "con": [
+        "5"
+      ],
+      "atkPercent": [
+        "2---1",
+        "GRADE[me==D]===3",
+        "GRADE[me==B]===3",
+        "GRADE[me==A]===4"
+      ],
+      "def": [
+        "2---10"
+      ],
+      "acd": [
+        "7===5",
+        "12===5",
+        "GRADE[me==A]===5"
+      ],
+      "melee": [
+        "9===10"
+      ],
+      "range": [
+        "9===10"
+      ],
+      "pAtk": [
+        "10===3",
+        "GRADE[me==D]===3",
+        "GRADE[me==C]===5",
+        "GRADE[me==B]===5",
+        "GRADE[me==A]===7"
+      ],
+      "atk": [
+        "10===50"
+      ],
+      "p_race_all": [
+        "EQUIP[Yorscalp Boots]===15"
+      ]
+    }
+  },
+  "480496": {
+    "id": 480496,
+    "aegisName": "Yorscalp_Muffler",
+    "name": "Yorscalp Muffler [1]",
+    "unidName": "Garment",
+    "resName": "Yorscalp_Muffler",
+    "description": "SPL + 5, CON + 5.\r\nEvery 2 refine rate, Matk + 1%, Def + 15.\r\nIf refine rate is 7 or higher, reduces global cooldown by 5%.\r\nIf refine rate is 9 or higher, increases all property magical damage 10%.\r\nIf refine rate is 10 or higher, S.Matk + 3, Matk + 50.\r\nIf refine rate is 12 or higher, reduces global cooldown by additional 5%.\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Shoes, increases magical damage against all race monsters (except players) by 15%.\r\n^ffffff_^000000\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Matk + 3%, S.Matk + 3.\r\n[Grade C] Additional S.Matk + 5.\r\n[Grade B] Additional Matk + 3%, S.Matk + 5.\r\n[Grade A] Additional Matk + 4%, S.Matk + 7, reduces global cooldown by 5%.\r\n\r\nClass: ^777777Garment^000000  Defense: ^77777790^000000\r\nWeight: ^77777780^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 90,
+    "weight": 80,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "spl": [
+        "5"
+      ],
+      "con": [
+        "5"
+      ],
+      "matkPercent": [
+        "2---1",
+        "GRADE[me==D]===3",
+        "GRADE[me==B]===3",
+        "GRADE[me==A]===4"
+      ],
+      "def": [
+        "2---15"
+      ],
+      "acd": [
+        "7===5",
+        "12===5",
+        "GRADE[me==A]===5"
+      ],
+      "m_my_element_all": [
+        "9===10"
+      ],
+      "sMatk": [
+        "10===3",
+        "GRADE[me==D]===3",
+        "GRADE[me==C]===5",
+        "GRADE[me==B]===5",
+        "GRADE[me==A]===7"
+      ],
+      "matk": [
+        "10===50"
+      ],
+      "m_race_all": [
+        "EQUIP[Yorscalp Shoes]===15"
+      ]
+    }
+  },
   "480498": {
     "id": 480498,
     "aegisName": "WK_Mantle_Melee_TH",
@@ -154225,6 +156280,81 @@
       ]
     }
   },
+  "480510": {
+    "id": 480510,
+    "aegisName": "Royal_H_Manteau_A",
+    "name": "Royal Hunting Manteau A-type [1]",
+    "unidName": "Garment",
+    "resName": "Cursed_Devils_Manteau_A",
+    "description": "MaxHP + 1000.\r\nEvery 2 refine rate, MaxHP + 100.\r\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 5%).\r\nWhen equipped with Royal Hunting Boots A-type, increases melee and long ranged physical damage by 10%, reduces variable casting time by 10%.\r\n^ffffff_^000000\r\nClass: ^777777Garment^000000  Defense: ^77777770^000000\r\nWeight: ^77777790^000000\r\nArmor Level: ^7777771^000000\r\nRequired Level: ^777777115^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 70,
+    "weight": 90,
+    "requiredLevel": 115,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1000",
+        "2---100"
+      ],
+      "aspdPercent": [
+        "7===5"
+      ],
+      "melee": [
+        "EQUIP[Royal Hunting Boots A-type]===10"
+      ],
+      "range": [
+        "EQUIP[Royal Hunting Boots A-type]===10"
+      ],
+      "vct": [
+        "EQUIP[Royal Hunting Boots A-type]===10"
+      ]
+    }
+  },
+  "480511": {
+    "id": 480511,
+    "aegisName": "Royal_H_Manteau_B",
+    "name": "Royal Hunting Manteau B-type [1]",
+    "unidName": "Garment",
+    "resName": "Kingly_Manteau",
+    "description": "MaxHP + 1000.\r\nEvery 2 refine rate, MaxHP + 100.\r\nIf refine rate is 7 or higher, reduces variable casting time by 5%.\r\nWhen equipped with Royal Hunting Boots B-type, increases all property magical damage by 10%, reduces global cooldown by 10%.\r\n^ffffff_^000000\r\nClass: ^777777Garment^000000  Defense: ^77777740^000000\r\nWeight: ^77777765^000000\r\nArmor Level: ^7777771^000000\r\nRequired Level: ^777777115^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 65,
+    "requiredLevel": 115,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1000",
+        "2---100"
+      ],
+      "vct": [
+        "7===5"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Royal Hunting Boots B-type]===10"
+      ],
+      "acd": [
+        "EQUIP[Royal Hunting Boots B-type]===10"
+      ]
+    }
+  },
   "480533": {
     "id": 480533,
     "aegisName": null,
@@ -154366,6 +156496,58 @@
       ],
       "chance__spl": [
         "EQUIP[Hero Boots-LT]GRADE[boot==A]===50"
+      ]
+    }
+  },
+  "480535": {
+    "id": 480535,
+    "aegisName": "Supplement_P_Wing_LT",
+    "name": "Improved Powered Wing-LT [1]",
+    "unidName": "Improved Powered Wing-LT",
+    "resName": "Supplement_Part_Wing",
+    "description": "ปีกจักรกลที่สามารถขยายพลังกาย และเพิ่มทักษะการควบคุมของหุ่นยนต์จนถึงขีดสุด\n\nMaxHP +10%\nเพิ่มความต้านทานต่อการโจมตีธาตุ Fire, Wind 10%\n\nเมื่ออัพเกรดถึงขั้น 9,\nเพิ่มความต้านทานต่อการโจมตีธาตุ Fire, Wind 20%\nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 15%\n\nเมื่ออัพเกรดถึงขั้น 11,\nเพิ่มความต้านทานต่อการโจมตีธาตุ Fire, Wind 20%\nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 15%\n\nเมื่อเรียนรู้สกิล Arm Cannon ถึงเลเวล 5,\nลด Delay หลังใช้สกิล 20%\n\nเมื่อเรียนรู้สกิล Neutral Barrier ถึงเลเวล 3,\nลด Damage ทางกายภาพที่ได้รับจากมอนสเตอร์ประเภท Boss 10%\n\nเมื่อกำจัดศัตรูด้วยการโจมตีทางกายภาพ,\nฟื้นฟู HP 100 หน่วยและ SP 10 หน่วย\n\nทุก ๆ การเรียนรู้สกิล Pile Bunker 1 เลเวล,\nเพิ่ม Damage สกิล Arm Cannon, Cold Slower, Flame 25%\n\nเมื่อเรียนรู้สกิล Fire Earth Research ถึงเลเวล 5,\nทำให้ไม่กระเด็น\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] ATK + 5%\n[Grade C] เมื่อใช้งานสกิล Arm Cannon มีโอกาส 35% ที่จะใช้งานสกิล Arm Cannon เลเวล 5\n[Grade B] เพิ่ม Damage สกิล Arm Cannon, Cold Slower, Flame Launcher 50%\n[Grade A] P.ATK + 15\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^777777120^000000\nน้ำหนัก : ^777777250^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 120,
+    "weight": 250,
+    "requiredLevel": 210,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "p_class_boss": [
+        "9===15",
+        "11===15"
+      ],
+      "acd": [
+        "LEARN_SKILL[Arm Cannon==5]===20"
+      ],
+      "Arm Cannon": [
+        "LEARN_SKILL[Pile Bunker==1]---25",
+        "GRADE[me==B]===50"
+      ],
+      "Cold Slower": [
+        "LEARN_SKILL[Pile Bunker==1]---25",
+        "GRADE[me==B]===50"
+      ],
+      "Flame Launcher": [
+        "LEARN_SKILL[Pile Bunker==1]---25",
+        "GRADE[me==B]===50"
+      ],
+      "atkPercent": [
+        "GRADE[me==D]===5"
+      ],
+      "pAtk": [
+        "GRADE[me==A]===15"
       ]
     }
   },
@@ -157306,9 +159488,9 @@
     "id": 490156,
     "aegisName": "Hero_Token_CD",
     "name": "Heroic Token (Cardinal) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Saint Mace-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Saint Mace-LT is 10 or higher, increases all property magical damage by 10%, increases Framen damage by 10%.\nIf grade of Saint Mace-LT is C or higher, SPL + 5, S.Matk + 5, increases Framen damage by additional 10%.\n\nWhen equipped with Exorcist's Bible-LT, increases physical and magical damage against all size enemies by 15%.\nIf refine rate of Exorcist's Bible-LT is 10 or higher, increases melee physical damage by 10%, increases Petitio damage by 10%.\nIf grade of Exorcist's Bible-LT is C or higher, POW + 5, P.Atk + 5, increases Petitio damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Cardinal^000000",
+    "description": "Accessory พิศวงที่ดึงพลังที่ซ่อนอยู่ของ Heroic Weapon-LT ออกมา มีพลังของ Cardinal อยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Saint Mace-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรด Saint Mace-LT ตั้งแต่ 10 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Framen 10%\nเมื่อ Saint Mace-LT มีเกรดตั้งแต่ C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Framen ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Exorcist's Bible-LT, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรด Exorcist's Bible-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%, เพิ่ม Damage สกิล Petitio 10%\nเมื่อ Exorcist's Bible-LT มีเกรดตั้งแต่ C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Petitio ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Cardinal^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -157709,9 +159891,9 @@
     "id": 490171,
     "aegisName": "Hero_Token_EM",
     "name": "Heroic Token (Elemental Master) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Chilling Cane-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Chilling Cane-LT is 10 or higher, increases all property magical damage by 10%, increases Lightning Land and Diamond Storm damage by 10%.\nIf grade of Chilling Cane-LT is C or higher, SPL + 5, S.Matk + 5, increases Lightning Land and Diamond Storm damage by additional 10%.\n\nWhen equipped with Shadow Staff-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Shadow Staff-LT is 10 or higher, increases all property magical damage by 10%, increases Terra Drive and Venom Swamp damage by 10%.\nIf grade of Shadow Staff-LT is C or higher, SPL + 5, S.Matk + 5, increases Terra Drive and Venom Swamp damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Elemental Master^000000",
+    "description": "Accessory พิศวงที่ดึงพลังที่ซ่อนอยู่ของ Heroic Weapon-LT ออกมา มีพลังของ Elemental Master อยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Chilling Cane-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรด Chilling Cane-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Lightning Land, Diamond Storm 10%\nเมื่อ Chilling Cane-LT มีเกรดตั้งแต่ C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Lightning Land, Diamond Storm ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Shadow Staff-LT,  เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรด Shadow Staff-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Terra Drive, Venom Swamp 10%\nเมื่อ Shadow Staff-LT มีเกรดตั้งแต่ C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Terra Drive, Venom Swamp ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -163179,6 +165361,152 @@
       ]
     }
   },
+  "490620": {
+    "id": 490620,
+    "aegisName": "Yorscalp_Ring",
+    "name": "Yorscalp Ring [1]",
+    "unidName": "Accessory",
+    "resName": "Yorscalp_Ring",
+    "description": "Atk + 10%, P.Atk + 5, increases attack speed (reduces delay after attack by 10%).\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Glove, reduces variable casting time by 10%, reduces global cooldown by 10%.\r\n\r\nClass: ^777777Accessory (Left)^000000 Defense: ^7777770^000000\r\nWeight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "pAtk": [
+        "5"
+      ],
+      "aspdPercent": [
+        "10"
+      ],
+      "vct": [
+        "EQUIP[Yorscalp Glove]===10"
+      ],
+      "acd": [
+        "EQUIP[Yorscalp Glove]===10"
+      ]
+    }
+  },
+  "490621": {
+    "id": 490621,
+    "aegisName": "Yorscalp_Glove",
+    "name": "Yorscalp Glove [1]",
+    "unidName": "Accessory",
+    "resName": "Yorscalp_Glove",
+    "description": "Atk + 10%, P.Atk + 10, increases attack speed (reduces delay after attack by 5%), reduces variable casting time by 5%.\r\n\r\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\r\nWeight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "pAtk": [
+        "10"
+      ],
+      "aspdPercent": [
+        "5"
+      ],
+      "vct": [
+        "5"
+      ]
+    }
+  },
+  "490622": {
+    "id": 490622,
+    "aegisName": "Yorscalp_Earring",
+    "name": "Yorscalp Earring [1]",
+    "unidName": "Accessory",
+    "resName": "Yorscalp_Earring",
+    "description": "Matk + 10%, S.Matk + 5, increases attack speed (reduces delay after attack by 10%).\r\n^ffffff_^000000\r\nWhen equipped with Yorscalp Necklace, reduces variable casting time by 10%, reduces global cooldown by 10%.\r\n\r\nClass: ^777777Accessory (Left)^000000 Defense: ^7777770^000000\r\nWeight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "sMatk": [
+        "5"
+      ],
+      "aspdPercent": [
+        "10"
+      ],
+      "vct": [
+        "EQUIP[Yorscalp Necklace]===10"
+      ],
+      "acd": [
+        "EQUIP[Yorscalp Necklace]===10"
+      ]
+    }
+  },
+  "490623": {
+    "id": 490623,
+    "aegisName": "Yorscalp_Necklace",
+    "name": "Yorscalp Necklace [1]",
+    "unidName": "Accessory",
+    "resName": "Yorscalp_Necklace",
+    "description": "Matk + 10%, S.Matk + 10, increases attack speed (reduces delay after attack by 5%), reduces variable casting time by 5%.\r\n\r\nClass: ^777777Accessory (Right)^000000 Defense: ^7777770^000000\r\nWeight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777All Jobs^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "sMatk": [
+        "10"
+      ],
+      "aspdPercent": [
+        "5"
+      ],
+      "vct": [
+        "5"
+      ]
+    }
+  },
   "490624": {
     "id": 490624,
     "aegisName": null,
@@ -163726,6 +166054,60 @@
       ],
       "p_size_all": [
         "EQUIP[Thanos Fighter Helmet-LT]===15"
+      ]
+    }
+  },
+  "490680": {
+    "id": 490680,
+    "aegisName": "Volcano_H_Ring_TH",
+    "name": "Volcano Hero Ring [1]",
+    "unidName": "Volcano Hero Ring",
+    "resName": "정령왕의반지",
+    "description": "MATK + 100\nลด Delay หลังใช้สกิล 10%\nลดระยะเวลาร่ายแบบคงที่ลง 0.5วินาที\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Aeon Staff-LT,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล All Bloom และ Violent Quake 10%\n\nเมื่อ Aeon Staff-LT  มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nMATK + 20%\nเพิ่ม Damage สกิล All Bloom และ Violent Quake 10%\n\nเมื่อ Aeon Staff-LT มี Grade ตั้งแต่ C ขึ้นไป, \nS.MATK + 5\nเพิ่ม Damage สกิล All Bloom และ Violent Quake 15%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Warlock"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "matkPercent": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==10]===20"
+      ],
+      "All Bloom": [
+        "EQUIP[Aeon Staff-LT]===10",
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==10]===10",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===15"
+      ],
+      "Violent Quake": [
+        "EQUIP[Aeon Staff-LT]===10",
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==10]===10",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===15"
+      ],
+      "sMatk": [
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===5"
+      ],
+      "m_size_all": [
+        "EQUIP[Aeon Staff-LT]===15"
       ]
     }
   },
@@ -166008,6 +168390,61 @@
       ],
       "pAtk": [
         "GRADE[weapon==A]2---3"
+      ]
+    }
+  },
+  "500107": {
+    "id": 500107,
+    "aegisName": "Time_Gap_BO_Blade",
+    "name": "Time Gap Biologic Blade [2]",
+    "unidName": "Sword",
+    "resName": "Time_Gap_BO_Blade",
+    "description": "Atk + 3%, increases Dust Explosion damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Dust Explosion damage by 5%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 25%.\r\nIf refine rate is 9 or higher, reduces global cooldown by 10%, P.Atk + 7.\r\nIf refine rate is 11 or higher, increases Dust Explosion damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Biolo), increases Explosive Powder damage by 45%, increases melee physical damage by 10%,\r\nif grade of Time Gap Biologic Blade and Time Dimensions Rune Crown (Biolo) is A or higher, increases Explosive Powder damage by additional percentage equal to the sum of refine rate of set, increases Dust Explosion damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Dust Explosion damage by 15%.\r\n[Grade B] Increases melee physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\n\r\nClass: ^777777Sword^000000 Attack: ^777777240^000000\r\nWeight: ^777777170^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Biolo^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 257,
+    "itemLevel": 5,
+    "attack": 240,
+    "defense": null,
+    "weight": 170,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Biolo"
+    ],
+    "script": {
+      "atkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Dust Explosion": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15",
+        "EQUIP[Time Dimensions Rune Crown (Biolo)]GRADES[weapon==A&&headUpper==A]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "melee": [
+        "7===25",
+        "EQUIP[Time Dimensions Rune Crown (Biolo)]===10",
+        "GRADE[me==B]===10"
+      ],
+      "acd": [
+        "9===10"
+      ],
+      "pAtk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Explosive Powder": [
+        "EQUIP[Time Dimensions Rune Crown (Biolo)]===45",
+        "EQUIP[Time Dimensions Rune Crown (Biolo)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
       ]
     }
   },
@@ -168297,6 +170734,152 @@
       ]
     }
   },
+  "510165": {
+    "id": 510165,
+    "aegisName": "Time_Gap_SHC_Dagger1",
+    "name": "Time Gap Shadow Dagger (A) [2]",
+    "unidName": "Dagger",
+    "resName": "Time_Gap_SHC_Dagger1",
+    "description": "Cri + 5, increases Cross Slash damage by 15%.\r\nWhen equipped with Time Gap Shadow Dagger (B) on the left hand,\r\nevery 3 sum of refine rate, Atk + 25, Atk + 1%,\r\nevery 4 sum of refine rate, increases Cross Slash damage by 5%.\r\nIf the sum of refine rate is 14 or higher, increases critical damage by 20%.\r\nIf the sum of refine rate is 17 or higher, Cri + 15, C.Rate + 5.\r\nIf the sum of refine rate is 21 or higher, increases Cross Slash damage by additional 15%.\r\n\r\nWhen equipped with Time Gap Shadow Dagger (B) and Time Dimensions Rune Crown (Shadow Cross), increases Eternal Slash damage by 25%, increases melee physical damage by 15%,\r\nif grade of Time Gap Shadow Dagger (A), Time Gap Shadow Dagger (B) and Time Dimensions Rune Crown (Shadow Cross) is A or higher, increases Eternal Slash damage by additional percentage equal to the sum of refine rate of set, Cri + 15. (This effect is applied when Time Gap Shadow Dagger (B) is equipped on the left hand.)\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Cross Slash damage by 15%.\r\n[Grade B] Increases melee physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\n\r\nClass: ^777777Dagger^000000 Attack: ^777777210^000000\r\nWeight: ^777777150^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Shadow Cross^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 5,
+    "attack": 210,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "cri": [
+        "5",
+        "EQUIP[Time Gap Shadow Dagger (B)]POS[weapon]REFINE[weapon,leftWeapon==17]===15",
+        "EQUIP[Time Gap Shadow Dagger (B)&&Time Dimensions Rune Crown (Shadow Cross)]GRADES[weapon==A&&leftWeapon==A&&headUpper==A]POS[weapon]===15"
+      ],
+      "Cross Slash": [
+        "15",
+        "EQUIP[Time Gap Shadow Dagger (B)]POS[weapon]REFINE[weapon,leftWeapon==4]---5",
+        "EQUIP[Time Gap Shadow Dagger (B)]POS[weapon]REFINE[weapon,leftWeapon==21]===15",
+        "GRADE[me==C]===15"
+      ],
+      "Eternal Slash": [
+        "EQUIP[Time Gap Shadow Dagger (B)&&Time Dimensions Rune Crown (Shadow Cross)]POS[weapon]===25",
+        "EQUIP[Time Gap Shadow Dagger (B)&&Time Dimensions Rune Crown (Shadow Cross)]GRADES[weapon==A&&leftWeapon==A&&headUpper==A]POS[weapon]REFINE[weapon,leftWeapon,headUpper==1]---1"
+      ],
+      "melee": [
+        "EQUIP[Time Gap Shadow Dagger (B)&&Time Dimensions Rune Crown (Shadow Cross)]POS[weapon]===15",
+        "GRADE[me==B]===10"
+      ],
+      "atk": [
+        "EQUIP[Time Gap Shadow Dagger (B)]POS[weapon]REFINE[weapon,leftWeapon==3]---25"
+      ],
+      "atkPercent": [
+        "EQUIP[Time Gap Shadow Dagger (B)]POS[weapon]REFINE[weapon,leftWeapon==3]---1"
+      ],
+      "criDmg": [
+        "EQUIP[Time Gap Shadow Dagger (B)]POS[weapon]REFINE[weapon,leftWeapon==14]===20"
+      ],
+      "cRate": [
+        "EQUIP[Time Gap Shadow Dagger (B)]POS[weapon]REFINE[weapon,leftWeapon==17]===5"
+      ],
+      "pAtk": [
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ]
+    }
+  },
+  "510166": {
+    "id": 510166,
+    "aegisName": "Time_Gap_SHC_Dagger2",
+    "name": "Time Gap Shadow Dagger (B) [2]",
+    "unidName": "Dagger",
+    "resName": "Time_Gap_SHC_Dagger2",
+    "description": "If refine rate is 7 or higher, Cri + 5, increases Cross Slash damage by 10%.\r\nIf refine rate is 9 or higher, increases Eternal Slash damage by 10%.\r\nIf refine rate is 11 or higher, Cri + 10, increases Eternal Slash damage by additional 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Atk + 2%.\r\n[Grade C] Increases Cross Slash damage by 5%.\r\n[Grade B] P.Atk + 3, Cri + 5.\r\n[Grade A] Cri + 10, increases Cross Slash damage by additional 10%.\r\n\r\n^ff0000Time Gap series enchantment doesn't apply to Time Gap Shadow Dagger (B).^000000\r\n\r\nClass: ^777777Dagger^000000 Attack: ^777777160^000000\r\nWeight: ^777777100^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Shadow Cross^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 5,
+    "attack": 160,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "cri": [
+        "7===5",
+        "11===10",
+        "GRADE[me==B]===5",
+        "GRADE[me==A]===10"
+      ],
+      "Cross Slash": [
+        "7===10",
+        "GRADE[me==C]===5",
+        "GRADE[me==A]===10"
+      ],
+      "Eternal Slash": [
+        "9===10",
+        "11===15"
+      ],
+      "atkPercent": [
+        "GRADE[me==D]===2"
+      ],
+      "pAtk": [
+        "GRADE[me==B]===3"
+      ]
+    }
+  },
+  "510172": {
+    "id": 510172,
+    "aegisName": "Time_Gap_SS_Dagger2",
+    "name": "Time Gap Kurojin (B) [2]",
+    "unidName": "Dagger",
+    "resName": "Time_Gap_SS_Dagger2",
+    "description": "If refine rate is 7 or higher, increases Kunai - Refraction damage by 10%.\r\nIf refine rate is 9 or higher, increases Kunai - Rotation damage by 10%.\r\nIf refine rate is 11 or higher, P.Atk + 7, increases Kunai - Reflection damage by additional 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Atk + 2%.\r\n[Grade C] Increases Kunai - Rotation damage by 5%.\r\n[Grade B] P.Atk + 5.\r\n[Grade A] Atk + 5%, increases Kunai - Refraction damage by additional 10%.\r\n\r\n^ff0000Time Gap series enchantment doesn't apply to Time Gap Kurojin (B).^000000\r\n\r\nClass: ^777777Dagger^000000 Attack: ^777777160^000000\r\nWeight: ^777777100^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Shinkiro, Shiranui^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 5,
+    "attack": 160,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "Kunai - Refraction": [
+        "7===10",
+        "11===15",
+        "GRADE[me==A]===10"
+      ],
+      "Kunai - Rotation": [
+        "9===10",
+        "GRADE[me==C]===5"
+      ],
+      "pAtk": [
+        "11===7",
+        "GRADE[me==B]===5"
+      ],
+      "atkPercent": [
+        "GRADE[me==D]===2",
+        "GRADE[me==A]===5"
+      ]
+    }
+  },
   "520000": {
     "id": 520000,
     "aegisName": "Boost_Axe",
@@ -169598,6 +172181,64 @@
       ]
     }
   },
+  "530060": {
+    "id": 530060,
+    "aegisName": "Time_Gap_Spear_IG",
+    "name": "Time Gap Guardian Spear [2]",
+    "unidName": "Spear",
+    "resName": "Time_Gap_Spear_IG",
+    "description": "Cri + 5, increases Radiant Spear damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Radiant Spear damage by 5%.\r\nIf refine rate is 7 or higher, increases critical damage by 20%.\r\nIf refine rate is 9 or higher, Cri + 15, C.Rate + 5.\r\nIf refine rate is 11 or higher, increases Radiant Spear damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Imperial Guard), increases Cannon Spear damage by 45%, increases long ranged physical damage by 20%,\r\nif grade of Time Gap Guardian Spear and Time Dimensions Rune Crown (Imperial Guard) is A or higher, increases Cannon Spear damage by additional percentage equal to 2 times the sum of refine rate of set, when using Radiant Spear, auto-cast Cannon Spear at the maximum level the user has learned (the user must have learned Cannon Spear at level 1 or higher for auto-casting).\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Radiant Spear damage by 15%.\r\n[Grade B] Increases long ranged physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\nClass: ^777777Spear^000000 Attack: ^777777240^000000\r\nWeight: ^777777270^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Imperial Guard^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 259,
+    "itemLevel": 5,
+    "attack": 240,
+    "defense": null,
+    "weight": 270,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "cri": [
+        "5",
+        "9===15"
+      ],
+      "Radiant Spear": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "criDmg": [
+        "7===20"
+      ],
+      "cRate": [
+        "9===5"
+      ],
+      "Cannon Spear": [
+        "EQUIP[Time Dimensions Rune Crown (Imperial Guard)]===45",
+        "EQUIP[Time Dimensions Rune Crown (Imperial Guard)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---2"
+      ],
+      "range": [
+        "EQUIP[Time Dimensions Rune Crown (Imperial Guard)]===20",
+        "GRADE[me==B]===10"
+      ],
+      "pAtk": [
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ]
+    }
+  },
   "540000": {
     "id": 540000,
     "aegisName": "Boost_Spl_Book",
@@ -170654,7 +173295,7 @@
     "name": "Exorcist's Bible-LT [2]",
     "unidName": "Book",
     "resName": "Demon_Hunting_Bible_LT",
-    "description": "Matk + 190, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nAtk + 10 and Matk + 10 per 2 refine rate.\nIncreases Duple Light and Judex damage by 25% per 3 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%), increases neutral and holy property magical damage by 15%.\nIf refine rate is 9 or higher, increases Duple Light and Judex damage by additional 45%.\nIf refine rate is 11 or higher, has a high chance to auto-cast Judex level 5 when dealing normal physical damage (If user has higher level, that level will be cast instead).\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases holy property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Book^000000 Attack: ^777777220^000000\nWeight: ^77777770^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Archbishop^000000",
+    "description": "คัมภีร์ไบเบิ้ลที่ใช้กำจัดมารร้ายเวอร์ชั่นปรับปรุงที่ว่ากันว่าเคยถูกใช้โดยบาทหลวงชั้นสูงในอดีต\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nMATK + 190, MATK + 5%.\nเมื่อเลเวลตั้งแต่ 210 ขึ้นไป, SPL + 2, S.MATK + 1\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 10, MATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Duple Light และ Judex 25%\nเมื่ออัพเกรดถึงขั้น 7, ASPD +10%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Holy 15%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Duple Light และ Judex ขึ้นอีก 45%\nเมื่ออัพเกรดถึงขั้น 11, เมื่อโจมตีทางกายภาพทั่วไป มีโอกาสสูงที่จะเกิดสกิล Judex Lv.5 (ยิ่งเรียนรู้เลเวลสูง ก็จะเกิดตามเลเวลที่เรียนรู้).\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%.\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Holy 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777Book^000000 พลังโจมตี : ^777777220^000000\nน้ำหนัก : ^77777770^000000\nเลเวลอาวุธ : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -172321,6 +174962,139 @@
       ]
     }
   },
+  "540094": {
+    "id": 540094,
+    "aegisName": "Time_Gap_SKE_Book",
+    "name": "Time Gap Emperor Revolution Book [2]",
+    "unidName": "Book",
+    "resName": "Time_Gap_SKE_Book",
+    "description": "Atk + 3%, increases Star Light Kick damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Star Light Kick damage by 5%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 25%.\r\nIf refine rate is 9 or higher, reduces global cooldown by 10%, P.Atk + 7.\r\nIf refine rate is 11 or higher, increases Star Light Kick damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Sky Emperor), increases Sky Sun and Sky Moon damage by 30%, increases melee physical damage by 10%,\r\nif grade of Time Gap Emperor Revolution Book and Time Dimensions Rune Crown (Sky Emperor) is A or higher, increases Sky Sun and Sky Moon damage by additional percentage equal to the sum of refine rate of set, increases Star Light Kick damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Star Light Kick damage by 15%.\r\n[Grade B] Increases melee physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\n\r\nClass: ^777777Book^000000 Attack: ^777777240^000000\r\nWeight: ^777777180^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Sky Emperor^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 271,
+    "itemLevel": 5,
+    "attack": 240,
+    "defense": null,
+    "weight": 180,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "SkyEmperor"
+    ],
+    "script": {
+      "atkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Star Light Kick": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15",
+        "EQUIP[Time Dimensions Rune Crown (Sky Emperor)]GRADES[weapon==A&&headUpper==A]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "melee": [
+        "7===25",
+        "EQUIP[Time Dimensions Rune Crown (Sky Emperor)]===10",
+        "GRADE[me==B]===10"
+      ],
+      "acd": [
+        "9===10"
+      ],
+      "pAtk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Sky Sun": [
+        "EQUIP[Time Dimensions Rune Crown (Sky Emperor)]===30",
+        "EQUIP[Time Dimensions Rune Crown (Sky Emperor)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "Sky Moon": [
+        "EQUIP[Time Dimensions Rune Crown (Sky Emperor)]===30",
+        "EQUIP[Time Dimensions Rune Crown (Sky Emperor)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ]
+    }
+  },
+  "540096": {
+    "id": 540096,
+    "aegisName": "Time_Gap_EM_S_Book",
+    "name": "Time Gap Elemental Spell Book [2]",
+    "unidName": "Book",
+    "resName": "Time_Gap_EM_S_Book",
+    "description": "Matk + 240.\r\nMatk + 3%, increases Conflagration and Lightning Land damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Conflagration and Lightning Land damage by 5%.\r\nIf refine rate is 7 or higher, increases fire and wind property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Conflagration and Lightning Land damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Elemental Master), increases Venom Swamp damage by 45%, increases poison property magical damage by 30%, increases fire and wind property magical damage by 10%,\r\nif grade of Time Gap Elemental Spell Book and Time Dimensions Rune Crown (Elemental Master) is A or higher, increases Psychic Stream damage by additional percentage equal to 2 times the sum of refine rate of set, reduces skill cooldown of Psychic Stream by 0.7 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Conflagration and Lightning Land damage by 15%.\r\n[Grade B] Increases fire and wind property magical damage by 10%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\n\r\nClass: ^777777Book^000000 Attack: ^777777100^000000\r\nWeight: ^777777180^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Elemental Master^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 271,
+    "itemLevel": 5,
+    "attack": 100,
+    "defense": null,
+    "weight": 180,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "matk": [
+        "240",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Conflagration": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "Lightning Land": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "m_my_element_fire": [
+        "7===25",
+        "EQUIP[Time Dimensions Rune Crown (Elemental Master)]===10",
+        "GRADE[me==B]===10"
+      ],
+      "m_my_element_wind": [
+        "7===25",
+        "EQUIP[Time Dimensions Rune Crown (Elemental Master)]===10",
+        "GRADE[me==B]===10"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Venom Swamp": [
+        "EQUIP[Time Dimensions Rune Crown (Elemental Master)]===45"
+      ],
+      "m_my_element_poison": [
+        "EQUIP[Time Dimensions Rune Crown (Elemental Master)]===30"
+      ],
+      "Psychic Stream": [
+        "EQUIP[Time Dimensions Rune Crown (Elemental Master)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---2"
+      ],
+      "cd__Psychic Stream": [
+        "EQUIP[Time Dimensions Rune Crown (Elemental Master)]GRADES[weapon==A&&headUpper==A]===0.7"
+      ]
+    }
+  },
   "550001": {
     "id": 550001,
     "aegisName": "Boost_Soul_Rod",
@@ -173741,9 +176515,9 @@
     "id": 550045,
     "aegisName": "Shadow_Staff_K_LT",
     "name": "Shadow Staff-LT [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Shadow_Staff_K_LT",
-    "description": "Can't be destroyed.\nMatk + 195, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases Earth Grave damage by 12% per 3 refine rate.\nIf refine rate is 7 or higher, increases neutral, earth and poison property magical damage by 15%.\nIf refine rate is 9 or higher, increases Psychic Wave and Poison Burst damage by 35%, reduces variable casting time by 15%.\nIf refine rate is 11 or higher, increases Psychic Wave and Poison Burst damage by additional 15%, reduces skill cooldown of Psychic Wave by 1 second.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases neutral, earth and poison property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Staff^000000 Attack: ^77777740^000000\nWeight: ^77777775^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Sorcerer^000000",
+    "description": "Staff เก่าแก่เวอร์ชันปรับปรุงที่ว่ากันว่าเคยถูกใช้โดยวีรบุรุษในอดีต\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nMATK + 195, MATK + 5%.\nเมื่อเลเวลตั้งแต่ 210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Earth Grave 12%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์สกิล Neutral, Earth, Poison 15%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Psychic Wave, Poison Burst 35%, ลดระยะเวลาร่ายแบบแปรผัน 15%\nเมื่ออัพเกรดถึงขั้น 11,  เพิ่ม Damage สกิล Psychic Wave, Poison Burst ขึ้นอีก 15%, ลด Cooldown สกิล Psychic Wave 1 วินาที\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral, Poison 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^77777740^000000\nน้ำหนัก : ^77777775^000000\nเลเวลอาวุธ : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -173813,9 +176587,9 @@
     "id": 550046,
     "aegisName": "Freezing_Rod_LT",
     "name": "Chilling Cane-LT [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Freezing_Rod_LT",
-    "description": "Can't be destroyed.\nMatk + 195, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases Diamond Dust damage by 12% per 3 refine rate.\nIf refine rate is 7 or higher, increases magical damage against all property enemies by 15%, increases Varetyr Spear damage by 15%.\nIf refine rate is 9 or higher, increases Varetyr Spear damage by additional 30%, reduces variable casting time by 15%.\nIf refine rate is 11 or higher, increases wind and water property magical damage by 15%, reduces skill cooldown of Varetyr Spear by 2 seconds.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases wind and water property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Staff^000000 Attack: ^77777740^000000\nWeight: ^77777775^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Sorcerer^000000",
+    "description": "Staff ที่มีแสงสีฟ้าอมน้ำเงินเวอร์ชั่นปรับปรุงที่ว่ากันว่าเคยถูกใช้โดยวีรบุรุษในอดีต\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nMATK + 195, MATK + 5%.\nเมื่อเลเวลตั้งแต่ 210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK+ 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Diamond Dust 12%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%, เพิ่ม Damage สกิล Varetyr Spear 15%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Varetyr Spear ขึ้นอีก 30%, ลดระยะเวลาร่ายแบบแปรผัน 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind, Water 15%, ลด Cooldown สกิล Varetyr Spear 2 วินาที\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ธาตุ Wind, Water 15% , S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^77777740^000000\nน้ำหนัก : ^77777775^000000\nเลเวลอาวุธ : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Sorcerer^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -176618,6 +179392,258 @@
       ]
     }
   },
+  "550152": {
+    "id": 550152,
+    "aegisName": "Time_Gap_HN_Staff",
+    "name": "Time Gap Hyper Staff [2]",
+    "unidName": "Staff",
+    "resName": "Time_Gap_HN_Staff",
+    "description": "Matk + 230, can't be destroyed.\r\nMatk + 3%, increases Jack Frost Nova and Jupitel Thunderstorm damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Jack Frost Nova and Jupitel Thunderstorm damage by 5%.\r\nIf refine rate is 7 or higher, increases water and wind property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Jack Frost Nova and Jupitel Thunderstorm damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Hyper Novice), increases Napalm Vulcan Strike damage by 45%, increases magical damage against all property enemies by 10%,\r\nif grade of Time Gap Hyper Staff and Time Dimensions Rune Crown (Hyper Novice) is A or higher, increases Jack Frost Nova and Napalm Vulcan Strike damage by additional percentage equal to the sum of refine rate of set, reduces skill cooldown of Jupitel Thunderstorm by 0.3 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Jack Frost Nova and Jupitel Thunderstorm damage by 15%.\r\n[Grade B] Increases water and wind property magical damage by 20%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\nClass: ^777777Staff^000000 Attack: ^777777100^000000\r\nWeight: ^777777180^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Hyper Novice^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 5,
+    "attack": 100,
+    "defense": null,
+    "weight": 180,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "HyperNovice"
+    ],
+    "script": {
+      "matk": [
+        "230",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Jack Frost Nova": [
+        "15",
+        "3---5",
+        "11===15",
+        "EQUIP[Time Dimensions Rune Crown (Hyper Novice)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1",
+        "GRADE[me==C]===15"
+      ],
+      "Jupitel Thunderstorm": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "m_my_element_water": [
+        "7===25",
+        "GRADE[me==B]===20"
+      ],
+      "m_my_element_wind": [
+        "7===25",
+        "GRADE[me==B]===20"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Napalm Vulcan Strike": [
+        "EQUIP[Time Dimensions Rune Crown (Hyper Novice)]===45",
+        "EQUIP[Time Dimensions Rune Crown (Hyper Novice)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "m_element_all": [
+        "EQUIP[Time Dimensions Rune Crown (Hyper Novice)]===10"
+      ],
+      "cd__Jupitel Thunderstorm": [
+        "EQUIP[Time Dimensions Rune Crown (Hyper Novice)]GRADES[weapon==A&&headUpper==A]===0.3"
+      ]
+    }
+  },
+  "550155": {
+    "id": 550155,
+    "aegisName": "Time_Gap_SOA_Rod",
+    "name": "Time Gap Soul Rod [2]",
+    "unidName": "Staff",
+    "resName": "Time_Gap_SOA_Rod",
+    "description": "Matk + 240, can't be destroyed.\r\nMatk + 3%, increases Exorcism of Malicious Soul damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Exorcism of Malicious Soul damage by 5%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Exorcism of Malicious Soul damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Soul Ascetic), increases Exorcism of Malicious Soul damage by 20%, increases all property magical damage by 10%,\r\n\r\nif grade of Time Gap Soul Rod and Time Dimensions Rune Crown (Soul Ascetic) is A or higher, reduces skil cooldown of Soul Gathering by 0.3 seconds, reduces skil cooldown of Exorcism of Malicious Soul by 0.3 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Talisman of Exorcism of Malicious Soul damage by 15%.\r\n[Grade B] Increases all property magical damage by 10%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\n\r\nClass: ^777777Staff^000000 Attack: ^777777100^000000\r\nWeight: ^777777180^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Soul Ascetic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 5,
+    "attack": 100,
+    "defense": null,
+    "weight": 180,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "SoulAscetic"
+    ],
+    "script": {
+      "matk": [
+        "240",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Exorcism of Malicious Soul": [
+        "15",
+        "3---5",
+        "11===15",
+        "EQUIP[Time Dimensions Rune Crown (Soul Ascetic)]===20",
+        "GRADE[me==C]===15"
+      ],
+      "m_my_element_all": [
+        "7===25",
+        "EQUIP[Time Dimensions Rune Crown (Soul Ascetic)]===10",
+        "GRADE[me==B]===10"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "cd__Soul Gathering": [
+        "EQUIP[Time Dimensions Rune Crown (Soul Ascetic)]GRADES[weapon==A&&headUpper==A]===0.3"
+      ],
+      "cd__Exorcism of Malicious Soul": [
+        "EQUIP[Time Dimensions Rune Crown (Soul Ascetic)]GRADES[weapon==A&&headUpper==A]===0.3"
+      ]
+    }
+  },
+  "550156": {
+    "id": 550156,
+    "aegisName": "Time_Gap_CD_Staff",
+    "name": "Time Gap Saint Staff [2]",
+    "unidName": "Staff",
+    "resName": "Time_Gap_CD_Staff",
+    "description": "Matk + 240, can't be destroyed.\r\nMatk + 3%, increases Divinus Flos damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Divinus Flos damage by 5%.\r\nIf refine rate is 7 or higher, increases neutral and holy property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Divinus Flos damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Cardinal), increases Arbitrium damage by 20%, increases Pneumaticus Procella damage by 15%,\r\nif grade of Time Gap Saint Staff and Time Dimensions Rune Crown (Cardinal) is A or higher, increases Arbitrium and Pneumaticus Procella damage by additional percentage equal to the sum of refine rate of set.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Divinus Flos damage by 15%.\r\n[Grade B] Increases neutral and holy property magical damage by 10%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\n\r\nClass: ^777777Staff^000000 Attack: ^777777100^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Cardinal^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 5,
+    "attack": 100,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Cardinal"
+    ],
+    "script": {
+      "matk": [
+        "240",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Divinus Flos": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "m_my_element_neutral": [
+        "7===25",
+        "GRADE[me==B]===10"
+      ],
+      "m_my_element_holy": [
+        "7===25",
+        "GRADE[me==B]===10"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Arbitrium": [
+        "EQUIP[Time Dimensions Rune Crown (Cardinal)]===20",
+        "EQUIP[Time Dimensions Rune Crown (Cardinal)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "Pneumaticus Procella": [
+        "EQUIP[Time Dimensions Rune Crown (Cardinal)]===15",
+        "EQUIP[Time Dimensions Rune Crown (Cardinal)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ]
+    }
+  },
+  "550159": {
+    "id": 550159,
+    "aegisName": "Time_Gap_SH_Foxtail",
+    "name": "Time Gap Spirit Foxtail [2]",
+    "unidName": "Staff",
+    "resName": "Time_Gap_SH_Foxtail",
+    "description": "Can't be destroyed.\r\nCri + 5, increases Chulho Battering damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Chulho Battering damage by 5%.\r\nIf refine rate is 7 or higher, increases critical damage by 20%.\r\nIf refine rate is 9 or higher, Cri + 15, C.Rate + 5.\r\nIf refine rate is 11 or higher, increases Chulho Battering damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Spirit Handler), increases Chulho Sonic Claw damage by 45%, increases long ranged physical damage by 15%,\r\n\r\nif grade of Time Gap Spirit Foxtail and Time Dimensions Rune Crown (Spirit Handler) is A or higher, increases Chulho Battering damage by additional percentage equal to the sum of refine rate of set, reduces skill cooldown of Chulho Sonic Claw by 0.15 seconds, when using Chulho Sonic Claw, auto-cast Chulho Battering at the maximum level the user has learned (the user must have Chulho Battering at level 1 or higher for auto-casting).\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Chulho Battering damage by 15%.\r\n[Grade B] Increases long ranged physical damage by 15%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\nClass: ^777777Staff^000000 Attack: ^777777430^000000\r\nWeight: ^777777210^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Spirit Handler^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 5,
+    "attack": 430,
+    "defense": null,
+    "weight": 210,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "cri": [
+        "5",
+        "9===15"
+      ],
+      "Chulho Battering": [
+        "15",
+        "3---5",
+        "11===15",
+        "EQUIP[Time Dimensions Rune Crown (Spirit Handler)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1",
+        "GRADE[me==C]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "criDmg": [
+        "7===20"
+      ],
+      "cRate": [
+        "9===5"
+      ],
+      "Chulho Sonic Claw": [
+        "EQUIP[Time Dimensions Rune Crown (Spirit Handler)]===45"
+      ],
+      "range": [
+        "EQUIP[Time Dimensions Rune Crown (Spirit Handler)]===15",
+        "GRADE[me==B]===15"
+      ],
+      "cd__Chulho Sonic Claw": [
+        "EQUIP[Time Dimensions Rune Crown (Spirit Handler)]GRADES[weapon==A&&headUpper==A]===0.15"
+      ],
+      "pAtk": [
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ]
+    }
+  },
   "560000": {
     "id": 560000,
     "aegisName": "Boost_Knuckle",
@@ -178066,6 +181092,71 @@
       ]
     }
   },
+  "560072": {
+    "id": 560072,
+    "aegisName": "Time_Gap_IQ_Knuckle",
+    "name": "Time Gap Judgment Knuckle [2]",
+    "unidName": "Fist",
+    "resName": "Time_Gap_IQ_Knuckle",
+    "description": "Cri + 5, increases Blazing Flame Blast damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Explosion Blaster damage by 5%.\r\nIf refine rate is 7 or higher, increases critical damage by 20%.\r\nIf refine rate is 9 or higher, Cri + 15, C.Rate + 5.\r\nIf refine rate is 11 or higher, increases Blazing Flame Blast damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Inquisitor), increases Explosion Blaster damage by 25%, increases long ranged physical damage by 15%,\r\n\r\nif grade of Time Gap Judgment Knuckle and Time Dimensions Rune Crown (Inquisitor) is A or higher, increases Blazing Flame Blast and Explosion Blaster damage by additional percentage equal to the sum of refine rate of set, reduces skill cooldown of Blazing Flame Blast and Explosion Blaster by 0.3 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Blazing Flame Blast damage by 15%.\r\n[Grade B] Increases long ranged physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\n\r\nClass: ^777777Knuckle^000000 Attack: ^777777240^000000\r\nWeight: ^777777250^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Inquisitor^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 5,
+    "attack": 240,
+    "defense": null,
+    "weight": 250,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "cri": [
+        "5",
+        "9===15"
+      ],
+      "Blazing Flame Blast": [
+        "15",
+        "11===15",
+        "EQUIP[Time Dimensions Rune Crown (Inquisitor)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1",
+        "GRADE[me==C]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "Explosion Blaster": [
+        "3---5",
+        "EQUIP[Time Dimensions Rune Crown (Inquisitor)]===25",
+        "EQUIP[Time Dimensions Rune Crown (Inquisitor)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "cd__Blazing Flame Blast": [
+        "EQUIP[Time Dimensions Rune Crown (Inquisitor)]GRADES[weapon==A&&headUpper==A]===0.3"
+      ],
+      "cd__Explosion Blaster": [
+        "EQUIP[Time Dimensions Rune Crown (Inquisitor)]GRADES[weapon==A&&headUpper==A]===0.3"
+      ],
+      "criDmg": [
+        "7===20"
+      ],
+      "cRate": [
+        "9===5"
+      ],
+      "range": [
+        "EQUIP[Time Dimensions Rune Crown (Inquisitor)]===15",
+        "GRADE[me==B]===10"
+      ],
+      "pAtk": [
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ]
+    }
+  },
   "570000": {
     "id": 570000,
     "aegisName": "Boost_Guitar",
@@ -179393,6 +182484,66 @@
       ],
       "pAtk": [
         "GRADE[weapon==A]2---3"
+      ]
+    }
+  },
+  "570075": {
+    "id": 570075,
+    "aegisName": "Time_Gap_TR_Vilolin",
+    "name": "Time Gap Musical Violin [2]",
+    "unidName": "Instrument",
+    "resName": "Time_Gap_TR_Vilolin",
+    "description": "Matk + 240.\r\nMatk + 3%, increases Rhythmical Wave damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Rhythmical Wave damage by 5%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Rhythmical Wave damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Troubadour & Trouvere), increases Metallic Fury damage by 15%, increases magical damage against all property enemies by 10%,\r\nif grade of Time Gap Musical Violin and Time Dimensions Rune Crown (Troubadour & Trouvere) is A or higher, increases Metallic Fury damage by additional percentage equal to the sum of refine rate of set, reduces global cooldown by 10%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Rhythmical Wave damage by 15%.\r\n[Grade B] Increases all property magical damage by 10%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\nClass: ^777777Instrument^000000 Attack: ^777777100^000000\r\nWeight: ^777777180^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Troubadour^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 269,
+    "itemLevel": 5,
+    "attack": 100,
+    "defense": null,
+    "weight": 180,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Troubadour"
+    ],
+    "script": {
+      "matk": [
+        "240",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Rhythmical Wave": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "m_my_element_all": [
+        "7===25",
+        "GRADE[me==B]===10"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Metallic Fury": [
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]===15",
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "m_element_all": [
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]===10"
+      ],
+      "acd": [
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]GRADES[weapon==A&&headUpper==A]===10"
       ]
     }
   },
@@ -180726,6 +183877,66 @@
       ]
     }
   },
+  "580075": {
+    "id": 580075,
+    "aegisName": "Time_Gap_TR_Ribbon",
+    "name": "Time Gap Musical Ribbon [2]",
+    "unidName": "Whip",
+    "resName": "Time_Gap_TR_Ribbon",
+    "description": "Matk + 240.\r\nMatk + 3%, increases Rhythmical Wave damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Rhythmical Wave damage by 5%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Rhythmical Wave damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Troubadour & Trouvere), increases Metallic Fury damage by 15%, increases magical damage against all property enemies by 10%,\r\nif grade of Time Gap Musical Violin and Time Dimensions Rune Crown (Troubadour & Trouvere) is A or higher, increases Metallic Fury damage by additional percentage equal to the sum of refine rate of set, reduces global cooldown by 10%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Rhythmical Wave damage by 15%.\r\n[Grade B] Increases all property magical damage by 10%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\nClass: ^777777Whip^000000 Attack: ^777777100^000000\r\nWeight: ^777777180^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Trouvere^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 270,
+    "itemLevel": 5,
+    "attack": 100,
+    "defense": null,
+    "weight": 180,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Trouvere"
+    ],
+    "script": {
+      "matk": [
+        "240",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Rhythmical Wave": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "m_my_element_all": [
+        "7===25",
+        "GRADE[me==B]===10"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Metallic Fury": [
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]===15",
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "m_element_all": [
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]===10"
+      ],
+      "acd": [
+        "EQUIP[Time Dimensions Rune Crown (Troubadour & Trouvere)]GRADES[weapon==A&&headUpper==A]===10"
+      ]
+    }
+  },
   "590000": {
     "id": 590000,
     "aegisName": "Boost_Hall",
@@ -181642,7 +184853,7 @@
     "name": "Saint Mace-LT [2]",
     "unidName": "Mace",
     "resName": "Saint_Hall_LT",
-    "description": "Can't be destroyed.\nMatk + 200, Matk + 5%.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nIncreases holy property magical damage by 1% per 2 refine rate.\nIncreases Adoramus damage by 5% per 3 refine rate.\nIf refine rate is 7 or higher, reduces variable casting time by 10%, increases holy property magical damage by additional 10%\nIf refine rate is 9 or higher, increases magical damage against all race monsters (excecpt players) by 15%.\nIf refine rate is 11 or higher, increases Adoramus damage by additional 30%.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases neutral and holy property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Mace^000000 Attack: ^777777190^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Archbishop^000000",
+    "description": "Mace ศักดิ์สิทธิ์เวอร์ชั่นปรับปรุงที่ว่ากันว่าวีรบุรุษคนหนึ่งเคยใช้\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nMATK + 210, MATK + 5%.\nเมื่อเลเวลตั้งแต่ 210 ขึ้นไป, SPL + 2,  S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 1%\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Adoramus 5%\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า 15% (ยกเว้น Player)\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Adoramus ขึ้นอีก 30%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^777777100^000000\nเลเวลอาวุธ : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 263,
@@ -185532,6 +188743,64 @@
       ]
     }
   },
+  "620043": {
+    "id": 620043,
+    "aegisName": "Time_Gap_MT_Axe",
+    "name": "Time Gap Machanical Axe [2]",
+    "unidName": "Two-handed Axe",
+    "resName": "Time_Gap_MT_Axe",
+    "description": "Can't be destroyed.\r\nAtk + 3%, increases Powerful Swing damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Powerful Swing damage by 5%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 25%.\r\nIf refine rate is 9 or higher, reduces global cooldown by 10%, P.Atk + 7.\r\nIf refine rate is 11 or higher, increases Powerful Swing damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Meister), increases Rush Strike damage by 40%, reduces physical / magical damage taken from all property enemies by 15%.\r\nif grade of Time Gap Machanical Axe and Time Dimensions Rune Crown (Meister) is A or higher, increases Mighty Smash damage by additional percentage equal to the sum of refine rate of set, increases physical damage against all property enemies by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Powerful Swing damage by 15%.\r\n[Grade B] Increases melee physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\nClass: ^777777Two-handed Axe^000000 Attack: ^777777380^000000\r\nWeight: ^777777450^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Meister^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 262,
+    "itemLevel": 5,
+    "attack": 380,
+    "defense": null,
+    "weight": 450,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Meister"
+    ],
+    "script": {
+      "atkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Powerful Swing": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "melee": [
+        "7===25",
+        "GRADE[me==B]===10"
+      ],
+      "acd": [
+        "9===10"
+      ],
+      "pAtk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Rush Strike": [
+        "EQUIP[Time Dimensions Rune Crown (Meister)]===40"
+      ],
+      "Mighty Smash": [
+        "EQUIP[Time Dimensions Rune Crown (Meister)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "p_element_all": [
+        "EQUIP[Time Dimensions Rune Crown (Meister)]GRADES[weapon==A&&headUpper==A]===15"
+      ]
+    }
+  },
   "630003": {
     "id": 630003,
     "aegisName": "Ep172_Bh_Spear",
@@ -186184,6 +189453,66 @@
       ],
       "pAtk": [
         "GRADE[weapon==A]2---4"
+      ]
+    }
+  },
+  "630049": {
+    "id": 630049,
+    "aegisName": "Time_Gap_DK_Spear",
+    "name": "Time Gap Dragon Spear [2]",
+    "unidName": "Two-handed Spear",
+    "resName": "Time_Gap_DK_Spear",
+    "description": "Cri + 5, increases Dragonic Pierce damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Dragonic Pierce damage by 5%.\r\nIf refine rate is 7 or higher, increases critical damage by 20%.\r\nIf refine rate is 9 or higher, Cri + 15, C.Rate + 5.\r\nIf refine rate is 11 or higher, increases Dragonic Pierce damage by additional 15%.\r\n_\r\nWhen equipped with Time Dimensions Rune Crown (Dragon Knight), increases Hack and Slasher damage by 20%, increases long ranged physical damage by 15%,\r\nif grade of Time Gap Dragon Spear and Time Dimensions Rune Crown (Dragon Knight) is A or higher, increases Hack and Slasher damage by additional percentage equal to the sum of refine rate of set, increases Dragonic Pierce damage by 15%, Cri + 10.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Dragonic Pierce damage by 15%.\r\n[Grade B] Increases long ranged physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\n\r\nClass: ^777777Two-handed Spear^000000 Attack: ^777777350^000000\r\nWeight: ^777777650^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Dragon Knight^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 260,
+    "itemLevel": 5,
+    "attack": 350,
+    "defense": null,
+    "weight": 650,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "cri": [
+        "5",
+        "9===15",
+        "EQUIP[Time Dimensions Rune Crown (Dragon Knight)]GRADES[weapon==A&&headUpper==A]===10"
+      ],
+      "Dragonic Pierce": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15",
+        "EQUIP[Time Dimensions Rune Crown (Dragon Knight)]GRADES[weapon==A&&headUpper==A]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "criDmg": [
+        "7===20"
+      ],
+      "cRate": [
+        "9===5"
+      ],
+      "Hack and Slasher": [
+        "EQUIP[Time Dimensions Rune Crown (Dragon Knight)]===20",
+        "EQUIP[Time Dimensions Rune Crown (Dragon Knight)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "range": [
+        "EQUIP[Time Dimensions Rune Crown (Dragon Knight)]===15",
+        "GRADE[me==B]===10"
+      ],
+      "pAtk": [
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
       ]
     }
   },
@@ -187850,6 +191179,67 @@
       ],
       "sMatk": [
         "GRADE[weapon==A]2---4"
+      ]
+    }
+  },
+  "640054": {
+    "id": 640054,
+    "aegisName": "Time_Gap_Staff_AG",
+    "name": "Time Gap Arch Staff [2]",
+    "unidName": "Staff",
+    "resName": "Time_Gap_Staff_AG",
+    "description": "Matk + 330, can't be destroyed.\r\nMatk + 3%, increases Soul Vulcan Strike damage by 15%.\r\nEvery 2 refine rate, Matk + 25, Matk + 1%.\r\nEvery 3 refine rate, increases Soul Vulcan Strike damage by 5%.\r\nIf refine rate is 7 or higher, increases ghost property magical damage by 25%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%, S.Matk + 7.\r\nIf refine rate is 11 or higher, increases Soul Vulcan Strike damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Arch Mage), increases Mystery Illusion damage by 45%, increases ghost property magical damage by 15%, increases shadow property magical damage by 20%,\r\nif grade of Time Gap Arch Staff and Time Dimensions Rune Crown (Arch Mage) is A or higher, increases Mystery Illusion damage by additional percentage equal to the sum of refine rate of set, reduces skill cooldown of Soul Vulcan Strike by 0.2 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] S.Matk + 5.\r\n[Grade C] Increases Soul Vulcan Strike damage by 15%.\r\n[Grade B] Increases ghost property magical damage by 10%.\r\n[Grade A] Every 2 refine rate, S.Matk + 3.\r\nClass: ^777777Two-handed Staff^000000 Attack: ^777777120^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Arch Mage^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 266,
+    "itemLevel": 5,
+    "attack": 120,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "ArchMage"
+    ],
+    "script": {
+      "matk": [
+        "330",
+        "2---25"
+      ],
+      "matkPercent": [
+        "3",
+        "2---1"
+      ],
+      "Soul Vulcan Strike": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "m_my_element_ghost": [
+        "7===25",
+        "EQUIP[Time Dimensions Rune Crown (Arch Mage)]===15",
+        "GRADE[me==B]===10"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "sMatk": [
+        "9===7",
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "Mystery Illusion": [
+        "EQUIP[Time Dimensions Rune Crown (Arch Mage)]===45",
+        "EQUIP[Time Dimensions Rune Crown (Arch Mage)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "m_my_element_dark": [
+        "EQUIP[Time Dimensions Rune Crown (Arch Mage)]===20"
+      ],
+      "cd__Soul Vulcan Strike": [
+        "EQUIP[Time Dimensions Rune Crown (Arch Mage)]GRADES[weapon==A&&headUpper==A]===0.2"
       ]
     }
   },
@@ -190889,6 +194279,67 @@
       ]
     }
   },
+  "700108": {
+    "id": 700108,
+    "aegisName": "Time_Gap_WH_Bow",
+    "name": "Time Gap Wind Bow [2]",
+    "unidName": "Bow",
+    "resName": "Time_Gap_WH_Bow",
+    "description": "Cri + 5, increases Gale Storm damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Gale Storm damage by 5%.\r\nIf refine rate is 7 or higher, increases critical damage by 20%.\r\nIf refine rate is 9 or higher, Cri + 15, C.Rate + 5.\r\nIf refine rate is 11 or higher, increases Gale Storm damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Windhawk), increases Crescive Bolt damage by 15%, increases long ranged physical damage by 15%,\r\nif grade of Time Gap Wind Bow and Time Dimensions Rune Crown (Windhawk) is A or higher, increases Gale Storm damage by 15%, reduces skill cooldown of Gale Storm by 0.15 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Gale Storm damage by 15%.\r\n[Grade B] Increases long ranged physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\n\r\nClass: ^777777Bow^000000 Attack: ^777777320^000000\r\nWeight: ^777777210^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Windhawk^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 5,
+    "attack": 320,
+    "defense": null,
+    "weight": 210,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "cri": [
+        "5",
+        "9===15"
+      ],
+      "Gale Storm": [
+        "15",
+        "3---5",
+        "11===15",
+        "EQUIP[Time Dimensions Rune Crown (Windhawk)]GRADES[weapon==A&&headUpper==A]===15",
+        "GRADE[me==C]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "criDmg": [
+        "7===20"
+      ],
+      "cRate": [
+        "9===5"
+      ],
+      "Crescive Bolt": [
+        "EQUIP[Time Dimensions Rune Crown (Windhawk)]===15"
+      ],
+      "range": [
+        "EQUIP[Time Dimensions Rune Crown (Windhawk)]===15",
+        "GRADE[me==B]===10"
+      ],
+      "cd__Gale Storm": [
+        "EQUIP[Time Dimensions Rune Crown (Windhawk)]GRADES[weapon==A&&headUpper==A]===0.15"
+      ],
+      "pAtk": [
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ]
+    }
+  },
   "800002": {
     "id": 800002,
     "aegisName": "Up_Crimson_Rose",
@@ -191475,6 +194926,67 @@
       ],
       "p_element_all": [
         "GRADE[weapon==A]===10"
+      ]
+    }
+  },
+  "800042": {
+    "id": 800042,
+    "aegisName": "Time_Gap_Revolver_NW",
+    "name": "Time Gap Night Revolver [2]",
+    "unidName": "Pistol",
+    "resName": "Time_Gap_Revolver_NW",
+    "description": "Cri + 5, increases Wild Shot damage by 15%.\r\nEvery 2 refine rate, Atk + 25, Atk + 1%.\r\nEvery 3 refine rate, increases Wild Shot damage by 5%.\r\nIf refine rate is 7 or higher, increases critical damage by 20%.\r\nIf refine rate is 9 or higher, Cri + 15, C.Rate + 5.\r\nIf refine rate is 11 or higher, increases Wild Shot damage by additional 15%.\r\n\r\nWhen equipped with Time Dimensions Rune Crown (Night Watch), increases Magazine for One damage by 25%, increases long ranged physical damage by 15%,\r\nif grade of Time Gap Night Revolver and Time Dimensions Rune Crown (Night Watch) is A or higher, increases Magazine for One damage by additional percentage equal to the sum of refine rate of set, reduces skill cooldown of Wild Shot by 0.2 seconds.\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] P.Atk + 5.\r\n[Grade C] Increases Wild Shot damage by 15%.\r\n[Grade B] Increases long ranged physical damage by 10%.\r\n[Grade A] Every 2 refine rate, P.Atk + 3.\r\nClass: ^777777Pistol^000000 Attack: ^777777260^000000\r\nWeight: ^777777230^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777250^000000\r\nJobs: ^777777Night Watch^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 273,
+    "itemLevel": 5,
+    "attack": 260,
+    "defense": null,
+    "weight": 230,
+    "requiredLevel": 250,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "cri": [
+        "5",
+        "9===15"
+      ],
+      "Wild Shot": [
+        "15",
+        "3---5",
+        "11===15",
+        "GRADE[me==C]===15"
+      ],
+      "atk": [
+        "2---25"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "criDmg": [
+        "7===20"
+      ],
+      "cRate": [
+        "9===5"
+      ],
+      "Magazine for One": [
+        "EQUIP[Time Dimensions Rune Crown (Night Watch)]===25",
+        "EQUIP[Time Dimensions Rune Crown (Night Watch)]GRADES[weapon==A&&headUpper==A]REFINE[weapon,headUpper==1]---1"
+      ],
+      "range": [
+        "EQUIP[Time Dimensions Rune Crown (Night Watch)]===15",
+        "GRADE[me==B]===10"
+      ],
+      "pAtk": [
+        "GRADE[me==D]===5",
+        "GRADE[me==A]2---3"
+      ],
+      "cd__Wild Shot": [
+        "EQUIP[Time Dimensions Rune Crown (Night Watch)]GRADES[weapon==A&&headUpper==A]===0.2"
       ]
     }
   },
