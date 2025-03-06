@@ -22317,6 +22317,35 @@
       ]
     }
   },
+  "18521": {
+    "id": 18521,
+    "aegisName": "Lucky_Clover",
+    "name": "Lucky Clover",
+    "unidName": "Ribbon",
+    "resName": "입에문네잎클로버",
+    "description": "กลิ่นสดชื่นของโคลเวอร์สี่กลีบ\nลอยมาเตะจมูก ราวกับว่าโชคจะเข้าข้างในไม่ช้า\nLUK + 1, MSP + 20.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777710^000000\nน้ำหนักที่ต้องการ : ^77777750^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 50,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "luk": [
+        "1"
+      ],
+      "sp": [
+        "20"
+      ]
+    }
+  },
   "18522": {
     "id": 18522,
     "aegisName": "Evil_Marcher_Hat",
@@ -126426,6 +126455,138 @@
       ]
     }
   },
+  "313949": {
+    "id": 313949,
+    "aegisName": "HeroAcc_DK1",
+    "name": "Dragon Knight Spirit",
+    "unidName": "Dragon Knight Spirit",
+    "resName": "C_160LV_Rune_Red",
+    "description": "เพิ่ม Damage สกิล Dragonic Breath 15%\n\nเมื่อสวมใส่ร่วมกับ Heroic Token (Dragon Knight),\nเพิ่ม Damage สกิล Dragonic Breath 15%\n\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT,\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะได้รับสถานะ [I'm Hero] เป็นเวลา 10 วินาที\n\nผลเอฟเฟกต์ [I'm Hero]\nPOW + 50\nP.ATK + 10\n\nเมื่อ Hero Boots-LT มี Grade ตั้งแต่ B ขึ้นไป, \nเพิ่มผลเอฟเฟกต์ [I'm Hero]\nPOW +50, P.ATK +10 เพิ่มเติม",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Dragonic Breath": [
+        "15",
+        "EQUIP[Heroic Token (Dragon Knight)]===15"
+      ],
+      "chance__pow": [
+        "EQUIP[Hero Boots-LT]===50",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===50"
+      ],
+      "chance__pAtk": [
+        "EQUIP[Hero Boots-LT]===10",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===10"
+      ]
+    }
+  },
+  "313950": {
+    "id": 313950,
+    "aegisName": "HeroAcc_RK1",
+    "name": "Rune Knight The Hero",
+    "unidName": "Rune Knight The Hero",
+    "resName": "Lord_Knight_Figure",
+    "description": "เมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT,\nลด Cooldown สกิล Dragonic Breath 0.15 วินาที\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Dragonic Breath 2%\n\nเมื่อสวมใส่ร่วมกับ Vitality,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Vigor of Warlord,\nเพิ่ม Damage สกิล Dragonic Breath 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cd__Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]===0.15"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==2]---2",
+        "EQUIP[Vigor of Warlord]===10"
+      ],
+      "p_class_all": [
+        "EQUIP[Vitality]===10"
+      ]
+    }
+  },
+  "313951": {
+    "id": 313951,
+    "aegisName": "HeroAcc_SKE1",
+    "name": "Sky Emperor Spirit",
+    "unidName": "Sky Emperor Spirit",
+    "resName": "C_160LV_Star_E_MBlue",
+    "description": "เพิ่ม Damage สกิล Noon Blast, Sunset Blast 15%\n\nเมื่อสวมใส่ร่วมกับ Heroic Token (Sky Emperor),\nเพิ่ม Damage สกิล Noon Blast, Sunset Blast 15%\n\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT,\nเมื่อโจมตีทางกายภาพ มีโอกาส 3% ที่จะได้รับสถานะ [I'm Hero] เป็นเวลา 10 วินาที\n\nผลเอฟเฟกต์ [I'm Hero]\nPOW + 50\nP.ATK + 10\n\nเมื่อ Hero Boots-LT มี Grade ตั้งแต่ B ขึ้นไป, \nเพิ่มผลเอฟเฟกต์ [I'm Hero]\nPOW +50, P.ATK +10 เพิ่มเติม",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Noon Blast": [
+        "15",
+        "EQUIP[Heroic Token (Sky Emperor)]===15"
+      ],
+      "Sunset Blast": [
+        "15",
+        "EQUIP[Heroic Token (Sky Emperor)]===15"
+      ],
+      "chance__pow": [
+        "EQUIP[Hero Boots-LT]===50",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===50"
+      ],
+      "chance__pAtk": [
+        "EQUIP[Hero Boots-LT]===10",
+        "EQUIP[Hero Boots-LT]GRADE[boot==B]===10"
+      ]
+    }
+  },
+  "313952": {
+    "id": 313952,
+    "aegisName": "HeroAcc_SJ1",
+    "name": "Star Gladiator The Hero",
+    "unidName": "Star Gladiator The Hero",
+    "resName": "푸른야광석",
+    "description": "เมื่อสวมใส่ร่วมกับ One Sky One Sun-LT,\nลด Cooldown สกิล Noon Blast 0.3 วินาที\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Noon Blast, Sunset Blast 2%\n\nเมื่อสวมใส่ร่วมกับ Luck,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Sharpness of Swordsman,\nเพิ่ม Damage สกิล Noon Blast, Sunset Blast 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cd__Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]===0.3"
+      ],
+      "Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==2]---2",
+        "EQUIP[Sharpness of Swordsman]===10"
+      ],
+      "Sunset Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==2]---2",
+        "EQUIP[Sharpness of Swordsman]===10"
+      ],
+      "p_class_all": [
+        "EQUIP[Luck]===10"
+      ]
+    }
+  },
   "400001": {
     "id": 400001,
     "aegisName": "Victory_Wing_Ear",
@@ -136379,6 +136540,65 @@
       ],
       "m_race_all": [
         "GRADE[me==B]===15"
+      ]
+    }
+  },
+  "400791": {
+    "id": 400791,
+    "aegisName": "Evil_M_Hat_TH_LT",
+    "name": "Evil Marcher Hat-LT [1]",
+    "unidName": "Hat",
+    "resName": "사악한마칭햇",
+    "description": "STR + 3, ATK + 50\nเมื่อ Base Lv.180 ขึ้นไป, ATK + 50\nเมื่อ Base Lv.210 ขึ้นไป, P.ATK + 2, S.MATK + 2\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 10\nเมื่ออัพเกรดถึงขั้น 7, ลด Delay หลังใช้สกิล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 10, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 5%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 20%\n   \n[Option เพิ่มเติมตาม Grade] \n[Grade D] ลด Delay หลังใช้สกิล 5%\n[Grade C] P.ATK + 2, S.MATK + 2   \n[Grade B] เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777750^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 50,
+    "requiredLevel": 150,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "str": [
+        "3"
+      ],
+      "atk": [
+        "50",
+        "SUM[level==180]===50",
+        "2---10"
+      ],
+      "pAtk": [
+        "SUM[level==210]===2",
+        "GRADE[me==C]===2"
+      ],
+      "sMatk": [
+        "SUM[level==210]===2",
+        "GRADE[me==C]===2"
+      ],
+      "acd": [
+        "7===5",
+        "GRADE[me==D]===5"
+      ],
+      "p_element_all": [
+        "9===15"
+      ],
+      "melee": [
+        "10===5"
+      ],
+      "range": [
+        "10===5"
+      ],
+      "p_class_boss": [
+        "11===20"
+      ],
+      "fct": [
+        "GRADE[me==B]12===0.5"
       ]
     }
   },
@@ -160202,9 +160422,9 @@
     "id": 490166,
     "aegisName": "Hero_Token_DK",
     "name": "Heroic Token (Dragon Knight) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Oriental Sword-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Oriental Sword-LT is 10 or higher, increases melee and long ranged physical damage by 10%, increases Servant Weapon damage by 10%.\nIf grade of Oriental Sword-LT is C or higher, POW + 5, P.Atk + 5, increases Servant Weapon damage by additional 10%.\n\nWhen equipped with Dragonic Slayer-LT, reduces physical and magical damage taken from all size enemies by 10%.\nIf refine rate of Dragonic Slayer-LT is 10 or higher, increases long ranged physical damage by 10%, increases Dragon Breath and Dragon Breath - Water damage by 10%.\nIf grade of Dragonic Slayer-LT is C or higher, POW + 5, P.Atk + 5, increases Dragon Breath and Dragon Breath - Water damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Dragon Knight^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Dragon Knight แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Oriental Sword-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ Oriental Sword-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%, เพิ่ม Damage สกิล Servant Weapon 10%\nเมื่อ Oriental Sword-LT มีเกรดตั้งแต่ C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Servant Weapon ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT, ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูทุกขนาด 10%\nเมื่อขั้นอัพเกรดของ Dragonic Slayer-LT ตั้งแต่ 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - Water 10%\nเมื่อ Dragonic Slayer-LT มีเกรดตั้งแต่ C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - Water ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -160961,9 +161181,9 @@
     "id": 490187,
     "aegisName": "Hero_Token_SKE",
     "name": "Heroic Token (Sky Emperor) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with One Sky One Sun-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of One Sky One Sun-LT is 10 or higher, increases melee physical damage by 10%, increases Noon Blast and Sunset Blast damage by 10%.\nIf grade of One Sky One Sun-LT is C or higher, POW + 5, P.Atk + 5, increases Noon Blast and Sunset Blast damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Sky Emperor^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Sky Emperor แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ One Sky One Sun-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อขั้นอัพเกรดของ One Sky One Sun-LT ตั้งแต่ 10 ขึ้นไป, Critical Damage + 10%, เพิ่ม Damage สกิล Noon Blast, Sunset Blast 10%\nเมื่อ One Sky One Sun-LT มีเกรดตั้งแต่ C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Noon Blast, Sunset Blast ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -166551,6 +166771,112 @@
       ],
       "m_size_all": [
         "EQUIP[Aeon Staff-LT]===15"
+      ]
+    }
+  },
+  "490701": {
+    "id": 490701,
+    "aegisName": "Dragon_Order_TH",
+    "name": "Dragon Order's Hero [1]",
+    "unidName": "Dragon Order's Hero",
+    "resName": "드래곤혼",
+    "description": "ATK + 100\nMaxHP + 5000, MaxSP + 2000\nลดระยะเวลาร่ายแบบแปรผัน 30%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Dragonic Breath 10%\n\nเมื่อ Dragonic Slayer-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\nเพิ่ม Damage สกิล Dragonic Breath 10%\n\nเมื่อ Dragonic Slayer-LT มี Grade ตั้งแต่ C ขึ้นไป, \nP.ATK + 5\nเพิ่ม Damage สกิล Dragonic Breath 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight Classes^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "RuneKnight"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "hp": [
+        "5000"
+      ],
+      "sp": [
+        "2000"
+      ],
+      "vct": [
+        "30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_element_all": [
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==10]===15"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]===10",
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==10]===10",
+        "EQUIP[Dragonic Slayer-LT]GRADE[weapon==C]===15"
+      ],
+      "pAtk": [
+        "EQUIP[Dragonic Slayer-LT]GRADE[weapon==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Dragonic Slayer-LT]===15"
+      ]
+    }
+  },
+  "490702": {
+    "id": 490702,
+    "aegisName": "Foot_Stamp_TH",
+    "name": "Hero Foot Stamp [1]",
+    "unidName": "Hero Foot Stamp",
+    "resName": "발자국이펙트",
+    "description": "ATK + 100\nลด Delay หลังใช้สกิล 10%\nCRI + 20\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ One Sky One Sun-LT,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Noon Blast, Sunset Blast 10%\n\nเมื่อ One Sky One Sun-LT มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nCritical Damage + 25%\nเพิ่ม Damage สกิล Noon Blast, Sunset Blast 10%\n\nเมื่อ One Sky One Sun-LT มี Grade ตั้งแต่ C ขึ้นไป, \nP.ATK + 5\nเพิ่ม Damage สกิล Noon Blast, Sunset Blast 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Star Gladiator Classes^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 190,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "StarGladiator"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "cri": [
+        "20"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "criDmg": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==10]===25"
+      ],
+      "Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]===10",
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==10]===10",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===15"
+      ],
+      "Sunset Blast": [
+        "EQUIP[One Sky One Sun-LT]===10",
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==10]===10",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===15"
+      ],
+      "pAtk": [
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[One Sky One Sun-LT]===15"
       ]
     }
   },
@@ -174395,7 +174721,7 @@
     "name": "One Sky One Sun-LT [2]",
     "unidName": "Book",
     "resName": "OneSkyOneSun_LT",
-    "description": "Can't be destroyed.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases melee physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Prominence Kick and Solar Burst damage by 20%, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increases Prominence Kick and Solar Burst damage by additional 25%. \nIf refine rate is 11 or higher, increases physical damage against all size enemies by 15%, increases melee physical damage by additional 15%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases melee physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Book^000000 Attack: ^777777200^000000\nWeight: ^777777110^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Star Emperor classes^000000",
+    "description": "หนังสือโบราณเวอร์ชั่นปรับปรุงที่มีชื่อว่า 'สุริยันหนึ่งเดียวที่ส่องสว่างเหนือฟากฟ้า'\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Blaze Kick, Solar Explosion 20%, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Blaze Kick, Solar Explosion ขึ้นอีก 25%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ท Damage ทางกายภาพต่อศัตรูทุกขนาด 15%, เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 15%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะใกล้ 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Book^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777110^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Star Emperor Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -187023,9 +187349,9 @@
     "id": 600023,
     "aegisName": "Oriental_Sword_LT",
     "name": "Oriental Sword-LT [2]",
-    "unidName": "Two-handed Sword",
+    "unidName": "Bastard Sword",
     "resName": "Oriental_Sword_LT",
-    "description": "Can't be destroyed.\nAtk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases critical damage by 5% per 3 refine rate.\nIf refine rate is 7 or higher, increases Sonic Wave and Storm Blast damage by 20%, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, when dealing melee physical damage, has a high chance to auto-cast Sonic Wave level 2 (If user has higher level, that level will be cast instead), increases Sonic Wave and Storm Blast damage by additional 20%.\nIf refine rate is 11 or higher, Cri + 25, increases melee and long ranged physical damage by 15%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n\n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases melee and long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Two-handed Sword^000000 Attack: ^777777240^000000\nWeight: ^777777200^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Rune Knight classes^000000",
+    "description": "ดาบโบราณจากแดนบูรพาเวอร์ชั่นปรับปรุงที่เล่าขานกันว่าฟาดฟันได้แม้แต่ดวงวิญญาณอาถรรพ์\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น Critical Damage + 5%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Sonic Wave, Storm Blast 20%, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เมื่อโจมตีทางกายภาพระยะใกล้ มีโอกาสสูงที่จะเกิด Sonic Wave Lv.2 (เมื่อเรียนรู้เลเวลที่สูงกว่า จะเกิดตามเลเวลที่เรียนรู้), เพิ่ม Damage สกิล Sonic Wave, Storm Blast ขึ้นอีก 20%\nเมื่ออัพเกรดถึงขั้น 11, CRI + 25, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 5%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Two-handed Sword^000000 พลังโจมตี : ^777777240^000000\nน้ำหนัก : ^777777200^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 258,
@@ -187090,9 +187416,9 @@
     "id": 600024,
     "aegisName": "Dragonic_Slayer_LT",
     "name": "Dragonic Slayer-LT [2]",
-    "unidName": "Two-handed Sword",
+    "unidName": "Bastard Sword",
     "resName": "Dragonic_Slayer_LT",
-    "description": "MaxHP + 5%.\nIf the user's base level is 210 or higher, MaxHP/MaxSP + 5%.\nMaxHP/MaxSP + 5% per 2 refine rate.\nIncreases Dragon Breath and Dragon Breath - Water damage by 7% per 3 refine rate.\nIf refine rate is 7 or higher, reduces global cooldown by 10%, reduces variable casting time by 10%.\nIf refine rate is 9 or higher, increases long ranged physical damage by 10%, reduces physical and magical damage taken from all size enemies by 15%.\nIf refine rate is 11 or higher, reduces global cooldown by additional 7%, MaxSP + 5%.\n\nWhen equipped with Hero Boots-LT, MaxHP + 10%, MaxSP + 5%.\n\n^CC3D3D[Bonus by grade]^000000\n[Grade D] MaxHP/MaxSP + 3%.\n[Grade C] Increases long ranged physical damage by 15%, Res + 30, Mres + 30.\n[Grade B] reduces physical and magical damage taken from all size enemies by 15%.\nClass: ^777777Two-handed Sword^000000 Attack: ^777777200^000000\nWeight: ^777777200^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Rune Knight classes^000000",
+    "description": "ดาบขนาดใหญ่เวอร์ชั่นปรับปรุงที่ว่ากันว่าในอดีตกาลมี Dragon Slayer ผู้หนึ่งเคยใช้\nทำงานประสานกันกับ Hero Boots-LT\nMHP+ 5%.\nเมื่อ Lv.210 ขึ้นไป, MHP/MSP + 5%.\nทุก ๆ การอัพเกรด 2 ขั้น MHP/MSP + 5%.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - Water 7%\nเมื่ออัพเกรดถึงขั้น 7, ลด Delay หลังใช้สกิล 10%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะไกล 15%, ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิลลงอีก 7%, MSP + 5%.\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MHP + 10%, MSP + 5%.\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP/MSP + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, RES + 30, MRES + 30.\n[Grade B] ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูทุกธาตุ 15%\nประเภท : ^777777Two-handed Sword^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777200^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 258,
