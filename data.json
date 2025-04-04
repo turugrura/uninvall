@@ -126767,6 +126767,345 @@
       ]
     }
   },
+  "314033": {
+    "id": 314033,
+    "aegisName": "Hero_Valor_AG_1",
+    "name": "Heroic Valor (Arch Mage) Lv.1",
+    "unidName": "Heroic Valor (Arch Mage) Lv.1",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ Aeon Staff-LT, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล All Bloom, Violent Quake 2%\n\nเมื่อ Aeon Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล All Bloom, Violent Quake ขึ้นอีก 5%\n  \nเมื่อสวมใส่ร่วมกับ Blue Crystal Staff-LT, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 5% \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike 2%\n\nเมื่อ Blue Crystal Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike ขึ้นอีก 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "All Bloom": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---2",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===5"
+      ],
+      "Violent Quake": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---2",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===5"
+      ],
+      "Frozen Slash": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---2",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===5"
+      ],
+      "Soul Vulcan Strike": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---2",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===5"
+      ],
+      "m_race_all": [
+        "EQUIP[Aeon Staff-LT]===5",
+        "EQUIP[Blue Crystal Staff-LT]===5"
+      ]
+    }
+  },
+  "314034": {
+    "id": 314034,
+    "aegisName": "Hero_Valor_AG_2",
+    "name": "Heroic Valor (Arch Mage) Lv.2",
+    "unidName": "Heroic Valor (Arch Mage) Lv.2",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ Aeon Staff-LT, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล All Bloom, Violent Quake 4%\n\nเมื่อ Aeon Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล All Bloom, Violent Quake ขึ้นอีก 10%\n  \nเมื่อ Aeon Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10% \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike 4%\n\nเมื่อ Blue Crystal Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike ขึ้นอีก 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "All Bloom": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---4",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===10"
+      ],
+      "Violent Quake": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---4",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===10"
+      ],
+      "Frozen Slash": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---4",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===10"
+      ],
+      "Soul Vulcan Strike": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---4",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Aeon Staff-LT]===10",
+        "EQUIP[Blue Crystal Staff-LT]===10"
+      ]
+    }
+  },
+  "314035": {
+    "id": 314035,
+    "aegisName": "Hero_Valor_AG_3",
+    "name": "Heroic Valor (Arch Mage) Lv.3",
+    "unidName": "Heroic Valor (Arch Mage) Lv.3",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ Aeon Staff-LT, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล All Bloom, Violent Quake 6%\n\nเมื่อ Aeon Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล All Bloom, Violent Quake ขึ้นอีก 10%\nลด Cooldown สกิล All Bloom, Violent Quake 1 วินาที\n  \nเมื่อ Aeon Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15% \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike 6%\n\nเมื่อ Blue Crystal Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike ขึ้นอีก 20%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "All Bloom": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---6",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===10"
+      ],
+      "Violent Quake": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---6",
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===10"
+      ],
+      "cd__All Bloom": [
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===1"
+      ],
+      "cd__Violent Quake": [
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===1"
+      ],
+      "Frozen Slash": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---6",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===20"
+      ],
+      "Soul Vulcan Strike": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---6",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===20"
+      ],
+      "m_race_all": [
+        "EQUIP[Aeon Staff-LT]===15",
+        "EQUIP[Blue Crystal Staff-LT]===15"
+      ]
+    }
+  },
+  "314036": {
+    "id": 314036,
+    "aegisName": "Hero_Valor_DK_1",
+    "name": "Heroic Valor (Dragon Knight) Lv.1",
+    "unidName": "Heroic Valor (Dragon Knight) Lv.1",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Dragonic Breath 2%\n\nเมื่อ Dragonic Slayer-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Dragonic Breath 5% 추가\n  \nเมื่อสวมใส่ร่วมกับ Oriental Sword-LT, \nC.RATE + 5\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Sonic Wave, Storm Blast 4%\n\nเมื่อ Oriental Sword-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Sonic Wave, Storm Blast ขึ้นอีก 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_race_all": [
+        "EQUIP[Dragonic Slayer-LT]===5"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==3]---2",
+        "EQUIP[Dragonic Slayer-LT]GRADE[weapon==C]===5"
+      ],
+      "cRate": [
+        "EQUIP[Oriental Sword-LT]===5"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---4",
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===10"
+      ],
+      "Storm Blast": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---4",
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===10"
+      ]
+    }
+  },
+  "314037": {
+    "id": 314037,
+    "aegisName": "Hero_Valor_DK_2",
+    "name": "Heroic Valor (Dragon Knight) Lv.2",
+    "unidName": "Heroic Valor (Dragon Knight) Lv.2",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Dragonic Breath 4%\n\nเมื่อ Dragonic Slayer-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Dragonic Breath ขึ้นอีก 10%\n  \nเมื่อสวมใส่ร่วมกับ Oriental Sword-LT, \nC.RATE + 10\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Sonic Wave, Storm Blast 8%\n\nเมื่อ Oriental Sword-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Sonic Wave, Storm Blast ขึ้นอีก 20%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_race_all": [
+        "EQUIP[Dragonic Slayer-LT]===10"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==3]---4",
+        "EQUIP[Dragonic Slayer-LT]GRADE[weapon==C]===10"
+      ],
+      "cRate": [
+        "EQUIP[Oriental Sword-LT]===10"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---8",
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===20"
+      ],
+      "Storm Blast": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---8",
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===20"
+      ]
+    }
+  },
+  "314038": {
+    "id": 314038,
+    "aegisName": "Hero_Valor_DK_3",
+    "name": "Heroic Valor (Dragon Knight) Lv.3",
+    "unidName": "Heroic Valor (Dragon Knight) Lv.3",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Dragonic Breath 6%\n\nเมื่อ Dragonic Slayer-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Dragonic Breath ขึ้นอีก 10%\nลด Cooldown สกิล Dragonic Breath 0.1 วินาที\n  \nเมื่อสวมใส่ร่วมกับ Oriental Sword-LT, \nC.RATE + 15\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Sonic Wave, Storm Blast 12%\n\nเมื่อ Oriental Sword-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Sonic Wave, Storm Blast ขึ้นอีก 40%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_race_all": [
+        "EQUIP[Dragonic Slayer-LT]===15"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==3]---6",
+        "EQUIP[Dragonic Slayer-LT]GRADE[weapon==C]===10"
+      ],
+      "cd__Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]GRADE[weapon==C]===0.1"
+      ],
+      "cRate": [
+        "EQUIP[Oriental Sword-LT]===10"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---12",
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===40"
+      ],
+      "Storm Blast": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---12",
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===40"
+      ]
+    }
+  },
+  "314039": {
+    "id": 314039,
+    "aegisName": "Hero_Valor_SKE_1",
+    "name": "Heroic Valor (Sky Emperor) Lv.1",
+    "unidName": "Heroic Valor (Sky Emperor) Lv.1",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ One Sky One Sun-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Noon Blast, Sunset Blast 2%\n   \nเมื่อ One Sky One Sun-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Noon Blast, Sunset Blast ขึ้นอีก 5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_race_all": [
+        "EQUIP[One Sky One Sun-LT]===5"
+      ],
+      "Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---2",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===5"
+      ],
+      "Sunset Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---2",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===5"
+      ]
+    }
+  },
+  "314040": {
+    "id": 314040,
+    "aegisName": "Hero_Valor_SKE_2",
+    "name": "Heroic Valor (Sky Emperor) Lv.2",
+    "unidName": "Heroic Valor (Sky Emperor) Lv.2",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ One Sky One Sun-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Noon Blast, Sunset Blast 4%\n\nเมื่อ One Sky One Sun-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Noon Blast, Sunset Blast ขึ้นอีก 10%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_race_all": [
+        "EQUIP[One Sky One Sun-LT]===10"
+      ],
+      "Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---4",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===10"
+      ],
+      "Sunset Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---4",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===10"
+      ]
+    }
+  },
+  "314041": {
+    "id": 314041,
+    "aegisName": "Hero_Valor_SKE_3",
+    "name": "Heroic Valor (Sky Emperor) Lv.3",
+    "unidName": "Heroic Valor (Sky Emperor) Lv.3",
+    "resName": "VIP_Black_Coin",
+    "description": "เมื่อสวมใส่ร่วมกับ One Sky One Sun-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Noon Blast, Sunset Blast 6%\n   \nเมื่อ One Sky One Sun-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Noon Blast, Sunset Blast ขึ้นอีก 10%\nลด Cooldown สกิล Noon Blast 0.1 วินาที",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_race_all": [
+        "EQUIP[One Sky One Sun-LT]===15"
+      ],
+      "Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---6",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===10"
+      ],
+      "Sunset Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---6",
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===10"
+      ],
+      "cd__Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===0.1"
+      ]
+    }
+  },
   "400001": {
     "id": 400001,
     "aegisName": "Victory_Wing_Ear",
@@ -129859,9 +130198,9 @@
     "id": 400216,
     "aegisName": "Viva_Adul_Hat_GC1",
     "name": "Helm of Faith (Guillotine Cross) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_GC",
-    "description": "If the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nIf the user's base level is 230 or higher, POW + 3, P.Atk + 2.\nAtk + 10 per 2 refine rate.\nIncreases Counter Slash damage by 15% per 3 refine rate.\nIncreases melee physical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, increases physical damage against all size enemies by 5%.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Katar, increases melee physical damage by 10%,\nincreases Counter Slash damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Katar, increases melee physical damage by 10%,\nincreases Counter Slash damage by 5% and Eternal Slash damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Eternal Slash damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Guillotine Cross^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nเมื่อ Lv.230 ขึ้นไป, POW + 3, P.ATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Counter Slash 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 7%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Katar, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Counter Slash 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Katar, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Counter Slash 5%, เพิ่ม Damage สกิล Eternal Slash 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Eternal Slash ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -129918,9 +130257,9 @@
     "id": 400217,
     "aegisName": "Viva_Adul_Hat_GC2",
     "name": "Helm of Faith II (Guillotine Cross) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_GC",
-    "description": "If the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nIf the user's base level is 230 or higher, POW + 3, P.Atk + 2.\nAtk + 10 per 2 refine rate.\nIncreases Rolling Cutter damage by 15% per 3 refine rate.\nIncreases melee physical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, Cri + 15.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Chakram, increases melee physical damage by 10%,\nincreases Rolling Cutter damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Chakram, increases melee physical damage by 10%,\nincreases Rolling Cutter damage by 5% and Impact Crater damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Impact Crater damage by additional 15%.\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Guillotine Cross^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nเมื่อ Lv.230 ขึ้นไป, POW + 3, P.ATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Rolling Cutter 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 7%\nเมื่ออัพเกรดถึงขั้น 7, CRI + 15.\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides of Cakram, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Rolling Cutter 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Chakram, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Rolling Cutter 5%, เพิ่ม Damage สกิล Impact Crater 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Impact Crater ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -130741,9 +131080,9 @@
     "id": 400237,
     "aegisName": "Viva_Adul_Hat_RL1",
     "name": "Helm of Faith (Rebellion) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_RL",
-    "description": "If the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nIf the user's base level is 230 or higher, POW + 3, P.Atk + 2.\nAtk + 10 per 2 refine rate.\nIncreases Hammer of God, Fire Dance and Dragon Tail damage by 15% per 3 refine rate.\nIncreases long ranged physical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, increases physical damage against all size enemies by 5%.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Rifle, reduces skill cooldown of Hammer of God by 10 seconds,\nincreases Hammer of God damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Adulter Fides Revolver, increases long ranged physical damage by 10%,\nincreases Fire Dance damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Adulter Fides Launcher, reduces skill cooldown of Dragon Tail by 2 seconds,\nincreases Dragon Tail damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Rifle, reduces skill cooldown of Hammer of God by 10 seconds,\nincreases Hammer of God damage by 5% and Only One Bullet damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Only One Bullet damage by additional 15%.\n\nWhen equipped with Vivatus Fides Revolver, increases long ranged physical damage by 10%,\nincreases Fire Dance damage by 5% and Magazine for One damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Magazine for One damage by additional 15%.\n\nWhen equipped with Vivatus Fides Launcher, reduces skill cooldown of Dragon Tail by 2 seconds,\nincreases Dragon Tail damage by 5% and Spiral Shooting damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Spiral Shooting damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Rebellion classes^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nเมื่อ Lv.230 ขึ้นไป, POW + 3, P.ATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล God's Hammer, Fire Dance, Dragon Tail 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Rifle, ลด Cooldown สกิล God's Hammer 10 วินาที,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล God's Hammer 5%\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides of Revolver, เพิ่ม Damage ทางกายกายระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Fire Dance 5%\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Launcher, ลด Cooldown สกิล Dragon Tail 2 วินาที,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Dragon Tail 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Rifle, ลด Cooldown สกิล God's Hammer 10 วินาที,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล God's Hammer 5%, เพิ่ม Damage สกิล Only One Bullet 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Only One Bullet ขึ้นอีก 15%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Revolver, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Fire Dance 5%, เพิ่ม Damage สกิล Magazine for One 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 15%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Launcher, ลด Cooldown สกิล Dragon Tail 2 วินาที,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Dragon Tail 5%, เพิ่ม Damage สกิล Spiral Shooting 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่ใส่ได้ : ^777777Rebellion Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -130826,9 +131165,9 @@
     "id": 400238,
     "aegisName": "Viva_Adul_Hat_RL2",
     "name": "Helm of Faith II (Rebellion) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_RL",
-    "description": "If the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nIf the user's base level is 230 or higher, POW + 3, P.Atk + 2.\nAtk + 10 per 2 refine rate.\nIncreases Shatter Storm and Round Trip damage by 15% per 3 refine rate.\nIncreases long ranged physical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, increases physical damage against all size enemies by 5%.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Shotgun, increases long ranged physical damage by 10%,\nincreases Shatter Storm damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Adulter Fides Gatling Gun, increases long ranged physical damage by 10%,\nincreases Round Trip damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Shotgun, increases long ranged physical damage by 10%,\nincreases Shatter Storm damage by 5% and Wildfire damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Wildfire damage by additional 15%.\n\nWhen equipped with Vivatus Fides Gatling Gun, increases long ranged physical damage by 10%,\nincreases Round Trip damage by 5% and The Vigilante at Night damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases The Vigilante at Night damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Rebellion classes^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nเมื่อ Lv.230 ขึ้นไป, POW + 3, P.ATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Shatter Storm, Round Trip 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Shotgun, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Shatter Storm 5%\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Gatling Gun, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Round Trip 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Shotgun, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Shatter Storm 5%, เพิ่ม Damage สกิล Wild Fire 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 15%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Gatling Gun, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Round Trip 5%, เพิ่ม Damage สกิล The Vigilante at Night 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่ใส่ได้ : ^777777Rebellion Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -136813,6 +137152,352 @@
       ],
       "fct": [
         "GRADE[me==B]12===0.5"
+      ]
+    }
+  },
+  "400814": {
+    "id": 400814,
+    "aegisName": "Heroic_Hairband_AG",
+    "name": "Heroic Hairband (Arch Mage) [1]",
+    "unidName": "Hairband",
+    "resName": "Mech_Feather_Hairband_B",
+    "description": "Hairband ที่ถูกสร้างขึ้นเพื่อมอบให้เหล่าวีรบุรุษ\n\nทุก ๆ การอัพเกรด 3 ขั้น, MATK + 4% \nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%\n \nเมื่อสวมใส่ร่วมกับ Aeon Staff-LT, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10% \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล All Bloom, Violent Quake 4%\n \nเมื่อสวมใส่ร่วมกับ Blue Crystal Staff-LT,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10% \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike 4% \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "ArchMage"
+    ],
+    "script": {
+      "matkPercent": [
+        "3---4"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "m_my_element_all": [
+        "9===10"
+      ],
+      "m_element_all": [
+        "11===15"
+      ],
+      "m_size_all": [
+        "EQUIP[Aeon Staff-LT]===10",
+        "EQUIP[Blue Crystal Staff-LT]===10"
+      ],
+      "All Bloom": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---4"
+      ],
+      "Violent Quake": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---4"
+      ],
+      "Frozen Slash": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---4"
+      ],
+      "Soul Vulcan Strike": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---4"
+      ]
+    }
+  },
+  "400815": {
+    "id": 400815,
+    "aegisName": "Heroic_Hairband_DK",
+    "name": "Heroic Hairband (Dragon Knight) [1]",
+    "unidName": "Hairband",
+    "resName": "Mech_Feather_Hairband_B",
+    "description": "Hairband ที่ถูกสร้างขึ้นเพื่อมอบให้เหล่าวีรบุรุษ\n\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 4%  \nเมื่ออัพเกรดถึงขั้น 7, MaxHP + 2000  \nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะไกล 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\n  \nเมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Dragonic Breath 4%\n  \nเมื่อสวมใส่ร่วมกับ Oriental Sword-LT,\nC.RATE + 10, \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Sonic Wave, Storm Blast 4% \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "atkPercent": [
+        "3---4"
+      ],
+      "hp": [
+        "7===2000"
+      ],
+      "range": [
+        "9===10"
+      ],
+      "p_element_all": [
+        "11===15"
+      ],
+      "p_size_all": [
+        "EQUIP[Dragonic Slayer-LT]===10"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==3]---4"
+      ],
+      "cRate": [
+        "EQUIP[Oriental Sword-LT]===10"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---4"
+      ],
+      "Storm Blast": [
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---4"
+      ]
+    }
+  },
+  "400816": {
+    "id": 400816,
+    "aegisName": "Heroic_Hairband_SKE",
+    "name": "Heroic Hairband (Sky Emperor) [1]",
+    "unidName": "Hairband",
+    "resName": "Mech_Feather_Hairband_B",
+    "description": "Hairband ที่ถูกสร้างขึ้นเพื่อมอบให้เหล่าวีรบุรุษ\n\nทุก ๆ การอัพเกรด 3 ขั้น ATK + 4%   \nเมื่ออัพเกรดถึงขั้น 7, CRI + 10\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\n   \nเมื่อสวมใส่ร่วมกับ One Sky One Sun-LT,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Noon Blast, Sunset Blast 4%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "SkyEmperor"
+    ],
+    "script": {
+      "atkPercent": [
+        "3---4"
+      ],
+      "cri": [
+        "7===10"
+      ],
+      "melee": [
+        "9===10"
+      ],
+      "p_element_all": [
+        "11===15"
+      ],
+      "p_size_all": [
+        "EQUIP[One Sky One Sun-LT]===10"
+      ],
+      "Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---4"
+      ],
+      "Sunset Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---4"
+      ]
+    }
+  },
+  "400817": {
+    "id": 400817,
+    "aegisName": "Heroic_Hairband_AG_LT",
+    "name": "Heroic Hairband (Arch Mage) - LT [1]",
+    "unidName": "Hairband",
+    "resName": "Mech_Feather_Hairband_B",
+    "description": "Hairband ที่ถูกสร้างขึ้นเพื่อมอบให้เหล่าวีรบุรุษเวอร์ชั่นปรับปรุง\n\nทุก ๆ การอัพเกรด 3 ขั้น, MATK + 5% \nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 15%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 20%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nเมื่อสวมใส่ร่วมกับ Aeon Staff-LT,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล All Bloom, Violent Quake 6%\n\nเมื่อ Aeon Staff-LT มี Grade C ขึ้นไป,\nลด Cooldown สกิล All Bloom, Violent Quake 2 วินาที\n \nเมื่อสวมใส่ร่วมกับ Blue Crystal Staff-LT,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike 6%\n \nเมื่อ Blue Crystal Staff-LT มี Grade C ขึ้นไป, \nเพิ่ม Damage สกิล Frozen Slash, Soul Vulcan Strike 15%\n\n[Option เพิ่มเติมตาม Grade] \n[Grade D] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\n[Grade C] SPL + 2, S.MATK + 2\n[Grade B] เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "ArchMage"
+    ],
+    "script": {
+      "matkPercent": [
+        "3---5"
+      ],
+      "vct": [
+        "7===15"
+      ],
+      "m_my_element_all": [
+        "9===15",
+        "GRADE[me==D]===5"
+      ],
+      "m_element_all": [
+        "11===20"
+      ],
+      "fct": [
+        "11===0.2",
+        "GRADE[me==B]12===0.5"
+      ],
+      "Violent Quake": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---6"
+      ],
+      "cd__All Bloom": [
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===2"
+      ],
+      "cd__Violent Quake": [
+        "EQUIP[Aeon Staff-LT]GRADE[weapon==C]===2"
+      ],
+      "spl": [
+        "GRADE[me==C]===2"
+      ],
+      "sMatk": [
+        "GRADE[me==C]===2"
+      ],
+      "m_size_all": [
+        "EQUIP[Aeon Staff-LT]===15",
+        "EQUIP[Blue Crystal Staff-LT]===15"
+      ],
+      "All Bloom": [
+        "EQUIP[Aeon Staff-LT]REFINE[weapon==3]---6"
+      ],
+      "Frozen Slash": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---6",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===15"
+      ],
+      "Soul Vulcan Strike": [
+        "EQUIP[Blue Crystal Staff-LT]REFINE[weapon==3]---6",
+        "EQUIP[Blue Crystal Staff-LT]GRADE[weapon==C]===15"
+      ]
+    }
+  },
+  "400819": {
+    "id": 400819,
+    "aegisName": "Heroic_Hairband_DK_LT",
+    "name": "Heroic Hairband (Dragon Knight) - LT) [1]",
+    "unidName": "Hairband",
+    "resName": "Mech_Feather_Hairband_B",
+    "description": "Hairband ที่ถูกสร้างขึ้นเพื่อมอบให้เหล่าวีรบุรุษเวอร์ชั่นปรับปรุง\n\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 5% \nเมื่ออัพเกรดถึงขั้น 7, MaxHP + 3000 \nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nเมื่อสวมใส่ร่วมกับ Dragonic Slayer-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Dragonic Breath 6%\n\nเมื่อ Dragonic Slayer-LT มี Grade C ขึ้นไป, \nลด Cooldown สกิล Dragonic Breath 0.1 วินาที\n \nเมื่อสวมใส่ร่วมกับ Oriental Sword-LT, \nC.RATE + 15\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Sonic Wave, Storm Blast 12%\n\nเมื่อ Oriental Sword-LT มี Grade C ขึ้นไป, \nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Sonic Wave, Storm Blast 30%\n \n[Option เพิ่มเติมตาม Grade] \n[Grade D] MaxHP +5% \n[Grade C] POW + 2, P.ATK + 2\n[Grade B] เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "atkPercent": [
+        "3---5"
+      ],
+      "hp": [
+        "7===3000"
+      ],
+      "range": [
+        "9===15"
+      ],
+      "p_element_all": [
+        "11===20"
+      ],
+      "fct": [
+        "11===0.2",
+        "GRADE[me==B]12===0.5"
+      ],
+      "cd__Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]GRADE[weapon==C]===0.1"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===30",
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---12"
+      ],
+      "Storm Blast": [
+        "EQUIP[Oriental Sword-LT]GRADE[weapon==C]===30",
+        "EQUIP[Oriental Sword-LT]REFINE[weapon==3]---12"
+      ],
+      "hpPercent": [
+        "GRADE[me==D]===5"
+      ],
+      "pow": [
+        "GRADE[me==C]===2"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===2"
+      ],
+      "p_size_all": [
+        "EQUIP[Dragonic Slayer-LT]===15"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Dragonic Slayer-LT]REFINE[weapon==3]---6"
+      ],
+      "cRate": [
+        "EQUIP[Oriental Sword-LT]===15"
+      ]
+    }
+  },
+  "400820": {
+    "id": 400820,
+    "aegisName": "Heroic_Hairband_SKE_LT",
+    "name": "Heroic Hairband (Sky Emperor) - LT [1]",
+    "unidName": "Hairband",
+    "resName": "Mech_Feather_Hairband_B",
+    "description": "Hairband ที่ถูกสร้างขึ้นเพื่อมอบให้เหล่าวีรบุรุษเวอร์ชั่นปรับปรุง\n\nทุก ๆ การอัพเกรด 3 ขั้น ATK + 5%   \nเมื่ออัพเกรดถึงขั้น 7, CRI + 20   \nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n   \nเมื่อสวมใส่ร่วมกับ One Sky One Sun-LT, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น, เพิ่ม Damage สกิล Noon Blast, Sunset Blast 6%\nเมื่อ One Sky One Sun-LT มี Grade C ขึ้นไป, ลด Cooldown สกิล Noon Blast 0.1 วินาที\n \n[Option เพิ่มเติมตาม Grade]  \n[Grade D] Critical Damage + 8%\n[Grade C] POW + 2, P.ATK + 2   \n[Grade B] เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "SkyEmperor"
+    ],
+    "script": {
+      "atkPercent": [
+        "3---5"
+      ],
+      "cri": [
+        "7===20"
+      ],
+      "melee": [
+        "9===15"
+      ],
+      "p_element_all": [
+        "11===20"
+      ],
+      "fct": [
+        "11===0.2",
+        "GRADE[me==B]12===0.5"
+      ],
+      "p_size_all": [
+        "EQUIP[One Sky One Sun-LT]===15"
+      ],
+      "Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---6"
+      ],
+      "Sunset Blast": [
+        "EQUIP[One Sky One Sun-LT]REFINE[weapon==3]---6"
+      ],
+      "cd__Noon Blast": [
+        "EQUIP[One Sky One Sun-LT]GRADE[weapon==C]===0.1"
+      ],
+      "criDmg": [
+        "GRADE[me==D]===8"
+      ],
+      "pow": [
+        "GRADE[me==C]===2"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===2"
       ]
     }
   },
@@ -160401,10 +161086,10 @@
   "490153": {
     "id": 490153,
     "aegisName": "Hero_Token_WH",
-    "name": "Heroic Token (Windhawk) [1]",
-    "unidName": "Accessory",
+    "name": "Heroic Token (Wind Hawk) [1]",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Royal Bow-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Royal Bow-LT is 10 or higher, increases long ranged physical damage by 10%, increases Gale Storm damage by 10%.\nIf grade of Royal Bow-LT is C or higher, CON + 5, P.Atk + 5, increases Gale Storm damage by additional 10%.\n\nWhen equipped with Scarlet Dragon Leather Bow-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Scarlet Dragon Leather Bow-LT is 10 or higher, increases long ranged physical damage by 10%, increases Crescive Bolt damage by 10%.\nIf grade of Scarlet Dragon Leather Bow-LT is C or higher, CON + 5, P.Atk + 5, increases Crescive Bolt damage by additional 10%.\n\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Windhawk^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Wind Hawk แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Royal Bow-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Royal Bow-LT มีขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Gale Storm 10%\nเมื่อ Royal Bow-LT มี Grade C ขึ้นไป, CON + 5, P.ATK + 5, เพิ่ม Damage สกิล Gale Storm ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Scarlet Dragon Leather Bow-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Scarlet Dragon Leather Bow-LT มีขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Crescive Bolt 10%\nเมื่อ Scarlet Dragon Leather Bow-LT มี Grade C ขึ้นไป, CON + 5, P.ATK + 5, เพิ่ม Damage สกิล Crescive Bolt ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Wind Hawk^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -160855,9 +161540,9 @@
     "id": 490167,
     "aegisName": "Hero_Token_BO",
     "name": "Heroic Token (Biolo) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Red Lotus Sword-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Red Lotus Sword-LT is 10 or higher, increases long ranged physical damage by 10%, increases Acidified Zone (Water/Wind/Earth/Fire) damage by 10%.\nIf grade of Red Lotus Sword-LT is C or higher, POW + 5, P.Atk + 5, increases Acidified Zone (Water/Wind/Earth/Fire) damage by additional 10%.\n\nWhen equipped with Slate Sword-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Slate Sword-LT is 10 or higher, increases melee physical damage by 10%, increases Cart Tornado damage by 10%.\nIf grade of Slate Sword-LT is C or higher, POW + 5, P.Atk + 5, increases Cart Tornado damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Biolo^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Biolo แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Red Lotus Sword-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Red Lotus Sword-LT มีขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Acidifies Zone (Water/Wind/Ground/Fire) 10%\nเมื่อ Red Lotus Sword-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Acidifies Zone (Water/Wind/Ground/Fire) ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Slate Sword-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Slate Sword-LT มีขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะใกล้ 10%, เพิ่ม Damage สกิล Cart Tornado Attack 10%\nเมื่อ Slate Sword-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Cart Tornado Attack ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -161348,9 +162033,9 @@
     "id": 490184,
     "aegisName": "Hero_Token_SS",
     "name": "Heroic Token (Shinkiro & Shiranui) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Huuma Shuriken Clearness-LT, increases physical damage against all size enemies by 15%.\nIf refine rate of Huuma Shuriken Clearness-LT is 10 or higher, increases long ranged physical damage by 10%, increases Huuma Shuriken - Grasp damage by 10%.\nIf grade of Huuma Shuriken Clearness-LT is C or higher, POW + 5, P.Atk + 5, increases Huuma Shuriken - Grasp damage by additional 10%.\n\nWhen equipped with Kiri no Tsuyu-LT and Surudoi Kaze, increases physical damage against all size enemies by 15%.\nIf the sum of refine rate of Kiri no Tsuyu-LT and Surudoi Kaze is 20 or higher, increases long ranged physical damage by 10%, increases Kunai - Distortion and Kunai - Rotation damage by 10%.\nIf grade of Kiri no Tsuyu-LT is C or higher, POW + 5, P.Atk + 5, increases Kunai - Distortion and Kunai - Rotation damage by additional 10% (only applies when Kiri no Tsuyu-LT is equipped on right hand).\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Shinkiro, Shiranui^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Shinkiro, Shiranui แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Huuma Shuriken Clearness-LT, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Huuma Shuriken Clearness-LT มีขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยไกล 10%, เพิ่ม Damage สกิล Huuma Shuriken - Grasp 10%\nเมื่อ Huuma Shuriken Clearness-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Huuma Shuriken - Grasp ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Kiri no Tsuyu-LT, Surudoi Kaze, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเมื่อค่าอัพเกรดของ Kiri no Tsuyu-LT, Surudoi Kaze รวมกันตั้งแต่ 20 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage สกิล Kunai - Distortion, Kunai - Rotation 10%,\nเมื่อ Kiri no Tsuyu-LT มี Grade C ขึ้นไป, POW + 5, P.ATK + 5, เพิ่ม Damage สกิล Kunai - Distortion, Kunai - Rotation ขึ้นอีก 10% (จะเกิดต่อเมื่อสวมใส่ที่มือขวาเท่านั้น)\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro, Shiranui^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -161500,9 +162185,9 @@
     "id": 490186,
     "aegisName": "Hero_Token_SOA",
     "name": "Heroic Token (Soul Ascetic) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Spirit Pendulum-LT, increases magical damage against all size enemies by 15%.\nIf refine rate of Spirit Pendulum-LT is 10 or higher, increases all property magical damage by 10%, increases Talisman of Blue Dragon and Talisman of White Tiger damage by 10%.\nIf grade of Spirit Pendulum-LT is C or higher, SPL + 5, S.Matk + 5, increases Talisman of Blue Dragon and Talisman of White Tiger damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Soul Ascetic^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Soul Ascetic แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Spirit Pendulum-LT, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อ Spirit Pendulum-LT มีขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Talisman of Blue Dragon, Talisman of White Tiger 10%\nเมื่อ Spirit Pendulum-LT มี Grade C ขึ้นไป, SPL + 5, S.MATK + 5, เพิ่ม Damage สกิล Talisman of Blue Dragon, Talisman of White Tiger ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -161604,9 +162289,9 @@
     "id": 490188,
     "aegisName": "Hero_Token_SH",
     "name": "Heroic Token (Spirit Handler) [1]",
-    "unidName": "Accessory",
+    "unidName": "Clip",
     "resName": "Pendant_of_Solomon",
-    "description": "Atk + 10%, Matk + 10%.\nReduces variable casting time by 10%.\n\nWhen equipped with Meowmeow Foxtail-LT, increases physical and magical damage against all size enemies by 15%.\nIf refine rate of Meowmeow Foxtail-LT is 10 or higher, increases long ranged physical damage and all property magical damage by 10%, increases Hogogong Strike and Hyunrok Breeze damage by 10%.\nIf grade of Meowmeow Foxtail-LT is C or higher, POW/SPL + 5, P.Atk/S.Matk + 5, increases Hogogong Strike and Hyunrok Breeze damage by additional 10%.\nClass: ^777777Accessory^000000  Defense: ^77777710^000000\nWeight: ^77777720^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777205^000000\nJobs: ^777777Spirit Handler^000000",
+    "description": "Accessory ลึกลับที่ปลดปล่อยพลังของ Hero Weapon-LT ออกมา มีพลังงานของ Spirit Handler แฝงอยู่\n \nATK + 10%, MATK + 10%,\nลดระยะเวลาร่ายแบบแปรผัน 10%\n \nเมื่อสวมใส่ร่วมกับ Meow Meow Foxtail-LT, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%\nเมื่อ Meow Meow Foxtail-LT มีขั้นอัพเกรด 10 ขึ้นไป, เพิ่ม Damage ทางกายภาพระยะไกล, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%, เพิ่ม Damage สกิล Hogogong Strike, Hyunrok Breeze 10%\nเมื่อ Meow Meow Foxtail-LT มี Grade C ขึ้นไป, POW, SPL + 5, P.ATK, S.MATK + 5, เพิ่ม Damage สกิล Hogogong Strike, Hyunrok Breeze ขึ้นอีก 10%\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777205^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 517,
@@ -167504,6 +168189,202 @@
       ]
     }
   },
+  "490722": {
+    "id": 490722,
+    "aegisName": "Lumora_Ring_SHC",
+    "name": "Lumora of Rift Ring [1]",
+    "unidName": "Lumora of Rift Ring",
+    "resName": "RingofVenus",
+    "description": "วงแหวนแห่งรอยแยกมิติ\nช่วยให้ผู้ครอบครองทลายกาลอวกาศและปลดปล่อยคมดาบที่ทะลวงศัตรูราวกับโจมตีจากหลายทิศทางในชั่วพริบตา\n\nATK + 100 \nลด Cooldown สกิล Ethernal Slash 0.2 วินาที\nPOW + 10 \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Katar, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%, เพิ่ม Damage สกิล Ethernal Slash 10%\n \nเมื่อ Vivatus Fides Katar มีขั้นอัพเกรด 10 ขึ้นไป, \nCritical Damage + 20% \nเพิ่ม Damage สกิล Ethernal Slash 10%\n\nเมื่อ Vivatus Fides Katar มี Grade C ขึ้นไป, \nP.ATK + 5\nเพิ่ม Damage สกิล Ethernal Slash 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cd__Eternal Slash": [
+        "0.2"
+      ],
+      "pow": [
+        "10"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "pAtk": [
+        "EQUIP[Vivatus Fides Katar]GRADE[weapon==C]===5"
+      ],
+      "Eternal Slash": [
+        "EQUIP[Vivatus Fides Katar]===10",
+        "EQUIP[Vivatus Fides Katar]REFINE[weapon==10]===10",
+        "EQUIP[Vivatus Fides Katar]GRADE[weapon==C]===15"
+      ],
+      "p_size_all": [
+        "EQUIP[Vivatus Fides Katar]===15"
+      ],
+      "criDmg": [
+        "EQUIP[Vivatus Fides Katar]REFINE[weapon==10]===20"
+      ]
+    }
+  },
+  "490723": {
+    "id": 490723,
+    "aegisName": "Lumora_Ring_DK",
+    "name": "Lumora of Fury Ring [1]",
+    "unidName": "Lumora of Fury Ring",
+    "resName": "RingofVenus",
+    "description": "วงแหวนแห่งความโกรธ\nมอบพลังให้ผู้ครอบครองปลดปล่อยพายุแห่งความพิโรธที่ไม่เคยดับ กวาดล้างทุกสิ่งที่ขวางหน้าอย่างไร้ความปรานี\n\nATK + 100 \nลด Cooldown สกิล Storm Slash 0.2 วินาที\nPOW + 10 \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15% \n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Two-handed Sword, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15% \nเพิ่ม Damage สกิล Storm Slash 10%\n\nเมื่อ Vivatus Fides Two-handed Sword มีขั้นอัพเกรด 10 ขึ้นไป, Critical Damage + 20% \nเพิ่ม Damage สกิล Storm Slash 10%\n\nเมื่อ Vivatus Fides Two-handed Sword มี Grade C ขึ้นไป, P.ATK + 5 \nเพิ่ม Damage สกิล Storm Slash 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cd__Storm Slash": [
+        "0.2"
+      ],
+      "pow": [
+        "10"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "criDmg": [
+        "EQUIP[Vivatus Fides Two-Handed Sword]REFINE[weapon==10]===20"
+      ],
+      "Storm Slash": [
+        "EQUIP[Vivatus Fides Two-Handed Sword]===10",
+        "EQUIP[Vivatus Fides Two-Handed Sword]REFINE[weapon==10]===10",
+        "EQUIP[Vivatus Fides Two-Handed Sword]GRADE[weapon==C]===15"
+      ],
+      "pAtk": [
+        "EQUIP[Vivatus Fides Two-Handed Sword]GRADE[weapon==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Vivatus Fides Two-Handed Sword]===15"
+      ]
+    }
+  },
+  "490724": {
+    "id": 490724,
+    "aegisName": "Aeternis_Ring_ABC",
+    "name": "Aeternis of Shade Ring [1]",
+    "unidName": "Aeternis of Shade Ring",
+    "resName": "RingofJupiter",
+    "description": "วงแหวนแห่งเงานิรันดร์\nมอบพลังให้ผู้ครอบครองกลืนหายไปในความมืด สังหารศัตรูในเงาลึกลับที่ไม่มีวันเลือนหาย\n\nATK + 50\nลด Delay หลังใช้สกิล 10%\nCON + 10\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Helm of Faith II (Shadow Chaser),\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Frenzy Shot 5%\n\nเมื่อ Helm of Faith II (Shadow Chaser) มีขั้นอัพเกรด 10 ขึ้นไป, \nCritical Damage + 15%\nเพิ่ม Damage สกิล Frenzy Shot 10%\n\nเมื่อ Helm of Faith II (Shadow Chaser) มี Grade C ขึ้นไป, \nP.ATK + 5\nเพิ่ม Damage สกิล Frenzy Shot 10%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "atk": [
+        "50"
+      ],
+      "acd": [
+        "10"
+      ],
+      "con": [
+        "10"
+      ],
+      "p_class_all": [
+        "10"
+      ],
+      "criDmg": [
+        "EQUIP[Helm of Faith II (Shadow Chaser)]REFINE[headUpper==10]===15"
+      ],
+      "Frenzy Shot": [
+        "EQUIP[Helm of Faith II (Shadow Chaser)]===5",
+        "EQUIP[Helm of Faith II (Shadow Chaser)]REFINE[headUpper==10]===10",
+        "EQUIP[Helm of Faith II (Shadow Chaser)]GRADE[headUpper==C]===10"
+      ],
+      "pAtk": [
+        "EQUIP[Helm of Faith II (Shadow Chaser)]GRADE[headUpper==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Helm of Faith II (Shadow Chaser)]===15"
+      ]
+    }
+  },
+  "490725": {
+    "id": 490725,
+    "aegisName": "Aeternis_Ring_SHC",
+    "name": "Aeternis of Rift Ring [1]",
+    "unidName": "Aeternis of Rift Ring",
+    "resName": "RingofJupiter",
+    "description": "วงแหวนแห่งรอยแยกนิรันดร์\nผู้ครอบครองสามารถทลายมิติได้อย่างอิสระ ปลดปล่อยคมดาบที่สะท้อนในห้วงเวลาซ้ำแล้วซ้ำเล่า ราวกับการโจมตีที่ไม่มีวันสิ้นสุด\n\nATK + 50 \nลด Delay หลังใช้สกิล 10%\nPOW + 5\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n \nเมื่อสวมใส่ร่วมกับ Helm of Faith I (Guillotine Cross),\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Ethernal Slash 5%\n\nเมื่อ Helm of Faith I (Guillotine Cross) มีขั้นอัพเกรด 10 ขึ้นไป, \nCritical Damage + 15%\nเพิ่ม Damage สกิล Ethernal Slash 10%\n\nเมื่อ Helm of Faith I (Guillotine Cross) มี Grade C ขึ้นไป, \nP.ATK +5\nเพิ่ม Damage สกิล Ethernal Slash 10% \nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "atk": [
+        "50"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "5"
+      ],
+      "p_class_all": [
+        "10"
+      ],
+      "criDmg": [
+        "EQUIP[Helm of Faith (Guillotine Cross)]REFINE[headUpper==10]===15"
+      ],
+      "Eternal Slash": [
+        "EQUIP[Helm of Faith (Guillotine Cross)]===5",
+        "EQUIP[Helm of Faith (Guillotine Cross)]REFINE[headUpper==10]===10",
+        "EQUIP[Helm of Faith (Guillotine Cross)]GRADE[headUpper==C]===10"
+      ],
+      "pAtk": [
+        "EQUIP[Helm of Faith (Guillotine Cross)]GRADE[headUpper==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Helm of Faith (Guillotine Cross)]===15"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -168570,9 +169451,9 @@
     "id": 500039,
     "aegisName": "Sword_Of_Bluefire_LT",
     "name": "Red Lotus Sword-LT [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Sword_Of_Bluefire_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases long ranged physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increase Cart Cannon damage by 10%, reduces variable casting time by 10%. \nIf refine rate is 9 or higher, increase Cart Cannon damage by additional 20%, increases physical damage against all size enemies by 15%.\nIf refine rate is 11 or higher, increase Cart Cannon damage by additional 10%, increase Acid Bomb damage by 25%, reduces variable casting time by additional 8%. \n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Sword^000000 Attack: ^777777200^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Genetic^000000",
+    "description": "Sword เวอร์ชั่นปรับปรุงที่เมื่อดึงออกจากฝักจะมีเปลวไฟสีฟ้าลุกโชติช่วง\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Cart Cannon 10%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Cart Cannon ขึ้นอีก 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Cart Cannon ขึ้นอีก 10%, เพิ่ม Damage สกิล Acid Demonstration 25%, ลดระยะเวลาร่ายแบบแปรผันลงอีก 8%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Genetic Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -168631,9 +169512,9 @@
     "id": 500040,
     "aegisName": "Slate_Sword_LT",
     "name": "Slate Sword-LT [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Slate_Sword_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases melee physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Cart Tornado damage by 25% and Hell Plant damage by 30%.\nIf refine rate is 9 or higher, increases Cart Tornado damage by additional 20%, reduces global cooldown by 10%.\nIf refine rate is 11 or higher, MaxHP + 10%, increases Cart Tornado damage by additional 20%, reduces global cooldown by additional 5%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases melee physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Sword^000000 Attack: ^777777205^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Genetic^000000",
+    "description": "Sword เวอร์ชั่นปรับปรุงที่สร้างจากแผ่นหินโบราณ\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Cart Tornado Attack 25%, เพิ่ม Damage สกิล Hell Plant 30%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Cart Tornado Attack ขึ้นอีก 20%, ลด Delay หลังใช้สกิล 10%\nเมื่ออัพเกรดถึงขั้น 11, MHP + 10%, เพิ่ม Damage สกิล Cart Tornado Attack ขึ้นอีก 20%, ลด Delay หลังใช้สกิลลงอีก 5%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะใกล้ 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Genetic Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -171217,9 +172098,9 @@
     "id": 510060,
     "aegisName": "Fog_Dew_Sword_LT",
     "name": "Kiri no Tsuyu-LT [2]",
-    "unidName": "Dagger",
+    "unidName": "Knife",
     "resName": "Fog_Dew_Sword_LT",
-    "description": "When equipped with Surudoi Kaze,\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 3 of the sum of refine rate.\nAtk + 4% per 5 of the sum of refine rate.\nIf the sum of refine rate is 14 or higher, increases Cross Slash damage by 35%, reduces skill cooldown of Cross Slash by 2 seconds.\nIf the sum of refine rate is 16 or higher, enables to use Distorted Cresent which has the same skill level as Shadow Trampling user learned, enables to use Shadow Trampling which has the same skill level as Distorted Cresent user learned, increases physical damage against all property enemies by 15%.\nIf the sum of refine rate is 18 or higher, increases Cross Slash damage by additional 25%.\nIf the sum of refine rate is 20 or higher, increases physical damage against all size enemies by 15%.\n\nWhen equipped with Surudoi Kaze and Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Dagger^000000 Attack: ^777777190^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Ninja classes^000000",
+    "description": "หนึ่งในอุปกรณ์นินจาเวอร์ชั่นปรับปรุงที่เคยใช้โดยนินจาผู้มีความชำนาญในศิลปะการใช้ดาบสองมือในอดีต\nทำงานประสานกันกับ Hero Boots-LT\nต้องสวมใส่ร่วมกับ Surudoi Kaze ซึ่งเป็นอุปกรณ์ของนินจา ถึงจะสามารถปลดปล่อยพลังที่แท้จริงได้\n \nเมื่อสวมใส่ร่วมกับ Surudoi Kaze,\nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1,\nทุก ๆ ค่าอัพเกรดรวมกัน 3 ขั้น ATK + 15,\nทุก ๆ ค่าอัพเกรดรวมกัน 5 ขั้น ATK + 4%,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 14 ขึ้นไป,  เพิ่ม Damage สกิล Cross Slash 35%, ลด Cooldown สกิล Cross Slash 2 วินาที,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 16 ขึ้นไป, สามารถใช้สกิล Shadow Trampling ในเลเวลที่เท่าเลเวลสกิล Distorted Crescent, สามารถใช้สกิล Distorted Crescent ในเลเวลที่เท่าเลเวลสกิล Shadow Trampling, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, เพิ่ม Damage สกิล Cross Slash ขึ้นอีก 25%,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\n \nเมื่อสวมใส่ร่วมกับ Surudoi Kaze, Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Ninja Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 256,
@@ -179157,9 +180038,9 @@
     "id": 550067,
     "aegisName": "MeawFoxtail_LT",
     "name": "Meow Meow Foxtail-LT [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "MeawFoxtail_LT",
-    "description": "Can't be destroyed.\nMatk + 350.\nIf the user's base level is 210 or higher, POW/SPL + 2, P.Atk/S.Matk + 1.\nAtk/Matk + 15 per 2 refine rate.\nAtk/Matk + 2% per 3 refine rate.\nIf refine rate is 7 or higher, increases Picky Peck and Silvervine Stem Spear damage by 40%.\nIf refine rate is 9 or higher, reduces variable casting time by 10%, reduces skill cooldown of Catnip Meteor by 2 seconds.\nIf refine rate is 11 or higher, increases Picky Peck and Catnip Meteor damage by 50%, increases physical and magical damage against all size enemies by 15%.\n\nWhen equipped with Hero Boots-LT, Atk/Matk + 10%, P.Atk/S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk/Matk + 3%.\n[Grade C] Increases long ranged physical damage and all property magical damage by 15%, P.Atk/S.Matk + 1.\n[Grade B] POW/SPL + 3, P.Atk/S.Matk + 2.\nClass: ^777777Staff^000000 Attack: ^777777350^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Summoner (Doram) classes^000000",
+    "description": "หญ้าหางกระรอกลึกลับเวอร์ชั่นปรับปรุงที่เมื่อสั่นมันจะได้ยินเสียงเมี๊ยว ๆ\nด้วยการสั่นที่นุ่มนวลขึ้น ดูเหมือนว่ามันเริ่มแสดงพลังที่แท้จริงออกมา\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nMATK + 350.\nเมื่อ Lv.210 ขึ้นไป, POW, SPL + 2, P.ATK, S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK, MATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น ATK, MATK + 2%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Picky Peck 40%, เพิ่ม Damage สกิล Silvervine Stem Spear 40%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 10%, ลด Cooldown สกิล Catnip Meteor 2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Lunatic Carrot Beat 50%, เพิ่ม Damage สกิล Catnip Meteor 50%, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK, MATK + 10%, P.ATK, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK, MATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, P.ATK, S.MATK + 1.\n[Grade B] POW, SPL + 3, P.ATK, S.MATK + 2.\nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^777777350^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Summonner (Doram) Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -179246,9 +180127,9 @@
     "id": 550068,
     "aegisName": "SoulWeight_LT",
     "name": "Spirit Pendulum-LT [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "SoulWeight_LT",
-    "description": "Matk + 190, can't be destroyed.\nIf the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nMatk + 15 per 2 refine rate.\nIncreases all property magical damage by 3% per 3 refine rate.\nIf refine rate is 7 or higher, increases Espa damage by 25%, reduces variable casting time by 10%.\nIf refine rate is 9 or higher, increases Espa damage by additional 15%, increases Eswhoo damage by 45%.\nIf refine rate is 11 or higher, increases magical damage against all size enemies by 15%, has a high chance (10%) to recover 230 SP every 0.5 seconds for 19 times within 10 seconds when dealing magical damage.\n\nWhen equipped with Hero Boots-LT, Matk + 10%, S.Matk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Matk + 3%.\n[Grade C] Increases all property magical damage by 15%, S.Matk + 1.\n[Grade B] SPL + 3, S.Matk + 2.\nClass: ^777777Staff^000000 Attack: ^77777770^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Soul Reaper classes^000000",
+    "description": "ลูกเหล็กเวอร์ชั่นปรับปรุงที่มีพลังในการชักนำวิญญาณ ซึ่งถูกใช้โดย Soul Reaper ที่มีพลังวิญญาณอันมากมาย\nทำงานประสานกันกับ Hero Boots-LT\nMATK + 190, ไม่สามารถทำลายได้\nเมื่อ Lv.210 ขึ้นไป, SPL + 2, S.MATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 3%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Espa 25%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Espa ขึ้นอีก 15%, เพิ่ม Damage สกิล Eswhoo 45%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เมื่อโจมตีทางเวทมนตร์ มีโอกาสสูง (10%) ที่จะฟื้นฟู SP 230 ทุก ๆ 0.5 วินาที จำนวน 19 ครั้ง เป็นเวลา 10 วินาที\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, MATK + 10%, S.MATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 3%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%, S.MATK + 1.\n[Grade B] SPL + 3, S.MATK + 2.\nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^77777770^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Soul Linker Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -193783,7 +194664,7 @@
     "name": "Huuma Shuriken Clearness-LT [2]",
     "unidName": "Huuma Shuriken",
     "resName": "Humma_Clear_LT",
-    "description": "Can't be destroyed.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases long ranged physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Swirling Petal damage by 30%, reduces variable casting time by 10%.\nIf refine rate is 9 or higher, reduces skill cooldown of Swirling Petal by 2 seconds, increases Swirling Petal damage by additional 15%.\nIf refine rate is 11 or higher, increases physical damage against fire, shadow, holy and undead property enemies by 25%, increases physical damage against dragon, undead, demon and angel race monsters by 25%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Huuma Shuriken^000000 Attack: ^777777290^000000\nWeight: ^777777230^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Ninja classes^000000",
+    "description": "Huuma Shuriken เวอร์ชั่นปรับปรุงที่นินจาผู้มีชื่อเสียงในอดีตเคยใช้\nทำงานประสานกันกับ Hero Boots-LT\nไม่สามารถทำลายได้\nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 15.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Swirling Petal 30%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Swirling Petal 2 วินาที, เพิ่ม Damage สกิล Swirling Petal ขึ้นอีก 15%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Fire, Shadow, Holy, Undead 25%, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Dragon, Undead, Demon, Angel 25%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภายพระยะไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777290^000000\nน้ำหนัก : ^777777230^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Ninja Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 278,
@@ -195415,7 +196296,7 @@
     "name": "Royal Bow-LT [2]",
     "unidName": "Bow",
     "resName": "Royal_Bow_K_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases long ranged physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Arrow Storm damage by 20%, reduces skill cooldown of Arrow Storm by 1 second.\nIf refine rate is 9 or higher, increases Arrow Storm damage by additional 30%, reduces global cooldown by 10%.\nIf refine rate is 11 or higher, increases Arrow Storm damage by additional 20%, increases Focused Arrow Strike damage by 35%, increases critical damage by 15%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Bow^000000 Attack: ^777777205^000000\nWeight: ^777777120^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Ranger, Shadow Chaser classes^000000",
+    "description": "Hero Bow เวอร์ชั่นปรับปรุงที่ถูกส่งต่อจากราชวงศ์ที่หายสาบสูญ\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Arrow Storm 20%, ลด Cooldown สกิล Arrow Storm 1 วินาที\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Arrow Storm ขึ้นอีก 30%, ลด Delay หลังใช้สกิล 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Arrow Storm ขึ้นอีก 20%, เพิ่ม Damage สกิล Focused Arrow Strike 35%, Critical Damage 15%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Ranger, Shadow Chaser Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
@@ -195479,7 +196360,7 @@
     "name": "Scarlet Dragon Leather Bow-LT [2]",
     "unidName": "Bow",
     "resName": "Scalet_Dragon_L_Bow_LT",
-    "description": "Atk + 5%.\nIf the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nAtk + 15 per 2 refine rate.\nIncreases long ranged physical damage by 4% per 3 refine rate.\nIf refine rate is 7 or higher, increases Aimed Bolt damage by 20%, reduces variable casting time by 10%.\nIf refine rate is 9 or higher, increases Aimed Bolt damage by additional 30%, reduces global cooldown by 10%.\nIf refine rate is 11 or higher, reduces skill cooldown of Aimed Bolt by 1 second, reduces global cooldown by additional 8%.\n\nWhen equipped with Hero Boots-LT, Atk + 10%, P.Atk + 2.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Atk + 3%.\n[Grade C] Increases long ranged physical damage by 15%, P.Atk + 1.\n[Grade B] POW + 3, P.Atk + 2.\nClass: ^777777Bow^000000 Attack: ^777777200^000000\nWeight: ^77777790^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777190^000000\nJobs: ^777777Ranger^000000",
+    "description": "Bow เวอร์ชั่นปรับปรุงที่ทำจากวัสดุที่มีความยืดหยุ่นสูง โดยหุ้มด้ามธนูด้วยหนังมังกรแดง\nทำงานประสานกันกับ Hero Boots-LT\nATK + 5%.\nเมื่อ Lv.210 ขึ้นไป, POW + 2,  P.ATK + 1.\nทุก ๆ การอัพเกรด 2 ขั้น ATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage สกิล Aimed Bolt 20%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Aimed Bolt ขึ้นอีก 30%, ลด Delay หลัง้ใช้สกิล 10%\nเมื่ออัพเกรดถึงขั้น 11, ลด Cooldown สกิล Aimed Bolt 1 วินาที, ลด Delay หลังใช้สกิลลงอีก 8%\n \nเมื่อสวมใส่ร่วมกับ Hero Boots-LT, ATK + 10%, P.ATK + 2.\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 3%.\n[Grade C] เพิ่ม Damage ทางกายภาพระยะไกล 15%, P.ATK + 1.\n[Grade B] POW + 3, P.ATK + 2.\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^77777790^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777190^000000\nอาชีพที่ใส่ได้ : ^777777Ranger Classes^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
