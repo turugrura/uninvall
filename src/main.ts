@@ -1,6 +1,6 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import * as compression from 'compression';
+import compression from 'compression';
 import * as express from 'express';
 import { rateLimit } from 'express-rate-limit';
 import helmet from 'helmet';
@@ -10,18 +10,18 @@ async function bootstrap() {
 	const app = await NestFactory.create(AppModule, {
 		cors: true,
 		// logger: false,
-	})
+	});
 
 	app.useGlobalPipes(
 		new ValidationPipe({
 			transform: true,
 			// whitelist: true,
 		}),
-	)
+	);
 	app.enableCors();
 	app.use(express.urlencoded({ limit: '2mb', extended: true }));
 	app.use(express.json({ limit: '2mb' }));
-	app.use(helmet())
+	app.use(helmet());
 	// app.use(csurf())
 	app.use(compression());
 	app.use(
@@ -29,10 +29,10 @@ async function bootstrap() {
 			windowMs: 15 * 60 * 1000, // 15 minutes
 			max: 100, // limit each IP to 100 requests per windowMs
 		}),
-	)
+	);
 	// app.useLogger(app.get(MyLogger))
 
-	await app.listen(process.env.PORT)
+	await app.listen(process.env.PORT);
 	console.log(`App running on ${await app.getUrl()}`);
 }
-bootstrap()
+bootstrap();

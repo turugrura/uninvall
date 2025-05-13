@@ -70,7 +70,7 @@ const itemNam = {
 	[ItemSubTypeId.ShadowEarning]: 'shadowEarning',
 	[ItemSubTypeId.ShadowPendant]: 'shadowPendant',
 	[ItemSubTypeId.ShadowWeapon]: 'shadowWeapon',
-}
+};
 
 interface ItemModel {
 	id: number;
@@ -280,7 +280,7 @@ export class RoScriptTranslatorService {
 		return { status: 'ok' };
 	}
 
-	sync<T extends { id: number } & ItemModel>(updatedItems: T[]) {
+	sync<T extends { id: number; } & ItemModel>(updatedItems: T[]) {
 		const path = this.baseItemFilePath;
 		const fileContent = fs.readFileSync(path, { encoding: 'utf8' });
 		const currentData = JSON.parse(fileContent) as Record<number, ItemModel>;
@@ -301,8 +301,8 @@ export class RoScriptTranslatorService {
 						updatedItem.itemSubTypeId === 1 || updatedItem.itemTypeId === ItemTypeId.WEAPON ? 'weapon' : itemNam[updatedItem.itemSubTypeId],
 					).scripts;
 				} catch (error) {
-					console.error(error)
-					currentData[updatedItem.id].script = {}
+					console.error(error);
+					currentData[updatedItem.id].script = {};
 				}
 			} else if (currentData[updatedItem.id]?.script) {
 				const bk = currentData[updatedItem.id].script;
@@ -337,7 +337,7 @@ export class RoScriptTranslatorService {
 		const updatedItems: any[] = [];
 
 		const callAPI = async () => {
-			const itemId = itemIds.pop()
+			const itemId = itemIds.pop();
 			if (!itemId) return;
 
 			let url = `${this.baseDbAPI}/Item/${itemId}?apiKey=${this.baseDbAPIKey}`;
@@ -390,7 +390,7 @@ export class RoScriptTranslatorService {
 				// console.log({ itemLevel })
 
 				this.loadImage([itemId]);
-				return callAPI()
+				return callAPI();
 			} catch (error) {
 				console.error({
 					itemId,
@@ -398,11 +398,11 @@ export class RoScriptTranslatorService {
 						error?.response?.statusText || error?.response || error?.message,
 				});
 			}
-		}
+		};
 
-		const TOTAL_WORKER = 10
+		const TOTAL_WORKER = 10;
 		for (let i = 0; i <= TOTAL_WORKER; i++) {
-			await callAPI()
+			await callAPI();
 		}
 
 		this.sync(updatedItems);
@@ -432,25 +432,29 @@ export class RoScriptTranslatorService {
 		} = item;
 		// const x: Partial<ItemAPIModel> = {};
 
-		if (itemTypeId === 1 && item.itemLevel == null) {
-			const itemLv =
-				Number(description.split('เลเวลอาวุธ : ^777777')[1]?.charAt(0)) ||
-				Number(description.split('Weapon Level: ^777777')[1]?.charAt(0)) ||
-				Number(this.getTextBetween(description, 'เลเวลของอาวุธ : ^777777')) ||
-				Number(this.getTextBetween(description, 'Lv ของอาวุธ : ^777777'));
-			if (Number.isInteger(itemLv)) {
-				item.itemLevel = itemLv;
-			} else {
-				const [, wLevel] = description.match(/\^777777(\d)\^000000/) ?? [];
-				item.itemLevel = Number(wLevel);
+		console.log(aegisName, { itemLevel: item.itemLevel });
+		if (!item.itemLevel) {
+			if (itemTypeId === 1 && item.itemLevel == null) {
+				const itemLv =
+					Number(description.split('เลเวลอาวุธ : ^777777')[1]?.charAt(0)) ||
+					Number(description.split('Weapon Level: ^777777')[1]?.charAt(0)) ||
+					Number(this.getTextBetween(description, 'เลเวลของอาวุธ : ^777777')) ||
+					Number(this.getTextBetween(description, 'เลเวล Weapon : ^777777')) ||
+					Number(this.getTextBetween(description, 'Lv ของอาวุธ : ^777777'));
+				if (Number.isInteger(itemLv)) {
+					item.itemLevel = itemLv;
+				} else {
+					const [, wLevel] = description.match(/\^777777(\d)\^000000/) ?? [];
+					item.itemLevel = Number(wLevel);
+				}
 			}
-		}
-		if (itemTypeId === 1 && item.itemLevel == null) {
-			const itemLv = Number(
-				description.split('เลเวลของอาวุธ : ^777777')[1]?.charAt(0),
-			);
-			if (Number.isInteger(itemLv)) {
-				item.itemLevel = itemLv;
+			if (itemTypeId === 1 && item.itemLevel == null) {
+				const itemLv = Number(
+					description.split('เลเวลของอาวุธ : ^777777')[1]?.charAt(0),
+				);
+				if (Number.isInteger(itemLv)) {
+					item.itemLevel = itemLv;
+				}
 			}
 		}
 
@@ -539,7 +543,7 @@ export class RoScriptTranslatorService {
 				this.getTextBetween(description, 'Job: ^777777') ||
 				this.getTextBetween(description, 'Jobs: ^777777');
 
-			console.log({ wording })
+			// console.log({ wording });
 
 			item.usableClass = [
 				UsedWordingMap[wording] || wording?.replaceAll(' ', '')?.replace('classes', '') || UsedWordingMap.ทุกอาชีพ,
@@ -547,12 +551,12 @@ export class RoScriptTranslatorService {
 
 			if (item.usableClass.length === 1 && item.usableClass[0] === UsedWordingMap.ทุกอาชีพ || item.usableClass[0] === "AllJobs") {
 				if (item.requiredLevel > 200) {
-					item.usableClass = [UsedWordingMap.fourthClass]
+					item.usableClass = [UsedWordingMap.fourthClass];
 				}
 			}
 
 			if (Array.isArray(item.usableClass) && item.usableClass.length) {
-				item.usableClass = item.usableClass.flatMap(a => a.split(',').map(b => b.replace(/classes/i, ''))) //"Swordman,Merchantclasses"
+				item.usableClass = item.usableClass.flatMap(a => a.split(',').map(b => b.replace(/classes/i, ''))); //"Swordman,Merchantclasses"
 			}
 		}
 

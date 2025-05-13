@@ -47342,7 +47342,7 @@
     "name": "Lord Bearer's Shadow Shoes",
     "unidName": "Shadow Shoes",
     "resName": "슈즈쉐도우3",
-    "description": "MaxHP + 1% per 2 refine rate.\nIf refine rate is 7 or higher, increases physical and magical damage against all size enemies by 5%.\nIf refine rate is 9 or higher, additional MaxHP + 5%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shoes^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nทุก ๆ การอัพเกรด 2 ขั้น MHP + 1%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, MHP + 5% เพิ่มเติม\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 528,
@@ -47375,7 +47375,7 @@
     "name": "Lord Bearer's Shadow Armor",
     "unidName": "Shadow Armor",
     "resName": "아머쉐도우3",
-    "description": "MaxHP + 1% per 2 refine rate.\r\nIf refine rate is 7 or higher, increases physical and magical damage against all size enemies by 5%.\r\nIf refine rate is 9 or higher, additional MaxHP + 5%.\r\nWhen Lord Bearer's set (Armor, Shoes) are equipped together, all trait stat + 2.\r\nIf the sum of refine rate of set is 18 or higher, MaxHP - 20%, gains permanent Endure effect,\r\nif the sum of refine rate of set is 20, MaxHP + 25%.\r\nClass: ^777777Shadow Equipment^000000\r\nLocation: ^777777Padded Armor^000000 Weight: ^7777770^000000\r\nRequired Level: ^7777771^000000\r\nJobs: ^777777All^000000",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nทุก ๆ การอัพเกรด 2 ขั้น MHP + 1%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, MHP + 5% เพิ่มเติม\n \nเมื่อสวมใส่ร่วมกับ Lord Bearer's Shadow (Armor, Shoes), All Trait Stat + 2, \nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, MHP - 20%, ได้รับเอฟเฟกต์ [Endure] ตลอดเวลา\nเมื่อค่าอัพเกรดรวมกันถึงขั้น 20, MHP + 25%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 526,
@@ -47413,7 +47413,7 @@
     "name": "Lord Bearer's Shadow Pendant",
     "unidName": "Shadow Pendant",
     "resName": "펜던트쉐도우3",
-    "description": "MaxHP + 1% per 2 refine rate.\nIf refine rate is 7 or higher, increases physical and magical damage against all size enemies by 5%.\nIf refine rate is 9 or higher, additional MaxHP + 5%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Pendant^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงศักยภาพที่ซ่อนอยู่ของผู้สวมใส่ออกมา\nทุก ๆ การอัพเกรด 2 ขั้น MHP + 1%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, MHP + 5% เพิ่มเติม\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 530,
@@ -47446,7 +47446,7 @@
     "name": "Lord Bearer's Shadow Earring",
     "unidName": "Shadow Earring",
     "resName": "이어링쉐도우3",
-    "description": "MaxHP + 1% per 2 refine rate.\r\nIf refine rate is 7 or higher, increases physical and magical damage against all size enemies by 5%.\r\nIf refine rate is 9 or higher, additional MaxHP + 5%.\r\nWhen Lord Bearer's set (Earring, Pendant) are equipped together, all trait stat + 2.\r\nIf the sum of refine rate of set is 18 or higher, MaxHP - 20%, gains permanent Endure effect,\r\nif the sum of refine rate of set is 20, MaxHP + 25%.\r\nClass: ^777777Shadow Equipment^000000\r\nLocation: ^777777Earring^000000 Weight: ^7777770^000000\r\nRequired Level: ^7777771^000000\r\nJobs: ^777777All^000000",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงศักยภาพที่ซ่อนอยู่ของผู้สวมใส่ออกมา\nทุก ๆ การอัพเกรด 2 ขั้น MHP + 1%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, MHP + 5% เพิ่มเติม\n \nเมื่อสวมใส่ร่วมกับ Lord Bearer's Shadow (Earring, Pendant), All Trait Stat + 2, \nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, MHP - 20%, ได้รับเอฟเฟกต์ [Endure] ตลอดเวลา\nเมื่อค่าอัพเกรดรวมกันถึงขั้น 20, MHP + 25%\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 529,
@@ -47484,7 +47484,7 @@
     "name": "Mega Blitz Shadow Shield",
     "unidName": "Shadow Shield",
     "resName": "쉴드쉐도우3",
-    "description": "Cri + 5.\nCri + 2 and C.Rate + 1 per 3 refine rate.\nIf refine rate is 7 or higher, ASPD + 1, Cri + 3.\nIf refine rate is 9 or higher, increases attack speed (reduces delay after attack by 8%), increases critical damage by 5%.\nIf refine rate is 10 or higher, C.Rate + 3, increases critical damage by additional 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shield^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "description": "โล่ขนาดเล็กที่สามารถสวมใส่บนแขนเพื่อเพิ่มประสิทธิภาพในการป้องกัน สามารถใช้งานเดี่ยว ๆ ได้ แต่ประสิทธิภาพในการป้องกันจะน้อยกว่า\nCRI + 5\nทุก ๆ การอัพเกรด 3 ขั้น CRI + 2, C.Rate + 1\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 1, CRI + 3\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 8%, Critical Damage + 5%\nเมื่ออัพเกรดถึงขั้น 10, C.Rate + 3, Critical Damage + 3% เพิ่มเติม\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 527,
@@ -47526,7 +47526,7 @@
     "name": "Mega Blitz Shadow Weapon",
     "unidName": "Shadow Weapon",
     "resName": "웨폰쉐도우3",
-    "description": "Increases attack speed (reduces delay after attack by 5%).\nReduces global cooldown by 1% per 2 refine rate.\nIf refine rate is 7 or higher, ASPD + 1, increases attack speed (reduces delay after attack by additional 3%).\nIf refine rate is 9 or higher, reduces global cooldown by additional 2%.\nIf refine rate is 10 or higher, P.Atk + 2, S.Matk + 2.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา\nASPD + 5%\nทุก ๆ การอัพเกรด 2 ขั้น ลด Delay หลังใช้สกิล 1%\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 1, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิลลงอีก 2%\nเมื่ออัพเกรดถึงขั้น 10, P.ATK + 2, S.MATK + 2\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 280,
@@ -88099,10 +88099,10 @@
   "311042": {
     "id": 311042,
     "aegisName": "Gear_EM2",
-    "name": "Varetyr Spear Tuning Device",
-    "unidName": "Varetyr Spear Tuning Device",
+    "name": "Psychic Wave Tuning Device",
+    "unidName": "Psychic Wave Tuning Device",
     "resName": "Gear_EM",
-    "description": "เพิ่ม Damage สกิล Varetyr Spear 35%\nเพิ่ม Damage สกิล Varetyr Speard ขึ้นอีก 5% ตาม Grade อาวุธที่สวมใส่",
+    "description": "เพิ่ม Damage สกิล Psychic Wave 5%, ลด Cooldown สกิล Psychic Wave 1.5 วินาที\n^CC3D3D[Option เพิ่มเติมตาม Grade อาวุธ]^000000\n[Grade D] ขึ้นไป, เพิ่ม Damage สกิล Psychic Wave ขึ้นอีก 7%\n[Grade C] ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] ขึ้นไป, เพิ่ม Damage สกิล Psychic Wave ขึ้นอีก 8%\n[Grade A] ขึ้นไป, เพิ่ม Damage สกิล Psychic Wave ขึ้นอีก 10%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -111331,6 +111331,32 @@
     "script": {
       "hpPercent": [
         "5"
+      ]
+    }
+  },
+  "312440": {
+    "id": 312440,
+    "aegisName": "Spirit_Of_Star_03_CN",
+    "name": "Spirit of Knight Lv.3",
+    "unidName": "Spirit of Knight Lv.3",
+    "resName": "차가운달빛",
+    "description": "ATK + 30, MATK + 30",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "atk": [
+        "30"
+      ],
+      "matk": [
+        "30"
       ]
     }
   },
@@ -137155,6 +137181,731 @@
       ]
     }
   },
+  "400801": {
+    "id": 400801,
+    "aegisName": "C_FumiHausu_Doll",
+    "name": "Costume Fumi Hausu Doll",
+    "unidName": "Cap",
+    "resName": "C_FumiHausu_Doll",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nP.ATK, S.MATK + 5\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nลดระยะเวลาร่ายแบบแปรผัน 30%\n\nเมื่อใช้งานร่วมกับ Fumi Hausu Egg,\nเพิ่มอัตราดรอปไอเท็ม 10%\n\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังสิ้นสุดระยะเวลากิจกรรม)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 519,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Upper",
+    "compositionPos": null,
+    "script": {
+      "pAtk": [
+        "5"
+      ],
+      "sMatk": [
+        "5"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "vct": [
+        "30"
+      ]
+    }
+  },
+  "400805": {
+    "id": 400805,
+    "aegisName": "Poenetentia_D_Crown_TH",
+    "name": "Poenitentia Crown of Divinitas [1]",
+    "unidName": "Helm",
+    "resName": "Poenetentia_D_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 5%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Tenon,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Frenzy Shot 4%\n   \nเมื่อสวมใส่ร่วมกับ Poenitentia Nervus,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Crescive Bolt 4%\n   \nเมื่อสวมใส่ร่วมกับ Poenitentia Attendo,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Gale Storm 4%\n   \nเมื่อสวมใส่ร่วมกับ Poenitentia Vatia,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Rhythm Shooting 4%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "atk": [
+        "2---15"
+      ],
+      "atkPercent": [
+        "3---5"
+      ],
+      "range": [
+        "4---4",
+        "GRADE[me==D]===10"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "Frenzy Shot": [
+        "EQUIP[Poenitentia Tenon]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Tenon]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Tenon]GRADE[me==B]===12"
+      ],
+      "Crescive Bolt": [
+        "EQUIP[Poenitentia Nervus]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Nervus]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Nervus]GRADE[me==B]===12"
+      ],
+      "Gale Storm": [
+        "EQUIP[Poenitentia Attendo]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Attendo]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Attendo]GRADE[me==B]===12"
+      ],
+      "Rhythm Shooting": [
+        "EQUIP[Poenitentia Vatia]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Vatia]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Vatia]GRADE[me==B]===12"
+      ],
+      "p_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400806": {
+    "id": 400806,
+    "aegisName": "Poenetentia_P_Crown_TH",
+    "name": "Poenitentia Crown of Potentia [1]",
+    "unidName": "Helm",
+    "resName": "Poenetentia_P_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 15    \nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 5%    \nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 3%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10% \n\nเมื่อสวมใส่ร่วมกับ Poenitentia Radius,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Dawn Break, Sunset Blast 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Sol (มือขวา),\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Kunai - Rotation, Kunai - Refraction 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Orbis,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Double Bowling Bash, Shield Chain Rush 4%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "atk": [
+        "2---15"
+      ],
+      "atkPercent": [
+        "3---5"
+      ],
+      "melee": [
+        "4---3",
+        "GRADE[me==D]===10"
+      ],
+      "range": [
+        "4---3",
+        "GRADE[me==D]===10"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "Dawn Break": [
+        "EQUIP[Poenitentia Radius]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Radius]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Radius]GRADE[me==B]===12"
+      ],
+      "Sunset Blast": [
+        "EQUIP[Poenitentia Radius]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Radius]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Radius]GRADE[me==B]===12"
+      ],
+      "Kunai - Rotation": [
+        "EQUIP[Poenitentia Sol]POS_SPECIFIC[weapon==Poenitentia Sol]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Sol]POS_SPECIFIC[weapon==Poenitentia Sol]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Sol]POS_SPECIFIC[weapon==Poenitentia Sol]GRADE[me==B]===12"
+      ],
+      "Kunai - Refraction": [
+        "EQUIP[Poenitentia Sol]POS_SPECIFIC[weapon==Poenitentia Sol]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Sol]POS_SPECIFIC[weapon==Poenitentia Sol]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Sol]POS_SPECIFIC[weapon==Poenitentia Sol]GRADE[me==B]===12"
+      ],
+      "Double Bowling Bash": [
+        "EQUIP[Poenitentia Orbis]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Orbis]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Orbis]GRADE[me==B]===12"
+      ],
+      "Shield Chain Rush": [
+        "EQUIP[Poenitentia Orbis]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Orbis]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Orbis]GRADE[me==B]===12"
+      ],
+      "p_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400807": {
+    "id": 400807,
+    "aegisName": "Poenetentia_V_Crown_TH",
+    "name": "Poenitentia Crown of Vigor [1]",
+    "unidName": "Helm",
+    "resName": "Poenetentia_V_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 15     \nทุก ๆ การอัพเกรด 3 ขั้น, Critical Damage + 5%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้ 4%\nเมื่ออัพเกรดถึงขั้น 9, CRI + 8\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Manus,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Impact Creator 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Mucro (มือขวา),\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Cross Impact 4% \n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ensis,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Storm Slash 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Liber,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Petitio 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ungula,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Explosion Blaster 4%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] Critical Damage + 15%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "atk": [
+        "2---15"
+      ],
+      "criDmg": [
+        "3---5",
+        "GRADE[me==D]===15"
+      ],
+      "melee": [
+        "4---4"
+      ],
+      "cri": [
+        "9===8"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "Impact Crater": [
+        "EQUIP[Poenitentia Manus]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Manus]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Manus]GRADE[me==B]===12"
+      ],
+      "Cross Impact": [
+        "EQUIP[Poenitentia Mucro]POS_SPECIFIC[weapon==Poenitentia Mucro]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Mucro]POS_SPECIFIC[weapon==Poenitentia Mucro]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Mucro]POS_SPECIFIC[weapon==Poenitentia Mucro]GRADE[me==B]===12"
+      ],
+      "Storm Slash": [
+        "EQUIP[Poenitentia Ensis]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Ensis]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Ensis]GRADE[me==B]===12"
+      ],
+      "Petitio": [
+        "EQUIP[Poenitentia Liber]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Liber]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Liber]GRADE[me==B]===12"
+      ],
+      "Explosion Blaster": [
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Ungula]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Ungula]GRADE[me==B]===12"
+      ],
+      "p_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400808": {
+    "id": 400808,
+    "aegisName": "Poenetentia_H_Crown_TH",
+    "name": "Poenitentia Crown of Honos [1]",
+    "unidName": "Helm",
+    "resName": "Poenetentia_H_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10\nทุก ๆ การอัพเกรด 2 ขั้น, MATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น, MATK + 5%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Gladius, \nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Cross Rain 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Crystallum,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Flamen 4% \n\nเมื่อใช้งานร่วมกับ Poenitentia Chorda หรือ Poenitentia Flagellum,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Metallic Fury 4%\n\n[Option เพิ่มเติมตาม Grade]     \n[Grade D] MATK + 12%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "matk": [
+        "2---15"
+      ],
+      "matkPercent": [
+        "3---5",
+        "GRADE[me==D]===12"
+      ],
+      "m_my_element_all": [
+        "4---5"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "m_size_all": [
+        "11===10"
+      ],
+      "Cross Rain": [
+        "EQUIP[Poenitentia Gladius]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Gladius]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Gladius]GRADE[me==B]===12"
+      ],
+      "Flamen": [
+        "EQUIP[Poenitentia Crystallum]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Crystallum]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Crystallum]GRADE[me==B]===12"
+      ],
+      "Metallic Fury": [
+        "EQUIP[Poenitentia Chorda||Poenitentia Flagellum]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Chorda||Poenitentia Flagellum]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Chorda||Poenitentia Flagellum]GRADE[me==B]===12"
+      ],
+      "m_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400809": {
+    "id": 400809,
+    "aegisName": "Poenetentia_S_Crown_TH",
+    "name": "Poenitentia Crown of Spiritus [1]",
+    "unidName": "Helm",
+    "resName": "Poenetentia_S_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10\nทุก ๆ การอัพเกรด 2 ขั้น, MATK + 15 \nทุก ๆ การอัพเกรด 3 ขั้น, MATK + 5%     \nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Penitentia Ramus,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Exorcism of Malicious Soul 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Jana (มือขวา),\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น เพิ่ม Damage สกิล Thundering Cannon, Golden Dragon Cannon 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ferrum,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Jack Frost Nova, Meteor Storm Buster 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Planta,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Hyunrok Cannon, Hyunrok Breeze 4%\n\n[Option เพิ่มเติมตาม Grade]     \n[Grade D] MATK + 12%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "matk": [
+        "2---15"
+      ],
+      "matkPercent": [
+        "3---5",
+        "GRADE[me==D]===12"
+      ],
+      "m_my_element_all": [
+        "4---5"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "m_size_all": [
+        "11===10"
+      ],
+      "Exorcism of Malicious Soul": [
+        "EQUIP[Poenitentia Ramus]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Ramus]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Ramus]GRADE[me==B]===12"
+      ],
+      "Thundering Cannon": [
+        "EQUIP[Poenitentia Jana]POS_SPECIFIC[weapon==Poenitentia Jana]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Jana]POS_SPECIFIC[weapon==Poenitentia Jana]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Jana]POS_SPECIFIC[weapon==Poenitentia Jana]GRADE[me==B]===12"
+      ],
+      "Golden Dragon Cannon": [
+        "EQUIP[Poenitentia Jana]POS_SPECIFIC[weapon==Poenitentia Jana]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Jana]POS_SPECIFIC[weapon==Poenitentia Jana]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Jana]POS_SPECIFIC[weapon==Poenitentia Jana]GRADE[me==B]===12"
+      ],
+      "Jack Frost Nova": [
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Ferrum]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Ferrum]GRADE[me==B]===12"
+      ],
+      "Meteor Storm Buster": [
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Ferrum]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Ferrum]GRADE[me==B]===12"
+      ],
+      "Hyunrok Cannon": [
+        "EQUIP[Poenitentia Planta]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Planta]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Planta]GRADE[me==B]===12"
+      ],
+      "Hyunrok Breeze": [
+        "EQUIP[Poenitentia Planta]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Planta]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Planta]GRADE[me==B]===12"
+      ],
+      "m_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400810": {
+    "id": 400810,
+    "aegisName": "Poenetentia_B_Crown_TH",
+    "name": "Poenitentia Crown of Bellum [1]",
+    "unidName": "Helm",
+    "resName": "Poenetentia_B_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10\nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 5%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 3%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Dilacero,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Deft Stab 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Katapulta,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Madness Crusher 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Asta, \nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Overslash 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Caestus,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Second Faith 4%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "atk": [
+        "2---15"
+      ],
+      "atkPercent": [
+        "3---5"
+      ],
+      "melee": [
+        "4---3",
+        "GRADE[me==D]===10"
+      ],
+      "range": [
+        "4---3",
+        "GRADE[me==D]===10"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "p_size_all": [
+        "11===15"
+      ],
+      "Deft Stab": [
+        "EQUIP[Poenitentia Dilacero]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Dilacero]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Dilacero]GRADE[me==B]===12"
+      ],
+      "Madness Crusher": [
+        "EQUIP[Poenitentia Katapulta]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Katapulta]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Katapulta]GRADE[me==B]===12"
+      ],
+      "Overslash": [
+        "EQUIP[Poenitentia Asta]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Asta]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Asta]GRADE[me==B]===12"
+      ],
+      "Second Faith": [
+        "EQUIP[Poenitentia Caestus]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Caestus]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Caestus]GRADE[me==B]===12"
+      ],
+      "p_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400811": {
+    "id": 400811,
+    "aegisName": "Poenetentia_M_Crown_TH",
+    "name": "Poenitentia Crown of Motus [1]",
+    "unidName": "Helm",
+    "resName": "Poenetentia_M_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10     \nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 5%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพระยะไกล 4%\nเมื่ออัพเกรดถึงขั้น 9, CRI + 8\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Flamen,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Magazine for One 4%\n\nเมื่อสวมใส่ร่วมกับ Penitentia Penet,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Spiral Shooting 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Veloci, \nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล The Vigilante at Night 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ruina, \nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น เพิ่ม Damage สกิล Wild Fire, Spiral Shooting 4%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] Critical Damage + 15%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "atk": [
+        "2---15"
+      ],
+      "atkPercent": [
+        "3---5"
+      ],
+      "range": [
+        "4---4"
+      ],
+      "cri": [
+        "9===8"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "criDmg": [
+        "GRADE[me==D]===15"
+      ],
+      "Magazine for One": [
+        "EQUIP[Poenitentia Foramen]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Foramen]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Foramen]GRADE[me==B]===12"
+      ],
+      "Spiral Shooting": [
+        "EQUIP[Poenitentia Penet]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Penet]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Penet]GRADE[me==B]===12",
+        "EQUIP[Poenitentia Ruina]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Ruina]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Ruina]GRADE[me==B]===12"
+      ],
+      "The Vigilante at Night": [
+        "EQUIP[Poenitentia Veloci]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Veloci]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Veloci]GRADE[me==B]===12"
+      ],
+      "Wild Fire": [
+        "EQUIP[Poenitentia Ruina]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Ruina]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Ruina]GRADE[me==B]===12"
+      ],
+      "p_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400812": {
+    "id": 400812,
+    "aegisName": "Poenetentia_A_Crown_TH",
+    "name": "Poenitentia Crown of Artifex [1]",
+    "unidName": "Helm",
+    "resName": "Remorse_Crown",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10 \nทุก ๆ การอัพเกรด 2 ขั้น, ATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 5%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 3%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Rigula,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Acidified Zone (Fire/Wind) 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Clava,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Arm Cannon 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Pendulus,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Acidified Zone (Earth/Water) 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Axia,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Axe Stomp 4%\n\n[Option เพิ่มเติมตาม Grade]  \n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "atk": [
+        "2---15"
+      ],
+      "atkPercent": [
+        "3---5"
+      ],
+      "melee": [
+        "4---3",
+        "GRADE[me==D]===10"
+      ],
+      "range": [
+        "4---3",
+        "GRADE[me==D]===10"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "Acidified Zone Fire": [
+        "EQUIP[Poenitentia Rigula]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Rigula]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Rigula]GRADE[me==B]===12"
+      ],
+      "Acidified Zone Wind": [
+        "EQUIP[Poenitentia Rigula]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Rigula]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Rigula]GRADE[me==B]===12"
+      ],
+      "Arm Cannon": [
+        "EQUIP[Poenitentia Clava]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Clava]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Clava]GRADE[me==B]===12"
+      ],
+      "Acidified Zone Earth": [
+        "EQUIP[Poenitentia Pendulus]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Pendulus]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Pendulus]GRADE[me==B]===12"
+      ],
+      "Acidified Zone Water": [
+        "EQUIP[Poenitentia Pendulus]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Pendulus]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Pendulus]GRADE[me==B]===12"
+      ],
+      "Axe Stomp": [
+        "EQUIP[Poenitentia Axia]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Axia]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Axia]GRADE[me==B]===12"
+      ],
+      "p_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
+  "400813": {
+    "id": 400813,
+    "aegisName": "Poenetentia_I_Crown_TH",
+    "name": "Poenitentia Crown of Infernum [1]",
+    "unidName": "Necklace",
+    "resName": "갤럭시서클릿",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nMDEF + 10\nทุก ๆ การอัพเกรด 2 ขั้น, MATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น, MATK + 5%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Codex,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Diamond Storm, Terra Drive 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Scipio,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Conflagration, Lightning Land 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Termes,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Crimson Arrow, Frozen Slash 4%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Virga,\nทุก ๆ การอัพเกรดอาวุธ 2 ขั้น, เพิ่ม Damage สกิล Strom Cannon, Rock Down 4%\n\n[Option เพิ่มเติมตาม Grade]     \n[Grade D] MATK + 12%     \n[Grade C] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12%\n[Grade B] เพิ่ม Damage สกิลเมื่อสวมใส่ร่วมกับอุปกรณ์อาวุธข้างต้นขึ้นอีก 12% เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777740^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Upper",
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "mdef": [
+        "10"
+      ],
+      "matk": [
+        "2---15"
+      ],
+      "matkPercent": [
+        "3---5",
+        "GRADE[me==D]===12"
+      ],
+      "m_my_element_all": [
+        "4---5"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "m_size_all": [
+        "11===10"
+      ],
+      "Diamond Storm": [
+        "EQUIP[Poenitentia Codex]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Codex]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Codex]GRADE[me==B]===12"
+      ],
+      "Terra Drive": [
+        "EQUIP[Poenitentia Codex]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Codex]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Codex]GRADE[me==B]===12"
+      ],
+      "Conflagration": [
+        "EQUIP[Poenitentia Scipio]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Scipio]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Scipio]GRADE[me==B]===12"
+      ],
+      "Lightning Land": [
+        "EQUIP[Poenitentia Scipio]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Scipio]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Scipio]GRADE[me==B]===12"
+      ],
+      "Crimson Arrow": [
+        "EQUIP[Poenitentia Termes]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Termes]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Termes]GRADE[me==B]===12"
+      ],
+      "Frozen Slash": [
+        "EQUIP[Poenitentia Termes]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Termes]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Termes]GRADE[me==B]===12"
+      ],
+      "Storm Cannon": [
+        "EQUIP[Poenitentia Virga]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Virga]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Virga]GRADE[me==B]===12"
+      ],
+      "Rock Down": [
+        "EQUIP[Poenitentia Virga]REFINE[weapon==2]---4",
+        "EQUIP[Poenitentia Virga]GRADE[me==C]===12",
+        "EQUIP[Poenitentia Virga]GRADE[me==B]===12"
+      ],
+      "m_race_all": [
+        "GRADE[me==A]===15"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ]
+    }
+  },
   "400814": {
     "id": 400814,
     "aegisName": "Heroic_Hairband_AG",
@@ -139098,6 +139849,35 @@
       ],
       "cd__No Limits": [
         "LEARN_SKILL[Camouflage==5]===60"
+      ]
+    }
+  },
+  "420219": {
+    "id": 420219,
+    "aegisName": "C_Come_On_Melon",
+    "name": "Costume Come On Melon",
+    "unidName": "Cap",
+    "resName": "C_Come_On_Melon",
+    "description": "เมล่อนหนึ่งชิ้นที่เป็นที่ชื่นชอบของครอบครัวที่รออยู่ที่บ้าน\n\nเพิ่ม Damage ทางกายภาพระยะใกล้ 3%, เพิ่ม Damage ทางกายภาพระยะไกล 3%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 3% ต่อ Base Lv 50 ตลอดระยะเวลากิจกรรม\nเพิ่มปริมาณฟื้นฟูของ Bread 2000%, เพิ่มปริมาณฟื้นฟูของ Sweet Melon 300%\n^ffffff_^000000\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังสิ้นสุดระยะเวลากิจกรรม)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 521,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "script": {
+      "melee": [
+        "SUM[level==50]---3"
+      ],
+      "range": [
+        "SUM[level==50]---3"
+      ],
+      "m_my_element_all": [
+        "SUM[level==50]---3"
       ]
     }
   },
@@ -148954,6 +149734,178 @@
       ]
     }
   },
+  "460107": {
+    "id": 460107,
+    "aegisName": "Giant_Shield_TH",
+    "name": "Giant Shield [1]",
+    "unidName": "Buckler",
+    "resName": "기간트쉴드",
+    "description": "โล่ที่จำลองมาจากโล่ของเหล่ายักษ์ผู้เคยเป็นผู้พิทักษ์แห่งวิหารโบราณ ด้วยฝีมือของช่างตีเหล็กระดับตำนาน ทำให้โล่นี้เปี่ยมด้วยพลัง\nCRI + 5\nลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์ประเภททั่วไป 10%\n\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 2\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Explosion Blaster 0.1 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิล 5%, Critical Damage + 10%\n\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^77777750^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 50,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "cri": [
+        "5"
+      ],
+      "aspd": [
+        "7===2"
+      ],
+      "cd__Explosion Blaster": [
+        "9===0.1"
+      ],
+      "acd": [
+        "11===5"
+      ],
+      "criDmg": [
+        "11===10"
+      ]
+    }
+  },
+  "460108": {
+    "id": 460108,
+    "aegisName": "Doram_Shield_LT",
+    "name": "Doram Shield-LT [1]",
+    "unidName": "Guard",
+    "resName": "Doram_Shield",
+    "description": "โล่ที่ว่ากันว่าเป็นของที่ Doram ในตำนานได้ทิ้งเอาไว้\nไม่สามารถทำลายได้\nATK+ 50, MATK +50\nทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 15\n\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 10%, MHP +5%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิล 10%, MHP 5% เพิ่มเติม\nเมื่ออัพเกรดถึงขั้น 11, ลด Cooldown สกิล Howling of Chulho 0.5 วินาที, ลด Cooldown สกิล Hyunrok Breeze 1.5 วินาที\nเมื่ออัพเกรดถึงขั้น 12, เพิ่ม Damage สกิล Howling of Chulho, Hyunrok Breeze 10%\n\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\n[Grade C] เพิ่ม Damage สกิล Howling of Chulho, Hyunrok Breeze ขึ้นอีก 10%\n[Grade B] เพิ่ม Damage สกิล Hogogong Strike, Hyunrok Cannon 15%\n[Grade A] เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 20%, MHP + 5000.\n\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^77777730^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 30,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "atk": [
+        "50",
+        "2---15"
+      ],
+      "matk": [
+        "50",
+        "2---15"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "hpPercent": [
+        "7===5",
+        "9===5"
+      ],
+      "acd": [
+        "9===10"
+      ],
+      "cd__Howling of Chulho": [
+        "11===0.5"
+      ],
+      "cd__Hyunrok Breeze": [
+        "11===1.5"
+      ],
+      "Howling of Chulho": [
+        "12===10",
+        "GRADE[me==C]===10"
+      ],
+      "Hyunrok Breeze": [
+        "12===10",
+        "GRADE[me==C]===10"
+      ],
+      "range": [
+        "GRADE[me==D]===10"
+      ],
+      "m_my_element_all": [
+        "GRADE[me==D]===10"
+      ],
+      "Hogogong Strike": [
+        "GRADE[me==B]===15"
+      ],
+      "Hyunrok Cannon": [
+        "GRADE[me==B]===15"
+      ],
+      "p_size_all": [
+        "GRADE[me==A]===20"
+      ],
+      "m_size_all": [
+        "GRADE[me==A]===20"
+      ],
+      "hp": [
+        "GRADE[me==A]===5000"
+      ]
+    }
+  },
+  "460109": {
+    "id": 460109,
+    "aegisName": "Giant_Shield_TH_LT",
+    "name": "Giant Shield-LT [1]",
+    "unidName": "Buckler",
+    "resName": "기간트쉴드",
+    "description": "โล่ที่จำลองมาจากโล่ของเหล่ายักษ์ผู้เคยเป็นผู้พิทักษ์แห่งวิหารโบราณ ด้วยฝีมือของช่างตีเหล็กระดับตำนาน ทำให้โล่นี้เปี่ยมด้วยพลัง\nไม่สามารถทำลายได้\nCRI + 15\nลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์ประเภททั่วไป, Boss 15%\n\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 2, MHP + 5%\nเมื่ออัพเกรดถึงขั้น 9, ลด Cooldown สกิล Explosion Blaster 0.15 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิล 10%, Critical Damage + 20%\nเมื่ออัพเกรดถึงขั้น 12, เพิ่ม Damage ทางกายภาพระยะไกล 10%\n\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP 10% เพิ่มเติม\n[Grade C] CRI + 15 เพิ่มเติม, P.ATK + 4\n[Grade B] MHP + 5000, P.ATK 6 เพิ่มเติม\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%, ลดปริมาณการใช้ SP เมื่อใช้สกิล 20%\n\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^77777750^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 50,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "cri": [
+        "15",
+        "GRADE[me==C]===15"
+      ],
+      "aspd": [
+        "7===2"
+      ],
+      "hpPercent": [
+        "7===5",
+        "GRADE[me==D]===10"
+      ],
+      "cd__Explosion Blaster": [
+        "9===0.15"
+      ],
+      "acd": [
+        "11===10"
+      ],
+      "criDmg": [
+        "11===20"
+      ],
+      "range": [
+        "12===10"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===4",
+        "GRADE[me==B]===6"
+      ],
+      "hp": [
+        "GRADE[me==B]===5000"
+      ],
+      "p_size_all": [
+        "GRADE[me==A]===20"
+      ]
+    }
+  },
   "470000": {
     "id": 470000,
     "aegisName": "Atker_Greave",
@@ -158266,6 +159218,254 @@
         "GRADE[me==D]===5"
       ],
       "pAtk": [
+        "GRADE[me==A]===15"
+      ]
+    }
+  },
+  "480583": {
+    "id": 480583,
+    "aegisName": "Angel_R_Wing_RD",
+    "name": "Angel Ribbon Wing (Red) [1]",
+    "unidName": "Muffler",
+    "resName": "Huse_Luk_R_Wing",
+    "description": "เสื้อคลุมสำหรับชุดที่ตัดเย็บจากขนเทวดาสีชาด\nมันออกแบบอย่างวิจิตรให้ดูราวกับมีโบว์ผูกประดับอยู่\n\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 20\nทุก ๆ การอัพเกรด 3 ขั้น ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Dragon 3%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Dragon, Demi-Human 8%\n\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิล 8%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%\nเมื่ออัพเกรดถึงขั้น 12, เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Neutral 15%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.3, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.5, P.ATK +10, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 10%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.7, \nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 10%,\nเมื่อโจมตีทางกายภาพ มีโอกาส 4% ที่จะแปลงร่างเป็น Valkyrie Reginleif เป็นเวลา 10 วินาที\nตลอดระยะเวลาที่แปลงร่าง เพิ่ม Damage ทางกายภาพต่อ Betelgeuse 20%\n\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "p_race_dragon": [
+        "4---8"
+      ],
+      "p_race_demihuman": [
+        "4---8"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "acd": [
+        "9===8"
+      ],
+      "melee": [
+        "11===15",
+        "EQUIP[Spirit of Knight Lv.3]===15"
+      ],
+      "range": [
+        "11===15",
+        "EQUIP[Spirit of Knight Lv.3]===15"
+      ],
+      "p_element_neutral": [
+        "12===15"
+      ],
+      "pAtk": [
+        "EQUIP[Spirit of Knight Lv.5]===10"
+      ],
+      "p_class_boss": [
+        "EQUIP[Spirit of Knight Lv.5]===10",
+        "EQUIP[Spirit of Knight Lv.7]===10"
+      ],
+      "chance__p_final": [
+        "EQUIP[Spirit of Knight Lv.7]SPAWN[MD_BETELGEUSE]===20"
+      ]
+    }
+  },
+  "480584": {
+    "id": 480584,
+    "aegisName": "Angel_R_Wing_WH",
+    "name": "Angel Ribbon Wing (White) [1]",
+    "unidName": "Muffler",
+    "resName": "AngelRibbonWing",
+    "description": "เสื้อคลุมสำหรับชุดที่ตัดเย็บจากขนเทวดาสีขาว\nมันออกแบบอย่างวิจิตรให้ดูราวกับมีโบว์ผูกประดับอยู่\n\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 20\nทุก ๆ การอัพเกรด 3 ขั้น ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Dragon 3%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Dragon, Demi-Human 8%\n\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิล 8%\nเมื่ออัพเกรดถึงขั้น 11, MATK + 15%\nเมื่ออัพเกรดถึงขั้น 12, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Neutral 15%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.3, MATK + 15% เพิ่มเติม\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.5, S.MATK +10, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 10%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.7, \nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 10%, \nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 4% ที่จะแปลงร่างเป็น Valkyrie Ingrid เป็นเวลา 10 วินาที\nตลอดระยะเวลาที่แปลงร่าง เพิ่ม Damage ทางเวทมนตร์ต่อ Betelgeuse 20%\n\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777160^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "2---20"
+      ],
+      "m_race_dragon": [
+        "4---8"
+      ],
+      "m_race_demihuman": [
+        "4---8"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "acd": [
+        "9===8"
+      ],
+      "matkPercent": [
+        "11===15",
+        "EQUIP[Spirit of Knight Lv.3]===15"
+      ],
+      "m_element_neutral": [
+        "12===15"
+      ],
+      "sMatk": [
+        "EQUIP[Spirit of Knight Lv.5]===10"
+      ],
+      "m_class_boss": [
+        "EQUIP[Spirit of Knight Lv.5]===10",
+        "EQUIP[Spirit of Knight Lv.7]===10"
+      ],
+      "chance__m_final": [
+        "EQUIP[Spirit of Knight Lv.7]SPAWN[MD_BETELGEUSE]===20"
+      ]
+    }
+  },
+  "480585": {
+    "id": 480585,
+    "aegisName": "Angel_R_Wing_RD_LT",
+    "name": "Angel Ribbon Wing (Red)-LT [1]",
+    "unidName": "Muffler",
+    "resName": "Huse_Luk_R_Wing",
+    "description": "เสื้อคลุมสำหรับชุดที่ตัดเย็บจากขนเทวดาสีชาด\nมันออกแบบอย่างวิจิตรให้ดูราวกับมีโบว์ผูกประดับอยู่\n\nทุก ๆ การอัพเกรด 2 ขั้น ATK + 30\nทุก ๆ การอัพเกรด 3 ขั้น ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Dragon 3%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Dragon, Demi-Human 10%\n\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 15%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิล 12%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 20%\nเมื่ออัพเกรดถึงขั้น 12, เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Neutral 20%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.3, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 20%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.5, P.ATK +10, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 15%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.7, \nเพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Boss 15%, \nเมื่อโจมตีทางกายภาพ มีโอกาส 4% ที่จะแปลงร่างเป็น Valkyrie Reginleif เป็นเวลา 10 วินาที\nตลอดระยะเวลาที่แปลงร่าง เพิ่ม Damage ทางกายภาพต่อ Betelgeuse 40%\n\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] ATK + 5%\n[Grade C] POW + 5\n[Grade B] P.ATK + 7, S.MATK+7\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "2---30"
+      ],
+      "p_race_dragon": [
+        "4---10"
+      ],
+      "p_race_demihuman": [
+        "4---10"
+      ],
+      "aspdPercent": [
+        "7===15"
+      ],
+      "acd": [
+        "9===12"
+      ],
+      "melee": [
+        "11===20",
+        "EQUIP[Spirit of Knight Lv.3]===20"
+      ],
+      "range": [
+        "11===20",
+        "EQUIP[Spirit of Knight Lv.3]===20"
+      ],
+      "p_element_neutral": [
+        "12===20"
+      ],
+      "pAtk": [
+        "EQUIP[Spirit of Knight Lv.5]===10",
+        "GRADE[me==B]===7"
+      ],
+      "p_class_boss": [
+        "EQUIP[Spirit of Knight Lv.5]===15",
+        "EQUIP[Spirit of Knight Lv.7]===15"
+      ],
+      "chance__p_final": [
+        "EQUIP[Spirit of Knight Lv.7]SPAWN[MD_BETELGEUSE]===40"
+      ],
+      "atkPercent": [
+        "GRADE[me==D]===5"
+      ],
+      "pow": [
+        "GRADE[me==C]===5"
+      ],
+      "p_race_all": [
+        "GRADE[me==A]===15"
+      ]
+    }
+  },
+  "480586": {
+    "id": 480586,
+    "aegisName": "Angel_R_Wing_WH_LT",
+    "name": "Angel Ribbon Wing (White)-LT [1]",
+    "unidName": "Muffler",
+    "resName": "AngelRibbonWing",
+    "description": "เสื้อคลุมสำหรับชุดที่ตัดเย็บจากขนเทวดาสีขาว\nมันออกแบบอย่างวิจิตรให้ดูราวกับมีโบว์ผูกประดับอยู่\n\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 30\nทุก ๆ การอัพเกรด 3 ขั้น ลด Damage ที่ได้รับจากมอนสเตอร์เผ่า Dragon 3%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Dragon, Demi-Human 10%\n\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 15%\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิล 12%\nเมื่ออัพเกรดถึงขั้น 11, MATK + 20%\nเมื่ออัพเกรดถึงขั้น 12, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Neutral 20%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.3, MATK + 20% เพิ่มเติม\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.5, S.MATK +10, เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 15%\n\nเมื่อใช้งานร่วมกับ Spirit of Knight Lv.7, \nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 15%, \nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 4% ที่จะแปลงร่างเป็น Valkyrie Ingrid เป็นเวลา 10 วินาที\nตลอดระยะเวลาที่แปลงร่าง เพิ่ม Damage ทางเวทมนตร์ต่อ Betelgeuse  40%\n\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MATK + 5% เพิ่มเติม\n[Grade C] SPL + 5\n[Grade B] S.MATK + 7\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "2---30"
+      ],
+      "m_race_dragon": [
+        "4---10"
+      ],
+      "m_race_demihuman": [
+        "4---10"
+      ],
+      "vct": [
+        "7===15"
+      ],
+      "acd": [
+        "9===12"
+      ],
+      "matkPercent": [
+        "11===20",
+        "EQUIP[Spirit of Knight Lv.3]===20",
+        "GRADE[me==D]===5"
+      ],
+      "m_element_neutral": [
+        "12===20"
+      ],
+      "m_class_boss": [
+        "EQUIP[Spirit of Knight Lv.5]===15",
+        "EQUIP[Spirit of Knight Lv.7]===15"
+      ],
+      "chance__m_final": [
+        "EQUIP[Spirit of Knight Lv.7]SPAWN[MD_BETELGEUSE]===40"
+      ],
+      "spl": [
+        "GRADE[me==C]===5"
+      ],
+      "sMatk": [
+        "EQUIP[Spirit of Knight Lv.5]===10",
+        "GRADE[me==B]===7"
+      ],
+      "m_race_all": [
         "GRADE[me==A]===15"
       ]
     }
@@ -168385,6 +169585,192 @@
       ]
     }
   },
+  "490741": {
+    "id": 490741,
+    "aegisName": "Fan_Of_Breeze_TH",
+    "name": "Fan Of Breeze [1]",
+    "unidName": "Ring",
+    "resName": "바람의부채",
+    "description": "พัดที่เต็มไปด้วยพลังเวทย์แห่งวายุ\nMATK +100.\n\nลดระยะเวลาร่ายแบบแปรผัน 15%\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Hyunrok Breeze, Hyunrok Cannon 25%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Planta,\nเมื่ออาวุธมีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, S.MATK +10,\nเพิ่ม Damage สกิล Hyunrok Breeze, Hyunrok Cannon ขึ้นอีก 35%,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\n\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "vct": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "m_size_all": [
+        "15"
+      ],
+      "Hyunrok Breeze": [
+        "25",
+        "EQUIP[Poenitentia Planta]REFINE[weapon==10]===35"
+      ],
+      "Hyunrok Cannon": [
+        "25",
+        "EQUIP[Poenitentia Planta]REFINE[weapon==10]===35"
+      ],
+      "sMatk": [
+        "EQUIP[Poenitentia Planta]REFINE[weapon==10]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Poenitentia Planta]REFINE[weapon==10]===15"
+      ]
+    }
+  },
+  "490742": {
+    "id": 490742,
+    "aegisName": "Poenitentia_Ring_SH",
+    "name": "Poenitentia Ring (Spirit Handler) [1]",
+    "unidName": "Ring",
+    "resName": "Into_The_Abyss",
+    "description": "แหวนที่อบอวลไปด้วยความเศร้าและความเสียใจในวันวาน\nMATK +100.\n\nลดระยะเวลาร่ายแบบแปรผัน 15%\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Hyunrok Breeze, Hyunrok Cannon 25%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Planta,\nเมื่ออาวุธมีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, ลด Cooldown สกิล Hyunrok Breeze 2 วินาที,\nเมื่อใช้งานสกิล Hyunrok Cannon มีโอกาส 35% ที่จะใช้สกิล Hyunrok Cannon Lv.7\n\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "vct": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "m_size_all": [
+        "15"
+      ],
+      "Hyunrok Breeze": [
+        "25"
+      ],
+      "Hyunrok Cannon": [
+        "25"
+      ],
+      "cd__Hyunrok Breeze": [
+        "EQUIP[Poenitentia Planta]REFINE[weapon==10]===2"
+      ]
+    }
+  },
+  "490743": {
+    "id": 490743,
+    "aegisName": "Leo_Ring_TH",
+    "name": "Regulus Ring [1]",
+    "unidName": "Ring",
+    "resName": "Leo_Ring_J",
+    "description": "แหวนที่เปี่ยมไปด้วยพลังแห่งพระเจ้า\nATK +100\nCRI + 15\nลดปริมาณการใช้ SP 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Explosion Blaster 25%\nเพิ่ม Damage สกิล Rampage Blast 35%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ungula,\nเมื่ออาวุธมีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, P.ATK +10,\nเพิ่ม Damage สกิล Explosion Blaster ขึ้นอีก 35%,\nเพิ่ม Damage สกิล Rampage Blast ขึ้นอีก 70%,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cri": [
+        "15"
+      ],
+      "p_size_all": [
+        "15"
+      ],
+      "Explosion Blaster": [
+        "25",
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===35"
+      ],
+      "Rampage Blast": [
+        "35",
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===70"
+      ],
+      "pAtk": [
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===10"
+      ],
+      "p_race_all": [
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===15"
+      ]
+    }
+  },
+  "490744": {
+    "id": 490744,
+    "aegisName": "Poenitentia_Ring_IQ",
+    "name": "Poenitentia Ring (Inquisitor) [1]",
+    "unidName": "Ring",
+    "resName": "Into_The_Abyss",
+    "description": "แหวนที่อบอวลไปด้วยความเศร้าและความเสียใจในวันวาน\nATK +100\nCRI + 15\nลดปริมาณการใช้ SP 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Explosion Blaster 25%\nเพิ่ม Damage สกิล Rampage Blast 35%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ungula,\nเมื่ออาวุธมีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, ลด Cooldown สกิล Earth Shaker, Rampage Blast 1.5 วินาที,\nลด Cooldown สกิล Explosion Blaster 0.35 วินาที\n\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cri": [
+        "15"
+      ],
+      "p_size_all": [
+        "15"
+      ],
+      "Explosion Blaster": [
+        "25"
+      ],
+      "Rampage Blast": [
+        "35"
+      ],
+      "cd__Earth Shaker": [
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===1.5"
+      ],
+      "cd__Rampage Blast": [
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===1.5"
+      ],
+      "cd__Explosion Blaster": [
+        "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===0.35"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -171325,6 +172711,55 @@
       ],
       "p_size_all": [
         "11===15"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===1"
+      ],
+      "pow": [
+        "GRADE[me==B]===1"
+      ]
+    }
+  },
+  "510028": {
+    "id": 510028,
+    "aegisName": "Poenetentia_Dilacero",
+    "name": "Poenitentia Dilacero [2]",
+    "unidName": "Knife",
+    "resName": "Poenetentia_Dilacero",
+    "description": "Dagger ที่โอบอุ้มความเจ็บปวดจากการสูญเสีย\n\nATK + 10%.\nเพิ่ม Damage สกิล Deft Stab 10%\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage สกิล Fatal Menace 3%\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Fatal Menace ขึ้นอีก 30%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิล 12%\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage สกิล Deft Stab ขึ้นอีก 5%\n[Grade C] เพิ่ม Damage สกิล Deft Stab ขึ้นอีก 8%, P.ATK + 1.\n[Grade B] เพิ่ม Damage สกิล Deft Stab ขึ้นอีก 12%, POW + 1.\n^ffffff_^000000\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^77777790^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 5,
+    "attack": 190,
+    "defense": null,
+    "weight": 90,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "Deft Stab": [
+        "10",
+        "GRADE[me==D]===5",
+        "GRADE[me==C]===8",
+        "GRADE[me==B]===12"
+      ],
+      "Fatal Manace": [
+        "2---3",
+        "9===30"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "acd": [
+        "11===12"
       ],
       "pAtk": [
         "GRADE[me==C]===1"
@@ -195832,6 +197267,104 @@
       ],
       "con": [
         "GRADE[weapon==B]===1"
+      ]
+    }
+  },
+  "700024": {
+    "id": 700024,
+    "aegisName": "Poenetentia_Attendo",
+    "name": "Poenitentia Attendo [2]",
+    "unidName": "Bow",
+    "resName": "Poenetentia_Attendo",
+    "description": "Bow ที่โอบอุ้มความโศกเศร้าจากการสูญเสีย\n\nATK + 10%.\nเพิ่ม Damage สกิล Gale Storm 10%\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage สกิล Arrow Storm 3%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Arrow Storm ขึ้นอีก 30%\nเมื่ออัพเกรดถึงขั้น 11, ลด Cooldown สกิล Arrow Storm 0.7 วินาที\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage สกิล Gale Storm ขึ้นอีก 5%\n[Grade C] เพิ่ม Damage สกิล Gale Storm ขึ้นอีก 8%, P.ATK + 1.\n[Grade B] เพิ่ม Damage สกิล Gale Storm ขึ้นอีก 12%, CON + 1.\n^ffffff_^000000\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777140^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Wind Hawk^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 5,
+    "attack": 250,
+    "defense": null,
+    "weight": 140,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "Gale Storm": [
+        "10",
+        "GRADE[me==D]===5",
+        "GRADE[me==C]===8",
+        "GRADE[me==B]===12"
+      ],
+      "Arrow Storm": [
+        "2---3",
+        "9===30"
+      ],
+      "range": [
+        "7===10"
+      ],
+      "cd__Arrow Storm": [
+        "11===0.7"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===1"
+      ],
+      "con": [
+        "GRADE[me==B]===1"
+      ]
+    }
+  },
+  "700025": {
+    "id": 700025,
+    "aegisName": "Poenetentia_Vatia",
+    "name": "Poenitentia Vatia [2]",
+    "unidName": "Bow",
+    "resName": "Poenetentia_Vatia",
+    "description": "Bow ที่โอบอุ้มความโศกเศร้าจากการสูญเสีย\n\nATK + 10%.\nเพิ่ม Damage สกิล Rhythm Shooting 10%\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage สกิล Severe Rainstorm 3%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 10%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Severe Rainstorm ขึ้นอีก 30%\nเมื่ออัพเกรดถึงขั้น 11, ลด Cooldown สกิล Severe Rainstorm 2 วินาที\n^ffffff_^000000\n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 5%\n[Grade C] เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 8%, P.ATK + 1.\n[Grade B] เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 12%, CON + 1.\n^ffffff_^000000\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Troubadour, Trouvere^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 5,
+    "attack": 250,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Troubadour",
+      "Trouvere"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "Rhythm Shooting": [
+        "10",
+        "GRADE[me==D]===5",
+        "GRADE[me==C]===8",
+        "GRADE[me==B]===12"
+      ],
+      "Severe Rainstorm": [
+        "2---3",
+        "9===30"
+      ],
+      "range": [
+        "7===10"
+      ],
+      "cd__Severe Rainstorm": [
+        "11===2"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===1"
+      ],
+      "con": [
+        "GRADE[me==B]===1"
       ]
     }
   },
