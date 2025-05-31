@@ -20589,6 +20589,41 @@
       ]
     }
   },
+  "15986": {
+    "id": 15986,
+    "aegisName": null,
+    "name": "Water Splash Hat",
+    "unidName": "Cap",
+    "resName": "찰랑모자",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nหมวกคล้ายกับหยดน้ำที่อยู่บนศีรษะ\nเพียงแค่มองก็ให้ความรู้สึกสดชื่นนนน\n\nATK/MATK + 100\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์ธาตุ Fire 10%\n\nเมื่อสวมใส่ร่วมกันกับ Costume Bubble Archangeling Hairband, Costume Poring Cream Soda,\nเมื่อกำจัดมอนสเตอร์ มีโอกาส 1% ที่จะได้รับ Rough Shadowdecon, Rough Zelenium\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777730^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 30,
+    "weight": 10,
+    "requiredLevel": 150,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "matk": [
+        "100"
+      ],
+      "p_element_fire": [
+        "10"
+      ],
+      "m_element_fire": [
+        "10"
+      ]
+    }
+  },
   "16013": {
     "id": 16013,
     "aegisName": "Mace_Of_Judgement",
@@ -47563,6 +47598,2532 @@
       ],
       "sMatk": [
         "10===2"
+      ]
+    }
+  },
+  "24792": {
+    "id": 24792,
+    "aegisName": "S_Master_Weapon",
+    "name": "Master Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "BK_Weapon_Shadow",
+    "description": "ถุงมือที่เมื่อสวมในมือที่ถืออาวุธอยู่ แล้วจะช่วยดึงพลังที่หลับใหลของผู้สวมใส่ออกมา \nATK + 2%, MATK + 2%.\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 1%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 1%\nเมื่ออัพเกรดถึงขั้น 7, MHP/MSP + 3%.\nเมื่ออัพเกรดถึงขั้น 9, P.ATK/S.MATK + 2.\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Class 4, 2nd High Extended Class^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "atk": [
+        "1---1"
+      ],
+      "matk": [
+        "1---1"
+      ],
+      "atkPercent": [
+        "2"
+      ],
+      "matkPercent": [
+        "2"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "range": [
+        "2---1"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "hpPercent": [
+        "7===3"
+      ],
+      "spPercent": [
+        "7===3"
+      ],
+      "pAtk": [
+        "9===2"
+      ],
+      "sMatk": [
+        "9===2"
+      ]
+    }
+  },
+  "24793": {
+    "id": 24793,
+    "aegisName": "S_Master_Shield",
+    "name": "Master Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "BK_Shield_Shadow",
+    "description": "เกราะเล็ก ๆ ที่สามารถสวมที่แขนเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nATK + 2%, MATK + 2%.\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 1%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 1%\nเมื่ออัพเกรดถึงขั้น 7, MHP/MSP + 3%.\nเมื่ออัพเกรดถึงขั้น 9, P.ATK/S.MATK + 2.\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Class 4, 2nd High Extended Class^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "atkPercent": [
+        "2"
+      ],
+      "matkPercent": [
+        "2"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "range": [
+        "2---1"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "hpPercent": [
+        "7===3"
+      ],
+      "spPercent": [
+        "7===3"
+      ],
+      "pAtk": [
+        "9===2"
+      ],
+      "sMatk": [
+        "9===2"
+      ]
+    }
+  },
+  "24800": {
+    "id": 24800,
+    "aegisName": "S_DK_Armor",
+    "name": "M. Dragon Knight Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Dragon Knight Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status + 2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Dragon Knight Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Dragon Knight Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Dragon Knight Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Dragon Knight Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Dragon Knight Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Dragon Knight Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Dragon Knight Shadow Shoes&&M. Dragon Knight Shadow Earring&&M. Dragon Knight Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Dragon Knight Shadow Shoes&&M. Dragon Knight Shadow Earring&&M. Dragon Knight Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24801": {
+    "id": 24801,
+    "aegisName": "S_DK_Shoes",
+    "name": "M. Dragon Knight Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Dragon Knight Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24802": {
+    "id": 24802,
+    "aegisName": "S_DK_Earring",
+    "name": "M. Dragon Knight Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Dragon Knight Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Dragon Knight Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Dragon Knight Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Dragon Knight Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Dragon Knight Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Dragon Knight Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24803": {
+    "id": 24803,
+    "aegisName": "S_DK_Pendant",
+    "name": "M. Dragon Knight Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Dragon Knight Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24804": {
+    "id": 24804,
+    "aegisName": "S_IG_Armor",
+    "name": "M. Imperial Guard Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Imperial Guard Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Imperial Guard Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Imperial Guard Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Imperial Guard Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Imperial Guard Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Imperial Guard Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Imperial Guard Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Imperial Guard Shadow Shoes&&M. Imperial Guard Shadow Earring&&M. Imperial Guard Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Imperial Guard Shadow Shoes&&M. Imperial Guard Shadow Earring&&M. Imperial Guard Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24805": {
+    "id": 24805,
+    "aegisName": "S_IG_Shoes",
+    "name": "M. Imperial Guard Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Imperial Guard Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24806": {
+    "id": 24806,
+    "aegisName": "S_IG_Earring",
+    "name": "M. Imperial Guard Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Imperial Guard Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Imperial Guard Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Imperial Guard Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Imperial Guard Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Imperial Guard Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Imperial Guard Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24807": {
+    "id": 24807,
+    "aegisName": "S_IG_Pendant",
+    "name": "M. Imperial Guard Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Imperial Guard Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24808": {
+    "id": 24808,
+    "aegisName": "S_SHC_Armor",
+    "name": "M. Shadow Cross Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Shadow Cross Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Shadow Cross Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Shadow Cross Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Shadow Cross Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Shadow Cross Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Shadow Cross Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Shadow Cross Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Shadow Cross Shadow Shoes&&M. Shadow Cross Shadow Earring&&M. Shadow Cross Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Shadow Cross Shadow Shoes&&M. Shadow Cross Shadow Earring&&M. Shadow Cross Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24809": {
+    "id": 24809,
+    "aegisName": "S_SHC_Shoes",
+    "name": "M. Shadow Cross Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Shadow Cross Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24810": {
+    "id": 24810,
+    "aegisName": "S_SHC_Earring",
+    "name": "M. Shadow Cross Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Shadow Cross Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Shadow Cross Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Shadow Cross Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Shadow Cross Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Shadow Cross Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Shadow Cross Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24811": {
+    "id": 24811,
+    "aegisName": "S_SHC_Pendant",
+    "name": "M. Shadow Cross Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Shadow Cross Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24812": {
+    "id": 24812,
+    "aegisName": "S_ABC_Armor",
+    "name": "M. Abyss Chaser Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Abyss Chaser Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Abyss Chaser Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Abyss Chaser Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Abyss Chaser Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Abyss Chaser Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Abyss Chaser Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Abyss Chaser Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Abyss Chaser Shadow Shoes&&M. Abyss Chaser Shadow Earring&&M. Abyss Chaser Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Abyss Chaser Shadow Shoes&&M. Abyss Chaser Shadow Earring&&M. Abyss Chaser Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24813": {
+    "id": 24813,
+    "aegisName": "S_ABC_Shoes",
+    "name": "M. Abyss Chaser Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Abyss Chaser Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24814": {
+    "id": 24814,
+    "aegisName": "S_ABC_Earring",
+    "name": "M. Abyss Chaser Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Abyss Chaser Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Abyss Chaser Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Abyss Chaser Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Abyss Chaser Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Abyss Chaser Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Abyss Chaser Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24815": {
+    "id": 24815,
+    "aegisName": "S_ABC_Pendant",
+    "name": "M. Abyss Chaser Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Abyss Chaser Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24816": {
+    "id": 24816,
+    "aegisName": "S_CD_Armor",
+    "name": "M. Cardinal Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Cardinal Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Cardinal Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Cardinal Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Cardinal^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Cardinal"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Cardinal Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Cardinal Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Cardinal Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Cardinal Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Cardinal Shadow Shoes&&M. Cardinal Shadow Earring&&M. Cardinal Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Cardinal Shadow Shoes&&M. Cardinal Shadow Earring&&M. Cardinal Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24817": {
+    "id": 24817,
+    "aegisName": "S_CD_Shoes",
+    "name": "M. Cardinal Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Cardinal Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Cardinal^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Cardinal"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24818": {
+    "id": 24818,
+    "aegisName": "S_CD_Earring",
+    "name": "M. Cardinal Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Cardinal Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Cardinal Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Cardinal^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Cardinal"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Cardinal Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Cardinal Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Cardinal Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Cardinal Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24819": {
+    "id": 24819,
+    "aegisName": "S_CD_Pendant",
+    "name": "M. Cardinal Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Cardinal Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Cardinal^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Cardinal"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24820": {
+    "id": 24820,
+    "aegisName": "S_IQ_Armor",
+    "name": "M. Inquisitor Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Inquisitor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Inquisitor Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Inquisitor Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Inquisitor Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Inquisitor Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Inquisitor Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Inquisitor Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Inquisitor Shadow Shoes&&M. Inquisitor Shadow Earring&&M. Inquisitor Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Inquisitor Shadow Shoes&&M. Inquisitor Shadow Earring&&M. Inquisitor Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24821": {
+    "id": 24821,
+    "aegisName": "S_IQ_Shoes",
+    "name": "M. Inquisitor Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Inquisitor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24822": {
+    "id": 24822,
+    "aegisName": "S_IQ_Earring",
+    "name": "M. Inquisitor Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Inquisitor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Inquisitor Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Inquisitor Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Inquisitor Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Inquisitor Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Inquisitor Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24823": {
+    "id": 24823,
+    "aegisName": "S_IQ_Pendant",
+    "name": "M. Inquisitor Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Inquisitor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24824": {
+    "id": 24824,
+    "aegisName": "S_MT_Armor",
+    "name": "M. Meister Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Meister Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Master Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Meister Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Meister"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Meister Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Meister Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Meister Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Meister Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Meister Shadow Shoes&&M. Meister Shadow Earring&&M. Meister Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Meister Shadow Shoes&&M. Meister Shadow Earring&&M. Meister Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24825": {
+    "id": 24825,
+    "aegisName": "S_MT_Shoes",
+    "name": "M. Meister Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Meister Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Meister"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24826": {
+    "id": 24826,
+    "aegisName": "S_MT_Earring",
+    "name": "M. Meister Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Meister Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Meister Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Meister"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Meister Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Meister Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Meister Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Meister Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24827": {
+    "id": 24827,
+    "aegisName": "S_MT_Pendant",
+    "name": "M. Meister Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Meister Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Meister"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24828": {
+    "id": 24828,
+    "aegisName": "S_BO_Armor",
+    "name": "M. Biolo Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Biolo Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Biolo Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Biolo Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Biolo"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Biolo Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Biolo Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Biolo Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Biolo Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Biolo Shadow Shoes&&M. Biolo Shadow Earring&&M. Biolo Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Biolo Shadow Shoes&&M. Biolo Shadow Earring&&M. Biolo Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24829": {
+    "id": 24829,
+    "aegisName": "S_BO_Shoes",
+    "name": "M. Biolo Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Biolo Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Biolo"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24830": {
+    "id": 24830,
+    "aegisName": "S_BO_Earring",
+    "name": "M. Biolo Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Biolo Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Biolo Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Biolo"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Biolo Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Biolo Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Biolo Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Biolo Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24831": {
+    "id": 24831,
+    "aegisName": "S_BO_Pendant",
+    "name": "M. Biolo Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Biolo Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Biolo"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24832": {
+    "id": 24832,
+    "aegisName": "S_WH_Armor",
+    "name": "M. Windhawk Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Windhawk Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Windhawk Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Windhawk Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Windhawk^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Windhawk Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Windhawk Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Windhawk Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Windhawk Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Windhawk Shadow Shoes&&M. Windhawk Shadow Earring&&M. Windhawk Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Windhawk Shadow Shoes&&M. Windhawk Shadow Earring&&M. Windhawk Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24833": {
+    "id": 24833,
+    "aegisName": "S_WH_Shoes",
+    "name": "M. Windhawk Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Windhawk Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Windhawk^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24834": {
+    "id": 24834,
+    "aegisName": "S_WH_Earring",
+    "name": "M. Windhawk Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Windhawk Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Windhawk Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Windhawk^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Windhawk Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Windhawk Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Windhawk Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Windhawk Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24835": {
+    "id": 24835,
+    "aegisName": "S_WH_Pendant",
+    "name": "M. Windhawk Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Windhawk Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Windhawk^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24836": {
+    "id": 24836,
+    "aegisName": "S_TR_Armor",
+    "name": "M. Troubadour & Trouvere Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Troubadour & Trouvere Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Troubadour & Trouvere Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Troubadour & Trouvere Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : Troubadour, Trouvere",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Troubadour",
+      "Trouvere"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Troubadour & Trouvere Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Troubadour & Trouvere Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Troubadour & Trouvere Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Troubadour & Trouvere Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Troubadour & Trouvere Shadow Shoes&&M. Troubadour & Trouvere Shadow Earring&&M. Troubadour & Trouvere Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Troubadour & Trouvere Shadow Shoes&&M. Troubadour & Trouvere Shadow Earring&&M. Troubadour & Trouvere Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24837": {
+    "id": 24837,
+    "aegisName": "S_TR_Shoes",
+    "name": "M. Troubadour & Trouvere Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Troubadour & Trouvere Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : Troubadour, Trouvere",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Troubadour",
+      "Trouvere"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24838": {
+    "id": 24838,
+    "aegisName": "S_TR_Earring",
+    "name": "M. Troubadour & Trouvere Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Troubadour & Trouvere Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Troubadour & Trouvere Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : Troubadour, Trouvere",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Troubadour",
+      "Trouvere"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Troubadour & Trouvere Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Troubadour & Trouvere Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Troubadour & Trouvere Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Troubadour & Trouvere Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24839": {
+    "id": 24839,
+    "aegisName": "S_TR_Pendant",
+    "name": "M. Troubadour & Trouvere Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Troubadour & Trouvere Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : Troubadour, Trouvere",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Troubadour",
+      "Trouvere"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24840": {
+    "id": 24840,
+    "aegisName": "S_AG_Armor",
+    "name": "M. Arch Mage Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Arch Mage Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Arch Mage Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Arch Mage Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "ArchMage"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Arch Mage Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Arch Mage Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Arch Mage Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Arch Mage Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Arch Mage Shadow Shoes&&M. Arch Mage Shadow Earring&&M. Arch Mage Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Arch Mage Shadow Shoes&&M. Arch Mage Shadow Earring&&M. Arch Mage Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24841": {
+    "id": 24841,
+    "aegisName": "S_AG_Shoes",
+    "name": "M. Arch Mage Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Arch Mage Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "ArchMage"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24842": {
+    "id": 24842,
+    "aegisName": "S_AG_Earring",
+    "name": "M. Arch Mage Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Arch Mage Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Arch Mage Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "ArchMage"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Arch Mage Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Arch Mage Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Arch Mage Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Arch Mage Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24843": {
+    "id": 24843,
+    "aegisName": "S_AG_Pendant",
+    "name": "M. Arch Mage Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Arch Mage Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "ArchMage"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24844": {
+    "id": 24844,
+    "aegisName": "S_EM_Armor",
+    "name": "M. Elemental Master Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Elemental Master Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Elemental Master Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Elemental Master Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Elemental Master Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Elemental Master Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Elemental Master Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Elemental Master Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Elemental Master Shadow Shoes&&M. Elemental Master Shadow Earring&&M. Elemental Master Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Elemental Master Shadow Shoes&&M. Elemental Master Shadow Earring&&M. Elemental Master Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24845": {
+    "id": 24845,
+    "aegisName": "S_EM_Shoes",
+    "name": "M. Elemental Master Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Elemental Master Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24846": {
+    "id": 24846,
+    "aegisName": "S_EM_Earring",
+    "name": "M. Elemental Master Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Elemental Master Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shador Weapon, Elemental Master Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Elemental Master Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Elemental Master Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Elemental Master Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Elemental Master Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24847": {
+    "id": 24847,
+    "aegisName": "S_EM_Pendant",
+    "name": "M. Elemental Master Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Elemental Master Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24848": {
+    "id": 24848,
+    "aegisName": "S_NW_Armor",
+    "name": "M. Night Watch Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Night Watch Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Night Watch Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Night Watch Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Night Watch Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Night Watch Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Night Watch Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Night Watch Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Night Watch Shadow Shoes&&M. Night Watch Shadow Earring&&M. Night Watch Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Night Watch Shadow Shoes&&M. Night Watch Shadow Earring&&M. Night Watch Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24849": {
+    "id": 24849,
+    "aegisName": "S_NW_Shoes",
+    "name": "M. Night Watch Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Night Watch Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24850": {
+    "id": 24850,
+    "aegisName": "S_NW_Earring",
+    "name": "M. Night Watch Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Night Watch Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Night Watch Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Night Watch Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Night Watch Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Night Watch Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Night Watch Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24851": {
+    "id": 24851,
+    "aegisName": "S_NW_Pendant",
+    "name": "M. Night Watch Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Night Watch Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24852": {
+    "id": 24852,
+    "aegisName": "S_SH_Armor",
+    "name": "M. Spirit Handler Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Spirit Handler Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Spirit Handler Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Spirit Handler Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Spirit Handler Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Spirit Handler Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Spirit Handler Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Spirit Handler Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Spirit Handler Shadow Shoes&&M. Spirit Handler Shadow Earring&&M. Spirit Handler Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Spirit Handler Shadow Shoes&&M. Spirit Handler Shadow Earring&&M. Spirit Handler Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24853": {
+    "id": 24853,
+    "aegisName": "S_SH_Shoes",
+    "name": "M. Spirit Handler Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Spirit Handler Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24854": {
+    "id": 24854,
+    "aegisName": "S_SH_Earring",
+    "name": "M. Spirit Handler Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Spirit Handler Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Spirit Handler Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Spirit Handler Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Spirit Handler Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Spirit Handler Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Spirit Handler Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24855": {
+    "id": 24855,
+    "aegisName": "S_SH_Pendant",
+    "name": "M. Spirit Handler Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Spirit Handler Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24856": {
+    "id": 24856,
+    "aegisName": "S_SS_Armor",
+    "name": "M. Shinkiro & Shiranui Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Shinkiro & Shiranui Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Shinkiro & Shiranui Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Shinkiro & Shiranui Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro & Shiranui^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Shinkiro & Shiranui Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Shinkiro & Shiranui Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Shinkiro & Shiranui Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Shinkiro & Shiranui Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Shinkiro & Shiranui Shadow Shoes&&M. Shinkiro & Shiranui Shadow Earring&&M. Shinkiro & Shiranui Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Shinkiro & Shiranui Shadow Shoes&&M. Shinkiro & Shiranui Shadow Earring&&M. Shinkiro & Shiranui Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24857": {
+    "id": 24857,
+    "aegisName": "S_SS_Shoes",
+    "name": "M. Shinkiro & Shiranui Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Shinkiro & Shiranui Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro & Shiranui^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24858": {
+    "id": 24858,
+    "aegisName": "S_SS_Earring",
+    "name": "M. Shinkiro & Shiranui Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Shinkiro & Shiranui Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Shinkiro & Shiranui Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro & Shiranui^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Shinkiro & Shiranui Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Shinkiro & Shiranui Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Shinkiro & Shiranui Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Shinkiro & Shiranui Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24859": {
+    "id": 24859,
+    "aegisName": "S_SS_Pendant",
+    "name": "M. Shinkiro & Shiranui Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Shinkiro & Shiranui Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro & Shiranui^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24860": {
+    "id": 24860,
+    "aegisName": "S_SKE_Armor",
+    "name": "M. Sky Emperor Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Sky Emperor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Sky Emperor Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Sky Emperor Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "SkyEmperor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Sky Emperor Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Sky Emperor Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Sky Emperor Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Sky Emperor Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Sky Emperor Shadow Shoes&&M. Sky Emperor Shadow Earring&&M. Sky Emperor Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Sky Emperor Shadow Shoes&&M. Sky Emperor Shadow Earring&&M. Sky Emperor Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24861": {
+    "id": 24861,
+    "aegisName": "S_SKE_Shoes",
+    "name": "M. Sky Emperor Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Sky Emperor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "SkyEmperor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24862": {
+    "id": 24862,
+    "aegisName": "S_SKE_Earring",
+    "name": "M. Sky Emperor Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Sky Emperor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Sky Emperor Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "SkyEmperor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Sky Emperor Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Sky Emperor Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Sky Emperor Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Sky Emperor Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24863": {
+    "id": 24863,
+    "aegisName": "S_SKE_Pendant",
+    "name": "M. Sky Emperor Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Sky Emperor Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "SkyEmperor"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24864": {
+    "id": 24864,
+    "aegisName": "S_SOA_Armor",
+    "name": "M. Soul Ascetic Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Soul Ascetic Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Soul Ascetic Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Soul Ascetic Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "SoulAscetic"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Soul Ascetic Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Soul Ascetic Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Soul Ascetic Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Soul Ascetic Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Soul Ascetic Shadow Shoes&&M. Soul Ascetic Shadow Earring&&M. Soul Ascetic Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Soul Ascetic Shadow Shoes&&M. Soul Ascetic Shadow Earring&&M. Soul Ascetic Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24865": {
+    "id": 24865,
+    "aegisName": "S_SOA_Shoes",
+    "name": "M. Soul Ascetic Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Soul Ascetic Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "SoulAscetic"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24866": {
+    "id": 24866,
+    "aegisName": "S_SOA_Earring",
+    "name": "M. Soul Ascetic Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Soul Ascetic Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Soul Ascetic Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "SoulAscetic"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Soul Ascetic Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Soul Ascetic Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Soul Ascetic Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Soul Ascetic Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24867": {
+    "id": 24867,
+    "aegisName": "S_SOA_Pendant",
+    "name": "M. Soul Ascetic Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Soul Ascetic Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "SoulAscetic"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ]
+    }
+  },
+  "24868": {
+    "id": 24868,
+    "aegisName": "S_HN_Armor",
+    "name": "M. Hyper Novice Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "BK_Armor_Shadow",
+    "description": "เกราะที่สามารถสวมทับเกราะชิ้นอื่นเพื่อรับพลังป้องกันเพิ่มได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Hyper Novice Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, Hyper Novice Shadow (Armor/Shoes),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nเมื่อสวมใส่ร่วมกับ Master Shadow (Weapon/Shield), Hyper Novice Shadow (Armor/Shoes/Earring/Pendant),\nเพิกเฉยต่อพลังต้านทานทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 20%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "HyperNovice"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Shield&&M. Hyper Novice Shadow Shoes]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Shield&&M. Hyper Novice Shadow Shoes]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Hyper Novice Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Shield&&M. Hyper Novice Shadow Shoes]REFINE[shadowShield,shadowArmor,shadowBoot==27]===50"
+      ],
+      "pene_res": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Hyper Novice Shadow Shoes&&M. Hyper Novice Shadow Earring&&M. Hyper Novice Shadow Pendant]===20"
+      ],
+      "pene_mres": [
+        "EQUIP[Master Shadow Weapon&&Master Shadow Shield&&M. Hyper Novice Shadow Shoes&&M. Hyper Novice Shadow Earring&&M. Hyper Novice Shadow Pendant]===20"
+      ]
+    }
+  },
+  "24869": {
+    "id": 24869,
+    "aegisName": "S_HN_Shoes",
+    "name": "M. Hyper Novice Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "BK_Shoes_Shadow",
+    "description": "รองเท้าที่สามารถสวมทับกับรองเท้าคู่อื่นได้ สามารถใช้งานเดี่ยว ๆ ได้ แต่ผลลัพธ์จะน้อย\nมีเพียง Hyper Novice Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Shield, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "HyperNovice"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Shield]===2"
+      ]
+    }
+  },
+  "24870": {
+    "id": 24870,
+    "aegisName": "S_HN_Earring",
+    "name": "M. Hyper Novice Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "BK_Earring_Shadow",
+    "description": "ต่างหูศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Hyper Novice Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, Hyper Novice Shadow (Earring/Pendant),\nP.ATK + 1, S.MATK + 1,\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 27 ขึ้นไป, เพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของศัตรูทุกเผ่า (ยกเว้น Player) 50%\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "HyperNovice"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
+      ],
+      "pAtk": [
+        "EQUIP[Master Shadow Weapon&&M. Hyper Novice Shadow Pendant]===1"
+      ],
+      "sMatk": [
+        "EQUIP[Master Shadow Weapon&&M. Hyper Novice Shadow Pendant]===1"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Hyper Novice Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Master Shadow Weapon&&M. Hyper Novice Shadow Pendant]REFINE[shadowWeapon,shadowEarring,shadowPendant==27]===50"
+      ]
+    }
+  },
+  "24871": {
+    "id": 24871,
+    "aegisName": "S_HN_Pendant",
+    "name": "M. Hyper Novice Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "BK_Pendant_Shadow",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่เล่าขานกันว่าสามารถปกป้องผู้สวมใส่ได้ ช่วยดึงพลังที่หลับใหลอยู่ของผู้สวมใส่ออกมา\nมีเพียง Hyper Novice Classes เท่านั้นที่สามารถสวมใส่ได้\n \nเมื่อสวมใส่ร่วมกับ Master Shadow Weapon, \nAll Trait Status +2\n \nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "HyperNovice"
+    ],
+    "script": {
+      "allTrait": [
+        "EQUIP[Master Shadow Weapon]===2"
       ]
     }
   },
@@ -127132,6 +129693,708 @@
       ]
     }
   },
+  "314048": {
+    "id": 314048,
+    "aegisName": "5th_Enc_A_1",
+    "name": "[5th] Angel Sprit Group A I",
+    "unidName": "[5th] Angel Sprit Group A I",
+    "resName": "Wolf_Orb_Caster_1",
+    "description": "เพิ่ม Damage สกิล Arm Cannon 14%\n\nเพิ่ม Damage สกิล Dragonic Breath, Savage Impact, All Bloom, Gale Storm, Petitio 7%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Arm Cannon": [
+        "14"
+      ],
+      "Dragonic Breath": [
+        "7"
+      ],
+      "Savage Impact": [
+        "7"
+      ],
+      "All Bloom": [
+        "7"
+      ],
+      "Gale Storm": [
+        "7"
+      ],
+      "Petitio": [
+        "7"
+      ]
+    }
+  },
+  "314049": {
+    "id": 314049,
+    "aegisName": "5th_Enc_A_2",
+    "name": "[5th] Angel Sprit Group A II",
+    "unidName": "[5th] Angel Sprit Group A II",
+    "resName": "Wolf_Orb_Caster_1",
+    "description": "เพิ่ม Damage สกิล Arm Cannon 30%\n\nเพิ่ม Damage สกิล Dragonic Breath, Savage Impact, All Bloom, Gale Storm, Petitio 15%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Arm Cannon": [
+        "30"
+      ],
+      "Dragonic Breath": [
+        "15"
+      ],
+      "Savage Impact": [
+        "15"
+      ],
+      "All Bloom": [
+        "15"
+      ],
+      "Gale Storm": [
+        "15"
+      ],
+      "Petitio": [
+        "15"
+      ]
+    }
+  },
+  "314050": {
+    "id": 314050,
+    "aegisName": "5th_Enc_A_3",
+    "name": "[5th] Angel Sprit Group A III",
+    "unidName": "[5th] Angel Sprit Group A III",
+    "resName": "Wolf_Orb_Caster_1",
+    "description": "เพิ่ม Damage สกิล Arm Cannon 60%\n\nเพิ่ม Damage สกิล Dragonic Breath, Savage Impact, All Bloom, Gale Storm, Petitio 30%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Arm Cannon": [
+        "60"
+      ],
+      "Dragonic Breath": [
+        "30"
+      ],
+      "Savage Impact": [
+        "30"
+      ],
+      "All Bloom": [
+        "30"
+      ],
+      "Gale Storm": [
+        "30"
+      ],
+      "Petitio": [
+        "30"
+      ]
+    }
+  },
+  "314051": {
+    "id": 314051,
+    "aegisName": "5th_Enc_B_1",
+    "name": "[5th] Angel Sprit Group B I",
+    "unidName": "[5th] Angel Sprit Group B I",
+    "resName": "Wolf_Orb_Critical_1",
+    "description": "เพิ่ม Damage สกิล Cannon Spear, Cart Cannon 14%\n\nเพิ่ม Damage สกิล Frenzy Shot, Lightning Land, Metallic Fury, Third Flame Bomb 7%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Cannon Spear": [
+        "14"
+      ],
+      "Cart Cannon": [
+        "14"
+      ],
+      "Frenzy Shot": [
+        "7"
+      ],
+      "Lightning Land": [
+        "7"
+      ],
+      "Metallic Fury": [
+        "7"
+      ],
+      "Third Flame Bomb": [
+        "7"
+      ]
+    }
+  },
+  "314052": {
+    "id": 314052,
+    "aegisName": "5th_Enc_B_2",
+    "name": "[5th] Angel Sprit Group B II",
+    "unidName": "[5th] Angel Sprit Group B II",
+    "resName": "Wolf_Orb_Critical_1",
+    "description": "เพิ่ม Damage สกิล Cannon Spear, Cart Cannon 30%\n\nเพิ่ม Damage สกิล Frenzy Shot, Lightning Land, Metallic Fury, Third Flame Bomb 15%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Cannon Spear": [
+        "30"
+      ],
+      "Cart Cannon": [
+        "30"
+      ],
+      "Frenzy Shot": [
+        "15"
+      ],
+      "Lightning Land": [
+        "15"
+      ],
+      "Metallic Fury": [
+        "15"
+      ],
+      "Third Flame Bomb": [
+        "15"
+      ]
+    }
+  },
+  "314053": {
+    "id": 314053,
+    "aegisName": "5th_Enc_B_3",
+    "name": "[5th] Angel Sprit Group B III",
+    "unidName": "[5th] Angel Sprit Group B III",
+    "resName": "Wolf_Orb_Critical_1",
+    "description": "เพิ่ม Damage สกิล Cannon Spear, Cart Cannon 60%\n\nเพิ่ม Damage สกิล Frenzy Shot, Lightning Land, Metallic Fury, Third Flame Bomb 30%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Cannon Spear": [
+        "60"
+      ],
+      "Cart Cannon": [
+        "60"
+      ],
+      "Frenzy Shot": [
+        "30"
+      ],
+      "Lightning Land": [
+        "30"
+      ],
+      "Metallic Fury": [
+        "30"
+      ],
+      "Third Flame Bomb": [
+        "30"
+      ]
+    }
+  },
+  "314054": {
+    "id": 314054,
+    "aegisName": "5th_Enc_C_1",
+    "name": "[5th] Angel Sprit Group C I",
+    "unidName": "[5th] Angel Sprit Group C I",
+    "resName": "Wolf_Orb_Above_1",
+    "description": "เพิ่ม Damage สกิล Storm Slash, Triple Laser, Eternal Slash, Destructive Hurricane, Crescive Bolt, Arbitrium 7%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Storm Slash": [
+        "7"
+      ],
+      "Triple Laser": [
+        "7"
+      ],
+      "Eternal Slash": [
+        "7"
+      ],
+      "Destructive Hurricane": [
+        "7"
+      ],
+      "Crescive Bolt": [
+        "7"
+      ],
+      "Arbitrium": [
+        "7"
+      ]
+    }
+  },
+  "314055": {
+    "id": 314055,
+    "aegisName": "5th_Enc_C_2",
+    "name": "[5th] Angel Sprit Group C II",
+    "unidName": "[5th] Angel Sprit Group C II",
+    "resName": "Wolf_Orb_Above_1",
+    "description": "เพิ่ม Damage สกิล Storm Slash, Triple Laser, Eternal Slash, Destructive Hurricane, Crescive Bolt, Arbitrium 15%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Storm Slash": [
+        "15"
+      ],
+      "Triple Laser": [
+        "15"
+      ],
+      "Eternal Slash": [
+        "15"
+      ],
+      "Destructive Hurricane": [
+        "15"
+      ],
+      "Crescive Bolt": [
+        "15"
+      ],
+      "Arbitrium": [
+        "15"
+      ]
+    }
+  },
+  "314056": {
+    "id": 314056,
+    "aegisName": "5th_Enc_C_3",
+    "name": "[5th] Angel Sprit Group C III",
+    "unidName": "[5th] Angel Sprit Group C III",
+    "resName": "Wolf_Orb_Above_1",
+    "description": "เพิ่ม Damage สกิล Storm Slash, Triple Laser, Eternal Slash, Destructive Hurricane, Crescive Bolt, Arbitrium 30%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Storm Slash": [
+        "30"
+      ],
+      "Triple Laser": [
+        "30"
+      ],
+      "Eternal Slash": [
+        "30"
+      ],
+      "Destructive Hurricane": [
+        "30"
+      ],
+      "Crescive Bolt": [
+        "30"
+      ],
+      "Arbitrium": [
+        "30"
+      ]
+    }
+  },
+  "314057": {
+    "id": 314057,
+    "aegisName": "5th_Enc_D_1",
+    "name": "[5th] Angel Sprit Group D I",
+    "unidName": "[5th] Angel Sprit Group D I",
+    "resName": "Wolf_Orb_M_Counter_1",
+    "description": "เพิ่ม Damage สกิล Genesis Ray 14%\n\nเพิ่ม Damage สกิล Mayhemic Thorn, Abyss Square, Diamond Storm, Rhythm Shooting, Explosion Blaster 7%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Genesis Ray": [
+        "14"
+      ],
+      "Mayhemic Thorns": [
+        "7"
+      ],
+      "Abyss Square": [
+        "7"
+      ],
+      "Diamond Storm": [
+        "7"
+      ],
+      "Rhythm Shooting": [
+        "7"
+      ],
+      "Explosion Blaster": [
+        "7"
+      ]
+    }
+  },
+  "314058": {
+    "id": 314058,
+    "aegisName": "5th_Enc_D_2",
+    "name": "[5th] Angel Sprit Group D II",
+    "unidName": "[5th] Angel Sprit Group D II",
+    "resName": "Wolf_Orb_M_Counter_1",
+    "description": "เพิ่ม Damage สกิล Genesis Ray 30%\n\nเพิ่ม Damage สกิล Mayhemic Thorn, Abyss Square, Diamond Storm, Rhythm Shooting, Explosion Blaster 15%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Genesis Ray": [
+        "30"
+      ],
+      "Mayhemic Thorns": [
+        "15"
+      ],
+      "Abyss Square": [
+        "15"
+      ],
+      "Diamond Storm": [
+        "15"
+      ],
+      "Rhythm Shooting": [
+        "15"
+      ],
+      "Explosion Blaster": [
+        "15"
+      ]
+    }
+  },
+  "314059": {
+    "id": 314059,
+    "aegisName": "5th_Enc_D_3",
+    "name": "[5th] Angel Sprit Group D III",
+    "unidName": "[5th] Angel Sprit Group D III",
+    "resName": "Wolf_Orb_M_Counter_1",
+    "description": "เพิ่ม Damage สกิล Genesis Ray 60%\n\nเพิ่ม Damage สกิล Mayhemic Thorn, Abyss Square, Diamond Storm, Rhythm Shooting, Explosion Blaster 30%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Genesis Ray": [
+        "60"
+      ],
+      "Mayhemic Thorns": [
+        "30"
+      ],
+      "Abyss Square": [
+        "30"
+      ],
+      "Diamond Storm": [
+        "30"
+      ],
+      "Rhythm Shooting": [
+        "30"
+      ],
+      "Explosion Blaster": [
+        "30"
+      ]
+    }
+  },
+  "314060": {
+    "id": 314060,
+    "aegisName": "5th_Enc_E_1",
+    "name": "[5th] Angel Sprit Group E I",
+    "unidName": "[5th] Angel Sprit Group E I",
+    "resName": "Wolf_Orb_Sp_1",
+    "description": "เพิ่ม Damage สกิล Noon Blast, Exorcism of Malicious Soul, Magazine for One, Kunai - Rotation, Kunai - Refraction, Hogogong Strike, Mega Sonic Blow 7%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Noon Blast": [
+        "7"
+      ],
+      "Exorcism of Malicious Soul": [
+        "7"
+      ],
+      "Magazine for One": [
+        "7"
+      ],
+      "Kunai - Rotation": [
+        "7"
+      ],
+      "Kunai - Refraction": [
+        "7"
+      ],
+      "Hogogong Strike": [
+        "7"
+      ],
+      "Mega Sonic Blow": [
+        "7"
+      ]
+    }
+  },
+  "314061": {
+    "id": 314061,
+    "aegisName": "5th_Enc_E_2",
+    "name": "[5th] Angel Sprit Group E II",
+    "unidName": "[5th] Angel Sprit Group E II",
+    "resName": "Wolf_Orb_Sp_1",
+    "description": "เพิ่ม Damage สกิล Noon Blast, Exorcism of Malicious Soul, Magazine for One, Kunai - Rotation, Kunai - Refraction, Hogogong Strike, Mega Sonic Blow 15%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Noon Blast": [
+        "15"
+      ],
+      "Exorcism of Malicious Soul": [
+        "15"
+      ],
+      "Magazine for One": [
+        "15"
+      ],
+      "Kunai - Rotation": [
+        "15"
+      ],
+      "Kunai - Refraction": [
+        "15"
+      ],
+      "Hogogong Strike": [
+        "15"
+      ],
+      "Mega Sonic Blow": [
+        "15"
+      ]
+    }
+  },
+  "314062": {
+    "id": 314062,
+    "aegisName": "5th_Enc_E_3",
+    "name": "[5th] Angel Sprit Group E III",
+    "unidName": "[5th] Angel Sprit Group E III",
+    "resName": "Wolf_Orb_Sp_1",
+    "description": "เพิ่ม Damage สกิล Noon Blast, Exorcism of Malicious Soul, Magazine for One, Kunai - Rotation, Kunai - Refraction, Hogogong Strike, Mega Sonic Blow 30%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Noon Blast": [
+        "30"
+      ],
+      "Exorcism of Malicious Soul": [
+        "30"
+      ],
+      "Magazine for One": [
+        "30"
+      ],
+      "Kunai - Rotation": [
+        "30"
+      ],
+      "Kunai - Refraction": [
+        "30"
+      ],
+      "Hogogong Strike": [
+        "30"
+      ],
+      "Mega Sonic Blow": [
+        "30"
+      ]
+    }
+  },
+  "314063": {
+    "id": 314063,
+    "aegisName": "5th_Enc_F_1",
+    "name": "[5th] Angel Sprit Group F I",
+    "unidName": "[5th] Angel Sprit Group F I",
+    "resName": "Wolf_Orb_Hp_1",
+    "description": "เพิ่ม Damage สกิล Midnight Kick, Talisman of Four Bearing God, The Vigilante at Night, Cold Blooded Cannon, Darkening Cannon, Hyunrok Cannon, Jack frost Nova 7%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Midnight Kick": [
+        "7"
+      ],
+      "Talisman of Four Bearing God": [
+        "7"
+      ],
+      "The Vigilante at Night": [
+        "7"
+      ],
+      "Cold Blooded Cannon": [
+        "7"
+      ],
+      "Darkening Cannon": [
+        "7"
+      ],
+      "Hyunrok Cannon": [
+        "7"
+      ],
+      "Jack Frost Nova": [
+        "7"
+      ]
+    }
+  },
+  "314064": {
+    "id": 314064,
+    "aegisName": "5th_Enc_F_2",
+    "name": "[5th] Angel Sprit Group F II",
+    "unidName": "[5th] Angel Sprit Group F II",
+    "resName": "Wolf_Orb_Hp_1",
+    "description": "เพิ่ม Damage สกิล Midnight Kick, Talisman of Four Bearing God, The Vigilante at Night, Cold Blooded Cannon, Darkening Cannon, Hyunrok Cannon, Jack frost Nova 15%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Midnight Kick": [
+        "15"
+      ],
+      "Talisman of Four Bearing God": [
+        "15"
+      ],
+      "The Vigilante at Night": [
+        "15"
+      ],
+      "Cold Blooded Cannon": [
+        "15"
+      ],
+      "Darkening Cannon": [
+        "15"
+      ],
+      "Hyunrok Cannon": [
+        "15"
+      ],
+      "Jack Frost Nova": [
+        "15"
+      ]
+    }
+  },
+  "314065": {
+    "id": 314065,
+    "aegisName": "5th_Enc_F_3",
+    "name": "[5th] Angel Sprit Group F III",
+    "unidName": "[5th] Angel Sprit Group F III",
+    "resName": "Wolf_Orb_Hp_1",
+    "description": "เพิ่ม Damage สกิล Midnight Kick, Talisman of Four Bearing God, The Vigilante at Night, Cold Blooded Cannon, Darkening Cannon, Hyunrok Cannon, Jack frost Nova 30%\n\nความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 23 ตุลาคม 2568",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Midnight Kick": [
+        "30"
+      ],
+      "Talisman of Four Bearing God": [
+        "30"
+      ],
+      "The Vigilante at Night": [
+        "30"
+      ],
+      "Cold Blooded Cannon": [
+        "30"
+      ],
+      "Darkening Cannon": [
+        "30"
+      ],
+      "Hyunrok Cannon": [
+        "30"
+      ],
+      "Jack Frost Nova": [
+        "30"
+      ]
+    }
+  },
   "400001": {
     "id": 400001,
     "aegisName": "Victory_Wing_Ear",
@@ -129983,9 +133246,9 @@
     "id": 400198,
     "aegisName": "Viva_Adul_Hat_RA1",
     "name": "Helm of Faith (Ranger) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_RA",
-    "description": "If the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nIf the user's base level is 230 or higher, POW + 3, P.Atk + 2.\nAtk + 10 per 2 refine rate.\nIncreases Arrow Storm damage by 15% per 3 refine rate.\nIncreases long ranged physical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, increases physical damage against all size enemies by 5%.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Ballista, increases long ranged physical damage by 10%,\nincreases Arrow Storm damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Ballista, increases long ranged physical damage by 10%,\nincreases Arrow Storm damage by 5% and Gale Storm damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Gale Storm damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Ranger^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nเมื่อ Lv.230 ขึ้นไป, POW + 3, P.ATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น ATK+ 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Arrow Storm 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides of Ballista, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Arrow Storm 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Ballista, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Arrow Storm 5%, เพิ่ม Damage สกิล Gale Storm 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Gale Storm ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่สวมใส่ : ^777777Ranger Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -130042,9 +133305,9 @@
     "id": 400199,
     "aegisName": "Viva_Adul_Hat_RA2",
     "name": "Helm of Faith II (Ranger) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_RA",
-    "description": "If the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nIf the user's base level is 230 or higher, POW + 3, P.Atk + 2.\nAtk + 10 per 2 refine rate.\nIncreases Aimed Bolt damage by 15% per 3 refine rate.\nIncreases long ranged physical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, Cri + 15.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Aiming Bow, increases long ranged physical damage by 10%,\nincreases Aimed Bolt damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Aiming Bow, increases long ranged physical damage by 10%,\nincreases Aimed Bolt damage by 5% and Crescive Bolt damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Crescive Bolt damage by additional 15%\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Ranger^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nเมื่อ Lv.230 ขึ้นไป, POW + 3, P.ATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น ATK+ 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Aimed Bolt 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, CRI + 15.\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Aiming Bow, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Aimed Bolt 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Aiming Bow, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Aimed Bolt 5%, เพิ่ม Damage สกิล Crescive Bolt 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Crescive Bolt ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่สวมใส่ : ^777777Ranger Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -130607,9 +133870,9 @@
     "id": 400228,
     "aegisName": "Viva_Adul_Hat_WM1",
     "name": "Helm of Faith (Minstrel & Wanderer) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_WM",
-    "description": "If the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nIf the user's base level is 230 or higher, SPL + 3, S.Matk + 2.\nMatk + 10 per 2 refine rate.\nIncreases Metallic Sound damage by 15% per 3 refine rate.\nIncreases neutral property magical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, reduces variable casting time by 10%.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Matk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Harp or Adulter Fides Ribbon, increases neutral property magical damage by 10%,\nincreases Metallic Sound damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Harp or Vivatus Fides Ribbon, increases neutral property magical damage by 10%,\nincreases Metallic Sound damage by 5% and Metallic Fury damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Metallic Fury damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Minstrel classes, Wanderer classes^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, SPL + 2, S.MATK + 1.\nเมื่อ Lv.230 ขึ้นไป, SPL + 3, S.MATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Metallic Sound 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 7%\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Harp หรือ Adulter Fides Ribbon, เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Metallic Sound 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Harp หรือ Vivatus Fides Ribbon, เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Metallic Sound 5%, เพิ่ม Damage สกิล Metallic Fury 7%\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Metallic Fury ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่สวมใส่ : ^777777Minstrel Classes, Wanderer Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -130667,9 +133930,9 @@
     "id": 400229,
     "aegisName": "Viva_Adul_Hat_WM2",
     "name": "Helm of Faith II (Minstrel & Wanderer) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_WM",
-    "description": "If the user's base level is 210 or higher, POW + 2, P.Atk + 1.\nIf the user's base level is 230 or higher, POW + 3, P.Atk + 2.\nAtk + 10 per 2 refine rate.\nIncreases Severe Rainstorm damage by 15% per 3 refine rate.\nIncreases long ranged physical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, Cri + 15.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Violin or Adulter Fides Chain Rope, increases long ranged physical damage by 10%,\nincreases Severe Rainstorm damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Violin or Vivatus Fides Chain Rope, increases long ranged physical damage by 10%,\nincreases Severe Rainstorm damage by 5% and Rhythm Shooting damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Rhythm Shooting damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Minstrel classes, Wanderer classes^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, POW + 2, P.ATK + 1.\nเมื่อ Lv.230 ขึ้นไป, POW + 3, P.ATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น ATK+ 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Severe Rainstorm 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, CRI + 15.\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Violin หรือ Adulter Fides Chain Rope, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Severe Rainstorm 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Violin หรือ Vivatus Fides Chain Rope, เพิ่ม Damage ทางกายภาพระยะไกล 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Severe Rainstorm 5%, เพิ่ม Damage สกิล Rhythm Shooting 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่สวมใส่ : ^777777Minstrel Classes, Wanderer Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -131261,9 +134524,9 @@
     "id": 400239,
     "aegisName": "Viva_Adul_Hat_SP1",
     "name": "Helm of Faith (Soul Reaper) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_SP",
-    "description": "If the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nIf the user's base level is 230 or higher, SPL + 3, S.Matk + 2.\nMatk + 10 per 2 refine rate.\nIncreases Eswhoo and Espa damage by 15% per 3 refine rate.\nIncreases all property magical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, reduces variable casting time by 10%.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Matk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Soul Stick, increases all property magical damage by 10%,\nincreases Eswhoo and Espa damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Soul Stick, increases all property magical damage by 10%,\nincreases Eswhoo and Espa damage by 5%, Talisman of Red Phoenix and Talisman of Black Tortoise damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Talisman of Red Phoenix and Talisman of Black Tortoise damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Soul Reaper classes^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, SPL + 2, S.MATK + 1.\nเมื่อ Lv.230 ขึ้นไป, SPL + 3, S.MATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Eswhoo, Espa 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nเมื่ออัพเกรดถึงขั้น 7, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Soul Stick, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Eswhoo, Espa 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Soul Stick, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Eswhoo, Espa 5%, เพิ่ม Damage สกิล Talisman of Red Phoenix, Talisman of Black Tortoise 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Talisman of Red Phoenix, Talisman of Black Tortoise ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่สวมใส่ : ^777777Soul Reaper Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -131329,9 +134592,9 @@
     "id": 400240,
     "aegisName": "Viva_Adul_Hat_SP2",
     "name": "Helm of Faith II (Soul Reaper) [1]",
-    "unidName": "Headgear",
+    "unidName": "Cap",
     "resName": "Viva_Adul_Hat_SP",
-    "description": "If the user's base level is 210 or higher, SPL + 2, S.Matk + 1.\nIf the user's base level is 230 or higher, SPL + 3, S.Matk + 2.\nMatk + 10 per 2 refine rate.\nIncreases Curse Explosion damage by 15% per 3 refine rate.\nIncreases all property magical damage by 7% per 4 refine rate.\nIf refine rate is 7 or higher, increases magical damage against all size enemies by 5%.\nIf refine rate is 9 or higher, reduces fixed casting time by 0.2 seconds.\nIf refine rate is 11 or higher, Matk + 5%, reduces fixed casting time by additional 0.3 seconds.\n\nWhen equipped with Adulter Fides Dark Wand, reduces skill cooldown of Evil Spirit's Curse by 2 seconds,\nincreases Curse Explosion damage by 5% per 3 refine rate of weapon.\n\nWhen equipped with Vivatus Fides Dark Wand, reduces skill cooldown of Evil Spirit's Curse by 2 seconds,\nincreases Curse Explosion damage by 5% and Exorcism of Malicious Soul damage by 7% per 3 refine rate of weapon,\nif grade of weapon is C or higher, increases Exorcism of Malicious Soul damage by additional 15%.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nArmor Level: ^7777772^000000\nRequired Level: ^777777180^000000\nJobs: ^777777Soul Reaper classes^000000",
+    "description": "Helm ที่บรรจุพลังแห่งความเชื่อไว้ภายใน\nสามารถเพิ่มพลังของอาวุธ Vivatus, Adulter ให้มีความแข็งแกร่งยิ่งขึ้น\n \nเมื่อ Lv.210 ขึ้นไป, SPL + 2, S.MATK + 1.\nเมื่อ Lv.230 ขึ้นไป, SPL + 3, S.MATK + 2.\nทุก ๆ การอัพเกรด 2 ขั้น MATK + 10.\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Curse Explosion 15%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 5%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\nเมื่ออัพเกรดถึงขั้น 11, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Adulter Fides Dark Wand, ลด Cooldown สกิล Evil Soul Curse 2 วินาที,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Curse Explosion 5%\n \nเมื่อสวมใส่ร่วมกับ Vivatus Fides Dark Wand, ลด Cooldown สกิล Evil Soul Curse 2 วินาที,\nทุก ๆ การอัพเกรดอาวุธ 3 ขั้น เพิ่ม Damage สกิล Curse Explosion 5%, เพิ่ม Damage สกิล Exorcism of Malicious Soul 7%,\nเมื่ออาวุธมี Grade C ขึ้นไป, เพิ่ม Damage สกิล Exorcism of Malicious Soul ขึ้นอีก 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777180^000000\nอาชีพที่สวมใส่ : ^777777Soul Reaper Classes^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -139201,6 +142464,137 @@
       ]
     }
   },
+  "410397": {
+    "id": 410397,
+    "aegisName": "C_Doughkun",
+    "name": "Costume DoughKun",
+    "unidName": "Costume DoughKun",
+    "resName": "C_Doughkun",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nP.ATK, S.MATK + 5\nMaxHP, MaxSP + 15%\nASPD + 30%\nเมื่อใช้งานร่วมกับ Doughkun Egg,\nเพิ่ม EXP ที่ได้รับจากมอนสเตอร์ 10%\n\nเมื่อใช้งานร่วมกับ Fumi Hausu Egg,\nเพิ่มอัตราดรอปไอเท็ม 10%\n\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังสิ้นสุดระยะเวลากิจกรรม)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 520,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "script": {
+      "pAtk": [
+        "5"
+      ],
+      "sMatk": [
+        "5"
+      ],
+      "hpPercent": [
+        "15"
+      ],
+      "spPercent": [
+        "15"
+      ],
+      "aspd": [
+        "30"
+      ]
+    }
+  },
+  "410431": {
+    "id": 410431,
+    "aegisName": "5th_Mask_Melee",
+    "name": "[5th] Angel Spirit Mask (Melee) [1]",
+    "unidName": "Ribbon",
+    "resName": "포티어의가면",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nหน้ากากที่ทำเลียนแบบหน้ากากของ Angel Spirit ซึ่งมีพลังความแข็งแกร่งแฝงอยู่\nสามารถนำไป Enchant กิจกรรม 5th Anniversary เพิ่มได้ที่ NPC ^ffffff^4D4DFF[Mavick]^000000^000000\n\nลด Delay หลังใช้สกิล 5%\nATK + 100\nเพิ่ม Damage ทางกายภาพระยะใกล้ 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "acd": [
+        "5"
+      ],
+      "atk": [
+        "100"
+      ],
+      "melee": [
+        "15"
+      ]
+    }
+  },
+  "410432": {
+    "id": 410432,
+    "aegisName": "5th_Mask_Magic",
+    "name": "[5th] Angel Spirit Mask (Magic) [1]",
+    "unidName": "Ribbon",
+    "resName": "네로가면",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nหน้ากากที่ทำเลียนแบบหน้ากากของ Angel Spirit ซึ่งมีพลังเวทย์แฝงอยู่\nสามารถนำไป Enchant กิจกรรม 5th Anniversary เพิ่มได้ที่ NPC ^ffffff^4D4DFF[Mavick]^000000^000000\n\nลด Delay หลังใช้สกิล 5%\nMATK + 100\nMATK + 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "acd": [
+        "5"
+      ],
+      "matk": [
+        "100"
+      ],
+      "matkPercent": [
+        "15"
+      ]
+    }
+  },
+  "410433": {
+    "id": 410433,
+    "aegisName": "5th_Mask_Range",
+    "name": "[5th] Angel Spirit Mask (Range) [1]",
+    "unidName": "Ribbon",
+    "resName": "아네모스가면",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nหน้ากากที่ทำเลียนแบบหน้ากากของ Angel Spirit ซึ่งมีพลังความแม่นยำแฝงอยู่\nสามารถนำไป Enchant กิจกรรม 5th Anniversary เพิ่มได้ที่ NPC ^ffffff^4D4DFF[Mavick]^000000^000000\n\nลด Delay หลังใช้สกิล 5%\nATK + 100\nเพิ่ม Damage ทางกายภาพระยะไกล 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "4th"
+    ],
+    "script": {
+      "acd": [
+        "5"
+      ],
+      "atk": [
+        "100"
+      ],
+      "range": [
+        "15"
+      ]
+    }
+  },
   "420003": {
     "id": 420003,
     "aegisName": "CD_In_MouthK",
@@ -139940,6 +143334,47 @@
       ],
       "m_race_all": [
         "EQUIP[Automatic Armor A-Type||Automatic Armor B-Type]===8"
+      ]
+    }
+  },
+  "420351": {
+    "id": 420351,
+    "aegisName": "C_Auspicloud",
+    "name": "Costume Farmhouse Clouds",
+    "unidName": "Costume Farmhouse Clouds",
+    "resName": "C_Auspicloud",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll State + 10\nPOW, SPL, CON, WIS, STA, CRT + 10\nเมื่อใช้งานร่วมกับ Costume Fumi Hausu Doll,\nเพิ่มอัตราดรอปไอเท็ม 10%\n\nเมื่อใช้งานร่วมกับ Costume DoughKun,\nเพิ่ม EXP ที่ได้รับจากมอนสเตอร์ 10%\n\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังสิ้นสุดระยะเวลากิจกรรม)^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 521,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "script": {
+      "allStatus": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "con": [
+        "10"
+      ],
+      "wis": [
+        "10"
+      ],
+      "sta": [
+        "10"
+      ],
+      "crt": [
+        "10"
       ]
     }
   },
@@ -169768,6 +173203,582 @@
       ],
       "cd__Explosion Blaster": [
         "EQUIP[Poenitentia Ungula]REFINE[weapon==10]===0.35"
+      ]
+    }
+  },
+  "490747": {
+    "id": 490747,
+    "aegisName": "HN_Cold_Hearth_TH",
+    "name": "Hyper Novice Cold Heart [1]",
+    "unidName": "Hyper Novice Cold Heart",
+    "resName": "Blue_Flame_Heart_Gem",
+    "description": "MATK + 100\nลดระยะเวลาร่ายแบบแปรผัน 15%\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Meteor Storm Buster, Jack Frost Nova 25% \n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ferrum ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nS.MATK + 10\nเพิ่ม Damage สกิล Meteor Storm Buster, Jack Frost Nova 35% \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "HyperNovice"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "vct": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "m_size_all": [
+        "15"
+      ],
+      "Meteor Storm Buster": [
+        "25",
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==10]===35"
+      ],
+      "Jack Frost Nova": [
+        "25",
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==10]===35"
+      ],
+      "sMatk": [
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==10]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==10]===15"
+      ]
+    }
+  },
+  "490748": {
+    "id": 490748,
+    "aegisName": "Poenitentia_Ring_HN",
+    "name": "Poenitentia Ring(Hyper Novice) [1]",
+    "unidName": "Poenitentia Ring(Hyper Novice)",
+    "resName": "Into_The_Abyss",
+    "description": "MATK + 100\nลดระยะเวลาร่ายแบบแปรผัน 15%\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Meteor Storm Buster, Jack Frost Nova 25%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Ferrum ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nลด Cooldown สกิล Meteor Storm Buster, Jack Frost Nova 2 วินาที\nประเภท : ^777777Accessory(Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "HyperNovice"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "vct": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "m_size_all": [
+        "15"
+      ],
+      "Meteor Storm Buster": [
+        "25"
+      ],
+      "Jack Frost Nova": [
+        "25"
+      ],
+      "cd__Meteor Storm Buster": [
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==10]===2"
+      ],
+      "cd__Jack Frost Nova": [
+        "EQUIP[Poenitentia Ferrum]REFINE[weapon==10]===2"
+      ]
+    }
+  },
+  "490749": {
+    "id": 490749,
+    "aegisName": "Dual_Coin_TH",
+    "name": "Dual Coin [1]",
+    "unidName": "Dual Coin",
+    "resName": "Duelist_GoldCoin",
+    "description": "ATK + 100\nCRI + 15\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Magazine for One, The Vigilante at Night 25%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Flamen ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nP.ATK + 10\nเพิ่ม Damage สกิล Magazine for One 35%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Veloci ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nP.ATK + 10\nเพิ่ม Damage สกิล The Vigilante at Night 35%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cri": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_size_all": [
+        "15"
+      ],
+      "Magazine for One": [
+        "25",
+        "EQUIP[Poenitentia Foramen]REFINE[weapon==10]===35"
+      ],
+      "The Vigilante at Night": [
+        "25",
+        "EQUIP[Poenitentia Veloci]REFINE[weapon==10]===35"
+      ],
+      "pAtk": [
+        "EQUIP[Poenitentia Foramen]REFINE[weapon==10]===10",
+        "EQUIP[Poenitentia Veloci]REFINE[weapon==10]===10"
+      ],
+      "p_race_all": [
+        "EQUIP[Poenitentia Foramen]REFINE[weapon==10]===15",
+        "EQUIP[Poenitentia Veloci]REFINE[weapon==10]===15"
+      ]
+    }
+  },
+  "490750": {
+    "id": 490750,
+    "aegisName": "Poenitentia_Ring_NW",
+    "name": "Poenitentia Ring(Night Watch) [1]",
+    "unidName": "Poenitentia Ring(Night Watch)",
+    "resName": "Into_The_Abyss",
+    "description": "ATK + 100\nCRI + 15\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Magazine for One, The Vigilante at Night 25%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Flamen ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nลด Cooldown สกิล Magazine for One 0.2 วินาที\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Veloci ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nลดระยะเวลาร่ายแบบคงที่ 1 วินาที\nP.ATK + 10\nประเภท : ^777777Accessory(Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cri": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_size_all": [
+        "15"
+      ],
+      "Magazine for One": [
+        "25"
+      ],
+      "The Vigilante at Night": [
+        "25"
+      ],
+      "cd__Magazine for One": [
+        "EQUIP[Poenitentia Foramen]REFINE[weapon==10]===0.2"
+      ],
+      "fct": [
+        "EQUIP[Poenitentia Veloci]REFINE[weapon==10]===1"
+      ],
+      "pAtk": [
+        "EQUIP[Poenitentia Veloci]REFINE[weapon==10]===10"
+      ]
+    }
+  },
+  "490751": {
+    "id": 490751,
+    "aegisName": "Assassin_Amulet_TH",
+    "name": "Assassin Amulet [1]",
+    "unidName": "Assassin Amulet",
+    "resName": "암살자의절망_악세",
+    "description": "ATK + 100\nCRI + 15\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Impact Crater 25%\nเพิ่ม Damage สกิล Rolling Cutter 35%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Manus ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nP.ATK + 10\nเพิ่ม Damage สกิล Impact Crater 35%\nเพิ่ม Damage สกิล Rolling Cutter 70%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cri": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_size_all": [
+        "15"
+      ],
+      "Impact Crater": [
+        "25",
+        "EQUIP[Poenitentia Manus]REFINE[weapon==10]===35"
+      ],
+      "Rolling Cutter": [
+        "35",
+        "EQUIP[Poenitentia Manus]REFINE[weapon==10]===70"
+      ],
+      "pAtk": [
+        "EQUIP[Poenitentia Manus]REFINE[weapon==10]===10"
+      ],
+      "p_race_all": [
+        "EQUIP[Poenitentia Manus]REFINE[weapon==10]===15"
+      ]
+    }
+  },
+  "490752": {
+    "id": 490752,
+    "aegisName": "Poenitentia_Ring_SHC",
+    "name": "Poenitentia Ring(Shadow Cross) [1]",
+    "unidName": "Poenitentia Ring(Shadow Cross)",
+    "resName": "Into_The_Abyss",
+    "description": "ATK + 100\nCRI + 15\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Impact Crater 25%\nเพิ่ม Damage สกิล Rolling Cutter 35%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Manus ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nลด Cooldown สกิล Impact Crater 1 วินาที\nเมื่อใช้สกิล Rolling Cutter มีโอกาส 40% ที่จะเกิด Auto Spell Impact Crater Lv.5\nประเภท : ^777777Accessory(Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cri": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "p_size_all": [
+        "15"
+      ],
+      "Impact Crater": [
+        "25"
+      ],
+      "Rolling Cutter": [
+        "35"
+      ],
+      "cd__Impact Crater": [
+        "EQUIP[Poenitentia Manus]REFINE[weapon==10]===1"
+      ]
+    }
+  },
+  "490753": {
+    "id": 490753,
+    "aegisName": "Fallen_Seraphim_TH",
+    "name": "Fallen Seraphim Ring [1]",
+    "unidName": "Fallen Seraphim Ring",
+    "resName": "Fallen_Seraphim_ring",
+    "description": "MATK + 100\nลดระยะเวลาร่ายแบบแปรผันลง 15%\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Cross Rain 25%\nเพิ่ม Damage สกิล Genesis Ray 35%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Gladius ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nS.MATK + 10\nเพิ่ม Damage สกิล Cross Rain 35%\nเพิ่ม Damage สกิล Genesis Ray 70%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "vct": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "m_size_all": [
+        "15"
+      ],
+      "Cross Rain": [
+        "25",
+        "EQUIP[Poenitentia Gladius]REFINE[weapon==10]===35"
+      ],
+      "Genesis Ray": [
+        "35",
+        "EQUIP[Poenitentia Gladius]REFINE[weapon==10]===70"
+      ],
+      "sMatk": [
+        "EQUIP[Poenitentia Gladius]REFINE[weapon==10]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Poenitentia Gladius]REFINE[weapon==10]===15"
+      ]
+    }
+  },
+  "490754": {
+    "id": 490754,
+    "aegisName": "Poenitentia_Ring_IG",
+    "name": "Poenitentia Ring(Imperial Guard) [1]",
+    "unidName": "Poenitentia Ring(Imperial Guard)",
+    "resName": "Into_The_Abyss",
+    "description": "MATK + 100\nลดระยะเวลาร่ายแบบแปรผัน 15%\nลด Delay หลังใช้สกิล 10%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Cross Rain 25%\nเพิ่ม Damage สกิล Genesis Ray 35%\n\nเมื่อสวมใส่ร่วมกับ Poenitentia Gladius ที่มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nลด Cooldown สกิล Cross Rain 2 วินาที\nเมื่อใช้สกิล Genesis Ray มีโอกาส 30% ที่จะใช้สกิล Cross Rain Lv.10 ใส่ตัวเองโดยอัตโนมัติ\nประเภท : ^777777Accessory(Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "vct": [
+        "15"
+      ],
+      "acd": [
+        "10"
+      ],
+      "m_size_all": [
+        "15"
+      ],
+      "Cross Rain": [
+        "25"
+      ],
+      "Genesis Ray": [
+        "35"
+      ],
+      "cd__Cross Rain": [
+        "EQUIP[Poenitentia Gladius]REFINE[weapon==10]===2"
+      ]
+    }
+  },
+  "490755": {
+    "id": 490755,
+    "aegisName": "Lumora_Ring_SOA",
+    "name": "Lumora of Spirit Ring [1]",
+    "unidName": "Lumora of Spirit Ring",
+    "resName": "RingofVenus",
+    "description": "วงแหวนแห่งวิญญาณ ผู้ครอบครองจะสามารถป้องกันและปัดเป่าวิญญาณร้ายจากทุก ๆ สารทิศ\nMATK + 100\nลด Cooldown สกิล Soul Gathering 0.75 วินาที\nเมื่อใช้งานสกิล Soul Gathering จะใช้งานสกิล Exorcism of Malicious Soul เลเวล 5 โดยอัตโนมัติ\nSPL + 10\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Vivatus Fides Dark Wand,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Exorcism of Malicious Soul 10%\n\nเมื่อ Vivatus Fides Dark Wand มีค่าอัพเกรดตั้งแต่ 10 ขึ้นไป, MATK + 15% \nเพิ่ม Damage สกิล Exorcism of Malicious Soul 10%\n\nเมื่อ Vivatus Fides Dark Wand  มีขั้นเกรดตั้งแต่ C ขึ้นไป, S.MATK + 5, \nเพิ่ม Damage สกิล Exorcism of Malicious Soul 15%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "SoulAscetic"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "cd__Soul Gathering": [
+        "0.75"
+      ],
+      "spl": [
+        "10"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "matkPercent": [
+        "EQUIP[Vivatus Fides Dark Wand]REFINE[weapon==10]===15"
+      ],
+      "Exorcism of Malicious Soul": [
+        "EQUIP[Vivatus Fides Dark Wand]===10",
+        "EQUIP[Vivatus Fides Dark Wand]REFINE[weapon==10]===10",
+        "EQUIP[Vivatus Fides Dark Wand]GRADE[weapon==C]===15"
+      ],
+      "sMatk": [
+        "EQUIP[Vivatus Fides Dark Wand]GRADE[weapon==C]===5"
+      ],
+      "m_size_all": [
+        "EQUIP[Vivatus Fides Dark Wand]===15"
+      ]
+    }
+  },
+  "490756": {
+    "id": 490756,
+    "aegisName": "Aeternis_Ring_SOA",
+    "name": "Aeternis of Spirit Ring [1]",
+    "unidName": "Aeternis of Spirit Ring",
+    "resName": "RingofJupiter",
+    "description": "วงแหวนแห่งวิญญาณนิรันดร์ ผู้ครอบครองจะสามารถป้องกันและปัดเป่าวิญญาณร้ายจากทุก ๆ สารทิศ\nMATK + 50\nลดระยะเวลาร่ายแบบแปรผัน 15%\nSPL + 5\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Helm of Faith II (Soul Reaper),\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Exorcism of Malicious Soul 5% \n\nเมื่อ Helm of Faith II (Soul Reaper) มีค่าอัพเกรดตั้งแต่ 10 ขึ้นไป,\nMATK + 10% \nเพิ่ม Damage สกิล Exorcism of Malicious Soul 10%\n\nเมื่อ Helm of Faith II (Soul Reaper) มีขั้นเกรดตั้งแต่ C ขึ้นไป, S.MATK + 5\nเพิ่ม Damage สกิล Exorcism of Malicious Soul 10%\nประเภท : ^777777Accessory(Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "SoulAscetic"
+    ],
+    "script": {
+      "matk": [
+        "50"
+      ],
+      "vct": [
+        "15"
+      ],
+      "spl": [
+        "5"
+      ],
+      "m_class_all": [
+        "10"
+      ],
+      "matkPercent": [
+        "EQUIP[Helm of Faith II (Soul Reaper)]REFINE[headUpper==10]===10"
+      ],
+      "Exorcism of Malicious Soul": [
+        "EQUIP[Helm of Faith II (Soul Reaper)]===5",
+        "EQUIP[Helm of Faith II (Soul Reaper)]REFINE[headUpper==10]===10",
+        "EQUIP[Helm of Faith II (Soul Reaper)]GRADE[headUpper==C]===10"
+      ],
+      "sMatk": [
+        "EQUIP[Helm of Faith II (Soul Reaper)]GRADE[headUpper==C]===5"
+      ],
+      "m_size_all": [
+        "EQUIP[Helm of Faith II (Soul Reaper)]===15"
+      ]
+    }
+  },
+  "490757": {
+    "id": 490757,
+    "aegisName": "Lumora_Ring_WH",
+    "name": "Lumora of Gale Ring [1]",
+    "unidName": "Lumora of Gale Ring",
+    "resName": "RingofVenus",
+    "description": "วงแหวนแห่งคมพายุ ผู้ครอบครองจะปลดปล่อยสายลม เชือดเฉือนทุก ๆ สิ่งในรัศมีให้ราบเป็นหน้ากลอง\nATK + 100\nลด Cooldown สกิล Gale Storm 1.3 วินาที\nCON + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Vivatus Fides Ballista,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Gale Storm 10%\n\nเมื่อ Vivatus Fides Ballista มีค่าอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nเพิ่ม Damage สกิล Gale Storm 10%\n\nเมื่อ Vivatus Fides Ballista  มีขั้นเกรดตั้งแต่ C ขึ้นไป, P.ATK + 5\nเพิ่ม Damage สกิล Gale Storm 15%\nประเภท : ^777777Accessory(Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Wind Hawk^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "cd__Gale Storm": [
+        "1.3"
+      ],
+      "con": [
+        "15"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_race_all": [
+        "EQUIP[Vivatus Fides Ballista]REFINE[weapon==10]===15"
+      ],
+      "Gale Storm": [
+        "EQUIP[Vivatus Fides Ballista]===10",
+        "EQUIP[Vivatus Fides Ballista]REFINE[weapon==10]===10",
+        "EQUIP[Vivatus Fides Ballista]GRADE[weapon==C]===15"
+      ],
+      "pAtk": [
+        "EQUIP[Vivatus Fides Ballista]GRADE[weapon==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Vivatus Fides Ballista]===15"
+      ]
+    }
+  },
+  "490758": {
+    "id": 490758,
+    "aegisName": "Aeternis_Ring_WH",
+    "name": "Aeternis of Gale Ring [1]",
+    "unidName": "Aeternis of Gale Ring",
+    "resName": "RingofJupiter",
+    "description": "วงแหวนแห่งคมพายุนิรันดร์ ผู้ครอบครองจะปลดปล่อยสายลม เชือดเฉือนทุก ๆ สิ่งในรัศมีให้ราบเป็นหน้ากลอง\nATK + 50\nลดปริมาณการใช้ SP 15% \nCON + 10\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 10%\n\nเมื่อสวมใส่ร่วมกับ Helm of Faith I (Ranger), \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเพิ่ม Damage สกิล Gale Storm 5%\n\nเมื่อ Helm of Faith I (Ranger) มีค่าอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\nเพิ่ม Damage สกิล Gale Storm 10%\n\nเมื่อ Helm of Faith I (Ranger) มีขั้นเกรดตั้งแต่ C ขึ้นไป, P.ATK + 5\nเพิ่ม Damage สกิล Gale Storm 10%\nประเภท : ^777777Accessory(Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Wind Hawk^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "atk": [
+        "50"
+      ],
+      "con": [
+        "10"
+      ],
+      "p_class_all": [
+        "10"
+      ],
+      "p_element_all": [
+        "EQUIP[Helm of Faith (Ranger)]REFINE[headUpper==10]===15"
+      ],
+      "Gale Storm": [
+        "EQUIP[Helm of Faith (Ranger)]===5",
+        "EQUIP[Helm of Faith (Ranger)]REFINE[headUpper==10]===10",
+        "EQUIP[Helm of Faith (Ranger)]GRADE[headUpper==C]===10"
+      ],
+      "pAtk": [
+        "EQUIP[Helm of Faith (Ranger)]GRADE[headUpper==C]===5"
+      ],
+      "p_size_all": [
+        "EQUIP[Helm of Faith (Ranger)]===15"
       ]
     }
   },
