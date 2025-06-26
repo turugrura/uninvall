@@ -302,6 +302,9 @@ const MAP_ATTR = {
 	'magical damage against ghost': 'm_element_ghost',
 	'magical damage against ghost property': 'm_element_ghost',
 
+	'เพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า': 'p_pene_race_all',
+	'เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า': 'm_pene_race_all',
+
 	'ลด Delay หลังใช้สกิล': 'acd',
 	'ลด Delay หลังใช้สกิลลง': 'acd',
 	'ลด Delay ในการร่าย': 'acd',
