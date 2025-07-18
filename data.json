@@ -8273,6 +8273,30 @@
       ]
     }
   },
+  "4589": {
+    "id": 4589,
+    "aegisName": "Jejeling_Card",
+    "name": "Jejeling Card",
+    "unidName": "Jejeling Card",
+    "resName": "이름없는카드",
+    "description": "ทุกๆ Base VIT 10 จะเพิ่ม MHP ครั้งละ 200\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Richness",
+    "script": {
+      "hp": [
+        "SUM[vit==10]---200"
+      ]
+    }
+  },
   "4593": {
     "id": 4593,
     "aegisName": "Menblatt_Card",
@@ -60132,6 +60156,50 @@
       ]
     }
   },
+  "28942": {
+    "id": 28942,
+    "aegisName": "Bloody_Knight_Shield",
+    "name": "Cursed Knight's Shield [1]",
+    "unidName": "Shield",
+    "resName": "Cursed_Knight_Shield",
+    "description": "โล่ของทหารม้าต้องคำสาปพกติดตัวไปไหนมาไหนเสมอ\nว่ากันว่าหากล้างคำสาปได้ จะได้รับพลังธรรมชาติอันแข็งแกร่ง\n^ffffff_^000000 \nเพิ่ม ASPD 10%\nATK + 3%, MATK + 3%.\nลดความเสียหายที่ได้รับจากศัตรูทุกธาตุ 7%\nเมื่อถูกโจมตี มีโอกาสเล็กน้อย (1%) ที่จะฟื้นฟู 25 SP ทุกๆ 1 วินาที เป็นเวลา 5 วินาที\nเมื่อโจมตีทางกายภาพ/ทางเวทย์ มีโอกาสเล็กน้อย (1% )ที่จะฟื้นฟู 150 HP ทุกๆ 1 วินาที เป็นเวลา 5 วินาที\nเมื่ออัพเกรดถึงขั้น 7 ขึ้นไป ATK + 10, MATK + 10.\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 1.\nเมื่ออัพเกรดถึงขั้น 12 ลดดีเลย์หลังใช้สกิล 3%\nประเภท : ^777777Shield^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777780^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 80,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspdPercent": [
+        "10"
+      ],
+      "atkPercent": [
+        "3"
+      ],
+      "matkPercent": [
+        "3"
+      ],
+      "atk": [
+        "7===10"
+      ],
+      "matk": [
+        "7===10"
+      ],
+      "aspd": [
+        "9===1"
+      ],
+      "acd": [
+        "12===3"
+      ]
+    }
+  },
   "28945": {
     "id": 28945,
     "aegisName": "Bloody_Knight_Shield_",
@@ -80963,10 +81031,10 @@
   "300618": {
     "id": 300618,
     "aegisName": "CLB_CP_PD_Card",
-    "name": "Kung Fu Panda Collabo Card",
-    "unidName": "Kung Fu Panda Collabo Card",
+    "name": "Kung Fu Panda Collaboration Card",
+    "unidName": "Kung Fu Panda Collaboration Card",
     "resName": "이름없는카드",
-    "description": "^4D4DFF[RO x Kung Fu Panda Collaboration]^000000\r\n\r\nFor every 10 Base Level, MaxHP + 200, MaxSP + 50, DEF + 5, MDEF + 2.\r\n(Up to Base Level 200).\r\n\r\nClass : ^777777Card^000000\r\nLocation : ^777777Garment^000000\r\nWeight : ^7777771^000000",
+    "description": "ทุก ๆ Base Lv.10, MHP + 200, MSP + 50, DEF + 5, MDEF + 2\n(เพิ่มขึ้นไปได้สูงสุด Base Lv.200)\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
     "slots": 0,
     "itemTypeId": 6,
     "itemSubTypeId": 0,
@@ -149945,6 +150013,102 @@
       ]
     }
   },
+  "400745": {
+    "id": 400745,
+    "aegisName": "C_CLB_KP_DC",
+    "name": "Costume The Dragon Warrior Hat",
+    "unidName": "Cap",
+    "resName": "C_CLB_KP_DC",
+    "description": "เมื่อสวมหมวกของนักรบมังกร จะสามารถปลดปล่อยออร่ารูปมังกรที่ Po และเหล่านักรบมังกรใช้ไม้เท้าควบคุมได้\nแต่ไม่สามารถใช้พลังของนักรบมังกรได้จริง ๆ นะ\n \n^CC3D3D[ความสามารถช่วงระยะเวลากิจกรรม]^000000\nATK, MATK + 100\nCritical Damage + 30%\nCRI Rate + 30\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบออกหลังสิ้นสุดระยะเวลากิจกรรม)^000000\n \nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 519,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Upper",
+    "compositionPos": null,
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "matk": [
+        "100"
+      ],
+      "criDmg": [
+        "30"
+      ],
+      "cri": [
+        "30"
+      ]
+    }
+  },
+  "400746": {
+    "id": 400746,
+    "aegisName": "C_CLB_KP_Ta",
+    "name": "Costume Tigress Doll",
+    "unidName": "Cap",
+    "resName": "C_CLB_KP_Ta",
+    "description": "ตุ๊กตาที่ทำขึ้นมาเลียนแบบเสือจากหนึ่งในห้าผู้พิชิตในตำนาน ผู้เป็นศิษย์ของ Shifu\n \n^CC3D3D[ความสามารถช่วงระยะเวลากิจกรรม]^000000\nATK, MATK + 100\nMaxHP, MaxSP + 30%\nลดระยะเวลาร่ายแบบแปรผัน 30%\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบออกหลังสิ้นสุดระยะเวลากิจกรรม)^000000\n \nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 519,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Upper",
+    "compositionPos": null,
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "matk": [
+        "100"
+      ],
+      "hpPercent": [
+        "30"
+      ],
+      "spPercent": [
+        "30"
+      ],
+      "vct": [
+        "30"
+      ]
+    }
+  },
+  "400747": {
+    "id": 400747,
+    "aegisName": "C_CLB_KP_SF",
+    "name": "Costume Shifu Doll",
+    "unidName": "Cap",
+    "resName": "C_CLB_KP_SF",
+    "description": "ตุ๊กตาที่ทำขึ้นมาเลียนแบบอาจารย์ Shifu ขนของมันนุ่มฟูน่าหลงใหล\n \n^CC3D3D[ความสามารถช่วงระยะเวลากิจกรรม]^000000\nATK, MATK + 100\nลดปริมาณ SP ที่ใช้เมื่อใช้สกิล 30%\nลด Delay หลังใช้สกิล 30%\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบออกหลังสิ้นสุดระยะเวลากิจกรรม)^000000\n \nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 519,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Upper",
+    "compositionPos": null,
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "30"
+      ]
+    }
+  },
   "400791": {
     "id": 400791,
     "aegisName": "Evil_M_Hat_TH_LT",
@@ -151072,6 +151236,50 @@
       ],
       "pAtk": [
         "GRADE[me==C]===2"
+      ]
+    }
+  },
+  "400947": {
+    "id": 400947,
+    "aegisName": null,
+    "name": "Dragon Warrior Hat [1]",
+    "unidName": "Cap",
+    "resName": "C_CLB_KP_DC",
+    "description": "ทุก ๆ การอัพเกรด 2 ขั้น, MATK + 10\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 20\n\nเมื่ออัพเกรดถึงขั้น 7,\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\n\nเมื่ออัพเกรดถึงขั้น 10,\nลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n\nเมื่อสวมใส่ร่วมกับ Dragon Warrior Cloak,\nเมื่อ Base Lv. 200 หรือน้อยกว่า,\nสามารถใช้งาน Ignition Break Lv.5 ได้\nลด Cooldown สกิล Ignition Break 2 วินาที\n\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 16 ขึ้นไป,\nเพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ 10%\n\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูทุกขนาด 10%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777740^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 40,
+    "requiredLevel": 1,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "2---10"
+      ],
+      "atk": [
+        "3---20"
+      ],
+      "melee": [
+        "7===10"
+      ],
+      "range": [
+        "7===10"
+      ],
+      "m_my_element_all": [
+        "7===15"
+      ],
+      "fct": [
+        "10===0.2"
+      ],
+      "cd__Ignition Break": [
+        "EQUIP[Dragon Warrior Cloak]LEVEL[1-200]===2"
       ]
     }
   },
@@ -153337,6 +153545,35 @@
       ]
     }
   },
+  "420423": {
+    "id": 420423,
+    "aegisName": "C_InkPainting_Day",
+    "name": "Costume Ink Painting (Day)",
+    "unidName": "Ribbon",
+    "resName": "C_InkPainting_Day",
+    "description": "ภาพวาดหมึกจีนที่ถ่ายทอดแสงกลางวันอย่างละเมียดละไม\nเพียงจ้องมอง ก็รู้สึกถึงความสงบร่มเย็นในใจ\n\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%\nPOW, SPL, CON, WIS, STA, CRT + 10\n(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังสิ้นสุดระยะเวลากิจกรรม)\n\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 521,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "script": {
+      "p_size_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "15"
+      ],
+      "allTrait": [
+        "10"
+      ]
+    }
+  },
   "420431": {
     "id": 420431,
     "aegisName": "Sprit_Of_World_LT",
@@ -153487,6 +153724,32 @@
       ],
       "m_pene_race_all": [
         "EQUIP[Gray Wolf Robe&&Gray Wolf Manteau||Gray Wolf Muffler]REFINE[armor,garment==21]===30"
+      ]
+    }
+  },
+  "420516": {
+    "id": 420516,
+    "aegisName": null,
+    "name": "Costume Forest Friends",
+    "unidName": "Ribbon",
+    "resName": "C_Forest_Friends",
+    "description": "เหล่าเพื่อนพ้องในพงไพรที่จู่ ๆ ก็ปรากฎตัวขณะที่นั่งหรือนอนพักอยู่ในป่า\nพวกมันจะทำคุณจะไม่มีทางรู้สึกเหงาอีกต่อไป\nเพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูประเภทบอส 20%\nสามารถใช้งานสกิล Competentia Lv.5 ได้\n(ความสามารถดังกล่าวจะถูกลบออกหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 7 สิงหาคม 2568)\n^ffffff^4D4DFF[Designer Heidam]^000000^000000\n^b4b4b4สามารถแลกเปลี่ยนเป็น Costume Enchant Stone Box 26 ได้^000000\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 521,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Garment",
+    "compositionPos": null,
+    "script": {
+      "p_class_boss": [
+        "20"
+      ],
+      "m_class_boss": [
+        "20"
       ]
     }
   },
@@ -166675,6 +166938,113 @@
       ]
     }
   },
+  "470247": {
+    "id": 470247,
+    "aegisName": "Mid_Knight_Shoes",
+    "name": "Midgard Knight Shoes [1]",
+    "unidName": "Shoes",
+    "resName": "HalfBloodPrincess_Shoes",
+    "description": "ทุก ๆ การอัพเกรด 2 ขั้น, ATK, MATK+10.\nทุก ๆ การอัพเกรด 3 ขั้น, SPL, POW, CON+1.\nเมื่ออัพเกรดถึงขั้น 7, ATK, MATK+7%.\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\nเมื่ออัพเกรดถึงขั้น 13, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Bloody Knight's Shield, Cursed Knight's Shield, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูประเภท Boss 15%,\nเมื่อ Shoes มีขั้นอัพเกรด 13, เมื่อโจมตีทางกาย/เวทมนตร์ มีโอกาส 5% ที่จะ STR, INT, DEX+150 เป็นเวลา 10 วินาที\n\nเมื่อสวมใส่ร่วมกับ Purified Knight's Shield, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูประเภท Boss 30%,\nเมื่อ Shoes มีขั้นอัพเกรด 13, เมื่อโจมตีทางกาย/เวทมนตร์ มีโอกาส 5% ที่จะ STR, INT, DEX +200 เป็นเวลา 10 วินาที\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] RES+50, MRES+50.\n[Grade C] เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 8%\n[Grade B] P.ATK, S.MATK+7.\n[Grade A] เมื่ออัพเกรดถึงขั้น 13 ลดระยะเวลาร่ายแบบคงที่ 0.7 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 20,
+    "weight": 100,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "matk": [
+        "2---10"
+      ],
+      "spl": [
+        "3---1"
+      ],
+      "pow": [
+        "3---1"
+      ],
+      "con": [
+        "3---1"
+      ],
+      "atkPercent": [
+        "7===7"
+      ],
+      "matkPercent": [
+        "7===7"
+      ],
+      "fct": [
+        "9===0.3",
+        "GRADE[me==A]13===0.7"
+      ],
+      "melee": [
+        "11===10"
+      ],
+      "range": [
+        "11===10"
+      ],
+      "m_my_element_all": [
+        "11===10"
+      ],
+      "p_size_all": [
+        "13===10"
+      ],
+      "m_size_all": [
+        "13===10"
+      ],
+      "p_class_boss": [
+        "EQUIP[Bloody Knight's Shield]===15",
+        "EQUIP[Cursed Knight's Shield]===15",
+        "EQUIP[Purified Knight's Shield]===30"
+      ],
+      "m_class_boss": [
+        "EQUIP[Bloody Knight's Shield]===15",
+        "EQUIP[Cursed Knight's Shield]===15",
+        "EQUIP[Purified Knight's Shield]===30"
+      ],
+      "chance__str": [
+        "EQUIP[Bloody Knight's Shield]13===150",
+        "EQUIP[Cursed Knight's Shield]13===150",
+        "EQUIP[Purified Knight's Shield]13===200"
+      ],
+      "chance__int": [
+        "EQUIP[Bloody Knight's Shield]13===150",
+        "EQUIP[Cursed Knight's Shield]13===150",
+        "EQUIP[Purified Knight's Shield]13===200"
+      ],
+      "chance__dex": [
+        "EQUIP[Bloody Knight's Shield]13===150",
+        "EQUIP[Cursed Knight's Shield]13===150",
+        "EQUIP[Purified Knight's Shield]13===200"
+      ],
+      "res": [
+        "GRADE[me==D]===50"
+      ],
+      "mres": [
+        "GRADE[me==D]===50"
+      ],
+      "p_element_all": [
+        "GRADE[me==C]===8"
+      ],
+      "m_element_all": [
+        "GRADE[me==C]===8"
+      ],
+      "pAtk": [
+        "GRADE[me==B]===7"
+      ],
+      "sMatk": [
+        "GRADE[me==B]===7"
+      ]
+    }
+  },
   "470248": {
     "id": 470248,
     "aegisName": null,
@@ -170183,6 +170553,96 @@
       ]
     }
   },
+  "480306": {
+    "id": 480306,
+    "aegisName": "Dual_SW_Cape",
+    "name": "Dual Shadow World Cloak [1]",
+    "unidName": "Hood",
+    "resName": "Dual_SW_Cape",
+    "description": "เสื้อคลุมแห่งจิตสองภพ\nผู้สวมใส่จะสัมผัสได้ถึงพลังลึกลับที่ถูกผนึกไว้ในโลกกระจก... พลังที่ยังคงกระซิบเรียกจากอีกฟากของความจริง\n\nAll State + 5\nทุก ๆ การอัพเกรด 2 ขั้น, All State + 1\nทุก ๆ การอัพเกรด 3 ขั้น, ATK + 3, ATK + 1%, MATK + 3, MATK + 1%\nทุก ๆ การอัพเกรด 4 ขั้น, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 3%\nเมื่ออัพเกรดถึงขั้น 9, ATK + 3%, MATK + 3%, ลด Delay หลังใช้สกิล 5%, ลดระยะเวลาร่ายแบบแปรผัน 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 25, ATK + 7%, MATK + 25, MATK + 7%, ASPD + 5%\nเมื่อใช้งานร่วมกับ Petal Card, POW+4, Critical Damage + 20%\nเมื่อใช้งานร่วมกับ Menblatt Card, CRT + 4, เพิ่ม Damage ระยะไกล  15%.\nเมื่อใช้งานร่วมกับ Cenere Card, CON + 4, ASPD + 15%\nเมื่อใช้งานร่วมกับ Antique Book Card, SPL + 4, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%\nเมื่อใช้งานร่วมกับ Wakwak Card, STA + 4, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\nเมื่อใช้งานร่วมกับ Jejeling Card, WIS + 4, MHP + 20%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777730^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 30,
+    "weight": 20,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "allStatus": [
+        "5",
+        "2---1"
+      ],
+      "atk": [
+        "3---3",
+        "11===25"
+      ],
+      "atkPercent": [
+        "3---1",
+        "9===3",
+        "11===7"
+      ],
+      "matk": [
+        "3---3",
+        "11===25"
+      ],
+      "matkPercent": [
+        "3---1",
+        "9===3",
+        "11===7"
+      ],
+      "p_element_all": [
+        "4---3",
+        "EQUIP[Wakwak Card]===15"
+      ],
+      "m_element_all": [
+        "4---3",
+        "EQUIP[Antique Book Card]===15"
+      ],
+      "acd": [
+        "9===5"
+      ],
+      "vct": [
+        "9===5"
+      ],
+      "aspdPercent": [
+        "11===5",
+        "EQUIP[Cenere Card]===15"
+      ],
+      "pow": [
+        "EQUIP[Petal Card]===4"
+      ],
+      "criDmg": [
+        "EQUIP[Petal Card]===20"
+      ],
+      "crt": [
+        "EQUIP[Menblatt Card]===4"
+      ],
+      "range": [
+        "EQUIP[Menblatt Card]===15"
+      ],
+      "con": [
+        "EQUIP[Cenere Card]===4"
+      ],
+      "spl": [
+        "EQUIP[Antique Book Card]===4"
+      ],
+      "sta": [
+        "EQUIP[Wakwak Card]===4"
+      ],
+      "wis": [
+        "EQUIP[Jejeling Card]===4"
+      ],
+      "hpPercent": [
+        "EQUIP[Jejeling Card]===20"
+      ]
+    }
+  },
   "480307": {
     "id": 480307,
     "aegisName": null,
@@ -172303,6 +172763,38 @@
       ]
     }
   },
+  "480517": {
+    "id": 480517,
+    "aegisName": "C_CLB_KP_DMS",
+    "name": "Costume The Dragon Warrior's Manteua & Staff",
+    "unidName": "Hood",
+    "resName": "C_CLB_KP_DMS",
+    "description": "ผ้าคลุมสีแดงที่เป็นผ้าที่ Po สวมใส่เมื่อครั้งเดินทางไปทั่วโลก\nสัมผัสได้ถึงความสง่างามและน่าเกรงขามของนักรบมังกร\n \n^CC3D3D[ความสามารถช่วงระยะเวลากิจกรรม]^000000\nP.ATK, S.MATK + 20\nRES, MRES + 100\n\nเมื่อสวมใส่ Costume The Dragon Warrior Hat หรือ Costume Tigress Doll หรือ Costume Shifu Doll,\nEXP + 20%\nDROP + 20%\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบออกหลังสิ้นสุดระยะเวลากิจกรรม)^000000\n \nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Garment^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 522,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Garment",
+    "compositionPos": null,
+    "script": {
+      "pAtk": [
+        "20"
+      ],
+      "sMatk": [
+        "20"
+      ],
+      "res": [
+        "100"
+      ],
+      "mres": [
+        "100"
+      ]
+    }
+  },
   "480533": {
     "id": 480533,
     "aegisName": null,
@@ -172744,6 +173236,65 @@
       ],
       "m_race_all": [
         "GRADE[me==A]===15"
+      ]
+    }
+  },
+  "480614": {
+    "id": 480614,
+    "aegisName": null,
+    "name": "Dragon Warrior Cloak [1]",
+    "unidName": "Hood",
+    "resName": "C_CLB_KP_DMS",
+    "description": "ทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 15\nทุก ๆ การอัพเกรด 3 ขั้น, ลดระยะเวลาร่ายแบบแปรผัน 3%\nทุก ๆ การอัพเกรด 4 ขั้น, ลด Delay หลังใช้สกิล 4%\n\nเมื่ออัพเกรดถึงขั้น 7,\nASPD + 10%\nATK/MATK + 10%\n\nเมื่ออัพเกรดถึงขั้น 10,\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\n\nเมื่อสวมใส่ร่วมกับ Dragon Warrior Hat,\nสามารถใช้งาน Greed Lv.1 ได้\n\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 16 ขึ้นไป,\nเพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ 10%\n\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 20 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพและเวทมนตร์ต่อศัตรูทุกขนาด 10%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777730^000000\nน้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 30,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "2---15"
+      ],
+      "matk": [
+        "2---15"
+      ],
+      "vct": [
+        "3---3"
+      ],
+      "acd": [
+        "4---4"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "atkPercent": [
+        "7===10"
+      ],
+      "matkPercent": [
+        "7===10"
+      ],
+      "melee": [
+        "10===10"
+      ],
+      "range": [
+        "10===10"
+      ],
+      "m_my_element_all": [
+        "10===10"
+      ],
+      "p_size_all": [
+        "EQUIP[Dragon Warrior Hat]REFINE[headUpper,garment==20]===10"
+      ],
+      "m_size_all": [
+        "EQUIP[Dragon Warrior Hat]REFINE[headUpper,garment==20]===10"
       ]
     }
   },
@@ -180447,6 +180998,69 @@
       ],
       "cri": [
         "LEARN_SKILL[Death Bound==10]15"
+      ]
+    }
+  },
+  "490552": {
+    "id": 490552,
+    "aegisName": "Nebula_Nec",
+    "name": "Nebula Pendant [1]",
+    "unidName": "Clip",
+    "resName": "Signet_Of_Star",
+    "description": "ATK, MATK + 10%\nลด Delay หลังใช้สกิล 8%\n\nเมื่อสวมใส่ร่วมกับ Nebula Armor of Power,\nCritical Damage + 35%,\nเมื่อ Armor เป็น Grade C, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 12%\nเมื่อ Armor เป็น Grade A, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Armor of Stamina,\nลด Damage ทางกายภาพระยะไกลที่ได้รับ 8%\nเมื่อ Armor เป็น Grade C, ลด Damage ทางกายภาพระยะไกลที่ได้รับลงอีก 12%\nเมื่อ Armor เป็น Grade A, ลด Damage ทางกายภาพระยะไกลที่ได้รับลงอีก 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Suit of Concentration,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 12%\nเมื่อ Armor เป็น Grade C, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 12%\nเมื่อ Armor เป็น Grade A, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Suit of Creative,\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%\nเมื่อ Armor เป็น Grade C, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 12%\nเมื่อ Armor เป็น Grade A, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Robe of Wisdom,\nลด Damage ทางกายภาพระยะใกล้ที่ได้รับ 8%\nเมื่อ Armor เป็น Grade C, ลด Damage ทางกายภาพระยะใกล้ที่ได้รับลงอีก 12%\nเมื่อ Armor เป็น Grade A, ลด Damage ทางกายภาพระยะใกล้ที่ได้รับลงอีก 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Robe of Spell,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 12%\nเมื่อ Armor เป็น Grade C, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 12%\nเมื่อ Armor เป็น Grade A, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777771^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "matkPercent": [
+        "10"
+      ],
+      "acd": [
+        "8"
+      ],
+      "criDmg": [
+        "EQUIP[Nebula Armor of Power]===35"
+      ],
+      "p_element_all": [
+        "EQUIP[Nebula Armor of Power]GRADE[armor==C]===12",
+        "EQUIP[Nebula Suit of Concentration]GRADE[armor==C]===12",
+        "EQUIP[Nebula Suit of Creative]GRADE[armor==C]===12"
+      ],
+      "p_race_all": [
+        "EQUIP[Nebula Armor of Power]GRADE[armor==A]===15",
+        "EQUIP[Nebula Suit of Concentration]GRADE[armor==A]===15",
+        "EQUIP[Nebula Suit of Creative]GRADE[armor==A]===15"
+      ],
+      "p_size_all": [
+        "EQUIP[Nebula Suit of Concentration]===12"
+      ],
+      "melee": [
+        "EQUIP[Nebula Suit of Creative]===15"
+      ],
+      "range": [
+        "EQUIP[Nebula Suit of Creative]===15"
+      ],
+      "m_size_all": [
+        "EQUIP[Nebula Robe of Spell]===12"
+      ],
+      "m_element_all": [
+        "EQUIP[Nebula Robe of Spell]GRADE[armor==C]===12"
+      ],
+      "m_race_all": [
+        "EQUIP[Nebula Robe of Spell]GRADE[armor==A]===15"
       ]
     }
   },
