@@ -286,6 +286,7 @@ export class RoScriptTranslatorService {
 		const currentData = JSON.parse(fileContent) as Record<number, ItemModel>;
 		for (const updatedItem of updatedItems) {
 			const bkItemTypeId = currentData[updatedItem.id]?.itemTypeId;
+			const bkItemLevel = currentData[updatedItem.id]?.itemLevel;
 			const bkItemSubTypeId = currentData[updatedItem.id]?.itemSubTypeId;
 			const bkAegis = currentData[updatedItem.id]?.aegisName;
 			const bkUsable = currentData[updatedItem.id]?.usableClass;
@@ -315,6 +316,9 @@ export class RoScriptTranslatorService {
 			}
 			if (bkItemSubTypeId) {
 				currentData[updatedItem.id].itemSubTypeId = bkItemSubTypeId;
+			}
+			if (bkItemLevel) {
+				currentData[updatedItem.id].itemLevel = bkItemLevel;
 			}
 			if (bkAegis) {
 				currentData[updatedItem.id].aegisName = bkAegis;
