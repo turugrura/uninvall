@@ -28821,6 +28821,62 @@
       ]
     }
   },
+  "21016": {
+    "id": 21016,
+    "aegisName": "Sinister_Twohand_Sword",
+    "name": "Vicious Mind Two-Handed Sword [1]",
+    "unidName": "Two-Handed Sword",
+    "resName": "사념의투핸드소드",
+    "description": "ดาบสองมือที่เต็มไปด้วยความคิดมุ่งร้าย\nเพิ่ม ATK เท่ากับ (ระดับ Refine*ระดับ Refine) (สามารถ Refine ได้ถึง 15)\nเพิ่ม MATK เท่ากับ (ระดับ Refine*ระดับ Refine)/2 (สามารถ Refine ได้ถึง 15)\nประเภท : ^777777Two-Handed Sword^000000 โจมตี : ^777777220^000000\nน้ำหนัก : ^777777220^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777160^000000\nติดตั้ง : ^777777อาชีพ Swordman^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 220,
+    "defense": null,
+    "weight": 220,
+    "requiredLevel": 160,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "atk": [
+        "1===1",
+        "2===3",
+        "3===5",
+        "4===7",
+        "5===9",
+        "6===11",
+        "7===13",
+        "8===15",
+        "9===17",
+        "10===19",
+        "11===21",
+        "12===23",
+        "13===25",
+        "14===27",
+        "15===29"
+      ],
+      "matk": [
+        "2===2",
+        "3===2",
+        "4===4",
+        "5===4",
+        "6===6",
+        "7===6",
+        "8===8",
+        "9===8",
+        "10===10",
+        "11===10",
+        "12===12",
+        "13===12",
+        "14===14",
+        "15===14"
+      ]
+    }
+  },
   "21018": {
     "id": 21018,
     "aegisName": "Two_Hand_Spear_170",
@@ -146528,9 +146584,9 @@
     "id": 400374,
     "aegisName": "GoodnEvil_Circlet_DK",
     "name": "Crown of Good and Evil (Dragon Knight) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee and long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces global cooldown by 5%. increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Execution Great Sword,\r\nincreases Hack and Slasher damage by 4% and Storm Slash damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Hack and Slasher damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Hack and Slasher damage by additional 15% and Storm Slash damage by additional 20%.\r\n\r\nWhen equipped with Jupiter Spear,\r\nincreases Dragonic Breath damage by 4% and Madness Crusher damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Dragonic Breath damage by additional 10%,\r\nwhen equipped with Good Spell, increases Dragonic Breath damage by additional 15% and Madness Crusher damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Dragon Knight^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลด Delay หลังใช้สกิล 5%, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Execution Great Sword, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Hack and Slasher 4%, เพิ่ม Damage สกิล Storm Slash 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Hack and Slasher ขึ้นอีก 10%,\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Hack and Slasher ขึ้นอีก 15%, เพิ่ม Damage สกิล Storm Slash ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Jupiter Spear, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Dragonic Breath 4%, เพิ่ม Damage สกิล Madness Crusher 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Dragonic Breath ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Dragonic Breath ขึ้นอีก 15%, เพิ่ม Damage สกิล Madness Crusher ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -146616,9 +146672,9 @@
     "id": 400375,
     "aegisName": "GoodnEvil_Circlet_IG",
     "name": "Crown of Good and Evil (Imperial Guard) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical and magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee physical damage and holy property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 5%. increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Devil Guardian Sword,\r\nincreases Cross Rain damage by 4% and holy property magical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Cross Rain damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Cross Rain damage by additional 15% and holy property magical damage by additional 20%.\r\n\r\nWhen equipped with Holy Light Spear,\r\nincreases Overslash damage by 4% and melee physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Overslash damage by additional 10%,\r\nwhen equipped with Good Spell, increases Overslash damage by additional 15% and melee physical damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Imperial Guard^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 7%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 5%, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Devil Guardian Sword, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Cross Rain 4%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Cross Rain ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Cross Rain ขึ้นอีก 15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Holy Light Spear, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Overslash 4%, เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Overslash ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Overslash ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147503,9 +147559,9 @@
     "id": 400385,
     "aegisName": "GoodnEvil_Circlet_TR",
     "name": "Crown of Good and Evil (Trouvere & Troubadour) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical and magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage and all property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, Atk + 5%, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Crime Violin or Crime Whip,\r\nincreases Metallic Fury damage by 4% and Sound Blend damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Metallic Fury damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Metallic Fury damage by additional 15% and Sound Blend damage by additional 20%.\r\n\r\nWhen equipped with Light Power Harp or Light Power Spark,\r\nincreases Rhythm Shooting damage by 4% and Rose Blossom damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Rhythm Shooting damage by additional 10%,\r\nwhen equipped with Good Spell, increases Rhythm Shooting damage by additional 15% and Rose Blossom damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Troubadour, Trouvere^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Crime Violin หรือ Crime Whip, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Metalic Fury 4%, เพิ่ม Damage สกิล Sound Blend 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Metalic Fury ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Metalic Fury ขึ้นอีก 15%, เพิ่ม Damage สกิล Sound Blend ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Light Power Harp หรือ Light Power Spark, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Rhythm Shooting 4%, เพิ่ม Damage สกิล Rose Blossom  5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 15%, เพิ่ม Damage สกิล Rose Blossom ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, CON + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Trouvere, Troubadour^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -156019,6 +156075,41 @@
       ],
       "m_class_boss": [
         "20"
+      ]
+    }
+  },
+  "420601": {
+    "id": 420601,
+    "aegisName": "WL_Security_LT_TH",
+    "name": "Wireless Security Drone-LT",
+    "unidName": "Hat",
+    "resName": "C_Mobile_Pursuit_System",
+    "description": "เมื่อโจมตีทางกายภาพ มีโอกาส 4% ที่จะฟื้นฟู HP 4% ของ Damage ที่ทำ\nเมื่อโจมตีทางกายภาพ มีโอกาส 2% ที่จะฟื้นฟู SP 2% ของ Damage ที่ทำ\n\nเมื่อกำจัดมอนสเตอร์ด้วยการโจมตีทางเวทมนตร์, \nฟื้นฟู HP 600 หน่วย, SP 10 หน่วย\n\nลด Delay หลังใช้สกิล 10%\nเพิ่ม EXP ที่ได้รับจากมอนสเตอร์ 10%\nเพิ่มอัตราดรอปของไอเท็ม 10%\n\nเมื่อสวมใส่ร่วมกับ Automatic Engine Wing C-Type-LT,\nเพิ่ม EXP ที่ได้รับจากมอนสเตอร์ขึ้นอีก 8%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 10%\n\nทุก ๆ การอัพเกรด Garment 1 ขั้น All Status + 1\nทุก ๆ การอัพเกรด Garment 2 ขั้น เพิ่ม EXP ที่ได้รับจากมอนสเตอร์ขึ้นอีก 1%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777745^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 2,
+    "attack": null,
+    "defense": 0,
+    "weight": 45,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "10"
+      ],
+      "allStatus": [
+        "EQUIP[Automatic Engine Wing C-Type-LT]REFINE[garment==1]---1"
+      ],
+      "p_race_all": [
+        "EQUIP[Automatic Engine Wing C-Type-LT]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Automatic Engine Wing C-Type-LT]===10"
       ]
     }
   },
@@ -176699,6 +176790,96 @@
       ]
     }
   },
+  "480647": {
+    "id": 480647,
+    "aegisName": "Auto_E_WingC_TH_LT",
+    "name": "Automatic Engine Wing C-Type-LT [1]",
+    "unidName": "Muffler",
+    "resName": "메카닉윙",
+    "description": "สามารถใช้สกิล Greed Lv.1,\nMaxHP + 5000, MaxSP + 500\n\nทุก ๆ การอัพเกรด 2 ขั้น, ATK/MATK + 20\nทุก ๆ การอัพเกรด 3 ขั้น, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 3%\nเมื่ออัพเกรดถึงขั้น 7, ASPD + 15%, ลดระยะเวลาร่ายแบบแปรผัน 20%, CRI + 20\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกลขึ้นอีก 10%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 12, ลด Delay หลังใช้สกิล 10%, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท 15%\n\n[Option เพิ่มเติมตาม Grade]]\n[Grade D] เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 12%\n[Grade C] ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูทุกขนาด 10%\n[Grade B] P.ATK, S.MATK + 7\n[Grade A] ยกเลิกการลงโทษขนาดของอาวุธ, MATK + 10%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777735^000000\nน้ำหนัก : ^77777780^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": 2,
+    "attack": null,
+    "defense": 35,
+    "weight": 80,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "5000"
+      ],
+      "sp": [
+        "500"
+      ],
+      "atk": [
+        "2---20"
+      ],
+      "matk": [
+        "2---20"
+      ],
+      "p_size_all": [
+        "3---3"
+      ],
+      "m_size_all": [
+        "3---3"
+      ],
+      "aspdPercent": [
+        "7===15"
+      ],
+      "vct": [
+        "7===20"
+      ],
+      "cri": [
+        "7===20"
+      ],
+      "melee": [
+        "9===10",
+        "11===10"
+      ],
+      "range": [
+        "9===10",
+        "11===10"
+      ],
+      "m_my_element_all": [
+        "9===10",
+        "11===10"
+      ],
+      "acd": [
+        "12===10"
+      ],
+      "p_class_all": [
+        "12===15"
+      ],
+      "m_class_all": [
+        "12===15"
+      ],
+      "p_element_all": [
+        "GRADE[me==D]===12"
+      ],
+      "m_element_all": [
+        "GRADE[me==D]===12"
+      ],
+      "pAtk": [
+        "GRADE[me==B]===7"
+      ],
+      "sMatk": [
+        "GRADE[me==B]===7"
+      ],
+      "ignore_size_penalty": [
+        "GRADE[me==A]===1"
+      ],
+      "matkPercent": [
+        "GRADE[me==A]===10"
+      ]
+    }
+  },
   "490004": {
     "id": 490004,
     "aegisName": "Atker_Ring",
@@ -189314,6 +189495,383 @@
       ]
     }
   },
+  "490809": {
+    "id": 490809,
+    "aegisName": "Nebula_Nec_LT_TH",
+    "name": "Nebula Pendant-LT [1]",
+    "unidName": "Clip",
+    "resName": "Signet_Of_Star",
+    "description": "ATK, MATK + 100,\nลด Delay หลังใช้สกิล 10%,\nAll Status + 10\n\nเมื่อสวมใส่ร่วมกับ Nebula Armor of Power,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%\nเมื่อ Armor มี Grade D ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\nเมื่อ Armor มี Grade B ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Armor of Stamina,\nลด Damage ทางกายภาพระยะไกลที่ได้รับ 10%\nเมื่อ Armor มี Grade D ขึ้นไป, ลด Damage ทางกายภาพระยะไกลที่ได้รับลงอีก 15%\nเมื่อ Armor มี Grade B ขึ้นไป, ลด Damage ทางกายภาพระยะไกลที่ได้รับลงอีก 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Suit of Concentration,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเมื่อ Armor มี Grade D ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%\nเมื่อ Armor มี Grade B ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Suit of Creative,\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%,\nเมื่อ Armor มี Grade D ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเมื่อ Armor มี Grade B ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Robe of Wisdom,\nลด Damage ทางกายภาพระยะใกล้ที่ได้รับ 10%\nเมื่อ Armor มี Grade D ขึ้นไป, ลด Damage ทางกายภาพระยะใกล้ที่ได้รับลงอีก 15%\nเมื่อ Armor มี Grade B ขึ้นไป, ลด Damage ทางกายภาพระยะใกล้ที่ได้รับลงอีก 15%\n\nเมื่อสวมใส่ร่วมกับ Nebula Robe of Spell,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเมื่อ Armor มี Grade D ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเมื่อ Armor มี Grade B ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": 2,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "allStatus": [
+        "10"
+      ],
+      "p_size_all": [
+        "EQUIP[Nebula Armor of Power]===15",
+        "EQUIP[Nebula Suit of Concentration]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Nebula Armor of Power]GRADE[armor==D]===15",
+        "EQUIP[Nebula Suit of Concentration]GRADE[armor==D]===15",
+        "EQUIP[Nebula Suit of Creative]GRADE[armor==D]===15"
+      ],
+      "p_race_all": [
+        "EQUIP[Nebula Armor of Power]GRADE[armor==B]===15",
+        "EQUIP[Nebula Suit of Concentration]GRADE[armor==B]===15",
+        "EQUIP[Nebula Suit of Creative]GRADE[armor==B]===15"
+      ],
+      "melee": [
+        "EQUIP[Nebula Suit of Creative]===15"
+      ],
+      "range": [
+        "EQUIP[Nebula Suit of Creative]===15"
+      ],
+      "m_size_all": [
+        "EQUIP[Nebula Robe of Spell]===15"
+      ],
+      "m_element_all": [
+        "EQUIP[Nebula Robe of Spell]GRADE[armor==D]===15"
+      ],
+      "m_race_all": [
+        "EQUIP[Nebula Robe of Spell]GRADE[armor==B]===15"
+      ]
+    }
+  },
+  "490812": {
+    "id": 490812,
+    "aegisName": null,
+    "name": "Ring of Evil (Dragon Knight) [1]",
+    "unidName": "Ring of Evil (Dragon Knight)",
+    "resName": "Scorpio_Ring_J",
+    "description": "ATK +100\nลด Delay หลังใช้สกิล 10%\nPOW +10\nCRI +15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Execution Great Sword, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Hack and Slasher, Storm Slash 15%\n\nเมื่อ Execution Great Sword มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Hack and Slasher, Storm Slash 15%\n\nเมื่อ Execution Great Sword มี Grade C ขึ้นไป, \nCRI +30,\nลด Cooldown สกิล Hack and Slasher 0.5 วินาที,\nลด Cooldown สกิล Storm Slash 0.2 วินาที,\nเพิ่ม Damage สกิล Hack and Slasher, Storm Slash 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nเมื่อใช้งานสกิล Hack and Slasher มีโอกาส 40% ที่จะ Autospell สกิล Storm Slash Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด)\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "cri": [
+        "15",
+        "EQUIP[Execution Great Sword]GRADE[weapon==C]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Execution Great Sword]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Execution Great Sword]REFINE[weapon==10]===15"
+      ],
+      "Hack and Slasher": [
+        "EQUIP[Execution Great Sword]===15",
+        "EQUIP[Execution Great Sword]REFINE[weapon==10]===15",
+        "EQUIP[Execution Great Sword]GRADE[weapon==C]===20"
+      ],
+      "Storm Slash": [
+        "EQUIP[Execution Great Sword]===15",
+        "EQUIP[Execution Great Sword]REFINE[weapon==10]===15",
+        "EQUIP[Execution Great Sword]GRADE[weapon==C]===20"
+      ],
+      "cd__Hack and Slasher": [
+        "EQUIP[Execution Great Sword]GRADE[weapon==C]===0.5"
+      ],
+      "cd__Storm Slash": [
+        "EQUIP[Execution Great Sword]GRADE[weapon==C]===0.2"
+      ]
+    }
+  },
+  "490813": {
+    "id": 490813,
+    "aegisName": null,
+    "name": "Ring of Good (Imperial Guard) [1]",
+    "unidName": "Ring of Good (Imperial Guard)",
+    "resName": "RK은반지",
+    "description": "ATK +100\nลด Delay หลังใช้สกิล 10%\nPOW +10\nATK + 6%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Holy Light Spear, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Overslash 15%\n\nเมื่อ Holy Light Spear มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Overslash 15%\n\nเมื่อ Holy Light Spear มี Grade C ขึ้นไป, \nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%,\nลด Cooldown สกิล Overslash 0.2 วินาที,\nเพิ่ม Damage สกิล Overslash 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nเมื่อใช้งานสกิล Overslash มีโอกาส 30% ที่จะ Autospell สกิล Overslash Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด),\nสามารถใช้งานสกิล Power Lv.4 ได้\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "atkPercent": [
+        "6"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Holy Light Spear]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Holy Light Spear]REFINE[weapon==10]===15"
+      ],
+      "Overslash": [
+        "EQUIP[Holy Light Spear]===15",
+        "EQUIP[Holy Light Spear]REFINE[weapon==10]===15",
+        "EQUIP[Holy Light Spear]GRADE[weapon==C]===20"
+      ],
+      "melee": [
+        "EQUIP[Holy Light Spear]GRADE[weapon==C]===20"
+      ],
+      "cd__Overslash": [
+        "EQUIP[Holy Light Spear]GRADE[weapon==C]===0.2"
+      ]
+    }
+  },
+  "490814": {
+    "id": 490814,
+    "aegisName": null,
+    "name": "Ring of Evil (Troubadour & Trouvere) [1]",
+    "unidName": "Ring of Evil (Troubadour & Trouvere)",
+    "resName": "Scorpio_Ring_J",
+    "description": "MATK +100\nลด Delay หลังใช้สกิล 10%\nSPL +10\nลดระยะเวลาร่ายแบบแปรผัน 15%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Crime Violin หรือ Crime Whip, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Metalic Fury, Sound Blend 15%\n\nเมื่อ Crime Violin หรือ Crime Whip มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Metalic Fury, Sound Blend 15%\n\nเมื่อ Crime Violin หรือ Crime Whip มี Grade C ขึ้นไป, \nMATK +15%,\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%,\nเพิ่ม Damage สกิล Metalic Fury, Sound Blend 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nS.MATK + 15, ลด Cooldown สกิล Metalic Fury 0.3 วินาที\nเมื่อใช้งานสกิล Jawaii Serenade จะเปลี่ยนร่างเป็น Moonlight Flower เป็นเวลา 60 วินาที\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Troubadour, Trouvere^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Troubadour",
+      "Trouvere"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "vct": [
+        "15"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "EQUIP[Crime Violin||Crime Whip]===15"
+      ],
+      "m_element_all": [
+        "EQUIP[Crime Violin||Crime Whip]REFINE[weapon==10]===15"
+      ],
+      "Metallic Fury": [
+        "EQUIP[Crime Violin||Crime Whip]===15",
+        "EQUIP[Crime Violin||Crime Whip]REFINE[weapon==10]===15",
+        "EQUIP[Crime Violin||Crime Whip]GRADE[weapon==C]===20"
+      ],
+      "Sound Blend": [
+        "EQUIP[Crime Violin||Crime Whip]===15",
+        "EQUIP[Crime Violin||Crime Whip]REFINE[weapon==10]===15",
+        "EQUIP[Crime Violin||Crime Whip]GRADE[weapon==C]===20"
+      ],
+      "matkPercent": [
+        "EQUIP[Crime Violin||Crime Whip]GRADE[weapon==C]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Crime Violin||Crime Whip]GRADE[weapon==C]===15"
+      ],
+      "sMatk": [
+        "EQUIP[Evil Spell]===15"
+      ],
+      "cd__Metallic Fury": [
+        "EQUIP[Evil Spell]===0.3"
+      ]
+    }
+  },
+  "490815": {
+    "id": 490815,
+    "aegisName": null,
+    "name": "Ring of Evil (Windhawk) [1]",
+    "unidName": "Ring of Evil (Windhawk)",
+    "resName": "Scorpio_Ring_J",
+    "description": "ATK +100\nลด Delay หลังใช้สกิล 10%\nCON +10\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Underworld Knife, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap 15%\n\nเมื่อ Underworld Knife มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap 15%\n\nเมื่อ Underworld Knife มี Grade C ขึ้นไป, \nATK + 10%,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%,\nเพิ่ม Damage สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nสามารถใช้งานสกิล Unlucky Rush Lv.5, Dagger Bow Mastery Lv.10 ได้\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Windhawk^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "con": [
+        "10"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Underworld Knife]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Underworld Knife]REFINE[weapon==10]===15"
+      ],
+      "Flame Trap": [
+        "EQUIP[Underworld Knife]===15",
+        "EQUIP[Underworld Knife]REFINE[weapon==10]===15",
+        "EQUIP[Underworld Knife]GRADE[weapon==C]===20"
+      ],
+      "Solid Trap": [
+        "EQUIP[Underworld Knife]===15",
+        "EQUIP[Underworld Knife]REFINE[weapon==10]===15",
+        "EQUIP[Underworld Knife]GRADE[weapon==C]===20"
+      ],
+      "Swift Trap": [
+        "EQUIP[Underworld Knife]===15",
+        "EQUIP[Underworld Knife]REFINE[weapon==10]===15",
+        "EQUIP[Underworld Knife]GRADE[weapon==C]===20"
+      ],
+      "Deep Blind Trap": [
+        "EQUIP[Underworld Knife]===15",
+        "EQUIP[Underworld Knife]REFINE[weapon==10]===15",
+        "EQUIP[Underworld Knife]GRADE[weapon==C]===20"
+      ],
+      "atkPercent": [
+        "EQUIP[Underworld Knife]GRADE[weapon==C]===10"
+      ],
+      "melee": [
+        "EQUIP[Underworld Knife]GRADE[weapon==C]===20"
+      ]
+    }
+  },
+  "490816": {
+    "id": 490816,
+    "aegisName": null,
+    "name": "Ring of Good (Cardinal) [1]",
+    "unidName": "Ring of Good (Cardinal)",
+    "resName": "RK은반지",
+    "description": "MATK +100\nลด Delay หลังใช้สกิล 10%\nSPL +10\nลดระยะเวลาร่ายแบบแปรผัน 15%\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Saint Bringer,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Framen, Arbitrium 15%\n\nเมื่อ Saint Bringer มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Framen, Arbitrium 15%\n\nเมื่อ Saint Bringer มี Grade C ขึ้นไป, \nMATK 15%,\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 15%,\nเพิ่ม Damage สกิล Framen, Arbitrium 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nเมื่อใช้งานสกิล Arbitrium มีโอกาส 30% ที่จะ Autospell สกิล Arbitrium Lv.10\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Cardinal^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Cardinal"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "vct": [
+        "15"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "EQUIP[Saint Bringer]===15"
+      ],
+      "m_element_all": [
+        "EQUIP[Saint Bringer]REFINE[weapon==10]===15"
+      ],
+      "Framen": [
+        "EQUIP[Saint Bringer]===15",
+        "EQUIP[Saint Bringer]REFINE[weapon==10]===15",
+        "EQUIP[Saint Bringer]GRADE[weapon==C]===20"
+      ],
+      "Arbitrium": [
+        "EQUIP[Saint Bringer]===15",
+        "EQUIP[Saint Bringer]REFINE[weapon==10]===15",
+        "EQUIP[Saint Bringer]GRADE[weapon==C]===20"
+      ],
+      "matkPercent": [
+        "EQUIP[Saint Bringer]GRADE[weapon==C]===15"
+      ],
+      "m_my_element_holy": [
+        "EQUIP[Saint Bringer]GRADE[weapon==C]===15"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -191167,9 +191725,9 @@
     "id": 500072,
     "aegisName": "Devil_Guardian_Sword",
     "name": "Devil Guardian Sword [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Sins_ShielderSword",
-    "description": "Matk + 220.\r\nMatk + 5%, SPL + 2.\r\nIncreases Cross Rain damage by 5%.\r\nIf refine rate is 5 or higher, increases Cross Rain damage by 10%.\r\nIf refine rate is 7 or higher, increases holy property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Cross Rain damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Cross Rain damage by additional 5%, increases holy property magical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases holy property magical damage by 10%.\r\n[Grade C] Increases magical damage against all size enemies by 10%.\r\n[Grade B] Increases magical damage against all race enemies by 10%.\r\n[Grade A] Increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Sword^000000 Attack: ^777777100^000000\r\nWeight: ^777777180^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Imperial Guard^000000",
+    "description": "One-handed Spear ที่ผู้เฝ้าประตูแห่งนรกเคยใช้เพื่อปกป้องโลกจากความมืด\n \nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Cross Rain 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Cross Rain 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Cross Rain ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Cross Rain ขึ้นอีก 5%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777180^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -195409,9 +195967,9 @@
     "id": 530045,
     "aegisName": "Holy_Raise_Spear",
     "name": "Holy Light Spear [2]",
-    "unidName": "Spear",
+    "unidName": "Javelin",
     "resName": "Fate_Spear",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Overslash damage by 5%.\r\nIf refine rate is 5 or higher, increases Overslash damage by 10%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Overslash damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Overslash damage by additional 5%, increases melee physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases melee physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Spear^000000 Attack: ^777777210^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Imperial Guard^000000",
+    "description": "One-handed Spear ที่เปล่งประกายพลังแห่งแสงศักดิ์สิทธิ์ มันผ่านการปราบปีศาจมานับไม่ถ้วน\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Overslash 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Overslash 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Overslash ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Overslash ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777One-handed Spear^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777200^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 259,
@@ -205746,9 +206304,9 @@
     "id": 570036,
     "aegisName": "Crime_Violine",
     "name": "Crime Violin [2]",
-    "unidName": "Musical Instrument",
+    "unidName": "Violin",
     "resName": "Sins_Cello",
-    "description": "Matk + 220.\r\nMatk + 5%, SPL + 2.\r\nIncreases Metallic Fury damage by 5%.\r\nIf refine rate is 5 or higher, increases Metallic Fury damage by 10%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Metallic Fury damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Metallic Fury damage by additional 5%, increases Sound Blend damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases all property magical damage by 10%.\r\n[Grade C] increases magical damage against all size enemies by 10%.\r\n[Grade B] increases magical damage against all race enemies by 10%.\r\n[Grade A] increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Instrument^000000 Attack: ^777777120^000000\r\nWeight: ^777777110^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Troubadour^000000",
+    "description": "Violin ที่สะสมพลังจากจิตวิญญาณชั่วร้าย ปล่อยออกมาผ่านเสียงดนตรีอันทรงพลัง\n \nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Metalic Fury 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Metalic Fury 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Metalic Fury ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Metalic Fury ขึ้นอีก 5%, เพิ่ม Damage สกิล Sound Blend 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Instrument^000000 พลังโจมตี : ^777777120^000000\nน้ำหนัก : ^777777110^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Troubadour^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 269,
@@ -205804,9 +206362,9 @@
     "id": 570037,
     "aegisName": "Light_Power_Harp",
     "name": "Light Power Harp [2]",
-    "unidName": "Musical Instrument",
+    "unidName": "Violin",
     "resName": "Fate_Harp",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Rhythm Shooting damage by 5%.\r\nIf refine rate is 5 or higher, increases Rhythm Shooting damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Rhythm Shooting damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Rhythm Shooting damage by additional 5%, increases Rose Blossom damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Instrument^000000 Attack: ^777777200^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Troubadour^000000",
+    "description": "Harp ที่กักเก็บพลังแห่งแสงไว้ในตัว และปล่อยออกมาเป็นบทเพลงที่งดงาม\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Rhythm Shooting 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Rhythm Shooting 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 5%, เพิ่ม Damage สกิล Rose Blossom 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Instrument^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777200^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Troubadour^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 269,
@@ -207165,9 +207723,9 @@
     "id": 580037,
     "aegisName": "Crime_Whip",
     "name": "Crime Whip [2]",
-    "unidName": "Whip",
+    "unidName": "Rope",
     "resName": "Sins_Whip",
-    "description": "Matk + 220.\r\nMatk + 5%, SPL + 2.\r\nIncreases Metallic Fury damage by 5%.\r\nIf refine rate is 5 or higher, increases Metallic Fury damage by 10%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Metallic Fury damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Metallic Fury damage by additional 5%, increases Sound Blend damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases all property magical damage by 10%.\r\n[Grade C] increases magical damage against all size enemies by 10%.\r\n[Grade B] increases magical damage against all race enemies by 10%.\r\n[Grade A] increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Whip^000000 Attack: ^777777120^000000\r\nWeight: ^777777110^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Trouvere^000000",
+    "description": "Whip ที่สะสมพลังจากวิญญาณชั่วร้ายเอาไว้ แสดงออกมาเป็นการโจมตีอันทรงพลัง\n \nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Metalic Fury 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Metalic Fury 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Metalic Fury ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Metalic Fury ขึ้นอีก 5%, เพิ่ม Damage สกิล Sound Blend 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Whip^000000 พลังโจมตี : ^777777120^000000\nน้ำหนัก : ^777777110^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Trouvere^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 270,
@@ -207223,9 +207781,9 @@
     "id": 580038,
     "aegisName": "Light_Power_Spark",
     "name": "Light Power Spark [2]",
-    "unidName": "Whip",
+    "unidName": "Rope",
     "resName": "Fate_Ribbon",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Rhythm Shooting damage by 5%.\r\nIf refine rate is 5 or higher, increases Rhythm Shooting damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Rhythm Shooting damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Rhythm Shooting damage by additional 5%, increases Rose Blossom damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Whip^000000 Attack: ^777777200^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Trouvere^000000",
+    "description": "Whip ที่กักเก็บแสดงบริสุทธิ์ และปลดปล่อยออกมาเมื่อทำการสะบัดมัน\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Rhythm Shooting 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Rhythm Shooting 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Rhythm Shooting ขึ้นอีก 5%, เพิ่ม Damage สกิล Rose Blossom 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Whip^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777200^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Trouvere^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 270,
@@ -210117,9 +210675,9 @@
     "id": 600041,
     "aegisName": "Execution_Great_Sword",
     "name": "Execution Great Sword [2]",
-    "unidName": "Two-handed Sword",
+    "unidName": "Bastard Sword",
     "resName": "Sins_Blader_Sword",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Hack and Slasher damage by 5%.\r\nIf refine rate is 5 or higher, increases Hack and Slasher damage by 10%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Hack and Slasher damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Hack and Slasher damage by additional 5%, increases Storm Slash damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases melee physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Two-handed Sword^000000 Attack: ^777777280^000000\r\nWeight: ^777777420^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Dragon Knight^000000",
+    "description": "Two-handed Sword อันทรงพลังที่กำจัดทุกสิ่งที่ปรากฏเบื้องหน้า\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Hack and Slasher 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Hack and Slasher 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Hack and Slasher ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Hack and Slasher ขึ้นอีก 5%, เพิ่ม Damage สกิล Storm Slash 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Two-handed Sword^000000 พลังโจมตี : ^777777280^000000\nน้ำหนัก : ^777777420^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 258,
@@ -213029,9 +213587,9 @@
     "id": 630027,
     "aegisName": "Luppiter_Spear",
     "name": "Jupiter Spear [2]",
-    "unidName": "Spear",
+    "unidName": "Lance",
     "resName": "Fate_Trident",
-    "description": "MaxHP + 5%, POW + 2.\r\nIncreases Dragonic Breath damage by 5%.\r\nIf refine rate is 5 or higher, increases Dragonic Breath damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Dragonic Breath damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces global cooldown by 10%.\r\nIf refine rate is 11 or higher, increases Dragonic Breath damage by additional 5%, increases Madness Crusher damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Two-handed Spear^000000 Attack: ^777777300^000000\r\nWeight: ^777777500^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Dragon Knight^000000",
+    "description": "Two-handed Spear อันศักดิ์สิทธิ์ที่สร้างเลียนแบบอาวุธที่เทพโบราณเคยใช้\n \nMHP + 5%, POW + 2\nเพิ่ม Damage สกิล Dragonic Breath 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Dragonic Breath 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Dragonic Breath ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Delay หลังใช้สกิล 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Dragonic Breath ขึ้นอีก 5%, เพิ่ม Damage สกิล Madness Crusher 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Two-handed Spear^000000 พลังโจมตี : ^777777300^000000\nน้ำหนัก : ^777777500^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 260,
