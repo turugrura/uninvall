@@ -614,7 +614,7 @@
     "name": "Destruction Axe [2]",
     "unidName": "Axe",
     "resName": "Sins_Axe",
-    "description": "Can't be destroyed.\r\nAtk + 5%, POW + 2.\r\nIncreases Triple Laser damage by 5%.\r\nIf refine rate is 5 or higher, increases Triple Laser damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Triple Laser damage by additional 10%.\r\nIf refine rate is 10 or higher, Cri + 10.\r\nIf refine rate is 11 or higher, increases Triple Laser damage by additional 5%, increases critical damage by 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Axe^000000 Attack: ^777777230^000000\r\nWeight: ^777777440^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Meister^000000",
+    "description": "One-handed Axe ที่ช่างตีเหล็กผู้ถูกพลังชั่วร้ายครอบงำหล่อขึ้นเพื่อทำลายโลก\n \nไม่สามารถทำลายได้\nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Triple Laser 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Triple Laser 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Triple Laser ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10.\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Triple Laser ขึ้นอีก 5%, Critical Damage + 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777One-handed Axe^000000 พลังโจมตี : ^777777230^000000\nน้ำหนัก : ^777777440^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 261,
@@ -147120,9 +147120,9 @@
     "id": 400380,
     "aegisName": "GoodnEvil_Circlet_MT",
     "name": "Crown of Good and Evil (Meister) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee and long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, Cri + 5, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Destruction Axe,\r\nincreases Triple Laser damage by 4% and critical damage by 10% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Triple Laser damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Triple Laser damage by additional 15% and critical damage by additional 25%.\r\n\r\nWhen equipped with Divine Buster,\r\nincreases Mighty Smash damage by 4% and Axe Stomp damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Mighty Smash damage by additional 10%,\r\nwhen equipped with Good Spell, increases Mighty Smash damage by additional 15% and Axe Stomp damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Meister^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, CRI + 5, APSD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Destruction Axe, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Triple Laser 4%, Critical Damage + 10%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Triple Laser ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Triple Laser ขึ้นอีก 15%, Critical Damage + 25% เพิ่มเติม\n \nเมื่อสวมใส่ร่วมกับ Divine Buster, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Mighty Smash 4%, เพิ่ม Damage สกิล Axe Stomp 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Mighty Smash ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Mighty Smash ขึ้นอีก 15%, เพิ่ม Damage สกิล Axe Stomp ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147294,9 +147294,9 @@
     "id": 400382,
     "aegisName": "GoodnEvil_Circlet_SHC",
     "name": "Crown of Good and Evil (Shadow Cross) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with The Ripper,\r\nincreases Impact Crater damage by 4% and melee physical damage by 10% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Impact Crater damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Impact Crater damage by additional 15% and melee physical damage by additional 20%.\r\n\r\nWhen equipped with Shining Light Katar,\r\nincreases Eternal Slash damage by 4% and Savage Impact damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Eternal Slash damage by additional 10%,\r\nwhen equipped with Good Spell, increases Eternal Slash damage by additional 15% and Savage Impact damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Shadow Cross^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ The Ripper, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Impact Crater 4%, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Impact Crater ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Impact Crater ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Shining Light Katar, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Eternal Slash 4%, เพิ่ม Damage สกิล Savage Impact 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Eternal Slash ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Eternal Slash ขึ้นอีก 15%, เพิ่ม Damage สกิล Savage Impact ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147374,9 +147374,9 @@
     "id": 400383,
     "aegisName": "GoodnEvil_Circlet_ABC",
     "name": "Crown of Good and Evil (Abyss Chaser) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee and long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, Cri + 5, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Dark Angel Ray Bow,\r\nincreases Chain Reaction Shot damage by 4% and Frenzy Shot damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Chain Reaction Shot damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Chain Reaction Shot damage by additional 15% and Frenzy Shot damage by additional 20%.\r\n\r\nWhen equipped with Holy Light Dagger,\r\nincreases Abyss Dagger damage by 4% and Deft Stab damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Abyss Dagger damage by additional 10%,\r\nwhen equipped with Good Spell, increases Abyss Dagger damage by additional 15% and Deft Stab damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Abyss Chaser^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, CRI + 5, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Dark Angel Ray Bow, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Chain Reaction Shot 4%, เพิ่ม Damage สกิล Frenzy Shot 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Chain Reaction Shot ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Chain Reaction Shot ขึ้นอีก 15%, เพิ่ม Damage สกิล Frenzy Shot ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Holy Light Dagger, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Abyss Dagger 4%, เพิ่ม Damage สกิล Deft Stab 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Abyss Dagger ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Abyss Dagger ขึ้นอีก 15%, เพิ่ม Damage สกิล Deft Stab ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, CON + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12, ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -154610,6 +154610,102 @@
       ],
       "Noon Blast": [
         "EQUIP[Kiel-D-01 Egg]===20"
+      ]
+    }
+  },
+  "410541": {
+    "id": 410541,
+    "aegisName": null,
+    "name": "Sunglasses Champion ROS 2025 Thailand",
+    "unidName": "Sunglasses",
+    "resName": "선글래스",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nแว่นตาเกียรติยศสำหรับผู้คว้าชัยชนะสุดยิ่งใหญ่จาก Ragnarok Stars 2025 Thailand Championship มาได้\nสวมใส่ชิ้นนี้เพื่อเพิ่มความแข็งแกร่งให้อย่างไม่มีที่สิ้นสุด\n\nสามารถใช้สกิล Cloaking Exceed Lv.5 ได้\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 20%\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 20%\nเมื่อฟื้นคืนชีพ จะฟื้นฟู HP, SP ทั้งหมด\n\nไอเท็มชิ้นนี้สามารถใช้ได้เฉพาะในพื้นที่ War of Emperium Herosria เท่านั้น\n\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 1 กรกฎาคม 2569)^000000\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 520,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "melee": [
+        "20"
+      ],
+      "range": [
+        "20"
+      ],
+      "m_my_element_all": [
+        "20"
+      ]
+    }
+  },
+  "410542": {
+    "id": 410542,
+    "aegisName": null,
+    "name": "Sunglasses 1st Runner Up ROS 2025",
+    "unidName": "Sunglasses",
+    "resName": "선글래스",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nแว่นตาเกียรติยศสำหรับผู้กล้าของรองชนะเลิศอันดับหนึ่งจาก Ragnarok Stars 2025 Thailand Championship\nสวมใส่ชิ้นนี้เพื่อเพิ่มความแข็งแกร่งให้อย่างไม่มีที่สิ้นสุด\n\nสามารถใช้สกิล Cloaking Exceed Lv.4 ได้\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 15%\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 15%\nเมื่อฟื้นคืนชีพ จะฟื้นฟู HP, SP ทั้งหมด\n\nไอเท็มชิ้นนี้สามารถใช้ได้เฉพาะในพื้นที่ War of Emperium Herosria เท่านั้น\n\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 1 กรกฎาคม 2569)^000000\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 520,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "melee": [
+        "15"
+      ],
+      "range": [
+        "15"
+      ],
+      "m_my_element_all": [
+        "15"
+      ]
+    }
+  },
+  "410543": {
+    "id": 410543,
+    "aegisName": null,
+    "name": "Sunglasses 2nd Runner Up ROS 2025",
+    "unidName": "Sunglasses",
+    "resName": "선글래스",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nแว่นตาเกียรติยศสำหรับผู้กล้าของรองชนะเลิศอันดับสองจาก Ragnarok Stars 2025 Thailand Championship\nสวมใส่ชิ้นนี้เพื่อเพิ่มความแข็งแกร่งให้อย่างไม่มีที่สิ้นสุด\n\nสามารถใช้สกิล Cloaking Exceed Lv.3 ได้\nเพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\nเมื่อฟื้นคืนชีพ จะฟื้นฟู HP, SP ทั้งหมด\n\nไอเท็มชิ้นนี้สามารถใช้ได้เฉพาะในพื้นที่ War of Emperium Herosria เท่านั้น\n\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 1 กรกฎาคม 2569)^000000\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 520,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "melee": [
+        "10"
+      ],
+      "range": [
+        "10"
+      ],
+      "m_my_element_all": [
+        "10"
       ]
     }
   },
@@ -164630,6 +164726,64 @@
       ]
     }
   },
+  "450517": {
+    "id": 450517,
+    "aegisName": "Kafra_Suit_LT",
+    "name": "Kafra Uniform-LT [1]",
+    "unidName": "Kafra Uniform-LT",
+    "resName": "카프라제복",
+    "description": "ชุด Uniform ที่พนักงาน Kafra สวมใส่\nถึงจะดูเหมือนชุด maid ธรรมดา แต่เพราะทำขึ้นด้วยความใส่ใจเป็นพิเศษจึงทำให้สวมใส่สบาย\n\nทุก ๆ การอัพเกรด 1 ขั้น, MaxHP + 200, MaxSP + 40\n\nเมื่อตัวละครมีเลเวลน้อยกว่า 99,\nATK, MATK + 200,\nเพิ่มความเร็วในการเคลื่อนที่ตลอดเวลา,\nเพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ 50%\n\nเมื่อตัวละครมีเลเวลน้อยกว่า 199,\nATK, MATK + 100,\nเพิ่มความเร็วในการเคลื่อนที่ตลอดเวลา,\nเพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ 30%\n\nเมื่อตัวละครมีเลเวล 200 หรือมากกว่า,\nP.ATK, S.MATK + 10,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ 30%,\nเพิ่มอัตรา Drop ไอเท็ม 5%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] เพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ 5%\n[Grade C] MaxHP + 5000, MaxSP + 500\n[Grade B] มีโอกาส 2% ที่จะนำ 4% ของ Damage ทางกายภาพต่อศัตรู มาเป็น SP ของตนเอง\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 5% ที่จะฟื้นฟู SP 200 หน่วย 9 ครั้งเป็นเวลา 10 วินาที\n[Grade A] เพิ่มอัตรา Drop ไอเท็ม 5%, MaxHP + 50%, MaxSP + 50%\nประเภท : ^777777Armor^000000  พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^77777750^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": 1,
+    "attack": null,
+    "defense": 40,
+    "weight": 50,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "1---200",
+        "GRADE[me==C]===5000"
+      ],
+      "sp": [
+        "1---40",
+        "GRADE[me==C]===500"
+      ],
+      "atk": [
+        "LEVEL[1-98]===200",
+        "LEVEL[1-198]===100"
+      ],
+      "matk": [
+        "LEVEL[1-98]===200",
+        "LEVEL[1-198]===100"
+      ],
+      "pAtk": [
+        "LEVEL[200]===10"
+      ],
+      "sMatk": [
+        "LEVEL[200]===10"
+      ],
+      "p_element_all": [
+        "LEVEL[200]===15"
+      ],
+      "m_element_all": [
+        "LEVEL[200]===15"
+      ],
+      "hpPercent": [
+        "GRADE[me==A]===50"
+      ],
+      "spPercent": [
+        "GRADE[me==A]===50"
+      ]
+    }
+  },
   "460003": {
     "id": 460003,
     "aegisName": "Feather_Shield",
@@ -166488,6 +166642,144 @@
       ],
       "pAtk": [
         "GRADE[me==A]===8"
+      ]
+    }
+  },
+  "460135": {
+    "id": 460135,
+    "aegisName": "Trap_Barrier_TH",
+    "name": "Trap Barrier Shield [1]",
+    "unidName": "Trap Barrier Shield",
+    "resName": "Prta_Mil_Shield",
+    "description": "โล่พิเศษที่ถูกออกแบบมาเพื่อเสริมพลังของเหล่านักวางกับดัก\n\nATK+ 5%\nลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์ประเภททั่วไป 10%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 7 ขึ้นไป,\nASPD + 2\n\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป,\nลด Cooldown สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap 0.5 วินาที\n^ff0000(สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap แต่ละสกิลสามารถวางได้สูงสุดเพียงชนิดละ 3 อันเท่านั้น)^000000\n\nเมื่อขั้นอัพเกรดตั้งแต่ 11 ขึ้นไป,\nลด Delay หลังใช้สกิล 5%,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 12 ขึ้นไป,\nเพิ่ม Damage สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap 15%\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Windhawk^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 100,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "aspd": [
+        "7===2"
+      ],
+      "cd__Flame Trap": [
+        "9===0.5"
+      ],
+      "cd__Solid Trap": [
+        "9===0.5"
+      ],
+      "cd__Swift Trap": [
+        "9===0.5"
+      ],
+      "cd__Deep Blind Trap": [
+        "9===0.5"
+      ],
+      "acd": [
+        "11===5"
+      ],
+      "melee": [
+        "11===10"
+      ],
+      "Flame Trap": [
+        "12===15"
+      ],
+      "Solid Trap": [
+        "12===15"
+      ],
+      "Swift Trap": [
+        "12===15"
+      ],
+      "Deep Blind Trap": [
+        "12===15"
+      ]
+    }
+  },
+  "460137": {
+    "id": 460137,
+    "aegisName": "Trap_Barrier_TH_LT",
+    "name": "Trap Barrier Shield-LT [1]",
+    "unidName": "Trap Barrier Shield-LT",
+    "resName": "Prta_Mil_Shield",
+    "description": "โล่พิเศษที่ถูกออกแบบมาเพื่อเสริมพลังของเหล่านักวางกับดัก\n\nATK + 10%\nลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์ประเภททั่วไป 15%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 7 ขึ้นไป,\nASPD + 2,\nสามารถใช้งานสกิล Magnum Break Lv.3 ได้,\nลด Cooldown สกิล Magnum Break 1 วินาที\n\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป,\nลด Cooldown สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap 1.5 วินาที\n^ff0000(สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap แต่ละสกิลสามารถวางได้สูงสุดเพียงชนิดละ 3 อันเท่านั้น)^000000\n\nเมื่อขั้นอัพเกรดตั้งแต่ 11 ขึ้นไป,\nลด Delay หลังใช้สกิล 10%,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%\n\nเมื่อขั้นอัพเกรดตั้งแต่ 12 ขึ้นไป,\nเพิ่ม Damage สกิล Flame Trap, Solid Trap, Swift Trap, Deep Blind Trap 20%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] เมื่อโจมตีทางกายภาพ มีโอกาส 4% ที่เกิดสถานะ [Barrier Tactician] เป็นเวลา 10 วินาที\nผลเอฟเฟกต์ [Barrier Tactician]\nCON + 50,\nP.ATK + 10,\nแต่จะสูญเสีย SP 50 ต่อวินาที\n[Grade C] MaxHP + 10,000,  P.ATK + 4\n[Grade B] CON + 10, P.ATK + 6\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 20%, ได้รับเอฟเฟกต์ [Endure] ตลอดเวลา\nประเภท : ^777777Shield^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777Windhawk^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 514,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 100,
+    "requiredLevel": 200,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "usableClass": [
+      "Windhawk"
+    ],
+    "script": {
+      "atkPercent": [
+        "10"
+      ],
+      "aspd": [
+        "7===2"
+      ],
+      "cd__Flame Trap": [
+        "9===1.5"
+      ],
+      "cd__Solid Trap": [
+        "9===1.5"
+      ],
+      "cd__Swift Trap": [
+        "9===1.5"
+      ],
+      "cd__Deep Blind Trap": [
+        "9===1.5"
+      ],
+      "acd": [
+        "11===10"
+      ],
+      "melee": [
+        "11===20"
+      ],
+      "Flame Trap": [
+        "12===20"
+      ],
+      "Solid Trap": [
+        "12===20"
+      ],
+      "Swift Trap": [
+        "12===20"
+      ],
+      "Deep Blind Trap": [
+        "12===20"
+      ],
+      "chance__con": [
+        "GRADE[me==D]===50"
+      ],
+      "chance__pAtk": [
+        "GRADE[me==D]===10"
+      ],
+      "pAtk": [
+        "GRADE[me==C]===4",
+        "GRADE[me==B]===6"
+      ],
+      "con": [
+        "GRADE[me==B]===10"
+      ],
+      "hp": [
+        "GRADE[me==C]===10000"
+      ],
+      "p_size_all": [
+        "GRADE[me==A]===20"
       ]
     }
   },
@@ -189872,6 +190164,395 @@
       ]
     }
   },
+  "490837": {
+    "id": 490837,
+    "aegisName": "ABC_Evil_Ring_TH",
+    "name": "Ring of Evil (Abyss Chaser) [1]",
+    "unidName": "Ring of Evil (Abyss Chaser)",
+    "resName": "Scorpio_Ring_J",
+    "description": "ATK + 100\nลด Delay หลังใช้สกิล 10%\nCON + 10\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Dark Angel Ray Bow,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Chain Reaction Shot, Frenzy Shot 15%\n\nเมื่อ Dark Angel Ray Bow มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Chain Reaction Shot, Frenzy Shot 15%\n\nเมื่อ Dark Angel Ray Bow มี Grade C ขึ้นไป,\nCRI + 30,\nลด Cooldown สกิล Chain Reaction Shot 0.5 วินาที,\nลด Cooldown สกิล Frenzy Shot 0.2 วินาที,\nเพิ่ม Damage สกิล Chain Reaction Shot, Frenzy Shot 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nสามารถใช้งานสกิล No Limits Lv.1 ได้,\nเมื่อใช้งานสกิล Frenzy Shot มีโอกาส 30% ที่จะ Autospell สกิล Frenzy Shot Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายในเลเวลสูงสุด)\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "con": [
+        "10"
+      ],
+      "cri": [
+        "15",
+        "EQUIP[Dark Angel Ray Bow]GRADE[weapon==C]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Dark Angel Ray Bow]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Dark Angel Ray Bow]REFINE[weapon==10]===15"
+      ],
+      "Chain Reaction Shot": [
+        "EQUIP[Dark Angel Ray Bow]===15",
+        "EQUIP[Dark Angel Ray Bow]REFINE[weapon==10]===15",
+        "EQUIP[Dark Angel Ray Bow]GRADE[weapon==C]===20"
+      ],
+      "Frenzy Shot": [
+        "EQUIP[Dark Angel Ray Bow]===15",
+        "EQUIP[Dark Angel Ray Bow]REFINE[weapon==10]===15",
+        "EQUIP[Dark Angel Ray Bow]GRADE[weapon==C]===20"
+      ],
+      "cd__Chain Reaction Shot": [
+        "EQUIP[Dark Angel Ray Bow]GRADE[weapon==C]===0.5"
+      ],
+      "cd__Frenzy Shot": [
+        "EQUIP[Dark Angel Ray Bow]GRADE[weapon==C]===0.2"
+      ]
+    }
+  },
+  "490838": {
+    "id": 490838,
+    "aegisName": "SHC_Good_Ring_TH",
+    "name": "Ring of Good (Shadow Cross) [1]",
+    "unidName": "Ring of Good (Shadow Cross)",
+    "resName": "RK은반지",
+    "description": "ATK + 100\nลด Delay หลังใช้สกิล 10%\nPOW + 10\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Shining Light Katar, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Eternal Slash, Savage Impact 15%\n\nเมื่อ Shining Light Katar มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Eternal Slash, Savage Impact 15%\n\nเมื่อ Shining Light Katar มี Grade C ขึ้นไป, \nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%,\nลด Cooldown สกิล Eternal Slash 0.35 วินาที, \nลด Cooldown สกิล Savage Impact 0.5 วินาที,\nเพิ่ม Damage สกิล Eternal Slash, Savage Impact 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nเมื่อใช้งานสกิล Savage Impact มีโอกาส 40% ที่จะ Autospell สกิล Eternal Slash Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายในเลเวลสูงสุด)\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "cri": [
+        "15"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Shining Light Katar]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Shining Light Katar]REFINE[weapon==10]===15"
+      ],
+      "Eternal Slash": [
+        "EQUIP[Shining Light Katar]===15",
+        "EQUIP[Shining Light Katar]REFINE[weapon==10]===15",
+        "EQUIP[Shining Light Katar]GRADE[weapon==C]===20"
+      ],
+      "Savage Impact": [
+        "EQUIP[Shining Light Katar]===15",
+        "EQUIP[Shining Light Katar]REFINE[weapon==10]===15",
+        "EQUIP[Shining Light Katar]GRADE[weapon==C]===20"
+      ],
+      "melee": [
+        "EQUIP[Shining Light Katar]GRADE[weapon==C]===20"
+      ],
+      "cd__Eternal Slash": [
+        "EQUIP[Shining Light Katar]GRADE[weapon==C]===0.35"
+      ],
+      "cd__Savage Impact": [
+        "EQUIP[Shining Light Katar]GRADE[weapon==C]===0.5"
+      ]
+    }
+  },
+  "490839": {
+    "id": 490839,
+    "aegisName": "MT_Good_Ring_TH",
+    "name": "Ring of Good (Meister) [1]",
+    "unidName": "Ring of Good (Meister)",
+    "resName": "RK은반지",
+    "description": "ATK + 100\nลด Delay หลังใช้สกิล 10%\nPOW + 10\nATK + 6%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Divine Buster,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Mighty Smash, Axe Stomp 15%\n\nเมื่อ Divine Buster มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Mighty Smash, Axe Stomp 15%\n\nเมื่อ Divine Buster มี Grade ตั้งแต่ C ขึ้นไป,  \nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%,\nลด Cooldown สกิล Mighty Smash 0.3 วินาที,\nลด Cooldown สกิล Axe Stomp 0.5 วินาที,\nเพิ่ม Damage สกิล Mighty Smash, Axe Stomp 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nเมื่อใช้งานสกิล Mighty Smash มีโอกาส 40% ที่จะ Autospell สกิล Axe Stomp Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายในเลเวลสูงสุด),\nสามารถใช้งานสกิล Power Lv.4 ได้\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Meister"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10",
+        "EQUIP[Good Spell]===4"
+      ],
+      "atkPercent": [
+        "6"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Divine Buster]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Divine Buster]REFINE[weapon==10]===15"
+      ],
+      "Mighty Smash": [
+        "EQUIP[Divine Buster]===15",
+        "EQUIP[Divine Buster]REFINE[weapon==10]===15",
+        "EQUIP[Divine Buster]GRADE[weapon==C]===20"
+      ],
+      "Axe Stomp": [
+        "EQUIP[Divine Buster]===15",
+        "EQUIP[Divine Buster]REFINE[weapon==10]===15",
+        "EQUIP[Divine Buster]GRADE[weapon==C]===20"
+      ],
+      "melee": [
+        "EQUIP[Divine Buster]GRADE[weapon==C]===20"
+      ],
+      "cd__Mighty Smash": [
+        "EQUIP[Divine Buster]GRADE[weapon==C]===0.3"
+      ],
+      "cd__Axe Stomp": [
+        "EQUIP[Divine Buster]GRADE[weapon==C]===0.5"
+      ]
+    }
+  },
+  "490840": {
+    "id": 490840,
+    "aegisName": "IG_Evil_Ring_TH",
+    "name": "Ring of Evil (Imperial Guard) [1]",
+    "unidName": "Ring of Evil (Imperial Guard)",
+    "resName": "Scorpio_Ring_J",
+    "description": "MATK + 100\nลด Delay หลังใช้สกิล 10%\nSPL + 10\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Devil Guardian Sword,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Cross Rain 15%\n\nเมื่อ Devil Guardian Sword มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Cross Rain 15%\n\nเมื่อ Devil Guardian Sword มี Grade ตั้งแต่ C ขึ้นไป, \nMATK + 15%,\nลด Cooldown สกิล Cross Rain 2 วินาที,\nเพิ่ม Damage สกิล Cross Rain 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nS.MATK + 10, สามารถใช้งานสกิล Oratio Lv. 10 ได้,\nเมื่อโจมตีทางเวทมนตร์ มีโอกาส 4% ที่จะได้รับสถานะ [Evil Spell Power] เป็นเวลา 10 วินาที\n\nผลเอฟเฟกต์ [Evil Spell Power]\nINT + 100,\nSPL + 50,\nสูญเสีย HP 500 หน่วยต่อวินาที\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Imperial Guard^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ImperialGuard"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "EQUIP[Devil Guardian Sword]===15"
+      ],
+      "m_element_all": [
+        "EQUIP[Devil Guardian Sword]REFINE[weapon==10]===15"
+      ],
+      "Cross Rain": [
+        "EQUIP[Devil Guardian Sword]===15",
+        "EQUIP[Devil Guardian Sword]REFINE[weapon==10]===15",
+        "EQUIP[Devil Guardian Sword]GRADE[weapon==C]===20"
+      ],
+      "matkPercent": [
+        "EQUIP[Devil Guardian Sword]GRADE[weapon==C]===15"
+      ],
+      "cd__Cross Rain": [
+        "EQUIP[Devil Guardian Sword]GRADE[weapon==C]===2"
+      ],
+      "sMatk": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "chance__int": [
+        "EQUIP[Evil Spell]===100"
+      ],
+      "chance__spl": [
+        "EQUIP[Evil Spell]===50"
+      ]
+    }
+  },
+  "490841": {
+    "id": 490841,
+    "aegisName": "TR_Good_Ring_TH",
+    "name": "Ring of Good (Troubadour & Trouvere) [1]",
+    "unidName": "Ring of Good (Troubadour & Trouvere)",
+    "resName": "RK은반지",
+    "description": "ATK + 100\nลด Delay หลังใช้สกิล 10%\nCON + 10\nATK + 6%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Light Power Harp หรือ Light Power Spark, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Rhythm Shooting, Rose Blossom 15%\n\nเมื่อ Light Power Harp หรือ Light Power Spark มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Rhythm Shooting, Rose Blossom 15%\n\nเมื่อ Light Power Harp หรือ Light Power Spark มี Grade ตั้งแต่ C ขึ้นไป, \nเพิ่ม Damage ทางกายภาพระยะไกล 20%,\nลด Cooldown สกิล Rhythm Shooting 0.2 วินาที,\nเพิ่ม Damage สกิล Rhythm Shooting, Rose Blossom 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nสามารถใช้งานสกิล No Limits Lv.3 ได้,\nเมื่อใช้งานสกิล Rhythm Shooting มีโอกาส 40% ที่จะ Autospell สกิล Rose Blossom Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายในเลเวลสูงสุด)\n\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777Troubadour & Trouvere^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Troubadour",
+      "Trouvere"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "con": [
+        "10"
+      ],
+      "atkPercent": [
+        "6"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Light Power Harp||Light Power Spark]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Light Power Harp||Light Power Spark]REFINE[weapon==10]===15"
+      ],
+      "Rhythm Shooting": [
+        "EQUIP[Light Power Harp||Light Power Spark]===15",
+        "EQUIP[Light Power Harp||Light Power Spark]REFINE[weapon==10]===15",
+        "EQUIP[Light Power Harp||Light Power Spark]GRADE[weapon==C]===20"
+      ],
+      "Rose Blossom": [
+        "EQUIP[Light Power Harp||Light Power Spark]===15",
+        "EQUIP[Light Power Harp||Light Power Spark]REFINE[weapon==10]===15",
+        "EQUIP[Light Power Harp||Light Power Spark]GRADE[weapon==C]===20"
+      ],
+      "range": [
+        "EQUIP[Light Power Harp||Light Power Spark]GRADE[weapon==C]===20"
+      ],
+      "cd__Rhythm Shooting": [
+        "EQUIP[Light Power Harp||Light Power Spark]GRADE[weapon==C]===0.2"
+      ],
+      "sMatk": [
+        "EQUIP[Evil Spell]===15"
+      ],
+      "cd__Metallic Fury": [
+        "EQUIP[Evil Spell]===0.3"
+      ]
+    }
+  },
+  "490843": {
+    "id": 490843,
+    "aegisName": "DK_Good_Ring_TH",
+    "name": "Ring of Good (Dragon Knight) [1]",
+    "unidName": "Ring of Good (Dragon Knight)",
+    "resName": "RK은반지",
+    "description": "ATK + 100\nลด Delay หลังใช้สกิล 10%\nPOW + 10\nMHP + 6%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Jupiter Spear,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Dragonic Breath, Madness Crusher 15%\n\nเมื่อ Jupiter Spear มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Dragonic Breath, Madness Crusher 15%\n\nเมื่อ Jupiter Spear มี Grade ตั้งแต่ C ขึ้นไป, \nเพิ่ม Damage ทางกายภาพระยะไกล 20%,\nลด Cooldown สกิล Dragonic Breath 0.35 วินาที,\nเพิ่ม Damage สกิล Dragonic Breath, Madness Crusher 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nP.ATK + 15,\nMHP & MSP + 30%,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 15%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Dragon Knight^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "DragonKnight"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "hpPercent": [
+        "6",
+        "EQUIP[Good Spell]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Jupiter Spear]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Jupiter Spear]REFINE[weapon==10]===15"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Jupiter Spear]===15",
+        "EQUIP[Jupiter Spear]REFINE[weapon==10]===15",
+        "EQUIP[Jupiter Spear]GRADE[weapon==C]===20"
+      ],
+      "Madness Crusher": [
+        "EQUIP[Jupiter Spear]===15",
+        "EQUIP[Jupiter Spear]REFINE[weapon==10]===15",
+        "EQUIP[Jupiter Spear]GRADE[weapon==C]===20"
+      ],
+      "range": [
+        "EQUIP[Jupiter Spear]GRADE[weapon==C]===20"
+      ],
+      "cd__Dragonic Breath": [
+        "EQUIP[Jupiter Spear]GRADE[weapon==C]===0.35"
+      ],
+      "pAtk": [
+        "EQUIP[Good Spell]===15"
+      ],
+      "spPercent": [
+        "EQUIP[Good Spell]===30"
+      ],
+      "p_race_all": [
+        "EQUIP[Good Spell]===15"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -194193,9 +194874,9 @@
     "id": 510092,
     "aegisName": "Holy_Light_Dagger",
     "name": "Holy Light Dagger [2]",
-    "unidName": "Dagger",
+    "unidName": "Knife",
     "resName": "Fate_Dagger",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Abyss Dagger damage by 5%.\r\nIf refine rate is 5 or higher, increases Abyss Dagger damage by 10%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Abyss Dagger damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Abyss Dagger damage by additional 5%, increases Deft Stab damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increase melee physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Dagger^000000 Attack: ^777777205^000000\r\nWeight: ^77777780^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Abyss Chaser^000000",
+    "description": "Dagger ที่เต็มไปด้วยพลังศักดิ์สิทธิ์ ใช้สำหรับปกป้องตัวเองจากอันตราย\n \nATK + 5%, POW + 2.\nเพิ่ม Damage สกิล Abyss Dagger 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Abyss Dagger 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Abyss Dagger ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Abyss Dagger ขึ้นอีก 5%, เพิ่ม Damage สกิล Deft Stab 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^77777780^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 256,
@@ -211956,9 +212637,9 @@
     "id": 610044,
     "aegisName": "The_Reaper",
     "name": "The Ripper [2]",
-    "unidName": "Katar",
+    "unidName": "Jur",
     "resName": "Sins_Katar",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Impact Crater damage by 5%.\r\nIf refine rate is 5 or higher, increases Impact Crater damage by 10%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Impact Crater damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Impact Crater damage by additional 5%, increases melee physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases melee physical damage by 10%.\r\n[Grade C] increases physical damage against all size enemies by 10%.\r\n[Grade B] increases physical damage against all race enemies by 10%.\r\n[Grade A] increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Katar^000000 Attack: ^777777290^000000\r\nWeight: ^777777110^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Shadow Cross^000000",
+    "description": "Katar อันแหลมคมที่ผู้คนขนานนามว่านักฆ่าเคยใช้\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Impact Crater 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Impact Crater 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Impact Crater ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Impact Crater ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777290^000000\nน้ำหนัก : ^777777110^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 272,
@@ -212009,9 +212690,9 @@
     "id": 610045,
     "aegisName": "Shining_Light_Katar",
     "name": "Shining Light Katar [2]",
-    "unidName": "Katar",
+    "unidName": "Jur",
     "resName": "Fate_Katar",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Eternal Slash damage by 5%.\r\nIf refine rate is 5 or higher, increases Eternal Slash damage by 10%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Eternal Slash damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Eternal Slash damage by additional 5%, increases Savage Impact damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases melee physical damage by 10%.\r\n[Grade C] increases physical damage against all size enemies by 10%.\r\n[Grade B] increases physical damage against all race enemies by 10%.\r\n[Grade A] increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Katar^000000 Attack: ^777777290^000000\r\nWeight: ^777777100^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Shadow Cross^000000",
+    "description": "Katar ที่ถูกหล่อหลอมด้วยพลังแห่งแสงเจิดจ้า เพื่อใช้ต่อสู้กับปีศาจ\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Eternal Slash 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Eternal Slash 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Eternal Slash ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Eternal Slash ขึ้นอีก 5%, เพิ่ม Damage สกิล Savage Impact 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Katar^000000 พลังโจมตี : ^777777290^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 272,
@@ -212928,9 +213609,9 @@
     "id": 620022,
     "aegisName": "Divine_Buster",
     "name": "Divine Buster [2]",
-    "unidName": "Two-handed Axe",
+    "unidName": "Axe",
     "resName": "Fate_Hammer",
-    "description": "Can't be destroyed.\r\nAtk + 5%, POW + 2.\r\nIncreases Mighty Smash damage by 5%.\r\nIf refine rate is 5 or higher, increases Mighty Smash damage by 10%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Mighty Smash damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Mighty Smash damage by additional 5%, increases Axe Stomp damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increase melee physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Axe^000000 Attack: ^777777330^000000\r\nWeight: ^777777660^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Meister^000000",
+    "description": "Two-handed Axe อันศักดิ์สิทธิ์ที่เคยถูกใช้โดยผู้นำอัศวินนักบุญ\n \nไม่สามารถทำลายได้\nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Mighty Smash 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Mighty Smash 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Mighty Smash ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Mighty Smash ขึ้นอีก 5%, เพิ่ม Damage สกิล Axe Stomp 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Two-handed Axe^000000 พลังโจมตี : ^777777330^000000\nน้ำหนัก : ^777777660^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 262,
@@ -218435,7 +219116,7 @@
     "name": "Dark Angel Ray Bow [2]",
     "unidName": "Bow",
     "resName": "Sins_Bow",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Chain Reaction Shot damage by 5%.\r\nIf refine rate is 5 or higher, increases Chain Reaction Shot damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Chain Reaction Shot damage by additional 10%.\r\nIf refine rate is 10 or higher, Cri + 10.\r\nIf refine rate is 11 or higher, increases Chain Reaction Shot damage by additional 5%, increases Frenzy Shot damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Bow^000000 Attack: ^777777280^000000\r\nWeight: ^777777150^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Abyss Chaser^000000",
+    "description": "Bow ที่เคยอยู่ในมือของเทวทูตผู้ร่วงหล่น\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Chain Reaction Shot 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Chain Reaction Shot 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Chain Reaction Shot ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10.\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Chain Reaction Shot ขึ้นอีก 5%, เพิ่ม Damage สกิล Frenzy Shot 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777280^000000\nน้ำหนัก : ^777777150^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
