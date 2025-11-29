@@ -14611,6 +14611,47 @@
       ]
     }
   },
+  "9068": {
+    "id": 9068,
+    "aegisName": "Blue_Unicorn_Egg",
+    "name": "Blue Unicorn Egg",
+    "unidName": "Blue Unicorn Egg",
+    "resName": "수속성알",
+    "description": "ไข่ที่มี Q-Pet Blue Unicorn Egg อยู่ภายใน สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nหากความสัมพันธ์อยู่ระดับไม่คุ้นเคยหรือเขินอาย P.ATK + 1, S.MATK + 1\nหากความสัมพันธ์อยู่ระดับปกติ P.ATK + 2, S.MATK + 2, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 1%\nหากความสัมพันธ์อยู่ระดับเป็นมิตร P.ATK + 3, S.MATK + 3, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 3%\nหากความสัมพันธ์อยู่ระดับสนิทสนม P.ATK + 5, S.MATK + 5, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 5%\n\n[ความสามารถจำกัดเวลา]\nสามารถใช้งานสกิล Back Slide Lv.1 ได้,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูประเภท Boss 20%\n\n(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 25 กุมภาพันธ์ 2569)\nประเภท : Monster Egg",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "pAtk": [
+        "5"
+      ],
+      "sMatk": [
+        "5"
+      ],
+      "p_race_all": [
+        "5"
+      ],
+      "m_race_all": [
+        "5"
+      ],
+      "p_class_boss": [
+        "20"
+      ],
+      "m_class_boss": [
+        "20"
+      ]
+    }
+  },
   "9087": {
     "id": 9087,
     "aegisName": "High_Orc_Egg",
@@ -83026,6 +83067,51 @@
       ]
     }
   },
+  "300736": {
+    "id": 300736,
+    "aegisName": null,
+    "name": "Year of The Unicorn 2026 Card",
+    "unidName": "Year of The Unicorn 2026 Card",
+    "resName": "이름없는카드",
+    "description": "All Status + 6,\nMaxHP + 2026,\nเพิกเฉยต่อพลังป้องกันทางกายภาพ/เวทมนตร์ของมอนสเตอร์เผ่า Brute, Insect, Formless 30%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "Unicorn Year",
+    "script": {
+      "allStatus": [
+        "6"
+      ],
+      "hp": [
+        "2026"
+      ],
+      "p_pene_race_brute": [
+        "30"
+      ],
+      "p_pene_race_insect": [
+        "30"
+      ],
+      "p_pene_race_formless": [
+        "30"
+      ],
+      "m_pene_race_brute": [
+        "30"
+      ],
+      "m_pene_race_insect": [
+        "30"
+      ],
+      "m_pene_race_formless": [
+        "30"
+      ]
+    }
+  },
   "310000": {
     "id": 310000,
     "aegisName": "Ranger_Top2",
@@ -146762,9 +146848,9 @@
     "id": 400376,
     "aegisName": "GoodnEvil_Circlet_AG",
     "name": "Crown of Good and Evil (Arch Mage) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases ghost, shadow and water property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Devil Wing Staff,\r\nincreases Soul Vulcan Strike damage by 4% and Mystery Illusion damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Soul Vulcan Strike damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Soul Vulcan Strike damage by additional 15% and Mystery Illusion damage by additional 20%.\r\n\r\nWhen equipped with Destiny Staff,\r\nincreases Frozen Slash damage by 4% and Rain of Crystal damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Frozen Slash damage by additional 10%,\r\nwhen equipped with Good Spell, increases Frozen Slash damage by additional 15% and Rain of Crystal damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Arch Mage^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Shadow, Water 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Devil Wing Staff, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Soul Vulcan Strike 4%, เพิ่ม Damage สกิล Mystery Illusion 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Soul Vulcan Strike ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Soul Vulcan Strike ขึ้นอีก 15%, เพิ่ม Damage สกิล Mystery Illusion ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Destiny Staff, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Frozen Slash 4%, เพิ่ม Damage สกิล Rain of Crystal ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Frozen Slash ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Frozen Slash ขึ้นอีก 15%, เพิ่ม Damage สกิล Rain of Crystal ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -146850,9 +146936,9 @@
     "id": 400377,
     "aegisName": "GoodnEvil_Circlet_EM",
     "name": "Crown of Good and Evil (Elemental Master) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases fire, posion, water and earth property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Doom Bible,\r\nincreases Venom Swamp damage by 4% and Conflagration damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Venom Swamp damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Venom Swamp damage by additional 15% and Conflagration damage by additional 20%.\r\n\r\nWhen equipped with Blessed Bible,\r\nincreases Diamond Storm damage by 4% and Terra Drive damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Diamond Storm damage by additional 10%,\r\nwhen equipped with Good Spell, increases Diamond Storm damage by additional 15% and Terra Drive damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Elemental Master^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Poison, Water, Earth 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Doom Bible, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Venom Swamp 4%, เพิ่ม Damage สกิล Conflagration 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Venom Swamp ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Venom Swamp ขึ้นอีก 15%, เพิ่ม Damage สกิล Conflagration ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Blessed Bible, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Diamond Storm 4%, เพิ่ม Damage สกิล Terra Drive ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Diamond Storm ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Diamond Storm ขึ้นอีก 15%, เพิ่ม Damage สกิล Terra Drive ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147035,9 +147121,9 @@
     "id": 400379,
     "aegisName": "GoodnEvil_Circlet_IQ",
     "name": "Crown of Good and Evil (Inquisitor) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee and long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, Cri + 10.\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Demonic Claw,\r\nincreases Explosion Blaster damage by 4% and Oleum Sanctum damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Explosion Blaster damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Explosion Blaster damage by additional 15% and Oleum Sanctum damage by additional 20%.\r\n\r\nWhen equipped with Punish Scepter,\r\nincreases Third Punish damage by 4% and First Brand damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Third Punish damage by additional 10%,\r\nwhen equipped with Good Spell, increases Third Punish damage by additional 15% and First Brand damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Inquisitor^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, CRI + 10\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Demonic Claw, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Explosion Blaster 4%, เพิ่ม Damage สกิล Oleum Sanctum 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Explosion Blaster ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Explosion Blaster ขึ้นอีก 15%, เพิ่ม Damage สกิล Oleum Sanctum ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Punish Scepter, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Third Punishment 4%, เพิ่ม Damage สกิล First Brand ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Third Punishment ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Third Punishment ขึ้นอีก 15%, เพิ่ม Damage สกิล First Brand ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147208,9 +147294,9 @@
     "id": 400381,
     "aegisName": "GoodnEvil_Circlet_BO",
     "name": "Crown of Good and Evil (Biolo) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee and long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, Cri + 5, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Blood Rapier,\r\nincreases Mayhemic Thorns damage by 4% and critical damage by 10% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Mayhemic Thorns damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Mayhemic Thorns damage by additional 15% and critical damage by additional 25%.\r\n\r\nWhen equipped with Victory Sword,\r\nincreases Explosive Powder damage by 4% and melee physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Explosive Powder damage by additional 10%,\r\nwhen equipped with Good Spell, increases Explosive Powder damage by additional 15% and melee physical damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Biolo^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, CRI + 5, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Blood Rapier, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Mayhemic Thorns 4%, Critical Damage + 10%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Mayhemic Thorns ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Mayhemic Thorns ขึ้นอีก 15%, Critical Damage + 25% เพิ่มเติม\n \nเมื่อสวมใส่ร่วมกับ Victory Sword, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Explosive Powder 4%, เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Explosive Powder ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Explosive Powder ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะใกล้ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147650,10 +147736,10 @@
   "400386": {
     "id": 400386,
     "aegisName": "GoodnEvil_Circlet_SS",
-    "name": "Crown of Good and Evil (Shinkiro & Shiranui) [1]",
-    "unidName": "Headgear",
+    "name": "Crown of Good and Evil (Shinkiro&Shiranui) [1]",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical and magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage and all property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 5%, reduces global cooldown by 5%.\r\nIf refine rate is 11 or higher, Atk + 5%, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Devil Claw,\r\nincreases Darkening Cannon damage by 4% and Red Flame Cannon damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Darkening Cannon damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Darkening Cannon damage by additional 15% and Red Flame Cannon damage by additional 20%.\r\n\r\nWhen equipped with Huuma Shuriken Brilliance,\r\nincreases Huuma Shuriken - Construct damage by 4% and Huuma Shuriken - Grasp damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Huuma Shuriken - Construct damage by additional 10%,\r\nwhen equipped with Good Spell, increases Huuma Shuriken - Construct damage by additional 15% and Huuma Shuriken - Grasp damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Shinkiro, Shiranui^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 5%, ลด Global Cooldown 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Devil Claw, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Darkening Cannon 4%, เพิ่ม Damage สกิล Red Flame Cannon 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Darkening Cannon ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Darkening Cannon ขึ้นอีก 15%, เพิ่ม Damage สกิล Red Flame Cannon ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Huuma Shuriken Brilliance, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Huuma Shuriken - Construct 4%, เพิ่ม Damage สกิล Huuma Shuriken - Grasp ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Huuma Shuriken - Construct ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Huuma Shuriken - Construct ขึ้นอีก 15%, เพิ่ม Damage สกิล Huuma Shuriken - Grasp ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro, Shiranui^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147746,9 +147832,9 @@
     "id": 400387,
     "aegisName": "GoodnEvil_Circlet_SKE",
     "name": "Crown of Good and Evil (Sky Emperor) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases melee physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 5%, reduces global cooldown by 5%.\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Darkness Tablet,\r\nincreases Midnight Kick damage by 4% and Dawn Break damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Midnight Kick damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Midnight Kick damage by additional 15% and Dawn Break damage by additional 20%.\r\n\r\nWhen equipped with Origin of Life,\r\nincreases Noon Blast damage by 4% and Sunset Blast damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Noon Blast damage by additional 10%,\r\nwhen equipped with Good Spell, increases Noon Blast damage by additional 15% and Sunset Blast damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Sky Emperor^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะใกล้ 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 5%, ลด Global Cooldown 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Darkness Tablet, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Midnight Kick 4%, เพิ่ม Damage สกิล Dawn Break 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Midnight Kick ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Midnight Kick ขึ้นอีก 15%, เพิ่ม Damage สกิล Dawn Break ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Origin of Life, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Noon Blast 4%, เพิ่ม Damage สกิล Sunset Blast ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Noon Blast ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Noon Blast ขึ้นอีก 15%, เพิ่ม Damage สกิล Sunset Blast ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147831,9 +147917,9 @@
     "id": 400388,
     "aegisName": "GoodnEvil_Circlet_SOA",
     "name": "Crown of Good and Evil (Soul Ascetic) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases all property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Soul Harvest,\r\nincreases Exorcism of Malicious Soul damage by 4% and Talisman of Soul Stealing damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Exorcism of Malicious Soul damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Exorcism of Malicious Soul damage by additional 15% and Talisman of Soul Stealing damage by additional 20%.\r\n\r\nWhen equipped with Soul Liberator,\r\nincreases Talisman of Four Bearing God damage by 4% and Talisman of Red Phoenix damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Talisman of Four Bearing God damage by additional 10%,\r\nwhen equipped with Good Spell, increases Talisman of Four Bearing God damage by additional 15% and Talisman of Red Phoenix damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Soul Ascetic^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Soul Harvest, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Exorcism of Malicious Soul 4%, เพิ่ม Damage สกิล Talisman of Soul Stealing 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Exorcism of Malicious Soul ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Exorcism of Malicious Soul ขึ้นอีก 15%, เพิ่ม Damage สกิล Talisman of Soul Stealing ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Soul Liberator, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Talisman of Four Bearing God 4%, เพิ่ม Damage สกิล Talisman of Red Phoenix ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Talisman of Four Bearing God ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Talisman of Four Bearing God ขึ้นอีก 15%, เพิ่ม Damage สกิล Talisman of Red Phoenix ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -147913,9 +147999,9 @@
     "id": 400389,
     "aegisName": "GoodnEvil_Circlet_HN",
     "name": "Crown of Good and Evil (Hyper Novice) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical and magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage, ghost and neutral property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 5%, reduces global cooldown by 5%.\r\nIf refine rate is 11 or higher, Atk + 5%, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Devil Cursed Sword,\r\nincreases Napalm Vulcan Strike damage by 4% and Ground Gravitation damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Napalm Vulcan Strike damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Napalm Vulcan Strike damage by additional 15% and Ground Gravitation damage by additional 20%.\r\n\r\nWhen equipped with Guardian Saber,\r\nincreases Shield Chain Rush damage by 4% and Spiral Pierce Max damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Shield Chain Rush damage by additional 10%,\r\nwhen equipped with Good Spell, increases Shield Chain Rush damage by additional 15% and Spiral Pierce Max damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Hyper Novice^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Neutral 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 5%, ลด Global Cooldown 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Devil Cursed Sword, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Napalm Vulcan Strike 4%, เพิ่ม Damage สกิล Ground Gravitation 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Napalm Vulcan Strike ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Napalm Vulcan Strike ขึ้นอีก 15%, เพิ่ม Damage สกิล Ground Gravitation ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Guardian Saber, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Shield Chain Rush 4%, เพิ่ม Damage สกิล Spiral Pierce Max ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Shield Chain Rush ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Shield Chain Rush ขึ้นอีก 15%, เพิ่ม Damage สกิล Spiral Pierce Max ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -148010,9 +148096,9 @@
     "id": 400390,
     "aegisName": "GoodnEvil_Circlet_SH",
     "name": "Crown of Good and Evil (Spirit Handler) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical and magical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage, ghost and neutral property magical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces variable casting time by 5%, Cri + 5.\r\nIf refine rate is 11 or higher, Atk + 5%, Matk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Darkness Foxtail Model,\r\nincreases Hyunrok Cannon damage by 4% and Hyunrok Breeze damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Hyunrok Cannon damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Hyunrok Cannon damage by additional 15% and Hyunrok Breeze damage by additional 20%.\r\n\r\nWhen equipped with Lightforce Foxtail Wand,\r\nincreases Chulho Sonic Claw damage by 4% and Hogogong Strike damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Chulho Sonic Claw damage by additional 10%,\r\nwhen equipped with Good Spell, increases Chulho Sonic Claw damage by additional 15% and Hogogong Strike damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Spirit Handler^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Neutral 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 5%, CRI + 5\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, MATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Darkness Foxtail Model, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Hyunrok Cannon 4%, เพิ่ม Damage สกิล Hyunrok Breeze 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Hyunrok Cannon ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Hyunrok Cannon ขึ้นอีก 15%, เพิ่ม Damage สกิล Hyunrok Breeze ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Lightforce Foxtail Wand, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Chulho Sonic Claw 4%, เพิ่ม Damage สกิล Hogogong Strike ขึ้นอีก 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Chulho Sonic Claw ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Chulho Sonic Claw ขึ้นอีก 15%, เพิ่ม Damage สกิล Hogogong Strike ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -148107,9 +148193,9 @@
     "id": 400391,
     "aegisName": "GoodnEvil_Circlet_NW",
     "name": "Crown of Good and Evil (Night Watch - Grenade Launcher) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces global cooldown by 5%, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Devil Lord Launcher,\r\nincreases Spiral Shooting damage by 4% and long ranged physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Spiral Shooting damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Spiral Shooting damage by additional 15% and long ranged physical damage by additional 20%.\r\n\r\nWhen equipped with Justice Bomber,\r\nincreases Wild Fire damage by 4% and long ranged physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Wild Fire damage by additional 10%,\r\nwhen equipped with Good Spell, increases Wild Fire damage by additional 15% and long ranged physical damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลด Global Cooldown 5%, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Devil Lord Launcher, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Spiral Shooting 4%, เพิ่ม Damage ทางกายภาพระยะไกล 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Justice Bomber, \nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Wild Fire 4%, เพิ่ม Damage ทางกายภาพระยะไกล 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -148188,9 +148274,9 @@
     "id": 400392,
     "aegisName": "GoodnEvil_Circlet_NW2",
     "name": "Crown of Good and Evil (Night Watch - Revolver) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces global cooldown by 5%, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Devil's Bullet,\r\nincreases Only One Bullet damage by 4% and long ranged physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Only One Bullet damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Only One Bullet damage by additional 15% and long ranged physical damage by additional 20%.\r\n\r\nWhen equipped with Devil Hunter,\r\nincreases Magazine for One damage by 4% and critical damage by 10% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Magazine for One damage by additional 10%,\r\nwhen equipped with Good Spell, increases Magazine for One damage by additional 15% and critical damage by additional 25%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลด Global Cooldown 5%, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Devil's Bullet,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Only One Bullet 4%, เพิ่ม Damage ทางกายภาพระยะไกล 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Only One Bullet ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Only One Bullet ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Devil Hunter,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Magazine for One 4%, Critical Damage + 10%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 15%, Critical Damage + 25% เพิ่มเติม\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -148271,9 +148357,9 @@
     "id": 400393,
     "aegisName": "GoodnEvil_Circlet_NW3",
     "name": "Crown of Good and Evil (Night Watch - Gatling Gun) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces global cooldown by 5%, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with RG-5649,\r\nincreases The Vigilante at Night damage by 4% and long ranged physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases The Vigilante at Night damage by additional 10%,\r\nwhen equipped with Evil Spell, increases The Vigilante at Night damage by additional 15% and long ranged physical damage by additional 20%.\r\n\r\nWhen equipped with Lightning Splatter,\r\nincreases Magazine for One damage by 4% and long ranged physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Magazine for One damage by additional 10%,\r\nwhen equipped with Good Spell, increases Magazine for One damage by additional 15% and long ranged physical damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลด Global Cooldown 5%, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ RG-5649,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล The Vigilante at Night 4%, เพิ่ม Damage ทางกายภาพระยะไกล 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Lightning Splatter,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Magazine for One 4%, เพิ่ม Damage ทางกายภาพระยะไกล 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -148352,9 +148438,9 @@
     "id": 400394,
     "aegisName": "GoodnEvil_Circlet_NW4",
     "name": "Crown of Good and Evil (Night Watch - Shotgun) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces global cooldown by 5%, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Outlaw Cursed Shotgun,\r\nincreases Wild Fire damage by 4% and long ranged physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Wild Fire damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Wild Fire damage by additional 15% and long ranged physical damage by additional 20%.\r\n\r\nWhen equipped with Lord of Glory,\r\nincreases The Vigilante at Night damage by 4% and long ranged physical damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases The Vigilante at Night damage by additional 10%,\r\nwhen equipped with Good Spell, increases The Vigilante at Night damage by additional 15% and long ranged physical damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลด Global Cooldown 5%, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Outlaw Cursed Shotgun,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Wild Fire 4%, เพิ่ม Damage ทางกายภาพระยะไกล 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Lord of Glory ,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล The Vigilante at Night 4%, เพิ่ม Damage ทางกายภาพระยะไกล 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 15%, เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -148433,9 +148519,9 @@
     "id": 400395,
     "aegisName": "GoodnEvil_Circlet_NW5",
     "name": "Crown of Good and Evil (Night Watch - Rifle) [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "GoodnEvil_Circlet",
-    "description": "Increases physical damage against all races enemies by 5% per 3 refine rate.\r\nIncreases long ranged physical damage by 7% per 4 refine rate.\r\nIf refine rate is 7 or higher, Res + 50.\r\nIf refine rate is 9 or higher, reduces global cooldown by 5%, increases attack speed (reduces delay after attack by 5%).\r\nIf refine rate is 11 or higher, Atk + 5%, reduces fixed casting time by 0.3 seconds.\r\n\r\nWhen equipped with Screaming Rifle,\r\nincreases Hasty Fire in the Hole damage by 4% and Grenades Dropping damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Hasty Fire in the Hole damage by additional 10%,\r\nwhen equipped with Evil Spell, increases Hasty Fire in the Hole damage by additional 15% and Grenades Dropping damage by additional 20%.\r\n\r\nWhen equipped with Last Dawn,\r\nincreases Spiral Shooting damage by 4% and Only One Bullet damage by 5% per 3 refine rate of weapon,\r\nif grade of weapon is B or higher, increases Spiral Shooting damage by additional 10%,\r\nwhen equipped with Good Spell, increases Spiral Shooting damage by additional 15% and Only One Bullet damage by additional 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] MaxHP + 5%.\r\n[Grade C] P.Atk + 3, S.Matk + 3.\r\n[Grade B] P.Atk + 2, S.Matk + 2, POW + 2, SPL + 2.\r\n[Grade A] Res + 50, Mres + 50, if refine rate is 12 or higher, reduces fixed casting time by additional 0.2 seconds.\r\n\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "หมวกที่ก้องสะท้อนพลังอันยิ่งใหญ่ของวีรบุรุษและความหายนะ\nแฝงพลังในการขับเน้นอานุภาพของอาวุธทั้งฝ่ายธรรมะและอธรรม\n \nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 5%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัพเกรดถึงขั้น 7, RES + 50\nเมื่ออัพเกรดถึงขั้น 9, ลด Global Cooldown 5%, ASPD + 5%\nเมื่ออัพเกรดถึงขั้น 11, ATK + 5%, ลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n \nเมื่อสวมใส่ร่วมกับ Screaming Rifle,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Hasty Fire in the Hole 4%, เพิ่ม Damage สกิล Grenades Dropping 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Hasty Fire in the Hole ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Evil Spell, เพิ่ม Damage สกิล Hasty Fire in the Hole ขึ้นอีก 15%, เพิ่ม Damage สกิล Grenades Dropping ขึ้นอีก 20%\n \nเมื่อสวมใส่ร่วมกับ Last Dawn,\nทุก ๆ การอัพเกรด Weapon 3 ขั้น เพิ่ม Damage สกิล Spiral Shooting 4%, เพิ่ม Damage สกิล Only One Bullet 5%,\nเมื่อ Weapon มี Grade B ขึ้นไป, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 10%\nเมื่อสวมใส่ร่วมกับ Good Spell, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 15%, เพิ่ม Damage สกิล Only One Bullet ขึ้นอีก 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] MHP + 5%\n[Grade C] P.ATK + 3, S.MATK + 3\n[Grade B] P.ATK + 2, S.MATK + 2, POW + 2, SPL + 2\n[Grade A] RES + 50, MRES + 50, เมื่ออัพเกรดถึงขั้น 12 ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n \nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -154706,6 +154792,42 @@
       ],
       "m_my_element_all": [
         "10"
+      ]
+    }
+  },
+  "410549": {
+    "id": 410549,
+    "aegisName": "Snow_Fox_TH",
+    "name": "Snow Fox [1]",
+    "unidName": "Hat",
+    "resName": "Snow_Fox",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nAll Trait + 2\n\nเมื่อสวมใส่ร่วมกับอาวุธ Glacier Weapon Series,\nลด Global Cooldown 5%,\nAll Trait + 3,\nATK, MATK + 100\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777200^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 200,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "allTrait": [
+        "2",
+        "EQUIP[Glacier Sword||Glacier Basic Sword||Glacier Rogue Knife||Glacier Basic Knife||Glacier Axe||Glacier Spear||Glacier Book||Glacier Wand||Glacier Foxtail||Glacier Knuckle||Glacier Violin||Glacier Whip||Glacier Mace||Glacier Mechanic Mace||Glacier Two-handed Sword||Glacier Katar||Glacier Mechanic Axe||Glacier Lance||Glacier Staff||Glacier Huuma Shuriken||Glacier Bow||Glacier Revolver||Glacier Rifle||Glacier Shotgun||Glacier Gatling||Glacier Launcher]===3"
+      ],
+      "acd": [
+        "EQUIP[Glacier Sword||Glacier Basic Sword||Glacier Rogue Knife||Glacier Basic Knife||Glacier Axe||Glacier Spear||Glacier Book||Glacier Wand||Glacier Foxtail||Glacier Knuckle||Glacier Violin||Glacier Whip||Glacier Mace||Glacier Mechanic Mace||Glacier Two-handed Sword||Glacier Katar||Glacier Mechanic Axe||Glacier Lance||Glacier Staff||Glacier Huuma Shuriken||Glacier Bow||Glacier Revolver||Glacier Rifle||Glacier Shotgun||Glacier Gatling||Glacier Launcher]===5"
+      ],
+      "atk": [
+        "EQUIP[Glacier Sword||Glacier Basic Sword||Glacier Rogue Knife||Glacier Basic Knife||Glacier Axe||Glacier Spear||Glacier Book||Glacier Wand||Glacier Foxtail||Glacier Knuckle||Glacier Violin||Glacier Whip||Glacier Mace||Glacier Mechanic Mace||Glacier Two-handed Sword||Glacier Katar||Glacier Mechanic Axe||Glacier Lance||Glacier Staff||Glacier Huuma Shuriken||Glacier Bow||Glacier Revolver||Glacier Rifle||Glacier Shotgun||Glacier Gatling||Glacier Launcher]===100"
+      ],
+      "matk": [
+        "EQUIP[Glacier Sword||Glacier Basic Sword||Glacier Rogue Knife||Glacier Basic Knife||Glacier Axe||Glacier Spear||Glacier Book||Glacier Wand||Glacier Foxtail||Glacier Knuckle||Glacier Violin||Glacier Whip||Glacier Mace||Glacier Mechanic Mace||Glacier Two-handed Sword||Glacier Katar||Glacier Mechanic Axe||Glacier Lance||Glacier Staff||Glacier Huuma Shuriken||Glacier Bow||Glacier Revolver||Glacier Rifle||Glacier Shotgun||Glacier Gatling||Glacier Launcher]===100"
       ]
     }
   },
@@ -190553,6 +190675,389 @@
       ]
     }
   },
+  "490844": {
+    "id": 490844,
+    "aegisName": null,
+    "name": "Ring of Evil (Elemental Master) [1]",
+    "unidName": "Ring of Evil (Elemental Master)",
+    "resName": "Scorpio_Ring_J",
+    "description": "MATK +100\nลด Global Cooldown 10%\nSPL +10\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Doom Bible,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Venom Swamp, Conflagration 15%\n\nเมื่อ Doom Bible มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Venom Swamp, Conflagration 15%\n\nเมื่อ Doom Bible มี Grade ตั้งแต่ C ขึ้นไป, \nMATK + 15%,\nลด Cooldown สกิล Venom Swamp 1.4 วินาที, ลด Cooldown สกิล Conflagration 0.8 วินาที,\nเพิ่ม Damage สกิล Venom Swamp, Conflagration 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nS.MATK + 10\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 20%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "EQUIP[Doom Bible]===15"
+      ],
+      "m_element_all": [
+        "EQUIP[Doom Bible]REFINE[weapon==10]===15"
+      ],
+      "Venom Swamp": [
+        "EQUIP[Doom Bible]===15",
+        "EQUIP[Doom Bible]REFINE[weapon==10]===15",
+        "EQUIP[Doom Bible]GRADE[weapon==C]===20"
+      ],
+      "Conflagration": [
+        "EQUIP[Doom Bible]===15",
+        "EQUIP[Doom Bible]REFINE[weapon==10]===15",
+        "EQUIP[Doom Bible]GRADE[weapon==C]===20"
+      ],
+      "matkPercent": [
+        "EQUIP[Doom Bible]GRADE[weapon==C]===15"
+      ],
+      "cd__Venom Swamp": [
+        "EQUIP[Doom Bible]GRADE[weapon==C]===1.4"
+      ],
+      "cd__Conflagration": [
+        "EQUIP[Doom Bible]GRADE[weapon==C]===0.8"
+      ],
+      "sMatk": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Evil Spell]===20"
+      ]
+    }
+  },
+  "490849": {
+    "id": 490849,
+    "aegisName": null,
+    "name": "Ring of Evil (Inquisitor) [1]",
+    "unidName": "Ring of Evil (Inquisitor)",
+    "resName": "Scorpio_Ring_J",
+    "description": "ATK +100\nลด Global Cooldown 10%\nPOW +10\nCRI +15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Demonic Claw,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Explosion Blaster, Oleum Sanctum 15%\n\nเมื่อ Demonic Claw มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Explosion Blaster, Oleum Sanctum 15%\n\nเมื่อ Demonic Claw มี Grade C ขึ้นไป, \nCRI +30,\nลด Cooldown สกิล Oleum Sanctum 1 วินาที,\nลด Cooldown สกิล Explosion Blaster 0.35 วินาที,\nเพิ่ม Damage สกิล Explosion Blaster, Oleum Sanctum 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nP.ATK +10,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "cri": [
+        "15",
+        "EQUIP[Demonic Claw]GRADE[weapon==C]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Demonic Claw]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Demonic Claw]REFINE[weapon==10]===15"
+      ],
+      "Explosion Blaster": [
+        "EQUIP[Demonic Claw]===15",
+        "EQUIP[Demonic Claw]REFINE[weapon==10]===15",
+        "EQUIP[Demonic Claw]GRADE[weapon==C]===20"
+      ],
+      "Oleum Sanctum": [
+        "EQUIP[Demonic Claw]===15",
+        "EQUIP[Demonic Claw]REFINE[weapon==10]===15",
+        "EQUIP[Demonic Claw]GRADE[weapon==C]===20"
+      ],
+      "cd__Oleum Sanctum": [
+        "EQUIP[Demonic Claw]GRADE[weapon==C]===1"
+      ],
+      "cd__Explosion Blaster": [
+        "EQUIP[Demonic Claw]GRADE[weapon==C]===0.35"
+      ],
+      "pAtk": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "range": [
+        "EQUIP[Evil Spell]===20"
+      ]
+    }
+  },
+  "490850": {
+    "id": 490850,
+    "aegisName": null,
+    "name": "Ring of Good (Shinkiro&Shiranui) [1]",
+    "unidName": "Ring of Good (Shinkiro&Shiranui)",
+    "resName": "RK은반지",
+    "description": "ATK + 100\nลด Global Cooldown 10%\nPOW + 10\nATK + 6%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Huuma Shuriken Brilliance,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Huuma Shuriken - Construct, Huuma Shuriken - Grasp 15%\n\nเมื่อ Huuma Shuriken Brilliance มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Huuma Shuriken - Construct, Huuma Shuriken - Grasp 15%\n\nเมื่อ Huuma Shuriken Brilliance มี Grade C ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%,\nลด Cooldown สกิล Huuma Shuriken - Construct 0.7 วินาที,\nเพิ่ม Damage สกิล Huuma Shuriken - Construct, Huuma Shuriken - Grasp 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nP.ATK+ 10,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 20%,\nสามารถใช้สกิล Power Lv.4 ได้\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro, Shiranui^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "atkPercent": [
+        "6"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Huuma Shuriken Brilliance]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Huuma Shuriken Brilliance]REFINE[weapon==10]===15"
+      ],
+      "Huuma Shuriken - Construct": [
+        "EQUIP[Huuma Shuriken Brilliance]===15",
+        "EQUIP[Huuma Shuriken Brilliance]REFINE[weapon==10]===15",
+        "EQUIP[Huuma Shuriken Brilliance]GRADE[weapon==C]===20"
+      ],
+      "Huuma Shuriken - Grasp": [
+        "EQUIP[Huuma Shuriken Brilliance]===15",
+        "EQUIP[Huuma Shuriken Brilliance]REFINE[weapon==10]===15",
+        "EQUIP[Huuma Shuriken Brilliance]GRADE[weapon==C]===20"
+      ],
+      "range": [
+        "EQUIP[Huuma Shuriken Brilliance]GRADE[weapon==C]===20"
+      ],
+      "cd__Huuma Shuriken - Construct": [
+        "EQUIP[Huuma Shuriken Brilliance]GRADE[weapon==C]===0.7"
+      ],
+      "pAtk": [
+        "EQUIP[Good Spell]===10"
+      ],
+      "p_race_all": [
+        "EQUIP[Good Spell]===20"
+      ]
+    }
+  },
+  "490851": {
+    "id": 490851,
+    "aegisName": null,
+    "name": "Ring of Good (Abyss Chaser) [1]",
+    "unidName": "Ring of Good (Abyss Chaser)",
+    "resName": "RK은반지",
+    "description": "ATK +100\nลด Global Cooldown 10%\nPOW +10\nATK+ 6%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Holy Light Dagger,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Abyss Dagger, Deft Stab 15%\n\nเมื่อ Holy Light Dagger มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Abyss Dagger, Deft Stab 15%\n\nเมื่อ Holy Light Dagger มี Grade C ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%,\nลด Cooldown สกิล Abyss Dagger 0.3 วินาที, \nลด Cooldown สกิล Deft Stab 0.5 วินาที,\nเพิ่ม Damage สกิล Abyss Dagger, Deft Stab 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nเมื่อใช้งานสกิล Deft Stab มีโอกาส 30% ที่จะ Auto Spell สกิล Deft Stab Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด),\nสามารถใช้สกิล Power Lv.4 ได้\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Abyss Chaser^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "AbyssChaser"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "atkPercent": [
+        "6"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Holy Light Dagger]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Holy Light Dagger]REFINE[weapon==10]===15"
+      ],
+      "Abyss Dagger": [
+        "EQUIP[Holy Light Dagger]===15",
+        "EQUIP[Holy Light Dagger]REFINE[weapon==10]===15",
+        "EQUIP[Holy Light Dagger]GRADE[weapon==C]===20"
+      ],
+      "Deft Stab": [
+        "EQUIP[Holy Light Dagger]===15",
+        "EQUIP[Holy Light Dagger]REFINE[weapon==10]===15",
+        "EQUIP[Holy Light Dagger]GRADE[weapon==C]===20"
+      ],
+      "melee": [
+        "EQUIP[Holy Light Dagger]GRADE[weapon==C]===20"
+      ],
+      "cd__Abyss Dagger": [
+        "EQUIP[Holy Light Dagger]GRADE[weapon==C]===0.3"
+      ],
+      "cd__Deft Stab": [
+        "EQUIP[Holy Light Dagger]GRADE[weapon==C]===0.5"
+      ]
+    }
+  },
+  "490852": {
+    "id": 490852,
+    "aegisName": null,
+    "name": "Ring of Evil (Shadow Cross) [1]",
+    "unidName": "Ring of Evil (Shadow Cross)",
+    "resName": "Scorpio_Ring_J",
+    "description": "ATK +100\nลด Global Cooldown 10%\nPOW +10\nCRI +15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ The Ripper,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Impact Crater 15%\n\nเมื่อ The Ripper มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Impact Crater 15%\n\nเมื่อ The Ripper มี Grade C ขึ้นไป, \nCRI +30,\nลด Cooldown สกิล Impact Crater 1.25 วินาที,\nเพิ่ม Damage สกิล Impact Crater 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nลด Cooldown สกิล Dark Claw 30 วินาที,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "ShadowCross"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "cri": [
+        "15",
+        "EQUIP[The Ripper]GRADE[weapon==C]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[The Ripper]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[The Ripper]REFINE[weapon==10]===15"
+      ],
+      "Impact Crater": [
+        "EQUIP[The Ripper]===15",
+        "EQUIP[The Ripper]REFINE[weapon==10]===15",
+        "EQUIP[The Ripper]GRADE[weapon==C]===20"
+      ],
+      "cd__Impact Crater": [
+        "EQUIP[The Ripper]GRADE[weapon==C]===1.25"
+      ],
+      "cd__Dark Claw": [
+        "EQUIP[Evil Spell]===30"
+      ],
+      "melee": [
+        "EQUIP[Evil Spell]===20"
+      ]
+    }
+  },
+  "490853": {
+    "id": 490853,
+    "aegisName": null,
+    "name": "Ring of Evil (Meister) [1]",
+    "unidName": "Ring of Evil (Meister)",
+    "resName": "Scorpio_Ring_J",
+    "description": "ATK +100\nลด Global Cooldown 10%\nPOW +10\nCRI +15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Destruction Axe, \nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Triple Laser 15%\n\nเมื่อ Destruction Axe มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Triple Laser 15%\n\nเมื่อ Destruction Axe มี Grade C ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%,\nลด Cooldown สกิล Triple Laser 0.2 วินาที\nเพิ่ม Damage สกิล Triple Laser 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nเมื่อใช้งานสกิล Triple Laser มีโอกาส 40% ที่จะ Auto Spell สกิล Mayhemic Thorns Lv.10,\nเพิ่ม Damage สกิล Mayhemic Thorns 30%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Meister^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Meister"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "cri": [
+        "15"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Destruction Axe]===15"
+      ],
+      "p_element_all": [
+        "EQUIP[Destruction Axe]REFINE[weapon==10]===15"
+      ],
+      "Triple Laser": [
+        "EQUIP[Destruction Axe]===15",
+        "EQUIP[Destruction Axe]REFINE[weapon==10]===15",
+        "EQUIP[Destruction Axe]GRADE[weapon==C]===20"
+      ],
+      "range": [
+        "EQUIP[Destruction Axe]GRADE[weapon==C]===20"
+      ],
+      "cd__Triple Laser": [
+        "EQUIP[Destruction Axe]GRADE[weapon==C]===0.2"
+      ],
+      "Mayhemic Thorns": [
+        "EQUIP[Evil Spell]===30"
+      ]
+    }
+  },
   "500001": {
     "id": 500001,
     "aegisName": "Boost_Sword",
@@ -192181,9 +192686,9 @@
     "id": 500062,
     "aegisName": "Devil_Cursed_Sword",
     "name": "Devil Cursed Sword [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Sins_Blade_One",
-    "description": "Matk + 220.\r\nMatk + 5%, SPL + 2.\r\nIncreases Napalm Vulcan Strike damage by 5%.\r\nIf refine rate is 5 or higher, increases Napalm Vulcan Strike damage by 10%.\r\nIf refine rate is 7 or higher, increases ghost and neutral property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Napalm Vulcan Strike damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces global cooldown by 10%.\r\nIf refine rate is 11 or higher, increases Napalm Vulcan Strike damage by additional 5%, increases Ground Gravitation damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases ghost and neutral property magical damage by 10%.\r\n[Grade C] increases magical damage against all size enemies by 10%.\r\n[Grade B] increases magical damage against all race enemies by 10%.\r\n[Grade A] increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Sword^000000 Attack: ^777777110^000000\r\nWeight: ^777777120^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Hyper Novice^000000",
+    "description": "One-handed Sword ที่เต็มไปด้วยคำสาปปีศาจ เหมาะสำหรับการโจมตีด้วยเวทมนตร์\n \nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Napalm Vulcan Strike 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Napalm Vulcan Strike 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Neutral 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Napalm Vulcan Strike ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Global Cooldown 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Napalm Vulcan Strike ขึ้นอีก 5%, เพิ่ม Damage สกิล Ground Gravitation 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Neutral 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777110^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -192243,9 +192748,9 @@
     "id": 500063,
     "aegisName": "Guardian_Saber",
     "name": "Guardian Saber [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Fate_Sword",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Shield Chain Rush damage by 5%.\r\nIf refine rate is 5 or higher, increases Shield Chain Rush damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Shield Chain Rush damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Shield Chain Rush damage by additional 5%, increases Spiral Pierce Max damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] increases physical damage against all size enemies by 10%.\r\n[Grade B] increases physical damage against all race enemies by 10%.\r\n[Grade A] increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Sword^000000 Attack: ^777777210^000000\r\nWeight: ^777777110^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Hyper Novice^000000",
+    "description": "ดาบศักดิ์สิทธิ์ที่มอบแด่ผู้พิทักษ์แห่งแผ่นดิน\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Shield Chain Rush 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Shield Chain Rush 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Shield Chain Rush ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Shield Chain Rush ขึ้นอีก 5%, เพิ่ม Damage สกิล Spiral Pierce Max 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777110^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Hyper Novice^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -192298,9 +192803,9 @@
     "id": 500065,
     "aegisName": "Blood_Rapier",
     "name": "Blood Rapier [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Sins_Rapier",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Mayhemic Thorns damage by 5%.\r\nIf refine rate is 5 or higher, increases Mayhemic Thorns damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Mayhemic Thorns damage by additional 10%.\r\nIf refine rate is 10 or higher, Cri + 10.\r\nIf refine rate is 11 or higher, increases Mayhemic Thorns damage by additional 5%, increases critical damage by 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Sword^000000 Attack: ^777777210^000000\r\nWeight: ^777777150^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Biolo^000000",
+    "description": "One-handed Sword ที่คมดาบเปื้อนเลือดจากสมรภูมิอันนับไม่ถ้วน\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Mayhemic Thorns 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Mayhemic Thorns 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Mayhemic Thorns ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Mayhemic Thorns ขึ้นอีก 5%, Critical Damage + 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777150^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -192353,9 +192858,9 @@
     "id": 500066,
     "aegisName": "Victory_Sword",
     "name": "Victory Sword [2]",
-    "unidName": "Sword",
+    "unidName": "Bastard Sword",
     "resName": "Fate_Blade_One",
-    "description": "Atk + 5%, POW + 2.\r\nIncreases Explosive Powder damage by 5%.\r\nIf refine rate is 5 or higher, increases Explosive Powder damage by 10%.\r\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Explosive Powder damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Explosive Powder damage by additional 5%, increases melee physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increase melee physical damage by 5%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Sword^000000 Attack: ^777777210^000000\r\nWeight: ^777777150^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Biolo^000000",
+    "description": "One-handed Sword อันเปี่ยมพลังแห่งวีรบุรุษผู้พิชิตสนามรบ\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Explosive Powder 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Explosive Powder 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Explosive Powder ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Explosive Powder ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777150^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 257,
@@ -198635,7 +199140,7 @@
     "name": "Darkness Tablet [2]",
     "unidName": "Book",
     "resName": "Sins_Tablet",
-    "description": "Can't be destroyed.\nAtk + 5%, POW + 2.\nIncreases Midnight Kick damage by 5%.\nIf refine rate is 5 or higher, increases Midnight Kick damage by 10%.\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\nIf refine rate is 9 or higher, increases Midnight Kick damage by additional 10%. \nIf refine rate is 10 or higher, reduces variable casting time by 10%.\nIf refine rate is 11 or higher, increases Midnight Kick damage by additional 5%, increases Dawn Break damage by 15%.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Increases melee physical damage by 10%.\n[Grade C] increases physical damage against all size enemies by 10%.\n[Grade B] increases physical damage against all race enemies by 10%. \n[Grade A] increases physical damage against all property enemies by 10%. \n \nClass: ^777777Book^000000 Attack: ^777777200^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777215^000000\nJob: ^777777Sky Emperor^000000",
+    "description": "หนังสือที่สร้างขึ้นเพื่อรวบรวมพลังแห่งความมืดและใช้มัน\n \nไม่สามารถทำลายได้\nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Midnight Kick 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Midnight Kick 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Midnight Kick ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Midnight Kick ขึ้นอีก 5%, เพิ่ม Damage สกิล Dawn Break 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Book^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -198690,7 +199195,7 @@
     "name": "Origin of Life [2]",
     "unidName": "Book",
     "resName": "Fate_Tablet",
-    "description": "Can't be destroyed.\nAtk + 5%, POW + 2.\nIncreases Noon Blast damage by 5%.\nIf refine rate is 5 or higher, increases Noon Blast damage by 10%.\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\nIf refine rate is 9 or higher, increases Noon Blast damage by additional 10%. \nIf refine rate is 10 or higher, reduces global cooldown by 10%.\nIf refine rate is 11 or higher, increases Noon Blast damage by additional 5%, increases Sunset Blast damage by 15%.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Increases melee physical damage by 10%.\n[Grade C] increases physical damage against all size enemies by 10%.\n[Grade B] increases physical damage against all race enemies by 10%. \n[Grade A] increases physical damage against all property enemies by 10%. \n \nClass: ^777777Book^000000 Attack: ^777777200^000000\nWeight: ^777777100^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777215^000000\nJob: ^777777Sky Emperor^000000",
+    "description": "Tablet ศักดิ์สิทธิ์แห่งชีวิต ที่บันทึกต้นกำเนิดของแสงสว่างเอาไว้\n \nไม่สามารถทำลายได้\nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Noon Blast 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Noon Blast 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Noon Blast ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Global Cooldown 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Noon Blast ขึ้นอีก 5%, เพิ่ม Damage สกิล Sunset Blast 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Book^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777100^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Sky Emperor^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -198833,7 +199338,7 @@
     "name": "Doom Bible [2]",
     "unidName": "Book",
     "resName": "Sins_Book",
-    "description": "Can't be destroyed.\nMatk + 220.\nMatk + 5%, SPL + 2.\nIncreases Venom Swamp damage by 5%.\nIf refine rate is 5 or higher, increases Venom Swamp damage by 10%.\nIf refine rate is 7 or higher, increases fire and poison property magical damage by 5%.\nIf refine rate is 9 or higher, increases Venom Swamp damage by additional 10%. \nIf refine rate is 10 or higher, reduces variable casting time by 10%.\nIf refine rate is 11 or higher, increases Venom Swamp damage by additional 5%, increases Conflagration damage by 15%.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Increases fire and poison property magical damage by 10%.\n[Grade C] increases magical damage against all size enemies by 10%.\n[Grade B] increases magical damage against all race enemies by 10%. \n[Grade A] increases magical damage against all property enemies by 10%. \n \nClass: ^777777Book^000000 Attack: ^777777120^000000\nWeight: ^777777110^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777215^000000\nJobs: ^777777Elemental Master^000000",
+    "description": "คัมภีร์ที่บันทึกเรื่องราวเกี่ยวกับพลังแห่งความหายนะเอาไว้\n \nไม่สามารถทำลายได้\nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Venom Swamp 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Venom Swamp 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Poison 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Venom Swamp ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Venom Swamp ขึ้นอีก 5%, เพิ่ม Damage สกิล Conflagration 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Poison 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Book^000000 พลังโจมตี : ^777777120^000000\nน้ำหนัก : ^777777110^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -198895,7 +199400,7 @@
     "name": "Blessed Bible [2]",
     "unidName": "Book",
     "resName": "Fate_MagicBook",
-    "description": "Can't be destroyed.\nMatk + 220.\nMatk + 5%, SPL + 2.\nIncreases Diamond Storm damage by 5%.\nIf refine rate is 5 or higher, increases Diamond Storm damage by 10%.\nIf refine rate is 7 or higher, increases water and earth property magical damage by 5%.\nIf refine rate is 9 or higher, increases Diamond Storm damage by additional 10%. \nIf refine rate is 10 or higher, reduces variable casting time by 10%.\nIf refine rate is 11 or higher, increases Diamond Storm damage by additional 5%, increases Terra Drive damage by 15%.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Increases water and earth property magical damage by 10%.\n[Grade C] increases magical damage against all size enemies by 10%.\n[Grade B] increases magical damage against all race enemies by 10%. \n[Grade A] increases magical damage against all property enemies by 10%.\n \nClass: ^777777Book^000000 Attack: ^77777760^000000\nWeight: ^77777780^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777215^000000\nJobs: ^777777Elemental Master^000000",
+    "description": "คัมภีร์ศักดิ์สิทธิ์ที่ได้รับพรจากบรรดาอัครสาวก\n \nไม่สามารถทำลายได้\nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Diamond Storm 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Diamond Storm 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Earth 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Diamond Storm ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Diamond Storm ขึ้นอีก 5%, เพิ่ม Damage สกิล Terra Drive 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Earth 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Book^000000 พลังโจมตี : ^77777760^000000\nน้ำหนัก : ^77777780^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 271,
@@ -203029,9 +203534,9 @@
     "id": 550093,
     "aegisName": "Soul_Harvest",
     "name": "Soul Harvest [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Sins_Wand",
-    "description": "Can't be destroyed.\nMatk + 220.\nMatk + 5%, SPL + 2.\nIncreases Exorcism of Malicious Soul damage by 5%.\nIf refine rate is 5 or higher, increases Exorcism of Malicious Soul damage by 10%.\nIf refine rate is 7 or higher, increases all property magical damage by 5%.\nIf refine rate is 9 or higher, increases Exorcism of Malicious Soul damage by additional 10%. \nIf refine rate is 10 or higher, reduces variable casting time by 10%.\nIf refine rate is 11 or higher, increases Exorcism of Malicious Soul damage by additional 5%, increases Talisman of Soul Stealing damage by 15%.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Increases all property magical damage by 10%.\n[Grade C] increases magical damage against all size enemies by 10%.\n[Grade B] increases magical damage against all race enemies by 10%.\n[Grade A] increases magical damage against all property enemies by 10%.\n \nClass: ^777777Staff^000000 Attack: ^777777100^000000\nWeight: ^77777790^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777215^000000\nJobs: ^777777Soul Ascetic^000000",
+    "description": "One-handed Staff ที่มีพลังในการสะสมจิตวิญญาณ\n \nไม่สามารถทำลายได้\nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Exorcism of Malicious Soul 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Exorcism of Malicious Soul 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Exorcism of Malicious Soul ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Exorcism of Malicious Soul ขึ้นอีก 5%, เพิ่ม Damage สกิล Talisman of Soul Stealing 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^77777790^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -203087,9 +203592,9 @@
     "id": 550094,
     "aegisName": "Soul_Liberator",
     "name": "Soul Liberator [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Fate_Wand",
-    "description": "Can't be destroyed.\r\nMatk + 220.\r\nMatk + 5%, SPL + 2.\r\nIncreases Talisman of Four Bearing God damage by 5%.\r\nIf refine rate is 5 or higher, increases Talisman of Four Bearing God damage by 10%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Talisman of Four Bearing God damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Talisman of Four Bearing God damage by additional 5%, increases Talisman of Red Phoenix damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases all property magical damage by 10%.\r\n[Grade C] increases magical damage against all size enemies by 10%.\r\n[Grade B] increases magical damage against all race enemies by 10%.\r\n[Grade A] increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Staff^000000 Attack: ^77777770^000000\r\nWeight: ^777777110^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Soul Ascetic^000000",
+    "description": "One-handed Staff ที่ถือกำเนิดเพื่อปลดปล่อยวิญญาณที่ติดค้าง\n \nไม่สามารถทำลายได้\nMATK + 220\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Talisman of Four Bearing God 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Talisman of Four Bearing God 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Talisman of Four Bearing God ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Talisman of Four Bearing God ขึ้นอีก 5%, เพิ่ม Damage สกิล Talisman of Red Phoenix 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^77777770^000000\nน้ำหนัก : ^777777110^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Soul Ascetic^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -203145,9 +203650,9 @@
     "id": 550115,
     "aegisName": "Darkness_Foxtail_Model",
     "name": "Darkness Foxtail Model [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Sins_Foxtail",
-    "description": "Can't be destroyed.\r\nMatk + 330.\r\nMatk + 5%, SPL + 2.\r\nIncreases Hyunrok Cannon damage by 5%.\r\nIf refine rate is 5 or higher, increases Hyunrok Cannon damage by 10%.\r\nIf refine rate is 7 or higher, increases all property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Hyunrok Cannon damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Hyunrok Cannon damage by additional 5%, increases Hyunrok Breeze damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases all property magical damage by 10%.\r\n[Grade C] Increases magical damage against all size enemies by 10%.\r\n[Grade B] Increases magical damage against all race enemies by 10%.\r\n[Grade A] Increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Staff^000000 Attack: ^777777150^000000\r\nWeight: ^777777140^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Spirit Handler^000000",
+    "description": "Foxtail Model ที่เติบโตขึ้นท่ามกลางพลังแห่งความมืด\n \nไม่สามารถทำลายได้\nMATK + 330\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Hyunrok Cannon 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Hyunrok Cannon 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Hyunrok Cannon ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Hyunrok Cannon ขึ้นอีก 5%, เพิ่ม Damage สกิล Hyunrok Breeze 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^777777140^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -203203,9 +203708,9 @@
     "id": 550116,
     "aegisName": "Lightforce_Foxtail_Wand",
     "name": "Lightforce Foxtail Wand [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Fate_Foxtail",
-    "description": "Can't be destroyed.\r\nAtk + 5%, POW + 2.\r\nIncreases Chulho Sonic Claw damage by 5%.\r\nIf refine rate is 5 or higher, increases Chulho Sonic Claw damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Chulho Sonic Claw damage by additional 10%.\r\nIf refine rate is 10 or higher, Cri + 10.\r\nIf refine rate is 11 or higher, increases Chulho Sonic Claw damage by additional 5%, increases Hogogong Strike damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Staff^000000 Attack: ^777777330^000000\r\nWeight: ^777777150^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Spirit Handler^000000",
+    "description": "Foxtail Wand ที่เปล่งประกายพลังแห่งแสงอันศักดิ์สิทธิ์\n \nไม่สามารถทำลายได้\nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Chulho Sonic Claw 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Chulho Sonic Claw 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Chulho Sonic Claw ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Chulho Sonic Claw ขึ้นอีก 5%, เพิ่ม Damage สกิล Hogogong Strike 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777One-handed Staff^000000 พลังโจมตี : ^777777330^000000\nน้ำหนัก : ^777777150^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -205518,9 +206023,9 @@
     "id": 560036,
     "aegisName": "Demonic_Claw",
     "name": "Demonic Claw [2]",
-    "unidName": "Knuckle",
+    "unidName": "Waghnak",
     "resName": "Sins_Finger",
-    "description": "Atk + 5%, POW + 2.\nIncreases Explosion Blaster damage by 5%.\nIf refine rate is 5 or higher, increases Explosion Blaster damage by 10%.\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\nIf refine rate is 9 or higher, increases Explosion Blaster damage by additional 10%. \nIf refine rate is 10 or higher, Cri + 10.\nIf refine rate is 11 or higher, increases Explosion Blaster damage by additional 5%, increases Oleum Sanctum damage by 15%.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Increases long ranged physical damage by 10%.\n[Grade C] increases physical damage against all size enemies by 10%.\n[Grade B] increases physical damage against all race enemies by 10%. \n[Grade A] increases physical damage against all property enemies by 10%. \n \nClass: ^777777Knuckle^000000 Attack: ^777777210^000000\nWeight: ^777777150^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777215^000000\nJob: ^777777Inquisitor^000000",
+    "description": "Knuckle ที่แฝงพลังอันเกิดจากการสังหารปีศาจนับไม่ถ้วน\n \nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Explosion Blaster 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Explosion Blaster 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Explosion Blaster ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Explosion Blaster ขึ้นอีก 5%, เพิ่ม Damage สกิล Oleum Sanctum 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777150^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 268,
@@ -210089,7 +210594,7 @@
     "name": "Punish Scepter [2]",
     "unidName": "Mace",
     "resName": "Fate_Hall",
-    "description": "Can't be destroyed.\nAtk + 5%, POW + 2.\nIncreases Third Punish damage by 5%.\nIf refine rate is 5 or higher, increases Third Punish damage by 10%.\nIf refine rate is 7 or higher, increases melee physical damage by 5%.\nIf refine rate is 9 or higher, increases Third Punish damage by additional 10%. \nIf refine rate is 10 or higher, Cri + 10.\nIf refine rate is 11 or higher, increases Third Punish damage by additional 5%, increases First Brand damage by 15%.\n \n^CC3D3D[Bonus by grade]^000000\n[Grade D] Increases melee physical damage by 10%.\n[Grade C] increases physical damage against all size enemies by 10%.\n[Grade B] increases physical damage against all race enemies by 10%. \n[Grade A] increases physical damage against all property enemies by 10%. \n \nClass: ^777777Mace^000000 Attack: ^777777210^000000\nWeight: ^777777150^000000\nWeapon Level: ^7777775^000000\nRequired Level: ^777777215^000000\nJob: ^777777Inquisitor^000000",
+    "description": "คทาศักดิ์สิทธิ์ที่ใช้ปราบเหล่ามารซึ่งเปี่ยมด้วยพลังแห่งความชั่วร้าย\n \nไม่สามารถทำลายได้\nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Third Punishment 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Third Punishment 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Third Punishment ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Third Punishment ขึ้นอีก 5%, เพิ่ม Damage สกิล First Brand 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะใกล้ 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777150^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 263,
@@ -215857,9 +216362,9 @@
     "id": 640036,
     "aegisName": "Devil_Wing_Staff",
     "name": "Devil Wing Staff [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Sins_Staff",
-    "description": "Can't be destroyed.\r\nMatk + 290.\r\nMatk + 5%, SPL + 2.\r\nIncreases Soul Vulcan Strike damage by 5%.\r\nIf refine rate is 5 or higher, increases Soul Vulcan Strike damage by 10%.\r\nIf refine rate is 7 or higher, increases ghost and shadow property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Soul Vulcan Strike damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Soul Vulcan Strike damage by additional 5%, increases Mystery Illusion damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases ghost and shadow property magical damage by 10%.\r\n[Grade C] increases magical damage against all size enemies by 10%.\r\n[Grade B] increases magical damage against all race enemies by 10%.\r\n[Grade A] increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Two-handed Staff^000000 Attack: ^77777795^000000\r\nWeight: ^777777140^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Arch Mage^000000",
+    "description": "Two-handed Staff ที่สร้างขึ้นเพื่อควบคุมพลังแห่งปีศาจ\n \nไม่สามารถทำลายได้\nMATK + 290\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Soul Vulcan Strike 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Soul Vulcan Strike ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Shadow 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Soul Vulcan Strike ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Soul Vulcan Strike ขึ้นอีก 5%, เพิ่ม Damage สกิล Mystery Illusion 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ธาตุ Ghost, Shadow 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Two-handed Staff^000000 พลังโจมตี : ^77777795^000000\nน้ำหนัก : ^777777140^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 266,
@@ -215919,9 +216424,9 @@
     "id": 640037,
     "aegisName": "Destiny_Staff",
     "name": "Destiny Staff [2]",
-    "unidName": "Staff",
+    "unidName": "Rod",
     "resName": "Fate_Stick",
-    "description": "Can't be destroyed.\r\nMatk + 290.\r\nMatk + 5%, SPL + 2.\r\nIncreases Frozen Slash damage by 5%.\r\nIf refine rate is 5 or higher, increases Frozen Slash damage by 10%.\r\nIf refine rate is 7 or higher, increases water property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Frozen Slash damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Frozen Slash damage by additional 5%, increases Rain of Crystal damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases water property magical damage by 10%.\r\n[Grade C] increases magical damage against all size enemies by 10%.\r\n[Grade B] increases magical damage against all race enemies by 10%.\r\n[Grade A] increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Two-handed Staff^000000 Attack: ^777777110^000000\r\nWeight: ^777777120^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Arch Mage^000000",
+    "description": "Two-handed Staff ที่มีพลังให้ผู้ใช้มันได้เลือกชะตากรรมของตัวเอง\n \nไม่สามารถทำลายได้\nMATK + 290\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Frozen Slash 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Frozen Slash 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Water 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Frozen Slash ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Frozen Slash ขึ้นอีก 5%, เพิ่ม Damage สกิล Rain of Crystal 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ธาตุ Water 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Two-handed Staff^000000 พลังโจมตี : ^777777110^000000\nน้ำหนัก : ^777777120^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Arch Mage^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 266,
@@ -217075,7 +217580,7 @@
     "name": "Devil Claw [2]",
     "unidName": "Huuma Shuriken",
     "resName": "Sins_Huuma",
-    "description": "Can't be destroyed.\r\nMatk + 330.\r\nMatk + 5%, SPL + 2.\r\nIncreases Darkening Cannon damage by 5%.\r\nIf refine rate is 5 or higher, increases Darkening Cannon damage by 10%.\r\nIf refine rate is 7 or higher, increases shadow and fire property magical damage by 5%.\r\nIf refine rate is 9 or higher, increases Darkening Cannon damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases Darkening Cannon damage by additional 5%, increases Red Flame Cannon damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases shadow and fire property magical damage by 10%.\r\n[Grade C] Increases magical damage against all size enemies by 10%.\r\n[Grade B] Increases magical damage against all race enemies by 10%.\r\n[Grade A] Increases magical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Huuma Shuriken^000000 Attack: ^777777100^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Shinkiro, Shiranui^000000",
+    "description": "Huuma Shuriken ที่เต็มไปด้วยพลังปีศาจ รูปร่างเปลี่ยนไปคล้ายกับกรงเล็บของปีศาจ\n \nไม่สามารถทำลายได้\nMATK + 330\nMATK + 5%, SPL + 2\nเพิ่ม Damage สกิล Darkening Cannon 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Darkening Cannon 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow, Fire 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Darkening Cannon ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Darkening Cannon ขึ้นอีก 5%, เพิ่ม Damage สกิล Red Flame Cannon 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางเวทมนตร์ธาตุ Shadow, Fire 10%\n[Grade C] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777200^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro, Shiranui^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 278,
@@ -217138,7 +217643,7 @@
     "name": "Huuma Shuriken Brilliance [2]",
     "unidName": "Huuma Shuriken",
     "resName": "Fate_Huuma",
-    "description": "Can't be destroyed.\r\nAtk + 5%, POW + 2.\r\nIncreases Huuma Shuriken - Construct damage by 5%.\r\nIf refine rate is 5 or higher, increases Huuma Shuriken - Construct damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Huuma Shuriken - Construct damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces global cooldown by 10%.\r\nIf refine rate is 11 or higher, increases Huuma Shuriken - Construct damage by additional 5%, increases Huuma Shuriken - Grasp damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Huuma Shuriken^000000 Attack: ^777777330^000000\r\nWeight: ^777777260^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Shinkiro, Shiranui^000000",
+    "description": "Huuma Shuriken ที่เต็มไปด้วยพลังศักดิ์สิทธิ์ เปล่งประกายแสงสว่าง\n \nไม่สามารถทำลายได้\nATK + 5%, POW + 2\nเพิ่ม Damage สกิล Huuma Shuriken - Construct 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Huuma Shuriken - Construct 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Huuma Shuriken - Construct ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Global Cooldown 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Huuma Shuriken - Construct ขึ้นอีก 5%, เพิ่ม Damage สกิล Huuma Shuriken - Grasp 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Huuma Shuriken^000000 พลังโจมตี : ^777777330^000000\nน้ำหนัก : ^777777260^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro, Shiranui^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 278,
@@ -220068,9 +220573,9 @@
     "id": 800026,
     "aegisName": "Devils_Bullet",
     "name": "Devil's Bullet [2]",
-    "unidName": "Pistol",
+    "unidName": "Six Shooter",
     "resName": "Sins_Revolver",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Only One Bullet damage by 5%.\r\nIf refine rate is 5 or higher, increases Only One Bullet damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Only One Bullet damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Only One Bullet damage by additional 5%, increases long ranged physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Pistol^000000 Attack: ^777777250^000000\r\nWeight: ^777777200^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Revolver ที่ว่ากันว่าบรรจุลูกกระสุนแห่งปีศาจเอาไว้อยู่\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Only One Bullet 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Only One Bullet 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Only One Bullet ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Only One Bullet ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Revolver^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777200^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 273,
@@ -220121,9 +220626,9 @@
     "id": 800027,
     "aegisName": "Devil_Hunter",
     "name": "Devil Hunter [2]",
-    "unidName": "Pistol",
+    "unidName": "Six Shooter",
     "resName": "Fate_Revolver",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Magazine for One damage by 5%.\r\nIf refine rate is 5 or higher, increases Magazine for One damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Magazine for One damage by additional 10%.\r\nIf refine rate is 10 or higher, Cri + 10.\r\nIf refine rate is 11 or higher, increases Magazine for One damage by additional 5%, increases critical damage by 20%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Pistol^000000 Attack: ^777777250^000000\r\nWeight: ^777777170^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Revolver ที่ใช้กำจัดปีศาจมานับไม่ถ้วน\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Magazine for One 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Magazine for One 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 5%, Critical Damage + 20%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Revolver^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^777777170^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 273,
@@ -220683,7 +221188,7 @@
     "name": "Screaming Rifle [2]",
     "unidName": "Rifle",
     "resName": "Sins_Rifle",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Hasty Fire in the Hole damage by 5%.\r\nIf refine rate is 5 or higher, increases Hasty Fire in the Hole damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Hasty Fire in the Hole damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Hasty Fire in the Hole damage by additional 5%, increases Grenades Dropping damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Rifle^000000 Attack: ^777777265^000000\r\nWeight: ^777777220^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Rifle ที่เต็มไปด้วยความแค้น จนสามารถได้ยินเสียงกรีดร้องของวิญญาณ\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Hasty Fire in the Hole 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Hasty Fire in the Hole 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Hasty Fire in the Hole ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Hasty Fire in the Hole ขึ้นอีก 5%, เพิ่ม Damage สกิล Grenades Dropping 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Rifle^000000 พลังโจมตี : ^777777265^000000\nน้ำหนัก : ^777777220^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 274,
@@ -220738,7 +221243,7 @@
     "name": "Last Dawn [2]",
     "unidName": "Rifle",
     "resName": "Fate_Rifle",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Spiral Shooting damage by 5%.\r\nIf refine rate is 5 or higher, increases Spiral Shooting damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Spiral Shooting damage by additional 10%.\r\nIf refine rate is 10 or higher, Cri + 10.\r\nIf refine rate is 11 or higher, increases Spiral Shooting damage by additional 5%, increases Only One Bullet damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Rifle^000000 Attack: ^777777265^000000\r\nWeight: ^777777240^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Rifle ที่ไม่สูญเสียแสงสว่างจนถึงการต่อสู้ครั้งสุดท้าย\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Spiral Shooting 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Spiral Shooting 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, CRI + 10\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 5%, เพิ่ม Damage สกิล Only One Bullet 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Rifle^000000 พลังโจมตี : ^777777265^000000\nน้ำหนัก : ^777777240^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 274,
@@ -221328,9 +221833,9 @@
     "id": 820020,
     "aegisName": "Outlaw_Cursed_Shotgun",
     "name": "Outlaw Cursed Shotgun [2]",
-    "unidName": "Shotgun",
+    "unidName": "Single Shotgun",
     "resName": "Sins_Shotgun",
-    "description": "Atk + 5%, CON + 2.\r\nSplash attack.\r\nIncreases Wild Fire damage by 5%.\r\nIf refine rate is 5 or higher, increases Wild Fire damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Wild Fire damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases Wild Fire damage by additional 5%, increases long ranged physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Shotgun^000000 Attack: ^777777280^000000\r\nWeight: ^777777250^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Shotgun ที่เต็มไปด้วยคำสาปของพวกนอกรีต\n \nATK + 5%, CON + 2\nการโจมตีแบบ Splash\nเพิ่ม Damage สกิล Wild Fire 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Wild Fire 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Shotgun^000000 พลังโจมตี : ^777777280^000000\nน้ำหนัก : ^777777250^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 276,
@@ -221381,9 +221886,9 @@
     "id": 820021,
     "aegisName": "Road_Of_Glory",
     "name": "Lord of Glory [2]",
-    "unidName": "Shotgun",
+    "unidName": "Single Shotgun",
     "resName": "Fate_Shotgun",
-    "description": "Atk + 5%, CON + 2.\r\nSplash attack.\r\nIncreases The Vigilante at Night damage by 5%.\r\nIf refine rate is 5 or higher, increases The Vigilante at Night damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases The Vigilante at Night damage by additional 10%.\r\nIf refine rate is 10 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 11 or higher, increases The Vigilante at Night damage by additional 5%, increases long ranged physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Shotgun^000000 Attack: ^777777280^000000\r\nWeight: ^777777230^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Shotgun ที่เปล่งประกายด้วยความรุ่งโรจน์อันเจิดจ้า\n \nATK + 5%, CON + 2\nการโจมตีแบบ Splash\nเพิ่ม Damage สกิล The Vigilante at Night 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล The Vigilante at Night 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ASPD + 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Shotgun^000000 พลังโจมตี : ^777777280^000000\nน้ำหนัก : ^777777230^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 276,
@@ -222030,9 +222535,9 @@
     "id": 830025,
     "aegisName": "RG_5649",
     "name": "RG-5649 [2]",
-    "unidName": "Gatling Gun",
+    "unidName": "Drifter",
     "resName": "Sins_Gatling",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases The Vigilante at Night damage by 5%.\r\nIf refine rate is 5 or higher, increases The Vigilante at Night damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases The Vigilante at Night damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces global cooldown by 10%.\r\nIf refine rate is 11 or higher, increases The Vigilante at Night damage by additional 5%, increases long ranged physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Gatling Gun^000000 Attack: ^777777295^000000\r\nWeight: ^777777290^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Gatling Gun ที่ได้รับพลังแห่งการทำลายล้างจนแข็งแกร่งยิ่งขึ้น\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล The Vigilante at Night 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล The Vigilante at Night 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Global Cooldown 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล The Vigilante at Night ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Gatling Gun^000000 พลังโจมตี : ^777777295^000000\nน้ำหนัก : ^777777290^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 275,
@@ -222083,9 +222588,9 @@
     "id": 830026,
     "aegisName": "Lighting_Splatter",
     "name": "Lightning Splatter [2]",
-    "unidName": "Gatling Gun",
+    "unidName": "Drifter",
     "resName": "Fate_Gatling",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Magazine for One damage by 5%.\r\nIf refine rate is 5 or higher, increases Magazine for One damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Magazine for One damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces global cooldown by 10%.\r\nIf refine rate is 11 or higher, increases Magazine for One damage by additional 5%, increases long ranged physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Gatling Gun^000000 Attack: ^777777295^000000\r\nWeight: ^777777300^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Gatling Gun ที่เคยถูกใช้โดยอัศวินแห่งแสง\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Magazine for One 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Magazine for One 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Global Cooldown 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Magazine for One ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Gatling Gun^000000 พลังโจมตี : ^777777295^000000\nน้ำหนัก : ^777777300^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 275,
@@ -222653,9 +223158,9 @@
     "id": 840020,
     "aegisName": "Devil_L_Launcher",
     "name": "Devil Lord Launcher [2]",
-    "unidName": "Grenade Launcher",
+    "unidName": "Destroyer",
     "resName": "Sins_Launcher",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Spiral Shooting damage by 5%.\r\nIf refine rate is 5 or higher, increases Spiral Shooting damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Spiral Shooting damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces global cooldown by 10%.\r\nIf refine rate is 11 or higher, increases Spiral Shooting damage by additional 5%, increases long ranged physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Grenade Launcher^000000 Attack: ^777777330^000000\r\nWeight: ^777777250^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Grenade Launcher ที่ปรมาจารย์แห่งปืนสร้างขึ้นมาด้วยพลังแห่งปีศาจ\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Spiral Shooting 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Spiral Shooting 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Global Cooldown 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Spiral Shooting ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Grenade Launcher^000000 พลังโจมตี : ^777777330^000000\nน้ำหนัก : ^777777250^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 277,
@@ -222706,9 +223211,9 @@
     "id": 840021,
     "aegisName": "Justice_Bomber",
     "name": "Justice Bomber [2]",
-    "unidName": "Grenade Launcher",
+    "unidName": "Destroyer",
     "resName": "Fate_Launcher",
-    "description": "Atk + 5%, CON + 2.\r\nIncreases Wild Fire damage by 5%.\r\nIf refine rate is 5 or higher, increases Wild Fire damage by 10%.\r\nIf refine rate is 7 or higher, increases long ranged physical damage by 5%.\r\nIf refine rate is 9 or higher, increases Wild Fire damage by additional 10%.\r\nIf refine rate is 10 or higher, reduces global cooldown by 10%.\r\nIf refine rate is 11 or higher, increases Wild Fire damage by additional 5%, increases long ranged physical damage by 15%.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Increases long ranged physical damage by 10%.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] Increases physical damage against all race enemies by 10%.\r\n[Grade A] Increases physical damage against all property enemies by 10%.\r\n\r\nClass: ^777777Grenade Launcher^000000 Attack: ^777777330^000000\r\nWeight: ^777777260^000000\r\nWeapon Level: ^7777775^000000\r\nRequired Level: ^777777215^000000\r\nJobs: ^777777Night Watch^000000",
+    "description": "Grenade Launcher แห่งความยุติธรรม ที่สร้างขึ้นเพื่อกำจัดความชั่วร้าย\n \nATK + 5%, CON + 2\nเพิ่ม Damage สกิล Wild Fire 5%\nเมื่ออัพเกรดถึงขั้น 5, เพิ่ม Damage สกิล Wild Fire 10%\nเมื่ออัพเกรดถึงขั้น 7, เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 10%\nเมื่ออัพเกรดถึงขั้น 10, ลด Global Cooldown 10%\nเมื่ออัพเกรดถึงขั้น 11, เพิ่ม Damage สกิล Wild Fire ขึ้นอีก 5%, เพิ่ม Damage ทางกายภาพระยะไกล 15%\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] เพิ่ม Damage ทางกายภาพระยะไกล 10%\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกเผ่า 10%\n[Grade A] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 10%\n \nประเภท : ^777777Grenade Launcher^000000 พลังโจมตี : ^777777330^000000\nน้ำหนัก : ^777777260^000000\nเลเวล Weapon : ^7777775^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 277,
