@@ -42,8 +42,10 @@ const MAP_TO_MULTI_BONUS = {
 	'เพิ่ม Damage ต่อศัตรูทุกเผ่า': ['p_race_all', 'm_race_all'],
 	'เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล': ['melee', 'range'],
 	'เพิ่ม Damage ทางกายภาพระยะใกล้andไกล': ['melee', 'range'],
+
 	'เพิกเฉยต่อพลังป้องกันทางกายภาพandเวทมนตร์ของศัตรูทุกเผ่า': ['p_pene_race_all', 'm_pene_race_all'],
 	'เพิกเฉยต่อพลังต้านทานทางกายภาพandเวทมนตร์ของศัตรูทุกเผ่า': ['pene_res', 'pene_mres'],
+
 	'P.ATKandS.MATK': ['pAtk', 'sMatk'],
 	'MHPandMSP': ['hpPercent', 'spPercent'],
 };
@@ -303,7 +305,12 @@ const MAP_ATTR = {
 	'magical damage against ghost property': 'm_element_ghost',
 
 	'เพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า': 'p_pene_race_all',
+	'ignores physical defense': 'p_pene_race_all',
+	'ignores physical resistance': 'pene_res',
+
 	'เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า': 'm_pene_race_all',
+	'ignores magical defense': 'm_pene_race_all',
+	'ignores magical resistance': 'pene_mres',
 
 	'ลด Delay หลังใช้สกิล': 'acd',
 	'ลด Delay หลังใช้สกิลลง': 'acd',
@@ -549,6 +556,7 @@ export class BuildScript {
 			/เมื่ออัพเกรดตั้งแต่\s*(\d+)(.+)/,
 			/(เมื่อค่าอัพเกรดรวมกันตั้งแต่\s*\d+)\s*ขึ้นไป(.+)/,
 			/If refine rate is (\d+) or higher, (.+)/i,
+			/If refine rate is (\d+)[\D]*, (.+)/i,
 			/if the sum of refine rate of set is\s*\d+\s*or higher, (.+)/i,
 		],
 		toConstants2: [/เพิ่ม\s*(.+)\s*เมื่ออัพเกรด\D+(\d+)/],
@@ -750,19 +758,44 @@ export class BuildScript {
 		return this;
 	}
 
+	mapItemComboSetToItemType(comboSet: string) {
+		const sets = [];
+
+		if (comboSet.match(/shadow weapon/i)) {
+			sets.push('shadowWeapon');
+		}
+		if (comboSet.match(/shadow shield/i)) {
+			sets.push('shadowShield');
+		}
+		if (comboSet.match(/shadow armor/i)) {
+			sets.push('shadowArmor');
+		}
+		if (comboSet.match(/shadow boot|shadow shoe/i)) {
+			sets.push('shadowBoot');
+		}
+		if (comboSet.match(/shadow earring/i)) {
+			sets.push('shadowEarring');
+		}
+		if (comboSet.match(/shadow pendant/i)) {
+			sets.push('shadowPendant');
+		}
+
+		return sets.join(',');
+	}
+
 	toScripts(expressions: string[], comboes: Record<string, string[]>) {
 		const all: Record<string, string[]> = {};
 		// let currentGrade = ''
-		const addScript = (prop: string, newScript: string) => {
+		const addScript = (attrBonus: string, newScript: string) => {
 			// console.log({ prop, newScript });
 
-			const props = this.toManyKey(prop);
+			const attrBonuses = this.toManyKey(attrBonus);
 			const gradeScript = '';
-			for (const oneProp of props) {
-				if (all[oneProp]) {
-					all[oneProp].push(`${gradeScript}${newScript}`);
+			for (const _attrBonus of attrBonuses) {
+				if (all[_attrBonus]) {
+					all[_attrBonus].push(`${gradeScript}${newScript}`);
 				} else {
-					all[oneProp] = [`${gradeScript}${newScript}`];
+					all[_attrBonus] = [`${gradeScript}${newScript}`];
 				}
 			}
 		};
@@ -771,6 +804,7 @@ export class BuildScript {
 		console.log({ expressions, comboes });
 
 		for (const _expression of expressions) {
+			console.log('___expression___', _expression);
 			let expression = _expression;
 			let currentGrade = '';
 			for (const isGradeRegex of this.regex.isGrades) {
@@ -855,7 +889,8 @@ export class BuildScript {
 		}
 
 		const refineComboRegexs = [
-			/if the sum of refine rate of set is\s*(\d+)\s*or higher, (.+)/,
+			/if the sum of refine rate of set is\s*(\d+)\s*or higher, (.+)/i,
+			/sum of refine rate is (\d+) or higher, *\s*(.+)/i,
 		];
 		// comboCondition: 'Thanos Sword-AD',
 		// _expressions: [
@@ -899,7 +934,7 @@ export class BuildScript {
 					}
 				}
 				const refineScript =
-					refineCombo > 0 ? `REFINE[xxx==${refineCombo}]` : '';
+					refineCombo > 0 ? `REFINE[${this.itemType},${this.mapItemComboSetToItemType(xComboCondition)}==${refineCombo}]` : '';
 
 				// console.log({ expression });
 				if (expression.includes('Class:')) break;
@@ -960,9 +995,9 @@ export class BuildScript {
 					for (const obj of this.toRefineConstantBonus(
 						this.matchBaseBonusStat(expression)!,
 					)) {
-						const [prop, newScript] = Object.entries(obj)[0];
+						const [attrBonus, newScript] = Object.entries(obj)[0];
 						addScript(
-							prop,
+							attrBonus,
 							`${prefix}${refineScript}${newScript}`,
 						);
 					}
@@ -970,9 +1005,9 @@ export class BuildScript {
 					for (const obj of this.toTotalRefineBonus(
 						this.matchTotalRefine(expression)!,
 					)) {
-						const [prop, newScript] = Object.entries(obj)[0];
+						const [attrBonus, newScript] = Object.entries(obj)[0];
 						addScript(
-							prop,
+							attrBonus,
 							`${prefix}${refineScript}${newScript}`,
 						);
 					}
@@ -1182,6 +1217,7 @@ export class BuildScript {
 		const fixCast1 = /ลด\s*(Fixed\D+)\s*(\d+\.*\d*)/;
 		const fixCast2 = /(ลดระยะเวลาร่ายแบบคง\D+)\s*(\d+\.*\d*)/;
 		const pene1 = /(เพิกเฉย.*?ทุกเผ่า).*?(\d+)/i;
+		const pene2 = /(ignores physical defense|ignores magical defense|ignores physical resistance|ignores magical resistance).*?(\d+)%/i;
 		const baseStatRegex =
 			/(Critical Damage.+|All Talent Stat|All Trait Status|all basic status|all triat status|All State|All Status|P.Atk\/S.Matk|POW\/SPL|P.Atk|S.Matk|C.Rate|MATK|FLEE|ATK|DEX|MDEF|DEF|Def|Mres|Res|H.Plus|INT|VIT|AGI|STR|CRI|LUK|POW|STA|WIS|SPL|CON|CRT|Cri|ASPD|SPD|MaxHP|MHP|HP|MaxSP|SP|MSP|HIT)\D*(\d+%*)/i;
 		const constantRegex2 =
@@ -1212,6 +1248,7 @@ export class BuildScript {
 			usableStr.match(fixCast2) ||
 			usableStr.match(multiRegex3) ||
 			usableStr.match(pene1) ||
+			usableStr.match(pene2) ||
 			// usableStr.match(constantRegexPercent) ||
 			usableStr.match(multiRegex) ||
 			usableStr.match(multiRegex2) ||
@@ -1245,7 +1282,7 @@ export class BuildScript {
 		for (const regex of this.regex.toConstants) {
 			const [_raw, condition, script] = usable.match(regex) ?? [];
 			// if (matched?.length >= 2) return matched[1];
-			// console.log({rawExpression, condition, script}) // script = increases Arrow Storm damage by 40% and Focused Arrow Strike damage by 20%.
+			// console.log('matchRefineConstantBonus_1231', { rawExpression, condition, script }); // script = increases Arrow Storm damage by 40% and Focused Arrow Strike damage by 20%.
 			if (condition && script) {
 				return { condition, script };
 			}
@@ -1312,8 +1349,8 @@ export class BuildScript {
 			const regex = this.regex.toSteps[i];
 			const [_, every, bonusScript] = usable.match(regex) ?? [];
 
-			// console.log({rawExpression, every, bonusScript})
-			const isRevertBonus = i >= 3;
+			// console.log('__matchRefineStepBonus__', { rawExpression, every, bonusScript });
+			const isRevertBonus = i >= 5;
 
 			if (isRevertBonus) {
 				if (every && bonusScript) {
@@ -1588,7 +1625,7 @@ export class BuildScript {
 		for (const { actualAttr, bonus } of this.getMiniScript(bonusScript)) {
 			if (!actualAttr) continue;
 
-			all.push({ [actualAttr]: `REFINE[${condition}]===${bonus}` });
+			all.push({ [actualAttr]: `===${bonus}` });
 		}
 
 		return all;
@@ -1706,7 +1743,11 @@ export class BuildScript {
 	matchTotalRefine(
 		expression: string,
 	): { condition: string; bonusScript: string; } | undefined {
-		const regexs = [/มื่อค่าอัพเกรด\D+(\d+).+ขึ้นไป\s*(.+)/];
+		const regexs = [
+			/มื่อค่าอัพเกรด\D+(\d+).+ขึ้นไป\s*(.+)/,
+			/sum of refine rate is (\d+) or higher, *\s*(.+)/i,
+		];
+
 		for (const regex of regexs) {
 			const [_raw, condition, bonusScript] = expression.match(regex) ?? [];
 			if (condition && bonusScript) {

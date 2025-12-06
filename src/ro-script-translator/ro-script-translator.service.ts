@@ -46,9 +46,10 @@ enum ItemSubTypeId {
 	ShadowEnhLower = 73,
 	ShadowEnhGarment = 74,
 
+	ShadowArmor = 526,
 	ShadowShield = 527,
 	ShadowBoot = 528,
-	ShadowEarning = 529,
+	ShadowEarring = 529,
 	ShadowPendant = 530,
 	ShadowWeapon = 280,
 }
@@ -65,9 +66,10 @@ const itemNam = {
 
 	[ItemSubTypeId.Enchant]: 'enchant',
 
+	[ItemSubTypeId.ShadowArmor]: 'shadowArmor',
 	[ItemSubTypeId.ShadowShield]: 'shadowShield',
 	[ItemSubTypeId.ShadowBoot]: 'shadowBoot',
-	[ItemSubTypeId.ShadowEarning]: 'shadowEarning',
+	[ItemSubTypeId.ShadowEarring]: 'shadowEarring',
 	[ItemSubTypeId.ShadowPendant]: 'shadowPendant',
 	[ItemSubTypeId.ShadowWeapon]: 'shadowWeapon',
 };
